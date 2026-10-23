@@ -52,12 +52,12 @@ academia-trading/
 | 💼 N4 | M11 · La Industria | ⏳ |
 | 💼 N4 | M12 · Plan de Trading y Plan de Negocio | ⏳ |
 
-**Sprint 0 ✅:** estructura del repo + agents.md + SYLLABUS.md + análisis de cursos.
-**Sprint 1 ✅:** Módulo 1 completo — 6 lecciones + laboratorio de auditoría personal + misión (Carta de Expectativas + contrato anti-ludopatía) + quiz de graduación + glosario (38 términos).
-**Sprint 1.5 ✅:** temario v1.0 **aprobado por el estudiante** → v1.1 + recurso transversal [La Receta de tu Primera Operación](docs/03-recursos/laboratorio/receta-primera-operacion.md) (12 pasos, receta maestra EUR/USD + fichas oro/índices; objetivo: primera operación PROCESADA — veto CRO al marco "primer dólar").
-**Sprint 2 ✅:** Módulo 2 completo — 6 lecciones (subasta, oferta/demanda, liquidez, sesiones en hora Bolivia, personalidad de mercados, calendario macro) + laboratorio (reloj de sesiones + mapa macro) + misión M-2 (observación pura de 3 sesiones) + quiz + glosario (25 términos nuevos, total 66) + plantilla journal v0 (CSV).
-**Sprint 3 ✅:** Módulo 3 completo — 6 lecciones (velas, 4 ciclos, zonas S/R con gradiente, confirmación en 3 pasos, patrones con fiabilidad honesta, regímenes y whipsaw) + laboratorio (10 episodios con Bar Replay) + misión M-3 (bitácora de 20 niveles) + quiz + glosario (22 términos nuevos, total 88).
-**Sprint 4 ✅:** Módulo 4 completo — 6 lecciones (layout profesional, tipos de órdenes y OCO, los 4 costos, largos y cortos, demo ordenada, el SL como ley con checklist 6/6) + laboratorio (las 4 órdenes en demo) + misión M-4 (10 operaciones demo procesadas 6/6) + quiz + glosario (23 términos nuevos, total 111) + **Examen integrador N1** (30 preguntas ≥ 80 % + entrevista socrática + checklist de ejecución).
+- **Sprint 0 ✅:** estructura del repo + agents.md + SYLLABUS.md + análisis de cursos.
+- **Sprint 1 ✅:** Módulo 1 completo — 6 lecciones + laboratorio de auditoría personal + misión (Carta de Expectativas + contrato anti-ludopatía) + quiz de graduación + glosario (38 términos).
+- **Sprint 1.5 ✅:** temario v1.0 **aprobado por el estudiante** → v1.1 + recurso transversal [La Receta de tu Primera Operación](docs/03-recursos/laboratorio/receta-primera-operacion.md) (12 pasos, receta maestra EUR/USD + fichas oro/índices; objetivo: primera operación PROCESADA — veto CRO al marco "primer dólar").
+- **Sprint 2 ✅:** Módulo 2 completo — 6 lecciones (subasta, oferta/demanda, liquidez, sesiones en hora Bolivia, personalidad de mercados, calendario macro) + laboratorio (reloj de sesiones + mapa macro) + misión M-2 (observación pura de 3 sesiones) + quiz + glosario (25 términos nuevos, total 66) + plantilla journal v0 (CSV).
+- **Sprint 3 ✅:** Módulo 3 completo — 6 lecciones (velas, 4 ciclos, zonas S/R con gradiente, confirmación en 3 pasos, patrones con fiabilidad honesta, regímenes y whipsaw) + laboratorio (10 episodios con Bar Replay) + misión M-3 (bitácora de 20 niveles) + quiz + glosario (22 términos nuevos, total 88).
+- **Sprint 4 ✅:** Módulo 4 completo — 6 lecciones (layout profesional, tipos de órdenes y OCO, los 4 costos, largos y cortos, demo ordenada, el SL como ley con checklist 6/6) + laboratorio (las 4 órdenes en demo) + misión M-4 (10 operaciones demo procesadas 6/6) + quiz + glosario (23 términos nuevos, total 111) + **Examen integrador N1** (30 preguntas ≥ 80 % + entrevista socrática + checklist de ejecución).
 
 ## 🚀 Inicio Rápido
 

@@ -174,3 +174,21 @@ Stage Summary:
 - Artefactos: visor.html v2 (funcional y probado), leccion-2-4.md corregido, academia-trading.zip actualizado, scripts auxiliares (scripts/visor_app.js, sync_visor.py en el workspace)
 - Lección registrada: mermaid@10 falla silenciosamente si el contenedor no tiene layout en el momento de renderizar; el visor ahora renderiza todo en una pasada con secciones medibles
 - Estado: visor operativo en local (doble clic), en preview sin internet (fallback miniMd) y en GitHub (los .md nativos). Siguiente: Sprint 5 (M5 · Estructura de Mercado y Liquidez — N2) cuando el estudiante lo pida
+
+---
+Task ID: fix-visor-2
+Agent: Z.ai (Knowledge Architect + QA)
+Task: Renderizado de matemática LaTeX en el visor (reporte del estudiante: fórmulas $$...$$ y $...$ se veían crudas)
+
+Work Log:
+- Confirmado el reporte: el visor no renderizaba LaTeX (decisión antigua evitaba KaTeX por riesgo de confundir los $ de precios con delimitadores matemáticos); revisión de capturas del estudiante y levantamiento del corpus: 12 fórmulas display $$...$$ (receta, lec 1-1, lec 1-4, agents) + ~30 inline $...$ conviviendo con decenas de precios "20 $", "0,6 $/pip"
+- Añadido KaTeX 0.16.11 (CSS + JS por CDN) al head del visor
+- Implementado extractMath/restoreMath (scripts/visor_app.js): extracción previa al render con marcadores %%MATHn%%, saltando bloques de código vallado; escáner inline con heurística estricta anti-falsos-positivos (rechaza contenido con espacio pegado a los delimitadores, **, ·, →, ¿, ¡, —; acepta comandos LaTeX, ^_ {}, operadores =<>≤≥ y identificadores simples) — validado con 19/19 casos reales del corpus en Node
+- Render de respaldo sin KaTeX (offline): el TeX se muestra como <code> legible + aviso en la barra de estado
+- Reformato del README raíz: los 6 renglones de estado de sprints estaban pegados sin línea en blanco y markdown los pintaba como un solo párrafo gigante (también en GitHub); convertidos a lista
+- Verificación end-to-end en navegador: receta 2/2 fórmulas display renderizadas como fracciones con los precios intactos, lec 1-3 4/4 inline (E_negocio, N, E_por_operación > 0), examen 5/5, lec 1-1 8/8, 0 fallbacks, 0 $$ crudos, mermaid 18/18 sin regresiones
+
+Stage Summary:
+- Artefactos: visor.html v3 (KaTeX + escáner matemático), README.md reformatado, academia-trading.zip actualizado
+- Decisión: los .md NO se tocan — la notación $...$/$$...$$ se mantiene nativa para GitHub, el visor hace el trabajo de renderizarla
+- Estado: N1 completo con matemática legible. Siguiente: Sprint 5 (M5 · Estructura de Mercado y Liquidez — N2) cuando el estudiante lo pida
