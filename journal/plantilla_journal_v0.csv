@@ -1,0 +1,3 @@
+fecha,hora_inicio,hora_fin,instrumento,direccion,tipo_orden,lote,entrada,sl,tp,resultado_pips,resultado_usd,resultado_r,sl_antes_entrada,setup_1linea,estado_emocional_pre_1a10,estado_emocional_post_1a10,error_detectado,leccion_1linea,ventana_macro_ok,captura
+2026-10-26,08:35,10:12,EURUSD,long,limit,0.06,1.0850,1.0820,1.0910,+60,+108.0,+2.0,Si,Retroceso a demanda H4 tras expansión de Londres,4,5,Ninguno,Proceso 6/6 — esperar la zona funcionó,Si,2026-10-26_eurusd_m4_1.png
+2026-10-27,09:05,09:41,XAUUSD,long,market,0.05,4022.00,4018.00,4030.00,-40,-20.0,-1.0,Si,Rebote a soporte intradía antes de CPI,6,3,Entré sin confirmación de vela de reacción,SL tocado dentro del plan = Pérdida ≠ Error; revisar confirmación en M3.4,Si,2026-10-27_xauusd_m4_2.png
