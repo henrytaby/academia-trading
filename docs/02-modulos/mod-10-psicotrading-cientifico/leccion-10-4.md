@@ -1,0 +1,79 @@
+# Lección 10.4 · Pérdida ≠ Error — la distinción que define la carrera
+
+| Campo | Detalle |
+|---|---|
+| ⏱️ Duración estimada | 40–55 min de estudio |
+| 🧱 Módulo | [M10 · Psicotrading Científico](README.md) |
+| ⬅️ Anterior | [Lección 10.3 · Las 5 avaricias](leccion-10-3.md) |
+| ➡️ Siguiente | [Lección 10.5 · Sesgos cognitivos](leccion-10-5.md) |
+
+---
+
+## Por qué importa
+
+En 9.5 instalaste la distinción como **infraestructura de registro** (la taxonomía E0-E7 del journal). Esta lección la formaliza como **ley psicológica del oficio**, porque de su comprensión depende exactamente qué circuito de tu cerebro el mercado entrena cada día. La tesis en una línea: el mercado te paga (y te castiga) por RESULTADOS, pero tu negocio vive o muere por PROCESOS — y cuando dejas que el resultado dicte qué proceso repetir, construyes un trader al azar. El caso más letal no es la pérdida fuera de plan (duele, corrige) ni la ganancia en plan (premia lo correcto): es la **ganancia fuera de plan** — el FOMO que "salió bien", el sin-checklist que terminó +2R, el chase afortunado. Ese premio refuerza, con la misma dopamina que estudiaste en 10.1, exactamente la conducta que a 200 operaciones te quiebra. La industria está llena de traders con 6-12 meses de "éxito" por atajos, y su curva típica es predecible: el atajo repite hasta que su E desconocida cobra. Esta lección te da la matriz completa (cuatro combinaciones resultado × proceso), la biología de por qué la ganancia errónea es la más peligrosa, y el protocolo para que tu sistema de recompensas interno — no el mercado — decida qué conductas se extinguen. Si terminas con una sola idea: **juzga cada operación por lo que sabías y lo que hiciste, nunca por lo que el mercado hizo después — y teme más a tu ganancia sin plan que a tu pérdida con plan.**
+
+## Concepto
+
+**La matriz 2×2 que ordena todo el oficio.** Cada operación tiene dos dimensiones independientes: el PROCESO (¿siguió tu sistema?) y el RESULTADO (¿ganó o perdió?):
+
+| | **Resultado: ganancia** | **Resultado: pérdida** |
+|---|---|---|
+| **Proceso: en plan** | ✅ **La única operación que construye negocio.** Proceso premiado — refuerza el circuito correcto. Etiqueta **E0-satisfecho** (o mejor: sin etiqueta de error) | ⚪ **E0 — el coste estadístico.** Duele, no corrige nada: era esperado. La re-etiquetación de 10.2 ("coste de la serie") hace su trabajo aquí |
+| **Proceso: fuera de plan** | 🔴 **EL ERROR MÁS PELIGROSO del trading.** Un premio por romper el sistema: dopamina refuerza el atajo, y el atajo repite. Etiqueta E1/E2/E4/E5 **con nota destacada** | ⚠️ **El error afortunado en castigo.** Duele Y corrige: la pérdida castiga la desviación — es el error con mejor prognosis, porque el dolor inhibe la conducta (10.1) |
+
+Las cuatro celdas se viven distinto y se REGISTRAN distinto: el journal v1 (9.5) ya tiene el campo para ambas dimensiones (etiqueta de error + resultado). Lo que esta lección añade es la jerarquía de peligrosidad — que es exactamente inversa a la intuición: el trader amateur teme la celda E0 (pérdida en plan) y adora la celda roja (ganancia fuera de plan); el profesional registra la E0 sin drama y **destaca en rojo la ganancia fuera de plan**, porque sabe cuál de las dos destruye más cuentas en ventanas de 12 meses.
+
+**La biología del premio tóxico.** El mecanismo exacto, con las piezas de 10.1: el aprendizaje por refuerzo (el circuito dopaminérgico mesolímbico) no distingue "buena conducta" de "conducta con premio" — refuerza lo que fue seguido de recompensa, punto. Cuando el chase afortunado paga +2R, el circuito graba: *persecución → premio*. La próxima señal válida compite contra ese recuerdo reforzado; el chase siguiente tiene un "estímulo condicionado" a favor. La estadística de tu cuenta se degrada silenciosamente: cada ganancia fuera de plan **infla la frecuencia** de la conducta que la produjo, y esa conducta (per 10.3) tiene E negativa — el premio de hoy es el préstamo que la varianza cobrará con interés. La pérdida fuera de plan, en cambio, tiene el efecto inverso: dolor → inhibición → conducta corregida. De ahí la paradoja central: **el error castigado corrige; el error premiado se instala.** Por eso la lección 9.5 ya decía que la ganancia E1 es la más peligrosa — aquí está el porqué neurológico.
+
+**La aritmética de la contaminación.** Supón que tras 100 operaciones medidas (E +0,16R neto) añades 10 operaciones "de instinto" al mes — y el instinto, sin edge medido, tiene esperanza nula menos costes: $E_{\text{instinto}} \approx -0{,}08R$:
+
+$$E_{\text{mixta}} = \frac{100 \times 0{,}16 + 10 \times (-0{,}08)}{110} = \frac{16{,}0 - 0{,}8}{110} = +0{,}14R$$
+
+Parece poco — hasta ver la deriva completa: si el "instinto" además se refuerza (aprende de sus premios casuales) y crece a 30 operaciones: $E = (16{,}0 - 2{,}4)/130 = +0{,}10R$; a 50: $+0{,}08R$. La esperanza del negocio **se diluye sin que ninguna operación individual "salga mal"** — todas las filas del mix tienen resultados plausibles; lo que se destruye es la proporción. Y el peor escenario no es el mix: es el **reemplazo** — el trader que tras una racha de premios casuales abandona el sistema ("ya no lo necesito") y queda con solo E desconocida. Esa transición no se ve en ningún gráfico de precio: se ve en el campo "¿en plan?" del journal — por eso es obligatorio, no opcional.
+
+**"Operación perfecta" ≠ "operación ganadora".** El programa define el exit psicológico con una fórmula de proceso, no de resultado: una operación es **perfecta** si (1) la temperatura pre-sesión calificaba, (2) el setup cumplía los componentes 1-8, (3) el sizing salió de la calculadora, (4) la gestión siguió el plan, (5) el registro se hizo en caliente. Resultado: irrelevante para el juicio. Esta definición tiene una consecuencia radical que debes aceptar antes de la misión M-10: **es posible ejecutar la operación perfecta y perder, y es posible violar el sistema y ganar — ambas son información sobre ti, no sobre el mercado.** El objetivo diario no es "terminar en verde": es terminar con el mayor número de operaciones perfectas — métrica que tu journal puede contar (perfección = filas sin etiqueta de error ≠ filas verdes).
+
+## Analogía
+
+El piloto y el aterrizaje afortunado. Un piloto privado aterriza con niebla que su formación no cubre, "porque el aeropuerto se veía" — y sale ileso. ¿Qué aprendió? Si el sistema de aviación funcionara como el mercado (pago por resultado), el piloto registraría: "aterrizaje exitoso, método válido" — y repetiría con niebla más densa, hasta la que no perdona. La aviación real lo impide con una cultura que el trading aún no tiene: el **reporte obligatorio de incidentes** donde un aterrizaje ilegal exitoso se investiga EXACTAMENTE igual que uno fallido — porque el sistema entiende que el resultado no valida el proceso; solo la estadística de muchos procesos valida procesos. El aterrizaje ilegal con suerte es la ganancia fuera de plan: el caso más peligroso no porque salió mal (salió bien) sino porque **fabrica la confianza que lleva a repetirlo con peores condiciones**. Tu journal es tu reporte de incidentes: la fila E1 con +2R debe leerse con la misma seriedad que una tragedia — de hecho, con más, porque tu cerebro la celebrará.
+
+## Cómo se hace: instalar el juicio de proceso en 4 piezas
+
+1. **Redefine tu pizarra diaria.** Al cierre de cada sesión (protocolo post-mercado, 10.7), responde dos preguntas por separado: ¿cuántas operaciones perfectas (proceso 5/5)? ¿cuál fue el resultado neto en R? — y registra AMBAS. La pizarra semanal premia la primera; la segunda es solo el termómetro del mercado. En semanas de racha adversa con perfección alta, el acta semanal declara: **semana aprobada** — es la frase que entrena la separación.
+2. **Destaca las ganancias fuera de plan con etiqueta "E-ganancia-sin-plan".** En tu journal, las filas con resultado verde y etiqueta E1/E2/E4/E5 llevan marca visual (en el CSV: columna separada o sufijo ★). En la revisión semanal, esas filas se leen PRIMERO y en voz alta — literalmente: la lectura en voz alta activa el procesamiento que el "qué bien salió" automático salta. Pregunta fija del acta: *"¿cuánto me costó a largo plazo este premio?"*
+3. **Añade el contador de "instintos contenidos".** Junto al registro de no-disparos: cada vez que detectaste una operación fuera de plan y NO la ejecutaste (los 90 segundos de 10.3), se registra. Ese contador es la métrica anti-refuerzo: cada instinto contenido es un premio que el circuito equivocado NO cobró — literalmente estás pagando la extinción del hábito, y merece verse.
+4. **Prepara la respuesta a la pregunta incómoda.** La entrevista socrática de la Evaluación N3 te presentará el caso: *"tu mejor operación del mes fue un chase que dio +2,5R — ¿qué dices?"* La respuesta del programa tiene 3 líneas: (1) la operación fue E2 (entrada fuera de regla) con resultado afortunado — la mejor del mes en P/L y la peor en proceso; (2) su valor real es -X R esperados (E negativa del chase) menos el costo de refuerzo del circuito; (3) la acción: registrarla, destacarla y repasarse en la ventana de modificación — no celebrarla. Si puedes decir esto con tu journal en la mano, el nivel está cerrado.
+
+## Error común
+
+**(1) "Una ganancia es una ganancia — al final se suma igual."** Se suma en el P/L del mes; se resta en la esperanza de los próximos. La suma contable ignora el costo de refuerzo: cada premio al atajo compra más atajos futuros con E negativa. La aritmética de la contaminación de arriba muestra la deriva: el "se suma igual" es la frase exacta que pronuncia el trader 6 meses antes de la cuenta a cero. **(2) Castigar las pérdidas en plan con drama.** El complemento del error: el trader que sufre la E0 enseña a su sistema de recompensas que "perder en plan = dolor" → la conducta que evita el dolor es NO disparar o cerrar temprano (miedos #2 y #4). El drama por pérdidas legítimas entrena los miedos; la serenidad ante la E0 entrena la ejecución. **(3) Creer que esto aplica "cuando haya dinero real".** El circuito de refuerzo entrena HOY, en demo: el FOMO que sale bien en demo fabrica el mismo hábito que en real cobrará en dólares — la diferencia entre demo y real es la moneda del premio, no la mecánica del refuerzo. Por eso la misión M-10 es en demo forward YA y con este estándar. **(4) Etiquetar en frío y con generosidad.** "Bueno, al final era una variante de mi setup" — la etiqueta se asigna en caliente (regla de 9.5: la primera de la cadena causal) y la duda es un no (regla de 9.2). La re-clasificación post-hoc de errores en "variantes" es la versión adulta del "yo sabía que iba a ganar": contamina tu estadística de contención y desarma el sistema de alertas. **(5) Medir perfección para disfrazar perfeccionismo.** El contador de operaciones perfectas no es excusa para la parálisis: una semana con cero disparos debidos y cero ejecutados no es perfección — es ausencia de muestra. La perfección se evalúa SOBRE los disparos debidos: ejecutar el 100 % con proceso limpio es el objetivo; no disparar, nunca lo fue.
+
+## Conexión cuantitativa
+
+**Hacia 9.3:** la distinción vive en tus métricas: WR medido solo sobre filas en plan = la ventaja real; WR total con mezcla = la ventaja diluida. Si tu reporte M-9 mezcló ambas (el journal v1 lo permite con la etiqueta), recalcula: la E de tus filas E0/E1-en-plan vs E de filas con error — la diferencia es el precio exacto de tu desviación. **Hacia 10.5:** la ganancia fuera de plan alimenta el sesgo de exceso de confianza ("funcionó porque lo vi bien") — el siguiente eslabón del circuito que esta lección desmonta. **Hacia 10.6:** la fórmula "proceso bajo mi control, resultado bajo el del mercado" es la dicotomía del control de Epicteto aplicada a R: el stoicismo operativo es esta lección elevada a filosofía de trabajo. **Hacia la Evaluación N3:** el caso socrático de "pérdida en plan" exige que puedas narrar una E0 sin drama y con su lugar en la serie — tu journal de la misión M-10 tendrá E0 reales; prepáralas como casos de examen, no como heridas.
+
+---
+
+## 🎯 Puntos clave
+
+1. La matriz 2×2 (proceso × resultado) ordena el oficio: la única celda que construye negocio es **proceso en plan** — el resultado es ruido del mercado, el proceso es tu firma.
+2. **La ganancia fuera de plan es el error más peligroso**: el refuerzo dopaminérgico no distingue buena conducta de conducta premiada — el error castigado corrige, el error premiado se instala.
+3. La aritmética de la contaminación: mezclar N operaciones medidas con operaciones de instinto diluye la esperanza (16R → 14R → 10R según crezca la mezcla) sin que ninguna fila individual "salga mal".
+4. "Operación perfecta" = proceso 5/5 (temperatura, setup, sizing, gestión, registro) — **resultado irrelevante para el juicio**; se cuenta filas sin error, no filas verdes.
+5. El journal es tu reporte de incidentes: las ganancias con error se destacan y se leen primero; las pérdidas E0 se registran sin drama — ambas con la misma seriedad estadística.
+
+## 🔄 Autoevaluación rápida
+
+1. Ordena las 4 celdas de la matriz por peligrosidad a 12 meses vista (más peligrosa → menos) y justifica cada puesto con el mecanismo (refuerzo, inhibición, coste estadístico). ¿Por qué la intuición amateur las ordena al revés?
+2. Tu sistema (E +0,16R, 20 operaciones/mes) recibe 15 operaciones de instinto al mes que "casi empatan" (E = −0,02R tras costes). Calcula la E mixta y compárala con la de 30 instintos. ¿Qué proporción de tu esperanza original sobrevive en cada caso?
+3. Semana cerrada: 3 operaciones, 2 perfectas (una ganadora +2R, una E0), 1 fuera de plan que ganó +1,5R (chase). ¿Qué semana califica mejor — esta o una con 2 operaciones perfectas y ambas E0? Formula el veredicto del acta semanal en 4 líneas con los números.
+
+<details>
+<summary>Ver respuestas</summary>
+
+1. Orden: (1) **Ganancia fuera de plan** — refuerzo dopaminérgico del circuito erróneo: se instala, repite y crece; su daño es diferido y creciente. (2) **Pérdida fuera de plan** — error con dolor: castiga la desviación (mejor prognosis) pero igual destruye inventario y confianza mientras se corrige. (3) **Ganancia en plan** — construye: refuerza el proceso correcto. (4) **Pérdida en plan (E0)** — el menos peligroso por diseño: coste estadístico pre-pagado, sin información nueva, con la re-etiquetación actuando. La intuición amateur invierte el orden porque califica por RESULTADO inmediato: teme lo que duele hoy (E0) y celebra lo que paga hoy (ganancia sin plan) — es la óptica de la serie corta, exactamente lo que la mentalidad probabilística de 10.2 desarma.
+2. Mixta con 15 instintos: $\frac{20 \times 0{,}16 + 15 \times (-0{,}02)}{35} = \frac{3{,}2 - 0{,}3}{35} = +0{,}083R$ — sobrevive el 52 % de la esperanza original (0,083/0,16). Con 30 instintos: $\frac{3{,}2 - 0{,}6}{50} = +0{,}052R$ — sobrevive el 33 %. Y ojo: la comparación por operación engaña — lo grave es el total mensual: de +3,2R/mes a +2,9R (15 instintos) y a +2,6R (30) con el doble de trabajo, de etiquetas que ensuciar y de fatiga. La dilución "suave" es la trampa: nada explota, todo se apaga.
+3. La primera semana es mejor. Veredicto del acta: *"Semana con 3/3 ejecuciones de señales debidas y 2 operaciones perfectas de 3 (67 %). La fila chase (+1,5R, E2) se destaca como error premiado: su valor esperado real es negativo (E chase ≈ −0,16R) y su refuerzo es el riesgo principal de la semana siguiente — acción: contador de instintos contenidos + lectura en voz alta en la revisión. Resultado neto +3,5R es ruido del mercado; la métrica de gestión es proceso. Semana APROBADA con alerta conductual activa."* La semana de 2 E0 sin errores (100 % de proceso) sería superior aún: dos costes estadísticos, cero desviaciones — exactamente la semana que la racha esperada (~9) hace inevitable y que el programa aprueba sin matices.
+
+</details>

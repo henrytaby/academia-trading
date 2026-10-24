@@ -6,12 +6,12 @@
 | Campo | Detalle |
 |---|---|
 | 📋 Programa | FIT-12 — Formación Integral en Trading (12 módulos · 4 niveles) |
-| 📅 Versión | 1.1 · 24 de octubre de 2026 |
+| 📅 Versión | 1.10 · 24 de octubre de 2026 |
 | 🧩 Estructura | 4 niveles × 3 módulos · cada módulo = lecciones + laboratorio + misión + evaluación |
 | 🌍 Enfoque | Universal (sin contexto geográfico; fiscalidad por principios) |
 | 🗣️ Idioma | Español natural + terminología técnica en inglés (glosario al primer uso) |
 | 🔬 Fuentes | Informe [`analisis_cursos.md`](../00-analisis/analisis_cursos.md) (cursos TradingLab 003 y 004 + 9 vacíos cubiertos) |
-| 🤖 Construcción | Paso a paso por agentes IA según [`agents.md`](../../../agents.md) — un sprint por módulo |
+| 🤖 Construcción | Paso a paso por agentes IA según [`agents.md`](../../agents.md) — un sprint por módulo |
 
 ---
 
@@ -353,7 +353,15 @@ Todo módulo se construye con la plantilla [`PLANTILLA_MODULO.md`](../03-recurso
 | Sprint 2 | Módulo 2 completo + plantilla de journal v0 (CSV) | ✅ Hecho |
 | Sprint 3 | Módulo 3 completo + glosario maestro v1 | ✅ Hecho |
 | Sprint 4 | Módulo 4 + examen Nivel 1 (30 preguntas + entrevista socrática + checklist) | ✅ Hecho |
-| … | Un sprint por módulo, según avance real del estudiante | 🔜 Sprint 5 (M5) |
+| Sprint 5 | Módulo 5 completo (M5 · Estructura de Mercado y Liquidez: 6 lecciones + lab top-down de 5 mercados + misión M-5 + glosario a 135) | ✅ Hecho |
+| Sprint 6 | Módulo 6 completo (M6 · Indicadores y Confluencias: 8 lecciones + lab dashboard de confluencias en 50 movimientos + misión informe comparativo + radar de fiabilidad + regla del máximo 3 + glosario a 159) | ✅ Hecho |
+| Sprint 7 | Módulo 7 completo (M7 · Construcción del Sistema: 6 lecciones + lab Sistema v1.0 en 1 página con plantilla de 10 componentes + misión 30 repeticiones a ciegas + Evaluación Nivel 2 (examen-n2) + glosario a 179) | ✅ Hecho |
+| Sprint 8 | Módulo 8 completo (M8 · Gestión del Riesgo: 6 lecciones con aportes propios de cartera/correlación y frenos en cascada + lab calculadora de position sizing en 3 pestañas con 3 casos de control + position_sizing.py del repo con tests + misión 20 escenarios a mano ≥ 18/20 con hoja de escenarios + quiz umbral ≥ 90 % + glosario a 199 términos reales) | ✅ Hecho |
+| Sprint 9 | Módulo 9 completo (M9 · Backtesting, Journal y Validación: 6 lecciones con aportes propios de journal con taxonomía E0-E7 y revisión semanal/mensual + lab backtesting ciego de 100 operaciones con journal v1 + misión reporte de 13 métricas con 3 conclusiones + metricas_backtest.py del repo con tests + quiz ≥ 80 % + glosario a 224) | ✅ Hecho |
+| Sprint 10 | Módulo 10 completo (M10 · Psicotrading Científico: 7 lecciones con aporte propio de diario emocional estructurado y protocolo de temperatura pre-sesión + lab de temperatura y diario + misión 10 sesiones forward con checklist emocional pre/post y tasa de contención + quiz ≥ 80 % + Evaluación Nivel 3 (examen-n3) + glosario a 251) | ✅ Hecho |
+| Sprint 11 | Módulo 11 completo (M11 · La Industria: 7 lecciones con aportes propios de due diligence universal sin marcas, reglas finas de prop firms (vacío 6) y fiscalidad por principios (vacío 7) + lab de due diligence de 3 brokers y 3 prop firms con matriz universal de 25 puntos + misión informe de elección defendido en socrática + plan de capitalización a 12 meses + quiz ≥ 80 % + glosario a 278) | ✅ Hecho |
+| Sprint 12 | Módulo 12 completo (M12 · Plan de Trading y Plan de Negocio: 7 lecciones con aportes propios de Plan de Trading de 10 secciones, KPIs de negocio y política de capital/retiros (vacíos 2 y 8) + lab Plan de Trading v1.0 y Plan de Negocio + misión final examen integral de 50 preguntas ≥ 85 % + defensa socrática extendida + quiz ≥ 80 % + Certificación interna FIT-12 (examen-final.md) + glosario a 302) | ✅ Hecho |
+| 🏁 | PROGRAMA COMPLETO — 12/12 módulos publicados | ✅ Fit-12 cerrado |
 
 ## 12. Glosario Vivo
 
@@ -366,4 +374,12 @@ El glosario maestro se construye incrementalmente en [`docs/03-recursos/glosario
 | 1.0 | 2026-10-24 | Syllabus inicial: 4 niveles, 12 módulos, matriz de trazabilidad, sistema de evaluación y roadmap de sprints |
 | 1.1 | 2026-10-24 | Temario aprobado por el estudiante · Integrado el recurso transversal "La Receta de tu Primera Operación" en M4 (con veto CRO al marco "primer dólar": objetivo = primera operación procesada en demo) |
 | 1.2 | 2026-10-24 | N1 completo: M3 y M4 publicados (Sprints 2-4 ejecutados); examen integrador N1 creado en docs/03-recursos/evaluaciones/; glosario maestro a 111 entradas |
+| 1.3 | 2026-10-24 | N2 abierto: M5 · Estructura de Mercado y Liquidez publicado (Sprint 5) con nomenclatura unificada PA↔SMC; glosario maestro a 135 entradas |
+| 1.4 | 2026-10-24 | N2 avanza: M6 · Indicadores y Confluencias publicado (Sprint 6, 8 lecciones) con radar de fiabilidad por evidencia y regla del máximo 3 indicadores (aportes propios); glosario maestro a 159 entradas |
+| 1.5 | 2026-10-24 | N2 cerrado: M7 · Construcción del Sistema publicado (Sprint 7) con Sistema v1.0, catálogo de arquetipos, matriz WR×R:B, estadística de rachas y criterios de robustez (aportes propios); Evaluación Nivel 2 creada (docs/03-recursos/evaluaciones/examen-n2.md); glosario maestro a 179 entradas |
+| 1.6 | 2026-10-24 | N3 abierto: M8 · Gestión del Riesgo publicado (Sprint 8) con position sizing de fórmula universal, asimetría del drawdown, riesgo de cartera por correlación con topes (vacío 1) y frenos en cascada con protocolo de apagado (aportes propios); laboratorio con calculadora en 3 pestañas + scripts/core/position_sizing.py activado con tests; misión de 20 escenarios de sizing (≥ 18/20) con hoja en docs/03-recursos/laboratorio/; quiz con umbral elevado ≥ 90 %; glosario maestro a 199 entradas reales (recuento auditado: el histórico 179 sobrestimaba 2 filas de encabezado) |
+| 1.7 | 2026-10-24 | M9 · Backtesting, Journal y Validación publicado (Sprint 9): epistemología del backtest (N ≥ 100, IC ±9,6 pp, 3 sesgos), protocolo manual con setup válido operativo, 13 métricas del reporte con decisión de 3 vías (costes: PF 1,40 → 1,25, WR* neto 34,8 %), forward testing con embudo de la evidencia, journal v1 con taxonomía de errores E0-E7 y pérdida ≠ error (vacío 3) y revisión semanal/mensual con ventana de modificación (vacío 3); lab de 100 backtests ciegos + journal/plantilla_journal_v1.md (CSV 24 columnas + actas) + scripts/core/metricas_backtest.py con tests; misión M-9 con reporte y 3 conclusiones; glosario a 224 |
+| 1.8 | 2026-10-24 | N3 cerrado: M10 · Psicotrading Científico publicado (Sprint 10) con neurobiología del riesgo (secuestro emocional, 4 detectores), 5 miedos de Douglas + 5 axiomas de la incertidumbre, 5 avaricias con coste cuantificado, pérdida ≠ error formalizada (matriz proceso × resultado), 4 sesgos de ejecución con antídotos y mapa del tilt, estoicismo operativo con σ individual (±1,52R) y rutina de ventana de ejecución (aportes propios: diario emocional estructurado + protocolo de temperatura pre-sesión verde/ámbar/rojo); laboratorio de temperatura + misión de 10 sesiones forward con checklist emocional; Evaluación Nivel 3 creada (docs/03-recursos/evaluaciones/examen-n3.md) con entrevista de graduación de 3 casos; glosario a 251 |
+| 1.9 | 2026-10-24 | N4 abierto: M11 · La Industria publicado (Sprint 11) con brokers A-Book/B-Book y 5 pilares de selección, radar de las 5 estafas del ecosistema minorista con protocolo de verificación regulatoria universal, prop firms con el embudo de ingresos por fees y las cifras del sector (92 % FTMO · ~0,07 % datos filtrados MFF), las 6 reglas finas con lectura forense de contrato, la matriz de riesgo dinámico 0,25-0,50 % con la decisión "todavía no" y el árbol de las 4 puertas (aportes propios: due diligence universal sin marcas, reglas finas de prop firms — vacío 6 — y fiscalidad por principios — vacío 7 —); laboratorio de due diligence de 6 proveedores con matriz universal de 25 puntos; misión M-11 con informe defendido en socrática + plan de capitalización a 12 meses; glosario a 278 |
+| 1.10 | 2026-10-24 | PROGRAMA COMPLETO: M12 · Plan de Trading y Plan de Negocio publicado (Sprint 12) con Plan de Trading documental de 10 secciones y test del clon aplicado al negocio, rutina semanal de 4 capas (~60-70 h/mes), dashboard de 12 KPIs con horas vs retorno, gestión patrimonial de 3 cubos con política de retiros y protocolos de meses extremos, hoja de ruta de 5 fases con candados acumulativos y escalera de riesgo 0 % → 1 % (aportes propios: Plan de Trading de 10 secciones, KPIs de negocio y política de capital/retiros — vacíos 2 y 8), biblioteca esencial del canon de 5 y Constitución de mejora continua contra el nomadeo; laboratorio Plan de Trading v1.0 + Plan de Negocio; misión final: examen integral de 50 preguntas ≥ 85 % (docs/03-recursos/evaluaciones/examen-final.md) + defensa socrática extendida; Certificación interna FIT-12 con 12 semanas de operativa documentada; glosario a 302 |
 

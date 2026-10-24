@@ -141,4 +141,4 @@ Al aprobar todo: **N1 🏆 certificado** en el README raíz, y se abre N2 (M5 ·
 - [La Receta de tu Primera Operación](../../03-recursos/laboratorio/receta-primera-operacion.md) — sus pasos 3–11 se ejecutan con este módulo
 - [Examen integrador N1](../../03-recursos/evaluaciones/examen-n1.md) — evaluación 🏆 del Nivel 1
 - [Módulo 3 · Anatomía del Gráfico](../mod-03-anatomia-del-grafico/README.md) — anterior
-- Módulo 5 · Estructura de Mercado y Liquidez — siguiente (N2; se publica en el Sprint 5)
+- [Módulo 5 · Estructura de Mercado y Liquidez](../mod-05-estructura-de-mercado-y-liquidez/README.md) — siguiente (N2, 🟢 publicado en el Sprint 5)
