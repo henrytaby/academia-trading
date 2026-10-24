@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Módulo 3 · Anatomía del Gráfico · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a class="active" href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>🧱 N1 · Base<span class="sep">/</span>M3 · Anatomía del Gráfico<span class="sep">/</span>Módulo 3 · Anatomía del Gráfico</div>
+  <article class="doc-body">
+<h1>Módulo 3 · Anatomía del Gráfico</h1>
+<blockquote class="gfm-warn"><p><strong>⚠️ WARNING:</strong> <strong>Contenido educativo.</strong> La mayoría de los traders minoristas pierde dinero (estudios de reguladores estiman entre 70 % y 90 %). Nada en este repositorio constituye asesoría financiera.</p>
+</blockquote>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🧱 Nivel</td>
+<td>1 · Fundamentos</td>
+</tr>
+<tr>
+<td>📦 Módulo</td>
+<td>3 de 12 (FIT-12)</td>
+</tr>
+<tr>
+<td>🔬 Trazabilidad</td>
+<td>003 · M2.1–2.6 · 004 · M1.5, M3.3–3.4 · <strong>Aporte propio:</strong> catálogo de patrones con fiabilidad evidenciada y protocolo de confirmación unificado</td>
+</tr>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>4,5 h de teoría + 4–6 h de laboratorio/misión/quiz</td>
+</tr>
+<tr>
+<td>📋 Estado</td>
+<td>🟢 Publicado (Sprint 3)</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>🎯 Objetivo del Módulo</h2>
+<p>Leer el <strong>gráfico desnudo</strong> — velas, ciclos, zonas, confirmaciones y régimen — sin indicadores todavía: primero el precio. Al terminar este módulo descompondrás cualquier vela en cuerpo/mechas/cierre y sabrás qué subasta la produjo (M3.1), ubicarás el mercado en su ciclo de 4 fases (M3.2), marcarás zonas — no líneas — con gradiente de fortaleza honesto (M3.3), ejecutarás el protocolo de confirmación en 3 pasos que filtra la mayoría de los falsos rompimientos (M3.4), reconocerás los patrones elementales como firmas de procesos y no como oráculos (M3.5), y clasificarás el régimen — tendencia, rango o transición — ANTES de buscar setup, entendiendo por qué la mayoría del tiempo la respuesta correcta es observar (M3.6). Este módulo existe porque el M5 te enseñará la estructura institucional sobre estas mismas bases: quien no lee el precio desnudo no puede auditar lo que encima se dibuja.</p>
+<h2>📚 Lecciones</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Lección</th>
+<th>Esencia</th>
+<th>Tiempo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.1</td>
+<td><a href="leccion-3-1.html">Velas japonesas</a></td>
+<td>OHLC, cuerpo vs mechas, el cierre como veredicto; fractalidad literal (cada vela contiene un gráfico); lectura en 4 preguntas; Dojima y Homma</td>
+<td>40–50 min</td>
+</tr>
+<tr>
+<td>3.2</td>
+<td><a href="leccion-3-2.html">Los 4 ciclos del mercado</a></td>
+<td>Acumulación → markup → distribución → markdown; Dow (impulso+pullback, HH/HL); Weinstein Stages; clasificar el ciclo en 3 preguntas</td>
+<td>40–50 min</td>
+</tr>
+<tr>
+<td>3.3</td>
+<td><a href="leccion-3-3.html">Soportes y resistencias</a></td>
+<td>Zonas, no líneas; estáticos/diagonales/dinámicos; memoria de mercado y polaridad; gradiente de fortaleza (muchos toques CONSUMEN); protocolo de marcado</td>
+<td>45–60 min</td>
+</tr>
+<tr>
+<td>3.4</td>
+<td><a href="leccion-3-4.html">Confirmación en 3 pasos</a></td>
+<td>Ruptura → cierre fuera → retesteo que se sostiene; pullback/throwback; el falso rompimiento como mecanismo; caso con R:B 3,1 y lote calculado</td>
+<td>45–60 min</td>
+</tr>
+<tr>
+<td>3.5</td>
+<td><a href="leccion-3-5.html">Patrones elementales</a></td>
+<td>Vela (envolvente, martillo, estrella, doji) y figura (doble techo/suelo, triángulo, cuña, bandera) como firmas de procesos; checklist de 5 preguntas; fiabilidad honesta</td>
+<td>45–60 min</td>
+</tr>
+<tr>
+<td>3.6</td>
+<td><a href="leccion-3-6.html">Rangos vs tendencias</a></td>
+<td>Régimen como permiso operativo; ~70 % del tiempo en rango <em>(aproximación)</em>; el whipsaw como mecanismo de cobro; test de 3 marcas; transición = operativa cero</td>
+<td>40–50 min</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote class="gfm-tip"><p><strong>💡 TIP:</strong> <strong>Cómo estudiar este módulo:</strong> dile a tu agente <em>"Siguiente lección"</em> y sigue el protocolo de sesión de estudio (§ 5.3 de <code>agents.md</code>). Este módulo es el más visual del N1: cada lección pide abrir TradingView (o equivalente) y VER lo que se describe — el gráfico es el libro de ejercicios.</p>
+<p><strong>Puente con la <a href="receta-primera-operacion.html">Receta de tu Primera Operación</a>:</strong> con M3 completado, el Paso 3 de la receta (análisis mínima: régimen + zonas + dirección) ya tiene todo su método. Los pasos 4–11 siguen esperando al Módulo 4.</p>
+</blockquote>
+<h2>🧪 Laboratorio · Ciclos y Zonas en 10 Gráficos</h2>
+<p><strong>Materiales:</strong> TradingView (o plataforma equivalente) con <strong>Bar Replay</strong> (reproducción histórica) — el M4.1 lo formalizará; aquí solo lo usas como máquina del tiempo. 5 instrumentos: tu par principal (EUR/USD), XAU/USD, un índice (US30/US100), y 2 más a elección (otro major, otro índice).</p>
+<p><strong>Procedimiento paso a paso:</strong></p>
+<ol>
+<li><strong>Elige 10 episodios históricos</strong> (2 por instrumento) en D1/H4: elige tramos con giro claro (una expansión tras rango, una reversión tras tendencia) — con Bar Replay retrocede hasta ANTES del giro, en un punto donde el futuro no sea visible.</li>
+<li><strong>Por episodio, clasifica el ciclo</strong> (M3.2, test de 3 preguntas): ¿acumulación, markup, distribución o markdown? Anótalo ANTES de avanzar el replay.</li>
+<li><strong>Marca 2–4 zonas por episodio</strong> (protocolo M3.3: extremos de swing, orígenes de expansión, rectángulos con cuerpo, solo H4/D1) y gradúalas (fresca/consumida, origen expansivo o no).</li>
+<li><strong>Avanza el replay vela a vela</strong> y anota: ¿el precio respetó, retesteó o rompió cada zona? ¿Hubo confirmación en 3 pasos en las roturas? ¿Apareció el whipsaw?</li>
+<li><strong>Audítate:</strong> de tus 20–40 zonas marcadas, ¿qué porcentaje respetó tu marcado? ¿Dónde fallaste: extremo vs cuerpo, marco mezclado, o zona-consumida tratada como fresca?</li>
+</ol>
+<p><strong>Entregable:</strong> capturas de los 10 episodios con tus anotaciones + el mini-informe de autoauditoría, guardados en <code>journal/laboratorio-m3.md</code>. La honestidad del informe vale más que el porcentaje de acierto: el error identificado es la técnica adquirida.</p>
+<h2>🎯 Misión</h2>
+<blockquote class="gfm-important"><p><strong>❗ IMPORTANT:</strong> Misión M-3 · Bitácora de 20 Niveles
+<strong>Objetivo:</strong> construir tu primera base de datos personal de zonas: 20 niveles reales anotados ANTES de conocer su desenlace, con el resultado posterior documentado — el primer contacto con la estadística visual propia.
+<strong>Entregable:</strong> <code>journal/bitacora-niveles-m3.md</code> con la tabla de 20 niveles (formato abajo) + un análisis final (¿qué tipo de zona respetó más: fresca o visitada? ¿con origen expansivo o sin él? ¿en qué marco?).
+<strong>Criterio de aceptación:</strong> 20 filas completas con: fecha de marcado, instrumento, marco, tipo (soporte/resistencia), coordenadas de la zona (borde superior e inferior), clasificación de fortaleza (gradiente M3.3), régimen del día (M3.6), y resultado posterior (respetado / retesteado y roto / barrida y revertido) verificado en el gráfico.
+<strong>Etiqueta en journal:</strong> <code>mision-3-bitacora</code> · <strong>Tiempo estimado:</strong> 20 niveles × 15–20 min de seguimiento, repartidos en 2–3 semanas de mercado real (o acelerado con Bar Replay si el calendario aprieta).
+<strong>Regla de oro:</strong> el nivel se anota ANTES del desenlace. Ajustar la zona después de ver dónde giró el precio es curvar la regla tras medir — invalida la fila y, si se repite, la misión entera.</p>
+</blockquote>
+<p><strong>Formato de fila (copiar en la bitácora):</strong></p>
+<pre><code class="language-text">#N — fecha_marcado — instrumento — marco — tipo (S/R)
+Zona: [borde_sup – borde_inf] — fortaleza: [fresca/consumida · origen: expansivo/ruido · confluencias]
+Régimen al marcar: [tendencia/rango/transición — test de 3 marcas]
+Resultado (a completar después): [respetado / retesteado y roto / barrida y revertido] — fecha_resolución
+Nota (1 línea): qué aprendió este nivel sobre tu marcado
+</code></pre>
+<h2>✅ Evaluación / Criterio de Graduación</h2>
+<ul>
+<li><strong>Laboratorio entregado:</strong> 10 episodios clasificados con zonas marcadas y autoauditoría honesta.</li>
+<li><strong>Misión M-3 completa:</strong> 20 niveles anotados antes del desenlace + análisis final por clasificación de zona.</li>
+<li><strong>Análisis en vivo:</strong> un gráfico actual (tu instrumento principal, H4/D1) leído con el agente siguiendo la rúbrica: ciclo (3 preguntas), 2–4 zonas con gradiente, régimen (test de 3 marcas) y — si existe — el estado de cualquier rotura según el protocolo de 3 pasos.</li>
+<li><strong>Quiz de graduación:</strong> ≥ 8/10.</li>
+<li>Al aprobar todo: el módulo queda marcado ✅ en el README raíz y se abre el <a href="hub-mod-04.html">Módulo 4 · Plataforma y Primera Ejecución</a> — donde la <a href="receta-primera-operacion.html">Receta de tu Primera Operación</a> ejecuta sus pasos 3–11 y cierra el nivel con el <a href="examen-n1.html">Examen N1</a>.</li>
+</ul>
+<h2>📝 Quiz de Graduación</h2>
+<ol>
+<li>Descompón una vela en sus dos componentes y di qué mide cada uno. ¿Cuál de los cuatro precios (OHLC) es el veredicto del período y por qué el programa evalúa confirmaciones sobre él?</li>
+<li>Nombra los 4 ciclos en orden y describe en una frase cada uno. ¿En qué fase compra en fragmentos el institucional sin mover el precio?</li>
+<li>¿Qué secuencia de máximos/mínimos define una tendencia alcista sana según Dow, y qué evento marca su muerte?</li>
+<li>¿Por qué el programa marca ZONAS y no líneas? Da las dos razones (macroestructura de las órdenes + qué implica en la práctica del marcado).</li>
+<li>Una zona acumula 7 toques recientes. ¿Más fuerte o más débil? ¿Por qué, con la lógica de órdenes pendientes (M2.2)?</li>
+<li>Enuncia el protocolo de confirmación en 3 pasos completo. ¿Qué fenómeno de la Lección 2.3 es el que el paso 2 (cierre fuera) filtra?</li>
+<li>¿Qué es la polaridad y por qué el retesteo de un nivel confirmado es la entrada con mejor estadística del protocolo?</li>
+<li>¿Qué es un falso rompimiento, qué proceso del mercado lo genera (no es mala suerte), y cuál es la única conducta permitida ante él durante la formación?</li>
+<li>Aplica el test de 3 marcas al caso: "US30 lleva 9 sesiones solapadas entre dos bordes; las roturas intra-vela vuelven siempre; cuerpos pequeños alternados". ¿Clasificación y qué se prohíbe en ese régimen?</li>
+<li>¿Qué es el whipsaw, a quién cobra y qué dos reglas del programa lo neutralizan?</li>
+</ol>
+<details>
+<summary>Ver clave de respuestas</summary>
+
+1. **Cuerpo** (apertura→cierre): quién ganó la subasta del período y con cuánta determinación. **Mechas** (cuerpo→extremos): dónde fue rechazada la urgencia. El **Close** es el veredicto: es el último acuerdo con toda la información del período; un toque intra-vela puede ser una barrida que se revierte, mientras el cierre implica que la urgencia sobrevivió al período entero — evaluar en cierres filtra falsos rompimientos.
+2. **Acumulación** (los grandes compran en fragmentos en un rango post-caída, sin mover el precio) → **markup** (la oferta local se consumió y el precio expande con cuerpo pleno) → **distribución** (los grandes venden su inventario al retail eufórico en un rango alto) → **markdown** (inventario vendido, urgencia de miedo, caída rápida). Compran sin mover el precio en la **acumulación**.
+3. Tendencia alcista sana: **máximos y mínimos ascendentes sucesivos (HH/HL)** con impulsos y pullbacks que respetan la estructura. Muere cuando la secuencia se rompe — el precio falla en hacer HH y hace un LL (mínimo más bajo) con cierre decidido: ruptura de estructura.
+4. (a) Macroestructura: los grandes fragmentan y ningún nivel reacciona en un precio exacto — el interés vive en un área con cuerpo; una línea de píxel es falsa precisión. (b) Práctica: marcar rectángulos define dónde entra, dónde muere la idea (SL tras el cuerpo) y dónde está el objetivo (borde de la zona opuesta) — la línea no permite ninguno de los tres cálculos.
+5. **Más débil.** Cada reacción consume órdenes pendientes: los que querían comprar/vender en la zona ya lo hicieron. A la séptima visita el almacén está casi vacío — la zona tiene fama pero poca munición real, y es hábitat clásico de barrida final.
+6. **Ruptura** (el precio atraviesa el nivel) → **cierre fuera** (la vela del marco cierra decididamente más allá) → **confirmación** (retesteo del nivel roto que se sostiene, con reacción del lado nuevo). El paso 2 filtra la **barrida de stops/liquidez** (Lección 2.3): la rotura momentánea que detona órdenes y vuelve — el cierre fuera implica que la urgencia sobrevivió al período.
+7. Polaridad: el nivel roto y confirmado **cambia de bando** (resistencia rota → soporte; soporte roto → resistencia). El retesteo es la entrada con mejor estadística porque (a) el filtro del cierre ya está descontado, (b) hay documentación del nuevo bando (compradores que esperaban el retesteo + cubrimiento de atrapados), y (c) el SL va tras la estructura del retesteo, no en el depósito obvio de stops.
+8. Falso rompimiento: rotura que no logra cierre decidido fuera (o vuelve con fuerza tras lograrlo) y gira. Lo genera el **mecanismo de recolección de liquidez**: detrás de todo nivel obvio hay stops y entradas del retail, y atravesarlo unas velas los detona (M2.3). Conducta en formación: dejar que el protocolo te filtre a TI (no operar roturas sin los 3 pasos) — operar el falso como setup del lado contrario llega después, con criterio y estadística propia.
+9. Test: estructura sin progresión (solapamiento) ✓ · recorridos que vuelven al corredor ✓ · cuerpos pequeños alternados ✓ → **rango confirmado** (3/3). Prohibido: anticipar roturas de los bordes; el centro del rango es tierra de nadie; lo operable es solo el rechazo confirmado en bordes (y suspender la lógica si un borde rompe con cierre H4 fuera: el régimen puede estar cambiando).
+10. Whipsaw: el vaivén de roturas falsas de rango que cobra 1R a cada comprador de rompimiento (atracción de tardíos + barrida + retorno, repetido). Lo neutralizan: (1) clasificar el régimen ANTES de buscar setups — en rango, las roturas anticipadas no existen como setup; (2) operar roturas solo con el protocolo de 3 pasos (cierre fuera + retesteo sostenido), dejando que el filtro rechace las primeras roturas.
+
+</details>
+
+<h2>📖 Glosario del Módulo</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Término</th>
+<th>Inglés</th>
+<th>Definición</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OHLC</td>
+<td><em>open/high/low/close</em></td>
+<td>Los cuatro precios de una vela: apertura, máximo, mínimo, cierre</td>
+</tr>
+<tr>
+<td>Cuerpo</td>
+<td><em>candle body</em></td>
+<td>Distancia apertura-cierre; mide la determinación del bando ganador</td>
+</tr>
+<tr>
+<td>Mecha</td>
+<td><em>wick/shadow</em></td>
+<td>Extensión del cuerpo al máximo/mínimo; mide el viaje rechazado</td>
+</tr>
+<tr>
+<td>Doji</td>
+<td><em>doji</em></td>
+<td>Vela con apertura ≈ cierre; empate de la subasta, pausa — nunca señal de dirección</td>
+</tr>
+<tr>
+<td>Martillo</td>
+<td><em>hammer</em></td>
+<td>Mecha inferior ≥ 2× cuerpo; venta absorbida abajo — señal solo EN contexto de zona</td>
+</tr>
+<tr>
+<td>Envolvente</td>
+<td><em>engulfing</em></td>
+<td>Vela que envuelve el cuerpo de la anterior en sentido contrario; reemplazo de bando</td>
+</tr>
+<tr>
+<td>Ciclo</td>
+<td><em>market cycle</em></td>
+<td>Acumulación → markup → distribución → markdown; el mapa de fases de todo mercado</td>
+</tr>
+<tr>
+<td>Impulso</td>
+<td><em>impulse</em></td>
+<td>Pierna de expansión en la dirección dominante con energía</td>
+</tr>
+<tr>
+<td>Pullback</td>
+<td><em>pullback</em></td>
+<td>Retroceso de una tendencia que respeta la estructura; andén de continuación</td>
+</tr>
+<tr>
+<td>Throwback</td>
+<td><em>throwback</em></td>
+<td>Retorno al origen de una rotura para retestear antes de continuar</td>
+</tr>
+<tr>
+<td>HH/HL</td>
+<td><em>higher high / higher low</em></td>
+<td>Secuencia de máximos y mínimos ascendentes: firma de tendencia alcista sana</td>
+</tr>
+<tr>
+<td>LL/LH</td>
+<td><em>lower low / lower high</em></td>
+<td>Secuencia descendente: firma de tendencia bajista</td>
+</tr>
+<tr>
+<td>Soporte/Resistencia</td>
+<td><em>support/resistance</em></td>
+<td>Zona con interés comprador/vendedor pendiente capaz de detener o invertir</td>
+</tr>
+<tr>
+<td>Zona</td>
+<td><em>zone</em></td>
+<td>Área (rectángulo con cuerpo) donde el precio reaccionó — la forma correcta de marcar niveles</td>
+</tr>
+<tr>
+<td>Polaridad</td>
+<td><em>polarity</em></td>
+<td>El nivel roto y confirmado cambia de bando: soporte↔resistencia</td>
+</tr>
+<tr>
+<td>Retesteo</td>
+<td><em>retest</em></td>
+<td>Vuelta del precio a un nivel roto para probarlo antes de continuar; paso 3 del protocolo</td>
+</tr>
+<tr>
+<td>Falso rompimiento</td>
+<td><em>false breakout</em></td>
+<td>Rotura sin cierre decidido fuera (o revertida tras lograrlo); mecanismo de recolección de liquidez</td>
+</tr>
+<tr>
+<td>Cuello</td>
+<td><em>neckline</em></td>
+<td>Línea de decisión de una figura (valle del doble techo); su rotura confirmada activa el patrón</td>
+</tr>
+<tr>
+<td>Régimen</td>
+<td><em>market regime</em></td>
+<td>Estado estructural: tendencia, rango o transición; el permiso operativo de cada sistema</td>
+</tr>
+<tr>
+<td>Transición</td>
+<td><em>transition</em></td>
+<td>Régimen mezclado (señales de dos estados); protocolo: operativa reducida o cero</td>
+</tr>
+<tr>
+<td>Whipsaw</td>
+<td><em>whipsaw</em></td>
+<td>Vaivén de roturas falsas de rango que cobra 1R por intento a los impacientes</td>
+</tr>
+<tr>
+<td>Bar Replay</td>
+<td><em>bar replay</em></td>
+<td>Reproducción vela a vela del histórico para practicar sin ver el futuro</td>
+</tr>
+</tbody>
+</table></div>
+<h2>🔗 Referencias</h2>
+<ul>
+<li><a href="SYLLABUS.html">SYLLABUS.md § 5 — N1, Módulo 3</a></li>
+<li><a href="analisis_cursos.html">analisis_cursos.md</a> — aporte propio del módulo: catálogo de patrones con fiabilidad evidenciada</li>
+<li><a href="receta-primera-operacion.html">La Receta de tu Primera Operación</a> — su Paso 3 (análisis mínima) se completa con este módulo</li>
+<li><a href="hub-mod-02.html">Módulo 2 · El Motor del Precio</a> — anterior</li>
+<li><a href="hub-mod-04.html">Módulo 4 · Plataforma y Primera Ejecución</a> — siguiente (cierra el N1 con el <a href="examen-n1.html">Examen N1</a>; el N2 arranca con M5 en el Sprint 5)</li>
+</ul>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="leccion-2-6.html"><span class="lbl">← Anterior</span><span class="ttl">Lección 2.6 · Calendario macro e intermercados</span></a>
+    <a class="next" href="leccion-3-1.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 3.1 · Velas japonesas</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

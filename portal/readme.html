@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>🎓 Academia de Trading — Programa FIT-12 · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a class="active" href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>Inicio<span class="sep">/</span>🎓 Academia de Trading — Programa FIT-12</div>
+  <article class="doc-body">
+<h1>🎓 Academia de Trading — Programa FIT-12</h1>
+<p>Programa de formación integral en trading construido <strong>paso a paso con agentes IA</strong>, basado en la auditoría de dos cursos de referencia (TradingLab 003 y 004) y en 9 vacíos curriculares detectados y cubiertos.</p>
+<blockquote class="gfm-warn"><p><strong>⚠️ WARNING:</strong> <strong>Contenido educativo.</strong> La mayoría de los traders minoristas pierde dinero (estudios de reguladores estiman entre 70 % y 90 %). Nada en este repositorio constituye asesoría financiera.</p>
+</blockquote>
+<h2>🧭 Documentos Rectores (leer en este orden)</h2>
+<ol>
+<li><a href="agents.html"><code>agents.md</code></a> — instrucciones vinculantes para los agentes IA</li>
+<li><a href="SYLLABUS.html"><code>docs/01-syllabus/SYLLABUS.md</code></a> — temario rector (4 niveles × 12 módulos)</li>
+<li><a href="analisis_cursos.html"><code>docs/00-analisis/analisis_cursos.md</code></a> — auditoría de los cursos fuente</li>
+<li><a href="PLANTILLA_MODULO.html"><code>docs/03-recursos/plantillas/PLANTILLA_MODULO.md</code></a> — formato estándar de módulo</li>
+<li><a href="worklog.html"><code>worklog.md</code></a> — bitácora de construcción</li>
+</ol>
+<h2>🗺️ Estructura del Repositorio</h2>
+<pre><code class="language-text">academia-trading/
+├── agents.md                  ← instrucciones para los agentes
+├── README.md                  ← este archivo (portada + estado)
+├── worklog.md                 ← bitácora de construcción (append-only)
+├── portal/                    ← portal web del curso (106 páginas: índice, breadcrumb, prev/next, modo oscuro)
+│   ├── index.html             ← portada con los 4 niveles y accesos rápidos
+│   ├── *.html                 ← 1 página por documento (105)
+│   ├── assets/                ← style.css + app.js (CDN: KaTeX 0.16.11 + mermaid@10)
+│   └── files/                 ← archivos enlazados no-markdown (calculadoras .py, journal .csv)
+├── docs/
+│   ├── 00-analisis/           ← auditoría de cursos base
+│   ├── 01-syllabus/           ← temario rector (v1.10)
+│   ├── 02-modulos/            ← los 12 módulos del programa
+│   │   ├── mod-01-negocio-trading/   (Sprint 1)
+│   │   ├── mod-02-motor-del-precio/  (Sprint 2)
+│   │   ├── mod-03-anatomia-del-grafico/ (Sprint 3)
+│   │   ├── mod-04-plataforma-y-primera-ejecucion/ (Sprint 4)
+│   │   ├── mod-05-estructura-de-mercado-y-liquidez/ (Sprint 5)
+│   │   ├── mod-06-indicadores-y-confluencias/ (Sprint 6)
+│   │   ├── mod-07-construccion-del-sistema/ (Sprint 7)
+│   │   ├── mod-08-gestion-del-riesgo/ (Sprint 8)
+│   │   ├── mod-09-backtesting-journal-y-validacion/ (Sprint 9)
+│   │   ├── mod-10-psicotrading-cientifico/ (Sprint 10)
+│   │   ├── mod-11-la-industria/ (Sprint 11)
+│   │   └── mod-12-plan-trading-negocio/ (Sprint 12)
+│   └── 03-recursos/           ← plantillas + glosario vivo + laboratorio + evaluaciones
+│       ├── laboratorio/       ← receta de primera operación + 20 escenarios de sizing (M8)
+│       └── evaluaciones/      ← exámenes N1, N2, N3 y final
+├── journal/                   ← el registro del negocio: journal v1 (taxonomía E0-E7 + actas) + v0 histórico
+└── scripts/
+    ├── core/                  ← calculadoras Python del programa (position_sizing.py S8 · metricas_backtest.py S9)
+    └── portal/                ← generador del portal: build_portal.py + assets_src/ (fuente única)
+</code></pre>
+<h2>📊 Estado del Programa</h2>
+<p><strong>Progreso global: 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 — 12/12 módulos publicados (N1 ✅ · N2 ✅ · N3 ✅ · N4 ✅) — PROGRAMA COMPLETO 🏆.</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Nivel</th>
+<th>Módulo</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🧱 N1</td>
+<td>M1 · El Trading como Negocio y Ciencia</td>
+<td>🟢 Publicado (Sprint 1 ✅)</td>
+</tr>
+<tr>
+<td>🧱 N1</td>
+<td>M2 · El Motor del Precio</td>
+<td>🟢 Publicado (Sprint 2 ✅)</td>
+</tr>
+<tr>
+<td>🧱 N1</td>
+<td>M3 · Anatomía del Gráfico</td>
+<td>🟢 Publicado (Sprint 3 ✅)</td>
+</tr>
+<tr>
+<td>🧱 N1</td>
+<td>M4 · Plataforma y Primera Ejecución</td>
+<td>🟢 Publicado (Sprint 4 ✅)</td>
+</tr>
+<tr>
+<td>📐 N2</td>
+<td>M5 · Estructura de Mercado y Liquidez</td>
+<td>🟢 Publicado (Sprint 5 ✅)</td>
+</tr>
+<tr>
+<td>📐 N2</td>
+<td>M6 · Indicadores y Confluencias</td>
+<td>🟢 Publicado (Sprint 6 ✅)</td>
+</tr>
+<tr>
+<td>📐 N2</td>
+<td>M7 · Construcción del Sistema</td>
+<td>🟢 Publicado (Sprint 7 ✅)</td>
+</tr>
+<tr>
+<td>🛡️ N3</td>
+<td>M8 · Gestión del Riesgo</td>
+<td>🟢 Publicado (Sprint 8 ✅)</td>
+</tr>
+<tr>
+<td>🛡️ N3</td>
+<td>M9 · Backtesting, Journal y Validación</td>
+<td>🟢 Publicado (Sprint 9 ✅)</td>
+</tr>
+<tr>
+<td>🛡️ N3</td>
+<td>M10 · Psicotrading Científico</td>
+<td>🟢 Publicado (Sprint 10 ✅)</td>
+</tr>
+<tr>
+<td>💼 N4</td>
+<td>M11 · La Industria</td>
+<td>🟢 Publicado (Sprint 11 ✅)</td>
+</tr>
+<tr>
+<td>💼 N4</td>
+<td>M12 · Plan de Trading y Plan de Negocio</td>
+<td>🟢 Publicado (Sprint 12 ✅)</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p><strong>Nota:</strong> el programa avanza a razón de un sprint por módulo, según tu avance real. Las filas ⏳ <strong>no son contenido perdido ni borradores ocultos</strong>: son módulos aún no construidos — cuando llegue su sprint pasarán a 🟢 igual que M1-M12. La numeración (Sprint 5, 6, 7…) es el orden planificado en el <a href="SYLLABUS.html">SYLLABUS</a> y puede ajustarse a tu ritmo.</p>
+</blockquote>
+<ul>
+<li><strong>Sprint 0 ✅:</strong> estructura del repo + agents.md + SYLLABUS.md + análisis de cursos.</li>
+<li><strong>Sprint 1 ✅:</strong> Módulo 1 completo — 6 lecciones + laboratorio de auditoría personal + misión (Carta de Expectativas + contrato anti-ludopatía) + quiz de graduación + glosario (38 términos).</li>
+<li><strong>Sprint 1.5 ✅:</strong> temario v1.0 <strong>aprobado por el estudiante</strong> → v1.1 + recurso transversal <a href="receta-primera-operacion.html">La Receta de tu Primera Operación</a> (12 pasos, receta maestra EUR/USD + fichas oro/índices; objetivo: primera operación PROCESADA — veto CRO al marco "primer dólar").</li>
+<li><strong>Sprint 2 ✅:</strong> Módulo 2 completo — 6 lecciones (subasta, oferta/demanda, liquidez, sesiones en hora Bolivia, personalidad de mercados, calendario macro) + laboratorio (reloj de sesiones + mapa macro) + misión M-2 (observación pura de 3 sesiones) + quiz + glosario (25 términos nuevos, total 66) + plantilla journal v0 (CSV).</li>
+<li><strong>Sprint 3 ✅:</strong> Módulo 3 completo — 6 lecciones (velas, 4 ciclos, zonas S/R con gradiente, confirmación en 3 pasos, patrones con fiabilidad honesta, regímenes y whipsaw) + laboratorio (10 episodios con Bar Replay) + misión M-3 (bitácora de 20 niveles) + quiz + glosario (22 términos nuevos, total 88).</li>
+<li><strong>Sprint 4 ✅:</strong> Módulo 4 completo — 6 lecciones (layout profesional, tipos de órdenes y OCO, los 4 costos, largos y cortos, demo ordenada, el SL como ley con checklist 6/6) + laboratorio (las 4 órdenes en demo) + misión M-4 (10 operaciones demo procesadas 6/6) + quiz + glosario (23 términos nuevos, total 111) + <strong>Examen integrador N1</strong> (30 preguntas ≥ 80 % + entrevista socrática + checklist de ejecución).</li>
+<li><strong>Sprint 5 ✅:</strong> Módulo 5 completo — 6 lecciones (tendencia y secuencia HH/HL, BOS/CHoCH con nomenclatura unificada PA↔SMC, pools de liquidez y barridas, FVG y mitigación, order blocks sin misticismo, top-down de 3 capas) + laboratorio (top-down de 5 mercados con plantilla) + misión M-5 (15 análisis estructurales documentados) + quiz + glosario (24 términos nuevos, total 135) + 3 diagramas mermaid nuevos. Un solo caso maestro (la zona de la receta) atraviesa las 6 lecciones.</li>
+<li><strong>Sprint 6 ✅:</strong> Módulo 6 completo — 8 lecciones (filosofía del indicador, medias móviles 20/50/200, ATR + Bollinger + Donchian, RSI/Estocástico/MACD con divergencias, volumen + VWAP + Volume Profile, Fibonacci/Elliott/armónicos con límites, etapas de Weinstein, radar de fiabilidad + regla del máximo 3) + laboratorio (dashboard de confluencias probado en 50 movimientos) + misión M-6 (informe comparativo de 3 herramientas) + quiz + glosario (24 términos nuevos, total 159) + 3 diagramas mermaid nuevos. El mismo caso maestro de la receta, ahora auditado con medidores (SL de 32 pips ≈ 1,52 ATR).</li>
+<li><strong>Sprint 7 ✅:</strong> Módulo 7 completo — cierre del N2: 6 lecciones (filosofía/estrategia/sistema con el test del clon, los 10 componentes, catálogo de 4 arquetipos de setup, matriz WR × R:B de esperanza aplicada, métricas y estadística de rachas, criterios de robustez y el ciclo prohibido del data-mining) + laboratorio (Sistema v1.0 en 1 página con plantilla de 10 componentes) + misión M-7 (30 repeticiones del setup a ciegas con reporte de métricas) + quiz + glosario (20 términos nuevos) + 4 diagramas mermaid nuevos + <strong>Evaluación Nivel 2</strong> (examen-n2: 30 preguntas ≥ 80 % + 5 socráticas + checklist de entregables).</li>
+<li><strong>Sprint 8 ✅:</strong> Módulo 8 completo — apertura del N3: 6 lecciones (preservación de capital como inventario, asimetría del drawdown con tabla completa, regla del 1 % y position sizing con fórmula universal, apalancamiento real con valor del pip por instrumento, riesgo de cartera y correlación con topes 2 % motor / 3 % global — aporte propio —, frenos de emergencia en cascada con protocolo de apagado — aporte propio —) + laboratorio (calculadora de position sizing en 3 pestañas con 3 casos de control + <a href="files/position_sizing.py"><code>position_sizing.py</code></a> del repo con 9 asserts) + misión M-8 (20 escenarios de sizing a mano ≥ 18/20, <a href="mision-m8-escenarios.html">hoja con clave</a>) + quiz con <strong>umbral elevado ≥ 90 %</strong> + glosario (22 términos nuevos, total real 199) + 3 diagramas mermaid nuevos.</li>
+<li><strong>Sprint 9 ✅:</strong> Módulo 9 completo — la evidencia y la auditoría propia: 6 lecciones (epistemología del backtesting con N ≥ 100 e IC ±9,6 pp, protocolo manual con definición operativa de setup válido y rutina de 9 pasos, las 13 métricas del reporte con la tabla de decisión de 3 vías — los costes hunden el PF de 1,40 a 1,25 —, forward testing con el embudo de la evidencia, el Journal profesional con taxonomía E0-E7 y la distinción pérdida ≠ error — aporte propio —, revisión semanal/mensual con ventana de modificación y lista negra — aporte propio —) + laboratorio (backtesting ciego de 100 operaciones con journal v1) + misión M-9 (reporte de 13 métricas + 3 conclusiones + revisión simulada con el agente) + quiz (umbral 80 %) + glosario (25 términos nuevos, total 224) + 3 diagramas mermaid nuevos + <a href="files/metricas_backtest.py"><code>metricas_backtest.py</code></a> (calculadora de las 13 métricas, 6 bloques de asserts) + <a href="plantilla_journal_v1.html">journal v1</a> (CSV de 24 columnas + guía con actas).</li>
+<li><strong>Sprint 10 ✅:</strong> Módulo 10 completo — cierre del N3: 7 lecciones (neurobiología del secuestro con 4 detectores, los 5 miedos de Douglas + 5 axiomas de la incertidumbre, las 5 avaricias con coste exacto — el chasing convierte la E de +0,16R en −0,16R —, la matriz proceso × resultado con la ganancia fuera de plan como error más peligroso, 4 sesgos con antídotos estructurales y el mapa del tilt, la dicotomía del control con σ ±1,52R contra señal +0,24R, la rutina diaria con ventana de 3 h e inacción estratégica) + laboratorio (protocolo de temperatura pre-sesión verde/ámbar/rojo + diario emocional estructurado) + misión M-10 (10 sesiones forward con checklist emocional pre/post y tasa de contención) + quiz ≥ 8/10 + glosario (27 términos nuevos, total 251) + 3 diagramas mermaid nuevos + <strong>Evaluación N3</strong> (examen-n3: 30 preguntas ≥ 80 % + 5 socráticas + entrevista de graduación con 3 casos reales del journal).</li>
+<li><strong>Sprint 11 ✅:</strong> Módulo 11 completo — apertura del N4: 7 lecciones (brokers de verdad con A-Book/B-Book y los 5 pilares, radar de las 5 estafas con verificación regulatoria universal, prop firms con el embudo de fees y las cifras del sector, las 6 reglas finas con lectura forense del contrato, la matriz de riesgo dinámico 0,50→0,25 % con "todavía no", el árbol de las 4 puertas para intentar una evaluación, fiscalidad por principios con el expediente fiscal) + laboratorio (due diligence de 3 brokers + 3 prop firms con matriz universal de 25 puntos) + misión M-11 (informe de elección defendido en socrática + plan de capitalización a 12 meses) + quiz ≥ 8/10 + glosario (27 términos nuevos, total 278) + 3 diagramas mermaid nuevos.</li>
+<li><strong>Sprint 12 ✅:</strong> Módulo 12 completo — cierre del programa: 7 lecciones (Plan de Trading documental de 10 secciones con test del clon, rutina semanal de 4 capas, dashboard de 12 KPIs con horas vs retorno, gestión patrimonial con 3 cubos y política de retiros, hoja de ruta de 5 fases con candados y escalera de riesgo 0 % → 1 %, biblioteca esencial del canon de 5, Constitución de mejora continua contra el nomadeo) + laboratorio (Plan de Trading v1.0 y Plan de Negocio) + misión final (examen integral de 50 preguntas ≥ 85 % + defensa socrática extendida) + quiz ≥ 8/10 + glosario (24 términos nuevos, total 302) + 3 diagramas mermaid nuevos + 🏆 <strong>Certificación interna FIT-12</strong> (examen-final.md).</li>
+</ul>
+<h2>🚀 Inicio Rápido</h2>
+<ul>
+<li><strong>Para leer en el navegador:</strong> abre <a href="index.html"><code>portal/index.html</code></a> — el portal completo del curso: 106 páginas (1 por documento), índice lateral colapsable por niveles, breadcrumb, navegación anterior/siguiente, modo claro/oscuro, fórmulas KaTeX y diagramas mermaid. Funciona en local (doble clic), en zip y en cualquier hosting estático (GitHub Pages/Netlify) sin cambios de rutas. Si editas cualquier <code>.md</code>, regenera con <code>python3 scripts/portal/build_portal.py</code> (requiere <code>pip install markdown</code>).</li>
+<li><strong>Para el estudiante:</strong> dile a tu agente <em>"Siguiente lección"</em> para estudiar la <a href="leccion-1-1.html">Lección 1.1 · Qué es realmente el trading</a> — <strong>los 12 módulos están publicados y listos</strong>. Cuando llegues al M4, ejecuta los pasos 3–11 de la <a href="receta-primera-operacion.html">Receta de tu Primera Operación</a> y cierra el N1 con el <a href="examen-n1.html">Examen N1</a>; continúa el N2 con el <a href="hub-mod-05.html">M5</a> y el <a href="hub-mod-06.html">M6</a>, ciérralo construyendo tu <a href="hub-mod-07.html">Sistema v1.0 en el M7</a> + la <a href="examen-n2.html">Evaluación N2</a>, y abre el N3 blindando tu cuenta con el <a href="hub-mod-08.html">M8 · Gestión del Riesgo</a> — la calculadora de sizing y los frenos en cascada que tu negocio necesita antes de escalar — y demostrando que tu sistema tiene esperanza con el <a href="hub-mod-09.html">M9 · Backtesting, Journal y Validación</a>: 100 operaciones ciegas, el reporte de 13 métricas y el journal v1 con taxonomía de errores que auditará toda tu carrera. Cierra el N3 operando tu propia máquina con el <a href="hub-mod-10.html">M10 · Psicotrading Científico</a> — temperatura pre-sesión, los 5 miedos, las 5 avaricias y la rutina de ventana — y gradúala con la <a href="examen-n3.html">Evaluación N3</a> y su entrevista de graduación. Abre el N4 eligiendo infraestructura con criterio forense en el <a href="hub-mod-11.html">M11 · La Industria</a> — brokers, radar de estafas, prop firms con sus reglas finas y fiscalidad por principios — y deja tu informe defendido y tu plan de capitalización a 12 meses. Cierra el programa con el <a href="hub-mod-12.html">M12 · Plan de Trading y Plan de Negocio</a>: tu Plan v1.0, tu hoja de ruta y la <a href="examen-final.html">Certificación FIT-12</a> — y luego, el oficio.</li>
+<li><strong>Para un agente nuevo:</strong> lee <code>agents.md</code> completo antes de tocar nada; después <code>worklog.md</code> y la tabla de estado de este README.</li>
+</ul>
+<h2>⚖️ Principios del Programa</h2>
+<ol>
+<li>Esperanza matemática como brújula: <ktx class="ktx" data-tex="E = (P_w \times W) - (P_l \times L)">E = (P_w \times W) - (P_l \times L)</ktx></li>
+<li>Regla 85/15 <em>(heurística)</em>: psicología + riesgo pesan más que la técnica</li>
+<li>Preservación del capital antes que ganancia</li>
+<li>Pedagogía activa: por qué → cómo → laboratorio → misión → evaluación</li>
+<li>Honestidad radical: cifras etiquetadas, sin promesas, sin señales</li>
+</ol>
+  </article>
+  <nav class="pn-nav">
+    <span></span>
+    <a class="next" href="agents.html"><span class="lbl">Siguiente →</span><span class="ttl">agents.md — Academia de Trading</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 11.6 · Cuándo intentar una evaluación — el criterio honesto de · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a class="active" href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>💼 N4 · Negocio<span class="sep">/</span>M11 · La Industria<span class="sep">/</span>Lección 11.6 · Cuándo intentar una evaluación — el criterio </div>
+  <article class="doc-body">
+<h1>Lección 11.6 · Cuándo intentar una evaluación — el criterio honesto de la puerta de capital</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>40–55 min de estudio</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-11.html">M11 · La Industria</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td><a href="leccion-11-5.html">Lección 11.5 · Matriz de riesgo para evaluaciones</a></td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="leccion-11-7.html">Lección 11.7 · Fiscalidad por principios</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>Las cuatro lecciones anteriores te dieron el mapa completo de la industria del fondeo: el modelo de ingresos (11.3), la letra fina (11.4) y el sizing que sobrevive (11.5). Falta la pregunta que organiza todo: <strong>¿cuándo es CORRECTO comprar un desafío?</strong> — no "cómo pasar", sino cuándo intentar. La industria no te lo pregunta (su respuesta comercial es "hoy, con descuento"); el programa te lo pregunta porque la respuesta define si eres un cliente que compra esperanza o un profesional que usa una herramienta. El criterio del programa es deliberadamente exigente: <strong>6-12 meses de consistencia documentada</strong> — journal completo, métricas del reporte, forward testing aprobado, conducta auditable — porque el fee comprado sin evidencia es exactamente el ingreso del embudo de 11.3: tú no quieres ser el 92 %; quieres ser el profesional que la estadística trata distinto porque SU muestra lo demuestra. Esta lección convierte ese criterio en un árbol de decisión verificable — cada puerta con su evidencia, cada "todavía no" con su plan. Si terminas con una sola idea: <strong>la evaluación se intenta cuando tu journal ya respondió las preguntas del examen — el fee es la formalidad, no el diagnóstico.</strong></p>
+<h2>Concepto</h2>
+<p><strong>El árbol de decisión completo:</strong></p>
+<pre class="mermaid">flowchart TD
+    A[&quot;Pregunta: ¿intento una evaluación&lt;br/&gt;de prop firm?&quot;] --&gt; B{&quot;Puerta 1 · EVIDENCIA&lt;br/&gt;N ≥ 100 backtests + 20-30 forward&lt;br/&gt;con reporte de métricas completo&quot;}
+    B -- &quot;No&quot; --&gt; R1[&quot;TODAVÍA NO&lt;br/&gt;ruta: laboratorio M9&lt;br/&gt;el fee no se compra sin muestra&quot;]
+    B -- &quot;Sí&quot; --&gt; C{&quot;Puerta 2 · ESPERANZA&lt;br/&gt;E neta positiva y dentro&lt;br/&gt;de su IC (verde o ámbar alto)&quot;}
+    C -- &quot;No: roja o E negativa&quot; --&gt; R2[&quot;TODAVÍA NO&lt;br/&gt;ruta: mejorar R:B / costes&lt;br/&gt;la esperanza primero, el fee después&quot;]
+    C -- &quot;Sí&quot; --&gt; D{&quot;Puerta 3 · CONSISTENCIA&lt;br/&gt;6-12 meses documentados:&lt;br/&gt;journal completo, etiquetas E limpias,&lt;br/&gt;disparos ≥ 90 %, sin cascada&quot;}
+    D -- &quot;No&quot; --&gt; R3[&quot;TODAVÍA NO&lt;br/&gt;ruta: más tiempo de ejecución&lt;br/&gt;la conducta es el producto que el examen evalúa&quot;]
+    D -- &quot;Sí&quot; --&gt; E{&quot;Puerta 4 · SIMULACIÓN&lt;br/&gt;las reglas finas del contrato&lt;br/&gt;vs tus números (11.5):&lt;br/&gt;racha ≤ 50-60 % del límite&quot;}
+    E -- &quot;No cabe&quot; --&gt; R4[&quot;TODAVÍA NO (o otra firma)&lt;br/&gt;ruta: contrato con límites&lt;br/&gt;más holgados o límite mayor&quot;]
+    E -- &quot;Cabe&quot; --&gt; F[&quot;COMPRA EL DESAFÍO&lt;br/&gt;con la matriz de riesgo dinámico&lt;br/&gt;activa desde la operación 1&lt;br/&gt;y el mismo sistema v1.1 intacto&quot;]
+    F --&gt; G[&quot;Pase o fracaso:&lt;br/&gt;AMBOS son datos del journal&lt;br/&gt;y alimentan el plan de capitalización&quot;]
+</pre>
+<p><strong>Puerta 1 — Evidencia (la de M9, sin atajos).</strong> 100 backtests con protocolo y 20-30 de forward con reporte de 13 métricas. La razón es la del embudo de la evidencia: sin muestra, tu "probabilidad de aprobar" es la del promedio (el 92 %) — con muestra, es la TUYA, medible y auditable. El examen de la prop firm es de varianza y conducta: las dos cosas que tu journal ya midió.</p>
+<p><strong>Puerta 2 — Esperanza (la de la tabla de 3 vías).</strong> E neta positiva no basta por sí sola: debe estar dentro de un intervalo que no cruce el equilibrio (verde) o ser ámbar alto con la decisión provisional ya asumida. El punto de 11.5 aplica: con E negativa o roja, el fee es un pago por fracasar — la esperanza primero, el examen después.</p>
+<p><strong>Puerta 3 — Consistencia (la de M10).</strong> El criterio del SYLLABUS: <strong>6-12 meses de consistencia documentada</strong>. Qué audita esta puerta (con las métricas de tu propio journal): disparos ejecutados/debidos ≥ 90 % sostenido; etiquetas de error limpias (la proporción E1-E7 baja o estable — la tasa de contención de M10 subiendo); sin cascada de frenos activada en el periodo; temperatura respetada (los días rojos no se operaron). La conducta es el producto que el examen evalúa — y 6-12 meses es el mínimo para que "consistencia" no sea una racha con nombre largo. <em>(El rango no es arbitrario: cubre al menos un ciclo de cambios de régimen y las rachas adversas esperables de tu WR — tu racha de 9 con WR 40 % aparecerá al menos una vez en 6 meses de operación regular: el examen necesita haberte visto sobrevivirla.)</em></p>
+<p><strong>Puerta 4 — Simulación (la del 11.5).</strong> Las reglas finas del contrato concreto contra tus números: racha esperada ≤ 50-60 % del drawdown total; flotante + 2 ops dentro del diario; consistencia y noticias compatibles con tu sistema. Si no cabe: "todavía no" con ruta (otra firma, otro límite) — o la aceptación de que el examen no es para tu sistema actual.</p>
+<p><strong>Capitalizarse, no ser el producto.</strong> La frase del SYLLABUS que ordena el módulo: la prop firm se usa <strong>para capitalizarse, no para ser su producto</strong>. La diferencia práctica: el profesional llega a la firma con su negocio ya demostrado (las 4 puertas) y la usa como palanca de capital cuando su evidencia dice que el fee es un examen; el producto de la firma llega sin evidencia y compra intentos porque el marketing le vendió el destino. El test rápido: si tu respuesta a "¿por qué un desafío AHORA?" no cita números de TU journal (WR, E, racha, meses de consistencia), la respuesta real es la del marketing — y esa es la señal de esperar.</p>
+<p><strong>El plan de capitalización a 12 meses (la misión M-11 lo exige).</strong> La estructura honesta del documento: (1) línea base: tu capital propio y su rendimiento medido (el negocio real — demo hasta la Fase 4 del programa); (2) escenario propio: crecimiento con aportes y compounding al riesgo del 1 % — la ruta principal; (3) escenario fondeo: si las 4 puertas están abiertas, el desafío como evento puntual con su aritmética (fee, probabilidad medida, payout esperado — esperanza matemática completa, no el escenario bonito); (4) la regla de mezcla: el fondeo nunca reemplaza la línea base — es una rama opcional de la estrategia, con su riesgo de contraparte cotizado (11.3). El documento termina con el calendario: qué puertas se abren cuándo y qué evidencia las abre.</p>
+<h2>Analogía</h2>
+<p>El examen de barras y el abogado junior. Nadie se presenta al examen de abogacía "para ver si la ley le queda bien": se presenta cuando los años de formación dicen que el examen es una formalidad de su preparación — y nadie toma un caso por el solo hecho de aprobar: el bufón propio (con sus clientes, su reputación y su riesgo) se construye paso a paso, y la firma mayor (la prop firm) se integra cuando tu cartera ya tiene valor. El aspirante que compra intentos de examen cada mes es el mismo que compra desafíos: le pagan por presentarse, no por saber. La diferencia de carrera es estructural: el primero es producto de la escuela de examen; el segundo usa el examen como puerta. Tu journal es tu facultad de derecho: los créditos se cursan en meses de ejecución documentada.</p>
+<h2>Cómo se hace: tu auditoría de las 4 puertas (la sesión de 1 hora con tu journal)</h2>
+<ol>
+<li><strong>Inventario de evidencia (15 min):</strong> lista tus números reales — N de backtests y forward, WR con IC, E neta, racha máxima medida, meses de journal completo, tasa de contención, disparos %, cascadas activadas. El inventario es binario por línea: existe o no existe.</li>
+<li><strong>Auditoría de las 4 puertas (20 min):</strong> cada puerta con su veredicto (abierta/cerrada) y la cita exacta de tu journal que la respalda. Puerta cerrada ≠ fracaso: es tu ruta de trabajo para el trimestre.</li>
+<li><strong>El documento "estado de puertas" (10 min):</strong> una página con fecha, las 4 veredictos y el plan concreto de apertura de las cerradas (qué se hace esta semana por cada una). Se revisa en el acta mensual (9.6) — no se negocia en caliente.</li>
+<li><strong>La prueba del marketing (5 min):</strong> lee una oferta de prop firm SIN tu árbol al lado y anota qué te "invita" a comprar; después lee la misma oferta con el árbol. La diferencia entre las dos lecturas es exactamente el valor de este módulo — y la razón por la que el fee se compra con el árbol, no sin él.</li>
+</ol>
+<h2>Error común</h2>
+<p><strong>(1) "Llevo 2 meses verdes, ya estoy listo."</strong> Dos meses verdes sin N ni IC es una racha con calendario: el WR 40 % produce semanas verdes seguidas como parte de SU varianza — la puerta 3 exige 6-12 meses precisamente porque el examen necesita haberte visto la racha adversa, no solo la favorable. <strong>(2) "El descuento del desafío vence mañana."</strong> El urgenciamiento es marketing (10.3: la avaricia con calendario): una puerta que se abre por descuento es una puerta que no estaba abierta — el fee a precio de descuento sigue siendo un fee sin evidencia. <strong>(3) "Mi amigo pasó y no tenía journal."</strong> El testimonio del superviviente (sesgo de supervivencia, 9.1): por cada amigo que pasó hay 11 que no pasaron y no publican — la decisión se toma con TU distribución, no con la anécdota ajena. <strong>(4) Confundir las puertas con burocracia.</strong> Las 4 puertas son la traducción operativa de "6-12 meses de consistencia documentada" — el criterio del SYLLABUS; el árbol no añade requisitos: los hace verificables. <strong>(5) Usar la prop firm como plan de emergencia.</strong> "Mi cuenta propia está en racha mala, intento el desafío para recuperar" — la revancha (10.5) con fee: el momento de peor conducta comprando el examen más exigente de la industria. La puerta 3 existe exactamente para bloquear esa ventana.</p>
+<h2>Conexión cuantitativa</h2>
+<p><strong>Hacia 9.3:</strong> las puertas 1-2 son la tabla de decisión de 3 vías con otro nombre — el mismo veredicto (verde/ámbar/rojo) que decide tu tamaño decide tu fee. <strong>Hacia 10.4:</strong> la puerta 3 audita el proceso (etiquetas, contención, cascadas) — la consistencia documentada es la operación perfecta acumulada en meses. <strong>Hacia 11.5:</strong> la puerta 4 es la simulación de la matriz de riesgo dinámico — sin ella, la compra es fe; con ella, aritmética. <strong>Hacia 11.7 y M12:</strong> el plan de capitalización a 12 meses de la misión M-11 integra la fiscalidad (la próxima lección) y desemboca en el plan de trading/negocio del módulo final — el cierre del programa.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li>La evaluación se intenta cuando <strong>las 4 puertas están abiertas</strong>: evidencia (N), esperanza (E dentro de IC), consistencia (6-12 meses documentados) y simulación (reglas finas vs tus números).</li>
+<li>Cada "todavía no" del árbol lleva <strong>ruta de trabajo</strong> (más N, mejor R:B/costes, más tiempo de ejecución, otro contrato) — la decisión pospuesta es gestión, no derrota.</li>
+<li>El criterio del SYLLABUS (6-12 meses de consistencia documentada) existe porque el examen necesita haberte visto <strong>sobrevivir tu racha adversa</strong>, no solo tus semanas verdes.</li>
+<li><strong>Capitalizarse ≠ ser el producto</strong>: el profesional llega con el journal que responde el examen; el producto llega sin evidencia y compra intentos — el test es si tu "¿por qué ahora?" cita números del journal.</li>
+<li>El <strong>plan de capitalización a 12 meses</strong> integra línea base propia + fondeo como rama opcional con riesgo de contraparte cotizado — nunca el fondeo como plan A ni como rescate.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>Enumera las 4 puertas con su evidencia exacta y su fuente (qué lección/journal la produce). ¿Cuál de las cuatro NO puede cerrarse solo con métricas y por qué?</li>
+<li>Tu estado: 100 backtests (verde), E neta +0,11R con IC que no cruza el equilibrio (verde), 4 meses de journal con disparos 94 % y una cascada nivel 1 (ámbar), simulación OK con margen. ¿Qué veredicto da el árbol y cuál es tu plan? ¿Qué haría el marketing en tu lugar?</li>
+<li>Un trader afirma: "pasé el desafío sin journal ni backtests — los criterios de este módulo son burocracia". Refuta con la estructura estadística (de quién es la probabilidad, qué autoriza el testimonio individual) y con el sesgo que su anécdota comete. ¿Qué sería la evidencia que SÍ valdría de su caso?</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. Puerta 1 — evidencia: N ≥ 100 backtests + 20-30 forward con reporte (M9: journal v1 + reporte de métricas). Puerta 2 — esperanza: E neta dentro de su IC, veredicto verde/ámbar alto (M9: tabla de 3 vías). Puerta 3 — consistencia: 6-12 meses de journal con conducta auditable (M10: etiquetas, contención, cascadas, temperatura) — esta es la que NO se cierra solo con métricas: exige TIEMPO calendario documentado, porque el examen necesita ver la conducta sostenida incluyendo la racha adversa; las métricas de 2 meses no distinguen consistencia de racha. Puerta 4 — simulación: reglas del contrato vs tus números (11.4-11.5: racha vs límite, flotante vs diario).
+2. Veredicto: **todavía no** — la puerta 3 está cerrada (4 de 6-12 meses, y con una cascada activada en el periodo: la conducta aún está en formación). Plan: continuar la ejecución documentada 2-8 meses más, con la tasa de contención y los disparos ≥ 90 % como métricas de la puerta; re-auditar en el acta mensual. El marketing te diría "ahora, con descuento": exactamente la ventana que el árbol existe para bloquear — el fee comprado con la puerta 3 cerrada es el ingreso del embudo de 11.3.
+3. La anécdota comete **sesgo de supervivencia**: de la distribución completa de "sin journal ni backtests", la muestra publicada es solo la cola ganadora (~8 % que pasa, ~0,07 % de éxito neto por los datos de 11.3) — su caso no cambia la probabilidad de la distribución, solo la ilustra desde la cola. Lo que su testimonio individual autoriza: nada — una extracción de N=1 sin protocolo no es evidencia de método (9.1: la ceguera, el N, la declaración previa). La evidencia que SÍ valdría: si su caso documentara N grande con protocolo similar al promedio (sin ventaja de información) seguiría siendo anécdota; lo único que valdría es un AGRUPADO: cohortes completas de aspirantes con/sin preparación y sus tasas — que es precisamente la estadística del 92 % que él cree refutar con su historia.
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="leccion-11-5.html"><span class="lbl">← Anterior</span><span class="ttl">Lección 11.5 · Matriz de riesgo para evaluaciones — el sizing que sobr</span></a>
+    <a class="next" href="leccion-11-7.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 11.7 · Fiscalidad por principios — el negocio que declara es e</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 7.5 · Métricas y rachas — la estadística que sostiene el negoc · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a class="active" href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>📐 N2 · Técnica<span class="sep">/</span>M7 · Construcción del Sistema<span class="sep">/</span>Lección 7.5 · Métricas y rachas — la estadística que sostien</div>
+  <article class="doc-body">
+<h1>Lección 7.5 · Métricas y rachas — la estadística que sostiene el negocio</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>50–65 min de estudio</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-07.html">M7 · Construcción del Sistema</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td><a href="leccion-7-4.html">Lección 7.4 · Esperanza aplicada</a></td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="leccion-7-6.html">Lección 7.6 · Criterios de robustez</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>Cuando termines la misión de este módulo tendrás 30 filas de datos — y la pregunta que te hará el cerebro será "¿entonces mi sistema sirve o no?". Esta lección te da las cuatro métricas con las que se responde esa pregunta profesionalmente (WR, R:B medio, Profit Factor, Max DD sobre la curva de capital) y — más importante — la estadística de rachas que <strong>predice el dolor antes de que llegue</strong>. Porque el punto de quiebre de casi todo trader nuevo no es técnico: es la primera racha larga de pérdidas, que llega sin aviso, se lee como "el sistema se rompió" y termina en abandono o venganza (M10). Si antes de la primera racha ya sabes que con tu WR era <em>esperable</em> una de 6 pérdidas seguidas — y lo tienes calculado, en una tabla, con tu propia firma — entonces la racha deja de ser una crisis y se convierte en una confirmación del modelo. Esta es la lección más anticuada contra el pánico que existe: la vacuna matemática administrada antes del contagio.</p>
+<h2>Concepto</h2>
+<p><strong>Las cuatro métricas del reporte del sistema:</strong></p>
+<p><strong>1. Win Rate (WR)</strong> — ya lo conoces: <ktx class="ktx" data-tex="\frac{\text{ganadoras}}{N}">\frac{\text{ganadoras}}{N}</ktx>. Es la métrica más sobrevalorada (M1.4) y aquí la usas solo como fila de la matriz de 7.4, nunca sola.</p>
+<p><strong>2. R:B medio</strong> — el tamaño medio de tus ganadoras en unidades de R: <ktx class="ktx" data-tex="\overline{W} = \frac{\sum R_{\text{ganadas}}}{\text{ganadoras}}">\overline{W} = \frac{\sum R_{\text{ganadas}}}{\text{ganadoras}}</ktx>. Junto al WR forma la pareja de parámetros de tu máquina.</p>
+<p><strong>3. Profit Factor (PF)</strong> — la razón entre dinero ganado y dinero perdido, en R:</p>
+<p><ktxd class="ktxd" data-tex="PF = \frac{\sum \text{ganancias}}{\sum \text{pérdidas}} = \frac{WR \times \overline{W}}{(1 - WR) \times 1}">PF = \frac{\sum \text{ganancias}}{\sum \text{pérdidas}} = \frac{WR \times \overline{W}}{(1 - WR) \times 1}</ktxd></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>PF</th>
+<th>Lectura del programa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&lt; 1,0</td>
+<td>E negativo: la máquina pierde — no hay nada que gestionar, hay que revisar</td>
+</tr>
+<tr>
+<td>1,0 – 1,3</td>
+<td>E positivo débil: viable pero en el filo — los costes y la ejecución se comen el margen</td>
+</tr>
+<tr>
+<td><strong>1,5 (objetivo)</strong></td>
+<td><strong>Franja del negocio sano:</strong> por cada 1 $ perdido genera 1,5 $ de ganancia</td>
+</tr>
+<tr>
+<td>2,0 – 3,0</td>
+<td>Excelente — pero exígelo a muestras grandes antes de creerlo</td>
+</tr>
+<tr>
+<td>&gt; 3,0 en muestra corta</td>
+<td>🚨 Sospecha automática de sobreoptimización o muestra contaminada (7.6, M9)</td>
+</tr>
+</tbody>
+</table></div>
+<p>Con la firma del curso (40 %, 1:2): <ktx class="ktx" data-tex="PF = \frac{0{,}40 \times 2}{0{,}60 \times 1} = 1{,}33">PF = \frac{0{,}40 \times 2}{0{,}60 \times 1} = 1{,}33</ktx> — positivo pero por debajo del objetivo 1,5. Con WR 43 % y <ktx class="ktx" data-tex="\overline{W} = 2{,}1R">\overline{W} = 2{,}1R</ktx>: <ktx class="ktx" data-tex="PF = \frac{0{,}903}{0{,}57} ≈ 1{,}58">PF = \frac{0{,}903}{0{,}57} ≈ 1{,}58</ktx> — el mismo arquetipo, dos semanas más de filtro afinado, ya en la franja sana. El PF traduce la matriz de 7.4 a un solo número auditable.</p>
+<p><strong>4. Max Drawdown (Max DD)</strong> — la mayor caída pico-a-valle de tu curva de capital, medida en R cuando el riesgo es fijo. No es "cuánto perdí en total": es el tamaño del peor valle sufrido — la métrica que describe lo que tu psicología y tu cuenta tuvieron que soportar.</p>
+<p><strong>La curva de capital</strong> es la serie acumulada de R (suma de resultados en orden temporal). Su forma vale más que cualquier número suelto: una curva sana sube en zigzag (sube, valle, sube más alto); una curva enferma sube en parábola (sin valles = sospecha de ajuste) o hace escalera hacia abajo. Lo que miras: pendiente global (relacionada con E), profundidad de valles (Max DD) y velocidad de recuperación.</p>
+<p><strong>La estadística de rachas.</strong> Con WR <ktx class="ktx" data-tex="p">p</ktx>, la probabilidad de que las próximas <ktx class="ktx" data-tex="n">n</ktx> operaciones sean todas pérdidas es:</p>
+<p><ktxd class="ktxd" data-tex="P(n \text{ pérdidas seguidas}) = (1 - p)^n">P(n \text{ pérdidas seguidas}) = (1 - p)^n</ktxd></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Racha</th>
+<th>WR 40 %</th>
+<th>WR 50 %</th>
+<th>WR 60 %</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3 pérdidas</td>
+<td>21,6 %</td>
+<td>12,5 %</td>
+<td>6,4 %</td>
+</tr>
+<tr>
+<td>5 pérdidas</td>
+<td>7,8 %</td>
+<td>3,1 %</td>
+<td>1,0 %</td>
+</tr>
+<tr>
+<td>8 pérdidas</td>
+<td>1,7 %</td>
+<td>0,39 %</td>
+<td>0,07 %</td>
+</tr>
+<tr>
+<td>10 pérdidas</td>
+<td>0,6 %</td>
+<td>0,10 %</td>
+<td>0,01 %</td>
+</tr>
+</tbody>
+</table></div>
+<p>Y la regla de estimación que convierte esa tabla en expectativa operativa: la racha máxima esperable en <ktx class="ktx" data-tex="N">N</ktx> operaciones es aproximadamente</p>
+<p><ktxd class="ktxd" data-tex="\text{racha esperable} \approx \frac{\ln N}{\ln \frac{1}{1-p}}">\text{racha esperable} \approx \frac{\ln N}{\ln \frac{1}{1-p}}</ktxd></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>WR</th>
+<th>En N = 30 (tu misión)</th>
+<th>En N = 100 (backtests de M9)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>40 %</td>
+<td><strong>6–7 pérdidas seguidas</strong></td>
+<td>~9 pérdidas seguidas</td>
+</tr>
+<tr>
+<td>50 %</td>
+<td>~5 pérdidas</td>
+<td>~6–7 pérdidas</td>
+</tr>
+<tr>
+<td>60 %</td>
+<td>~4 pérdidas</td>
+<td>~5 pérdidas</td>
+</tr>
+</tbody>
+</table></div>
+<p>Lee esa tabla dos veces, porque es la oración más importante de la lección: <strong>con un WR de 40 % — la firma de tu arquetipo candidato — una racha de 6-7 pérdidas seguidas NO es una señal de sistema roto: es el comportamiento esperado de una máquina sana en 30 repeticiones.</strong> Con riesgo 1 %, ese valle vale −6 % a −7 % de la cuenta: desagradable, sobrevivible, y ya presupuestado antes de que ocurra.</p>
+<h2>Analogía</h2>
+<p>La tabla de rachas es como la vacuna: se administra ANTES del contagio, con el agente debilitado del mal para que el sistema inmunológico lo reconozca cuando llegue de verdad. El trader sin esta lección vive su primera racha de 6 pérdidas como un atentado contra su identidad — "el mercado cambió", "el sistema no funciona", "yo no sirvo" — y responde con las dos reacciones del pánico: abandono del sistema justo antes de que la varianza se revierta, o doblaje de riesgo para "recuperar rápido" (la venganza que M10 cataloga como tilt). El trader vacunado vive la misma racha consultando su tabla: "con WR 40 %, esto ocurre con frecuencia esperable; mi Max DD presupuestado era −7 %; voy por −5 %; el protocolo es: no cambiar nada, mantener tamaño, registrar". Misma tormenta, dos barcos: uno tiene cartas náuticas y el otro improvisa. La estadística no elimina el dolor de la racha — le quita el significado catastrófico, que es lo que realmente hunde barcos.</p>
+<h2>Cómo se hace: el reporte de la misión, métrica a métrica</h2>
+<p>Al cerrar tus 30 repeticiones (misión del módulo), el reporte se calcula así sobre tu tabla:</p>
+<ol>
+<li><strong>WR:</strong> cuenta ganadoras / 30 (si hiciste 25 y 5 fueron "no hay setup", el denominador son las 25 ejecutadas — el veredicto de no-operación no entra en la estadística del arquetipo).</li>
+<li><strong>R:B medio:</strong> promedia las R de las ganadoras. Si tu TP es fijo a 2R, esto sale directo; si hay TP estructural (liquidez opuesta), mide lo que realmente dieron.</li>
+<li><strong>PF:</strong> suma ganadas ÷ suma perdidas (en R). Con el formato del journal es una resta y una división.</li>
+<li><strong>Curva y Max DD:</strong> acumula las R en orden y dibuja la línea; mide la caída más profunda pico-a-valle. En 30 operaciones con WR 40 %, espera valles de −4R a −7R: si no hay NINGUNO, revisa que el replay fuera realmente a ciegas.</li>
+<li><strong>Racha más larga vs tabla:</strong> compárala con la fila de tu WR en la tabla de rachas esperables. Dentro del rango → el sistema y tú pasáis la prueba conjunta; muy por encima (p. ej. racha de 12 con WR medido 40 %) → sospecha de sesgo de registro o de muestra no a ciegas, no de mala suerte.</li>
+<li><strong>Veredicto por la matriz (7.4):</strong> localiza tu celda (WR medido, R:B medido) y clasifica el sistema: avanza a M9 tal cual, se ajusta en un componente, o se archiva con su registro completo. Todo veredicto sale con números delante.</li>
+</ol>
+<p>Un ejemplo completo <em>(ilustrativo)</em>: 25 ejecutadas, 11 ganadoras (WR 44 %), <ktx class="ktx" data-tex="\overline{W} = 2{,}0R">\overline{W} = 2{,}0R</ktx>, PF = <ktx class="ktx" data-tex="22R/14R = 1{,}57">22R/14R = 1{,}57</ktx>, racha máxima 5, Max DD −6R. Lectura: celda (44 %, 1:2) → <ktx class="ktx" data-tex="E ≈ +0{,}32R">E ≈ +0{,}32R</ktx>; PF en la franja objetivo; racha dentro de lo esperable para N=30; DD dentro del presupuesto de −7 %. Veredicto: sistema v1.0 avanza a M9 sin cambios. Todo el reporte cabe en una página y cada número es defendible ante el agente auditor.</p>
+<h2>Error común</h2>
+<p><strong>(1) Juzgar el sistema con N pequeño.</strong> "Llevo 8 operaciones y voy mal" — con N=8 la varianza domina por completo: cualquier WR entre 25 % y 75 % es indistinguible del azar. Las decisiones de cambio se toman con las muestras del programa (30 para diagnósticos de avance, 100 para validación en M9), nunca con el estado de ánimo de la semana. <strong>(2) Abandonar en la racha esperable.</strong> La racha de 6-7 pérdidas con WR 40 % está en la tabla que ya leíste: abandonar el sistema AHORA es romper el experimento en el único momento que la estadística predijo — y garantizas no ver nunca la reversión de la varianza que pagaría tu paciencia. <strong>(3) Cambiar el sistema DENTRO de la muestra.</strong> Ajustar el stop "un poco" en la operación 14 de 30 rompe la homogeneidad: ya no tienes 30 datos de una máquina, tienes dos muestras de 13 y 17 de dos máquinas distintas — ninguna suficientemente grande. Si tocas, empiezas de cero (regla de la misión). <strong>(4) Medir Max DD solo en dinero.</strong> Con riesgo variable, el DD en % mezcla el rendimiento del sistema con tus cambios de tamaño; el DD en R aísla al sistema. Por eso el journal registra R, no euros. <strong>(5) Ignorar el tiempo de recuperación.</strong> Un Max DD de −6R tras el cual el sistema tarda 40 operaciones en volver a máximos es información operativa (frecuencia, E) que el valle solo no cuenta.</p>
+<h2>Conexión cuantitativa</h2>
+<p>La estadística de rachas es la razón aritmética del riesgo del 1 % que el programa fijó antes de conocer tu WR. La cadena: tu racha esperable en la misión es 6-7 pérdidas (WR 40 %, N=30); con riesgo <ktx class="ktx" data-tex="r">r</ktx> por operación, el valle vale <ktx class="ktx" data-tex="6{,}5 \times r">6{,}5 \times r</ktx>; para que ese valle —<strong>esperable por diseño, no por mala suerte</strong>— quede dentro de un drawdown sobrevivible (la asimetría del drawdown que M8 formaliza: −10 % necesita +11 % para recuperar, −25 % necesita +33 %, −50 % necesita +100 %), el programa elige <ktx class="ktx" data-tex="r = 1">r = 1</ktx> % → valle esperable −6,5 %, recuperable con +6,9 %. Con <ktx class="ktx" data-tex="r = 5">r = 5</ktx> %, la MISMA racha esperable valdría −32,5 %, que exige +48 % para volver — el punto donde las cuentas mueren de verdad. Nótese la estructura lógica: el 1 % no deriva de ser conservador, deriva de la tabla de rachas multiplicada por la asimetría de recuperación — dos fórmulas, ninguna emoción. Esta misma cadena se reutilizará en M8 (sizing formal), M11 (matriz de riesgo para evaluaciones de prop firms) y M12 (presupuesto de DD del plan de negocio): es la columna vertebral cuantitativa de todo el programa.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li>Las 4 métricas del reporte: WR, R:B medio, PF y Max DD sobre la curva de capital — nunca una sola de ellas sola.</li>
+<li>PF = <ktx class="ktx" data-tex="\frac{WR \times \overline{W}}{(1-WR)}">\frac{WR \times \overline{W}}{(1-WR)}</ktx>: objetivo del programa ≥ 1,5; &gt; 3 en muestra corta es sospecha, no éxito.</li>
+<li><ktx class="ktx" data-tex="P(n \text{ pérdidas}) = (1-WR)^n">P(n \text{ pérdidas}) = (1-WR)^n</ktx> y racha esperable en <ktx class="ktx" data-tex="N">N</ktx> operaciones <ktx class="ktx" data-tex="\approx \frac{\ln N}{\ln \frac{1}{1-WR}}">\approx \frac{\ln N}{\ln \frac{1}{1-WR}}</ktx>: con WR 40 %, en 30 operaciones esperan 6-7 pérdidas seguidas.</li>
+<li>La racha esperable no es fracaso: es el comportamiento normal de una máquina sana — la vacuna es leer la tabla antes de la tormenta.</li>
+<li>Con riesgo 1 %, el valle esperable (−6,5 %) es sobrevivible por la asimetría del drawdown; con 5 %, la misma racha es terminal. El 1 % sale de dos fórmulas, no del miedo.</li>
+<li>El reporte de la misión cabe en una página y termina siempre en un veredicto de la matriz: avanzar, ajustar UN componente, o archivar con registro.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>Calcula la probabilidad de 5 pérdidas seguidas con WR 45 %, y la racha esperable máxima en 100 operaciones con ese WR. ¿Qué valle en % de cuenta implica con riesgo 1 %?</li>
+<li>Tu misión: 30 filas, 3 "no hay setup", 10 ganadoras que dieron 21R en total, 17 perdedoras. Calcula WR, R:B medio, PF y di si el sistema avanza.</li>
+<li>¿Por qué un PF de 3,4 en 12 operaciones es una mala noticia y no un motivo de celebración? Argumenta con 7.6 y con lo que M9 exigirá.</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. <ktx class="ktx" data-tex="P = 0{,}55^5 = 0{,}0503 ≈ 5{,}0">P = 0{,}55^5 = 0{,}0503 ≈ 5{,}0</ktx> %. Racha esperable en N=100: <ktx class="ktx" data-tex="\ln 100 / \ln(1/0{,}55) = 4{,}605/0{,}598 ≈ 7{,}7">\ln 100 / \ln(1/0{,}55) = 4{,}605/0{,}598 ≈ 7{,}7</ktx> → **7-8 pérdidas seguidas** son esperables. Con riesgo 1 %: valle de −7 % a −8 %, recuperable con ≈ +8 % (asimetría leve a ese tamaño). Conclusión operativa: incluso un WR de 45 % — bueno — exige presupuestar un valle de −8 % en el primer año; quien planificó su vida financiera (M1.6) para tolerar −8 % está bien construido; quien no, ya sabe por qué el módulo de expectativas venía primero.
+2. Ganadoras 10 de 27 ejecutadas → **WR ≈ 37 %**. R:B medio = 21/10 = **2,1**. PF = 21/17 = **1,24**. Matriz: celda (37 %, 2,1) → <ktx class="ktx" data-tex="E = 0{,}37 \times 2{,}1 - 0{,}63 = 0{,}777 - 0{,}63 ≈ +0{,}15R">E = 0{,}37 \times 2{,}1 - 0{,}63 = 0{,}777 - 0{,}63 ≈ +0{,}15R</ktx> — positivo pero débil (PF 1,24 < 1,5). Veredicto del programa: avanza a M9 como candidato, PERO con nota de mejora en el filtro o el gatillo (el R:B de 2,1 es sano; el WR 37 % está en el borde del breakeven 32,4 % para ese R:B — poco colchón). Se documenta la celda y la mejora UNA variable para v1.1, después de los 100 backtests.
+3. Porque es improbable por construcción: un sistema honesto con 12 operaciones no tiene evidencia para PF 3,4 — con N tan pequeño, la varianza del PF es enorme y los valores extremos casi siempre delatan (a) muestra contaminada (operaciones elegidas a favor), (b) reglas ajustadas al pasado (el ajuste por el que 7.6 prohíbe iterar mirando resultados) o (c) riesgo no acotado (ganadoras grandes con L no normalizado). M9 exigirá N ≥ 100 con protocolo a ciegas justamente para que el PF signifique algo: celebrar un 3,4 con N=12 es celebrar ruido con formato de estadística.
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="leccion-7-4.html"><span class="lbl">← Anterior</span><span class="ttl">Lección 7.4 · Esperanza aplicada — la matriz WR × R:B</span></a>
+    <a class="next" href="leccion-7-6.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 7.6 · Criterios de robustez — cuando el sistema sobrevive al e</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Módulo 8 · Gestión del Riesgo — el módulo que paga las cuentas · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a class="active" href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>🛡️ N3 · Riesgo<span class="sep">/</span>M8 · Gestión del Riesgo<span class="sep">/</span>Módulo 8 · Gestión del Riesgo — el módulo que paga las cuent</div>
+  <article class="doc-body">
+<h1>Módulo 8 · Gestión del Riesgo — el módulo que paga las cuentas</h1>
+<blockquote class="gfm-warn"><p><strong>⚠️ WARNING:</strong> <strong>Contenido educativo.</strong> La mayoría de los traders minoristas pierde dinero (estudios de reguladores estiman entre 70 % y 90 %). Nada aquí constituye asesoría financiera.</p>
+</blockquote>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🧱 Nivel</td>
+<td>3 · Gestión — módulo de apertura</td>
+</tr>
+<tr>
+<td>📦 Módulo</td>
+<td>8 de 12 (FIT-12)</td>
+</tr>
+<tr>
+<td>🔬 Trazabilidad</td>
+<td>003 · M4.5, M6.5 · 004 · M6.1–6.5 · <strong>Aporte propio:</strong> riesgo de cartera y correlación de posiciones (vacío 1), protocolo de frenos en cascada con apagado firmado</td>
+</tr>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>5–6 h de teoría + 6–10 h de laboratorio/misión</td>
+</tr>
+<tr>
+<td>📋 Estado</td>
+<td>🟢 Publicado (Sprint 8)</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>🎯 Objetivo del Módulo</h2>
+<p>Blindar el capital con matemática exacta. El N2 te dio una máquina que gana en esperanza (<ktx class="ktx" data-tex="E = +0{,}2R">E = +0{,}2R</ktx>); este módulo le instala el sistema inmunológico: el capital como inventario con su enfoque defensivo (8.1), la tabla de asimetría que demuestra por qué el gran daño es irreversible (8.2), la fórmula universal de position sizing que convierte "riesgo 1 %" en un lote concreto y verificable (8.3), la desmontaje del mito del apalancamiento con el valor del pip real por instrumento (8.4), el mapa de motores que evita que tres operaciones de 1 % sean una apuesta de 3 % (8.5) y la cascada de frenos con protocolo de apagado que acota el peor mes del negocio en −6 % (8.6). Al terminar sabes exactamente cuánto puedes perder HOY — y por qué es matemáticamente imposible perder más.</p>
+<h2>📚 Lecciones</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Lección</th>
+<th>Esencia</th>
+<th>Tiempo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>8.1</td>
+<td><a href="leccion-8-1.html">Preservación de capital</a></td>
+<td>El dinero como inventario del negocio; el orden invertido de las preguntas del profesional; supervivencia al 1 % vs 10 %</td>
+<td>30–40 min</td>
+</tr>
+<tr>
+<td>8.2</td>
+<td><a href="leccion-8-2.html">Asimetría del drawdown</a></td>
+<td><ktx class="ktx" data-tex="R = \frac{d}{1-d}">R = \frac{d}{1-d}</ktx>; la tabla completa (−10 % → +11,1 % ... −50 % → +100 %); por qué el gran daño es irreversible</td>
+<td>40–55 min</td>
+</tr>
+<tr>
+<td>8.3</td>
+<td><a href="leccion-8-3.html">La regla del 1 % y position sizing</a></td>
+<td>La fórmula universal con el caso maestro desglosado (0,06 lotes); solo la distancia al stop está en riesgo; redondeo a la baja</td>
+<td>50–65 min</td>
+</tr>
+<tr>
+<td>8.4</td>
+<td><a href="leccion-8-4.html">Apalancamiento real</a></td>
+<td>Margen ≠ riesgo; valor del pip por instrumento (FX, oro); micro-lotes; los 3 peligros reales del apalancamiento alto</td>
+<td>45–60 min</td>
+</tr>
+<tr>
+<td>8.5</td>
+<td><a href="leccion-8-5.html">Riesgo de cartera y correlación</a></td>
+<td>Motores compartidos; <ktx class="ktx" data-tex="R_{\text{efectiva}} = R_1 + \rho R_2">R_{\text{efectiva}} = R_1 + \rho R_2</ktx>; topes escritos: 2 % por motor, 3 % global</td>
+<td>50–65 min</td>
+</tr>
+<tr>
+<td>8.6</td>
+<td><a href="leccion-8-6.html">Frenos de emergencia</a></td>
+<td>La cascada (−2 % día / −4 % semana / −6 % mes); protocolo de apagado firmado; la trampa de la revancha</td>
+<td>45–60 min</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote class="gfm-tip"><p><strong>💡 TIP:</strong> <strong>Cómo estudiar este módulo:</strong> dile a tu agente <em>"Siguiente lección"</em> y sigue el protocolo de sesión de estudio (§ 5.3 de <code>agents.md</code>). Este módulo se estudia <strong>con tu Sistema v1.0 (M7) abierto en paralelo</strong>: cada lección formaliza una pieza del componente 9 (riesgo y tamaño) y termina escribiendo reglas nuevas en el componente 10 — al cerrar 8.6 tu sistema v1.0 habrá mutado a v1.1 con presupuesto, topes y frenos.</p>
+<p><strong>El caso maestro consigue su presupuesto:</strong> las 6 lecciones usan la operación de tu <a href="receta-primera-operacion.html">Receta</a> <em>(ilustrativo)</em> — EUR/USD H4, cuenta <ktx class="ktx" data-tex="C_0 = 1.920">C_0 = 1.920</ktx> &dollar;, riesgo 1 % = 19,20 &dollar;, SL 32 pips, TP 66 pips (R:B ≈ 2,1). En M7 declaraste "riesgo 1 %" como regla del componente 9; aquí aprendes la máquina que la ejecuta: <ktx class="ktx" data-tex="19{,}20/(32 \times 10) = 0{,}06">19{,}20/(32 \times 10) = 0{,}06</ktx> lotes — y toda la infraestructura que garantiza que ese número se respeta cuando el día se pone feo.</p>
+<p><strong>Puente con M7 y M9:</strong> el M8 convierte el componente 9 en procedimiento (calculadora) y refuerza el componente 10 (topes de cartera + frenos). M9 auditará con 100 backtests si tu sizing respetó el presupuesto — la métrica "disparos ejecutados / disparos debidos = 100 %" empieza a medirse HOY.</p>
+</blockquote>
+<h2>🧪 Laboratorio · Construir la calculadora de position sizing</h2>
+<p><strong>Materiales:</strong> las 6 lecciones + tu hoja de cálculo preferida (Excel/Google Sheets/LibreOffice) + la <a href="files/position_sizing.py">versión Python del programa</a> como referencia verificada + el caso maestro como caso de control.</p>
+<p><strong>Estructura de la hoja — 3 pestañas:</strong></p>
+<p><strong>Pestaña 1 · Sizing</strong> <em>(la fórmula universal con las 5 micro-reglas de 8.3)</em>:</p>
+<pre><code class="language-text">B1 capital actual          = [tu saldo]
+B2 riesgo %                = 1 %
+B3 presupuesto             = B1 * B2 / 100
+B4 entrada                 = [precio de tu señal]
+B5 stop                    = [precio estructural + margen]
+B6 SL en pips              = ABS(B4 - B5) / 0.0001      ← pares XXX/USD de 4-5 decimales
+B7 valor del pip por lote  = [10 EUR/GBP/AUD · 6,67 USD/JPY a 150 · 100 $ por 1,00 $ en oro]
+B8 lote bruto              = B3 / (B6 * B7)
+B9 lote final              = FLOOR(B8, 0.01)             ← redondeo a la baja, SIEMPRE
+B10 verificación inversa   = B9 * B6 * B7                ← debe ser ≤ B3, si no HAY ERROR
+B11 riesgo real %          = B10 / B1 * 100              ← el dato que va al journal
+</code></pre>
+<p>Regla de veto: si B8 &lt; 0,01 → la celda devuelve <strong>RECHAZADA</strong> ("no hay espacio de riesgo") — nunca se redondea hacia arriba.</p>
+<p><strong>Pestaña 2 · Cartera</strong> <em>(8.5)</em>: filas por posición abierta (instrumento, lado, riesgo %, motor) + celda de correlación ρ medida (30-90 días) + columnas: <ktx class="ktx" data-tex="R_{\text{efectiva}} = R_1 + \rho R_2">R_{\text{efectiva}} = R_1 + \rho R_2</ktx> por motor, tope por motor 2 %, tope global 3 %, veredicto (ACEPTAR/RECHAZAR) para la siguiente señal.</p>
+<p><strong>Pestaña 3 · Frenos</strong> <em>(8.6)</em>: saldos de referencia (día/semana/mes) + equity actual + nivel activo de la cascada (0-4) con la acción obligatoria impresa — la calculadora compara números y devuelve el nivel, sin opinión.</p>
+<p><strong>Procedimiento:</strong></p>
+<ol>
+<li><strong>Construye las 3 pestañas</strong> con las fórmulas exactas de arriba (30-45 min). La versión Python del repo es tu oráculo: cada función debe coincidir con la hoja al centavo.</li>
+<li><strong>Verifica con los 3 casos de control:</strong> (a) caso maestro → 0,06 lotes / 19,20 $ / 1,0 % exacto; (b) USD/JPY a 150, presupuesto 19,20 $, SL 30 pips → 0,09 lotes / 18,01 $ / 0,94 %; (c) capital 350 $, SL 80 pips → <strong>RECHAZADA</strong>. Si la hoja no reproduce los tres, la hoja está mal — no el caso.</li>
+<li><strong>Intégrala al flujo:</strong> añade a tu checklist pre-operación el paso "calculadora corre antes de la orden" y a tu checklist semanal "pestaña de frenos revisada".</li>
+<li><strong>Auditoría cruzada con el agente:</strong> muestra la hoja y responde — ¿por qué redondeo a la baja? ¿de dónde sale el valor del pip de cada instrumento? ¿qué pasa si el lote bruto es 0,005?</li>
+<li><strong>Actualiza el Sistema v1.0 → v1.1:</strong> el componente 9 referencia la calculadora por su nombre; el componente 10 añade topes (2 % motor / 3 % global) y la cascada de frenos firmada.</li>
+</ol>
+<p><strong>Entregable:</strong> la calculadora funcional (hoja + capturas de los 3 casos de control) y el Sistema v1.1 con los componentes 9-10 actualizados. La calculadora no es un accesorio: es el procedimiento que ejecuta la regla más importante del negocio.</p>
+<h2>🎯 Misión</h2>
+<blockquote class="gfm-important"><p><strong>❗ IMPORTANT:</strong> Misión M-8 · 20 escenarios de sizing resueltos a mano
+<strong>Objetivo:</strong> convertir la fórmula de 8.3 en reflejo. Los 20 escenarios (<a href="mision-m8-escenarios.html">hoja de escenarios con clave oculta</a>) cubren FX mayor, cruces USD/JPY, oro, redondeos, un rechazo por grano mínimo, una cartera con correlación y una recuperación de drawdown — cada uno resuelto <strong>a mano, sin calculadora primero</strong>, y verificado DESPUÉS contra tu hoja (o el script del repo).
+<strong>Procedimiento por escenario:</strong> (1) lee el dato; (2) resuelve a mano en tu cuaderno (la división completa, no "aproximado a ojo"); (3) verifica contra la calculadora; (4) si difieren, encuentra el error ANTES de seguir — un error de valor del pip contaminaría los 20.
+<strong>Entregable:</strong> <code>journal/mision-m8.md</code> con los 20 resultados a mano + la verificación de la calculadora + las 3-4 líneas de error corregido (si las hubo). Puntuación: <strong>≥ 18/20 correctos</strong> para aprobar — este módulo exige nota alta porque es el que paga las cuentas.
+<strong>Criterio de aceptación:</strong> 20/20 intentados · ≥ 18 correctos · los escenarios de decisión (17-20) con la JUSTIFICACIÓN escrita, no solo la respuesta · calculadora usada como verificador, no como oráculo previo.
+<strong>Etiqueta en journal:</strong> <code>mision-m8-sizing</code> · <strong>Tiempo estimado:</strong> 1 semana (4-5 escenarios por sesión).</p>
+</blockquote>
+<h2>✅ Evaluación / Criterio de Graduación</h2>
+<p>Criterio del SYLLABUS para este módulo — <strong>el único con umbral elevado (≥ 90 %)</strong>, porque sus errores no se pagan en notas sino en inventario:</p>
+<ul>
+<li><strong>Calculadora funcional:</strong> 3 pestañas construidas + los 3 casos de control verificados + integrada en el checklist pre-operación.</li>
+<li><strong>Misión M-8 completa:</strong> 20 escenarios resueltos a mano, ≥ 18/20 correctos, con justificación escrita en los de decisión.</li>
+<li><strong>Quiz de graduación de este módulo: ≥ 9/10 (90 %)</strong> — el umbral de los demás módulos (80 %) no aplica aquí: un 60 % de acierto en conceptos de riesgo equivale a operar sin entender el freno de emergencia.</li>
+<li><strong>Sistema v1.1 entregado:</strong> componentes 9-10 con calculadora, topes y cascada referenciados por nombre.</li>
+</ul>
+<p>Al aprobar todo: se abre <a href="hub-mod-09.html">M9 · Backtesting, Journal y Validación</a> — donde tu Sistema v1.1 consigue su evidencia estadística (100 operaciones ciegas) y el journal v1 (taxonomía E0-E7 + actas) se convierte en tu auditoría interna.</p>
+<h2>📝 Quiz de Graduación — umbral ≥ 9/10 (90 %)</h2>
+<ol>
+<li>Preservación de capital: define el capital como inventario y enumera el orden de las 4 preguntas del profesional. ¿Por qué "el tamaño es una salida de la fórmula" es la diferencia estructural con el aficionado?</li>
+<li>Con la fórmula <ktx class="ktx" data-tex="R = \frac{d}{1-d}">R = \frac{d}{1-d}</ktx>: calcula la recuperación necesaria para −15 % y −40 %, explica por qué la curva es superlineal, y por qué la referencia del drawdown es el máximo de la curva de capital (ejemplo: cuenta que subió a +12 % y está en +2 %).</li>
+<li>Deriva la regla del 1 % desde la estadística: con WR 40 % (rachas esperables de 6-7, 7.5) y la tabla de 8.2, muestra por qué al 1 % la peor racha esperable es una herida (−6 %) y al 5 % es no retorno práctico (−26,5 %). ¿Cuándo bajaría a 0,25-0,5 %?</li>
+<li>Fórmula universal completa: capital 3.600 $, riesgo 1 %, SL 45 pips, EUR/USD. Calcula presupuesto, lote bruto, lote final y la verificación inversa. ¿Qué haces si el lote bruto sale 0,004?</li>
+<li>USD/JPY cotiza a 160,00: calcula el valor del pip por lote. Con presupuesto 25 $ y SL de 25 pips, ¿qué lote operas? Muestra el redondeo a la baja y el riesgo real resultante.</li>
+<li>Oro (XAU/USD): capital 2.000 $, riesgo 1 %, SL 2,50 $ de precio. Con la convención "1,00 $ de movimiento = 100 $ por lote", calcula el lote exacto.</li>
+<li>Apalancamiento: con 0,06 lotes de EUR/USD (nominal ≈ 6.480 $) sobre capital 1.920 $, calcula el margen a 1:30 y a 1:500, el apalancamiento real, y explica por qué el riesgo es el mismo en ambos. ¿Cuáles son los 3 peligros reales del apalancamiento alto?</li>
+<li>Correlación: cartera con EUR/USD long (1 %). Llega AUD/USD long (1 %) con ρ medido 0,70. Calcula el riesgo efectivo del motor dólar y el veredicto. ¿Y si después llega GBP/USD long? ¿Por qué ρ ≤ −0,70 no da "crédito de cobertura"?</li>
+<li>Cascada de frenos: reproduce la tabla completa (disparador → acción) de los 5 niveles. ¿Cuál es el peor mes posible con la cascada activa y por qué todos los disparadores son números y no sentimientos? ¿Cómo trocea el freno diario una racha de 6?</li>
+<li>Integración (el día del dato): es mediodía; tu día ya marca −1 % (una pérdida al 1 % sobre capital inicial 1.920 $) y la cartera está vacía. Llegan dos señales simultáneas: GBP/USD long y AUD/USD long (ρ entre ambas ≈ 0,85, ambas cortan el dólar). Decide con el orden completo del módulo: freno (espacio diario) → cartera (topes) → sizing (calculadora con el capital ACTUAL). Muestra todos los números.</li>
+</ol>
+<details>
+<summary>Ver clave de respuestas</summary>
+
+1. El capital es la materia prima finita del negocio (8.1): cada dólar quemado reduce la capacidad de producir. Orden del profesional: (1) ¿cuánto puedo perder? (2) ¿dónde muere la idea (SL)? (3) ¿qué tamaño PERMITE el presupuesto? (4) ¿y si fallan 6 seguidas? El aficionado recorre el orden inverso y dimensiona por ambición. "El tamaño es una salida" significa que NO es una decisión libre: sale del presupuesto dividido por la distancia al stop — dos traders con los mismos datos calculan el mismo lote (test del clon cuantitativo).
+2. <ktx class="ktx" data-tex="R(15) = 0{,}15/0{,}85 = +17{,}6">R(15) = 0{,}15/0{,}85 = +17{,}6</ktx> %; <ktx class="ktx" data-tex="R(40) = 0{,}40/0{,}60 = +66{,}7">R(40) = 0{,}40/0{,}60 = +66{,}7</ktx> %. Superlineal: el denominador $(1-d)$ encoge el capital sobre el que se recupera, así cada punto extra de drawdown cuesta MÁS de un punto de ganancia futura (de −30 % a −50 %, pasa de +42,9 % a +100 %). La referencia es el máximo: <ktx class="ktx" data-tex="0{,}12 \to 0{,}02">0{,}12 \to 0{,}02</ktx> es <ktx class="ktx" data-tex="\frac{0{,}10}{1{,}12} ≈ -8{,}9">\frac{0{,}10}{1{,}12} ≈ -8{,}9</ktx> % de drawdown, no "sigue en verde" — el máximo es el punto desde el que el negocio debe reconstruirse.
+3. Rachas de 6-7 esperables (7.5). Al 1 %: <ktx class="ktx" data-tex="0{,}99^6 ≈ 0{,}9415">0{,}99^6 ≈ 0{,}9415</ktx> → −5,9 % ≈ −6 % → recuperación +6,4 % ≈ 31 operaciones: herida. Al 5 %: <ktx class="ktx" data-tex="0{,}95^6 ≈ 0{,}735">0{,}95^6 ≈ 0{,}735</ktx> → −26,5 % → recuperación +36 % con 3-4 años de ejecución perfecta: no retorno práctico (8.2). El 1 % es el cruce: mantiene el peor escenario normal del sistema por debajo de la línea de emergencia (−15 %) incluso con la estadística más fea. Se baja a 0,25-0,5 % con WR medido bajo (rachas de 10-12), instrumentos con gap, o primer año de ejecución.
+4. Presupuesto: <ktx class="ktx" data-tex="3.600 \times 0{,}01 = 36">3.600 \times 0{,}01 = 36</ktx> $. Lote bruto: <ktx class="ktx" data-tex="36/(45 \times 10) = 0{,}08">36/(45 \times 10) = 0{,}08</ktx> exacto. Lote final: 0,08. Verificación: <ktx class="ktx" data-tex="0{,}08 \times 45 \times 10 = 36">0{,}08 \times 45 \times 10 = 36</ktx> $ ✓. Si el lote bruto sale 0,004: **RECHAZADA** — no cabe ni un micro-lote sin exceder el presupuesto (0,01 daría 0,45 $ de riesgo... al revés: 0,01 × SL × 10 sería el riesgo real; el principio es riesgo real ≤ presupuesto — el sizing tiene veto igual que el setup).
+5. <ktx class="ktx" data-tex="\frac{0{,}01 \times 100.000}{160} = 6{,}25">\frac{0{,}01 \times 100.000}{160} = 6{,}25</ktx> $/pip. Lote bruto: <ktx class="ktx" data-tex="25/(25 \times 6{,}25) = 25/156{,}25 = 0{,}16">25/(25 \times 6{,}25) = 25/156{,}25 = 0{,}16</ktx> exacto → **0,16 lotes**; verificación: <ktx class="ktx" data-tex="0{,}16 \times 156{,}25 = 25{,}00">0{,}16 \times 156{,}25 = 25{,}00</ktx> $ ✓ exacto.
+6. Presupuesto: 20 $. Riesgo por lote: <ktx class="ktx" data-tex="2{,}50 \times 100 = 250">2{,}50 \times 100 = 250</ktx> $. Lote: <ktx class="ktx" data-tex="20/250 = 0{,}08">20/250 = 0{,}08</ktx> lotes (8 onzas: 8 × 2,50 = 20 $ exactos ✓).
+7. Margen 1:30: <ktx class="ktx" data-tex="6.480/30 = 216">6.480/30 = 216</ktx> $; 1:500: ≈ 13 $. Apalancamiento real: <ktx class="ktx" data-tex="6.480/1.920 ≈ 3{,}4\times">6.480/1.920 ≈ 3{,}4\times</ktx>. El riesgo NO cambia porque lo define el SL × valor pip × lote (<ktx class="ktx" data-tex="0{,}06 \times 32 \times 10 = 19{,}20">0{,}06 \times 32 \times 10 = 19{,}20</ktx> $): el margen es solo la fianza congelada. Los 3 peligros reales: stop-out (liquidación forzada antes del SL si el margen usado es alto — regla: < 20-30 %), la invitación psicológica al oversizing, y el swap/costes que escalan con el nominal.
+8. <ktx class="ktx" data-tex="R_{\text{efectiva}} = 1 + 0{,}70 \times 1 = 1{,}70">R_{\text{efectiva}} = 1 + 0{,}70 \times 1 = 1{,}70</ktx> % — banda <ktx class="ktx" data-tex="\rho \geq 0{,}7">\rho \geq 0{,}7</ktx> → suma completa conservadora: 2 % → **tope por motor alcanzado JUSTO: ACEPTAR** (sin margen). GBP/USD long después: <ktx class="ktx" data-tex="2 + 1 = 3">2 + 1 = 3</ktx> % > tope 2 % → **RECHAZAR** ("no hay espacio de riesgo"). La correlación negativa no da crédito porque las coberturas rompen en pánico (las correlaciones convergen a +1 en crisis): el día que necesitas la anulación, no llega — y pagar dos spreads y dos swaps por una "protección" condicional es coste sin beneficio garantizado.
+9. Nivel 0: 1 % por operación (sizing). Nivel 1: día ≤ −2 % → cerrar todo, fin del día. Nivel 2: 2 pérdidas consecutivas → pausa 30-60 min. Nivel 3: semana ≤ −4 % → fuera hasta la próxima semana + revisión. Nivel 4: mes ≤ −6 % → APAGADO TOTAL + protocolo (cerrar todo, cerrar plataforma, journal, no antes de 48 h + defensa, firma). Peor mes posible: ≈ −6 % (vs −26,5 % al 5 % sin frenos). Disparadores = números porque el cerebro estresado falsifica las evaluaciones cualitativas ("se ve raro", "me siento bien") — el dato no negocia. El freno diario trocea la racha: máximo 2 pérdidas por día → la racha de 6 necesita ≥ 3 días, cada uno con su pausa: la fricción temporal que el tilt no puede atravesar.
+10. **Paso 1 — Freno (espacio diario):** el día marca −1 % → el margen hasta el disparo del freno 1 (−2 %) es exactamente UN 1 % (38,40 $ de presupuesto diario; ya gastados 19,20 $): solo cabe UNA operación estándar más, no dos. **Paso 2 — Cartera:** ambas señales comparten motor (ambas cortan USD, ρ 0,85 ≥ 0,7 → suma completa): tomar las dos valdría 2 % de motor (tope justo) — pero el freno ya limitó el día a 1 %: el freno manda sobre la cartera, es la capa superior. **Paso 3 — Sizing con capital ACTUAL:** <ktx class="ktx" data-tex="1.920 - 19{,}20 = 1.900{,}80">1.920 - 19{,}20 = 1.900{,}80</ktx> $ → presupuesto <ktx class="ktx" data-tex="1.900{,}80\times 0{,}01 = 19{,}01">1.900{,}80\times 0{,}01 = 19{,}01</ktx> $; con SL 32 pips y valor pip 10: <ktx class="ktx" data-tex="19{,}01/320 = 0{,}059">19{,}01/320 = 0{,}059</ktx> → redondeo a la baja → **0,05 lotes** (riesgo real <ktx class="ktx" data-tex="0{,}05\times 320 = 16">0{,}05\times 320 = 16</ktx> $ = 0{,}84$ %). **Veredicto:** UNA señal (la que tu checklist priorice), la otra **RECHAZADA** ("no hay espacio de riesgo" — diario y de motor). Si la elegida pierde: día ≈ −1,84 % — el freno 1 NO dispara (no llegó al −2 %) pero el presupuesto diario quedó agotado: la sesión termina. Si gana: el día queda ≈ −0,16 % y la segunda señal SÍ podría evaluarse (motor pasaría a 2 %, justo en tope). El orden freno → cartera → sizing no es negociable: cada capa limita a las que están debajo.
+
+</details>
+
+<h2>📖 Glosario del Módulo</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Término</th>
+<th>Inglés</th>
+<th>Definición</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Preservación de capital</td>
+<td><em>capital preservation</em></td>
+<td>Prioridad nº 1 del negocio: proteger el inventario antes que buscar ganancia — el orden de preguntas invertido del profesional</td>
+</tr>
+<tr>
+<td>Inventario del negocio</td>
+<td><em>trading capital as inventory</em></td>
+<td>El saldo de la cuenta como materia prima finita que se consume para producir: sin inventario no hay negocio</td>
+</tr>
+<tr>
+<td>Drawdown</td>
+<td><em>drawdown</em></td>
+<td>Caída desde el máximo de la curva de capital; se mide desde el máximo, nunca desde el saldo inicial</td>
+</tr>
+<tr>
+<td>Asimetría del drawdown</td>
+<td><em>drawdown asymmetry</em></td>
+<td><ktx class="ktx" data-tex="R = \frac{d}{1-d}">R = \frac{d}{1-d}</ktx>: la recuperación necesaria crece más rápido que el daño (−50 % → +100 %); superlineal</td>
+</tr>
+<tr>
+<td>Riesgo por operación</td>
+<td><em>risk per trade</em></td>
+<td>La única cantidad que el trader controla directamente: capital actual × %, ejecutada por la calculadora</td>
+</tr>
+<tr>
+<td>Regla del 1 %</td>
+<td><em>1 % rule</em></td>
+<td>El estándar del programa: mantiene la peor racha esperable (−6 %) muy por debajo de la línea de emergencia (−15 %)</td>
+</tr>
+<tr>
+<td>Position sizing</td>
+<td><em>position sizing</em></td>
+<td><ktx class="ktx" data-tex="\text{lote} = \frac{\text{riesgo en \$}}{\text{SL pips} \times \text{valor pip}}">\text{lote} = \frac{\text{riesgo en \$}}{\text{SL pips} \times \text{valor pip}}</ktx>: el tamaño es una salida de la fórmula, no una decisión libre</td>
+</tr>
+<tr>
+<td>Redondeo a la baja</td>
+<td><em>rounding down</em></td>
+<td>El lote final SIEMPRE hacia abajo al grano disponible: el riesgo real queda ≤ presupuesto, sin excepciones</td>
+</tr>
+<tr>
+<td>Verificación inversa</td>
+<td><em>inverse verification</em></td>
+<td>Recalcular el riesgo con el lote final (lote × SL × valor pip) antes de enviar: la última línea defensiva</td>
+</tr>
+<tr>
+<td>Valor del pip</td>
+<td><em>pip value</em></td>
+<td>Cuánto vale 1 pip por lote estándar: 10 $ en EUR/GBP/AUD (cuenta USD); USD/JPY ≈ 6,67 $ a 150; oro: 100 $ por 1,00 $</td>
+</tr>
+<tr>
+<td>Micro-lote</td>
+<td><em>micro lot</em></td>
+<td>0,01 estándar = 0,10 $/pip en EUR/USD: la granularidad que permite respetar el 1 % en cuentas pequeñas</td>
+</tr>
+<tr>
+<td>Margen</td>
+<td><em>margin</em></td>
+<td>La fianza congelada por el broker para mantener la posición: una línea contable, NO el riesgo</td>
+</tr>
+<tr>
+<td>Apalancamiento del broker</td>
+<td><em>broker leverage</em></td>
+<td>Máximo nominal por unidad de margen (1:30...1:500): publicidad, no parámetro de riesgo</td>
+</tr>
+<tr>
+<td>Apalancamiento real</td>
+<td><em>effective leverage</em></td>
+<td>Nominal ÷ capital: consecuencia del sizing (típico 2-4× con el 1 %); &gt; 10× habitual = alarma</td>
+</tr>
+<tr>
+<td>Stop-out</td>
+<td><em>stop out</em></td>
+<td>Liquidación forzada por margen antes del SL (gap, noticia, spread): el riesgo deja de ser el presupuesto</td>
+</tr>
+<tr>
+<td>Correlación</td>
+<td><em>correlation</em></td>
+<td>ρ entre −1 y +1: cuánto se mueven juntas dos posiciones; se mide (30-90 días) o no existe</td>
+</tr>
+<tr>
+<td>Riesgo efectivo de cartera</td>
+<td><em>effective portfolio risk</em></td>
+<td><ktx class="ktx" data-tex="R_1 + \rho R_2">R_1 + \rho R_2</ktx>: dos operaciones de 1 % con ρ 0,85 son ~1,85 % — casi una sola apuesta</td>
+</tr>
+<tr>
+<td>Tope por motor</td>
+<td><em>per-motor exposure cap</em></td>
+<td>Máx 2 % de riesgo efectivo sobre el mismo motor (divisa/activo): EUR/USD + GBP/USD largos = tope alcanzado</td>
+</tr>
+<tr>
+<td>Daily Max Loss</td>
+<td><em>daily max loss</em></td>
+<td>Freno nivel 1: día ≤ −2 % → cerrar todo y terminar; el techo que trocea las rachas</td>
+</tr>
+<tr>
+<td>Frenos en cascada</td>
+<td><em>cascading circuit breakers</em></td>
+<td>1 % → −2 % día → 2 pérdidas → −4 % semana → −6 % mes: el techo que acota el peor mes en ≈ −6 %</td>
+</tr>
+<tr>
+<td>Protocolo de apagado</td>
+<td><em>shutdown protocol</em></td>
+<td>Cerrar TODO → cerrar plataforma → journal + temperatura → no antes de 48 h + defensa → firma en frío</td>
+</tr>
+<tr>
+<td>Tilt</td>
+<td><em>tilt / revenge trading</em></td>
+<td>"Una más para recuperar": el mecanismo de ruina que la cascada hace imposible por construcción</td>
+</tr>
+</tbody>
+</table></div>
+<h2>🔗 Referencias</h2>
+<ul>
+<li><a href="SYLLABUS.html">SYLLABUS.md § 6 — N3, Módulo 8</a></li>
+<li><a href="analisis_cursos.html">analisis_cursos.md</a> — trazabilidad 003 · M4.5/M6.5 y 004 · M6.1-6.5; aportes propios: cartera y correlación (vacío 1), frenos en cascada</li>
+<li><a href="hub-mod-07.html">Módulo 7 · Construcción del Sistema</a> — anterior: el componente 9 se convierte aquí en procedimiento ejecutable</li>
+<li><a href="receta-primera-operacion.html">La Receta de tu Primera Operación</a> — el caso maestro: el paso 9 (riesgo 1 %) hoy se convierte en calculadora</li>
+<li><a href="mision-m8-escenarios.html">Hoja de 20 escenarios de la misión M-8</a> — con clave de verificación oculta</li>
+<li><a href="files/position_sizing.py">scripts/core/position_sizing.py</a> — la versión Python del programa: oráculo de verificación del lab</li>
+<li><a href="hub-mod-09.html">Módulo 9 · Backtesting, Journal y Validación</a> — el siguiente: la evidencia estadística que decide si tu sizing sobrevivió a 100 operaciones</li>
+</ul>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="leccion-7-6.html"><span class="lbl">← Anterior</span><span class="ttl">Lección 7.6 · Criterios de robustez — cuando el sistema sobrevive al e</span></a>
+    <a class="next" href="leccion-8-1.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 8.1 · Preservación de capital — el dinero como inventario</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 2.3 · Liquidez · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a class="active" href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>🧱 N1 · Base<span class="sep">/</span>M2 · El Motor del Precio<span class="sep">/</span>Lección 2.3 · Liquidez</div>
+  <article class="doc-body">
+<h1>Lección 2.3 · Liquidez</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>40–50 min de estudio</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-02.html">M2 · El Motor del Precio</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td><a href="leccion-2-2.html">Lección 2.2 · Oferta y demanda</a></td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="leccion-2-4.html">Lección 2.4 · Forex y sus sesiones</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>Hay una pregunta que todo principiante se hace tarde o temprano: "¿por qué el precio siempre barre mi Stop Loss y DESPUÉS gira a mi favor?". La respuesta no es mala suerte, ni un algoritmo que te vigila personalmente: es <strong>liquidez</strong> — la propiedad del mercado que los grandes operadores necesitan y que tu Stop Loss, colocado donde los coloca todo el mundo, fabrica gratis para ellos. Entender liquidez transforma tu operativa en tres niveles: dónde colocas el SL (estructura, no número redondo), por qué los quiebres de mínimos/máximos obvios a veces son "barridas" que se revierten, y por qué el volumen de tu cuenta no mueve el mercado pero el de una mesa institucional sí necesita buscar contrapartida. Esta lección explica al depredador antes de que conozcas sus mapas (M5).</p>
+<h2>Concepto</h2>
+<p><strong>Liquidez</strong> (<em>liquidity</em>) es la capacidad de ejecutar un tamaño grande de forma inmediata, a un precio justo y sin mover el mercado. Tiene dos caras:</p>
+<ul>
+<li><strong>Liquidez de costo:</strong> qué tan ancho es el spread (Lección 2.1). Mercado líquido = spread mínimo.</li>
+<li><strong>Liquidez de profundidad:</strong> cuánto volumen puede absorberse cerca del precio actual sin desplazamiento (<em>slippage</em>). Un libro con 500 lotes en cada nivel absorbe una orden grande; un libro con 5 lotes la dispara.</li>
+</ul>
+<p><strong>Quién la provee.</strong> Los <em>market makers</em> (creadores de mercado) y los grandes participantes pasivos ponen órdenes limit a ambos lados del precio, cobrando el spread a cambio de estar siempre disponibles. Los institucionales — fondos, mesas de bancos — son en su mayoría <strong>consumidores</strong> de liquidez: necesitan ejecutar tamaños que el libro suelto no puede absorber sin impacto.</p>
+<p><strong>El problema del grande.</strong> Para comprar 2 000 lotes de EUR/USD, comprarlos de golpe "a mercado" los sube él mismo: paga peores precios en cada nivel que consume (impacto de mercado). La solución institucional es <strong>fragmentar</strong> la orden y llenarla donde haya mucha contrapartida concentrada. ¿Dónde se concentra la contrapartida? Exactamente donde el retail coloca sus órdenes:</p>
+<ol>
+<li><strong>Stops:</strong> los SL de los compradores viven bajo los mínimos recientes; los de los vendedores, sobre los máximos. Miles de cuentas independientes ponen sus stops en niveles parecidos ("justo debajo del mínimo de ayer", "en el número redondo") — una reserva concentrada de órdenes de venta esperando ser ejecutadas.</li>
+<li><strong>Órdenes pendientes:</strong> limit de compra acumulados bajo zonas visibles, limit de venta sobre zonas visibles.</li>
+</ol>
+<p><strong>La barrida (<em>stop hunt / liquidity sweep</em>).</strong> Un institucional que quiere COMPRAR en tamaño necesita a alguien vendiéndole. Bajo un mínimo obvio hay una mina: stops de venta + quiebres que atraen vendedores agresivos. Empujar el precio un poco bajo ese mínimo <strong>detona esa liquidez</strong>: los stops se convierten en ventas a mercado, los quiebres atraen más ventas cortas — y toda esa venta tiene un comprador paciente que la está absorbiendo en fragmentos. Cuando el libro se vacía de vendedores, el precio gira con energía sobrante. El mínimo "se respetó a medias": se rompió lo justo para llenar al comprador grande, y esa rotura falsa queda en el gráfico como <em>sweep</em> o <em>falso rompimiento</em> (M3.4 le pondrá nombre de patrón; M5 lo integrará en estructura).</p>
+<p><strong>Nota de honestidad:</strong> no toda rotura de mínimo es una barrida institucional deliberada — a veces es simplemente un quiebre real que se confirma. La lección operativa no es "todos los mínimos son cebo": es que <strong>los mínimos/máximos obvios concentran liquidez, y eso cambia las probabilidades de qué pasa ahí</strong>. Tu ventaja es colocarte del lado estadístico, no adivinar la intención de nadie.</p>
+<p><strong>Visual — la anatomía de una barrida, segundo a segundo:</strong></p>
+<pre class="mermaid">sequenceDiagram
+    participant R as Retail
+    participant P as Precio
+    participant I as Institucional
+    R-&gt;&gt;P: Coloca SL justo bajo el mínimo obvio (1,0800)
+    Note over I: Quiere COMPRAR 2 000 lotes&lt;br/&gt;y necesita vendedores que se los entreguen
+    I-&gt;&gt;P: Empuja el precio bajo el mínimo
+    P-&gt;&gt;R: Barrida: los stops se ejecutan&lt;br/&gt;(cada stop es una venta a mercado)
+    I-&gt;&gt;P: Absorbe esas ventas en fragmentos&lt;br/&gt;llena sus 2 000 lotes sin impacto
+    P-&gt;&gt;P: El libro se queda sin vendedores
+    P-&gt;&gt;R: Giro al alza con energía sobrante
+    R-&gt;&gt;R: &quot;El mercado me caza&quot; — no:&lt;br/&gt;tu stop era la mercancía buscada
+</pre>
+<h2>Analogía</h2>
+<p>La ballena y el estanque. Un pez pequeño puede girar en cualquier dirección sin levantar una ola: el agua no se entera (tu cuenta de 2 000 $). Una ballena que quiere virar necesita <strong>agua profunda</strong>: si gira en un estanque de medio metro, se quedará encallada en el fondo (tu orden de 2 000 lotes a mercado en un libro fino). ¿Y cómo consigue profundidad la ballena? Va a donde el agua se acumula. En los mercados, el "agua" se acumula en los lugares que todo el mundo mira: mínimos y máximos recientes, números redondos, bordes de rango — porque ahí es donde millones de decisiones independientes convergen sin coordinarse. La ballena no "odia" a los peces pequeños ni los persigue: simplemente necesita nadar donde hay agua, y el agua se junta donde los pequeños ponen sus órdenes. Si tú conoces el mapa de dónde se junta el agua, dejas de poner tu casa (SL) justo en la orilla por donde la ballena pasa a respirar.</p>
+<h2>Cómo se hace: el cálculo del institucional, con números cerrados</h2>
+<p><strong>Escenario <em>(todas las cifras ilustrativas, mecánica real)</em>.</strong> Una mesa quiere comprar 2 000 lotes de EUR/USD. El libro alrededor del precio muestra profundidad típica de 40–80 lotes por nivel en el ask.</p>
+<ul>
+<li><strong>Opción A — comprar a mercado ahora:</strong> consumiría ~25–50 niveles. Impacto estimado: el precio sube ~10–15 pips solo por su propia compra. Costo de impacto: si el recorrido medio que quería capturar es 40 pips, se comió un cuarto de su beneficio antes de empezar.</li>
+<li><strong>Opción B — esperar el retroceso a la zona de liquidez:</strong> bajo el mínimo de la semana en 1,0800 hay (estimado) 3 000 lotes en stops de venta + vendedores por quiebre. El precio barre 1,0802 → 1,0795: la rotura detona los stops (ventas a mercado), la mesa absorbe los 2 000 lotes <strong>entre 1,0800 y 1,0793</strong> sin mover el precio más allá del propio barrido. El stop de esa mesa: 1,0778 (bajo la nueva estructura del barrido), y el objetivo: 1,0860.</li>
+<li><strong>Resultado del barrido:</strong> en 15 minutos el precio toca 1,0793 y gira. El retail que compró el quiebre pierde; el retail que tenía el SL "justo debajo del mínimo de ayer" perdió la posición; la mesa entró donde había vendedores que pagar por su compra.</li>
+</ul>
+<p><strong>Lo que tú aprendes del escenario:</strong> el SL bajo el mínimo obvio de ayer fue la mercancía. Un SL colocado por <strong>estructura del barrido</strong> (bajo 1,0778, el nuevo mínimo del impulso de venta) no estaba en la zona de la ballena — estaba detrás de ella. La diferencia entre ambos SL son 5 pips y una idea de liquidez. En el Módulo 8 esto se formaliza como colocación por estructura, y la <a href="receta-primera-operacion.html">receta de primera operación</a> ya lo insinúa en su Paso 4: la invalidación va donde <em>tu idea muere</em>, no donde <em>duele un número redondo</em>.</p>
+<h2>Error común</h2>
+<p>El primero es el victimismo: "el mercado me caza los stops, alguien me espía la cuenta". Nadie ve tu cuenta de 2 000 $; lo que ven es la <strong>estadística de miles de cuentas</strong> que ponen stops donde los pones tú. El antídoto no es esconderse: es dejar de colocar stops en los depósitos de liquidez obvios (números redondos exactos, 3–5 pips bajo el mínimo obvio que todo el gráfico ve) y colocarlos donde tu análisis de estructura diga que la idea está muerta — aunque eso signifique arriesgar 28 pips en vez de 15 (y calcular el lote en consecuencia, Paso 5 de la receta). El segundo error es el espejo: "entonces TODO quiebre es falso, vendo siempre las roturas". Falso y peligroso: los quiebres reales existen y son los que alimentan las tendencias (Lección 2.2). La diferencia observacional — barrida y vuelta rápida con energía vs quiebre con cierre sostenido fuera del nivel y retroceso que respeta el nivel roto — es contenido del Módulo 3.4. Antes de tener ese criterio, la regla del programa es simple: <strong>sin posición en la ventana de datos macro y sin anticipar quiebres</strong>.</p>
+<h2>Conexión cuantitativa</h2>
+<p>La liquidez no entendida destruye <ktx class="ktx" data-tex="E">E</ktx> por dos puertas. <strong>Puerta 1 — el WR real cae respecto al backtest:</strong> stops colocados en zonas de liquidez elevan la frecuencia de "SL tocado y giro a favor" — cada uno es una pérdida de 1R que el backtest contaba como ganadora (el histórico no siempre distingue tu nivel exacto de stop). <strong>Puerta 2 — el slippage agranda <ktx class="ktx" data-tex="L">L</ktx>:</strong> cuando tu SL ejecuta dentro de una barrida (mucho movimiento, libro desbalanceado), puedes salir 3–10 pips peor que tu nivel <em>(ilustrativo)</em>: una pérdida de 1R se vuelve 1,2R–1,5R. En la ecuación <ktx class="ktx" data-tex="E = (P_w \times W) - (P_l \times L)">E = (P_w \times W) - (P_l \times L)</ktx>, ambos efectos empujan hacia abajo y no aparecen en el backtest ingenuo. El programa los neutraliza con: colocación por estructura (M8), tamaño que sobreviva el slippage, y la regla de no estar en el mercado en ventanas de datos (Lección 2.6) — donde las barridas y los saltos se concentran.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li>Liquidez = ejecutar tamaño inmediato sin mover el precio; se mide en ancho de spread y profundidad de libro.</li>
+<li>Los institucionales son consumidores de liquidez: fragmentan sus órdenes y van a donde hay contrapartida concentrada.</li>
+<li>La contrapartida se concentra donde el retail pone sus órdenes: stops bajo mínimos/sobre máximos obvios y números redondos.</li>
+<li>La <strong>barrida</strong> detona esa liquidez para llenar una orden grande — es ingeniería de ejecución, no conspiración contra tu cuenta.</li>
+<li>Tu defensa: SL por <strong>estructura</strong> (donde tu idea muere), nunca en el depósito de liquidez obvio ni en números redondos.</li>
+<li>No todo quiebre es barrida: los quiebres reales alimentan tendencias. Sin criterio de confirmación (M3.4), la regla es no anticipar.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>¿Por qué un fondo con 2 000 lotes que comprar NO puede simplemente apretar "comprar a mercado", aunque el mercado sea el más líquido del mundo?</li>
+<li>Tu SL está en 1,0800 (exacto) y el mínimo visible de ayer fue 1,0802. ¿Qué dos problemas tiene esa colocación y qué le preguntarías a tu análisis antes de moverlo?</li>
+<li>El precio rompe un mínimo importante y en 20 minutos vuelve por encima de él. ¿Qué dos lecturas son posibles y qué las distingue?</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. Porque su propia orden consumiría decenas de niveles del libro: pagaría peores precios en cada nivel (impacto de mercado, ~10–15 pips en el ejemplo) y se comería una parte del beneficio antes de estar posicionado. Los grandes fragmentan y llenan donde hay contrapartida concentrada — que es justo donde el retail acumula stops y pendientes.
+2. Problema 1: está en un **número redondo** (nivel psicológico con liquidez extra). Problema 2: está a 2 pips del mínimo obvio de ayer — el depósito clásico de stops de la masa; su stop es parte de la mina que la barrida viene a detonar. La pregunta a tu análisis: ¿dónde muere realmente mi idea? Si tu escenario era "compra en soporte, invalidada si pierde la zona", el SL va **bajo la estructura del barrido potencial** (bajo el mínimo del impulso que rompería), no pegado al nivel visible — y el lote se recalcula con el Paso 5 de la receta para que el riesgo siga siendo 1 %.
+3. Lectura 1 — barrida: rotura que detona liquidez bajo el mínimo, el comprador institucional llena ahí, el precio gira con energía (vuelta rápida, velas de reacción fuertes). Lectura 2 — quiebre real con *throwback*: el precio rompe, retrocede a retestear el nivel roto (ahora resistencia→soporte por polaridad) y continúa. Lo que distingue: el **cierre** y el comportamiento del retesteo — barrida = cierre vuelve rápido dentro + giro con impulso; quiebre sano = cierre sostenido fuera del nivel, retroceso lento que respeta el nivel y continuación. El criterio de confirmación en 3 pasos (M3.4) formaliza esta lectura; sin él, no se anticipa nada.
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="leccion-2-2.html"><span class="lbl">← Anterior</span><span class="ttl">Lección 2.2 · Oferta y demanda</span></a>
+    <a class="next" href="leccion-2-4.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 2.4 · Forex y sus sesiones</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

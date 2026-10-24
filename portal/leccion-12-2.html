@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 12.2 · La rutina semanal del trader — el ciclo que convierte e · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a class="active" href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>💼 N4 · Negocio<span class="sep">/</span>M12 · Plan de Trading y Plan de Negocio<span class="sep">/</span>Lección 12.2 · La rutina semanal del trader — el ciclo que c</div>
+  <article class="doc-body">
+<h1>Lección 12.2 · La rutina semanal del trader — el ciclo que convierte el plan en hábito</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>35–50 min de estudio</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-12.html">M12 · Plan de Trading y Plan de Negocio</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td><a href="leccion-12-1.html">Lección 12.1 · El Plan de Trading documental</a></td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="leccion-12-3.html">Lección 12.3 · KPIs del negocio</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>El Plan de Trading (12.1) dice QUÉ; esta lección entrega el CUÁNDO — el calendario operativo que convierte el documento en hábito y el hábito en negocio. La rutina semanal no es una lista de buenas intenciones: es la <strong>arquitectura temporal</strong> que ya construiste pieza por pieza (temperatura, ventana, journal, actas, ventanas de modificación) ahora integrada en un ciclo único, con sus horarios, sus duraciones y sus entregables. La razón de la integración es la que el programa repite desde M10: lo que depende de tu memoria y tu ánimo falla exactamente cuando más importa; lo que tiene horario, duración y entregable definidos sobrevive a la fatiga, a la racha y al mes aburrido. Y hay una segunda función, de negocio: la rutina es lo que el Plan de Negocio (12.4) presupuesta en HORAS — el trader que no sabe cuántas horas le cuesta su semana no puede calcular su retorno por hora (12.3). Si terminas con una sola idea: <strong>la rutina no organiza tu tiempo alrededor del mercado — organiza el mercado alrededor de tu negocio.</strong></p>
+<h2>Concepto</h2>
+<p><strong>El ciclo completo, dibujado una sola vez:</strong></p>
+<pre class="mermaid">flowchart LR
+    subgraph DIA[&quot;CICLO DIARIO · 3-4 h totales&quot;]
+        direction TB
+        P[&quot;PRE-MERCADO · 15 min&lt;br/&gt;temperatura 0-9 · premeditatio ·&lt;br/&gt;caso contrario · metas de proceso&quot;] --&gt; E[&quot;EJECUCIÓN · máx 3 h&lt;br/&gt;ventana de picos · checklist&lt;br/&gt;contador de decisiones · corte&quot;]
+        E --&gt; J[&quot;POST-MERCADO · 10-15 min&lt;br/&gt;journal en caliente · etiquetas&lt;br/&gt;juicio de proceso · cierre ritual&quot;]
+    end
+    J --&gt; SEM
+    subgraph SEM[&quot;CICLO SEMANAL · 30-45 min (viernes o sábado)&quot;]
+        direction TB
+        S1[&quot;Acta semanal (9.6) · 6 pasos:&lt;br/&gt;leer la semana · contar etiquetas ·&lt;br/&gt;5 preguntas · disparos · UNA mejora&quot;] --&gt; S2[&quot;KPIs en el dashboard (12.3)&lt;br/&gt;E · PF · DD · horas vs retorno&quot;]
+    end
+    SEM --&gt; MES
+    subgraph MES[&quot;CICLO MENSUAL · 60-90 min (fin de mes)&quot;]
+        direction TB
+        M1[&quot;Reporte de métricas del mes&lt;br/&gt;vs umbrales declarados (9.3)&quot;] --&gt; M2{&quot;Ventana de modificación&lt;br/&gt;4 condiciones acumulativas?&quot;}
+        M2 -- &quot;Sí&quot; --&gt; M3[&quot;UNA modificación&lt;br/&gt;+ changelog + re-test plan&quot;]
+        M2 -- &quot;No&quot; --&gt; M4[&quot;Abstención firmada&lt;br/&gt;se sigue midiendo&quot;]
+    end
+    MES --&gt; TRIM[&quot;CICLO TRIMESTRAL · 2 h&lt;br/&gt;Plan de Trading: revisión de secciones&lt;br/&gt;vs evolución del negocio + fiscal (11.7)&quot;]
+</pre>
+<p><strong>Las 4 duraciones que el Plan de Negocio presupuesta.</strong> Con este ciclo, tu negocio consume <em>(perfil H1/H4, 2-3 disparos/semana)</em>: ~3-4 h/día en 3-4 días de mercado de tu ventana (~14 h/semana de operación y registro) + 30-45 min de acta semanal + 60-90 min de mensual + 2 h trimestrales ≈ <strong>~60-70 h/mes</strong> — el número que el KPI de horas vs retorno (12.3) necesita. La regla de honestidad del programa: las horas se REGISTRAN (una columna simple en el acta), no se estiman — el trabajo invisible ("pensé en el mercado 4 horas cada día") no presupuesta y no mide.</p>
+<p><strong>Pre-mercado: los 15 minutos que valen la sesión.</strong> El bloque P del ciclo (10.6-10.7): temperatura con su veredicto, premeditatio (la pérdida posible hoy es estructura), caso contrario escrito, metas de proceso del día. Su función es exactamente la del preflight del piloto: cargar el protocolo ANTES de que el mercado pida decisiones — y su evidencia es la plantilla de diario emocional del laboratorio de M10, que la misión final auditará.</p>
+<p><strong>La semana no es 5 días de trading.</strong> Tu sistema de 2-3 disparos/semana en H1/H4 NO opera cada día: la rutina contempla <strong>días de observación</strong> (temperatura hecha, caso contrario escrito, cero disparos, journal con "no hay señales: día de observación") — y los cuenta como días de negocio plenos, porque la inacción estratégica (10.7) ES ejecución del plan. El amateur cuenta días operados; el profesional cuenta días ejecutados — y la ejecución incluye no estar. La estadística que la acta semanal produce: días ejecutados/planificados = la métrica de disciplina que la Certificación audita.</p>
+<p><strong>El viernes (o sábado): la hora de auditoría.</strong> El bloque SEM del ciclo — el acta semanal de 9.6 en su horario fijo: se lee la semana, se cuentan las etiquetas, se responden las 5 preguntas de auditoría, se revisa la métrica de disparos, se decide LA UNA mejora de ejecución y se llena el dashboard de KPIs (12.3). Su horario fijo no es pedantería: es el mismo mecanismo de la ventana de ejecución aplicado a la auditoría — lo que tiene hora ocurre; lo que ocurre "cuando pueda", no ocurre.</p>
+<p><strong>El fin de mes: la ventana.</strong> El bloque MES — el reporte de métricas contra los umbrales declarados y la decisión de modificación con sus 4 condiciones acumulativas (9.6). Y el trimestre: la revisión de las SECCIONES del plan (¿la identidad sigue siendo esa? ¿la tolerancia al drawdown cambió con tu vida? ¿la fiscalidad necesita reconsulta?) — el único momento donde el PLAN (no el sistema) se revisa por diseño.</p>
+<h2>Analogía</h2>
+<p>El calendario de entrenamiento del maratonista. El corredor profesional no decide cada mañana "hoy entreno o no": su semana está estructurada — series el martes, rodaje el jueves, larga el domingo, descanso y fuerza entre semana, revisión de cargas el lunes con el entrenador. El descanso está en el plan (igual que tu día de observación), la revisión tiene horario (igual que tu acta), y la progresión se decide por ciclos, no por impulsos (igual que tu ventana mensual). El amateur corre "cuando puede, lo que le apetece": entrena demasiado los días buenos y abandona en los malos. La diferencia de resultados no es de talento: es de arquitectura temporal — la misma que tu ciclo diario → semanal → mensual → trimestral le da a tu negocio.</p>
+<h2>Cómo se hace: instalar el calendario (30 minutos, una vez)</h2>
+<ol>
+<li><strong>Bloquea las horas en TU calendario real:</strong> la ventana de ejecución (10.7) de los días de mercado, los 15 min de pre-mercado con alarma, los 10-15 min de post-mercado, el bloque semanal del viernes/sábado y el bloque mensual del último día hábil. Si tu calendario no lo refleja, no es una rutina: es una intención.</li>
+<li><strong>Prepara las plantillas fijas:</strong> la hoja de temperatura (M10), la plantilla de acta semanal (9.6), el dashboard de KPIs (12.3, laboratorio) y el índice del expediente fiscal (11.7) — el ciclo corre sobre documentos fijos, no sobre decisiones de cada día.</li>
+<li><strong>Registra las horas desde la semana 1</strong> (columna simple en el acta): es la línea base del KPI de 12.3 y la prueba de que la rutina es real.</li>
+<li><strong>Define tu día de observación tipo:</strong> qué haces en un día sin señales (temperatura, observación pasiva con límite de tiempo, estudio del diario, NADA de buscar señales en TF menores) — la rutina del día vacío es la que evita el overtrading de aburrimiento (10.3).</li>
+<li><strong>Revisa el calendario trimestralmente:</strong> la duración de los bloques se ajusta con evidencia (el acta que sistemáticamente dura 1 h no es un acta de 45 min) — en la ventana, como todo.</li>
+</ol>
+<h2>Error común</h2>
+<p><strong>(1) "Opero cuando puedo y hago el journal si me queda tiempo."</strong> Ese orden invertido es el fin del negocio: el journal en caliente (10.7) es el registro que sostiene TODO lo demás — una semana sin registro es una semana que no existe para tus métricas (y la Certificación lo auditará). <strong>(2) Confundir rutina con rigidez.</strong> El ciclo fija el ESQUELETO (horarios, duraciones, entregables); el mercado llena el contenido (señales, gestión, observación) — la flexibilidad que importa está DENTRO de la estructura, no en estructurar cada día de nuevo. <strong>(3) Saltarse el acta semanal en las semanas buenas.</strong> La semana ganadora es la más importante de auditar (10.5: la sobreconfianza vive ahí) — el acta de las semanas verdes detecta el riesgo medio subiendo antes que la cuenta. <strong>(4) Estirar la ventana de ejecución "porque hay movimiento".</strong> La ventana y su corte son política del plan (sección 6): el movimiento fuera de los picos es ruido con forma de oportunidad — tu sistema no dispara mejor por mirarlo más (10.7). <strong>(5) No tener rutina para los meses MALOS.</strong> El ciclo no se suspende en el drawdown: se ejecuta IGUAL — temperatura, ventana, journal, actas — y son precisamente las actas de los meses malos las que producen la decisión correcta de la ventana (el changelog o la abstención firmada). La rutina es la infraestructura de la serenidad de 10.6.</p>
+<h2>Conexión cuantitativa</h2>
+<p><strong>Hacia 12.3:</strong> las horas registradas del ciclo alimentan el KPI "horas vs retorno" — sin rutina medida, ese KPI es una suposición. <strong>Hacia 9.6:</strong> el ciclo semanal/mensual/trimestral es el calendario exacto de las actas y las ventanas — esta lección les pone horario y presupuesto de tiempo. <strong>Hacia 10.7:</strong> el ciclo diario ES la rutina de M10 integrada con los ciclos superiores — el pre/post-mercado ya no son piezas aisladas: son los extremos del día de negocio. <strong>Hacia la Certificación:</strong> 12 semanas de operativa documentada con este ciclo son el tercer requisito de la certificación — el calendario ES la evidencia.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li>El ciclo operativo tiene 4 capas: <strong>diario</strong> (pre 15 min → ejecución ≤ 3 h → post 10-15 min), <strong>semanal</strong> (acta + KPIs, 30-45 min), <strong>mensual</strong> (reporte + ventana de modificación) y <strong>trimestral</strong> (revisión de secciones del plan + fiscal).</li>
+<li>El negocio consume <strong>~60-70 h/mes</strong> en el perfil H1/H4 del programa — y las horas se REGISTRAN, no se estiman: el KPI de 12.3 las necesita.</li>
+<li>Los <strong>días de observación son días de negocio plenos</strong>: la inacción estratégica se ejecuta con rutina completa y se cuenta como ejecución — días ejecutados ≠ días operados.</li>
+<li>El acta semanal tiene <strong>horario fijo</strong> y se audita TAMBIÉN en las semanas ganadoras — es donde la sobreconfianza se detecta antes.</li>
+<li>La rutina no se suspende en los meses malos: es exactamente ahí donde el ciclo produce su valor — las actas del drawdown hacen la decisión correcta posible.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>Dibuja el ciclo de 4 capas con sus duraciones y entregables. ¿Qué entra a cada capa y qué decisión se toma en cada una (con la lección fuente)?</li>
+<li>Tu semana: 2 disparos ejecutados (uno ganador +2R, uno E0), 3 días de observación, 1 día de temperatura roja (no operó). ¿Cuántos días ejecutados/planned según el plan y qué dice el acta de esa semana en la métrica de disciplina? ¿Y qué auditó del día de temperatura roja?</li>
+<li>Un trader "no tuvo tiempo" del acta en su mejor semana (+8R). ¿Qué dos riesgos específicos quedan sin auditar y qué mecánica del programa los habría capturado? Formula la corrección en 2 frases.</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. Diario: pre-mercado (temperatura/premeditatio/caso contrario — 10.6-10.7) → ejecución (checklist, contador, corte — 10.7) → post (journal en caliente, juicio de proceso, cierre ritual — 10.6-10.7); decisión: cada operación y la meta de proceso del día. Semanal: acta de 6 pasos + KPIs (9.6 + 12.3); decisión: LA UNA mejora de ejecución. Mensual: reporte vs umbrales (9.3) + ventana (9.6); decisión: UNA modificación con changelog o abstención firmada. Trimestral: secciones del plan + fiscal (12.1 + 11.7); decisión: si el plan sigue siendo tu realidad (o se actualiza con evidencia).
+2. Días ejecutados: 5 de 5 planificados (los 3 de observación y el de temperatura roja CUENTAN — la inacción y el respeto al veredicto son ejecución del plan); métrica de disciplina: 100 % — la mejor semana posible de conducta con resultado +2R −1R = +1R neto de las dos operaciones del sistema. El acta auditó del día rojo: que NO se operó (el veredicto se respetó), que se registró igualmente (el diario emocional completo) y que el post-mercado se ejecutó — el día rojo bien ejecutado es una fila más de evidencia para la correlación del reporte M-10.
+3. Riesgo 1: la **sobreconfianza** — la semana de +8R es exactamente donde el riesgo medio empieza a subir y el techo se roza (10.5); el acta con la métrica "riesgo medio real vs 1 %" lo captura. Riesgo 2: la **deriva no detectada** — sin contar etiquetas y disparos, las 2-3 desviaciones de una semana extraordinaria se normalizan y entran a la semana siguiente como "así se opera cuando va bien". Corrección: "El acta se ejecuta TODAS las semanas — especialmente las ganadoras: es la única auditoría que ve tu conducta en el pico de la varianza positiva. La semana de +8R sin acta no es una semana buena: es una semana sin evidencia de que lo sea por proceso y no por suerte."
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="leccion-12-1.html"><span class="lbl">← Anterior</span><span class="ttl">Lección 12.1 · El Plan de Trading documental — tu negocio en un docume</span></a>
+    <a class="next" href="leccion-12-3.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 12.3 · KPIs del negocio — el dashboard mensual de un solo vist</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

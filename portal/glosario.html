@@ -1,0 +1,1872 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>📖 Glosario Vivo — FIT-12 · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a class="active" href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>Recursos<span class="sep">/</span>📖 Glosario Vivo — FIT-12</div>
+  <article class="doc-body">
+<h1>📖 Glosario Vivo — FIT-12</h1>
+<blockquote>
+<p>Glosario incremental: cada módulo añade sus términos al cerrar su sprint.
+Formato: Término ES (<em>término EN</em>) — definición de una línea — módulo de origen.</p>
+</blockquote>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Término</th>
+<th>Inglés</th>
+<th>Definición</th>
+<th>Origen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Especulación</td>
+<td><em>speculation</em></td>
+<td>Compra/venta de activos para capturar diferencias de precio en plazos cortos, asumiendo riesgo deliberado</td>
+<td>M1</td>
+</tr>
+<tr>
+<td>Inversión</td>
+<td><em>investing</em></td>
+<td>Adquisición de activos por años para capturar su crecimiento subyacente</td>
+<td>M1</td>
+</tr>
+<tr>
+<td>Horizonte temporal</td>
+<td><em>time horizon</em></td>
+<td>Duración prevista de una posición o estrategia</td>
+<td>M1</td>
+</tr>
+<tr>
+<td>Liquidez</td>
+<td><em>liquidity</em></td>
+<td>Facilidad de comprar/vender tamaño sin mover el precio</td>
+<td>M1</td>
+</tr>
+<tr>
+<td>Proveedor de liquidez</td>
+<td><em>liquidity provider</em></td>
+<td>Agente cuyas órdenes pasivas permiten ejecutar las órdenes ajenas</td>
+<td>M1</td>
+</tr>
+<tr>
+<td>Spread</td>
+<td><em>spread</em></td>
+<td>Diferencia entre precio de compra y de venta; costo fijo por operación</td>
+<td>M1</td>
+</tr>
+<tr>
+<td>Esperanza matemática</td>
+<td><em>expected value</em></td>
+<td>Resultado medio esperado por operación: <ktx class="ktx" data-tex="E = (P_w \times W) - (P_l \times L)">E = (P_w \times W) - (P_l \times L)</ktx></td>
+<td>M1</td>
+</tr>
+<tr>
+<td>Win Rate</td>
+<td><em>win rate</em></td>
+<td>Porcentaje de operaciones ganadoras sobre el total</td>
+<td>M1</td>
+</tr>
+<tr>
+<td>Ratio riesgo-beneficio</td>
+<td><em>Risk:Reward (R:B)</em></td>
+<td>Relación entre la pérdida media y la ganancia media de un sistema</td>
+<td>M1</td>
+</tr>
+<tr>
+<td>R (unidad de riesgo)</td>
+<td><em>risk unit</em></td>
+<td>Cantidad arriesgada en una operación; las ganancias se miden en múltiplos de R</td>
+<td>M1</td>
+</tr>
+<tr>
+<td>Varianza</td>
+<td><em>variance</em></td>
+<td>Dispersión de resultados alrededor de la esperanza; explica rachas sin cambiar E</td>
+<td>M1</td>
+</tr>
+<tr>
+<td>Martingala</td>
+<td><em>martingale</em></td>
+<td>Gestión que dobla el tamaño tras pérdidas: WR alto aparente y ruina casi segura</td>
+<td>M1</td>
+</tr>
+<tr>
+<td>Fractalidad (autosimilar)</td>
+<td><em>self-similarity</em></td>
+<td>Las mismas formaciones aparecen en todo marco temporal, pero no idénticas ni al mismo costo</td>
+<td>M1</td>
+</tr>
+<tr>
+<td>Ruido</td>
+<td><em>noise</em></td>
+<td>Fluctuación de precio sin información; domina los marcos de tiempo bajos</td>
+<td>M1</td>
+</tr>
+<tr>
+<td>Position trading</td>
+<td><em>position trading</em></td>
+<td>Estilo con posiciones de semanas a meses</td>
+<td>M1</td>
+</tr>
+<tr>
+<td>Swing trading</td>
+<td><em>swing trading</em></td>
+<td>Estilo con posiciones de días a dos semanas</td>
+<td>M1</td>
+</tr>
+<tr>
+<td>Day trading</td>
+<td><em>day trading</em></td>
+<td>Estilo que abre y cierra dentro del mismo día, sin riesgo overnight</td>
+<td>M1</td>
+</tr>
+<tr>
+<td>Scalping</td>
+<td><em>scalping</em></td>
+<td>Estilo de segundos a minutos, máxima frecuencia y costo de transacción crítico</td>
+<td>M1</td>
+</tr>
+<tr>
+<td>Algo trading</td>
+<td><em>algorithmic trading</em></td>
+<td>Ejecución de reglas por software; el oficio es auditar la máquina</td>
+<td>M1</td>
+</tr>
+<tr>
+<td>Nomadeo</td>
+<td><em>strategy hopping</em></td>
+<td>Cambiar de coordenada (estilo/mercado) sin datos: reinicia la curva de aprendizaje</td>
+<td>M1</td>
+</tr>
+<tr>
+<td>Riesgo overnight</td>
+<td><em>overnight risk</em></td>
+<td>Exposición a gaps y eventos con la posición abierta fuera de sesión</td>
+<td>M1</td>
+</tr>
+<tr>
+<td>Spot</td>
+<td><em>spot</em></td>
+<td>Compra/venta al contado, sin apalancamiento estructural</td>
+<td>M1</td>
+</tr>
+<tr>
+<td>CFD</td>
+<td><em>contract for difference</em></td>
+<td>Derivado que replica la diferencia de precio; apalancado, sin vencimiento</td>
+<td>M1</td>
+</tr>
+<tr>
+<td>Futuros</td>
+<td><em>futures</em></td>
+<td>Contrato estandarizado con vencimiento y tamaño fijo, operado en bolsa</td>
+<td>M1</td>
+</tr>
+<tr>
+<td>Opciones</td>
+<td><em>options</em></td>
+<td>Derecho (no obligación) de comprar/vender a precio pactado; asimetría estructural</td>
+<td>M1</td>
+</tr>
+<tr>
+<td>ETF</td>
+<td><em>exchange-traded fund</em></td>
+<td>Fondo cotizado réplica de un activo o índice; vehículo de inversión pasiva</td>
+<td>M1</td>
+</tr>
+<tr>
+<td>Prop firm</td>
+<td><em>funded trading firm</em></td>
+<td>Empresa que alquila capital tras una evaluación de pago; vive mayormente de cuotas</td>
+<td>M1</td>
+</tr>
+<tr>
+<td>Screen time</td>
+<td><em>screen time</em></td>
+<td>Horas deliberadas de observación registrada que fabrican el reconocimiento de patrones</td>
+<td>M1</td>
+</tr>
+<tr>
+<td>Régimen de mercado</td>
+<td><em>market regime</em></td>
+<td>Estado del mercado (tendencia, rango, volatilidad alta/baja) que cambia el comportamiento de todo sistema</td>
+<td>M1</td>
+</tr>
+<tr>
+<td>Racha</td>
+<td><em>streak</em></td>
+<td>Secuencia de resultados iguales consecutivos; esperable por varianza</td>
+<td>M1</td>
+</tr>
+<tr>
+<td>Backtesting</td>
+<td><em>backtesting</em></td>
+<td>Validación de un sistema sobre histórico a ciegas; mínimo estadístico N ≥ 100</td>
+<td>M1</td>
+</tr>
+<tr>
+<td>Drawdown</td>
+<td><em>drawdown</em></td>
+<td>Caída desde el pico de la curva de capital hasta su punto más bajo</td>
+<td>M1</td>
+</tr>
+<tr>
+<td>Capital quemable</td>
+<td><em>risk capital</em></td>
+<td>Dinero cuya pérdida total no cambia tu vida ni la de quien depende de ti</td>
+<td>M1</td>
+</tr>
+<tr>
+<td>Matrícula de mercado</td>
+<td>—</td>
+<td>Pérdidas presupuestadas de la fase de formación en real micro</td>
+<td>M1</td>
+</tr>
+<tr>
+<td>Runway</td>
+<td><em>runway</em></td>
+<td>Meses de vida que tu Carril A paga sin tocar el capital de trading</td>
+<td>M1</td>
+</tr>
+<tr>
+<td>Ruina del jugador</td>
+<td><em>gambler's ruin</em></td>
+<td>Probabilidad de caer a cero por tamaño excesivo, aun con esperanza positiva</td>
+<td>M1</td>
+</tr>
+<tr>
+<td>Cuenta demo</td>
+<td><em>demo account</em></td>
+<td>Cuenta de práctica con dinero ficticio y precios reales</td>
+<td>M1</td>
+</tr>
+<tr>
+<td>Tilt</td>
+<td><em>tilt</em></td>
+<td>Estado emocional que degrada la ejecución; origen de la mayoría de las catástrofes</td>
+<td>M1</td>
+</tr>
+<tr>
+<td>Bid</td>
+<td><em>bid</em></td>
+<td>Precio al que el mercado te compra (tu salida de un long)</td>
+<td>M2</td>
+</tr>
+<tr>
+<td>Ask</td>
+<td><em>ask/offer</em></td>
+<td>Precio al que el mercado te vende (tu entrada en un long)</td>
+<td>M2</td>
+</tr>
+<tr>
+<td>Spread</td>
+<td><em>spread</em></td>
+<td>Diferencia bid-ask; costo fijo por operación cobrado por los proveedores de liquidez</td>
+<td>M2</td>
+</tr>
+<tr>
+<td>Libro de órdenes</td>
+<td><em>order book / DOM</em></td>
+<td>Fila de órdenes de compra y venta por nivel de precio con sus cantidades</td>
+<td>M2</td>
+</tr>
+<tr>
+<td>Taker</td>
+<td><em>taker</em></td>
+<td>Participante agresivo con orden market: consume el libro y paga el spread</td>
+<td>M2</td>
+</tr>
+<tr>
+<td>Maker</td>
+<td><em>maker</em></td>
+<td>Participante pasivo con orden limit: provee liquidez y cobra el spread</td>
+<td>M2</td>
+</tr>
+<tr>
+<td>Liquidez</td>
+<td><em>liquidity</em></td>
+<td>Capacidad de ejecutar tamaño inmediato sin mover el precio (spread + profundidad)</td>
+<td>M2</td>
+</tr>
+<tr>
+<td>Impacto de mercado</td>
+<td><em>market impact</em></td>
+<td>Desplazamiento de precio que produce tu propia orden al consumir el libro</td>
+<td>M2</td>
+</tr>
+<tr>
+<td>Slippage</td>
+<td><em>slippage</em></td>
+<td>Diferencia entre el precio de tu orden/stop y el de ejecución real</td>
+<td>M2</td>
+</tr>
+<tr>
+<td>Pip</td>
+<td><em>pip</em></td>
+<td>Unidad mínima convencional de movimiento: 0,0001 (pares con yen: 0,01)</td>
+<td>M2</td>
+</tr>
+<tr>
+<td>Pipette</td>
+<td><em>pipette</em></td>
+<td>Décima de pip (quinta decimal); fuente clásica de errores ×10 en SL/TP</td>
+<td>M2</td>
+</tr>
+<tr>
+<td>Lote</td>
+<td><em>lot</em></td>
+<td>Tamaño de posición: estándar 100 000 u. (10 $/pip en EUR/USD), mini 0,1, micro 0,01</td>
+<td>M2</td>
+</tr>
+<tr>
+<td>Oferta/demanda residual</td>
+<td><em>unfilled orders</em></td>
+<td>Interés que no se llenó en un movimiento previo y espera al retorno del precio</td>
+<td>M2</td>
+</tr>
+<tr>
+<td>Desequilibrio</td>
+<td><em>imbalance</em></td>
+<td>Estado en que un lado del mercado es más urgente; produce expansión</td>
+<td>M2</td>
+</tr>
+<tr>
+<td>Expansión</td>
+<td><em>expansion</em></td>
+<td>Salida rápida del precio de un nivel/rango hasta la próxima zona con órdenes</td>
+<td>M2</td>
+</tr>
+<tr>
+<td>Barrida de stops</td>
+<td><em>liquidity sweep / stop hunt</em></td>
+<td>Rotura breve de un nivel obvio para detonar stops y llenar órdenes grandes antes de revertir</td>
+<td>M2</td>
+</tr>
+<tr>
+<td>ADR</td>
+<td><em>average daily range</em></td>
+<td>Recorrido medio diario de un instrumento; calibra SL/TP realistas</td>
+<td>M2</td>
+</tr>
+<tr>
+<td>Sesiones</td>
+<td><em>sessions</em></td>
+<td>Turnos del día forex: Sídney, Tokio, Londres, Nueva York</td>
+<td>M2</td>
+</tr>
+<tr>
+<td>Solapamiento</td>
+<td><em>London–NY overlap</em></td>
+<td>Tramo Londres+NY (≈ 08:00–12:00 hora Bolivia): máximo volumen, mínimo spread</td>
+<td>M2</td>
+</tr>
+<tr>
+<td>Gap</td>
+<td><em>gap</em></td>
+<td>Salto de precio sin negociación entre un cierre y la apertura siguiente</td>
+<td>M2</td>
+</tr>
+<tr>
+<td>NFP</td>
+<td><em>non-farm payrolls</em></td>
+<td>Dato de empleo de EE. UU.; primer viernes del mes, 08:30 ET</td>
+<td>M2</td>
+</tr>
+<tr>
+<td>IPC</td>
+<td><em>CPI</em></td>
+<td>Inflación al consumidor de EE. UU.; ~mediados de mes, 08:30 ET</td>
+<td>M2</td>
+</tr>
+<tr>
+<td>FOMC</td>
+<td><em>FOMC</em></td>
+<td>Comité de la Fed: decisión de tasas 14:00 ET + rueda de prensa 14:30 ET</td>
+<td>M2</td>
+</tr>
+<tr>
+<td>DXY</td>
+<td><em>dollar index</em></td>
+<td>Índice del dólar frente a una cesta (EUR ~58 %); termómetro del apetito por USD</td>
+<td>M2</td>
+</tr>
+<tr>
+<td>Ventana roja</td>
+<td><em>high-impact window</em></td>
+<td>Perímetro sin posición alrededor de un evento macro: 15/15 min (FOMC 30/30)</td>
+<td>M2</td>
+</tr>
+<tr>
+<td>Correlación</td>
+<td><em>correlation</em></td>
+<td>Co-movimiento típico entre activos; válida por régimen, no como ley</td>
+<td>M2</td>
+</tr>
+<tr>
+<td>Receta de primera operación</td>
+<td>—</td>
+<td>Guía de 12 pasos del programa (demo → operación procesada → journal); recurso transversal</td>
+<td>Recurso</td>
+</tr>
+<tr>
+<td>OHLC</td>
+<td><em>open/high/low/close</em></td>
+<td>Los cuatro precios de una vela: apertura, máximo, mínimo, cierre</td>
+<td>M3</td>
+</tr>
+<tr>
+<td>Cuerpo</td>
+<td><em>candle body</em></td>
+<td>Distancia apertura-cierre; mide la determinación del bando ganador</td>
+<td>M3</td>
+</tr>
+<tr>
+<td>Mecha</td>
+<td><em>wick/shadow</em></td>
+<td>Extensión del cuerpo al máximo/mínimo; mide el viaje rechazado</td>
+<td>M3</td>
+</tr>
+<tr>
+<td>Doji</td>
+<td><em>doji</em></td>
+<td>Vela con apertura ≈ cierre; empate de la subasta, pausa — nunca señal de dirección</td>
+<td>M3</td>
+</tr>
+<tr>
+<td>Martillo</td>
+<td><em>hammer</em></td>
+<td>Mecha inferior ≥ 2× cuerpo; venta absorbida abajo — señal solo EN contexto de zona</td>
+<td>M3</td>
+</tr>
+<tr>
+<td>Envolvente</td>
+<td><em>engulfing</em></td>
+<td>Vela que envuelve el cuerpo de la anterior en sentido contrario; reemplazo de bando</td>
+<td>M3</td>
+</tr>
+<tr>
+<td>Ciclo</td>
+<td><em>market cycle</em></td>
+<td>Acumulación → markup → distribución → markdown; el mapa de fases de todo mercado</td>
+<td>M3</td>
+</tr>
+<tr>
+<td>Impulso</td>
+<td><em>impulse</em></td>
+<td>Pierna de expansión en la dirección dominante con energía</td>
+<td>M3</td>
+</tr>
+<tr>
+<td>Pullback</td>
+<td><em>pullback</em></td>
+<td>Retroceso de una tendencia que respeta la estructura; andén de continuación</td>
+<td>M3</td>
+</tr>
+<tr>
+<td>Throwback</td>
+<td><em>throwback</em></td>
+<td>Retorno al origen de una rotura para retestear antes de continuar</td>
+<td>M3</td>
+</tr>
+<tr>
+<td>HH/HL</td>
+<td><em>higher high / higher low</em></td>
+<td>Secuencia de máximos y mínimos ascendentes: firma de tendencia alcista sana</td>
+<td>M3</td>
+</tr>
+<tr>
+<td>LL/LH</td>
+<td><em>lower low / lower high</em></td>
+<td>Secuencia descendente: firma de tendencia bajista</td>
+<td>M3</td>
+</tr>
+<tr>
+<td>Soporte/Resistencia</td>
+<td><em>support/resistance</em></td>
+<td>Zona con interés comprador/vendedor pendiente capaz de detener o invertir</td>
+<td>M3</td>
+</tr>
+<tr>
+<td>Zona</td>
+<td><em>zone</em></td>
+<td>Área (rectángulo con cuerpo) donde el precio reaccionó — la forma correcta de marcar niveles</td>
+<td>M3</td>
+</tr>
+<tr>
+<td>Polaridad</td>
+<td><em>polarity</em></td>
+<td>El nivel roto y confirmado cambia de bando: soporte↔resistencia</td>
+<td>M3</td>
+</tr>
+<tr>
+<td>Retesteo</td>
+<td><em>retest</em></td>
+<td>Vuelta del precio a un nivel roto para probarlo antes de continuar; paso 3 del protocolo</td>
+<td>M3</td>
+</tr>
+<tr>
+<td>Falso rompimiento</td>
+<td><em>false breakout</em></td>
+<td>Rotura sin cierre decidido fuera (o revertida tras lograrlo); mecanismo de recolección de liquidez</td>
+<td>M3</td>
+</tr>
+<tr>
+<td>Cuello</td>
+<td><em>neckline</em></td>
+<td>Línea de decisión de una figura (valle del doble techo); su rotura confirmada activa el patrón</td>
+<td>M3</td>
+</tr>
+<tr>
+<td>Régimen</td>
+<td><em>market regime</em></td>
+<td>Estado estructural: tendencia, rango o transición; el permiso operativo de cada sistema</td>
+<td>M3</td>
+</tr>
+<tr>
+<td>Transición</td>
+<td><em>transition</em></td>
+<td>Régimen mezclado (señales de dos estados); protocolo: operativa reducida o cero</td>
+<td>M3</td>
+</tr>
+<tr>
+<td>Whipsaw</td>
+<td><em>whipsaw</em></td>
+<td>Vaivén de roturas falsas de rango que cobra 1R por intento a los impacientes</td>
+<td>M3</td>
+</tr>
+<tr>
+<td>Bar Replay</td>
+<td><em>bar replay</em></td>
+<td>Reproducción vela a vela del histórico para practicar sin ver el futuro</td>
+<td>M3</td>
+</tr>
+<tr>
+<td>Orden market</td>
+<td><em>market order</em></td>
+<td>Ejecuta ya al mejor precio disponible: garantiza ejecución, no precio</td>
+<td>M4</td>
+</tr>
+<tr>
+<td>Orden limit</td>
+<td><em>limit order</em></td>
+<td>Ejecuta solo a tu precio o mejor: garantiza precio, no ejecución</td>
+<td>M4</td>
+</tr>
+<tr>
+<td>Orden stop</td>
+<td><em>stop order</em></td>
+<td>Dormida hasta que el precio toca el nivel; dispara market: SL y rupturas</td>
+<td>M4</td>
+</tr>
+<tr>
+<td>Stop-limit</td>
+<td><em>stop-limit order</em></td>
+<td>Al tocar el nivel dispara una limit: puede no llenarse — prohibido como SL</td>
+<td>M4</td>
+</tr>
+<tr>
+<td>OCO</td>
+<td><em>one-cancels-other</em></td>
+<td>Dos órdenes emparejadas (SL+TP): una ejecuta, la otra se cancela</td>
+<td>M4</td>
+</tr>
+<tr>
+<td>Slippage</td>
+<td><em>slippage</em></td>
+<td>Diferencia entre precio pedido y obtenido; intermitente, concentrado en noticias/gaps</td>
+<td>M4</td>
+</tr>
+<tr>
+<td>Comisión</td>
+<td><em>commission</em></td>
+<td>Cargo fijo por operación en cuentas raw/ECN; en las standard vive en el spread</td>
+<td>M4</td>
+</tr>
+<tr>
+<td>Swap (rollover)</td>
+<td><em>swap / overnight fee</em></td>
+<td>Interés diario por posición overnight (diferencial de tasas); triple los miércoles</td>
+<td>M4</td>
+</tr>
+<tr>
+<td>Cuenta raw/ECN</td>
+<td><em>raw/ECN account</em></td>
+<td>Spread mínimo + comisión fija; se compara todo incluido, nunca partida aislada</td>
+<td>M4</td>
+</tr>
+<tr>
+<td>Margen</td>
+<td><em>margin</em></td>
+<td>Garantía retenida por la posición: nominal ÷ apalancamiento</td>
+<td>M4</td>
+</tr>
+<tr>
+<td>Margen libre</td>
+<td><em>free margin</em></td>
+<td>Capital − margen usado − pérdidas flotantes; si se encoge, sobredimensionas</td>
+<td>M4</td>
+</tr>
+<tr>
+<td>Apalancamiento</td>
+<td><em>leverage</em></td>
+<td>Multiplicador del nominal por cada $ de garantía; agranda el error, no el riesgo planeado</td>
+<td>M4</td>
+</tr>
+<tr>
+<td>P/L flotante</td>
+<td><em>floating P/L</em></td>
+<td>Resultado si cerraras ahora: papel hasta que cierras</td>
+<td>M4</td>
+</tr>
+<tr>
+<td>P/L realizado</td>
+<td><em>realized P/L</em></td>
+<td>Resultado definitivo al cerrar: el único que entra al journal</td>
+<td>M4</td>
+</tr>
+<tr>
+<td>Posición corta</td>
+<td><em>short position</em></td>
+<td>Vender prestado para recomprar más barato; riesgo sin techo si no hay SL</td>
+<td>M4</td>
+</tr>
+<tr>
+<td>Borrow fee</td>
+<td><em>borrow fee</em></td>
+<td>Interés anual por el préstamo de acciones en corto; entra en E como costo</td>
+<td>M4</td>
+</tr>
+<tr>
+<td>Short squeeze</td>
+<td><em>short squeeze</em></td>
+<td>Cascada de recompras obligadas de cortos perdedores que acelera la subida</td>
+<td>M4</td>
+</tr>
+<tr>
+<td>Gap risk</td>
+<td><em>gap risk</em></td>
+<td>Salto de precio que se salta tu nivel: exige tamaño menor en cortos y fines de semana</td>
+<td>M4</td>
+</tr>
+<tr>
+<td>Breakeven</td>
+<td><em>break-even</em></td>
+<td>Mover el SL al precio de entrada cuando el trade avanza: gestión opcional (M8)</td>
+<td>M4</td>
+</tr>
+<tr>
+<td>Layout</td>
+<td><em>layout</em></td>
+<td>Plantilla de gráficos fijos (D1/H4/H1/M15) que abre tu rutina idéntica cada día</td>
+<td>M4</td>
+</tr>
+<tr>
+<td>Watchlist</td>
+<td><em>watchlist</em></td>
+<td>Lista vigilada de ≤ 5 instrumentos: concentración por decisión de negocio</td>
+<td>M4</td>
+</tr>
+<tr>
+<td>Alerta</td>
+<td><em>price alert</em></td>
+<td>Aviso cuando el precio toca tu nivel: el precio te busca a ti</td>
+<td>M4</td>
+</tr>
+<tr>
+<td>SL mental</td>
+<td><em>mental stop</em></td>
+<td>Stop sin orden en el bróker: no es SL — la ley exige la orden montada</td>
+<td>M4</td>
+</tr>
+<tr>
+<td>Estructura de mercado</td>
+<td><em>market structure</em></td>
+<td>Secuencia de swings (HH/HL/LH/LL) que define la dirección dominante del marco</td>
+<td>M5</td>
+</tr>
+<tr>
+<td>Swing high / swing low</td>
+<td><em>swing high / swing low</em></td>
+<td>Máximo/mínimo local que separa piernas; unidad de la estructura</td>
+<td>M5</td>
+</tr>
+<tr>
+<td>Máximo/mínimo creciente</td>
+<td><em>HH / HL (higher high / higher low)</em></td>
+<td>Secuencia alcista: cada high supera el previo y cada low respeta el previo</td>
+<td>M5</td>
+</tr>
+<tr>
+<td>Máximo/mínimo decreciente</td>
+<td><em>LH / LL (lower high / lower low)</em></td>
+<td>Secuencia bajista: cada low perfora el previo y cada high cede antes</td>
+<td>M5</td>
+</tr>
+<tr>
+<td>Pauta de Dow</td>
+<td><em>Dow Theory</em></td>
+<td>La tendencia como alternancia impulso + pullback; unidad de análisis del programa</td>
+<td>M5</td>
+</tr>
+<tr>
+<td>Rango</td>
+<td><em>range / consolidation</em></td>
+<td>Swings solapados sin secuencia definida: equilibrio, sin sesgo operativo</td>
+<td>M5</td>
+</tr>
+<tr>
+<td>Ruido de mercado</td>
+<td><em>market noise</em></td>
+<td>Movimiento sub-estructural que no cambia la secuencia del marco de decisión</td>
+<td>M5</td>
+</tr>
+<tr>
+<td>BOS</td>
+<td><em>break of structure</em></td>
+<td>Cierre más allá del swing a favor de la secuencia: continuación confirmada</td>
+<td>M5</td>
+</tr>
+<tr>
+<td>CHoCH</td>
+<td><em>change of character</em></td>
+<td>Primer cierre en contra de la secuencia: alerta de reversión, pausa de pullbacks</td>
+<td>M5</td>
+</tr>
+<tr>
+<td>Confirmación por cierre</td>
+<td><em>close confirmation</em></td>
+<td>Solo el cierre del marco de decisión etiqueta quiebres; la mecha no</td>
+<td>M5</td>
+</tr>
+<tr>
+<td>Mecha</td>
+<td><em>wick</em></td>
+<td>Rechazo intra-vela fuera del cuerpo; puede ser barrida de liquidez</td>
+<td>M5</td>
+</tr>
+<tr>
+<td>Pool de liquidez</td>
+<td><em>liquidity pool</em></td>
+<td>Acumulación de stops tras un nivel obvio: la contraparte que buscan las órdenes grandes</td>
+<td>M5</td>
+</tr>
+<tr>
+<td>Equal highs/lows</td>
+<td><em>equal highs / equal lows (EQH/EQL)</em></td>
+<td>Máximos/mínimos casi idénticos: depósito de stops duplicado, no "soporte fuerte"</td>
+<td>M5</td>
+</tr>
+<tr>
+<td>Nivel obvio</td>
+<td><em>obvious level</em></td>
+<td>El que ve cualquier principiante; por definición, cargado de stops</td>
+<td>M5</td>
+</tr>
+<tr>
+<td>FVG</td>
+<td><em>fair value gap</em></td>
+<td>Hueco de 3 velas donde nadie negoció (high de la 1 vs low de la 3): imán y zona</td>
+<td>M5</td>
+</tr>
+<tr>
+<td>Mitigación</td>
+<td><em>mitigation / rebalance</em></td>
+<td>Visita del precio al hueco para ejecutar la franja pendiente; la primera visita es la que vale</td>
+<td>M5</td>
+</tr>
+<tr>
+<td>Desplazamiento</td>
+<td><em>displacement</em></td>
+<td>Impulso violento que rompe estructura y deja FVG: firma de urgencia en la subasta</td>
+<td>M5</td>
+</tr>
+<tr>
+<td>Order block</td>
+<td><em>order block (OB)</em></td>
+<td>Última vela contraria antes del desplazamiento con BOS; se opera con 4 filtros</td>
+<td>M5</td>
+</tr>
+<tr>
+<td>Origen del impulso</td>
+<td><em>origin of the move</em></td>
+<td>El mismo fenómeno del OB en dialecto PA clásico: punto de partida de la pierna</td>
+<td>M5</td>
+</tr>
+<tr>
+<td>Sesgo</td>
+<td><em>bias</em></td>
+<td>Dirección probabilística definida por escrito en el marco superior antes de bajar de capa</td>
+<td>M5</td>
+</tr>
+<tr>
+<td>Confluencia</td>
+<td><em>confluence</em></td>
+<td>Coincidencia de factores independientes (zona + sesgo + gatillo) que sube la calidad del setup</td>
+<td>M5</td>
+</tr>
+<tr>
+<td>Gatillo</td>
+<td><em>trigger</em></td>
+<td>Evento concreto y definido antes de tiempo que autoriza la entrada en el marco de ejecución</td>
+<td>M5</td>
+</tr>
+<tr>
+<td>Análisis top-down</td>
+<td><em>top-down analysis</em></td>
+<td>Protocolo de 3 capas (sesgo → zonas → gatillo) con producto escrito por capa</td>
+<td>M5</td>
+</tr>
+<tr>
+<td>Marco temporal</td>
+<td><em>timeframe</em></td>
+<td>El rol del marco en cada capa: decisión (D1/H4), zonas (H1/M15), ejecución (M15/M5)</td>
+<td>M5</td>
+</tr>
+<tr>
+<td>Indicador</td>
+<td><em>indicator</em></td>
+<td>Transformación matemática del precio/volumen que mide una propiedad; nunca predice</td>
+<td>M6</td>
+</tr>
+<tr>
+<td>Derivado del precio</td>
+<td><em>price-derived</em></td>
+<td>Dato calculado a partir del precio: comparte con él toda su información y ninguna adicional</td>
+<td>M6</td>
+</tr>
+<tr>
+<td>Media simple</td>
+<td><em>simple moving average (SMA)</em></td>
+<td>Promedio aritmético de los últimos N cierres; retardo uniforme</td>
+<td>M6</td>
+</tr>
+<tr>
+<td>Media exponencial</td>
+<td><em>exponential moving average (EMA)</em></td>
+<td>Media con ponderación α = 2/(N+1) a favor de los datos recientes; menos retardo, más nerviosa</td>
+<td>M6</td>
+</tr>
+<tr>
+<td>Cruce dorado / de la muerte</td>
+<td><em>golden cross / death cross</em></td>
+<td>EMA 50 cruza arriba/abajo a la 200: confirmación tardía de régimen, no señal de entrada</td>
+<td>M6</td>
+</tr>
+<tr>
+<td>Soporte dinámico</td>
+<td><em>dynamic support</em></td>
+<td>Media móvil que el precio respeta en tendencia como zona de pullback; se desplaza con ella</td>
+<td>M6</td>
+</tr>
+<tr>
+<td>ATR</td>
+<td><em>average true range</em></td>
+<td>Media móvil del rango verdadero (TR): la amplitud típica del marco; audita SL y TP</td>
+<td>M6</td>
+</tr>
+<tr>
+<td>Bandas de Bollinger</td>
+<td><em>Bollinger Bands</em></td>
+<td>SMA 20 ± 2σ: canal estadístico; en tendencia se camina sobre ellas (fuerza, no giro)</td>
+<td>M6</td>
+</tr>
+<tr>
+<td>Squeeze</td>
+<td><em>band squeeze</em></td>
+<td>Contracción simultánea de las bandas (σ mínima): volatilidad comprimida antes de expansión</td>
+<td>M6</td>
+</tr>
+<tr>
+<td>Canal de Donchian</td>
+<td><em>Donchian channel</em></td>
+<td>Máximo/mínimo de N periodos: canal de ruptura base del sistema de las Tortugas</td>
+<td>M6</td>
+</tr>
+<tr>
+<td>RSI</td>
+<td><em>relative strength index</em></td>
+<td>Oscilador 0–100 del ratio de medias ganancia/pérdida; extremos solo significan en rango</td>
+<td>M6</td>
+</tr>
+<tr>
+<td>Divergencia</td>
+<td><em>divergence</em></td>
+<td>Desacuerdo entre el extremo del precio y el del oscilador: desaceleración medible del impulso</td>
+<td>M6</td>
+</tr>
+<tr>
+<td>Estocástico</td>
+<td><em>stochastic oscillator</em></td>
+<td>Posición porcentual del cierre dentro del rango de N periodos (%K/%D); más ruidoso que el RSI</td>
+<td>M6</td>
+</tr>
+<tr>
+<td>MACD</td>
+<td><em>moving average convergence divergence</em></td>
+<td>Diferencia EMA12 − EMA26 con señal EMA9: momentum de dos velocidades</td>
+<td>M6</td>
+</tr>
+<tr>
+<td>VWAP</td>
+<td><em>volume weighted average price</em></td>
+<td>Precio promedio ponderado por volumen de la sesión: el promedio real de ejecución institucional</td>
+<td>M6</td>
+</tr>
+<tr>
+<td>Volume Profile</td>
+<td><em>volume profile</em></td>
+<td>Histograma horizontal de volumen por nivel de precio: dónde se construyó el interés</td>
+<td>M6</td>
+</tr>
+<tr>
+<td>POC</td>
+<td><em>point of control</em></td>
+<td>El nivel con más volumen del perfil: el precio más "acordado" del periodo</td>
+<td>M6</td>
+</tr>
+<tr>
+<td>Retroceso de Fibonacci</td>
+<td><em>Fibonacci retracement</em></td>
+<td>Partición porcentual del swing (38,2/50/61,8 %): contexto de descuento, no nivel exacto</td>
+<td>M6</td>
+</tr>
+<tr>
+<td>Onda de Elliott</td>
+<td><em>Elliott wave</em></td>
+<td>Modelo de 5 impulsos + 3 correcciones; conteo subjetivo, se narra, no se opera</td>
+<td>M6</td>
+</tr>
+<tr>
+<td>Armónicos</td>
+<td><em>harmonic patterns</em></td>
+<td>Figuras de ratios anidados (Gartley, Bat); exigen muestras fuera del alcance del negocio v1</td>
+<td>M6</td>
+</tr>
+<tr>
+<td>Repintado</td>
+<td><em>repainting</em></td>
+<td>Indicador que reescribe sus valores pasados: inauditable — descalificado por construcción</td>
+<td>M6</td>
+</tr>
+<tr>
+<td>Etapas de Weinstein</td>
+<td><em>Weinstein stages</em></td>
+<td>Ciclo de 4 fases (acumulación → avance → distribución → declive); filtro macro del D1</td>
+<td>M6</td>
+</tr>
+<tr>
+<td>Radar de fiabilidad</td>
+<td><em>reliability radar</em></td>
+<td>Clasificación del catálogo por evidencia: defendibles / contextuales / marketing</td>
+<td>M6</td>
+</tr>
+<tr>
+<td>Dashboard de confluencias</td>
+<td><em>confluence dashboard</em></td>
+<td>Máximo 3 herramientas con reglas escritas: 1 régimen + 1 volatilidad + 1 gatillo</td>
+<td>M6</td>
+</tr>
+<tr>
+<td>Sistema de trading</td>
+<td><em>trading system</em></td>
+<td>Formalización escrita y clonable de tu ventaja: 10 componentes con reglas explícitas que dos desconocidos ejecutarían igual</td>
+<td>M7</td>
+</tr>
+<tr>
+<td>Filosofía de mercado</td>
+<td><em>market philosophy</em></td>
+<td>Tesis falsable sobre por qué el mercado deja dinero en la mesa; el mecanismo de tu ventaja</td>
+<td>M7</td>
+</tr>
+<tr>
+<td>Estrategia</td>
+<td><em>strategy</em></td>
+<td>Narrativa coherente que convierte la filosofía en forma de captura: fenómeno + régimen + arquetipo</td>
+<td>M7</td>
+</tr>
+<tr>
+<td>Regla explícita</td>
+<td><em>explicit rule</em></td>
+<td>Condición verificable por un tercero sin interpretación; no admite "se veía"</td>
+<td>M7</td>
+</tr>
+<tr>
+<td>Test del clon</td>
+<td><em>clone test</em></td>
+<td>Dos desconocidos con tu documento ante el mismo gráfico deben ejecutar la misma operación</td>
+<td>M7</td>
+</tr>
+<tr>
+<td>Componente del sistema</td>
+<td><em>system component</em></td>
+<td>Cada una de las 10 preguntas que un sistema completo cierra antes de operar</td>
+<td>M7</td>
+</tr>
+<tr>
+<td>Arquetipo de setup</td>
+<td><em>setup archetype</em></td>
+<td>Familia de setups con la misma lógica de captura: dónde entra, contra qué apuesta, cómo muere</td>
+<td>M7</td>
+</tr>
+<tr>
+<td>Ruptura y retesteo</td>
+<td><em>break and retest</em></td>
+<td>Entrada en la vuelta al nivel roto: el retesteo filtra la falsa ruptura</td>
+<td>M7</td>
+</tr>
+<tr>
+<td>Pullback en tendencia</td>
+<td><em>trend pullback</em></td>
+<td>Entrada a favor del régimen en el retroceso hacia zona de interés; el caballo de batalla estadístico</td>
+<td>M7</td>
+</tr>
+<tr>
+<td>Reversión en rango</td>
+<td><em>range fade / mean reversion</em></td>
+<td>Operar el rechazo del extremo hacia el centro del rango: WR alto, R:B corto, muere en rupturas</td>
+<td>M7</td>
+</tr>
+<tr>
+<td>Barrida y giro</td>
+<td><em>sweep and reversal</em></td>
+<td>Entrada tras la barrida del pool, a favor del sesgo, con confirmación estructural</td>
+<td>M7</td>
+</tr>
+<tr>
+<td>Gestión post-entrada</td>
+<td><em>trade management</em></td>
+<td>Reglas escritas de qué hacer con la posición abierta — incluida la abstención</td>
+<td>M7</td>
+</tr>
+<tr>
+<td>Profit Factor</td>
+<td><em>profit factor</em></td>
+<td>Ganancia bruta ÷ pérdida bruta = WR×W̄ / ((1−WR)×L); objetivo ≥ 1,5; &gt; 3 en muestra corta es sospecha</td>
+<td>M7</td>
+</tr>
+<tr>
+<td>Curva de capital</td>
+<td><em>equity curve</em></td>
+<td>Serie acumulada de R en orden temporal; su forma (pendiente, valles, recuperación) vale más que un número suelto</td>
+<td>M7</td>
+</tr>
+<tr>
+<td>Drawdown máximo</td>
+<td><em>maximum drawdown (max DD)</em></td>
+<td>Mayor caída pico-a-valle de la curva de capital; en R con riesgo fijo, la métrica de lo que soportaste</td>
+<td>M7</td>
+</tr>
+<tr>
+<td>WR de equilibrio</td>
+<td><em>breakeven win rate</em></td>
+<td>WR que hace E = 0 para un R:B dado: 1/(1+R:B); con 1:2 es 33,3 %</td>
+<td>M7</td>
+</tr>
+<tr>
+<td>Robustez</td>
+<td><em>robustness</em></td>
+<td>Capacidad de mantener E fuera de la muestra donde las reglas surgieron; el único test que importa</td>
+<td>M7</td>
+</tr>
+<tr>
+<td>Sobreoptimización</td>
+<td><em>overfitting / curve fitting</em></td>
+<td>Ajustar reglas a las particularidades del pasado hasta que el backtest brilla y el futuro castiga; se infla ≈ √(k/N)</td>
+<td>M7</td>
+</tr>
+<tr>
+<td>Out-of-sample</td>
+<td><em>out-of-sample</em></td>
+<td>Prueba del sistema en datos que no vio al construirse; el replay a ciegas en fechas no recordadas la garantiza</td>
+<td>M7</td>
+</tr>
+<tr>
+<td>Preservación de capital</td>
+<td><em>capital preservation</em></td>
+<td>Prioridad nº 1 del negocio: proteger el inventario antes que buscar ganancia — el orden de preguntas invertido del profesional</td>
+<td>M8</td>
+</tr>
+<tr>
+<td>Inventario del negocio</td>
+<td><em>trading capital as inventory</em></td>
+<td>El saldo de la cuenta como materia prima finita que se consume para producir: sin inventario no hay negocio</td>
+<td>M8</td>
+</tr>
+<tr>
+<td>Drawdown</td>
+<td><em>drawdown</em></td>
+<td>Caída desde el máximo de la curva de capital; se mide desde el máximo, nunca desde el saldo inicial</td>
+<td>M8</td>
+</tr>
+<tr>
+<td>Asimetría del drawdown</td>
+<td><em>drawdown asymmetry</em></td>
+<td>R = d/(1−d): la recuperación necesaria crece más rápido que el daño (−50 % → +100 %); superlineal</td>
+<td>M8</td>
+</tr>
+<tr>
+<td>Riesgo por operación</td>
+<td><em>risk per trade</em></td>
+<td>La única cantidad que el trader controla directamente: capital actual × %, ejecutada por la calculadora</td>
+<td>M8</td>
+</tr>
+<tr>
+<td>Regla del 1 %</td>
+<td><em>1 % rule</em></td>
+<td>El estándar del programa: mantiene la peor racha esperable (−6 %) muy por debajo de la línea de emergencia (−15 %)</td>
+<td>M8</td>
+</tr>
+<tr>
+<td>Position sizing</td>
+<td><em>position sizing</em></td>
+<td>lote = riesgo en $ ÷ (SL en pips × valor del pip): el tamaño es una salida de la fórmula, no una decisión libre</td>
+<td>M8</td>
+</tr>
+<tr>
+<td>Redondeo a la baja</td>
+<td><em>rounding down</em></td>
+<td>El lote final SIEMPRE hacia abajo al grano disponible: el riesgo real queda ≤ presupuesto, sin excepciones</td>
+<td>M8</td>
+</tr>
+<tr>
+<td>Verificación inversa</td>
+<td><em>inverse verification</em></td>
+<td>Recalcular el riesgo con el lote final (lote × SL × valor pip) antes de enviar: la última línea defensiva</td>
+<td>M8</td>
+</tr>
+<tr>
+<td>Valor del pip</td>
+<td><em>pip value</em></td>
+<td>Cuánto vale 1 pip por lote estándar: 10 $ en EUR/GBP/AUD (cuenta USD); USD/JPY ≈ 6,67 $ a 150; oro: 100 $ por 1,00 $</td>
+<td>M8</td>
+</tr>
+<tr>
+<td>Micro-lote</td>
+<td><em>micro lot</em></td>
+<td>0,01 estándar = 0,10 $/pip en EUR/USD: la granularidad que permite respetar el 1 % en cuentas pequeñas</td>
+<td>M8</td>
+</tr>
+<tr>
+<td>Margen</td>
+<td><em>margin</em></td>
+<td>La fianza congelada por el broker para mantener la posición: una línea contable, NO el riesgo</td>
+<td>M8</td>
+</tr>
+<tr>
+<td>Apalancamiento del broker</td>
+<td><em>broker leverage</em></td>
+<td>Máximo nominal por unidad de margen (1:30…1:500): publicidad, no parámetro de riesgo</td>
+<td>M8</td>
+</tr>
+<tr>
+<td>Apalancamiento real</td>
+<td><em>effective leverage</em></td>
+<td>Nominal ÷ capital: consecuencia del sizing (típico 2-4× con el 1 %); &gt; 10× habitual es alarma</td>
+<td>M8</td>
+</tr>
+<tr>
+<td>Stop-out</td>
+<td><em>stop out</em></td>
+<td>Liquidación forzada por margen antes del SL (gap, noticia, spread): el riesgo deja de ser el presupuesto</td>
+<td>M8</td>
+</tr>
+<tr>
+<td>Correlación</td>
+<td><em>correlation</em></td>
+<td>ρ entre −1 y +1: cuánto se mueven juntas dos posiciones; se mide (ventana 30-90 días) o no existe</td>
+<td>M8</td>
+</tr>
+<tr>
+<td>Riesgo efectivo de cartera</td>
+<td><em>effective portfolio risk</em></td>
+<td>R1 + ρR2: dos operaciones de 1 % con ρ 0,85 son ~1,85 % — casi una sola apuesta</td>
+<td>M8</td>
+</tr>
+<tr>
+<td>Tope por motor</td>
+<td><em>per-motor exposure cap</em></td>
+<td>Máx 2 % de riesgo efectivo sobre el mismo motor (divisa/activo): EUR/USD + GBP/USD largos = tope alcanzado</td>
+<td>M8</td>
+</tr>
+<tr>
+<td>Daily Max Loss</td>
+<td><em>daily max loss</em></td>
+<td>Freno nivel 1: día ≤ −2 % → cerrar todo y terminar; el techo que trocea las rachas</td>
+<td>M8</td>
+</tr>
+<tr>
+<td>Frenos en cascada</td>
+<td><em>cascading circuit breakers</em></td>
+<td>1 % → −2 % día → 2 pérdidas → −4 % semana → −6 % mes: el techo que acota el peor mes en ≈ −6 %</td>
+<td>M8</td>
+</tr>
+<tr>
+<td>Protocolo de apagado</td>
+<td><em>shutdown protocol</em></td>
+<td>Cerrar TODO → cerrar plataforma → journal + temperatura → no antes de 48 h + defensa → firma en frío</td>
+<td>M8</td>
+</tr>
+<tr>
+<td>Tilt</td>
+<td><em>tilt / revenge trading</em></td>
+<td>"Una más para recuperar": el mecanismo de ruina que la cascada hace imposible por construcción</td>
+<td>M8</td>
+</tr>
+<tr>
+<td>Backtesting</td>
+<td><em>backtesting</em></td>
+<td>Medición con protocolo del comportamiento de un sistema sobre datos históricos: la única forma ética de comprar experiencia sin quemar inventario</td>
+<td>M9</td>
+</tr>
+<tr>
+<td>Backtest ciego</td>
+<td><em>blind backtesting</em></td>
+<td>Replay vela a vela sin ver el futuro; toda condición se evalúa solo con velas cerradas</td>
+<td>M9</td>
+</tr>
+<tr>
+<td>Sesgo de supervivencia</td>
+<td><em>survivorship bias</em></td>
+<td>Quedarse solo con lo que funcionó (operaciones, variantes, mercados) y falsificar la muestra; antídoto: todo entra y se etiqueta</td>
+<td>M9</td>
+</tr>
+<tr>
+<td>Data-mining</td>
+<td><em>data mining / curve fitting</em></td>
+<td>Buscar la variante que mejor salió en el pasado (o ajustar a mitad de muestra) hasta que el backtest brilla y el futuro castiga; candado: métricas y N declarados antes</td>
+<td>M9</td>
+</tr>
+<tr>
+<td>Look-ahead bias</td>
+<td><em>look-ahead bias</em></td>
+<td>Decidir con información que no existía en la vela (close/volumen final, niveles dibujados a futuro); antídoto: vela cerrada</td>
+<td>M9</td>
+</tr>
+<tr>
+<td>Tamaño muestral</td>
+<td><em>sample size (N)</em></td>
+<td>Número de operaciones de la muestra; el error del WR escala con 1/√N: 100 es el mínimo del programa para decisiones estructurales</td>
+<td>M9</td>
+</tr>
+<tr>
+<td>Intervalo de confianza</td>
+<td><em>confidence interval (CI)</em></td>
+<td>Rango donde vive el parámetro real con 95 % de confianza: ±1,96√(WR(1−WR)/N); a N=100, ±9,6 pp</td>
+<td>M9</td>
+</tr>
+<tr>
+<td>Setup válido</td>
+<td><em>valid setup</em></td>
+<td>Todas las condiciones de los componentes 1–8 del sistema verificables sí/no en la vela de decisión; la duda es un no</td>
+<td>M9</td>
+</tr>
+<tr>
+<td>Protocolo de backtesting</td>
+<td><em>backtesting protocol</em></td>
+<td>La rutina fija por operación (9 pasos) + las listas PRE/POST que hacen las 100 filas comparables entre sí</td>
+<td>M9</td>
+</tr>
+<tr>
+<td>R:B medio</td>
+<td><em>average R:B</em></td>
+<td>Media de las ganadoras en R; junto al WR define la esperanza bruta</td>
+<td>M9</td>
+</tr>
+<tr>
+<td>Coste medio por operación</td>
+<td><em>average cost per trade</em></td>
+<td>Spread + slippage en R (típico 0,06–0,1R); el ladrón silencioso que se come ~1/3 de la esperanza bruta</td>
+<td>M9</td>
+</tr>
+<tr>
+<td>Esperanza neta</td>
+<td><em>net expectancy</em></td>
+<td>E bruto − coste medio: el motor real del negocio; en el caso maestro +0,24R → +0,16R</td>
+<td>M9</td>
+</tr>
+<tr>
+<td>WR de equilibrio neto</td>
+<td><em>net breakeven win rate</em></td>
+<td>WR* = (1+c)/(R̄+1) con coste c: con R:B 2,1 y c 0,08 → 34,8 % (el bruto decía 32,3 %)</td>
+<td>M9</td>
+</tr>
+<tr>
+<td>Distribución de rachas</td>
+<td><em>streak distribution</em></td>
+<td>Conteo de rachas de la muestra vs lo esperado P(n)=(1−WR)ⁿ; en 100 ops con WR 40 %, racha esperada ~9</td>
+<td>M9</td>
+</tr>
+<tr>
+<td>Racha máxima medida</td>
+<td><em>measured max streak</em></td>
+<td>La peor secuencia de pérdidas de la muestra; &gt; 14 con WR 40 % es sospecha de régimen (ventana mensual, no pánico)</td>
+<td>M9</td>
+</tr>
+<tr>
+<td>Forward testing</td>
+<td><em>forward testing</em></td>
+<td>Prueba del sistema con datos vivos en tiempo real: mide lo que el backtest no puede (spread vivo, slippage, ejecución)</td>
+<td>M9</td>
+</tr>
+<tr>
+<td>Demo forward</td>
+<td><em>demo forward</em></td>
+<td>Fase 2 del embudo: mismo sistema, datos vivos, cuenta demo, N mínimo 20–30; el puente honesto antes del dinero</td>
+<td>M9</td>
+</tr>
+<tr>
+<td>Real micro</td>
+<td><em>micro real account</em></td>
+<td>Fase 3 del embudo: dinero real con riesgo 0,25–0,5 %; en este programa abre tras M12 (Fase 4)</td>
+<td>M9</td>
+</tr>
+<tr>
+<td>Journal profesional</td>
+<td><em>trading journal (v1)</em></td>
+<td>La caja negra del negocio: campos mínimos + captura de señal + etiqueta de error en caliente + emocional pre/post</td>
+<td>M9</td>
+</tr>
+<tr>
+<td>Taxonomía de errores</td>
+<td><em>error taxonomy</em></td>
+<td>E0 en plan · E1 sin setup · E2 entrada fuera de regla · E3 SL manipulado · E4 sizing fuera · E5 gestión improvisada · E6 freno ignorado · E7 ejecución técnica</td>
+<td>M9</td>
+</tr>
+<tr>
+<td>Pérdida ≠ error</td>
+<td><em>loss ≠ mistake</em></td>
+<td>La pérdida en plan (E0) es el coste estadístico del negocio; el error es la desviación del proceso; una ganancia fuera de plan ES un error — y es el más peligroso</td>
+<td>M9</td>
+</tr>
+<tr>
+<td>Deriva de ejecución</td>
+<td><em>execution drift</em></td>
+<td>Diferencia sistemática entre R planificado y R real (o entre disparos debidos y ejecutados): diagnóstico de ejecución, no del sistema</td>
+<td>M9</td>
+</tr>
+<tr>
+<td>Revisión semanal</td>
+<td><em>weekly review</em></td>
+<td>Protocolo de 6 pasos (30–45 min): leer la semana, contar etiquetas, 5 preguntas, disparos, UNA conclusión, decisión documentada o abstención</td>
+<td>M9</td>
+</tr>
+<tr>
+<td>Ventana de modificación</td>
+<td><em>modification window</em></td>
+<td>El único momento legítimo donde el sistema cambia: fin de mes + evidencia con N + UNA modificación por vez + re-test</td>
+<td>M9</td>
+</tr>
+<tr>
+<td>Changelog del sistema</td>
+<td><em>system changelog</em></td>
+<td>Registro firmado de versiones v1.x: fecha, evidencia, la modificación única y el plan de re-test</td>
+<td>M9</td>
+</tr>
+<tr>
+<td>Aversión a la pérdida</td>
+<td><em>loss aversion</em></td>
+<td>El dolor de perder pesa ≈ el doble que el placer de ganar (Kahneman-Tversky, heurística): hace que un sistema rentable se sienta perdedor</td>
+<td>M10</td>
+</tr>
+<tr>
+<td>Amígdala</td>
+<td><em>amygdala</em></td>
+<td>El detector de amenazas del cerebro: rápido, automático y antiguo; en trading responde a pérdidas y oportunidades con la maquinaria de supervivencia</td>
+<td>M10</td>
+</tr>
+<tr>
+<td>Secuestro emocional</td>
+<td><em>amygdala hijack</em></td>
+<td>La toma de control de la amígdala bajo estrés agudo: la PFC queda degradada exactamente donde el plan se ejecuta — ocurre antes del análisis consciente</td>
+<td>M10</td>
+</tr>
+<tr>
+<td>Corteza prefrontal</td>
+<td><em>prefrontal cortex (PFC)</em></td>
+<td>El "ejecutivo" lento: planea, evalúa probabilidades, controla impulsos — se degrada con estrés, sueño y fatiga</td>
+<td>M10</td>
+</tr>
+<tr>
+<td>Cortisol</td>
+<td><em>cortisol</em></td>
+<td>Hormona del estrés: en picos estrecha la atención (visión de túnel), graba el miedo y degrada la función prefrontal sostenida</td>
+<td>M10</td>
+</tr>
+<tr>
+<td>Los 5 miedos</td>
+<td><em>the five trading fears</em></td>
+<td>Douglas: equivocarse, perder dinero, quedarse fuera, devolver ganancias, lo desconocido — toda conducta destructiva es evasión de uno de ellos</td>
+<td>M10</td>
+</tr>
+<tr>
+<td>Los 5 axiomas de la incertidumbre</td>
+<td><em>five fundamental truths</em></td>
+<td>Cualquier cosa puede pasar · no necesitas adivinar para ganar · la distribución dentro de la ventaja es aleatoria · la ventaja es probabilidad, no predicción · cada momento es único</td>
+<td>M10</td>
+</tr>
+<tr>
+<td>Mentalidad probabilística</td>
+<td><em>probabilistic mindset</em></td>
+<td>Leer el mercado en series y distribuciones, no en operaciones individuales: la racha es estructura esperada, no información sobre ti</td>
+<td>M10</td>
+</tr>
+<tr>
+<td>FOMO</td>
+<td><em>fear of missing out</em></td>
+<td>Impulso de entrar por ver el precio moverse sin ti, sin setup: su E ≈ −coste (−0,08R); se corta con pre-compromiso y registro de casi-FOMO</td>
+<td>M10</td>
+</tr>
+<tr>
+<td>Chasing (perseguir)</td>
+<td><em>chasing</em></td>
+<td>Entrar más allá de la zona definida "porque la idea sigue siendo buena": 15 pips tarde convierten la E de +0,16R en −0,16R (la geometría cobra en curva)</td>
+<td>M10</td>
+</tr>
+<tr>
+<td>Sobreapalancamiento</td>
+<td><em>overleveraging</em></td>
+<td>El lote "de la operación especial": riesgo 5 % en vez de 1 % convierte una racha normal en −22,6 % de cuenta (0,95⁵ vs 0,99⁵)</td>
+<td>M10</td>
+</tr>
+<tr>
+<td>Risk creep</td>
+<td><em>risk creep</em></td>
+<td>El mismo 1 % pero ensanchado (SL más lejos "para que respire"): +50 % de riesgo con silencio aritmético — auditable en un campo del journal</td>
+<td>M10</td>
+</tr>
+<tr>
+<td>Overtrading</td>
+<td><em>overtrading</em></td>
+<td>Operar más de lo que el sistema dispara: cobra doble (coste directo −1,6R/mes en el caso maestro + fatiga que fabrica más errores)</td>
+<td>M10</td>
+</tr>
+<tr>
+<td>Pre-compromiso</td>
+<td><em>precommitment</em></td>
+<td>La decisión tomada ANTES del estímulo con forma de regla verificable (techos, tamaño único, tolerancia de zona): el único antídoto que funciona durante la avaricia</td>
+<td>M10</td>
+</tr>
+<tr>
+<td>Ganancia fuera de plan</td>
+<td><em>out-of-plan win</em></td>
+<td>El error más peligroso del trading: el refuerzo dopaminérgico instala el atajo que a 200 operaciones quiebra — se registra y se destaca, nunca se celebra</td>
+<td>M10</td>
+</tr>
+<tr>
+<td>Matriz proceso × resultado</td>
+<td><em>process × outcome matrix</em></td>
+<td>Las 4 celdas del oficio: solo el proceso en plan construye negocio; el resultado es la firma del mercado, no tu juicio</td>
+<td>M10</td>
+</tr>
+<tr>
+<td>Operación perfecta</td>
+<td><em>perfect execution</em></td>
+<td>Proceso 5/5 (temperatura, checklist, sizing, gestión, registro) — resultado irrelevante para el juicio; se cuentan filas sin error, no filas verdes</td>
+<td>M10</td>
+</tr>
+<tr>
+<td>Tilt (revancha)</td>
+<td><em>revenge trading / tilt</em></td>
+<td>La espiral post-pérdida: urgencia → mayor tamaño → menor criterio; su ventana crítica son los 90 segundos y su barrera final es la cascada de M8</td>
+<td>M10</td>
+</tr>
+<tr>
+<td>Sesgo de confirmación</td>
+<td><em>confirmation bias</em></td>
+<td>Buscar/recuperar la información que apoya tu tesis y descartar la contraria: se corta con condiciones sí/no y el caso contrario escrito</td>
+<td>M10</td>
+</tr>
+<tr>
+<td>Exceso de confianza</td>
+<td><em>overconfidence bias</em></td>
+<td>Atribuir la racha a la habilidad: el riesgo medio real sube sin que lo percibas — se detecta en el acta de las semanas GANADORAS</td>
+<td>M10</td>
+</tr>
+<tr>
+<td>Anclaje</td>
+<td><em>anchoring bias</em></td>
+<td>El primer número gobierna tus estimaciones (tu entrada, tu TP imaginado): se corta con niveles por estructura y SL inmodificable</td>
+<td>M10</td>
+</tr>
+<tr>
+<td>Dicotomía del control</td>
+<td><em>dichotomy of control</em></td>
+<td>Epicteto: procesos (controles) vs resultados (no controlados) — toda tu energía a la izquierda, aceptación informada a la derecha</td>
+<td>M10</td>
+</tr>
+<tr>
+<td>Estoicismo operativo</td>
+<td><em>operational stoicism</em></td>
+<td>La filosofía convertida en protocolo: premeditatio (temperatura), juicio pospuesto (post-mercado), amor fati (racha como clima)</td>
+<td>M10</td>
+</tr>
+<tr>
+<td>Temperatura pre-sesión</td>
+<td><em>pre-session temperature</em></td>
+<td>3 dimensiones × 0-3 pts (sueño, estrés, apego): ≥7 verde (plan completo) · 4-6 ámbar (mitad de riesgo, 2 disparos) · ≤3 rojo (no se opera)</td>
+<td>M10</td>
+</tr>
+<tr>
+<td>Diario emocional</td>
+<td><em>emotional journal</em></td>
+<td>El registro estructurado PRE/POST por sesión: temperaturas, metas de proceso, detectores, abortos, etiquetas — la psicología convertida en datos</td>
+<td>M10</td>
+</tr>
+<tr>
+<td>Ventana de ejecución</td>
+<td><em>execution window</em></td>
+<td>La concentración de la sesión activa en los picos de tu mercado: máx ~3 h y ~10-12 decisiones — fuera de ventana, la posición correcta es no estar</td>
+<td>M10</td>
+</tr>
+<tr>
+<td>Inacción estratégica</td>
+<td><em>strategic inaction</em></td>
+<td>No estar en el mercado como posición activa del sistema (70-90 % del tiempo en H1/H4): protege la esperanza ya fabricada — se registra igual que una operación</td>
+<td>M10</td>
+</tr>
+<tr>
+<td>A-Book</td>
+<td><em>A-book</em></td>
+<td>Modelo donde el broker transmite tu orden al mercado y cobra comisión/spread: sin riesgo direccional propio, conflicto estructural bajo</td>
+<td>M11</td>
+</tr>
+<tr>
+<td>B-Book</td>
+<td><em>B-book</em></td>
+<td>Modelo donde el broker internaliza la orden y ES tu contraparte: legal y funcional, pero exige regulación fuerte y auditoría de ejecución propia</td>
+<td>M11</td>
+</tr>
+<tr>
+<td>Regulación estricta</td>
+<td><em>tier-1 regulation</em></td>
+<td>Supervisión con teeth: segregación de fondos, fondo de compensación, reportes, canal de disputa — lo que la licencia "de registro" no da</td>
+<td>M11</td>
+</tr>
+<tr>
+<td>Segregación de fondos</td>
+<td><em>client fund segregation</em></td>
+<td>Tu capital en cuentas bancarias separadas del capital de la firma: el requisito regulatorio que protege la custodia</td>
+<td>M11</td>
+</tr>
+<tr>
+<td>Jurisdicción offshore</td>
+<td><em>offshore jurisdiction</em></td>
+<td>Marco con licencia de registro sin supervisión real del cliente: operar ahí = asumir el riesgo de custodia completo por cuenta propia</td>
+<td>M11</td>
+</tr>
+<tr>
+<td>Afiliado</td>
+<td><em>affiliate (CPA/revenue share)</em></td>
+<td>Intermediario que cobra por referirte — a veces un % de TUS pérdidas: su ranking es pista, nunca evidencia</td>
+<td>M11</td>
+</tr>
+<tr>
+<td>Opciones binarias</td>
+<td><em>binary options</em></td>
+<td>Pago fijo &lt; 100 % por acertar dirección a plazo fijo: esperanza negativa estructural (payout 0,80 exige 55,6 % de acierto solo para empatar)</td>
+<td>M11</td>
+</tr>
+<tr>
+<td>Martingala</td>
+<td><em>martingale</em></td>
+<td>Duplicar tamaño tras cada pérdida: la racha n acumula r(2ⁿ−1) — el quiebra llega antes que la racha esperada de tu WR</td>
+<td>M11</td>
+</tr>
+<tr>
+<td>Indicador repintante</td>
+<td><em>repainting indicator</em></td>
+<td>El que reescribe sus señales históricas con datos nuevos: look-ahead como producto — se detecta con el test del replay/screenshot</td>
+<td>M11</td>
+</tr>
+<tr>
+<td>Esquema MLM</td>
+<td><em>MLM scheme</em></td>
+<td>Modelo cuyo plan de ingresos real paga por reclutar, no por enseñar: la prueba de salida lo delata</td>
+<td>M11</td>
+</tr>
+<tr>
+<td>Gurú de trading</td>
+<td><em>trading guru</em></td>
+<td>El que monetiza audiencia (lujo alquilado, testimonios filtrados) y no ofrece cuenta auditada de terceros: prueba social fabricada</td>
+<td>M11</td>
+</tr>
+<tr>
+<td>Warn list</td>
+<td><em>warning list</em></td>
+<td>La lista de alerta del regulador: las firmas denunciadas aparecen ahí antes de colapsar — paso 3 de la verificación</td>
+<td>M11</td>
+</tr>
+<tr>
+<td>Due diligence</td>
+<td><em>due diligence</em></td>
+<td>La investigación forense de un proveedor con matriz de criterios y fuente por celda — la misma rúbrica para todos, sin marcas</td>
+<td>M11</td>
+</tr>
+<tr>
+<td>Prop firm</td>
+<td><em>proprietary trading firm (retail)</em></td>
+<td>Firma que vende desafíos y "fondea" a los aprobados: su ingreso principal son los fees de los que fracasan</td>
+<td>M11</td>
+</tr>
+<tr>
+<td>Desafío</td>
+<td><em>challenge</em></td>
+<td>El examen de evaluación (objetivo + drawdown + reglas finas): el producto que la firma vende</td>
+<td>M11</td>
+</tr>
+<tr>
+<td>Fee del desafío</td>
+<td><em>challenge fee</em></td>
+<td>El precio del intento (típicamente no reembolsado salvo condiciones): el ingreso principal del modelo</td>
+<td>M11</td>
+</tr>
+<tr>
+<td>Cuenta fondeada</td>
+<td><em>funded account</em></td>
+<td>La cuenta del aprobado — a menudo demo con premio: el payout depende de la solvencia y voluntad de la contraparte</td>
+<td>M11</td>
+</tr>
+<tr>
+<td>Profit split</td>
+<td><em>profit split</em></td>
+<td>El reparto de ganancias (típicamente 70-90 % al trader): competitivo por marketing, secundario en el modelo de ingresos</td>
+<td>M11</td>
+</tr>
+<tr>
+<td>Drawdown trailing</td>
+<td><em>trailing drawdown</em></td>
+<td>El límite total cuyo suelo sube con tu equity pico: al pico +7 %, tu suelo puede estar en −3 % — cambia el sizing del desafío</td>
+<td>M11</td>
+</tr>
+<tr>
+<td>Consistency rule</td>
+<td><em>consistency rule</em></td>
+<td>Ningún día puede representar más del X % del beneficio: castiga la concentración (y el día de noticias) en el payout</td>
+<td>M11</td>
+</tr>
+<tr>
+<td>Riesgo dinámico</td>
+<td><em>dynamic risk sizing</em></td>
+<td>La escala 0,50→0,40→0,25→0 % según el drawdown consumido: la cascada de M8 recalibrada al límite del contrato</td>
+<td>M11</td>
+</tr>
+<tr>
+<td>"Todavía no"</td>
+<td><em>not yet</em></td>
+<td>La decisión ganadora cuando la simulación no pasa: se compra evidencia, no esperanza — posponer es gestión</td>
+<td>M11</td>
+</tr>
+<tr>
+<td>Racha esperada vs límite</td>
+<td><em>expected streak vs limit</em></td>
+<td>La regla de margen del programa: la peor racha esperada consume ≤ 50-60 % del drawdown total — si no, el fee no se compra</td>
+<td>M11</td>
+</tr>
+<tr>
+<td>Plan de capitalización</td>
+<td><em>capitalization plan</em></td>
+<td>El documento a 12 meses: línea base propia + fondeo como rama opcional con contraparte cotizada — nunca plan A ni rescate</td>
+<td>M11</td>
+</tr>
+<tr>
+<td>Renta de capital</td>
+<td><em>capital income</em></td>
+<td>La clasificación fiscal de los rendimientos de patrimonio: la que tiende tu perfil de baja frecuencia — se confirma con profesional local</td>
+<td>M11</td>
+</tr>
+<tr>
+<td>Actividad económica</td>
+<td><em>business income</em></td>
+<td>La clasificación de negocio: frecuencia, apalancamiento, derivados y dependencia económica empujan hacia ella</td>
+<td>M11</td>
+</tr>
+<tr>
+<td>Expediente fiscal</td>
+<td><em>tax record file</em></td>
+<td>Journal + estados mensuales + movimientos de dinero, archivados y cruzados cada mes: la defensa que se construye fila por fila</td>
+<td>M11</td>
+</tr>
+<tr>
+<td>Plan de Trading</td>
+<td><em>trading plan</em></td>
+<td>El documento operativo de 10 secciones que consolida el negocio: solo cambia en ventana con evidencia — lo que vive en tu cabeza no es un negocio</td>
+<td>M12</td>
+</tr>
+<tr>
+<td>Plan de Negocio</td>
+<td><em>business plan</em></td>
+<td>El documento estratégico: capital, retiros, KPIs, hoja de ruta y fiscalidad — cómo el trading encaja en tu vida financiera</td>
+<td>M12</td>
+</tr>
+<tr>
+<td>Test del clon (negocio)</td>
+<td><em>clone test</em></td>
+<td>Un tercero con tu plan ejecuta tu semana sin preguntarte nada: el estándar de calidad de las 10 secciones</td>
+<td>M12</td>
+</tr>
+<tr>
+<td>Reglas de excepción</td>
+<td><em>absolute rules</em></td>
+<td>Los "no" absolutos con su razón (SL intacto, riesgo del presupuesto, no operar en rojo): lo que ningún día difícil renegocia</td>
+<td>M12</td>
+</tr>
+<tr>
+<td>Ciclo operativo</td>
+<td><em>operating cycle</em></td>
+<td>Las 4 capas: diario (pre/ejecución/post) → semanal (acta) → mensual (dashboard/ventana) → trimestral (plan/fiscal)</td>
+<td>M12</td>
+</tr>
+<tr>
+<td>Día de observación</td>
+<td><em>observation day</em></td>
+<td>El día sin señales ejecutado con rutina completa y contado como ejecución plena: la inacción estratégica es negocio</td>
+<td>M12</td>
+</tr>
+<tr>
+<td>KPI del negocio</td>
+<td><em>business KPI</em></td>
+<td>Los 12 indicadores del dashboard (desempeño + proceso/economía) con umbrales declarados antes — llenados con journal, nunca estimados</td>
+<td>M12</td>
+</tr>
+<tr>
+<td>Dashboard mensual</td>
+<td><em>monthly dashboard</em></td>
+<td>La página única de 12 filas con veredicto por fila y tendencia: se lee proceso primero, desempeño después</td>
+<td>M12</td>
+</tr>
+<tr>
+<td>Horas vs retorno</td>
+<td><em>hours-to-return ratio</em></td>
+<td>R neto del mes / horas registradas: hace visible el overtrading invisible y presupuesta el tiempo del negocio</td>
+<td>M12</td>
+</tr>
+<tr>
+<td>Gestión patrimonial</td>
+<td><em>personal wealth management</em></td>
+<td>Los 3 cubos (supervivencia/trading/crecimiento), la política de retiros y los protocolos de los meses extremos</td>
+<td>M12</td>
+</tr>
+<tr>
+<td>Separación de cuentas</td>
+<td><em>account segregation</em></td>
+<td>El muro entre el negocio y la vida: cada cubo con sus reglas — el trading nunca financia la vida por necesidad ni la vida rescata al trading</td>
+<td>M12</td>
+</tr>
+<tr>
+<td>Política de retiros</td>
+<td><em>withdrawal policy</em></td>
+<td>Cuándo (ventana), cuánto (% del neto), desde dónde (canal trazable) y el suelo mínimo operativo — escrita antes del primer mes bueno</td>
+<td>M12</td>
+</tr>
+<tr>
+<td>Protocolo del mes ganador</td>
+<td><em>winning-month protocol</em></td>
+<td>Auditoría de proceso + retiro por regla + capital en su línea: el mes verde es un recibo, no un permiso</td>
+<td>M12</td>
+</tr>
+<tr>
+<td>Protocolo del mes perdedor</td>
+<td><em>losing-month protocol</em></td>
+<td>Cascada + diagnóstico varianza/deriva + cero inyección emocional + encogimiento ordenado si toca el mínimo: rescate, jamás</td>
+<td>M12</td>
+</tr>
+<tr>
+<td>Hoja de ruta</td>
+<td><em>roadmap of phases</em></td>
+<td>Las 5 fases con candados acumulativos: formación → backtest → demo → real micro → escala — el tiempo es libre, el criterio no</td>
+<td>M12</td>
+</tr>
+<tr>
+<td>Candado de fase</td>
+<td><em>phase gate</em></td>
+<td>El criterio medible que autoriza subir de fase — y la regla de baja que autoriza bajarla sin dramatismo</td>
+<td>M12</td>
+</tr>
+<tr>
+<td>Escalera de riesgo</td>
+<td><em>risk ladder</em></td>
+<td>0 % → 0 % → 0,25-0,5 % → 1 % por fase: el derecho al riesgo se gana con evidencia, nunca se toma</td>
+<td>M12</td>
+</tr>
+<tr>
+<td>Biblioteca esencial</td>
+<td><em>core library</em></td>
+<td>El canon de 5 (Douglas, Elder, Tharp, Steenbarger, Pardo) con su fase de lectura — se leen con el journal al lado y una idea por libro</td>
+<td>M12</td>
+</tr>
+<tr>
+<td>Nomadeo</td>
+<td><em>system hopping</em></td>
+<td>Saltar de sistema en sistema sin dar a ninguno su muestra: el data-mining de carrera — se desarma con ventana, UNA, re-test y changelog</td>
+<td>M12</td>
+</tr>
+<tr>
+<td>Compromiso de proceso</td>
+<td><em>process commitment</em></td>
+<td>La Constitución de 5 artículos: todo se mide · nada cambia sin evidencia · UNA por ciclo · la fase se gana · la honestidad no se gradúa</td>
+<td>M12</td>
+</tr>
+<tr>
+<td>Changelog de la carrera</td>
+<td><em>career changelog</em></td>
+<td>El historial de decisiones y abstenciones firmadas: la evidencia de que el gobierno funciona — la mejora continua documentada</td>
+<td>M12</td>
+</tr>
+<tr>
+<td>Certificación FIT-12</td>
+<td><em>FIT-12 certification</em></td>
+<td>Plan aprobado + examen integral ≥ 85 % + 12 semanas de operativa documentada: interna y honesta — autoriza ante ti</td>
+<td>M12</td>
+</tr>
+<tr>
+<td>Examen integral</td>
+<td><em>final comprehensive exam</em></td>
+<td>Las 50 preguntas transversales del programa (≥ 85 %): el FIT-12 entero de un vistazo</td>
+<td>M12</td>
+</tr>
+<tr>
+<td>Defensa socrática extendida</td>
+<td><em>extended defense</em></td>
+<td>La sesión de 60-90 min sobre tu Plan v1.0: secciones, casos de estrés y coherencia plan-journal</td>
+<td>M12</td>
+</tr>
+</tbody>
+</table></div>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="examen-final.html"><span class="lbl">← Anterior</span><span class="ttl">🏆 Examen Integral Final — Certificación FIT-12 (M1–M12)</span></a>
+    <a class="next" href="PLANTILLA_MODULO.html"><span class="lbl">Siguiente →</span><span class="ttl">Plantilla Estándar de Módulo — FIT-12</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

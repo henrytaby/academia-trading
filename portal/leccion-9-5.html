@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 9.5 · El Journal profesional — tu caja negra con taxonomía de  · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a class="active" href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>🛡️ N3 · Riesgo<span class="sep">/</span>M9 · Backtesting, Journal y Validación<span class="sep">/</span>Lección 9.5 · El Journal profesional — tu caja negra con tax</div>
+  <article class="doc-body">
+<h1>Lección 9.5 · El Journal profesional — tu caja negra con taxonomía de errores</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>50–65 min de estudio</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-09.html">M9 · Backtesting, Journal y Validación</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td><a href="leccion-9-4.html">Lección 9.4 · Forward testing en demo</a></td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="leccion-9-6.html">Lección 9.6 · Revisión semanal y mensual</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>Todo lo que este módulo ha construido — la muestra de 100, las métricas, los umbrales, el embudo — depende de un registro que no mienta. Y aquí está el problema estructural: <strong>la memoria del trader es el testigo menos fiable de su propio negocio</strong>. Reescribe el pasado para proteger el ego ("esa pérdida fue mala suerte, no mi error"), confunde lo que pasó con lo que quiso que pasara, y a los tres meses no distingue entre la operación planificada y la improvisada. El journal profesional es la solución de ingeniería a esa falla humana: una <strong>caja negra</strong> que registra en caliente, con campos fijos, la captura del gráfico en el momento de la señal y una etiqueta de error de una taxonomía cerrada. Este módulo aporta al programa dos piezas que el SYLLABUS marcó como vacío (nº 3) de los cursos de referencia: la <strong>taxonomía de errores E0–E7</strong> — con la distinción central de la carrera, <strong>pérdida ≠ error</strong> — y el protocolo de revisión que la siguiente lección monta. La inversión de tiempo es de 90 segundos por operación; el retorno es que cada fila de tu negocio se vuelve auditable, y tú dejas de adivinar por qué pierdes: lo lees.</p>
+<h2>Concepto</h2>
+<p><strong>Del v0 al v1: qué cambia y por qué.</strong> El journal v0 (Sprint 2) registraba la <strong>mecánica</strong> de la operación: instrumento, órdenes, resultado, una nota libre. Servía para aprender a registrar. El journal v1 registra el <strong>negocio</strong>: añade el R planificado (la decisión ANTES), la etiqueta de error de una taxonomía cerrada (el diagnóstico EN caliente), el estado emocional pre/post (la semilla de M10) y la captura obligatoria de señal (la evidencia). La diferencia no es de columnas sino de propósito: el v0 describía operaciones; el v1 <strong>alimenta una auditoría</strong> — cada campo existe porque una métrica del reporte (9.3) o una pregunta del acta semanal (9.6) lo consume. Un campo que nadie lee no entra a la plantilla: el journal es infraestructura de análisis, no un diario íntimo.</p>
+<p><strong>Los campos mínimos del v1</strong> *(el CSV completo, con las 24 columnas y ejemplos migrados, está en <a href="plantilla_journal_v1.html"><code>journal/plantilla_journal_v1.md</code></a>):</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Para qué existe (quién lo consume)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fecha, horas inicio/fin, mercado, dirección, tipo de orden</td>
+<td>Contexto operativo: ventanas, mercados y mecánica (acta semanal)</td>
+</tr>
+<tr>
+<td>fase (backtest / forward_demo / real_micro)</td>
+<td>El embudo de 9.4: cada fila sabe en qué estación nació</td>
+</tr>
+<tr>
+<td>setup_valido (sí/no) + disparo_debido</td>
+<td>La métrica de disparos ejecutados/debidos de M8</td>
+</tr>
+<tr>
+<td>lote, entrada, SL, TP</td>
+<td>La decisión exacta: precios que se pueden auditar (paso 5 de la rutina 9.2)</td>
+</tr>
+<tr>
+<td><strong>R planificado</strong></td>
+<td>La esperanza de la operación al momento de decidir: <ktx class="ktx" data-tex="R_{plan} = \frac{TP - \text{entrada}}{\text{entrada} - SL}">R_{plan} = \frac{TP - \text{entrada}}{\text{entrada} - SL}</ktx></td>
+</tr>
+<tr>
+<td><strong>R real + resultado $</strong></td>
+<td>El dato que suma las métricas (9.3)</td>
+</tr>
+<tr>
+<td>coste_r</td>
+<td>El ladrón silencioso: audita el 0,08R estimado</td>
+</tr>
+<tr>
+<td>SL antes de entrada (sí/no)</td>
+<td>La ley de M4, verificada fila por fila</td>
+</tr>
+<tr>
+<td><strong>captura</strong></td>
+<td>La evidencia del gráfico EN el momento de la señal: la memoria no puede reescribir lo que está en la imagen</td>
+</tr>
+<tr>
+<td><strong>emocional pre / post (1–10)</strong></td>
+<td>La semilla del diario de M10; el acta lee sus desvíos sistemáticos</td>
+</tr>
+<tr>
+<td><strong>etiqueta_error (E0–E7)</strong></td>
+<td>El diagnóstico del proceso: la columna que convierte 100 filas en un mapa de tu ejecución</td>
+</tr>
+<tr>
+<td>regla_violada + lección (1 línea)</td>
+<td>El puente directo al changelog de 9.6</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>La taxonomía de errores E0–E7</strong> — el aporte central del módulo. Una etiqueta por operación, asignada <strong>en caliente</strong> (al cerrar la operación, no el domingo):</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Etiqueta</th>
+<th>Nombre</th>
+<th>Definición operativa</th>
+<th>Ejemplo típico</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>E0</strong></td>
+<td>En plan (sin error)</td>
+<td>Setup válido + ejecución conforme + gestión conforme — <strong>incluye TODA pérdida con SL respetado y sizing correcto</strong></td>
+<td>La pérdida −1R de la racha esperada: coste estadístico, no error</td>
+</tr>
+<tr>
+<td><strong>E1</strong></td>
+<td>Operar sin setup</td>
+<td>Se ejecutó una señal que la definición de setup válido rechaza</td>
+<td>Entrar por FOMO "porque se estaba yendo"; la operación del aburrimiento</td>
+</tr>
+<tr>
+<td><strong>E2</strong></td>
+<td>Entrada fuera de regla</td>
+<td>Setup válido, pero la ejecución violó la regla de entrada</td>
+<td>Entrar antes de la vela de reacción cerrada; precio fuera de la zona</td>
+</tr>
+<tr>
+<td><strong>E3</strong></td>
+<td>SL manipulado</td>
+<td>El SL se movió, amplió o eliminó — o se cerró manualmente antes del SL sin regla de gestión que lo autorice</td>
+<td>"Le doy espacio"; el cierre por miedo a los −19 $</td>
+</tr>
+<tr>
+<td><strong>E4</strong></td>
+<td>Sizing fuera de presupuesto</td>
+<td>El lote no es la salida de la calculadora (M8)</td>
+<td>El 0,10 "para aprovecharla" cuando la calculadora daba 0,06</td>
+</tr>
+<tr>
+<td><strong>E5</strong></td>
+<td>Gestión improvisada</td>
+<td>Se movió el TP, se hizo parcial o breakeven sin que una regla del componente 10 lo autorice</td>
+<td>"Aseguro" a +0,5R y el TP golpea dos velas después</td>
+</tr>
+<tr>
+<td><strong>E6</strong></td>
+<td>Freno ignorado</td>
+<td>Se operó con la cascada de M8 activa o se violó un tope de cartera</td>
+<td>La tercera operación del día con el freno nivel 1 ya disparado</td>
+</tr>
+<tr>
+<td><strong>E7</strong></td>
+<td>Error de ejecución técnica</td>
+<td>Orden mal puesta, fat finger, OCO olvidado, dirección invertida</td>
+<td>El long que salió short; el SL que nunca se puso</td>
+</tr>
+</tbody>
+</table></div>
+<p>Tres reglas de uso que le dan valor estadístico: <strong>(1) UNA etiqueta por operación</strong> — si hay varias, se asigna la PRIMERA de la cadena causal (sin setup no habría sizing fuera: es E1, y el resto se anota en regla_violada); una operación con dos etiquetas es una operación sin diagnóstico. <strong>(2) En caliente</strong> — la etiqueta se asigna al cerrar la operación, con el emocional post fresco; el etiquetado del domingo es reconstrucción, y la reconstrucción defiende al ego (las estadísticas de los que etiquetan tarde tienen sospechosamente más E0). <strong>(3) La taxonomía es cerrada</strong> — si un error no encaja, se describe en regla_violada y la revisión decide si merece una etiqueta nueva (con evidencia); inventar etiquetas ad hoc destruye la comparabilidad del conteo.</p>
+<p><strong>La distinción central: pérdida ≠ error.</strong> La E0 existe exactamente para esto. Una pérdida con SL respetado, sizing correcto y setup válido es el <strong>coste estadístico del negocio</strong> — el 60 % de las operaciones del caso maestro pierde y el sistema GANA +0,16R neto por operación; castigar la pérdida en plan es no entender la matemática de 7.4. Un error, en cambio, es la <strong>desviación del proceso</strong> — y ahí está la asimetría que define la carrera: una ganancia fuera de plan (E1, E2, E4...) <strong>es un error</strong>, y es el más peligroso de todos: el +2R "a ojo" que salió bien refuerza y PREMIA el circuito equivocado — el cerebro aprende "así se gana", y la próxima vez que el circuito se active, el tamaño será mayor. La pérdida errónea duele y enseña; la ganancia errónea divierte y desarma. (La lección 10.4 construirá todo un módulo sobre esta línea; aquí queda instalada en la columna de tu journal.)</p>
+<p><strong>La deriva de ejecución: R planificado vs R real.</strong> Las columnas de R permiten una medición que casi nadie hace: si el R real se desvía <strong>sistemáticamente</strong> del planificado (ej. TP movido → ganadoras de +1,4R cuando el plan decía +2,1R), el diagnóstico es de <strong>ejecución</strong>, no de sistema — el sistema que diseñaste rendía +0,16R neto; el que ejecutas rendirá distinto, y tu reporte de 9.3 medirá al segundo disfrazado del primero. La regla del programa: la deriva se mide, se reporta en el acta y se corrige entrenando la ejecución (checklist, disciplina de TP) — <strong>jamás</strong> recalculando las expectativas para que "cuadren" con la ejecución desviada. La deriva de disparos (debidos vs ejecutados) es la hermana de esta métrica: 100 % es la única nota aprobada (M8).</p>
+<p><strong>El emocional pre/post (1–10): la semilla de M10.</strong> Dos números por operación, 5 segundos de honestidad: ¿cómo llegaste (sueño, estrés, apego) y cómo quedaste? El acta semanal leerá sus patrones: pre &gt; 8 con "me toca recuperar" → riesgo de revancha (el freno de 8.6 existe para eso); post &lt; 4 tras pérdida → la pausa obligatoria antes de la siguiente decisión. No es psicología decorativa: son las columnas que M10 usará para tu diagnóstico, registradas desde HOY — cuando llegues a M10 tendrás semanas de datos propios, no la teoría de otro.</p>
+<pre class="mermaid">flowchart TD
+    A[&quot;Operacion cerrada&lt;br/&gt;90 segundos en caliente&quot;] --&gt; B[&quot;R real + coste&lt;br/&gt;etiqueta E0-E7&lt;br/&gt;emocional post&quot;]
+    B --&gt; C[&quot;Acta semanal 9.6&lt;br/&gt;conteo de etiquetas&lt;br/&gt;5 preguntas - UNA conclusion&quot;]
+    C --&gt; D{&quot;Patron detectado?&quot;}
+    D -- &quot;error de ejecucion&quot; --&gt; E[&quot;Entrenar la ejecucion&lt;br/&gt;checklist - regla de UNA mejora&quot;]
+    D -- &quot;caso borde recurrente&quot; --&gt; F[&quot;Ventana mensual&lt;br/&gt;candidata a modificacion&lt;br/&gt;con re-test&quot;]
+    D -- &quot;todo en plan&quot; --&gt; G[&quot;Abstencion documentada&lt;br/&gt;v1.1 sigue - cero cambios&quot;]
+    E --&gt; H[&quot;Changelog del sistema&lt;br/&gt;y del entrenamiento&quot;]
+    F --&gt; H
+    G --&gt; H
+</pre>
+<h2>Analogía</h2>
+<p>La caja negra del avión. El registrador de vuelo no opina, no aconseja y no juzga: <strong>graba</strong> — altitud, rumbo, cada accionar de los mandos, los últimos 25 horas sin interrupción. Cuando hay un incidente, la investigación no entrevista la memoria del piloto (el estrés falsifica el recuerdo: los testigos de accidentes confunden sistemáticamente lo que hicieron con lo que creyeron hacer): <strong>lee la caja</strong>. Y la línea de fondo de toda la aviación moderna: los accidentes casi nunca son UNA causa — son cadenas de desviaciones pequeñas que el registro hace visibles antes de que se encadenen. Tu journal es tu caja negra: la etiqueta E0–E7 es el registro del accionar de los mandos (tu ejecución), el emocional pre/post es el registro de la cabina, y la captura de señal es la foto del panel en el momento exacto. El acta semanal es tu investigación de incidentes — con la ventaja de que en trading el "accidente" cuesta un 1 % y no un avión: por eso el profesional registra TODO, incluidos los vuelos rutinarios.</p>
+<h2>Cómo se hace: montar el journal v1 y la rutina de los 90 segundos</h2>
+<ol>
+<li><strong>Monta la infraestructura (30-45 min).</strong> Copia el CSV v1 del programa (<a href="plantilla_journal_v1.html"><code>journal/plantilla_journal_v1.md</code></a>) a tu hoja de cálculo (o usa el CSV directo); añade las columnas del forward (spread real, slippage) si ya estás en esa fase; imprime la taxonomía E0–E7 y pégala junto al monitor — la etiqueta correcta es la que está a la vista en caliente, no la que recuerdas el domingo. Entra los 2 ejemplos migrados del v0 para calibrar.</li>
+<li><strong>Rutina post-operación: los 90 segundos.</strong> Al cerrar CADA operación, antes de cerrar la plataforma: R real y resultado (10 s) → etiqueta E0–E7 con la taxonomía a la vista (20 s) → emocional post 1–10 (5 s) → captura ya tomada en la señal, verificada en la fila (5 s) → lección de UNA línea si la hay (50 s). No es burocracia: es el paso 8 de la rutina de 9.2, en vivo. La regla: <strong>la plataforma no se cierra con filas pendientes</strong> — la memoria pendiente es memoria que se falsifica.</li>
+<li><strong>Registra también lo que NO operaste.</strong> Las señales válidas no ejecutadas van al acta (disparos debidos), y las rechazadas con razón van al registro de señales rechazadas (1 línea: fecha, mercado, razón). El 60 % de la información de ejecución vive en lo que NO hiciste — y es la mitad que el aficionado no registra jamás.</li>
+<li><strong>Calibra la honestidad con tu primera semana.</strong> Si tu primera semana cierra con 100 % E0, sospecha de ti mismo: la muestra de cualquier humano que aprende tiene errores E2/E7 al menos; el E0 perfecto de novato suele significar "no sé etiquetarme" o "no me atrevo". El journal no califica: mide — un 40 % de errores bien etiquetados vale más que un 0 % sospechoso, porque lo primero es reparable y lo segundo es ciego.</li>
+<li><strong>Conecta el journal con el resto del sistema.</strong> La calculadora de sizing (M8) produce el lote que va a la fila; la cascada (M8) decide si la fila puede existir; el reporte de 9.3 consume las filas; el acta de 9.6 lee las etiquetas. El journal v1 es el nodo central de todo el negocio — por qué esta lección es el corazón del módulo.</li>
+</ol>
+<h2>Error común</h2>
+<p><strong>(1) El journal del domingo.</strong> Reconstruir 12 operaciones el fin de semana con la memoria como única fuente: cada fila será "verosímil" y ninguna será cierta — la memoria protege el ego en proporción directa al tiempo pasado. La etiqueta en caliente no es perfeccionismo: es la diferencia entre medir y novelar. <strong>(2) La etiqueta múltiple.</strong> "Fue E1 y E2 y un poco de E4" — no: la primera de la cadena causal, el resto a regla_violada. El conteo semanal solo puede leer frecuencias si cada operación tiene exactamente un diagnóstico principal; el "todo lo anterior" es la forma en que el ego diluye la responsabilidad. <strong>(3) El journal que solo registra operaciones.</strong> Sin no-disparos y señales rechazadas, la métrica de disparos (M8) no existe y la mitad de tu ejecución queda fuera del mapa. <strong>(4) La lección que se convierte en ensayo.</strong> La lección es UNA línea ("esperar la vela cerrada en zona H4"); si necesitas un párrafo, el diagnóstico no está maduro — va al acta de la semana, donde el espacio obliga a precisión. <strong>(5) Usar el journal para autoflagelarse.</strong> El journal es un instrumento de medición, no un tribunal: la E0 existe para que la pérdida en plan quede PRESUPUESTADA y sin culpa, y la taxonomía existe para convertir el remordimiento difuso ("soy un desastre") en un objetivo concreto ("E2 × 4 esta semana: disparo prematuro — se entrena con la regla de la vela cerrada"). El trader que castiga el error deja de etiquetarlo; el que lo mide, lo corrige.</p>
+<h2>Conexión cuantitativa</h2>
+<p><strong>Hacia 9.3:</strong> cada métrica del reporte se calcula DE las filas — WR y PF de los resultados, coste medio de la columna coste_r, rachas de la serie temporal, disparos del par setup_valido/disparo_debido; sin journal v1 no hay reporte, solo impresiones. <strong>Hacia 8.3-8.6:</strong> la fila verifica el presupuesto (lote vs calculadora → E4), los topes de cartera y la cascada (E6) — la columna de etiquetas es la auditoría del módulo de riesgo en cada operación. <strong>Hacia 9.6:</strong> el conteo de etiquetas y los patrones del emocional pre/post son la materia prima de las actas — la revisión semanal dura 30 minutos precisamente porque los 90 segundos post-operación ya hicieron el trabajo. <strong>Hacia M10:</strong> tus columnas emocionales y tus etiquetas E1/E6 (FOMO y freno ignorado) son el dataset personal sobre el que la psicología científica diagnosticará; M10 te pedirá MÍRATI en el journal — el que llega sin journal llega sin espejo. Y hacia M12: el changelog del sistema (que el acta produce) y las lecciones de una línea son la materia prima del plan de trading — tu documento rector se escribirá con años de filas, no con opiniones de enero.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li>El journal v1 registra el <strong>negocio</strong>: R planificado, etiqueta de error, emocional pre/post y captura — cada campo existe porque una métrica o un acta lo consume.</li>
+<li>La taxonomía cerrada E0–E7, <strong>una etiqueta por operación en caliente</strong>, la primera de la cadena causal — la comparabilidad del conteo es su valor.</li>
+<li><strong>Pérdida ≠ error</strong>: la E0 presupuesta el coste estadístico; la ganancia fuera de plan ES un error — y es el más peligroso porque premia el circuito equivocado.</li>
+<li>La deriva (R planificado vs real; disparos debidos vs ejecutados) diagnostica la EJECUCIÓN — se entrena, jamás se "recalcula" para que cuadre.</li>
+<li>Los 90 segundos post-operación son la inversión más rentable del negocio: 100 filas audibles valen más que cualquier intuición sobre tu propio desempeño.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>Clasifica con etiqueta y justifica: (a) pérdida −1R, SL respetado, lote de la calculadora, setup 8/8; (b) ganancia +2R tomada fuera de zona sin setup; (c) pérdida −1R tras mover el SL "para darle aire"; (d) pérdida −1R con la cascada en nivel 2 activa; (e) ganancia +1R con lote 0,10 cuando la calculadora daba 0,06.</li>
+<li>Tu acta semanal muestra E2 × 4 (todas entradas antes de la vela cerrada) y E0 × 6. Formula la conclusión única de la semana y explica por qué NO corresponde modificar el sistema en la ventana mensual.</li>
+<li>Explica por qué una ganancia de +3R fuera de plan es MÁS peligrosa que una pérdida de −1R en plan. Usa la matemática de la esperanza y el mecanismo del refuerzo en tu respuesta.</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. (a) **E0** — el coste estadístico presupuestado: la racha esperable del sistema en acción, sin culpa y sin corrección. (b) **E1** — operar sin setup; que haya salido +2R no cambia la etiqueta: la columna mide el PROCESO, no la suerte — y es la más peligrosa de la lista por el refuerzo. (c) **E3** — SL manipulado (el movimiento del SL sin regla de gestión; la pérdida −1R no es el error — el movimiento sí). (d) **E6** — freno ignorado: con la cascada en nivel 2 el protocolo mandaba pausa 30-60 min; operar violó el apagado parcial (y la cadena causal empieza ahí: el freno es el "porqué" de toda la operación). (e) **E4** — sizing fuera de presupuesto: +1R con 0,10 lotes son +32 $ donde el plan decía +19,20 $ — la desviación del presupuesto ES el error, ganes o pierdas.
+2. Conclusión única: "4 de 10 operaciones dispararon antes de la vela cerrada (E2) — esta semana se entrena la regla de la vela cerrada con el checklist en pantalla: ninguna orden antes del cierre de la vela de reacción". NO corresponde modificar el sistema porque el patrón diagnosticado es de EJECUCIÓN, no de diseño: las reglas eran correctas y no se siguieron — cambiarlas ahora sería tratar una falla de disparo reescribiendo el manual (la confusión que la ventana mensual existe para evitar). El entrenamiento (regla de UNA mejora) ataca el E2; el sistema v1.1 sigue congelado; y si las E2 persisten 4 semanas tras el entrenamiento, entonces sí: el caso entra a la ventana con EVIDENCIA de que el problema puede estar en la regla (¿demasiado estricta?, ¿la vela cerrada llega tarde?) — y se re-testea.
+3. Matemática: la esperanza del sistema (+0,16R neto) solo existe si las reglas se ejecutan — una operación fuera de plan es una extracción de una DISTRIBUCIÓN DISTINTA (sin WR 40 % ni R:B 2,1 garantizados): su +3R no "compensa" nada, es ruido de otra máquina. Refuerzo: la pérdida en plan duele y no enseña circuito nuevo (era el coste esperado); la ganancia fuera de plan activa el sistema de recompensa EXACTAMENTE cuando el comportamiento fue erróneo — el cerebro marca "fuera de zona = +3R" como patrón ganador, y su próxima activación será con más tamaño y más convicción. El Trader que repite el circuito construye un negocio cuya esperanza no conoce — porque su journal (si etiqueta bien) muestra E1 que él celebra. Por eso la columna mide el proceso: la única ganancia que cuenta es la que el sistema puede repetir.
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="leccion-9-4.html"><span class="lbl">← Anterior</span><span class="ttl">Lección 9.4 · Forward testing en demo — la transición honesta del labo</span></a>
+    <a class="next" href="leccion-9-6.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 9.6 · Revisión semanal y mensual — el protocolo que decide cuá</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

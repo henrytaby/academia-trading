@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 1.4 · La esperanza matemática · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a class="active" href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>🧱 N1 · Base<span class="sep">/</span>M1 · El Trading como Negocio y Ciencia<span class="sep">/</span>Lección 1.4 · La esperanza matemática</div>
+  <article class="doc-body">
+<h1>Lección 1.4 · La esperanza matemática</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>45–60 min de estudio (lleva calculadora o hoja de cálculo)</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-01.html">M1 · El Trading como Negocio y Ciencia</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td><a href="leccion-1-3.html">Lección 1.3 · El mapa completo: 3 dimensiones</a></td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="leccion-1-5.html">Lección 1.5 · La curva de aprendizaje real</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>Si este programa tuviera una sola lección, sería esta. La esperanza matemática es el criterio que separa el negocio del juego: un sistema se opera si y solo si su esperanza por operación, <strong>calculada después de costos</strong>, es positiva. La mayoría de los principiantes evalúa su trading por el <em>Win Rate</em> — cuántas operaciones acierta — y esa métrica, sola, no distingue un negocio rentable de una ruina elegante. Aquí aprenderás la ecuación que gobierna todo el programa, a calcularla con números cerrados, y por qué la estructura del mercado (fractal y ruidosa) cobra un impuesto especial a quien opera en marcos de tiempo muy bajos.</p>
+<h2>Concepto</h2>
+<p>La esperanza matemática (<em>expected value</em>) de un sistema es el resultado medio <strong>esperado por operación</strong>, ponderando cada resultado por su probabilidad:</p>
+<p><ktxd class="ktxd" data-tex="E = (P_w \times W) - (P_l \times L)">E = (P_w \times W) - (P_l \times L)</ktxd></p>
+<p>donde <ktx class="ktx" data-tex="P_w">P_w</ktx> es la probabilidad de ganar, <ktx class="ktx" data-tex="W">W</ktx> es la ganancia media por operación ganadora, <ktx class="ktx" data-tex="P_l = 1 - P_w">P_l = 1 - P_w</ktx>, y <ktx class="ktx" data-tex="L">L</ktx> es la pérdida media por operación perdedora. Si <ktx class="ktx" data-tex="E &gt; 0">E &gt; 0</ktx> (después de costos), el sistema hace dinero en promedio y la varianza decide solo el camino; si <ktx class="ktx" data-tex="E &lt; 0">E &lt; 0</ktx>, el sistema pierde en promedio y ninguna racha de suerte cambia el destino, solo lo aplaza. El <strong>Win Rate</strong> (<em>P_w</em> en porcentaje) y el ratio <strong>riesgo-beneficio</strong> (<em>Risk:Reward</em>, $W/L$) son las dos ruedas del mismo carro: nunca se interpreta una sin la otra.</p>
+<p>Tres consecuencias inmediatas que conviene memorizar:</p>
+<ol>
+<li><strong>El Win Rate engaña.</strong> Un 90 % de aciertos puede ser un sistema perdedor; un 40 % puede ser una máquina de dinero. El número que importa es el producto, no el porcentaje.</li>
+<li><strong>Existe un umbral de equilibrio para cada ratio.</strong> Para un Risk:Reward de 1:2, el sistema empataría con apenas 33,3 % de aciertos; todo lo superior a eso es beneficio. Fórmula general: <ktx class="ktx" data-tex="WR_{equilibrio} = \frac{1}{1 + R}">WR_{equilibrio} = \frac{1}{1 + R}</ktx>, donde <ktx class="ktx" data-tex="R = W/L">R = W/L</ktx>.</li>
+<li><strong>La esperanza se cobra a largo plazo.</strong> <ktx class="ktx" data-tex="E">E</ktx> es un promedio: una mala semana no lo invalida y una buena no lo confirma. Se necesitan muchas operaciones (el Módulo 9 fija N ≥ 100 como mínimo estadístico) para estimarlo con confianza.</li>
+</ol>
+<h2>Analogía</h2>
+<p>Piensa en cómo gana un casino con la ruleta europea. En cada apuesta a un número, el jugador gana 35 veces lo apostado con probabilidad 1/37, y pierde lo apostado con probabilidad 36/37. La esperanza del jugador: <ktx class="ktx" data-tex="E = \frac{1}{37} \times 35 - \frac{36}{37} \times 1 = -\frac{1}{37} \approx -0{,}027">E = \frac{1}{37} \times 35 - \frac{36}{37} \times 1 = -\frac{1}{37} \approx -0{,}027</ktx> — pierde 2,7 céntimos por cada euro apostado, siempre, en promedio. El casino no acierta más que el jugador en ninguna tirada individual: simplemente <strong>es la casa</strong> — la ventaja matemática está de su lado y deja que la ley de los grandes números haga el trabajo con miles de apuestas. El trader profesional es el jugador que consiguió sentarse del otro lado de la mesa: no acierta más que el aficionado en cada operación concreta; tiene una ventaja pequeña (<ktx class="ktx" data-tex="E &gt; 0">E &gt; 0</ktx>), la repite muchas veces con tamaño controlado y deja que el promedio trabaje. Y la analogía tiene una segunda lectura, incómoda pero necesaria: las <strong>opciones binarias</strong> son la ruleta disfrazada de plataforma de trading — con pago típico del 85 % del apostado en un resultado esencialmente binario a 50/50, la esperanza es <ktx class="ktx" data-tex="E = 0{,}5 \times 0{,}85 - 0{,}5 \times 1 = -0{,}075">E = 0{,}5 \times 0{,}85 - 0{,}5 \times 1 = -0{,}075</ktx> por unidad: pierdes 7,5 centavos por cada dólar, siempre <em>(ilustrativo: supuesto de pago 85 % y probabilidad 50 %; el diseño garantiza esperanza negativa para el cliente en cualquier escenario realista)</em>.</p>
+<h2>Cómo se hace: calcular la esperanza con números cerrados</h2>
+<p><strong>Sistema A</strong> — "acierta poco, gana grande": <ktx class="ktx" data-tex="P_w = 40\%">P_w = 40\%</ktx>, <ktx class="ktx" data-tex="W = 200">W = 200</ktx>, <ktx class="ktx" data-tex="L = 100">L = 100</ktx>:</p>
+<p><ktxd class="ktxd" data-tex="E_A = 0{,}40 \times 200 - 0{,}60 \times 100 = 80 - 60 = +20 \text{ por operación}">E_A = 0{,}40 \times 200 - 0{,}60 \times 100 = 80 - 60 = +20 \text{ por operación}</ktxd></p>
+<p><strong>Sistema B</strong> — "acierta casi siempre": <ktx class="ktx" data-tex="P_w = 90\%">P_w = 90\%</ktx>, <ktx class="ktx" data-tex="W = 20">W = 20</ktx>, <ktx class="ktx" data-tex="L = 190">L = 190</ktx>:</p>
+<p><ktxd class="ktxd" data-tex="E_B = 0{,}90 \times 20 - 0{,}10 \times 190 = 18 - 19 = -1 \text{ por operación}">E_B = 0{,}90 \times 20 - 0{,}10 \times 190 = 18 - 19 = -1 \text{ por operación}</ktxd></p>
+<p>El sistema B acierta 9 de cada 10 operaciones <strong>y pierde dinero</strong>. El sistema A falla más de la mitad de sus operaciones <strong>y gana 20 por trade</strong>. Si ambos operan 100 veces: A acumula +2 000; B acumula −100. La disciplina de B es irrelevante: su diseño tiene esperanza negativa.</p>
+<p><strong>El mismo cálculo en unidades R.</strong> Define <ktx class="ktx" data-tex="R">R</ktx> = la cantidad que arriesgas en una operación (tu pérdida si toca el <em>Stop Loss</em>). Todo se simplifica: una ganancia de "2R" significa el doble de lo arriesgado. Sistema C: <ktx class="ktx" data-tex="P_w = 45\%">P_w = 45\%</ktx>, ganancia media 1,8R, pérdida media 1R:</p>
+<p><ktxd class="ktxd" data-tex="E_C = 0{,}45 \times 1{,}8 - 0{,}55 \times 1 = 0{,}81 - 0{,}55 = +0{,}26R \text{ por operación}">E_C = 0{,}45 \times 1{,}8 - 0{,}55 \times 1 = 0{,}81 - 0{,}55 = +0{,}26R \text{ por operación}</ktxd></p>
+<p>En 100 operaciones: +26R. Arriesgando el 1 % del capital por operación, el sistema C rinde ≈ +26 % en el período (aproximación lineal, antes de compuestos y drawdowns). Es el formato que usarás en TODO el programa: medir en R hace comparables sistemas de cualquier tamaño de cuenta.</p>
+<p><strong>Tabla de consulta rápida</strong> — esperanza en unidades R según Win Rate y Risk:Reward:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Win Rate ↓ \ R:B →</th>
+<th>1:1</th>
+<th>1:2</th>
+<th>1:3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>30 %</strong></td>
+<td>−0,40R</td>
+<td>−0,10R</td>
+<td><strong>+0,20R</strong></td>
+</tr>
+<tr>
+<td><strong>40 %</strong></td>
+<td>−0,20R</td>
+<td><strong>+0,20R</strong></td>
+<td>+0,60R</td>
+</tr>
+<tr>
+<td><strong>50 %</strong></td>
+<td>0,00R</td>
+<td>+0,50R</td>
+<td>+1,00R</td>
+</tr>
+<tr>
+<td><strong>60 %</strong></td>
+<td>+0,20R</td>
+<td>+0,80R</td>
+<td>+1,40R</td>
+</tr>
+</tbody>
+</table></div>
+<p>La diagonal de equilibrio: con 1:1 necesitas 50 % de aciertos; con 1:2, solo 33,3 %; con 1:3, solo 25 %. Por eso el programa exige Risk:Reward mínimo 1:2 en sus protocolos: te da margen estadístico para equivocarte con frecuencia y aun así ganar.</p>
+<p><strong>Y el paso que casi todos olvidan — descontar los costos.</strong> La esperanza real es después de spread y comisión. Si el sistema C paga en promedio 0,08R de costos por operación (ida y vuelta), su esperanza neta es <ktx class="ktx" data-tex="0{,}26 - 0{,}08 = +0{,}18R">0{,}26 - 0{,}08 = +0{,}18R</ktx> <em>(ilustrativo)</em>. Un sistema con +0,05R bruto en el mismo mercado queda en −0,03R neto: <strong>rentable en el papel, perdedor en la cuenta</strong>. Cuanto más pequeña la ganancia típica por operación, más devora el costo fijo — esto conecta directo con el problema del ruido que sigue.</p>
+<h3>Fractalidad, ruido y el impuesto de los marcos de tiempo bajos</h3>
+<p>El mercado es <strong>fractal autosimilar</strong> (<em>fractal, self-similar</em>): las mismas formaciones cualitativas (impulsos, correcciones, rangos) aparecen en el gráfico de 1 minuto y en el mensual. Pero autosimilar <strong>no significa idéntico</strong>: al bajar de marco temporal, el movimiento medio de cada evento se encoge mientras que el spread se mantiene fijo, y el ruido (<em>noise</em> — fluctuación aleatoria sin información) gana peso relativo contra la señal. Ejemplo con números cerrados <em>(ilustrativo)</em>: con un spread de 1 pip, un setup típico de H1 que se mueve 40 pips paga un impuesto de <ktx class="ktx" data-tex="1/40 = 2{,}5\%">1/40 = 2{,}5\%</ktx> de su recorrido; el mismo patrón visual en M1, moviéndose 8 pips, paga <ktx class="ktx" data-tex="1/8 = 12{,}5\%">1/8 = 12{,}5\%</ktx> — cinco veces más. A ello se suma que más operaciones por día significan más decisiones, más riesgo de error de ejecución y más desgaste psicológico. Esta es la razón estructural por la que el programa forma en marcos H4/D1 y desaconseja el scalping hasta tener estadística propia sólida: el impuesto del ruido se paga en esperanza, y se paga siempre.</p>
+<h2>Error común</h2>
+<p>El error clásico es <strong>rendir culto al Win Rate</strong>: mover el <em>Stop Loss</em> para "no perder" esta operación convierte pérdidas pequeñas y frecuentes en pérdidas catastróficas y raras — eleva el WR aparente mientras hunde <ktx class="ktx" data-tex="L">L</ktx> hacia valores que aniquilan <ktx class="ktx" data-tex="E">E</ktx> (es el ADN de la martingala, la gestión que dobla la apuesta tras cada pérdida: ganador casi siempre hasta el día que existe). El segundo error es juzgar sistemas con pocas operaciones: con 10 trades, la varianza domina — un sistema de <ktx class="ktx" data-tex="E = +0{,}3R">E = +0{,}3R</ktx> puede mostrar rachas de 6 pérdidas seguidas sin haberse "estropeado" (la Lección 1.6 lo cuantifica). El antídoto operativo: toda evaluación de sistema se hace con N ≥ 100 operaciones registradas, sobre el journal, después de costos — no sobre la memoria de las últimas dos semanas.</p>
+<h2>Conexión cuantitativa</h2>
+<p>Esta lección <strong>es</strong> la conexión cuantitativa: la ecuación del encabezado es el norte del programa entero. Cada decisión técnica que aprenderás después (dónde colocar el stop, cuándo cerrar, qué mercado operar) y cada decisión de gestión (qué tamaño por operación, cuántas posiciones simultáneas) no son más que formas de mover <ktx class="ktx" data-tex="P_w">P_w</ktx>, <ktx class="ktx" data-tex="W">W</ktx>, <ktx class="ktx" data-tex="L">L</ktx> o la frecuencia <ktx class="ktx" data-tex="N">N</ktx> — y solo tienen sentido en la medida en que mejoren <ktx class="ktx" data-tex="E_{negocio} = N \times E_{por\ operación}">E_{negocio} = N \times E_{por\ operación}</ktx> después de costos. Cuando en el Módulo 7 diseñes tu Sistema v1.0, no se te preguntará "¿te gusta el setup?": se te preguntará por su esperanza estimada y por la evidencia que la respalda.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li><ktx class="ktx" data-tex="E = (P_w \times W) - (P_l \times L)">E = (P_w \times W) - (P_l \times L)</ktx>: el resultado medio esperado por operación; único criterio de operatividad de un sistema.</li>
+<li>El Win Rate aislado no dice nada: 90 % de aciertos puede perder dinero; 40 % puede enriquecer.</li>
+<li>Umbral de equilibrio: <ktx class="ktx" data-tex="WR_{equilibrio} = \frac{1}{1+R}">WR_{equilibrio} = \frac{1}{1+R}</ktx> — con R:B 1:2 basta acertar 33,3 %; por eso el programa exige mínimo 1:2.</li>
+<li>La esperanza válida es <strong>después de costos</strong>: spread y comisión son el alquiler del negocio y se pagan en cada operación.</li>
+<li>El mercado es fractal autosimilar pero no idéntico: en marcos bajos el ruido y los costos relativos crecen — el scalping paga el impuesto más alto.</li>
+<li>Se estima con N ≥ 100 operaciones: con menos datos, hablas con la varianza, no con el sistema.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>Sistema D: WR 55 %, ganancia media 80, pérdida media 100. Calcula <ktx class="ktx" data-tex="E">E</ktx> e interpreta el resultado en una frase.</li>
+<li>¿Qué Win Rate mínimo necesita un sistema con R:B 1:3 para no perder dinero? Muéstralo con la fórmula.</li>
+<li>Tu amigo presume: "nuevo bot, 30 operaciones seguidas ganadoras, cero pérdidas". Da dos explicaciones estadísticamente razonables que no requieren magia.</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. <ktx class="ktx" data-tex="E_D = 0{,}55 \times 80 - 0{,}45 \times 100 = 44 - 45 = -1">E_D = 0{,}55 \times 80 - 0{,}45 \times 100 = 44 - 45 = -1</ktx> por operación. Un sistema que acierta la mayoría de las veces y pierde dinero en promedio: la pérdida media supera la ganancia media — el caso clásico del WR alto mal diseñado (o de stops muy lejanos y objetivos muy cortos).
+2. <ktx class="ktx" data-tex="WR_{equilibrio} = \frac{1}{1+3} = 25\%">WR_{equilibrio} = \frac{1}{1+3} = 25\%</ktx>. Aciertos por encima de 25 % con pérdidas de 1R y ganancias de 3R producen esperanza positiva.
+3. (a) Objetivo cercano y stop lejísimos o inexistente: la probabilidad de cada acierto es altísima (p. ej. ≈ 95 % si el objetivo está a pocos pips y la pérdida latente a cientos), y con 95 % por operación, 30 aciertos seguidos tiene ≈ 21 % de probabilidad (cálculo propio) — perfectamente esperable antes del día catastrófico. (b) Varianza pura en muestra pequeña: con un WR real del 85 %, la probabilidad de 30 ganancias seguidas es <ktx class="ktx" data-tex="0{,}85^{30} \approx 0{,}8\%">0{,}85^{30} \approx 0{,}8\%</ktx> — raro, pero con miles de bots vendidos, a alguno le ocurre y ese es el que se fotografía; además 30 operaciones están muy por debajo del N mínimo para concluir algo. En ambos casos: pide las 200 operaciones siguientes con drawdown incluido.
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="leccion-1-3.html"><span class="lbl">← Anterior</span><span class="ttl">Lección 1.3 · El mapa completo: 3 dimensiones</span></a>
+    <a class="next" href="leccion-1-5.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 1.5 · La curva de aprendizaje real</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

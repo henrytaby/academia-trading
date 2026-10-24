@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 7.6 · Criterios de robustez — cuando el sistema sobrevive al e · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a class="active" href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>📐 N2 · Técnica<span class="sep">/</span>M7 · Construcción del Sistema<span class="sep">/</span>Lección 7.6 · Criterios de robustez — cuando el sistema sobr</div>
+  <article class="doc-body">
+<h1>Lección 7.6 · Criterios de robustez — cuando el sistema sobrevive al espejo</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>45–60 min de estudio</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-07.html">M7 · Construcción del Sistema</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td><a href="leccion-7-5.html">Lección 7.5 · Métricas y rachas</a></td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="examen-n2.html">🏆 Evaluación Nivel 2 · examen-n2</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>Tienes un sistema escrito, con arquetipo elegido, matriz leída y métricas definidas. Falta la pregunta final de N2 — y es la pregunta que separa los sistemas que financian una carrera de los que financian una ilusión: <strong>¿cómo sé que mi v1.0 no es un traje cosido a medida del pasado?</strong> Cada regla que escribiste se apoyó, consciente o no, en operaciones que ya viste; la tentación permanente del trader es retocar las reglas hasta que el histórico luce perfecto — y ese retoque tiene nombre técnico (sobreoptimización) y un mecanismo estadístico preciso. Esta lección te da los cuatro criterios con los que el agente auditor aprobará o devolverá tu Sistema v1.0, y la regla de comportamiento más valiosa del programa: las reglas se declaran antes de probar, se prueban una vez, y los ajustes se archivan para una v1.1 que cambia UNA cosa — nunca el ciclo infinito de "probar-ajustar-celebrar" que fabrica sistemas brillantes en el replay y suicidas en vivo.</p>
+<h2>Concepto</h2>
+<p><strong>Los 4 criterios de robustez del programa</strong> — el checklist con el que se aprueba el v1.0:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Criterio</th>
+<th>Qué exige</th>
+<th>Cómo se verifica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Escrito y clonable</strong></td>
+<td>El test del clon de 7.1: dos desconocidos ejecutan igual</td>
+<td>Lectura del documento por un tercero (el agente auditor)</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Componentes completos</strong></td>
+<td>Las 10 preguntas de 7.2 cerradas, sin huecos</td>
+<td>Recorrido por la plantilla, componente a componente</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>E plausible con margen para costes</strong></td>
+<td>La celda esperada en la matriz (7.4) sobrevive a la fricción de 0,06-0,1R y al deterioro de ejecución en vivo</td>
+<td>La fila declarada de tu arquetipo, restado el coste</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Simple y probado fuera de muestra</strong></td>
+<td>Reglas mínimas y una prueba en datos que el sistema no vio al construirse</td>
+<td>Conteo de reglas + diseño del test (abajo)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Criterio 4a — la simplicidad es cuantitativa.</strong> No es minimalismo estético: cada regla es un parámetro que tu documento ajusta al pasado. Un sistema con 27 reglas tiene 27 lugares donde el azar del histórico pudo "explicarse" a sí mismo; con 10, los tiene diez. La heurística del programa: el v1.0 debe sobrevivir con <strong>≤ 10 reglas explícitas totales</strong> (los componentes, cada uno con 1-3 frases). Si tu sistema necesita más, no es más preciso: está aprendiendo de memoria las particularidades de los movimientos que viste — exactamente como un estudiante que memoriza las respuestas del examen anterior y suspende el siguiente.</p>
+<p><strong>Criterio 4b — fuera de muestra (out-of-sample).</strong> La única prueba que importa: ¿funciona en datos que no existían cuando escribiste las reglas? Formalmente, divide tu evidencia en muestra de construcción (donde surgieron las ideas) y muestra de prueba (datos posteriores o desconocidos donde se verifica). La misión de este módulo ya está diseñada para eso: el Bar Replay arranca en <strong>fechas que no recuerdas</strong>, con avance a ciegas — tus 30 repeticiones son, por construcción, una prueba fuera de muestra de un sistema escrito de antemano. Es la diferencia entre predecir y explicar: el que ajusta reglas tras ver el resultado <strong>explica</strong> el pasado; el que declara reglas antes <strong>predice</strong> — y solo la predicción vale dinero.</p>
+<p><strong>El enemigo formal — el sesgo de data-mining.</strong> El ciclo prohibido:</p>
+<pre class="mermaid">flowchart TD
+    A[&quot;Idea con 10 componentes escritos&quot;] --&gt; B[&quot;Declarar reglas y métrica&lt;br/&gt;ANTES de mirar resultados&quot;]
+    B --&gt; C[&quot;Probar UNA vez a ciegas&lt;br/&gt;en muestra definida (30 repeticiones)&quot;]
+    C --&gt; D{&quot;¿E plausible y reglas simples?&quot;}
+    D --&gt;|&quot;Sí&quot;| E[&quot;✅ Sistema v1.0 congelado&lt;br/&gt;→ validación de M9 con N ≥ 100&quot;]
+    D --&gt;|&quot;No&quot;| F[&quot;❌ Archivar la versión&lt;br/&gt;CON su registro completo&quot;]
+    F --&gt; G[&quot;Iterar honesto — la v1.1 cambia&lt;br/&gt;UNA cosa y se declara nueva hipótesis&quot;]
+    G --&gt; B
+    P[&quot;🚫 CICLO PROHIBIDO — data-mining&lt;br/&gt;Probar → ajustar mirando el resultado → repetir →&lt;br/&gt;celebrar el mejor de N intentos.&lt;br/&gt;Con suficientes intentos, el azar SIEMPRE&lt;br/&gt;fabrica un histórico brillante que no significa nada&quot;]
+    style P fill:#ffe0e0
+    style E fill:#e0f0e0
+</pre>
+<p>Por qué el ciclo prohibido garantiza autoengaño: si pruebas 20 variantes de un sistema incluso INÚTIL y te quedas con la mejor, esa mejor tendrá casi seguro un histórico espectacular — no porque funcione, sino porque entre 20 loterías eliges el billete que ya ganó. Es la falacia del francotirador texano dibujada al revés: primero disparas 20 veces a la pared, después pintas la diana alrededor del mejor agujero. El programa bloquea el ciclo con dos candados: la métrica se <strong>declara antes</strong> (regla que ya viviste en el laboratorio del M6) y cada iteración se <strong>archiva con su registro</strong> — la historia completa de tus intentos es auditable, incluidos los feos.</p>
+<p><strong>La humildad del intervalo de confianza.</strong> Con N=30 y WR medido de 40 %, el intervalo de confianza al 95 % del WR verdadero es:</p>
+<p><ktxd class="ktxd" data-tex="WR \pm 1{,}96\sqrt{\frac{WR(1-WR)}{N}} = 40\% \pm 1{,}96\sqrt{\frac{0{,}4 \times 0{,}6}{30}} \approx 40\% \pm 17{,}5\%">WR \pm 1{,}96\sqrt{\frac{WR(1-WR)}{N}} = 40\% \pm 1{,}96\sqrt{\frac{0{,}4 \times 0{,}6}{30}} \approx 40\% \pm 17{,}5\%</ktxd></p>
+<p>Es decir: tu medición "40 %" es compatible con un sistema verdadero entre ~22 % y ~58 %. Esa horquilla —enorme— es la razón por la que (a) la misión de 30 repeticiones produce un <strong>candidato</strong>, no una sentencia, (b) M9 exige N ≥ 100 para validación, y (c) el programa prohíbe decisiones estructurales (cambiar de arquetipo, abandonar) con muestras de este tamaño. La estadística no es pesimista: es honesta sobre lo que una muestra puede decir.</p>
+<h2>Analogía</h2>
+<p>El traje a medida contra el prêt-à-porter. Un sastre que confecciona un traje ajustado a un único cuerpo —medido en un solo instante, con esa postura exacta— obtiene un traje perfecto para ese cuerpo y ese momento, y inservible para cualquier otro. Un sistema ajustado hasta que el histórico luce perfecto es ese traje: cosido sobre las arrugas exactas de 30 movimientos concretos que nunca se repetirán. La robustez es la propiedad contraria: encajar en un rango de cuerpos (regímenes, periodos, mercados vecinos) sin deshacerse. El sastre honesto deja margen de costura; el constructor de sistemas honesto deja reglas simples y las prueba en un cuerpo nuevo que no midió. Y cuando el traje "perfecto" del replay no abotona en vivo, el ajuste no fue maestría: fue la costura escondida que solo sujetaba en la pose del maniquí.</p>
+<h2>Cómo se hace: la checklist final del Sistema v1.0</h2>
+<p>Antes de entregar el v1.0 al agente auditor (laboratorio del hub), tu documento pasa esta lista — cada "no" devuelve el sistema a la mesa:</p>
+<ol>
+<li>¿Cada componente (7.2) responde con una regla verificable, no con intención?</li>
+<li>¿El documento pasa el test del clon leído por otra persona (o por tu yo de dentro de 6 meses)?</li>
+<li>¿El arquetipo fue elegido con los 4 filtros de 7.3, por escrito?</li>
+<li>¿La fila esperada de la matriz (7.4) está declarada ANTES de la misión — WR esperado y R:B mínimo?</li>
+<li>¿Las reglas totales caben en ≤ 10? Si no, ¿qué regla se añadió y qué evidencia la justifica (y no "para que funcione mejor")?</li>
+<li>¿Ninguna regla fue modificada después de ver resultados de la muestra? (si sí: versión nueva, muestra nueva, desde cero)</li>
+<li>¿La métrica de éxito se declaró antes de probar? (qué cuenta como acierto, qué como fallo, qué como "no hay setup")</li>
+<li>¿La prueba se corrió fuera de muestra (replay en fechas no recordadas, a ciegas)?</li>
+<li>¿El registro completo está archivado — incluidos los intentos anteriores descartados?</li>
+<li>¿El veredicto salió de la matriz y las métricas (7.5), no del ánimo del día?</li>
+</ol>
+<p>Diez ítems, dos horas de honestidad, y el resultado es un sistema que M9 puede validar sin ambigüedad. El criterio de robustez es, al final, una promesa contigo: <em>"no volveré a tocar esto hasta tener la evidencia que dije que iba a contar como evidencia"</em>.</p>
+<h2>Error común</h2>
+<p><strong>(1) Ajustar el stop hasta que el backtest brilla.</strong> El clásico: "con SL de 30 pips hay 12 falsos salidos; con 35 solo 5" — cada ensanchamiento es ajuste al pasado de ESA muestra; el stop honesto sale de la estructura y el ATR (M6.3), no del recorrido óptimo retrospectivo. <strong>(2) Añadir confluencias hasta maquillar el WR.</strong> Cada filtro añadido tras ver fallos es data-mining con estética de rigor: si el filtro era bueno, se declara como hipótesis de la v1.1 y se prueba en muestra nueva — no se cose en la v1.0 ya probada. <strong>(3) Cambiar de arquetipo tras la primera racha.</strong> La tabla de 7.5 ya te dijo que la racha de 6-7 es esperable: cambiar de máquina en ese punto es reiniciar el contador de evidencia a cero manteniendo el sesgo intacto. <strong>(4) Celebrar la v1.0 como validada.</strong> La misión produce un candidato con intervalo ±17,5 %: la validación llega con los 100 backtests de M9 y el forward de demo. Confundir candidato con validado es sembrar la sobreconfianza que M10 tratará como sesgo. <strong>(5) Descartar sin archivar.</strong> Borrar los intentos fallidos: además de perder el aprendizaje, rompes la audibilidad de tu propio proceso — el journal del sistema (qué versiones existieron, qué cambiaron, por qué) es la primera pieza del journal profesional de M9.</p>
+<h2>Conexión cuantitativa</h2>
+<p>La sobreoptimización tiene lectura matemática directa en la esperanza: cada parámetro libre que ajustas a la muestra consume información — con <ktx class="ktx" data-tex="k">k</ktx> reglas ajustadas sobre <ktx class="ktx" data-tex="N">N</ktx> operaciones, el rendimiento en muestra tiende a inflarse aproximadamente como <ktx class="ktx" data-tex="\sqrt{k/N}">\sqrt{k/N}</ktx> respecto al rendimiento real que verás fuera de ella. Con N=30 y 10 reglas libres, ese inflado es del orden del 58 %: un sistema que "mide" +0,3R ajustado puede deber +0,19R o menos fuera de muestra — y con 27 reglas sobre la misma muestra, el inflado supera el 90 %: el número del replay es, funcionalmente, ficción. Las contramedidas son exactamente los criterios de esta lección en forma de fracciones: <strong>menos k</strong> (simplicidad), <strong>más N</strong> (100 backtests de M9, con su intervalo que se estrecha a ±9,8 %), y <strong>muestra nueva para cada hipótesis nueva</strong> (out-of-sample por diseño). La robustez no es una virtud moral: es la gestión explícita de la razón <ktx class="ktx" data-tex="\frac{k}{N}">\frac{k}{N}</ktx> que determina cuánto de tu resultado es máquina y cuánto es espejismo.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li>Los 4 criterios de robustez: escrito y clonable, componentes completos, E plausible con margen para costes, simple y probado fuera de muestra.</li>
+<li>La simplicidad es cuantitativa: cada regla es un ajuste al pasado — el v1.0 sobrevive con ≤ 10 reglas.</li>
+<li>Out-of-sample = la prueba en datos que el sistema no vio; el replay a ciegas en fechas no recordadas la garantiza por construcción.</li>
+<li>El ciclo prohibido (probar-ajustar-celebrar) fabrica históricos brillantes sin significado: métrica declarada antes y versiones archivadas son los dos candados.</li>
+<li>La humildad estadística: con N=30 y WR 40 %, el verdadero está entre ~22 % y ~58 % — la misión produce candidato, M9 produce validación.</li>
+<li>La robustez es la gestión de k/N: menos reglas, más muestra, hipótesis nueva en muestra nueva — eso decide cuánto de tu resultado es real.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>Tu v1.0 tiene 14 reglas y en el replay de 30 operaciones dio WR 58 % con PF 2,4. Un amigo propone "añadir el filtro de RSI para subir el WR a 65 %". Diagnostica los tres problemas de esta propuesta con las herramientas de la lección.</li>
+<li>Calcula el intervalo de confianza del WR para una muestra de N=100 con WR medido 42 %. Compáralo con el de N=30 y extrae la conclusión que justifica el diseño de M9.</li>
+<li>¿Por qué la misión del módulo exige Bar Replay desde "fechas que no recuerdas"? ¿Qué criterio de robustez satisface exactamente y qué pasaría si repitieras la misión sobre el mes que acabas de estudiar en vivo?</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. (a) **Sobreoptimización por k:** 14 reglas ya superan el presupuesto (≤ 10) y añadir una más agranda el inflado <ktx class="ktx" data-tex="\sqrt{k/N}">\sqrt{k/N}</ktx> (con k=15, N=30: ≈ 71 % de inflación esperable) — el WR 58 % con PF 2,4 en N=30 es sospechoso de contener ajuste, no de ser bueno. (b) **Ciclo prohibido:** "añadir el filtro para subir el WR" es ajustar DESPUÉS de ver resultados — exactamente la secuencia probar-ajustar que fabrica históricos falsos; el filtro sería una hipótesis nueva (v1.1) con muestra nueva. (c) **Métrica mal planteada:** perseguir "WR 65 %" es perseguir una variable de la matriz (7.4) ignorando su pareja (R:B) — si el filtro de RSI sube el WR recortando los recorridos, puede moverte a la columna 1:1 y destruir la esperanza neta. El diagnóstico correcto: congelar la v1.0 tal cual, llevarla a M9, y probar el RSI como hipótesis separada.
+2. N=100, WR 42 %: <ktx class="ktx" data-tex="\pm 1{,}96\sqrt{0{,}42 \times 0{,}58/100} = \pm 1{,}96 \times 0{,}0494 ≈ \pm 9{,}7">\pm 1{,}96\sqrt{0{,}42 \times 0{,}58/100} = \pm 1{,}96 \times 0{,}0494 ≈ \pm 9{,}7</ktx> % → intervalo [32,3 %, 51,7 %]. Contra el ±17,5 % de N=30: cuadruplicar la muestra **reduce el error a la mitad** (ley de la raíz cuadrada: el error cae como <ktx class="ktx" data-tex="1/\sqrt{N}">1/\sqrt{N}</ktx>). Conclusión de diseño: con N=100 el intervalo todavía no es fino (≈ ±10 %) pero ya permite distinguir "el sistema está por encima del breakeven con margen" de "estamos en el filo" — esa distinción es exactamente lo que la validación de M9 necesita y lo que N=30 no puede dar.
+3. Satisface el criterio **out-of-sample** (4b): si las reglas del v1.0 se escribieron antes y las fechas del replay no estaban en tu memoria al escribirlas, ninguna información de esos movimientos pudo colarse en las reglas — la prueba mide predicción, no explicación. Si repitieras la misión sobre el mes recién estudiado en vivo, la muestra estaría contaminada: ya sabes dónde están los HH, dónde barraron los pools y qué mercados corrieron — tus "predicciones" serían recuerdos disfrazados, el WR saldría inflado (estudios típicos muestran saltos de deciles de puntos por contaminación de memoria) y la matriz te diría una celda que no le pertenece al sistema. Es la razón pedagógica profunda del replay: es el único instrumento del M4 que fabrica futuro desconocido a voluntad.
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="leccion-7-5.html"><span class="lbl">← Anterior</span><span class="ttl">Lección 7.5 · Métricas y rachas — la estadística que sostiene el negoc</span></a>
+    <a class="next" href="hub-mod-08.html"><span class="lbl">Siguiente →</span><span class="ttl">Módulo 8 · Gestión del Riesgo — el módulo que paga las cuentas</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

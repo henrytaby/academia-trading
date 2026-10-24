@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 11.5 · Matriz de riesgo para evaluaciones — el sizing que sobr · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a class="active" href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>💼 N4 · Negocio<span class="sep">/</span>M11 · La Industria<span class="sep">/</span>Lección 11.5 · Matriz de riesgo para evaluaciones — el sizin</div>
+  <article class="doc-body">
+<h1>Lección 11.5 · Matriz de riesgo para evaluaciones — el sizing que sobrevive a su propia varianza</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>50–65 min de estudio</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-11.html">M11 · La Industria</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td><a href="leccion-11-4.html">Lección 11.4 · Reglas finas de las prop firms</a></td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="leccion-11-6.html">Lección 11.6 · Cuándo intentar una evaluación</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>Las dos lecciones anteriores entregaron el mapa del negocio (11.3) y la letra fina del examen (11.4). Esta lección entrega el <strong>plan de sizing</strong> — la traducción numérica de todo el módulo. El principio es el que tu N3 ya tenía (M8: el riesgo se calcula contra el límite de inventario, no contra el deseo) pero invertido en dirección: en tu cuenta propia el límite era TU línea de emergencia (−15 %); en una evaluación el límite es CONTRACTUAL (4-10 %), más corto, con reglas flotantes y con una condición única: <strong>la varianza no negocia</strong>. La matriz de riesgo dinámico que esta lección instala responde la pregunta práctica: ¿cuánto riesgo por operación le corresponde a un desafío cuya regla de drawdown ya consumí en parte? — y su respuesta es una escala (0,25-0,50 %) que baja conforme el margen se consume, la inversa exacta del instinto amateur (que sube el riesgo cuando se acerca al fracaso — el tilt de 10.5 con fee pagado). Y añade la pieza de honestidad que completa el módulo: la condición <strong>"todavía no"</strong> — la respuesta matemática legítima cuando tu propia evidencia dice que el desafío no cabe. Si terminas con una sola idea: <strong>en una evaluación, el sizing se calcula contra el límite del contrato y contra tu racha esperada medida — y "todavía no" es una decisión ganadora, no una derrota.</strong></p>
+<h2>Concepto</h2>
+<p><strong>La geometría del problema, con fórmula.</strong> Tu peor enemigo dentro del desafío es tu racha esperada — la misma de siempre (M8/M10), ahora contra un límite contractual. Con riesgo <ktx class="ktx" data-tex="r">r</ktx> por operación y racha de <ktx class="ktx" data-tex="n">n</ktx> pérdidas:</p>
+<p><ktxd class="ktxd" data-tex="DD_{racha} = 1 - (1-r)^n \qquad \text{con tu racha esperada } n = \frac{\ln(N)}{\ln(1/(1-WR))}">DD_{racha} = 1 - (1-r)^n \qquad \text{con tu racha esperada } n = \frac{\ln(N)}{\ln(1/(1-WR))}</ktxd></p>
+<p>Para el caso maestro (WR 40 %, N ≈ 40 operaciones de un desafío típico de 2 fases): <ktx class="ktx" data-tex="n = \frac{\ln 40}{\ln(1/0{,}6)} = \frac{3{,}69}{0{,}511} \approx 7">n = \frac{\ln 40}{\ln(1/0{,}6)} = \frac{3{,}69}{0{,}511} \approx 7</ktx> pérdidas seguidas esperadas en el periodo. La tabla de supervivencia:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Riesgo por operación</th>
+<th>DD de la racha de 7</th>
+<th>Contra límite 10 % estático</th>
+<th>Contra límite 5 % diario (racha no aplica, pero 2 ops + flotante)</th>
+<th>Veredicto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1,0 %</td>
+<td><ktx class="ktx" data-tex="1-0{,}99^7 = 6{,}8">1-0{,}99^7 = 6{,}8</ktx> %</td>
+<td>Consume 68 % — fuera de la regla del margen</td>
+<td>2 ops + flotante roza el límite</td>
+<td><strong>No cabe</strong></td>
+</tr>
+<tr>
+<td>0,5 %</td>
+<td><ktx class="ktx" data-tex="1-0{,}995^7 = 3{,}5">1-0{,}995^7 = 3{,}5</ktx> %</td>
+<td>Consume 35 % — margen justo</td>
+<td>Con flotante 1,8 %: 2,8 % de 5 % — OK sin correlación</td>
+<td><strong>Aceptable con disciplina</strong></td>
+</tr>
+<tr>
+<td>0,25 %</td>
+<td><ktx class="ktx" data-tex="1-0{,}9975^7 = 1{,}7">1-0{,}9975^7 = 1{,}7</ktx> %</td>
+<td>Consume 17 % — margen amplio</td>
+<td>1,4 % + flotante: sobra</td>
+<td><strong>El tamaño del programa para empezar</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>La lectura: el mismo sistema con la misma evidencia <strong>cabe o no cabe según el sizing</strong> — y "cabe" se define con la regla de margen del 11.4: la peor racha esperada consume ≤ 50-60 % del límite. Al 1 % no cabe; al 0,5 % cabe con disciplina; al 0,25 % cabe con aire. El objetivo de ganancia del desafío (+8-10 %) sigue alcanzable a 0,25-0,5 % — solo tarda más operaciones: el examen es de supervivencia a la varianza, no de velocidad.</p>
+<p><strong>La matriz de riesgo dinámico</strong> — la escala que ajusta el tamaño según el drawdown YA consumido (la regla del contrato manda; la matriz te mantiene lejos de ella):</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Drawdown del límite ya consumido</th>
+<th>Fase</th>
+<th>Riesgo por operación</th>
+<th>Disparos permitidos</th>
+<th>Regla adicional</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>0-20 %</strong></td>
+<td>Zona verde</td>
+<td><strong>0,50 %</strong></td>
+<td>Los del sistema</td>
+<td>Normal: temperatura, ventana, journal</td>
+</tr>
+<tr>
+<td><strong>20-40 %</strong></td>
+<td>Zona ámbar</td>
+<td><strong>0,40 %</strong></td>
+<td>Los del sistema</td>
+<td>Nada de correlación intradía (tope motor estricto)</td>
+</tr>
+<tr>
+<td><strong>40-60 %</strong></td>
+<td>Zona naranja</td>
+<td><strong>0,25 %</strong></td>
+<td>Máx 2 por semana de calidad plena</td>
+<td>Solo A-setup de tu checklist; nada de "casi"</td>
+</tr>
+<tr>
+<td><strong>&gt; 60 %</strong></td>
+<td>Zona roja</td>
+<td><strong>0 % nuevas aperturas</strong></td>
+<td>0</td>
+<td>Modo recuperación: gestión de abiertas + revisión — la cuenta vive para el próximo intento</td>
+</tr>
+</tbody>
+</table></div>
+<p>Dos propiedades que la hacen funcionar: <em>(1) es anticipada</em> — la zona la marca el dato (consumo del límite), no la sensación; es la temperatura de 10.6 aplicada al contrato. <em>(2) es la inversa del tilt</em> — donde el amateur sube el tamaño para "recuperar" (10.3), la matriz baja el tamaño para sobrevivir: cada escalón hacia abajo ES la cascada de M8 recalibrada al límite ajeno.</p>
+<p><strong>"Todavía no": la cuarta salida de la matriz.</strong> Si con tu evidencia medida (racha esperada real de tu forward, peor flotante intradía, coste medio) la configuración mínima (0,25 %) consume más del 60 % del límite — el desafío no cabe. La respuesta del programa no es "riesgo 0,15 %" (el objetivo de ganancia se vuelve inalcanzable en el tiempo del desafío y el fee se convierte en renta de la firma): es <strong>posponer</strong> — la decisión "todavía no" con su plan: más N de forward testing (reducir el IC de tu WR), mejor coste (elegir la sesión/par del pilar 3), o simplemente aceptar que tu sistema de 2-3 disparos/semana necesita tipos de desafío con más tiempo o límites más holgados. La comparación con el resto del programa es directa: "todavía no" es la roja de la tabla de 3 vías de 9.3 — una decisión informada que protege el inventario (aquí, el fee y la reputación de consistencia).</p>
+<p><strong>La simulación previa (obligatoria antes de cualquier fee).</strong> Con tu journal de forward (M9/M10) y las reglas finas del contrato (11.4), la simulación en 4 pasos: (1) extrae de TU registro: WR, R:B, coste medio, racha máxima medida, peor flotante intradía, concentración de ganancias por día; (2) aplica las reglas del contrato: racha esperada × riesgo vs límite total (estático o trailing); peor flotante + 2 ops vs límite diario; día máximo de ganancia vs consistency; (3) corre el veredicto de margen: ≤ 50-60 % de consumo en la peor racha = compra; &gt; 60 % = "todavía no"; (4) registra la simulación en tu matriz de due diligence — el fee se compra con papel y pluma, no con entusiasmo.</p>
+<h2>Analogía</h2>
+<p>El ascenso a altura y el oxígeno de reserva. Los montañistas planifican el oxígeno no para el ascenso ideal sino para el peor escenario razonable: si la reserva mínima es 50 % del tanque en el punto de giro, y tu ritmo normal consume 8 % por hora, el punto de giro se decide ANTES de salir — no en la montaña con el frío pidiendo "solo un poco más". El amateur del desafío sube el riesgo cuando el margen baja (el frío pidiendo más oxígeno); la matriz de riesgo dinámico es el plan de giro: la zona de consumo decide el ritmo, y "todavía no" es quedarse en el campamento base con vida y ganas — la montaña sigue ahí la próxima temporada, el tú sin inventario no.</p>
+<h2>Cómo se hace: instalar tu matriz personal (el taller de 30 minutos)</h2>
+<ol>
+<li><strong>Extrae tus 5 números del journal:</strong> WR forward (con su IC), R:B, coste medio por operación, racha máxima medida en 100 ops, peor flotante intradía medido. Si no tienes el peor flotante: se mide a partir de HOY (el journal v1 lo permite) — es la celda que el contrato necesita.</li>
+<li><strong>Calcula tu racha esperada para el N del desafío</strong> (fórmula ln con tu WR) y verifica contra tu racha MÁXIMA medida — si la medida supera la esperada por mucho (racha 12-14 con WR 40 %), usa la medida: tu muestra ya te habló.</li>
+<li><strong>Escribe tu matriz en la hoja de temperatura del desafío:</strong> los 4 escalones con tus números, pegada junto a la plataforma — el consumo del límite se marca al final de cada jornada (30 segundos, del journal).</li>
+<li><strong>Define tu "todavía no" por escrito ANTES de pagar:</strong> la condición exacta (consumo &gt; 60 % del límite a 0,25 %, o peor flotante + 2 ops &gt; límite diario) y qué harás en su lugar (N más grande, otra firma con límites más holgados, o nada — seguir construyendo evidencia).</li>
+<li><strong>Ensaya la transición de escalones en la misión M-11:</strong> la simulación de la matriz con tus datos reales de las 10 sesiones de M-10 — el taller es parte del entregable del laboratorio.</li>
+</ol>
+<h2>Error común</h2>
+<p><strong>(1) "A 0,25 % el desafío tarda demasiado."</strong> El tiempo del examen no es tu enemigo: la varianza lo es — la mayoría de firmas serias no premia la velocidad (algunas la penalizan con mínimos de días de trading) y la consistency rule castiga exactamente la concentración rápida. Tardar más es el precio de sobrevivir a TU varianza normal. <strong>(2) Subir el riesgo en la zona naranja "para salir del hoyo".</strong> El tilt con fee pagado (10.5): la matemática es implacable — con el margen consumido, la misma racha esperada ya es letal; el escalón a 0,25 % no es miedo: es la cascada de M8 recalibrada. <strong>(3) Comprar desafíos múltiples "para diversificar" a riesgo alto en cada uno.</strong> Diversificar contrapartes (11.3) es prudencia; comprar 5 loterías simultáneas es 5 fees — la diversificación válida es de riesgo gestionado, no de apuestas duplicadas con la misma varianza. <strong>(4) Ignorar el coste total de la "carrera de desafíos".</strong> El aspirante que compra 6 desafíos al año a 150 $ con 92 % de fracaso espera gastar ~900 $ por... calcula su esperanza: la carrera de desafíos SIN evidencia previa es el fee de 11.3 comprado en serie — la única carrera que el programa valida empieza con el forward testing ya aprobado. <strong>(5) Confundir "todavía no" con "nunca".</strong> La condición es temporal y medible: más N reduce el IC, mejor coste reduce el consumo, un límite más holgado cambia la geometría — la puerta se abre con evidencia, no con deseo; y mantener la decisión documentada (changelog de tu plan de capitalización, misión M-11) es lo que la convierte en gestión y no en frustración.</p>
+<h2>Conexión cuantitativa</h2>
+<p><strong>Hacia M8:</strong> la matriz es tu cascada personal (−2/−4/−6 %) reescalada al límite contractual — el principio es el mismo: el riesgo baja cuando el inventario expuesto sube; aquí el "inventario" es el margen del contrato. <strong>Hacia 9.3:</strong> los 5 números de la simulación salen de tu reporte de métricas — la preparación del desafío ES la lectura de tu propio reporte con otros límites. <strong>Hacia 10.6:</strong> la matriz de riesgo dinámico es la dicotomía del control en su forma más pura: la zona la marca el dato (consumo), la decisión ya está escrita (escalón), y la varianza que no controlas no puede empujarte a romper tu propio protocolo. <strong>Hacia 11.6:</strong> "todavía no" conecta con el criterio honesto de la próxima lección — 6-12 meses de consistencia documentada: la matemática de esta lección le pone números al calendario.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li>El sizing del desafío se calcula contra el <strong>límite contractual y tu racha esperada medida</strong> — con la regla de margen: la peor racha consume ≤ 50-60 % del límite (al 1 % el caso maestro consume 68 %: no cabe).</li>
+<li>La <strong>matriz de riesgo dinámico</strong> escala 0,50 % → 0,40 % → 0,25 % → 0 % según el drawdown consumido — la inversa exacta del tilt: donde el amateur sube, la matriz baja.</li>
+<li><strong>"Todavía no" es una decisión ganadora</strong>: si ni 0,25 % cabe, el fee no se compra — se compra evidencia (más N), no esperanza; es la roja de la tabla de 3 vías aplicada al fee.</li>
+<li>La <strong>simulación previa obligatoria</strong> usa tus 5 números del journal (WR, R:B, coste, racha, peor flotante) contra las reglas exactas del contrato — el fee se compra con papel y pluma.</li>
+<li>El objetivo de ganancia sigue alcanzable a 0,25-0,5 %: el examen es de <strong>supervivencia a la varianza</strong>, no de velocidad — y las reglas finas (consistency, mínimos de días) castigan justo la prisa.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>Un desafío exige +8 % con drawdown total 10 % estático y diario 5 %. Tu evidencia: WR 42 %, racha esperada para 45 operaciones ≈ 7, peor flotante intradía 2,1 % a riesgo 0,5 %. Simula los tres chequeos (racha vs total; flotante + 2 ops vs diario; consumo vs regla de margen) y da el veredicto con el tamaño correcto.</li>
+<li>Estás en la zona naranja (consumo 45 %) y aparece un A-setup de tu checklist en tu mejor sesión. ¿Qué sizing aplica y qué dos restricciones de la matriz hay que verificar antes de disparar? ¿Qué haría el tilt en tu lugar y por qué la matriz existe exactamente para ese momento?</li>
+<li>Tu evidencia a N=100: WR medido 35 % (IC ±9,3 pp), R:B 2,0, coste 0,08R. El desafío que quieres compra exige constancia, no suerte. Calcula tu E neta y tu WR* neto, decide con la tabla de 3 vías y formula la decisión completa "todavía no": el veredicto, las 2 rutas de mejora con su mecanismo matemático (qué variable mueve cada una) y qué NO es la decisión (las dos lecturas falsas).</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. Racha de 7 a 0,5 %: <ktx class="ktx" data-tex="1-0{,}995^7 = 3{,}5">1-0{,}995^7 = 3{,}5</ktx> % de 10 % = **35 % de consumo** — dentro de la regla de margen (≤ 50-60 %) ✓. Diario: peor flotante 2,1 % + 2 ops perdidas 1,0 % = **3,1 % de 5 % = 62 %** del límite diario — cabe pero al borde: la restricción adicional es cero correlación intradía (el flotante combinado de 2 correlacionadas puede doblar la excursión) y ninguna tercera operación el mismo día si hay flotante mayor a 1 %. Veredicto: el desafío cabe a 0,5 % en zona verde, con la matriz programada para bajar a 0,40 % al consumir 20 % del total — y la simulación se re-ejecuta con el drawdown real del contrato (¿estático o trailing? si es trailing, el chequeo de la racha se hace contra el peor suelo móvil, 11.4).
+2. En zona naranja aplica **0,25 %** — y antes de disparar se verifican: (1) que sea un A-setup completo (todas las condiciones sí/no del checklist, la duda es un no — la matriz solo admite calidad plena en naranja) y (2) que el flotante esperado de la operación quepa en el límite diario restante con su peor excursión. El tilt operaría al tamaño de la zona verde (o más) "porque es una buena señal" — la matriz existe exactamente para ese momento: el dato (consumo 45 %) decide el tamaño, no la calidad de la señal ni el estado emocional; una buena señal a 0,25 % sigue siendo buena — una cuenta descalificada ya no está en el examen.
+3. E neta: <ktx class="ktx" data-tex="0{,}35 \times 1{,}92 - 0{,}65 \times 1{,}08 = 0{,}672 - 0{,}702 = -0{,}03R">0{,}35 \times 1{,}92 - 0{,}65 \times 1{,}08 = 0{,}672 - 0{,}702 = -0{,}03R</ktx> — NEGATIVA en el punto estimado; WR* neto = 1,08/3,0 = **36,0 %** > tu 35 % medido; IC [25,7 %, 44,3 %] cruza el equilibrio ampliamente. Veredicto de la tabla de 3 vías: **roja** → "todavía no": la evidencia no autoriza el fee (comprar el desafío con E negativa es pagar por fracasar). Rutas de mejora: (1) **subir el R:B** (gestión de TP/parciales, salidas mejores): a R:B 2,4 la E pasa a +0,11R y el WR* baja a 31,8 % — tu 35 % ya lo supera: verde; (2) **bajar el coste** (sesión/par del pilar 3): a coste 0,03R la E pasa a +0,02R y el WR* a 34,3 % — tu 35 % supera el equilibrio por el mínimo: la ruta combinada (R:B 2,2 + coste 0,05) da margen cómodo. Y (3) más N: reduce el IC (±9,3 → ±6,6 a N=200) para que la decisión no dependa del intervalo. NO es: (a) "nunca" — las rutas son de tu ejecución y gestión, medibles en semanas-meses; (b) "riesgo menor o más temperancia" — el problema no es el sizing ni la conducta: es que la esperanza medida no paga el examen; ningún sizing convierte E negativa en positiva — primero la esperanza, después el fee.
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="leccion-11-4.html"><span class="lbl">← Anterior</span><span class="ttl">Lección 11.4 · Reglas finas de las prop firms — el examen real está en</span></a>
+    <a class="next" href="leccion-11-6.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 11.6 · Cuándo intentar una evaluación — el criterio honesto de</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

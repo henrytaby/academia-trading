@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 1.1 · Qué es realmente el trading · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a class="active" href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>🧱 N1 · Base<span class="sep">/</span>M1 · El Trading como Negocio y Ciencia<span class="sep">/</span>Lección 1.1 · Qué es realmente el trading</div>
+  <article class="doc-body">
+<h1>Lección 1.1 · Qué es realmente el trading</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>30–40 min de estudio</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-01.html">M1 · El Trading como Negocio y Ciencia</a></td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="leccion-1-2.html">Lección 1.2 · Las 5 mentiras de la industria</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>La mayoría de las personas llega al trading con el modelo mental de una lotería: pones dinero, aciertas o no, y si "estás inspirado" ganas mucho. Ese modelo es, por sí solo, la primera causa de cuentas destruidas, porque decide el tamaño de tus posiciones, tu paciencia y tu reacción ante la pérdida. Antes de tocar un gráfico necesitas reemplazarlo por el modelo correcto: el trading es un <strong>negocio de compra y venta</strong> con reglas, costos fijos e inventario. Todo lo que aprenderás en los 11 módulos restantes presupone que ya piensas como comerciante, no como apostador. Esta lección instala ese cambio de sombrero, y es la base sobre la que se apoya el contrato de expectativas que firmarás al final del módulo.</p>
+<h2>Concepto</h2>
+<p>El trading es <strong>especulación</strong> (<em>speculation</em>): la compra y venta de activos financieros para capturar diferencias de precio en plazos que van de segundos a meses, asumiendo el riesgo de mercado de forma deliberada y regulada. Se diferencia de la <strong>inversión</strong> (<em>investing</em>) en tres ejes: el horizonte temporal (<em>time horizon</em>) —días o semanas contra años—, la fuente del retorno —desequilibrios de precio a corto plazo contra el crecimiento subyacente del activo— y el análisis dominante —lectura estadística del precio y del flujo de órdenes contra el análisis fundamental de largo plazo. Ninguna de las dos actividades es "mejor": son negocios distintos, con horas de trabajo distintas y con perfiles psicológicos distintos.</p>
+<p>Hay una segunda definición, más honesta y menos romántica: al abrir una posición, el minorista se convierte en un <strong>proveedor de liquidez</strong> (<em>liquidity provider</em>) en miniatura. Tu orden de compra permite que un fondo institucional venda tamaño sin desplazar el precio en exceso, y tu orden de venta hace el trabajo inverso. Esa intermediación tiene un valor real para el mercado — los bancos y <em>market makers</em> cobran por ejercerla profesionalmente —, y tu única forma de cobrarla como minorista es capturar más de lo que los costos de transacción (<em>spread</em>, comisiones) te quitan por ejercerla. Si tu operativa no produce esperanza matemática positiva <strong>después de costos</strong>, tu negocio está vendiendo su servicio a pérdida, indefinidamente.</p>
+<p>Y la tercera definición, la que gobierna todo este programa: el trading es un <strong>negocio</strong> con inventario (tu capital), producto (operaciones ejecutadas según un sistema), costos fijos y variables (spread, comisión, herramientas, tu tiempo) y un único indicador de salud: la esperanza matemática por operación. Las tiendas que ignoran sus costos quiebran aunque vendan mucho; los traders que ignoran los suyos hacen exactamente lo mismo, solo que más rápido.</p>
+<h2>Analogía</h2>
+<p>Imagina una tienda de barrio de repuestos. El tendero compra inventario a 10 y lo vende a 13: su margen es 3 por unidad, y de ahí paga alquiler, luz y su propio sueldo. Tres reglas de su negocio se traducen directamente al trading. Primera: <strong>no se enamora del inventario</strong> — si un artículo no se vende, lo liquida con descuento para recuperar caja y comprar lo que sí rota; el trader que "ama" su posición perdedora es el tendero que deja pudrir la mercancía. Segunda: <strong>conoce su costo fijo por venta</strong> — el <em>spread</em> y la comisión son tu alquiler y tu luz, y se pagan en cada operación, ganadora o perdedora. Tercera: <strong>protege el capital de re-compra</strong> — si gasta la caja, la tienda cierra aunque tuviera buenos proveedores; tu capital es tu caja, y por eso este programa repite hasta el cansancio: preservación antes que ganancia.</p>
+<h2>Cómo se hace: distinguir inversión de trading en la práctica</h2>
+<p>Antes de tu primera operación (que ocurrirá en el Módulo 4, en demo) debes poder clasificar cualquier actividad financiera en la columna correcta. Usa esta tabla como filtro:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Dimensión</th>
+<th>Inversión</th>
+<th>Trading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Horizonte típico</td>
+<td>Años (5–20)</td>
+<td>Segundos a semanas</td>
+</tr>
+<tr>
+<td>Fuente del retorno</td>
+<td>Crecimiento del activo (beneficios, dividendo)</td>
+<td>Desequilibrios de oferta/demanda de corto plazo</td>
+</tr>
+<tr>
+<td>Herramienta dominante</td>
+<td>Análisis fundamental, asignación por clases de activos</td>
+<td>Análisis técnico, estadística, lectura de flujo</td>
+</tr>
+<tr>
+<td>Riesgo por decisión</td>
+<td>Difuso y lento (el mercado cae 30 % en un año malo)</td>
+<td>Definido y rápido (el <em>Stop Loss</em> acota la pérdida antes de entrar)</td>
+</tr>
+<tr>
+<td>Métrica de éxito</td>
+<td>Patrimonio total a largo plazo</td>
+<td>Esperanza matemática por operación, ejecución del proceso</td>
+</tr>
+<tr>
+<td>Tiempo semanal</td>
+<td>Minutos al mes</td>
+<td>Horas al día o a la semana, según estilo</td>
+</tr>
+</tbody>
+</table></div>
+<p>Ejemplo con números cerrados <em>(ilustrativo)</em> de la misma persona haciendo cada cosa con 5 000:</p>
+<ul>
+<li><strong>Como inversora:</strong> compra un ETF de índice por 5 000, aporta 100 al mes, no mira la cotización más de una vez al mes y planea mantenerlo 10 años. Su peor escenario razonable es un ciclo bajista prolongado, no una cuenta a cero.</li>
+<li><strong>Como trader:</strong> en una cuenta de 5 000, arriesga 50 (el 1 %) por operación, coloca el <em>Stop Loss</em> a 20 pips y el objetivo a 40 pips, y cierra la posición en 2–3 días. Su pérdida máxima <strong>por idea</strong> está definida antes de entrar: 50, ni un centavo más si respeta su propia regla.</li>
+</ul>
+<p>La misma cifra de partida, dos negocios completamente distintos. El error clásico del principiante es hacer el segundo creyendo que hace el primero: entra con mentalidad de inversor ("a largo plazo recupera") sobre posiciones apalancadas de corto plazo. Ese híbrido no existe como estrategia: es simplemente no haber decidido qué negocio se tiene.</p>
+<h2>Error común</h2>
+<p>El más frecuente es definir el trading como "adivinar la dirección del precio". El trabajo real no es acertar: es <strong>ejecutar un proceso con esperanza matemática positiva</strong> repetidas veces, con riesgo controlado. Un trader puede acertar 9 de 10 operaciones y perder dinero, y puede acertar solo 4 de 10 y ser rentable — la Lección 1.4 demuestra ambos casos con números. El segundo error, casi tan grave, es creer que el trading es "ingreso pasivo": es un oficio activo con horas de análisis, registro y revisión, y quien lo venda como pasivo te está vendiendo otra cosa (la Lección 1.2 desmonta esa promesa). El antídoto para ambos errores es el mismo: define de qué negocio participas, con qué costos y con qué indicador de salud — y acepta que ese indicador es la ecuación, no tu sensación de acierto.</p>
+<h2>Conexión cuantitativa</h2>
+<p>Como proveedor de liquidez en miniatura, tu compensación esperada por operación es exactamente la esperanza matemática:</p>
+<p><ktxd class="ktxd" data-tex="E = (P_w \times W) - (P_l \times L)">E = (P_w \times W) - (P_l \times L)</ktxd></p>
+<p>donde <ktx class="ktx" data-tex="P_w">P_w</ktx> es la probabilidad de ganar, <ktx class="ktx" data-tex="W">W</ktx> la ganancia media, <ktx class="ktx" data-tex="P_l = 1 - P_w">P_l = 1 - P_w</ktx> y <ktx class="ktx" data-tex="L">L</ktx> la pérdida media. El negocio completo se lee desde aquí: cada operación es una "venta" que deja <ktx class="ktx" data-tex="E">E</ktx> en la caja <strong>antes</strong> de descontar spread y comisión; si <ktx class="ktx" data-tex="E \le 0">E \le 0</ktx> después de costos, la tienda pierde dinero en cada cliente que atiende. No existe volumen, disciplina ni motivación que compense una esperanza negativa: solo cambia la velocidad a la que se pierde. Por eso este módulo no contiene ni un solo indicador técnico todavía: primero el modelo de negocio, después la técnica.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li>Trading = especulación organizada como negocio: comprar/vender para capturar diferencias de precio, con capital como inventario.</li>
+<li>No es inversión: horizonte, fuente de retorno y análisis son distintos — decidir cuál de los dos negocios tienes es obligatorio antes de operar.</li>
+<li>Tu rol de mercado: proveedor de liquidez en miniatura; cobras esa función solo si tu esperanza supera los costos de transacción.</li>
+<li>Tu indicador de salud único no es el acierto, es <ktx class="ktx" data-tex="E">E</ktx> por operación después de costos.</li>
+<li>Regla del negocio: preservación del capital antes que ganancia — sin caja no hay re-compra.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>Un amigo te dice: "compré acciones de una tecnológica apalancado 20:1 porque a largo plazo siempre sube". ¿Qué error de modelo está cometiendo?</li>
+<li>¿Por qué el spread es análogo al alquiler de la tienda, y qué implica eso para un sistema que gana muy poquito por operación?</li>
+<li>¿Puede un trader con 40 % de aciertos ser rentable? ¿Qué falta saber antes de responder?</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. Mezcla los dos negocios: usa análisis de largo plazo ("siempre sube") sobre un vehículo apalancado de corto plazo, donde el riesgo por decisión es rápido y definido. Con apalancamiento 20:1, una caída del 5 % liquida la cuenta mucho antes de que "largo plazo" llegue a pasar.
+2. El spread se paga en cada operación, como el alquiler se paga cada mes, ganando o perdiendo. Un sistema con margen bruto minúsculo por operación puede ser rentable en papel y perderlo todo en costos: la esperanza debe calcularse después de descontarlos.
+3. Sí puede — y la pregunta correcta no es el porcentaje de aciertos sino la relación entre ganancia media y pérdida media. Con 40 % de aciertos y ratio 1:2 ya hay beneficio (Lección 1.4). El *Win Rate* aislado no dice nada.
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="hub-mod-01.html"><span class="lbl">← Anterior</span><span class="ttl">Módulo 1 · El Trading como Negocio y Ciencia</span></a>
+    <a class="next" href="leccion-1-2.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 1.2 · Las 5 mentiras de la industria</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

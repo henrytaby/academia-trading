@@ -20,9 +20,14 @@ academia-trading/
 ├── agents.md                  ← instrucciones para los agentes
 ├── README.md                  ← este archivo (portada + estado)
 ├── worklog.md                 ← bitácora de construcción (append-only)
+├── portal/                    ← portal web del curso (106 páginas: índice, breadcrumb, prev/next, modo oscuro)
+│   ├── index.html             ← portada con los 4 niveles y accesos rápidos
+│   ├── *.html                 ← 1 página por documento (105)
+│   ├── assets/                ← style.css + app.js (CDN: KaTeX 0.16.11 + mermaid@10)
+│   └── files/                 ← archivos enlazados no-markdown (calculadoras .py, journal .csv)
 ├── docs/
 │   ├── 00-analisis/           ← auditoría de cursos base
-│   ├── 01-syllabus/           ← temario rector (v1.1)
+│   ├── 01-syllabus/           ← temario rector (v1.10)
 │   ├── 02-modulos/            ← los 12 módulos del programa
 │   │   ├── mod-01-negocio-trading/   (Sprint 1)
 │   │   ├── mod-02-motor-del-precio/  (Sprint 2)
@@ -40,7 +45,9 @@ academia-trading/
 │       ├── laboratorio/       ← receta de primera operación + 20 escenarios de sizing (M8)
 │       └── evaluaciones/      ← exámenes N1, N2, N3 y final
 ├── journal/                   ← el registro del negocio: journal v1 (taxonomía E0-E7 + actas) + v0 histórico
-└── scripts/core/              ← calculadoras Python del programa (position_sizing.py S8 · metricas_backtest.py S9)
+└── scripts/
+    ├── core/                  ← calculadoras Python del programa (position_sizing.py S8 · metricas_backtest.py S9)
+    └── portal/                ← generador del portal: build_portal.py + assets_src/ (fuente única)
 ```
 
 ## 📊 Estado del Programa
@@ -81,7 +88,8 @@ academia-trading/
 
 ## 🚀 Inicio Rápido
 
-- **Para el estudiante:** dile a tu agente *"Siguiente lección"* para estudiar la [Lección 1.1 · Qué es realmente el trading](docs/02-modulos/mod-01-negocio-trading/leccion-1-1.md) — **los Módulos 1 a 9 están publicados y listos**. Cuando llegues al M4, ejecuta los pasos 3–11 de la [Receta de tu Primera Operación](docs/03-recursos/laboratorio/receta-primera-operacion.md) y cierra el N1 con el [Examen N1](docs/03-recursos/evaluaciones/examen-n1.md); continúa el N2 con el [M5](docs/02-modulos/mod-05-estructura-de-mercado-y-liquidez/README.md) y el [M6](docs/02-modulos/mod-06-indicadores-y-confluencias/README.md), ciérralo construyendo tu [Sistema v1.0 en el M7](docs/02-modulos/mod-07-construccion-del-sistema/README.md) + la [Evaluación N2](docs/03-recursos/evaluaciones/examen-n2.md), y abre el N3 blindando tu cuenta con el [M8 · Gestión del Riesgo](docs/02-modulos/mod-08-gestion-del-riesgo/README.md) — la calculadora de sizing y los frenos en cascada que tu negocio necesita antes de escalar — y demostrando que tu sistema tiene esperanza con el [M9 · Backtesting, Journal y Validación](docs/02-modulos/mod-09-backtesting-journal-y-validacion/README.md): 100 operaciones ciegas, el reporte de 13 métricas y el journal v1 con taxonomía de errores que auditará toda tu carrera. Cierra el N3 operando tu propia máquina con el [M10 · Psicotrading Científico](docs/02-modulos/mod-10-psicotrading-cientifico/README.md) — temperatura pre-sesión, los 5 miedos, las 5 avaricias y la rutina de ventana — y gradúala con la [Evaluación N3](docs/03-recursos/evaluaciones/examen-n3.md) y su entrevista de graduación. Abre el N4 eligiendo infraestructura con criterio forense en el [M11 · La Industria](docs/02-modulos/mod-11-la-industria/README.md) — brokers, radar de estafas, prop firms con sus reglas finas y fiscalidad por principios — y deja tu informe defendido y tu plan de capitalización a 12 meses. Cierra el programa con el [M12 · Plan de Trading y Plan de Negocio](docs/02-modulos/mod-12-plan-trading-negocio/README.md): tu Plan v1.0, tu hoja de ruta y la [Certificación FIT-12](docs/03-recursos/evaluaciones/examen-final.md) — y luego, el oficio.
+- **Para leer en el navegador:** abre [`portal/index.html`](portal/index.html) — el portal completo del curso: 106 páginas (1 por documento), índice lateral colapsable por niveles, breadcrumb, navegación anterior/siguiente, modo claro/oscuro, fórmulas KaTeX y diagramas mermaid. Funciona en local (doble clic), en zip y en cualquier hosting estático (GitHub Pages/Netlify) sin cambios de rutas. Si editas cualquier `.md`, regenera con `python3 scripts/portal/build_portal.py` (requiere `pip install markdown`).
+- **Para el estudiante:** dile a tu agente *"Siguiente lección"* para estudiar la [Lección 1.1 · Qué es realmente el trading](docs/02-modulos/mod-01-negocio-trading/leccion-1-1.md) — **los 12 módulos están publicados y listos**. Cuando llegues al M4, ejecuta los pasos 3–11 de la [Receta de tu Primera Operación](docs/03-recursos/laboratorio/receta-primera-operacion.md) y cierra el N1 con el [Examen N1](docs/03-recursos/evaluaciones/examen-n1.md); continúa el N2 con el [M5](docs/02-modulos/mod-05-estructura-de-mercado-y-liquidez/README.md) y el [M6](docs/02-modulos/mod-06-indicadores-y-confluencias/README.md), ciérralo construyendo tu [Sistema v1.0 en el M7](docs/02-modulos/mod-07-construccion-del-sistema/README.md) + la [Evaluación N2](docs/03-recursos/evaluaciones/examen-n2.md), y abre el N3 blindando tu cuenta con el [M8 · Gestión del Riesgo](docs/02-modulos/mod-08-gestion-del-riesgo/README.md) — la calculadora de sizing y los frenos en cascada que tu negocio necesita antes de escalar — y demostrando que tu sistema tiene esperanza con el [M9 · Backtesting, Journal y Validación](docs/02-modulos/mod-09-backtesting-journal-y-validacion/README.md): 100 operaciones ciegas, el reporte de 13 métricas y el journal v1 con taxonomía de errores que auditará toda tu carrera. Cierra el N3 operando tu propia máquina con el [M10 · Psicotrading Científico](docs/02-modulos/mod-10-psicotrading-cientifico/README.md) — temperatura pre-sesión, los 5 miedos, las 5 avaricias y la rutina de ventana — y gradúala con la [Evaluación N3](docs/03-recursos/evaluaciones/examen-n3.md) y su entrevista de graduación. Abre el N4 eligiendo infraestructura con criterio forense en el [M11 · La Industria](docs/02-modulos/mod-11-la-industria/README.md) — brokers, radar de estafas, prop firms con sus reglas finas y fiscalidad por principios — y deja tu informe defendido y tu plan de capitalización a 12 meses. Cierra el programa con el [M12 · Plan de Trading y Plan de Negocio](docs/02-modulos/mod-12-plan-trading-negocio/README.md): tu Plan v1.0, tu hoja de ruta y la [Certificación FIT-12](docs/03-recursos/evaluaciones/examen-final.md) — y luego, el oficio.
 - **Para un agente nuevo:** lee `agents.md` completo antes de tocar nada; después `worklog.md` y la tabla de estado de este README.
 
 ## ⚖️ Principios del Programa

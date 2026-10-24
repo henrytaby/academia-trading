@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 2.1 · La mecánica de subasta · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a class="active" href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>🧱 N1 · Base<span class="sep">/</span>M2 · El Motor del Precio<span class="sep">/</span>Lección 2.1 · La mecánica de subasta</div>
+  <article class="doc-body">
+<h1>Lección 2.1 · La mecánica de subasta</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>35–45 min de estudio</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-02.html">M2 · El Motor del Precio</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td>— (primera lección del módulo)</td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="leccion-2-2.html">Lección 2.2 · Oferta y demanda</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>Cada vez que pulsas "comprar" o "vender", tu orden entra en una subasta electrónica que funciona igual en Tokio, Londres o Nueva York. Quien no entiende esa subasta no entiende tres cosas que le cuestan dinero desde la primera operación: por qué compró a un precio y el gráfico muestra otro un poco peor, por qué cerrar inmediatamente una posición implica una pérdida pequeña aunque el precio no se movió, y por qué el mismo setup cuesta menos de operar a las 10 de la mañana que a las 11 de la noche. El spread no es un detalle técnico: es el alquiler de tu local comercial, se paga en cada operación y aquí vas a ver exactamente quién lo cobra y por qué.</p>
+<h2>Concepto</h2>
+<p>En cualquier mercado hay dos precios simultáneos, no uno:</p>
+<ul>
+<li><strong>Bid</strong> (<em>bid</em>): el precio más alto al que alguien, ahora mismo, te <strong>compra</strong> — cuando tú vendes, vendes al bid.</li>
+<li><strong>Ask</strong> (<em>ask / offer</em>): el precio más bajo al que alguien, ahora mismo, te <strong>vende</strong> — cuando tú compras, compras al ask.</li>
+</ul>
+<p>La diferencia entre ambos es el <strong>spread</strong> (<em>spread</em>): la distancia mínima entre compradores y vendedores dispuestos a operar. Dentro del libro de órdenes (<em>order book</em>, o DOM — <em>depth of market</em>) hay una fila de precios con cantidades: arriba del precio actual los vendedores esperando (ask), debajo los compradores esperando (bid).</p>
+<p>Y hay dos formas de participar en la subasta:</p>
+<ol>
+<li><strong>Taker (comprador agresivo).</strong> Envía una orden <em>market</em>: no espera, <strong>come</strong> las órdenes que están en el libro y paga el spread. Aporta urgencia, quita liquidez.</li>
+<li><strong>Maker (vendedor pasivo).</strong> Envía una orden <em>limit</em>: espera en una fila a un precio concreto, <strong>provee</strong> liquidez y es quien vende el spread. No mueve el precio hasta que alguien con urgencia paga su precio.</li>
+</ol>
+<p><strong>Cómo nace cada tick:</strong> el "precio" que ves en el gráfico es el registro del último acuerdo. Sube cuando una orden taker de compra consume todos los lotes disponibles al mejor ask y tiene que pagar el siguiente nivel — es decir, cuando la urgencia de comprar supera la paciencia de los que venden. Baja por el espejo: urgencia de vender contra paciencia de los que compran. El precio no "es" nada en un instante dado: es la huella que dejan las órdenes agresivas al chocar contra el muro pasivo.</p>
+<p><strong>Visual — así nace un tick</strong> (taker de 80 lotes contra el libro):</p>
+<pre class="mermaid">flowchart TD
+    T[&quot;🧨 Taker agresivo envía&lt;br/&gt;compra market de 80 lotes&quot;] --&gt; L1[&quot;Nivel ask 1,0850 — 50 lotes&lt;br/&gt;consumidos por el taker&quot;]
+    L1 --&gt; L2[&quot;Nivel ask 1,0852 — 30 lotes&lt;br/&gt;consumidos también: 50 + 30 = 80&quot;]
+    L2 --&gt; P[&quot;📈 El mejor ask ahora es 1,0854&lt;br/&gt;→ el precio subió: así nació el tick&quot;]
+    P -.-&gt; M[&quot;🧊 Los makers vendieron en cada nivel:&lt;br/&gt;proveen liquidez y cobran el spread&quot;]
+</pre>
+<h2>Analogía</h2>
+<p>Piensa en el mostrador de cambio de divisas de un aeropuerto. La pizarra dice: "Compra EUR 1,05 — Vende EUR 1,10". Esos dos números son el bid y el ask del cambista. Si cambias dólares por euros y enseguida te arrepientes y los vuelves a cambiar, saldrás con menos dinero <strong>aunque el euro no se haya movido un centavo</strong>: pagaste el bid-ask del mostrador dos veces. El cambista no especuló con tu dinero — cobró por <em>estar ahí</em> con liquidez lista a las tres de la madrugada. Un bróker de forex hace exactamente eso, solo que con spreads de fracciones de centavo en lugar de 5 %. Y como en el aeropuerto: a las 3 a. m. hay un solo mostrador abierto (spread enorme); a mediodía hay veinte compitiendo (spread mínimo). La hora del día cambia el peaje.</p>
+<h2>Cómo se hace: ver el spread como costo con números cerrados</h2>
+<p>Cotización típica de EUR/USD en sesión líquida <em>(ilustrativo)</em>: bid 1,0850 / ask 1,0852 → spread de 2 pips (un pip en EUR/USD = 0,0001).</p>
+<p>Compras 1 lote al ask (1,0852) y el precio <strong>no se mueve</strong>. Cierras al instante: vendes al bid (1,0850). Resultado: <strong>−2 pips</strong> (−20 $ con un lote estándar). El mercado no hizo nada; el peaje sí.</p>
+<p><strong>El viaje asimétrico.</strong> Tu entrada long quedó en ask 1,0852 y tu SL/TP se miden sobre el bid (el precio donde te ejecutan al cerrar):</p>
+<ul>
+<li>Para que el TP a +30 pips se ejecute, el bid debe subir desde 1,0850 hasta 1,0882: el mercado debe <strong>recorrer 32 pips</strong>.</li>
+<li>Para que el SL a −30 pips se ejecute, el bid debe bajar desde 1,0850 hasta 1,0822: al mercado le basta con <strong>recorrer 28 pips</strong>.</li>
+</ul>
+<p>Mismo trade, mismo riesgo nominal de 30 pips: el camino hacia la ganancia es 4 pips más largo que el camino hacia la pérdida (2 × spread). En un objetivo de 30 pips, el spread se come <ktx class="ktx" data-tex="2/30 \approx 6{,}7\%">2/30 \approx 6{,}7\%</ktx> del recorrido bruto. Con el mismo spread y un objetivo de 8 pips (scalping), sería <ktx class="ktx" data-tex="2/8 = 25\%">2/8 = 25\%</ktx> — la razón estructural por la que el programa desaconseja el scalping hasta tener estadística propia (conecta con el impuesto del ruido de la <a href="leccion-1-4.html">Lección 1.4</a>).</p>
+<p><strong>Taker vs maker en la práctica:</strong> la entrada <em>limit</em> de tu receta de primera operación es un intento de operar como maker (esperas el precio en tu zona); la salida por SL es inevitablemente taker (cuando salta, alguien te está comprando la posición con urgencia). No puedes ser maker en las salidas de emergencia — por eso el costo total por operación se calcula con el spread completo, ida y vuelta.</p>
+<h2>Error común</h2>
+<p>El error clásico del principiante es creer que "el precio" es uno y que comprar y vender es gratis. De ahí salen dos consecuencias caras: <strong>(1)</strong> mirar el gráfico, ver 1,0850 y no entender por qué su compra se ejecutó en 1,0852 ("¡me robaron!": no te robaron, pagaste el ask); <strong>(2)</strong> elegir horarios y mercados por comodidad y no por costo — el mismo setup a las 23:00 en un par exótico puede pagar 5–10 pips de spread <em>(ilustrativo)</em> frente a 1–2 en el solapamiento de Londres-NY, lo que destruye la esperanza antes de que el análisis importe. El segundo error, primo del primero, es pensar que ser siempre maker ("pongo limit y espero") es gratis: el maker paga en otro cambio — se queda sin la operación justo cuando el mercado corre sin él. Taker y maker son dos formas de pagar; no existe el asiento gratis en la subasta.</p>
+<h2>Conexión cuantitativa</h2>
+<p>El spread entra directo en la ecuación del programa: <ktx class="ktx" data-tex="E_{neto} = E_{bruto} - \text{costos por operación}">E_{neto} = E_{bruto} - \text{costos por operación}</ktx>. Con la fórmula de la <a href="leccion-1-4.html">Lección 1.4</a>, un sistema con <ktx class="ktx" data-tex="E_{bruto} = +0{,}10R">E_{bruto} = +0{,}10R</ktx> y un costo de 0,08R queda en <ktx class="ktx" data-tex="+0{,}02R">+0{,}02R</ktx> — marginal; el mismo sistema con el doble de spread queda en pérdida. Esta es la primera palanca cuantitativa que controlas como negocio: <strong>elegir cuándo y dónde operas determina el costo fijo de cada venta</strong>, antes de acertar o fallar nada. En la Lección 2.4 verás que la hora del día no es un detalle: es una variable de costos tanto como el bróker elegido.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li>Hay dos precios, no uno: compras al <strong>ask</strong>, vendes al <strong>bid</strong>; la diferencia es el <strong>spread</strong> — el peaje de cada operación.</li>
+<li><strong>Taker</strong> = urgencia, come el libro, paga el spread. <strong>Maker</strong> = paciencia, provee liquidez, vende el spread. Toda operación tiene al menos un taker.</li>
+<li>Cada tick es la huella de órdenes agresivas consumiendo el libro: urgencia compradora mueve el precio arriba; urgencia vendedora, abajo.</li>
+<li>El viaje del long es asimétrico: para ganar 30 pips el mercado debe recorrer 32; para perder 30 basta con 28 (spread × 2 de diferencia).</li>
+<li>El spread es proporcionalmente más grave cuanto más corto es tu objetivo: 2 pips sobre 30 = 6,7 %; sobre 8 = 25 %.</li>
+<li><ktx class="ktx" data-tex="E_{neto} = E_{bruto} - \text{costos}">E_{neto} = E_{bruto} - \text{costos}</ktx>: elegir cuándo y dónde operar es elegir tu costo fijo antes de acertar nada.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>La cotización muestra bid 1,0900 / ask 1,0903. Compras market y cierras 5 segundos después sin que el precio se mueva. ¿Cuánto perdiste en pips y quién lo cobró?</li>
+<li>Tu sistema apunta a objetivos de 20 pips con un spread de 2 pips ida y vuelta. ¿Qué porcentaje del objetivo se lleva el peaje? ¿Y si el objetivo fuera de 10 pips?</li>
+<li>Tu amigo dice: "siempre pongo órdenes limit, así no pago spread y soy más inteligente que los takers". ¿Qué le falta a su razonamiento?</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. Perdiste 3 pips (el spread). Lo cobró el lado maker del mercado / el proveedor de liquidez: compraste al ask 1,0903 y vendiste al bid 1,0900. Es el costo de haber estado en la mesa, aunque el precio no se moviera.
+2. <ktx class="ktx" data-tex="2/20 = 10\%">2/20 = 10\%</ktx> del objetivo con 20 pips; <ktx class="ktx" data-tex="2/10 = 20\%">2/10 = 20\%</ktx> con 10 pips. Cuanto más corto el objetivo, más pesa el costo fijo — mismo efecto del impuesto de ruido de la Lección 1.4, y motivo para no encoger objetivos sin encoger también el mercado donde se paga el spread.
+3. Le falta el otro lado del cambio: ser maker implica **no participating cuando el mercado corre** — tus limit se quedan sin llenar en los movimientos buenos (riesgo de oportunidad) y llenan justo cuando el precio te alcanza en los malos (selección adversa). No existe el asiento gratis: el maker no paga el spread en dinero, lo paga en qué operaciones consigue. Un sistema honesto calcula su E asumiendo el spread de ida y vuelta, entre o con limit.
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="hub-mod-02.html"><span class="lbl">← Anterior</span><span class="ttl">Módulo 2 · El Motor del Precio</span></a>
+    <a class="next" href="leccion-2-2.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 2.2 · Oferta y demanda</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

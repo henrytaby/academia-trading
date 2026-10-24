@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 6.8 · Radar de fiabilidad y dashboard — máximo 3 herramientas · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a class="active" href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>📐 N2 · Técnica<span class="sep">/</span>M6 · Indicadores y Confluencias<span class="sep">/</span>Lección 6.8 · Radar de fiabilidad y dashboard — máximo 3 her</div>
+  <article class="doc-body">
+<h1>Lección 6.8 · Radar de fiabilidad y dashboard — máximo 3 herramientas</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>45–60 min de estudio</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-06.html">M6 · Indicadores y Confluencias</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td><a href="leccion-6-7.html">Lección 6.7 · Etapas de Weinstein</a></td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="hub-mod-07.html">M7 · Construcción del Sistema</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>Este módulo visitó todo el catálogo — y ahora viene la pregunta de negocio: <strong>¿cuáles entran a tu panel y por qué?</strong> Sin un criterio de selección, el gráfico del principiante se convierte en el avión de los doce anemómetros (6.1): lleno, caro y ciego. Este es el aporte propio del programa: un <strong>radar de fiabilidad</strong> que clasifica cualquier herramienta por evidencia — no por popularidad, ni por nostalgia, ni por precio del curso que la vende — y la <strong>regla del máximo 3</strong> que convierte esa clasificación en un panel concreto: 1 filtro de régimen + 1 medidor de volatilidad + 1 gatillo/contexto. Con esta lección cierras el N2 técnico con tu primera decisión de arquitectura de instrumentos, defendida por escrito: el dashboard que el M7 montará dentro de tu Sistema v1.0.</p>
+<h2>Concepto</h2>
+<p><strong>El radar de fiabilidad — tres tiers por evidencia:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tier</th>
+<th>Criterio de entrada</th>
+<th>Herramientas del catálogo</th>
+<th>Condición del programa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A · Medidores defendibles</strong></td>
+<td>Miden una propiedad observable con mecanismo claro (precio, actividad) y uso auditable en journal</td>
+<td><strong>ATR</strong> (amplitud), <strong>volumen/VWAP</strong> (interés, con salvedad FX), <strong>medias móviles como filtro de régimen</strong> (definición operativa de tendencia), <strong>etapas de Weinstein</strong> (checklist del ciclo)</td>
+<td>Entrada por defecto al dashboard; cada una con regla de lectura escrita</td>
+</tr>
+<tr>
+<td><strong>B · Contextuales</strong></td>
+<td>Derivadas del precio con historial estadístico débil y dependiente de régimen; útiles como contexto, peligrosas como veredicto</td>
+<td><strong>RSI/MACD</strong> (momentum; divergencias como uso honesto), <strong>Bollinger</strong> (squeeze como fase; walking = fuerza), <strong>Donchian</strong> (arquetipo de ruptura), <strong>Fibonacci</strong> (contexto de descuento)</td>
+<td>Máximo UNA en el dashboard, con su condición de uso explícita ("RSI solo para divergencias en zona, nunca contra sesgo")</td>
+</tr>
+<tr>
+<td><strong>C · Marketing / pseudociencia</strong></td>
+<td>Sin mecanismo verificable, sin muestra auditable, o mecanismo imposible de auditar</td>
+<td><strong>Ciclos lunares y astrotrading</strong> (sin mecanismo), <strong>"indicadores secretos" que repintan</strong> (inauditables), señales vendidas con certeza sin muestra</td>
+<td>Prohibidas; se clasifican en el radar y se archiva la evidencia de por qué</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>El repintado (<em>repainting</em>) — descalificación automática:</strong> un indicador repinta cuando reescribe sus valores PASADOS después de que ocurrieron (la flecha de "compra" que se movió a otra vela retroactivamente). Consecuencia fatal: <strong>no se puede backtestear honestamente</strong> — el histórico muestra la versión corregida, no la que viste en vivo. Cualquier herramienta que repinta queda en Tier C por construcción, sea cual sea su popularidad.</p>
+<p><strong>Los test del radar (preguntas en orden):</strong>
+1. <strong>¿Qué propiedad mide?</strong> Si no puedes nombrarla en una frase (amplitud, velocidad, interés, dirección), la herramienta no entra.
+2. <strong>¿De qué dato deriva?</strong> Precio, volumen o algo exógeno. Si es exógeno sin mecanismo causal en la subasta (fases lunares, numerología), Tier C.
+3. <strong>¿Es auditable?</strong> ¿Puedes registrar su lectura en el journal y comprobarla después? Si repinta o si su lectura depende del "ojo del artista", no es auditable → no entra.
+4. <strong>¿Aporta algo que tus 3 piezas no miden?</strong> Si mide lo mismo con otra fórmula, es redundancia (6.1), no confluencia.</p>
+<pre class="mermaid">flowchart TD
+    Q0[&quot;Herramienta nueva&lt;br/&gt;(la de YouTube, la del anuncio...)&quot;] --&gt; Q1{&quot;1. Nombra la propiedad&lt;br/&gt;que mide en una frase&quot;}
+    Q1 --&gt;|&quot;no puedo&quot;| C1[&quot;Tier C — sin propiedad clara:&lt;br/&gt;marketing. Descartada&quot;]
+    Q1 --&gt;|&quot;sí puedo&quot;| Q2{&quot;2. De qué dato deriva:&lt;br/&gt;precio, volumen o exógeno?&quot;}
+    Q2 --&gt;|&quot;exógeno sin mecanismo&lt;br/&gt;en la subasta&quot;| C2[&quot;Tier C — pseudociencia:&lt;br/&gt;se archiva el porqué&quot;]
+    Q2 --&gt;|&quot;precio o volumen&quot;| Q3{&quot;3. Es auditable?&lt;br/&gt;(no repinta, lectura registrable)&quot;}
+    Q3 --&gt;|&quot;no&quot;| C3[&quot;Tier C por construcción:&lt;br/&gt;inauditable = no existe para el negocio&quot;]
+    Q3 --&gt;|&quot;sí&quot;| Q4{&quot;4. Aporta una propiedad&lt;br/&gt;que mis 3 piezas NO miden?&quot;}
+    Q4 --&gt;|&quot;no — mide lo mismo&lt;br/&gt;con otra fórmula&quot;| R[&quot;Redundancia:&lt;br/&gt;no entra. Se anota el test&quot;]
+    Q4 --&gt;|&quot;sí&quot;| D[&quot;Candidata de verdad:&lt;br/&gt;test de 50 episodios (laboratorio)&lt;br/&gt;y a defenderse en la revisión&quot;]
+</pre>
+<p><strong>La regla del máximo 3 — el dashboard de confluencias:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Asiento</th>
+<th>Familia</th>
+<th>Candidato por defecto</th>
+<th>Qué aporta que los otros no</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Filtro de régimen</td>
+<td>Tendencia / ciclo</td>
+<td><strong>EMA 200 (+50)</strong> o Weinstein</td>
+<td>Dirección permitida: el "solo largos / solo cortos" del día</td>
+</tr>
+<tr>
+<td>2. Medidor de volatilidad</td>
+<td>Amplitud</td>
+<td><strong>ATR(14)</strong></td>
+<td>Tamaño: audita SL, dimensiona TP, normaliza mercados</td>
+</tr>
+<tr>
+<td>3. Gatillo/contexto</td>
+<td>Momentum o volumen</td>
+<td><strong>RSI (divergencias)</strong> o volumen (multiplicadores)</td>
+<td>Velocidad o interés: la tercera lectura ortogonal</td>
+</tr>
+</tbody>
+</table></div>
+<p>Por qué 3 y no 5: (1) <strong>independencia real es escasa</strong> — dentro del precio casi todo se correlaciona; con régimen + amplitud + velocidad/interés tienes las propiedades operables cubiertas; (2) <strong>cada herramienta extra tiene costo</strong> — una regla más que recordar bajo presión, un conflicto más que arbitrar en la vela crítica, un sesgo de confirmación más que auditar; (3) <strong>la confluencia de verdad vive en la estructura</strong> (M5): el panel auxilia, no dirige. El dashboard es el* staff *del mapa, no el mapa.</p>
+<h2>Analogía</h2>
+<p>El botiquín de expedición. Un médico de montaña no carga la farmacia entera: lleva analgésico, antinflamatorio y antibiótico — las tres familias con mecanismo probado — y sabe la dosis de cada uno de memoria. El turista lleva 40 frascos "por si acaso" y en la emergencia no recuerda qué era cuál. Tu dashboard es el botiquín: 3 piezas, cada una con su indicación escrita ("el ATR es para tamaño, no para dirección"), dosis fija (parámetros clásicos, sin afinar) y fecha de caducidad auditable (si el journal demuestra que no aporta, sale).</p>
+<h2>Cómo se hace: el dashboard aplicado al caso maestro</h2>
+<p>El instante del pullback de la <a href="receta-primera-operacion.html">Receta</a> <em>(ilustrativo)</em>, con el panel de 3 asientos del programa:</p>
+<ol>
+<li><strong>Asiento 1 — régimen:</strong> EMA 200 ≈ 1,0712 creciente, precio encima; etapa 2 por escrito (6.7). Lectura: <em>"solo largos"</em>. Coste de la consulta: 10 segundos.</li>
+<li><strong>Asiento 2 — volatilidad:</strong> ATR(14) H4 ≈ 21 pips. Lectura: SL estructural de 32 pips ≈ 1,52 ATR (6.3): sano; TP 66 pips ≈ 3,1 ATR: exigente pero respaldado por el impulso medido. Coste: 15 segundos.</li>
+<li><strong>Asiento 3 — contexto:</strong> volumen del pullback 0,6× (6.5): caída sin convicción; RSI reseteado al neutro sin divergencia (6.4): impulso sano. Lectura: <em>"continuación probable; TP con margen"</em>. Coste: 30 segundos.</li>
+<li><strong>La confluencia total:</strong> sesgo estructural HH/HL (M5) + régimen a favor + stop dentro del rango estadístico + contexto de continuación — cuatro lecturas ortogonales, ninguna repetida, todas por escrito. La operación de la receta sale con <strong>calidad máxima declarada</strong> — no porque "todo diga comprar" (nadie dijo comprar: son medidores), sino porque ningún medidor contradice el plan de la estructura.</li>
+<li><strong>El anti-ejemplo documentado:</strong> el día que probaste el "indicador de la moda" en 10 episodios del laboratorio, el radar lo clasificó: mide velocidad (como tu RSI), deriva del precio (no aporta propiedad nueva), lectura no registrable (repinta suavizándose): <strong>redundancia + inauditable</strong> — no entra. Ese veredicto por escrito vale más que cualquier discusión.</li>
+</ol>
+<h2>Error común</h2>
+<p><strong>(1) El dashboard de 8 indicadores.</strong> No es un panel: es un tribunal de apelaciones permanente donde cada sentencia tiene apelación. Máximo 3, uno por familia — y sobra espacio en el gráfico para lo único que dirige: el precio y la estructura. <strong>(2) Cambiar la regla a mitad de camino.</strong> "Máximo 3" significa 3 la semana 12 también — el estudiante que rota su panel cada mes no tiene dashboard: tiene colección. Las adiciones pasan por el radar + los 50 episodios + la defensa con el agente. <strong>(3) Clasificar por popularidad.</strong> Que 2 millones de personas usen un indicador es su modelo de negocio, no su evidencia. El radar pregunta qué mide y si es auditable — la fila de usuarios no responde ninguna de las dos. <strong>(4) Olvidar que el panel es staff.</strong> Si tu dashboard "decide" operaciones sin estructura, invertiste la jerarquía: el medidor volvió a ser oráculo y volviste a la casilla del M1.</p>
+<h2>Conexión cuantitativa</h2>
+<p>El dashboard convierte la "opinión sobre indicadores" en una <strong>hipótesis testable</strong>: las 3 piezas, sus reglas de lectura y su métrica se declaran ANTES de probar (anti data-mining, D6) y el laboratorio de este módulo genera los 50 episodios que la auditan. El diseño experimental del programa: para cada episodio, registrar coincidencia medidor-estructura (Sí/No) y desenlace; el resultado esperado NO es que el medidor "acierte" (no predice nada): es que <strong>discrepe poco y discrepe con contenido</strong> — cuando el ATR dice "SL sano" y el régimen dice "a favor", el porcentaje de desenlaces coherentes debería superar claramente el azar; y cuando discrepan, la discrepancia debería ser informativa (zona apretada, régimen dudoso). Si tu pieza de momentum discrepa del 40 % de las veces sin aportar nada, salió del panel por números — y ese es el único despido honorable en un negocio científico: con evidencia propia, no con nostalgia.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li>Tres tiers: medidores defendibles (A), contextuales (B), marketing/pseudociencia (C) — la clasificación se defiende con el radar, no con la popularidad.</li>
+<li>Repintar = descalificación automática: lo inauditable no existe para un negocio científico.</li>
+<li>Los 4 test del radar: ¿qué propiedad mide? ¿de qué deriva? ¿es auditable? ¿aporta lo que tus 3 no miden?</li>
+<li>Dashboard máximo 3: régimen (EMA 200/Weinstein) + volatilidad (ATR) + gatillo/contexto (RSI-divergencias o volumen) — una pieza por familia.</li>
+<li>La confluencia de verdad vive en la estructura (M5); el panel la audita y la acompaña — jamás la dirige.</li>
+<li>Toda adición o despido del panel se decide con el test de los 50 episodios y la revisión del agente: evidencia propia o silencio.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>Clasifica en el radar: (a) un indicador de fases lunares con backtest "93 %"; (b) el MACD; (c) el VWAP; (d) un indicador de flechas que ajusta sus señales pasadas al recalcular.</li>
+<li>Enumera los 3 asientos del dashboard con su familia y su lectura sobre el caso maestro. ¿Qué propiedad única aporta cada uno?</li>
+<li>Tu pieza de momentum discrepa del 40 % de los episodios del laboratorio sin mejorar ninguna decisión. ¿Qué hace el programa y qué NO hace?</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. (a) **Tier C**: propiedad exógena sin mecanismo en la subasta; el "93 %" sin muestra ni regla declarada es marketing con número. (b) **Tier B**: mide velocidad (derivado del precio); útil como contexto/divergencia con condición escrita — y redundante si ya hay RSI: solo uno de los dos entra. (c) **Tier A** (con salvedad FX): mide interés real de ejecución con mecanismo claro (benchmark institucional); en spot se usa como tendencia relativa del tick volume. (d) **Tier C por construcción**: repinta = inauditable = imposible de validar honestamente, sea cual sea su estética.
+2. Asiento 1 régimen: EMA 200 creciente + Etapa 2 → *"solo largos"* (propiedad: dirección permitida). Asiento 2 volatilidad: ATR 21 pips → SL 32 pips ≈ 1,52 ATR sano, TP 66 ≈ 3,1 ATR exigente pero respaldado (propiedad: tamaño del riesgo). Asiento 3 contexto: volumen 0,6× en el pullback + RSI al neutro sin divergencia → *"continuación probable"* (propiedad: interés/velocidad — lo que el precio y el régimen no miden).
+3. El programa lo despide del panel con evidencia: la métrica se declaró antes (anti data-mining), los 50 episodios existen, y el resultado es que la pieza no añade coincidencia informativa — sale del dashboard y se archiva el test. Lo que NO hace: amortiguar sus parámetros "a ver si mejora" (data-mining puro), agregar una cuarta pieza "para compensar", o quedárselo por apego. El panel se administra con la misma frialdad que el presupuesto.
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="leccion-6-7.html"><span class="lbl">← Anterior</span><span class="ttl">Lección 6.7 · Etapas de Weinstein — el filtro macro de 4 etapas</span></a>
+    <a class="next" href="hub-mod-07.html"><span class="lbl">Siguiente →</span><span class="ttl">Módulo 7 · Construcción del Sistema de Trading</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

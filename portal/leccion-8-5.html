@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 8.5 · Riesgo de cartera y correlación — dos operaciones pueden · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a class="active" href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>🛡️ N3 · Riesgo<span class="sep">/</span>M8 · Gestión del Riesgo<span class="sep">/</span>Lección 8.5 · Riesgo de cartera y correlación — dos operacio</div>
+  <article class="doc-body">
+<h1>Lección 8.5 · Riesgo de cartera y correlación — dos operaciones pueden ser una sola apuesta</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>50–65 min de estudio</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-08.html">M8 · Gestión del Riesgo</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td><a href="leccion-8-4.html">Lección 8.4 · Apalancamiento real</a></td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="leccion-8-6.html">Lección 8.6 · Frenos de emergencia</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>Todo lo que construiste hasta aquí es el presupuesto de UNA operación. Pero tu plataforma permite abrir varias a la vez, y ahí aparece el agujero que el SYLLABUS marca como aporte propio del programa (vacío 1): <strong>el riesgo de cartera</strong>. El error clásico es aritmético y fatal: creer que tres operaciones de 1 % son "tres apuestas independientes" cuando las tres dependen del mismo motor — el dólar. Si vendes EUR/USD, GBP/USD y AUD/USD a la vez, no tienes tres ideas: tienes UNA apuesta de 3 % contra el dólar con tres envoltorios. El día del dato de la Fed, no serán tres pérdidas de 1 % repartidas en tres días: será una pérdida de ~3 % en una hora, con las tres posiciones moviéndose como un solo cuerpo. Esta lección te da el instrumento que el presupuesto individual no puede dar: el mapa de motores (correlación), la fórmula de riesgo efectivo y los topes de cartera escritos — la capa de protección que actúa entre tu operación (8.3) y tus frenos (8.6).</p>
+<h2>Concepto</h2>
+<p><strong>El mapa de motores.</strong> Detrás de cada gráfico hay un motor: la divisa o el activo cuyo "humor" mueve el precio. EUR/USD depende del euro Y del dólar — son dos motores acoplados. GBP/USD, AUD/USD, USD/JPY, USD/CHF: todos tienen al dólar como uno de sus motores. El oro (XAU/USD) cotiza en dólares y a menudo reacciona a los mismos vientos refugio. Cuando abres dos posiciones que comparten motor, sus resultados dejan de ser independientes: la correlación (<ktx class="ktx" data-tex="\rho">\rho</ktx>, número entre −1 y +1) mide exactamente cuánto se mueven juntas.</p>
+<p><strong>Tabla de correlaciones típicas FX</strong> <em>(ventana móvil, D1/H4 — VALORES ILUSTRATIVOS: se miden en tu plataforma, cambian en el tiempo y se rompen en crisis)</em>:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Par de instrumentos</th>
+<th><ktx class="ktx" data-tex="\rho">\rho</ktx> típico</th>
+<th>Lectura operativa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EUR/USD ↔ GBP/USD</td>
+<td>≈ +0,85</td>
+<td>Casi gemelos: Europa vs dólar</td>
+</tr>
+<tr>
+<td>EUR/USD ↔ AUD/USD</td>
+<td>≈ +0,70</td>
+<td>El dólar manda en ambos</td>
+</tr>
+<tr>
+<td>EUR/USD ↔ USD/JPY</td>
+<td>≈ +0,10 a +0,30</td>
+<td>Motores parcialmente distintos</td>
+</tr>
+<tr>
+<td>EUR/USD ↔ USD/CHF</td>
+<td>≈ −0,95</td>
+<td>Espejo casi perfecto (franco ligado al euro)</td>
+</tr>
+<tr>
+<td>XAU/USD ↔ EUR/USD</td>
+<td>≈ +0,20 a +0,40</td>
+<td>Refugio vs divisa: relación inestable</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>La fórmula conservadora del programa.</strong> Para dos posiciones de riesgo <ktx class="ktx" data-tex="R_1">R_1</ktx> y <ktx class="ktx" data-tex="R_2">R_2</ktx> con correlación <ktx class="ktx" data-tex="\rho">\rho</ktx>:</p>
+<p><ktxd class="ktxd" data-tex="R_{\text{efectiva}} = R_1 + \rho \times R_2">R_{\text{efectiva}} = R_1 + \rho \times R_2</ktxd></p>
+<p>Con EUR/USD long 1 % y GBP/USD long 1 %: <ktx class="ktx" data-tex="R_{\text{efectiva}} = 1 + 0{,}85 \times 1 = 1{,}85">R_{\text{efectiva}} = 1 + 0{,}85 \times 1 = 1{,}85</ktx> %. Tus "dos operaciones de 1 %" son, para el inventario, casi una de 2 %. Y el peor caso operativo no es una probabilidad remota: <strong>con <ktx class="ktx" data-tex="\rho = 0{,}85">\rho = 0{,}85</ktx> es el resultado ESPERADO</strong> — los dos SL tocarán el mismo día casi cada vez que el dólar se mueva contra ti. Peor aún: esa pérdida conjunta NO tiene la estadística de dos pérdidas independientes (que aparecerían en días distintos, con la racha bien troceada); llega concentrada, en la misma hora, con el mismo gap.</p>
+<p><strong>Reglas operativas por bandas</strong> <em>(la traducción de la fórmula a decisión — por escrito, no a ojo)</em>:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th><ktx class="ktx" data-tex="\rho">\rho</ktx> medido</th>
+<th>Tratamiento del riesgo</th>
+<th>Justificación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><ktx class="ktx" data-tex="\rho \geq +0{,}70">\rho \geq +0{,}70</ktx></td>
+<td><strong>Suma completa</strong> (<ktx class="ktx" data-tex="R_1 + R_2">R_1 + R_2</ktx>): son la misma apuesta</td>
+<td>Los gemelos fallan juntos por diseño</td>
+</tr>
+<tr>
+<td><ktx class="ktx" data-tex="+0{,}30 \leq \rho &lt; +0{,}70">+0{,}30 \leq \rho &lt; +0{,}70</ktx></td>
+<td>Suma de la mitad (<ktx class="ktx" data-tex="R_1 + R_2/2">R_1 + R_2/2</ktx>)</td>
+<td>Motor compartido parcial</td>
+</tr>
+<tr>
+<td><ktx class="ktx" data-tex="-0{,}30 &lt; \rho &lt; +0{,}30">-0{,}30 &lt; \rho &lt; +0{,}30</ktx></td>
+<td>Independientes (cada una su 1 %)</td>
+<td>Motores distintos — todavía cuentan para el tope global</td>
+</tr>
+<tr>
+<td><ktx class="ktx" data-tex="\rho \leq -0{,}70">\rho \leq -0{,}70</ktx></td>
+<td><strong>Sin crédito de cobertura</strong>: no suman ni "se anulan"</td>
+<td>Las coberturas rompen en pánico — advertencia abajo</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>La advertencia de la correlación negativa.</strong> "Vendo EUR/USD y compro USD/CHF con <ktx class="ktx" data-tex="\rho = -0{,}95">\rho = -0{,}95</ktx>, así que si una pierde la otra gana" — la lectura es correcta EN CALMA y falsa EN CRISIS: los días de pánico (dato de la Fed, guerra, quiebra) todas las correlaciones se disparan hacia +1 y las "coberturas" caen juntas. Por eso la banda negativa no da crédito: no se suma su riesgo (no es una apuesta doble) pero tampoco se usa como excusa para agrandar tamaños.</p>
+<p><strong>Los topes de cartera del programa</strong> <em>(escritos en el componente 10 del Sistema v1.0)</em>:</p>
+<ol>
+<li><strong>Tope por motor: máx 2 % de riesgo efectivo sobre un mismo motor.</strong> EUR/USD long (1 %) + GBP/USD long (1 %): <ktx class="ktx" data-tex="\rho \geq 0{,}7">\rho \geq 0{,}7</ktx> → suma completa → 2 % sobre el motor "dólar": JUSTO en el tope — permitido, sin espacio para un tercero.</li>
+<li><strong>Tope global: máx 3 % de riesgo nominal simultáneo en la cartera.</strong> Tres operaciones de 1 % en motores independientes agotan el presupuesto global: la cuarta señal espera. Este tope es la última línea antes del freno general (8.6).</li>
+<li><strong>Nueva señal que rompería un tope → se rechaza</strong> ("no hay espacio de riesgo", 8.3). No se reduce el tamaño a medias "para que quepa" salvo que tu sistema lo declare por escrito — la simplicidad manda y la granularidad rota ensucia la estadística (7.4: el R debe seguir siendo unidad constante).</li>
+</ol>
+<p><strong>El árbol de decisión completo</strong> <em>(pégalo junto a tu checklist pre-operación — es el paso previo a la calculadora de sizing cuando YA hay posiciones abiertas)</em>:</p>
+<pre class="mermaid">flowchart TD
+    A[&quot;Nueva senal con su presupuesto de 1 %&quot;] --&gt; B{&quot;Hay posiciones abiertas&lt;br/&gt;con el mismo motor?&quot;}
+    B --&gt;|No| C{&quot;Tope global 3 %&lt;br/&gt;con espacio?&quot;}
+    B --&gt;|Si| D[&quot;Riesgo efectivo = R1 + rho x R2&quot;]
+    D --&gt; E{&quot;Motor por encima de 2 %?&quot;}
+    E --&gt;|Si| F[&quot;RECHAZAR - no hay espacio de riesgo&quot;]
+    E --&gt;|No| C
+    C --&gt;|Si| G[&quot;ACEPTAR con sizing estandar&lt;br/&gt;y journal de cartera&quot;]
+    C --&gt;|No| F
+</pre>
+<p><strong>Ejemplo resuelto completo.</strong> Cartera actual: EUR/USD long abierta (1 %). Llegan, en la misma sesión, tres señales: (a) GBP/USD long 1 % — <ktx class="ktx" data-tex="\rho">\rho</ktx> con tu EUR/USD ≈ 0,85 ≥ 0,7 → suma completa → motor dólar en 2 %: tope alcanzado, se acepta sin margen; (b) AUD/USD long 1 % — mismo motor, ya en tope → <strong>RECHAZAR</strong>; (c) USD/JPY short 1 % — short USD/JPY = también corto el dólar: mismo motor otra vez → <strong>RECHAZAR</strong>. Resultado del día: dos operaciones (la original + GBP/USD), exposición efectiva 2 % sobre el dólar, y tres señales procesadas con veredicto escrito. Compara con el aficionado: cuatro posiciones, 4 % nominales, ~3,7 % efectivos sobre el mismo motor, y la certeza de que el dato de las 14h30 decidirá su semana entera.</p>
+<h2>Analogía</h2>
+<p>El barco y los compartimentos estancos. El Titanic no se hundió por un solo agujero: se hundió porque sus cinco compartimentos delanteros se llenaron JUNTOS — el agua de uno pasaba al siguiente. Los diseñadores asumieron compartimentos independientes; el iceberg los trató como uno solo. Tus posiciones son compartimentos y el "motor compartido" es el iceberg: EUR/USD, GBP/USD y AUD/USD largos parecen tres bóvedas separadas hasta que el dólar se mueve y el agua pasa de una a otra en minutos. La correlación es el mapa de mamparos que conectan; el tope por motor (2 %) es la regla de diseño que limita cuántos compartimentos pueden compartir la misma pared; y el tope global (3 %) es la flotabilidad total del barco. El trader sin esta lección navega convencido de tener cinco bóvedas independientes; el que la aplicó sabe exactamente cuánta agua total puede entrar — y diseñó el barco para que esa cantidad nunca sea la que se hunda.</p>
+<h2>Cómo se hace: medir y aplicar en tu plataforma</h2>
+<ol>
+<li><strong>Mide la correlación real</strong> (la tabla de arriba es ilustrativa y envejece): en tu plataforma, correlación de retornos diarios con ventana de 30-90 días entre los pares que operas. Anota los valores en la pestaña 2 de tu calculadora (lab) y refresca mensualmente — la correlación es un dato del journal de cartera, no una constante.</li>
+<li><strong>Clasifica tus señales por motor antes de calcular el lote:</strong> para cada nueva señal, lista los motores (divisas base y cotizada + activo). Con EUR/USD, USD/JPY y oro en cartera, una señal de GBP/USD toca el motor dólar YA saturado — no necesitas precisión decimal para verlo.</li>
+<li><strong>Aplica las bandas y los topes en orden:</strong> primero el tope por motor con la fórmula <ktx class="ktx" data-tex="R_{\text{efectiva}} = R_1 + \rho R_2">R_{\text{efectiva}} = R_1 + \rho R_2</ktx>; después el global. Solo si ambas casillas dan verde, corres la calculadora de sizing (8.3). El orden importa: la cartera manda sobre la operación.</li>
+<li><strong>Registra en el journal:</strong> cada operación lleva su etiqueta de motor y el riesgo efectivo de la cartera tras abrirla. Es la única forma de auditar después (M9) si tus pérdidas "independientes" fueron realmente independientes — la distribución de tus días rojos te lo dirá: si los peores días concentran 2-3 pérdidas, tus topes no se estaban aplicando.</li>
+</ol>
+<h2>Error común</h2>
+<p><strong>(1) Sumar nominales y llamarlo diversificación.</strong> "Tengo 4 pares, es más diversificado que 1" — con el dólar en los cuatro, es 4 % sobre UN motor: el iceberg compartido del Titanic. La diversificación real exige motores distintos, y en FX retail todos los mayores comparten el dólar — la diversificación honesta que existe es LIMITAR la exposición simultánea, no multiplicar los pares. <strong>(2) Usar la correlación "de memoria".</strong> "EUR/USD y GBP/USD siempre van juntas" — ¿hace 90 días también? La correlación se mide con ventana y fecha, o no existe: lo que era 0,85 puede ser 0,40 tras un trimestre de política monetaria divergente. <strong>(3) La cobertura que no es.</strong> Abrir USD/CHF "para cubrir" EUR/USD y operar después ambos "sin riesgo total": con <ktx class="ktx" data-tex="\rho = -0{,}95">\rho = -0{,}95</ktx> en calma, el par gasta dos spreads y dos swaps para anularse casi perfectamente — y el día de crisis se mueven juntas a favor del pánico. La cobertura honesta es NO ABRIR la segunda posición. <strong>(4) Ignorar el oro y los índices.</strong> "Solo opero FX": si tu oro cotiza en dólares y tu índice reacciona a la Fed, tu cartera tiene motor USD también ahí. El mapa de motores incluye TODO lo que puedes abrir, no solo los pares con USD en el nombre. <strong>(5) Tratar los topes como sugerencias cuando la señal es "muy buena".</strong> El tope no evalúa la calidad de la señal — evalúa la supervivencia del inventario (8.1). La señal mejor del mes que rompe el tope se rechaza igual: el día que el tope te salve, no sabrás que te salvó, y ese es exactamente el punto.</p>
+<h2>Conexión cuantitativa</h2>
+<p>La cartera cierra la aritmética del módulo: 8.3 fijó el presupuesto por operación (1 %); esta lección fija el presupuesto por CONJUNTO (2 % por motor, 3 % global); la 8.6 pondrá el techo temporal (−2 % día, −4 % semana, −6 % mes). Los tres niveles multiplican la misma idea a escalas distintas: el presupuesto existe para que ninguna secuencia de decisiones individuales razonables —cada una con su 1 % calculado— fabrique colectivamente una ruina. Cuantitativamente: sin topes, una cartera de 4 pares con motor dólar tiene un "día de dato" con ~3,7 % de riesgo efectivo concentrado — un 40 % del presupuesto MENSUAL de freno (−6 %) jugándose en una hora; con los topes, ese mismo día queda acotado a ~2 %. Hacia atrás, la fórmula <ktx class="ktx" data-tex="R_{\text{efectiva}}">R_{\text{efectiva}}</ktx> es la primera vez que el programa usa la correlación como INPUT de riesgo y no como curiosidad de indicador (M6 la clasificó como contexto). Hacia adelante: M9 auditará en tus 100 backtests si los días de pérdidas múltiples respetan los topes (etiqueta de error "sizing en cartera"), y M12 convertirá los topes de cartera en la sección de límites del Plan de Trading — la regla que sobrevive a tu entusiasmo porque nunca dependió de él.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li>Operaciones que comparten motor NO son independientes: 3 pares contra el dólar = una apuesta de ~3 %.</li>
+<li><ktx class="ktx" data-tex="R_{\text{efectiva}} = R_1 + \rho \times R_2">R_{\text{efectiva}} = R_1 + \rho \times R_2</ktx>: con <ktx class="ktx" data-tex="\rho = 0{,}85">\rho = 0{,}85</ktx>, dos operaciones de 1 % son ~1,85 % — y fallarán juntas como resultado ESPERADO, no como mala suerte.</li>
+<li>Bandas: <ktx class="ktx" data-tex="\rho \geq 0{,}7">\rho \geq 0{,}7</ktx> suma completa; <ktx class="ktx" data-tex="0{,}3">0{,}3</ktx>–<ktx class="ktx" data-tex="0{,}7">0{,}7</ktx> suma de la mitad; <ktx class="ktx" data-tex="&lt; 0{,}3">&lt; 0{,}3</ktx> independientes; <ktx class="ktx" data-tex="\rho \leq -0{,}7">\rho \leq -0{,}7</ktx> sin crédito de cobertura (las coberturas rompen en pánico).</li>
+<li>Topes escritos: <strong>2 % por motor, 3 % global</strong>; señal que rompe tope → rechazo ("no hay espacio de riesgo").</li>
+<li>La correlación se mide (ventana 30-90 días, refresco mensual) o no existe; el mapa de motores incluye oro e índices.</li>
+<li>Orden de decisión: primero cartera (topes), después sizing (calculadora) — la cartera manda sobre la operación.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>Cartera: EUR/USD long abierta (1 %). Llegan GBP/USD long (1 %, ρ de precios ≈ 0,85 con tu EUR/USD) y USD/JPY short (1 %). Decide cada señal con las bandas y topes, con números y lados del motor.</li>
+<li>¿Por qué <ktx class="ktx" data-tex="\rho = -0{,}95">\rho = -0{,}95</ktx> NO te permite "duplicar tamaño porque estoy cubierto"? Explica el mecanismo del día de crisis.</li>
+<li>Tu pestaña de correlación mide EUR/USD↔AUD/USD en +0,68. Aplica la banda correcta a una segunda operación de 1 %: ¿riesgo efectivo del motor dólar si ya tenías 1 % en EUR/USD?</li>
+<li>El día del NFP pierdes EUR/USD y GBP/USD el mismo día (−2 %). ¿Qué te dice sobre tus etiquetas de journal y qué revisa M9 con ese dato?</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. **GBP/USD long:** tus dos posiciones comparten lado (ambas cortan el dólar, ambas largas moneda europea) y ρ de precios ≈ 0,85 ≥ 0,7 → suma completa: <ktx class="ktx" data-tex="R_{\text{efectiva}} = 1 + 0{,}85 ≈ 1{,}85">R_{\text{efectiva}} = 1 + 0{,}85 ≈ 1{,}85</ktx> % → con la banda conservadora, 2 % sobre el motor dólar → **tope alcanzado JUSTO: ACEPTAR** (sin margen para nadie más en ese motor). **USD/JPY short:** vender USD/JPY = VENDER dólares — mismo lado del motor (corto USD) que tus dos europeas; el motor ya está en 2 % → <ktx class="ktx" data-tex="2 + 1 = 3">2 + 1 = 3</ktx> % > tope → **RECHAZAR** ("no hay espacio de riesgo"). Cartera final: 2 posiciones, ~2 % efectivo sobre el dólar, 2 % de 3 % del global — la tercera señal esperó, y el día del dato de la Fed tu daño máximo acotado es ~2 %, no 3 %.
+2. Porque la correlación de calma no sobrevive al estrés: en pánico las correlaciones convergen a +1 (todo se vende, todo se mueve con el mismo viento). Tu "cobertura" de −0,95 exige que el FRANCO se aprecie exactamente cuando el pánico golpea — pero el pánico también castiga monedas periféricas y liquidez. El día que necesitas la cobertura, la compra de ella no llega: tienes las dos pérdidas Y los dos spreads Y los dos swaps. Por eso la banda negativa no da crédito de tamaño.
+3. Banda <ktx class="ktx" data-tex="+0{,}3 \leq \rho &lt; +0{,}7">+0{,}3 \leq \rho &lt; +0{,}7</ktx> → suma de la mitad: <ktx class="ktx" data-tex="R_{\text{efectiva}} = 1 + 0{,}68 \times 1 ≈ 1{,}7">R_{\text{efectiva}} = 1 + 0{,}68 \times 1 ≈ 1{,}7</ktx> %... con la regla de banda conservadora: <ktx class="ktx" data-tex="1 + 1/2 = 1{,}5">1 + 1/2 = 1{,}5</ktx> % del motor dólar — por debajo del tope de 2 %: **ACEPTAR** (y el global pasa a 2 % de 3 %).
+4. Que tus "dos operaciones independientes" fallaron juntas: o la correlación subió desde tu última medición, o los topes no se aplicaron. M9 audita exactamente esto: etiqueta "sizing en cartera", conteo de días con pérdidas múltiples y su correlación con eventos — si tu distribución muestra días de −2 % frecuentes, el tope por motor estaba en el papel, no en la ejecución.
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="leccion-8-4.html"><span class="lbl">← Anterior</span><span class="ttl">Lección 8.4 · Apalancamiento real — el margen no es el riesgo</span></a>
+    <a class="next" href="leccion-8-6.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 8.6 · Frenos de emergencia — la cascada que hace imposible la </span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

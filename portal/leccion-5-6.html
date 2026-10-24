@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 5.6 · Top-Down Analysis — el protocolo de 3 capas · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a class="active" href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>📐 N2 · Técnica<span class="sep">/</span>M5 · Estructura de Mercado y Liquidez<span class="sep">/</span>Lección 5.6 · Top-Down Analysis — el protocolo de 3 capas</div>
+  <article class="doc-body">
+<h1>Lección 5.6 · Top-Down Analysis — el protocolo de 3 capas</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>45–60 min de estudio</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-05.html">M5 · Estructura de Mercado y Liquidez</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td><a href="leccion-5-5.html">Lección 5.5 · Order blocks y zonas institucionales</a></td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="hub-mod-05.html">Laboratorio y Misión M-5 (hub del módulo)</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>Tienes las piezas: estructura (5.1), etiquetas (5.2), liquidez (5.3), huecos (5.4), zonas de origen (5.5). Esta lección las ensambla en <strong>el proceso operativo que usarás cada sesión por el resto del programa</strong>: el análisis top-down. El orden importa más que cualquier pieza suelta — el error de mapa más común del principiante no es ignorar un concepto, es usarlos <strong>al revés</strong>: caer enamorado de una vela de M5 (gatillo) sin haber decidido la dirección del H4 (sesgo), o dibujar zonas en H1 que contradicen el mapa del D1. El top-down es un embudo con jerarquía estricta: primero se elige el estadio, luego la puerta, luego el asiento. Y cierra el módulo con el estándar del programa: <strong>un análisis que no queda por escrito en la plantilla no existe</strong> — la misión M-5 auditada en M9 se alimenta exactamente de estos formularios.</p>
+<h2>Concepto</h2>
+<p><strong>Definición — top-down analysis:</strong> protocolo de lectura jerárquica en 3 capas, cada una con un marco temporal, una pregunta y un producto. Se baja de capa <strong>solo cuando la superior está respondida por escrito</strong>.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Capa</th>
+<th>Marcos</th>
+<th>Pregunta</th>
+<th>Producto (por escrito)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 · Sesgo</td>
+<td>D1 / H4</td>
+<td>¿Quién controla la estructura y hasta cuándo?</td>
+<td>La frase de sesgo: dirección + nivel de invalidación ("alcista mientras respete 1,0798")</td>
+</tr>
+<tr>
+<td>2 · Zonas</td>
+<td>H1 / M15</td>
+<td>¿Dónde actuaría a favor de ese sesgo?</td>
+<td>2–3 zonas con tipo y porqué (gradiente 3.3 / OB 5.5 / FVG 5.4 / pool 5.3)</td>
+</tr>
+<tr>
+<td>3 · Gatillo</td>
+<td>M15 / M5</td>
+<td>¿Qué evento concreto me hace entrar y qué me invalida?</td>
+<td>El gatillo definido ANTES (confirmación 3.4, barrida+cierre 5.3) + SL estructural ya ubicado</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>La regla de la confluencia como filtro de calidad:</strong> cada coincidencia independiente entre capas suma calidad al setup. La jerarquía es asimétrica: <strong>la capa 1 no se negocia jamás con la capa 3</strong> — un gatillo perfecto contra el sesgo no es "otra oportunidad", es un trade de otra familia (reversión) que este programa todavía no opera (llega con el arquetipo de M7 y su propio presupuesto). Lo mínimo exigible para que un análisis produzca operación: sesgo definido + zona con al menos <strong>una</strong> confluencia estructural + gatillo con invalidación clara. Si la capa 2 no produce ninguna zona creíble a favor del sesgo, la respuesta del análisis es <strong>"no hay operación"</strong> — un resultado válido y frecuente que el programa premia, no castiga.</p>
+<p><strong>La frase de sesgo vive en el tiempo:</strong> se re-escribe cuando el mapa cambia (BOS actualiza swings, CHoCH la suspende) — el análisis es un documento vivo con fecha, no una piedra tallada.</p>
+<p><strong>El flujo completo del módulo:</strong></p>
+<pre class="mermaid">flowchart TD
+    A[&quot;🗺️ CAPA 1 — Sesgo en D1/H4&lt;br/&gt;estructura 5.1 + etiquetas 5.2&lt;br/&gt;producto: frase de sesgo + invalidación&quot;] --&gt;|&quot;sin secuencia clara&quot;| X[&quot;⏸️ Rango en el marco mayor&lt;br/&gt;sin sesgo — no hay operación de tendencia&lt;br/&gt;(otras familias llegan en M7)&quot;]
+    A --&gt;|&quot;sesgo definido&quot;| B[&quot;🎯 CAPA 2 — Zonas en H1/M15&lt;br/&gt;gradiente 3.3 + OB 5.5 + FVG 5.4 + pools 5.3&lt;br/&gt;producto: 2-3 zonas a favor del sesgo&quot;]
+    B --&gt;|&quot;ninguna zona creíble&quot;| Y[&quot;🚫 No hay operación hoy&lt;br/&gt;resultado válido — se registra&quot;]
+    B --&gt;|&quot;zonas definidas&quot;| C[&quot;⚡ CAPA 3 — Gatillo en M15/M5&lt;br/&gt;confirmación 3.4 / barrida+cierre 5.3&lt;br/&gt;producto: gatillo + SL estructural + lote&quot;]
+    C --&gt; D[&quot;🧮 Orden sagrado de 4.6&lt;br/&gt;estructura → SL → lote (riesgo ≤ 1%)&quot;]
+    D --&gt; E[&quot;✅ OCO montada + journal + plantilla top-down archivada&quot;]
+</pre>
+<h2>Analogía</h2>
+<p>El aterrizaje de un avión. Nadie aterriza un avión empezando por la pista: primero la <strong>torre de control</strong> asigna el aeropuerto y el corredor aéreo (capa 1: dirección y condiciones — tu sesgo); después la <strong>aproximación</strong> define el descenso por el corredor autorizado hacia la zona del aeropuerto (capa 2: las zonas donde actuar); y solo al final el <strong>piloto</strong> ejecuta el toque exacto con velocidad, flaps y decisión (capa 3: tu gatillo con invalidación). Un piloto que "siente" la pista y salta directo a la maniobra final se llama accidente; un trader que compra una vela de M5 sin corredor asignado se llama, en el journal, <strong>impulso</strong>. Y cuando la torre dice "pista cerrada por niebla" (sin sesgo, rango en H4), el avión desvía a otro aeropuerto — el piloto no aterriza "porque ya venía volando": tampoco tú operas "porque ya abriste el gráfico".</p>
+<h2>Cómo se hace: la plantilla del programa, aplicada al caso maestro</h2>
+<p><strong>Plantilla oficial (se copia tal cual en <code>journal/analisis-topdown-N.md</code>):</strong></p>
+<pre><code class="language-text">TOP-DOWN #N — fecha/hora (Bolivia) — mercado — sesión (Lección 2.4)
+CAPA 1 (D1/H4): secuencia: [HH+HL / LH+LL / rango] · frase de sesgo: &quot;…&quot;
+                nivel de invalidación: [precio] · etiquetas activas: [BOS/CHoCH]
+CAPA 2 (H1/M15): zona 1: [rango — tipo (gradiente/OB/FVG/pool) — porqué]
+                 zona 2: [rango — tipo — porqué] (máx. 3 zonas)
+                 confluencias: [zona+pool / zona+FVG / OB+gradiente…]
+CAPA 3 (M15/M5): gatillo: [evento concreto — confirmación 3.4 / barrida+cierre]
+                 invalidación (SL por estructura): [precio — tras qué] 
+                 lote previsto: [riesgo 1% → lote] · R:B previsto: [x:y]
+VEREDICTO: [operación planificada / no hay operación — porqué]
+</code></pre>
+<p><strong>El caso maestro, rellenado (resumen — <em>(ilustrativo)</em>):</strong></p>
+<pre><code class="language-text">TOP-DOWN #7 — lunes 08:30 Bolivia — EUR/USD — solapamiento Londres-NY
+CAPA 1 (H4): secuencia: HH+HL · sesgo: &quot;alcista mientras respete 1,0798&quot;
+             invalidación: cierre H4 bajo 1,0798 · etiquetas: BOS sobre 1,0860 activo
+CAPA 2 (H1): zona 1: 1,0820–1,0824 — OB (5.5) + gradiente + FVG mitigado — porqué: origen del desplazamiento con BOS
+             zona 2: pool bajo 1,0798 — porqué: depósito de stops; vigilada como barrida-candidata
+             confluencias: zona 1 = OB + gradiente + FVG (triple)
+CAPA 3 (M15): gatillo: barrida del pool + cierre de vuelta + cierre alcista siguiente (3.4)
+              invalidación: SL 1,0788 (tras extrema de barrida, 4 pips de aire)
+              lote previsto: 20$ ÷ (32×10) = 0,062 → 0,06 · R:B previsto ≈ 2,1 hacia pool 1,0886
+VEREDICTO: operación planificada (arquetipo: pullback a zona con confluencia múltiple)
+</code></pre>
+<p>El mismo formulario, sin VEREDICTO operable, vale como "no hay operación": el análisis no se tira — se archiva; en M9 ese registro es la evidencia de tu disciplina de no-operación <em>(y la disciplina de no operar también se audita)</em>.</p>
+<h2>Error común</h2>
+<p><strong>(1) Empezar por abajo.</strong> Abrir M5, ver una vela que "parece rechazo" y comprar: gatillo sin mapa = la familia de errores con peor estadística de la industria <em>(el 70–90 % de cuentas perdedoras vive ahí)</em>. <strong>(2) Capas contradictorias sin jerarquía.</strong> "H4 es bajista pero M15 es alcista así que compro": el M15 alcista contra sesgo bajista no es confluencia — es otra familia de trade (contra-tendencia) que el programa no opera sin su propio presupuesto y arquetipo (M7). <strong>(3) Análisis mental.</strong> Todo lo que no está en la plantilla no existió: sin registro no hay auditoría en M9, no hay WR por arquetipo, no hay negocio. <strong>(4) El embudo sin fecha de caducidad.</strong> Un top-down del lunes no autoriza el trade del jueves: la frase de sesgo expira cuando el mapa cambia (BOS/CHoCH) o cuando la sesión (2.4) cambia de régimen. <strong>(5) Zonas infinitas.</strong> La capa 2 admite máximo 3 zonas: más zonas = análisis sin criterio, y cada zona extra diluye la atención exactamente cuando necesitas foco para el gatillo.</p>
+<h2>Conexión cuantitativa</h2>
+<p>El top-down es la primera <strong>máquina de producción de muestras homogéneas</strong> del programa. Cada formulario archivado produce una fila con etiquetas (mercado, sesión, secuencia, tipo de zona, confluencias, arquetipo) — exactamente las columnas con las que M9 separará tu estadística por condición. La aritmética de fondo: tu E global <ktx class="ktx" data-tex="E = (P_w \times W) - (P_l \times L)">E = (P_w \times W) - (P_l \times L)</ktx> es un promedio de los E por arquetipo; si las operaciones se mezclan sin etiquetas, ese promedio describe una poción inidentificable; si se separan (y el top-down etiqueta por diseño), descubrirás que probablemente <strong>uno o dos arquetipos generan la totalidad de tu ventaja</strong> y los demás la erosionan — y el negocio de M7-M12 se construye sobre esa separación, no sobre el promedio. Además el veredicto "no hay operación" entra en la muestra como acto de gestión: cada no-operación ante mapa degradado es una −1R evitada — el único trade con E garantizado es el que no se toma mal.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li>3 capas con jerarquía estricta: sesgo (D1/H4) → zonas (H1/M15) → gatillo (M15/M5) — se baja solo con la capa superior respondida por escrito.</li>
+<li>Producto de la capa 1: la frase de sesgo + nivel de invalidación. De la 2: máximo 3 zonas a favor con su porqué. De la 3: gatillo + SL estructural + lote.</li>
+<li>El gatillo de la capa 3 jamás anula el sesgo de la capa 1: contra-sesgo = otra familia (M7), no otra oportunidad.</li>
+<li>"No hay operación" es un veredicto válido y frecuente — se registra con su porqué.</li>
+<li>La plantilla archivada es la unidad de datos del negocio: sin formulario, el trade no es auditable en M9.</li>
+<li>El análisis expira: BOS/CHoCH o cambio de régimen de sesión obligan a re-escribir la frase de sesgo.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>¿Por qué la capa 1 se responde en D1/H4 y no directamente en M15? ¿Qué rompe el "sesgo en M15"?</li>
+<li>Un gatillo de compra perfecto (barrida + cierre alcista) aparece mientras tu frase de sesgo es bajista. ¿Qué dice el protocolo y por qué no es "confluencia en contra"?</li>
+<li>Enumera los 5 campos del VEREDICTO de la plantilla. ¿Cuál falta si tu plan dice "compro en la zona" sin más?</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. Porque el sesgo es una decisión de régimen, no de ruido: la secuencia estructural (5.1) solo es legible donde el ruido del marco menor desaparece. Un "sesgo en M15" confunde la pierna de hace tres horas con la tendencia: cambia tres veces al día, hace que cada gatillo parezca confirmación de algo, y destruye la homogeneidad de muestra — no podrás separar en M9 qué operaste con qué mapa.
+2. El protocolo dice: **no hay operación** — ese gatillo pertenece a la familia contra-tendencia (reversión), que este programa solo opera con arquetipo y presupuesto propios en M7. No es "confluencia en contra" porque la confluencia se define como coincidencia **a favor del sesgo**: un gatillo contra la capa 1 es una señal de otra familia disfrazada — seguirla con el presupuesto del pullback es mezclar muestras y cobrarle a la estadística equivocada.
+3. (1) gatillo concreto (evento, no sensación); (2) invalidación/SL por estructura con su porqué; (3) lote previsto desde el SL (riesgo ≤ 1 %, redondeo a la baja); (4) R:B previsto ≥ 1:2; (5) veredicto binario: operación planificada o "no hay operación" con porqué. Si solo dice "compro en la zona" falta casi todo: sin gatillo definido, sin SL, sin lote y sin R:B, lo que hay es una intención — y el examen N1 ya te enseñó que las intenciones no se auditan.
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="leccion-5-5.html"><span class="lbl">← Anterior</span><span class="ttl">Lección 5.5 · Order blocks y zonas institucionales — con criterio y si</span></a>
+    <a class="next" href="hub-mod-06.html"><span class="lbl">Siguiente →</span><span class="ttl">Módulo 6 · Indicadores y Confluencias — Catálogo Crítico</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

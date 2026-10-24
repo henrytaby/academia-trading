@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 3.5 · Patrones elementales · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a class="active" href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>🧱 N1 · Base<span class="sep">/</span>M3 · Anatomía del Gráfico<span class="sep">/</span>Lección 3.5 · Patrones elementales</div>
+  <article class="doc-body">
+<h1>Lección 3.5 · Patrones elementales</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>45–60 min de estudio</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-03.html">M3 · Anatomía del Gráfico</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td><a href="leccion-3-4.html">Lección 3.4 · Confirmación en 3 pasos</a></td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="leccion-3-6.html">Lección 3.6 · Rangos vs tendencias</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>Los patrones de velas y de figura son la parte más famosa del análisis técnico — y también la más maltratada: el retail los usa como oráculos ("doble techo = cae seguro") sin contexto ni estadística. Este módulo te los da en su versión honesta: <strong>no son señales independientes, son la firma visual de los procesos que ya estudiaste</strong> — el agotamiento de urgencia, la distribución, la digestión de una rotura. Esta lección arma tu catálogo de bolsillo: qué patrones existen, qué proceso describen, dónde SÍ valen (contexto + zona + marco) y con qué fiabilidad honesta hay que tratarlos. El aporte propio del programa aquí es el <strong>catálogo con fiabilidad evidenciada</strong>: cada patrón con su etiqueta de confiabilidad, porque operar patrones "porque lo dice el libro" es exactamente el tipo de fe sin estadística que este programa existe para eliminar.</p>
+<h2>Concepto</h2>
+<p><strong>Los patrones son lenguaje, no oráculo.</strong> Cada uno narra un estado de la subasta (M2) en un momento del ciclo (M3.2). Se organizan en dos familias:</p>
+<p><strong>Familia 1 — patrones de vela (1–3 velas): la huella fina de la urgencia.</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Patrón</th>
+<th>Qué se ve</th>
+<th>Qué proceso narra</th>
+<th>Fiabilidad honesta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Envolvente</strong> (<em>engulfing</em>)</td>
+<td>Una vela envuelve por completo el cuerpo de la anterior en sentido contrario</td>
+<td>Reemplazo total del bando: la urgencia nueva devoró la vieja</td>
+<td>Media-alta EN zona, baja en el vacío</td>
+</tr>
+<tr>
+<td><strong>Martillo</strong> (<em>hammer</em>)</td>
+<td>Mecha inferior larga (≥ 2× cuerpo), cuerpo arriba</td>
+<td>La venta fue a buscar liquidez abajo y fue absorbida (barrida fallida, M2.3)</td>
+<td>Media en demanda; alta con confirmación de cierre siguiente</td>
+</tr>
+<tr>
+<td><strong>Estrella fugaz</strong> (<em>shooting star</em>)</td>
+<td>El espejo del martillo arriba</td>
+<td>Compra rechazada en el extremo: distribución intradía</td>
+<td>Media en resistencia</td>
+</tr>
+<tr>
+<td><strong>Doji</strong></td>
+<td>Apertura ≈ cierre, cuerpo casi nulo</td>
+<td>Empate de la subasta: el veredicto se posterga</td>
+<td>Señal de <em>pausa</em>, nunca de dirección</td>
+</tr>
+</tbody>
+</table></div>
+<p>Regla transversal: <strong>ningún patrón de vela se opera sin contexto</strong> (zona del gradiente de M3.3 + marco D1/H4 + régimen). El mismo martillo es material de entrada en demanda fresca y ruido de madrugada.</p>
+<p><strong>Familia 2 — patrones de figura (decenas de velas): la forma del ciclo.</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Patrón</th>
+<th>Qué se ve</th>
+<th>Qué proceso narra</th>
+<th>Contexto de validez</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Doble techo/suelo</strong> (<em>double top/bottom</em>)</td>
+<td>Dos intentos fallidos en la misma zona con un valle/cima intermedio</td>
+<td>Distribución/acumulación en la zona: la oferta/demanda consumió dos asaltos</td>
+<td>Fuerte cuando el segundo techo NO supera el primero y la rotura del cuello (valle intermedio) se confirma en cierre</td>
+</tr>
+<tr>
+<td><strong>Triángulo</strong> (<em>triangle</em>)</td>
+<td>Mínimos ascendentes contra máximos planos (ascendente), o convergencia simétrica</td>
+<td>Compresión: un bando compra cada excursión abajo antes que antes</td>
+<td>Ruptura esperable pero dirección no garantizada; el simétrico se opera SOLO con confirmación (M3.4)</td>
+</tr>
+<tr>
+<td><strong>Cuña</strong> (<em>wedge</em>)</td>
+<td>Impulso que pierde amplitud (máximos ascendentes cada vez más suaves)</td>
+<td>La urgencia se agota a medida que sube: el motor pierde combustible</td>
+<td>Clásico de fin de markup; el colapso suele venir tras la rotura de la diagonal interna</td>
+</tr>
+<tr>
+<td><strong>Rango/bandera</strong> (<em>range/flag</em>)</td>
+<td>Consolidación post-impulso</td>
+<td>Digestión de la expansión antes de la siguiente pierna</td>
+<td>El contexto de mayor fiabilidad del catálogo cuando el impulso previo es sano</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>La fiabilidad honesta — el número que nadie te da.</strong> Las estadísticas publicadas de patrones varían enormemente con el período, el marco y la definición; cualquier cifra universal es sospechosa. El programa adopta la regla del catálogo propio: <strong>los patrones se juzgan por (1) el proceso que narran encajando con el ciclo actual, (2) su ubicación en zona de calidad, (3) la confirmación del protocolo M3.4</strong> — y su fiabilidad REAL se mide en TU journal (M9), no en el libro. Como referencia formativa <em>(snapshot de la literatura técnica, no garantía)</em>: los patrones de continuación bien ubicados rinden mejor que los de reversión aislados, y todos rinden mejor con confirmación que sin ella. El dato duro del programa: <strong>sin confirmación de cierre, la mayoría de las roturas de figura falla en el primer intento</strong> — por eso el catálogo entero se opera con el protocolo de 3 pasos, sin excepción.</p>
+<h2>Analogía</h2>
+<p>Los patrones son el <strong>lenguaje corporal del mercado</strong>. Los de vela son gestos: un martillo en demanda es el jugador que tropieza feo y se levanta inmediatamente — la caída no lo quebró; un doji es el empate a gritos en la subasta. Los de figura son posturas sostenidas: el doble techo es el boxeador que ataca dos veces el mismo punto y las dos veces es devuelto — dos asaltos consumidos en la misma zona; el triángulo es la respiración contenida antes del sprint; la cuña es el corredor cuyas zancadas se acortan — el cansancio se ve antes de la caída. Y como en el lenguaje corporal: un gesto aislado miente tanto como habla ("cruzó los brazos": ¿aburrimiento, frío, defensa?); solo la frase completa — gesto + lugar + momento — comunica algo operable. El chartista que opera patrones sin contexto es quien toma un estornudo por un resfriado.</p>
+<h2>Cómo se hace: auditar un patrón con el checklist de 5 preguntas, con caso cerrado</h2>
+<p>Antes de considerar operable CUALQUIER patrón, cinco preguntas en orden:</p>
+<ol>
+<li><strong>¿Qué proceso narra y encaja con el ciclo actual?</strong> (un doble techo en fin de markup: encaja; el mismo en mitad de un markup joven: probablemente es solo pausa).</li>
+<li><strong>¿Está EN una zona de calidad?</strong> (M3.3: fresca, pocos toques, origen expansivo, H4/D1).</li>
+<li><strong>¿El marco es el de tu análisis?</strong> (el patrón de M15 no existe para tu operativa H4/D1).</li>
+<li><strong>¿El volumen/energía acompaña?</strong> (expansión con energía en la dirección del patrón; rotura con velas de cuerpo pleno).</li>
+<li><strong>¿El protocolo de 3 pasos se cumple en la rotura que el patrón propone?</strong> (cierre fuera + retesteo sostenido).</li>
+</ol>
+<p><strong>Caso cerrado (US30, ilustrativo).</strong> Impulso alcista de 3 semanas (markup sano, HH/HL). En las últimas dos semanas el índice toca 44 200, retrocede a 43 950, vuelve a 44 180 (no supera el primer techo) y cae hacia 44 050 — el "cuello" de la figura. Checklist: (1) doble techo narrando distribución → encaja con fin de markup (la amplitud de los impulsos venía acortándose: síntoma de cuña interna); (2) los techos están en zona de resistencia semanal 44 150–44 250, fresca, 2 toques; (3) marco H4 ✓; (4) los rebotes a los techos con velas de cuerpo decreciente (urgencia compradora decayendo) y la caída del cuello con cuerpo pleno; (5) rotura del cuello 44 050 → cierre H4 en 43 980 → retesteo a 44 040 que se sostiene → entrada 44 030, SL sobre el segundo techo 44 240 (210 puntos), TP siguiente soporte 43 380 (650 puntos): R:B ≈ 3,1. Lote: con riesgo 1 % de 2 000 $ = 20 $ y 1 $/punto por contrato <em>(especificación del bróker — verifícala siempre, Lección 2.5)</em>: <ktx class="ktx" data-tex="20/210 \approx 0{,}09">20/210 \approx 0{,}09</ktx> contratos.</p>
+<p>Nota del caso: el patrón NUNCA fue la señal por sí solo — fueron el ciclo (fin de markup), la zona (resistencia semanal) y el protocolo (cierre + retesteo) los que lo convirtieron en setup. El doble techo fue la etiqueta de la frase completa, no la frase.</p>
+<h2>Error común</h2>
+<p>El primero y más caro: <strong>operar la etiqueta sin el proceso</strong> — "doble techo = vendo" al primer techo, sin zona ni protocolo: es vender resistencia en un markup sano, exactamente el error de ciclo de la Lección 3.2. El segundo: <strong>patrones en micro-marco</strong> — buscar cuñas y banderas en M5 porque "hay más oportunidades": más oportunidades de pagar el impuesto del ruido (Lección 1.4); el catálogo de esta lección existe en tu marco H4/D1 y punto. El tercero: <strong>las cifras de fiabilidad de catálogo como verdad</strong> — "este patrón acierta 80 %": los números publicados son <em>(snapshot)</em> de otros períodos y definiciones; tu fiabilidad real se construye en TU journal con N ≥ 100. El catálogo del programa te da el vocabulario y el filtro; la estadística la fabricas tú.</p>
+<h2>Conexión cuantitativa</h2>
+<p>Un patrón, operado con contexto y protocolo, no cambia tu fórmula — cambia sus entradas: <ktx class="ktx" data-tex="P_w">P_w</ktx> (patrones en zona fresca + confirmación filtran los falsos arranques que destruyen el WR), <ktx class="ktx" data-tex="W">W</ktx> (los patrones de figura con objetivo en la proyección de la figura dan <ktx class="ktx" data-tex="W">W</ktx> medible, no estimado a ojo) y <ktx class="ktx" data-tex="L">L</ktx> (el SL va tras la estructura del patrón: sobre el segundo techo, bajo el suelo de la bandera — estructura, no número redondo). El check que ataría todo: antes de operar cualquier patrón, escribe las tres cifras (R:B del caso, lote resultante, y en qué zona está) — si no puedes escribirlas, el patrón es una ilusión decorativa. En M5 (estructura institucional), el catálogo de esta lección quedará como subconjunto: los mismos procesos con nombres de liquidez (barridas, BOS, CHoCH) — primero aprendiste a verlos como figuras; pronto los leerás como intenciones.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li>Los patrones son la <strong>firma visual de procesos</strong> (agotamiento, distribución, digestión) — lenguaje con contexto, nunca oráculo aislado.</li>
+<li>Vela: envolvente, martillo, estrella, doji — narran urgencia y rechazo en 1–3 velas; solo valen EN zona y marco de análisis.</li>
+<li>Figura: doble techo/suelo, triángulo, cuña, rango/bandera — narran el ciclo; el de continuación bien ubicado rinde más que el de reversión aislado <em>(snapshot)</em>.</li>
+<li>Checklist de 5 preguntas antes de operar cualquier patrón: proceso↔ciclo, zona de calidad, marco correcto, energía acompaña, protocolo de 3 pasos en la rotura.</li>
+<li>Sin confirmación de cierre, la mayoría de las roturas de figura falla en el primer intento — el catálogo entero se opera con confirmación, sin excepciones.</li>
+<li>Las cifras de fiabilidad del libro son <em>(snapshot)</em>: tu fiabilidad real se mide en tu journal con N ≥ 100.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>Un doji aparece en medio de un rango H4, sin zonas cerca, a las 22:00 Bolivia. ¿Qué significa y qué se hace con él? Compara con el mismo doji sobre una resistencia semanal tras markup largo.</li>
+<li>¿Por qué el doble techo solo se considera confirmado cuando rompe el "cuello" (el valle intermedio) con cierre fuera? ¿Qué podría ser si solo mira los dos techos?</li>
+<li>Tu colega asegura: "la cuña bajista acierta el 85 % de las veces según el libro que leí". Desmonta la cifra y dale el protocolo del programa.</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. Doji en rango vacío, fuera de sesión líquida: empate de una subasta sin nada en juego alrededor — ruido con forma de señal: **se ignora**. El mismo doji sobre resistencia semanal tras markup largo (fin de markup posible, M3.2): narrativa real de agotamiento — pero tampoco se opera por sí solo: se convierte en vigilia ("probable distribución en esta zona") y se espera que el precio lo demuestre con la rotura del soporte cercano con cierre decidido (+ retesteo, M3.4). El patrón abre la hipótesis; el protocolo la confirma.
+2. Porque los dos techos sin rotura del cuello son solo "dos intentos fallidos": pueden ser pausa de markup, consolidación antes de continuar, o el segundo intento de una acumulación que luego rompe arriba. El cuello es la línea donde la oferta/demanda intermedia está decidiendo: su rotura con CIERRE fuera + retesteo sostenido (protocolo) es lo que demuestra que el bando vendedor tomó el control y lo sostiene — el proceso, no la etiqueta. Mirar solo los techos es apostar a la reversión sin confirmación: la estadística de las primeras roturas fallidas juega en contra.
+3. Desmontaje: (a) la cifra viene de una muestra, período y definición que no son los tuyos — es *(snapshot)* de otro contexto, no ley; (b) sin saber cómo contaron "acierto" (¿cierre fuera? ¿objetivo X pips? ¿con confirmación?), el número no es comparable con nada; (c) aunque el 85 % fuera real para SU muestra, tu <ktx class="ktx" data-tex="P_w">P_w</ktx> depende de zona, marco y protocolo — los tuyos, no los del libro. Protocolo del programa: el patrón requiere checklist de 5 preguntas (ciclo, zona, marco, energía, confirmación), R:B ≥ 1:2 con SL estructural, y la fiabilidad se estima en TU journal con N ≥ 100 — el libro te da el vocabulario; la estadística es tuya.
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="leccion-3-4.html"><span class="lbl">← Anterior</span><span class="ttl">Lección 3.4 · Confirmación en 3 pasos</span></a>
+    <a class="next" href="leccion-3-6.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 3.6 · Rangos vs tendencias</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 12.4 · Gestión patrimonial — separación de cuentas, retiros y  · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a class="active" href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>💼 N4 · Negocio<span class="sep">/</span>M12 · Plan de Trading y Plan de Negocio<span class="sep">/</span>Lección 12.4 · Gestión patrimonial — separación de cuentas, </div>
+  <article class="doc-body">
+<h1>Lección 12.4 · Gestión patrimonial — separación de cuentas, retiros y el protocolo de los meses extremos</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>40–55 min de estudio</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-12.html">M12 · Plan de Trading y Plan de Negocio</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td><a href="leccion-12-3.html">Lección 12.3 · KPIs del negocio</a></td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="leccion-12-5.html">Lección 12.5 · Hoja de ruta a 12 meses</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>El trading es la parte visible de tu vida financiera — y esta lección lo conecta con las que no se ven en el gráfico: tus cuentas de supervivencia, tus reservas, tus retiros y tu futuro. La razón de la lección es estructural: el sizing del 1 % (M8) presupone un capital de trading acotado y dedicado; sin <strong>gestión patrimonial</strong>, ese presupuesto se erosiona desde fuera (dip en el capital de trading para gastos, "préstamos" a la cuenta personal en el mes bueno, inyecciones emocionales en el malo) y la aritmética de todo el programa se invalida sin que el sistema cambie. La gestión patrimonial es el muro entre tu negocio y tu vida: separación de cuentas, política de retiros por escrito, capital de crecimiento con reglas, y protocolos para los meses extremos — el ganador que pide fiesta y el perdedor que pide rescate, los dos igual de peligrosos. Si terminas con una sola idea: <strong>el dinero del trading es inventario de negocio con reglas propias — y el muro entre tu negocio y tu vida se construye ANTES del primer mes extremo.</strong></p>
+<h2>Concepto</h2>
+<p><strong>La separación de cuentas: el principio fundacional.</strong> Tres cubos, nunca mezclados:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Cuenta</th>
+<th>Contenido</th>
+<th>Regla de oro</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Supervivencia</strong></td>
+<td>Gastos de 6-12 meses de vida (efectivo/fondo líquido)</td>
+<td>Intocable por el trading — el trading NO financia tu renta vital hasta que su evidencia lo permita (12.5)</td>
+</tr>
+<tr>
+<td><strong>Trading</strong></td>
+<td>El inventario del negocio: el capital sobre el que corre el 1 %</td>
+<td>Solo entran por aportación planificada y salen por la política de retiros — jamás por "necesidad"</td>
+</tr>
+<tr>
+<td><strong>Crecimiento / reserva</strong></td>
+<td>Lo que el negocio entrega al patrimonio: la parte del mes ganador que sale del trading por regla</td>
+<td>Se invierte en TU plan patrimonial general (fondos, jubilación, proyectos) — la misma disciplina fuera del mercado</td>
+</tr>
+</tbody>
+</table></div>
+<p>La razón de la separación es la del conflicto de intereses de 11.1, aplicada a ti mismo: sin muro, el "tú superviviente" toma decisiones del "tú operador" (retirar para pagar una factura → romper el sizing; aportar de emergencia → operar con miedo de perder lo prestado). Con muro, cada cubo tiene sus reglas y el negocio opera con inventario limpio.</p>
+<p><strong>La política de retiros: por escrito, con tres reglas.</strong> La pregunta que esta lección responde ANTES de que llegue el dinero: (1) <strong>cuándo</strong> — el programa recomienda retiro periódico por regla (por ejemplo, un % fijo del beneficio trimestral neto, una vez al trimestre) y NO por impulso: la ventana es la misma del ciclo trimestral (12.2); (2) <strong>cuánto</strong> — el % que separa crecimiento de recompensa: retiro conservador (20-30 % del beneficio neto del periodo) prioriza el compounding del negocio; retiro agresivo (50 %+) prioriza tu vida — ambos son legítimos, lo que NO es legítimo es decidirlo mes a mes con el ánimo: el % se declara en el Plan de Negocio y se revisa trimestralmente; (3) <strong>desde dónde</strong> — siempre de la cuenta de trading a la de crecimiento, con el mismo canal trazable de 11.7 (y su tratamiento fiscal ya consultado). La regla de coherencia del programa: <strong>los retiros nunca dejan el capital de trading bajo el mínimo operativo</strong> (el que hace que el riesgo fijo del 1 % deje de corresponder a la política del sistema) — bajo ese suelo, el negocio se recapitaliza por plan o se reduce de tamaño, pero no se "pide" de más.</p>
+<p><strong>El protocolo del mes ganador.</strong> El mes verde grande activa exactamente tres movimientos: (1) el dashboard y el acta del mes auditan el PROCESO (10.5: la sobreconfianza vive aquí — riesgo medio, techo, contención); (2) se aplica la política de retiros por escrito (el % que toca, a la cuenta de crecimiento — no el "gusto" improvisado); (3) el capital de trading queda en su línea: <strong>no se sube el riesgo "porque hay margen"</strong> — el compounding del programa es el que decide (el capital crece, el 1 % es % , y las posiciones crecen solas por aritmética, no por ánimo). La frase del programa: <em>el mes ganador no es un permiso — es un recibo.</em></p>
+<p><strong>El protocolo del mes perdedor.</strong> El mes rojo activa: (1) la cascada de M8 según su nivel (−4 % semanal: revisión; −6 % mensual: apagado); (2) el acta y el dashboard con la pregunta del caso: ¿varianza normal (la racha de 9 ya sabías que venía) o deriva (etiquetas E creciendo)?; (3) la prohibición central: <strong>NADA de inyección emocional de capital</strong> — aportar dinero fresco "para recuperar" es la martingala patrimonial (11.2): el aporte de capital se hace por plan (aportación programada), nunca como rescate de una racha; (4) si el capital de trading quedó bajo el mínimo operativo: se reduce el tamaño con la calculadora (el 1 % del capital actual) y se continúa — el negocio se encoge ordenadamente, no se doblega. La frase espejo: <em>el mes perdedor no es una deuda que el próximo mes deba pagar.</em></p>
+<p><strong>El compounding, con honestidad aritmética.</strong> El crecimiento del negocio patrimonial es el mismo que el del trading: <ktx class="ktx" data-tex="C_n = C_0 (1+r)^n">C_n = C_0 (1+r)^n</ktx> con r el retorno medio neto del periodo — y su enemigo estructural es la retirada interrumpida (retirar demasiado pronto reinicia el compounding) y su enemigo emocional es la sobre-extrapolación ("a este ritmo, en 5 años vivo de esto": la curva compuesta APLANA con la varianza y los costes — tu hoja de ruta de 12.5 existe para pisar el freno con criterios, no con proyecciones). El programa no promete tasas: presupuesta procesos.</p>
+<h2>Analogía</h2>
+<p>La empresa de transporte y su flota. Una empresa de transporte separa lo que el negocio necesita de lo que la familia del dueño recibe: la flota (camiones, mantenimiento, combustible) es el inventario operativo — se financia por plan y no se "pide prestada" para la compra de la casa; los beneficios se reparten por política (un % al dueño, el resto a la flota); y cuando un mes es bueno, nadie vende un camión para festejar, y cuando es malo, nadie hipoteca la casa para "recuperar la flota". El camión que vendes en el mes malo es el que no tendrás en el bueno — exactamente tu capital de trading bajo el mínimo operativo. Tu negocio de trading es la flota: la separación de cuentas es su almacén, la política de retiros es el reparto, y los protocolos de los meses extremos son las reglas de la empresa que sobreviven al dueño con humor del día.</p>
+<h2>Cómo se hace: tu estructura patrimonial v1.0 (2 horas, una vez + trimestral)</h2>
+<ol>
+<li><strong>Dibuja tus 3 cubos con números reales:</strong> supervivencia (meses cubiertos HOY), trading (capital operativo y su mínimo), crecimiento (lo acumulado fuera). El documento vive en el Plan de Negocio — es la sección de capital.</li>
+<li><strong>Escribe tu política de retiros v1.0:</strong> el % del beneficio neto del trimestre, el momento (ventana trimestral), el suelo mínimo de capital de trading y el canal trazable — fírmala con fecha.</li>
+<li><strong>Declara la política de aportaciones:</strong> si (y solo si) tu plan prevé aportar más capital al negocio: la frecuencia, el monto y la regla de oro — nunca como rescate de drawdown (la aportación es de calendario, no de ánimo).</li>
+<li><strong>Monta los protocolos de extremos en el plan:</strong> el del mes ganador (3 movimientos) y el del perdedor (4 movimientos) — copiados de esta lección, adaptados a tus umbrales de M8.</li>
+<li><strong>Revísalo trimestralmente</strong> en el ciclo (12.2): ¿la supervivencia sigue cubriendo 6-12 meses? ¿el mínimo operativo sigue siendo correcto? ¿el % de retiro sigue siendo el que tu fase permite (12.5)? — la estructura evoluciona con la hoja de ruta.</li>
+</ol>
+<h2>Error común</h2>
+<p><strong>(1) "Separar cuentas es para cuando esto sea grande."</strong> El muro se construye pequeño y barato — y vale incluso más al inicio: el hábito de la separación es lo que evita el primer rescate emocional, que es donde la mayoría de cuentas pequeñas muere (no por la cifra, por el precedente). <strong>(2) Retirar el mes bueno entero "para asegurar".</strong> Retirar el 100 % del beneficio reinicia el compounding cada mes: el negocio nunca crece y tu retorno por hora (12.3) queda clavado — el % por escrito existe para equilibrar vida y crecimiento, no para improvisar entre "todo" y "nada". <strong>(3) Inyectar capital en el drawdown.</strong> La aportación de emergencia es martingala patrimonial: el dinero entra con miedo y el sizing deja de corresponder a la política — el capital entra por calendario o no entra. <strong>(4) Confundir "vivir del trading" con el objetivo del programa.</strong> El programa forma el negocio y su evidencia — vivir de él es una FASE de la hoja de ruta (12.5) que exige criterios (12 semanas documentadas, PF neto sostenido, reserva patrimonial completa), no un deseo de calendario: saltarse la fase es el risk creep de la vida. <strong>(5) No cotizar los impuestos en la política de retiros.</strong> El retiro bruto no es tu dinero: el profesional liquida primero su estimación fiscal (11.7) y retira el neto — el % que retires se calcula DESPUÉS del fisco, o el fisco lo calculará por ti.</p>
+<h2>Conexión cuantitativa</h2>
+<p><strong>Hacia M8:</strong> el mínimo operativo de la cuenta de trading es la consecuencia del sizing: si tu sistema necesita ~40 operaciones al 1 % para medir, el capital mínimo es el que hace sostenible esa muestra sin tocar el suelo — la separación de cuentas es la que lo garantiza. <strong>Hacia 12.3:</strong> el KPI de horas vs retorno y el retorno neto del mes alimentan la política de retiros (el % se aplica sobre el NETO fiscal y de costes, no sobre el R bruto). <strong>Hacia 11.3:</strong> si tu plan de capitalización incluye fondeo, la política de retiros cubre también el payout de prop firm — mismo canal, mismo expediente, mismo profesional. <strong>Hacia 12.5:</strong> la hoja de ruta define CUÁNDO la supervivencia puede depender del trading — el último criterio de la fase más alta.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li><strong>Tres cubos sin mezcla</strong>: supervivencia (6-12 meses, intocable), trading (inventario del negocio, entra por plan y sale por política) y crecimiento (lo que el negocio entrega al patrimonio).</li>
+<li>La <strong>política de retiros se escribe antes del dinero</strong>: cuándo (ventana trimestral), cuánto (% fijo del neto) y desde dónde (canal trazable) — y nunca deja el capital bajo el mínimo operativo.</li>
+<li><strong>Mes ganador = recibo, no permiso</strong>: auditoría de proceso, retiro por regla, capital en su línea — el compounding es aritmética, no ánimo.</li>
+<li><strong>Mes perdedor = protocolo, no rescate</strong>: cascada de M8, diagnóstico varianza/deriva, cero inyección emocional de capital, encogimiento ordenado si toca el mínimo.</li>
+<li>El compounding exige <strong>no interrumpirlo por impulso</strong> y no extrapolrlo por deseo: la hoja de ruta de 12.5 pone los criterios, el fisco (11.7) cobra antes del retiro neto.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>Dibuja tus 3 cubos con su regla de oro y formula qué decisión toma cada uno en un trimestre con +6R netos (con tu política: 25 % de retiro). ¿Qué mueve cada cuenta y qué queda en el trading?</li>
+<li>Mes de −5,2 % (nivel 2 de la cascada activado, revisión obligatoria). El trader propone aportar 30 % de capital extra "para amortiguar el drawdown y volver más rápido". Desarma la propuesta con la aritmética (¿qué problema resuelve y cuál crea?) y formula la respuesta del protocolo en 4 movimientos.</li>
+<li>¿Por qué "retirar el 100 % del mes ganador" y "aportar en el mes perdedor" son EL MISMO error con signo invertido? Nómbralo con el vocabulario del programa y explica qué regla lo corrige en ambos extremos.</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. Cubos: supervivencia (intocable — no se mueve), trading (queda con el capital operativo: los +6R menos el 25 % de retiro menos la estimación fiscal — el % se aplica sobre el neto), crecimiento (recibe el 25 % del neto trimestral por política). El trading conserva ~75 % del beneficio neto para el compounding: su capital sube, el 1 % es %, las posiciones crecen por aritmética — y la decisión de subida de tamaño la hace la calculadora, nunca el ánimo.
+2. La propuesta resuelve el problema equivocado: el drawdown del 5,2 % no es un problema de CAPITAL, es la varianza normal del sistema (la racha esperada) — inyectar 30 % no reduce la varianza: crea tres problemas nuevos: (1) el sizing deja de corresponder (más capital con la misma política = inflación de riesgo real); (2) el dinero entró con miedo y el operador lo sabe: presiona a "recuperarlo ya" (el tilt patrimonial); (3) rompe la trazabilidad de la política de aportaciones (calendario, no ánimo). Protocolo de 4 movimientos: (1) ejecutar la revisión obligatoria del nivel 2 (acta con datos); (2) diagnosticar varianza vs deriva con el dashboard (etiquetas, disparos, costes); (3) si el capital sigue sobre el mínimo operativo: continuar con el mismo 1 % — el encogimiento del capital YA ajusta el riesgo en $ por aritmética; (4) si tocó el mínimo: reducir tamaño con calculadora y continuar — la aportación programada se revisa en su calendario, no en este mes.
+3. Es el **interrumpir el compounding por impulso** — la decisión patrimonial tomada por el ánimo del resultado en lugar de por la política escrita: en el mes verde el impulso celebra extrayendo de más (reinicia el compounding), en el rojo castiga inyectando de más (martingala patrimonial); ambos rompen la misma regla: el dinero entre cubos se mueve por la política (el % y el calendario), no por la emoción del mes. La corrección única: la **política de retiros y aportaciones firmada** en el Plan de Negocio — existe exactamente para que los meses extremos encuentren la decisión ya tomada.
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="leccion-12-3.html"><span class="lbl">← Anterior</span><span class="ttl">Lección 12.3 · KPIs del negocio — el dashboard mensual de un solo vist</span></a>
+    <a class="next" href="leccion-12-5.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 12.5 · Hoja de ruta a 12 meses — fases con criterios, no fecha</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 5.2 · BOS y CHoCH — los dos quiebres que lo etiquetan todo · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a class="active" href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>📐 N2 · Técnica<span class="sep">/</span>M5 · Estructura de Mercado y Liquidez<span class="sep">/</span>Lección 5.2 · BOS y CHoCH — los dos quiebres que lo etiqueta</div>
+  <article class="doc-body">
+<h1>Lección 5.2 · BOS y CHoCH — los dos quiebres que lo etiquetan todo</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>45–60 min de estudio</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-05.html">M5 · Estructura de Mercado y Liquidez</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td><a href="leccion-5-1.html">Lección 5.1 · Tendencia y estructura</a></td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="leccion-5-3.html">Lección 5.3 · Liquidez operable</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>La Lección 5.1 te dio el esqueleto; esta te da las <strong>dos etiquetas que actualizan el mapa en vivo</strong>. Cuando el precio quiebra un swing, el mercado te está diciendo una de dos cosas: <em>la tendencia sigue</em> o <em>la tendencia está en peligro</em> — y tu negocio depende de no confundirlas: comprar una continuación que era reversión (o huir de una reversión que era continuación) son los dos errores de mapa más caros que existen. Hay además una razón editorial que viene de la auditoría: los cursos fuente usaban <strong>dialectos distintos para el mismo fenómeno</strong> — uno llamaba "ruptura de nivel" a lo que el otro vendía como "Break of Structure" — y el vacío D1 del <a href="analisis_cursos.html">análisis</a> documentó la desorientación resultante. Aquí aprenderás <strong>un solo fenómeno con dos vocabularios</strong>: quien domine ambos puede leer cualquier libro, curso o sala de trading sin quedar cautivo de ninguno.</p>
+<h2>Concepto</h2>
+<p><strong>Definición — BOS</strong> (<em>Break of Structure</em>, quiebre de estructura): el precio <strong>cierra</strong> más allá de un swing en la <strong>misma dirección</strong> de la secuencia vigente. En tendencia alcista: cierre sobre el último HH → la secuencia continúa. Es la etiqueta de <strong>continuación</strong>.</p>
+<p><strong>Definición — CHoCH</strong> (<em>Change of Character</em>, cambio de carácter): el precio <strong>cierra</strong> más allá de un swing en <strong>contra</strong> de la secuencia vigente. En tendencia alcista: cierre bajo el último HL → la secuencia está rota por primera vez. Es la etiqueta de <strong>alerta de reversión</strong> (no certifica la reversión: anuncia que ya no puedes asumir la continuación).</p>
+<p><strong>La regla de confirmación: el cierre manda.</strong> Una mecha que perfora el nivel y una vela que <strong>cierra</strong> tras él son eventos distintos: la mecha puede ser la barrida de liquidez de la próxima lección; el cierre es compromiso. El programa exige <strong>cierre del marco de decisión</strong> (H4 pide cierre H4, no vela M5 asomándose). Esto es el mismo principio de "confirmación en 3 pasos" de la <a href="leccion-3-4.html">Lección 3.4</a> aplicado a la estructura: nivel tocado → vela reacciona → <strong>cierre confirma</strong>. Solo el paso 3 etiqueta.</p>
+<p><strong>Mapa unificado de nomenclatura (aporte propio del programa — el fenómeno es uno, los dialectos son dos):</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Fenómeno</th>
+<th>PA clásico</th>
+<th>SMC/ICT</th>
+<th>Qué significa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cierre más allá del swing a favor</td>
+<td>"Ruptura de resistencia/soporte"</td>
+<td><strong>BOS</strong></td>
+<td>Continuación confirmada</td>
+</tr>
+<tr>
+<td>Primer cierre en contra de la secuencia</td>
+<td>"Pérdida del soporte clave / techo descendente"</td>
+<td><strong>CHoCH</strong></td>
+<td>Carácter cambiado: alerta</td>
+</tr>
+<tr>
+<td>Vuelta al nivel roto desde el otro lado</td>
+<td>"Retesteo"</td>
+<td>"Retest del BOS" / "retesteo del order block"</td>
+<td>Segunda oportunidad de entrada</td>
+</tr>
+<tr>
+<td>Expansión violenta que deja huecos</td>
+<td>"Impulso con gap"</td>
+<td><strong>Displacement</strong></td>
+<td>Urgencia institucional (5.4)</td>
+</tr>
+<tr>
+<td>Barrida breve del nivel y reversión</td>
+<td>"Falsa ruptura / bull-trap"</td>
+<td><strong>Liquidity grab / stop hunt</strong></td>
+<td>Consumo de liquidez (5.3)</td>
+</tr>
+</tbody>
+</table></div>
+<p>Regla del programa: usa el vocabulario que quieras en tu journal, pero <strong>sé bilingüe</strong> — y desconfía por principio de quien venda el segundo dialecto como "secreto" del primero.</p>
+<h2>Analogía</h2>
+<p>El partido de tenis. Mientras el favorito mantiene su saque y le quita el saque al rival, el marcador confirma el dominio: eso es la secuencia HH/HL y cada <strong>BOS</strong> es un game más ganado. El <strong>CHoCH</strong> es el primer break de saque en contra: el favorito no ha perdido el partido — puede que recupere el break enseguida — pero el analista ya no puede decir "domina con tranquilidad": el carácter del partido cambió. Nadie declara campeón al rival tras un break (eso sería operar el CHoCH como reversión confirmada), pero ningún analista serio lo ignora. BOS = el dominador confirma; CHoCH = el dominador pierde su saque por primera vez. Con eso lees cualquier set… y cualquier gráfico.</p>
+<h2>Cómo se hace: etiquetar el caso maestro + árbol de decisión</h2>
+<p>Continuamos el caso <em>(ilustrativo)</em>: low 1,0745 → high 1,0860 → HL 1,0798 → high <strong>1,0884</strong>.</p>
+<ol>
+<li><strong>BOS #1:</strong> el impulso que pasó de ~1,0812 a 1,0884 <strong>cerró</strong> (H4) sobre el high previo 1,0860 → <strong>BOS alcista</strong>: la continuación quedó confirmada y nació el nuevo HH (1,0884).</li>
+<li><strong>La frase de sesgo se actualiza:</strong> "alcista mientras respete 1,0798" — el nivel de invalidación sigue siendo el HL; el BOS no lo cambia.</li>
+<li><strong>El pullback:</strong> el precio corrige hacia 1,0820–1,0824. Mientras no haya <strong>cierre</strong> bajo 1,0798, la secuencia sigue intacta — el retroceso es el "andén" de M3, no un cambio de carácter.</li>
+<li><strong>CHoCH hipotético:</strong> si una vela H4 <strong>cierra</strong> en 1,0790 → primer cierre bajo el HL → <strong>CHoCH bajista</strong>: la etiqueta de tendencia pasa a "en alerta"; ya no se compra pullback hasta que el mapa se reordene (o vuelva a demostrar HH+HL).</li>
+<li><strong>Lo que NO fue CHoCH:</strong> la mecha que durante el pullback rozó 1,0792 y la vela cerró en 1,0810 → sin cierre tras el nivel, <strong>no hay etiqueta</strong>: solo ruido + (spoiler de 5.3) una barrida de liquidez de manual.</li>
+</ol>
+<p><strong>Árbol de decisión del quiebre:</strong></p>
+<pre class="mermaid">flowchart TD
+    Q[&quot;⚖️ El precio quebró un swing del marco de decisión&quot;] --&gt; C{&quot;¿CERRÓ la vela&lt;br/&gt;más allá del nivel?&quot;}
+    C --&gt;|&quot;No — solo mecha&quot;| W[&quot;〰️ Sin etiqueta&lt;br/&gt;posible barrida de liquidez → Lección 5.3&quot;]
+    C --&gt;|&quot;Sí — cierre confirmado&quot;| D{&quot;¿Dirección del quiebre?&quot;}
+    D --&gt;|&quot;A favor de la secuencia&quot;| BOS[&quot;🟢 BOS — continuación&lt;br/&gt;sesgo se mantiene, se actualiza el swing&quot;]
+    D --&gt;|&quot;En contra de la secuencia&quot;| CHO[&quot;🟠 CHoCH — alerta de reversión&lt;br/&gt;pausa de entradas a favor hasta reordenar el mapa&quot;]
+    BOS --&gt; A[&quot;✅ Acción: buscar pullback a favor&lt;br/&gt;(zonas de la Lección 3.3)&quot;]
+    CHO --&gt; P[&quot;⏸️ Acción: no operar la secuencia vieja&lt;br/&gt;esperar reordenamiento o reversión confirmada&quot;]
+</pre>
+<h2>Error común</h2>
+<p><strong>(1) Etiquetar CHoCH con mechas.</strong> El quiebre sin cierre no etiqueta nada — es la puerta de entrada al whipsaw de la <a href="leccion-3-6.html">Lección 3.6</a>: mecha abajo, compra de pánico, cierre arriba, y tú fuera con −1R sin que la estructura haya cambiado. <strong>(2) Confundir "cualquier nivel roto" con BOS.</strong> El BOS es del <strong>swing estructural</strong> de 5.1 (el que pasa el test de consecuencia), no de cualquier resistencia dibujada: romper una línea horizontal menor en rango no es BOS, es tránsito normal de rango. <strong>(3) Operar el BOS "en caliente".</strong> El quiebre confirmado invita a perseguir el precio — la entrada por extensión paga el peor precio del ciclo; el programa opera el BOS vía <strong>retesteo</strong> (arquetipo de M7), nunca por persecución. <strong>(4) Cazar la reversión con el primer CHoCH.</strong> Un CHoCH es una alerta, no un gatillo de reversión: las reversiones se confirman con reordenamiento (nueva secuencia LH/LL), no con una vela. <strong>(5) Dialéctica de tribu.</strong> "Yo soy de SMC" / "yo solo PA puro" es fidelidad de marca, no análisis: el mapa de esta lección demuestra que describen el mismo precio.</p>
+<h2>Conexión cuantitativa</h2>
+<p>Las dos etiquetas son los interruptores de tu filtro de tendencia (5.1): con BOS vigente, el arquetipo <em>pullback en tendencia</em> opera con la corriente — el escenario para el que tu E fue estimado. Con CHoCH activo, ese mismo arquetipo queda <strong>suspendido por regla</strong>, y sus estadísticas futuras (M9) se registrarán aparte: un setup operado 50 % dentro y 50 % fuera de su condición de validez produce un WR mezclado que no describe nada — es el error de contabilidad estadística más común del trader minorista. Haz el número con el caso <em>(ilustrativo)</em>: comprar el retesteo tras BOS con SL 1,0794 (30 pips) y TP en el pool de 1,0884 (60 pips) da R:B 2,0 → breakeven WR = 1/(1+2) = 33,4 %; la misma entrada tomada tras un CHoCH no tiene ese mapa: el TP estructural dejó de existir (la secuencia está rota) y el trade se convierte en esperanza sin geometría. <strong>La etiqueta correcta no añade pips: protege la geometría que hace calculable tu E.</strong></p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li>BOS = cierre a favor de la secuencia (continuación); CHoCH = primer cierre en contra (alerta de reversión).</li>
+<li>Solo el <strong>cierre</strong> del marco de decisión etiqueta: la mecha es ruido o barrida (5.3), jamás quiebre.</li>
+<li>El mapa unificado: ruptura = BOS, falsa ruptura = liquidity grab, impulso con gap = displacement — dos dialectos, un fenómeno.</li>
+<li>BOS actualiza el swing; no cambia el nivel de invalidación del sesgo (sigue siendo el HL/LL estructural).</li>
+<li>CHoCH suspende el arquetipo de pullback: alerta ≠ gatillo de reversión.</li>
+<li>La etiqueta correcta protege la geometría del trade (SL y TP estructurales) — sin ella, E deja de ser calculable.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>Vela H4 perfora 1,0798 con la mecha, cierra en 1,0810. ¿Qué etiqueta pones y qué haces con tus órdenes pendientes en la zona 1,0820–1,0824?</li>
+<li>¿Por qué el programa opera el BOS por retesteo y no "en caliente"? Conéctalo con un arquetipo del M7 y con el costo de la Lección 4.3.</li>
+<li>Traduce al dialecto SMC y al PA clásico: (a) cierre H4 bajo el HL en tendencia alcista; (b) mecha que barre el mínimo obvio y vela que cierra de nuevo arriba.</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. **Sin etiqueta** (no hubo cierre bajo el nivel): es ruido o barrida de liquidez. Las órdenes pendientes **se mantienen** — el sesgo "alcista mientras respete 1,0798" exigía cierre para invalidarse, y no lo hubo. Lo único vigilado: que el siguiente cierre H4 no esté bajo el HL (ahí sí: CHoCH → retirar pendientes y pausar).
+2. El BOS "en caliente" compra la extensión: peor precio (spread + slippage del impulso, [4.3](../mod-04-plataforma-y-primera-ejecucion/leccion-4-3.md)), SL más lejos o invalidado, y expone al whipsaw del retesteo fallido. El arquetipo *ruptura + retesteo* (M7) espera el regreso al nivel roto: mismo movimiento capturado, con SL cercano y geometría conocida → R:B superior a igual WR.
+3. (a) SMC: **CHoCH** bajista · PA clásico: "pérdida del soporte estructural / techo descendente confirmado" — en ambos: alerta de reversión, pausa de compras. (b) SMC: **liquidity grab / stop hunt** · PA clásico: **falsa ruptura (bear trap)** — en ambos: no es quiebre, es consumo de liquidez; tema completo de la siguiente lección.
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="leccion-5-1.html"><span class="lbl">← Anterior</span><span class="ttl">Lección 5.1 · Tendencia y estructura — el esqueleto del precio</span></a>
+    <a class="next" href="leccion-5-3.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 5.3 · Liquidez operable — por qué el precio &quot;va a buscar&</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

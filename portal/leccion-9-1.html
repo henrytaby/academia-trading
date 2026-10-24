@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 9.1 · Epistemología del backtesting — cómo saber algo sobre el · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a class="active" href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>🛡️ N3 · Riesgo<span class="sep">/</span>M9 · Backtesting, Journal y Validación<span class="sep">/</span>Lección 9.1 · Epistemología del backtesting — cómo saber alg</div>
+  <article class="doc-body">
+<h1>Lección 9.1 · Epistemología del backtesting — cómo saber algo sobre el futuro sin mentirte</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>45–60 min de estudio</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-09.html">M9 · Backtesting, Journal y Validación</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td><a href="leccion-8-6.html">Lección 8.6 · Frenos de emergencia</a></td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="leccion-9-2.html">Lección 9.2 · Protocolo de backtesting manual</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>El M7 aprobó tu sistema por <strong>completitud y explicitud</strong>, no por rentabilidad — fue una decisión deliberada: la rentabilidad no se declara, se mide. El M8 blindó el capital con presupuestos y frenos. Pero ninguna de las dos piezas produce todavía la evidencia de que tu sistema tiene esperanza positiva: esa solo la fabrica el backtest bien hecho. El backtest es la única forma ética y asequible de <strong>comprar experiencia</strong>: 100 operaciones de evidencia estadística que cuestan 15–25 horas de Bar Replay y cero dólares de inventario; las mismas 100 operaciones en vivo podrían costarte una racha de −9 % y meses de calendario. Pero un backtest mal hecho es <strong>peor que ningún backtest</strong>: produce convicción falsa, y la convicción falsa con presupuesto real es el mecanismo exacto por el que las cuentas llegan a cero — el trader no muere por no tener sistema, muere por tener fe en un sistema que nunca fue medido honestamente. Esta lección define qué puede saberse con un backtest (y qué no), cuántos datos hacen falta para decidir, y los tres sesgos que contaminan casi todos los backtests amateur. Si terminas con una sola idea incrustada, que sea esta: <strong>un backtest no es una demostración de que ganarás — es una medición del pasado lo bastante honesta como para apostar el inventario con los ojos abiertos.</strong></p>
+<h2>Concepto</h2>
+<p><strong>Qué es y qué NO es un backtest.</strong> Un backtest es una <strong>medición con protocolo del comportamiento de tu sistema sobre datos históricos</strong>. No es una predicción: el pasado no garantiza el futuro (los regímenes cambian — 3.6), pero es la mejor evidencia disponible, y la estadística permite saltar del pasado al futuro con un margen de error declarado. La frase completa del programa: <em>"no sé que mi sistema ganará; sé que sobre 100 operaciones históricas midió WR 40 % ± 9,6 y decido en consecuencia"</em>. Esa humildad estadística no es una coletilla: es la diferencia entre operar un sistema medido y adorar un ídolo.</p>
+<p><strong>La ecuación del error muestral.</strong> El Win Rate que mides en N operaciones es una estimación con error. El error estándar de una proporción es:</p>
+<p><ktxd class="ktxd" data-tex="\sigma_{WR} = \sqrt{\frac{WR(1-WR)}{N}} \qquad \text{IC 95\%} \approx \pm\, 1{,}96 \times \sigma_{WR}">\sigma_{WR} = \sqrt{\frac{WR(1-WR)}{N}} \qquad \text{IC 95\%} \approx \pm\, 1{,}96 \times \sigma_{WR}</ktxd></p>
+<p>Con WR 40 % — tu hipótesis del caso maestro — la tabla del mínimo honesto:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>N operaciones</th>
+<th>Error estándar</th>
+<th>IC 95 % del WR medido</th>
+<th>Lectura</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10</td>
+<td>±15,5 pp</td>
+<td><strong>±30,4 pp</strong></td>
+<td>Anécdota: un 40 % puede ser un 10 % o un 70 %</td>
+</tr>
+<tr>
+<td>30 <em>(misión M-7)</em></td>
+<td>±8,9 pp</td>
+<td><strong>±17,5 pp</strong></td>
+<td>Reconocimiento: descarta desastres, no aprueba nada</td>
+</tr>
+<tr>
+<td>50</td>
+<td>±6,9 pp</td>
+<td>±13,6 pp</td>
+<td>Media muestra: aún cruza el equilibrio con facilidad</td>
+</tr>
+<tr>
+<td><strong>100</strong> <em>(lab de este módulo)</em></td>
+<td>±4,9 pp</td>
+<td><strong>±9,6 pp</strong></td>
+<td><strong>Mínimo del programa para la primera decisión estructural</strong></td>
+</tr>
+<tr>
+<td>200</td>
+<td>±3,5 pp</td>
+<td>±6,8 pp</td>
+<td>Duplicar N divide el error por √2 ≈ 1,41</td>
+</tr>
+<tr>
+<td>400</td>
+<td>±2,4 pp</td>
+<td>±4,8 pp</td>
+<td>Estándar de un sistema que se va a escalar</td>
+</tr>
+<tr>
+<td>1.000</td>
+<td>±1,5 pp</td>
+<td>±3,0 pp</td>
+<td>Territorio profesional (meses de trabajo, vale la pena después)</td>
+</tr>
+</tbody>
+</table></div>
+<p>Dos lecturas que la tabla fuerza. <strong>Primera: el error cae con la raíz cuadrada</strong> — para dividir el error por 2 necesitas CUATRO veces más datos; por eso "hagamos 10 más y ya" nunca lleva a ningún lado, y por eso el programa pide 100 y no 25. <strong>Segunda: N=100 no compra certeza — compra la posibilidad de decidir.</strong> Con WR medido 40 % ± 9,6, el peor caso razonable es 30,4 %: todavía por debajo del equilibrio neto (34,8 %, lo demostrará la 9.3). Por eso la decisión del backtest no es binaria ("¿gana o no gana?") sino de <strong>tres vías</strong>: verde (aprobar y pasar a forward), ámbar (operar provisional a 0,25–0,5 % y seguir midiendo), rojo (no operar; volver al laboratorio de M7). El intervalo de confianza no es un adorno del reporte: es la razón por la que la decisión tiene tres salidas y no dos.</p>
+<p><strong>La ceguera como requisito, no como virtud.</strong> Un backtest solo vale si el backtester no conoce el futuro de cada decisión. En la práctica manual eso significa: <strong>Bar Replay estricto, vela a vela</strong> — avanzas, pausas, decides SOLO con velas cerradas, registras, y solo entonces resuelves la operación avanzando más velas. Nunca "esta zona ya sé que aguantó". La ceguera es lo que hace que tu backtest mida el sistema y no tu conocimiento retrospectivo del gráfico; es la misma lógica del examen que estudiaste en M1 (las preguntas de <code>analisis_cursos.md</code> sobre backtests "sospechosamente perfectos": la mayoría tenía el futuro a la vista).</p>
+<p><strong>Los 3 sesgos que contaminan el backtest amateur</strong> — cada uno con su definición, cómo aparece en TU laboratorio de 100 operaciones y su antídoto:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Sesgo</th>
+<th>Qué es</th>
+<th>Cómo aparece en TU backtest</th>
+<th>Antídoto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Supervivencia</strong></td>
+<td>Quedarse solo con lo que funcionó y ocultar lo que no</td>
+<td>Descartar del dataset las 6 operaciones "estúpidas" que hiciste por error, o borrar la sesión mala ("esa no cuenta porque estaba cansado")</td>
+<td><strong>Todo entra, todo se etiqueta</strong>: la fila incómoda con su E-tag vale más que la muestra bonita</td>
+</tr>
+<tr>
+<td><strong>Data-mining</strong></td>
+<td>Buscar la variante que mejor salió (o ajustar reglas a mitad de muestra) hasta que el backtest brilla</td>
+<td>Probar 5 variantes del setup y reportar solo la mejor; cambiar el TP "porque con 2,5R salía más limpio" en la operación 62</td>
+<td><strong>Candados de 7.6 + D6</strong>: hipótesis, métricas y N declarados ANTES, por escrito, con fecha; una sola hipótesis por muestra</td>
+</tr>
+<tr>
+<td><strong>Look-ahead</strong></td>
+<td>Decidir con información que no existía en la vela de decisión</td>
+<td>Confirmar el "respeto del nivel" con el high/low de la vela EN formación; usar el volumen final de la vela; dibujar el nivel "perfecto" a ojo sabiendo dónde giró</td>
+<td><strong>Regla de la vela cerrada</strong>: toda condición se evalúa solo con velas cerradas; la captura se hace en el momento de la señal</td>
+</tr>
+</tbody>
+</table></div>
+<p>Los tres comparten un mecanismo: <strong>inflan artificialmente la E medida</strong>. Un backtest con look-ahead puede mostrar WR 55 % donde el honesto medía 40 %; uno con supervivencia, PF 2,0 donde el completo daba 1,4. La diferencia no se ve en el reporte — se ve en la cuenta real, meses después, cuando el "sistema que daba 55 %" rinde su verdadero 38 %. Por eso el programa trata estos sesgos como <strong>errores de integridad</strong> (como falsificar datos de laboratorio), no como "descuidos metodológicos".</p>
+<h2>Analogía</h2>
+<p>El ensayo clínico doble ciego. Cuando la farmacología moderna decidió saber si un fármaco funciona, aprendió — a costa de desastres históricos — que la evidencia sin protocolo mata: los médicos que sabían quién tomaba el fármaco "veían" mejoras que no existían (sesgo del observador), los ensayos con 12 pacientes encontraban milagros que se desvanecían con 1.200 (tamaño muestral), y los estudios que se publicaban solo cuando salían bonitos construían una literatura de fantasmas (sesgo de supervivencia). La solución tomó décadas: N grande pre-registrado, doble ciego, y el compromiso de publicar el resultado ANTES de mirar los datos — exactamente tus candados de 7.6 y D6. Tu backtest es el ensayo clínico de tu sistema, con una dificultad añadida: <strong>tú eres a la vez el laboratorio y el paciente</strong> — el que mide y el que tiene intereses en el resultado. Por eso tu ceguera tiene que ser todavía más estricta que la del farmacólogo: el replay vela a vela es tu doble ciego, y el journal es tu pre-registro.</p>
+<h2>Cómo se hace: blindar el backtest ANTES de la primera operación</h2>
+<ol>
+<li><strong>Declara el experimento por escrito (la declaración PRE).</strong> Antes de la operación 1, un documento corto con fecha: hipótesis (WR esperado 40 %, R:B 2,1, E bruta +0,24R), N=100 (no se negocia), coste estimado por op (0,08R), mercados y timeframe del sistema, y las métricas del reporte con sus umbrales (la tabla de 9.3). Este documento es tu pre-registro: su función es que sea <strong>imposible</strong> confundir "lo que salió" con "lo que quería que saliera". Guárdalo junto al journal; la misión M-9 lo pedirá.</li>
+<li><strong>Prepara el entorno de ceguera.</strong> TradingView → Bar Replay → rango de fechas que NO conozcas (evita la historia que "ya estudiaste" en M3/M5: tu memoria de esos episodios contaminaría); velocidad lenta al avanzar; sin indicadores que no estén en tu sistema (cada medidor extra es una tentación de look-ahead).</li>
+<li><strong>Aplica la regla de la vela cerrada como religión.</strong> Toda condición de los componentes 1–8 se verifica solo con velas cerradas. Si tu sistema dice "pullback a la zona + vela de reacción": la vela de reacción se evalúa cuando CIERRA, con su close final visible — nunca "parece que va a cerrar bien". La captura se toma en ese instante: es la evidencia de que no hubo look-ahead.</li>
+<li><strong>Comprométete con la integridad del dataset.</strong> Toda operación entra — las buenas, las malas y las estúpidas (con su etiqueta de error, 9.5). Un backtest con 100 filas elegantes y 8 borradas mide tu ego, no tu sistema. La regla práctica: <strong>nada se borra del CSV, nunca</strong>; lo que se corrige se corrige con nota al pie, no con reemplazo.</li>
+<li><strong>Lleva el diario del backtester.</strong> Cada duda que surja midiendo ("¿esta barrida cuenta como válida?", "¿este pullback es demasiado profundo?") se anota con fecha en un apartado del journal — y NO se resuelve modificando reglas en vuelo. Al final de la muestra, esas dudas son materia prima: o son casos borde que tu definición de setup válido ya cubría, o alimentan (con evidencia) la ventana de modificación de 9.6. Lo que está prohibido es resolverlas a mitad de muestra: eso es data-mining con buena intención.</li>
+</ol>
+<h2>Error común</h2>
+<p><strong>(1) "Con 30 me basta, la esperanza se ve clara."</strong> A N=30 el IC es ±17,5 pp: tu 40 % puede ser un 22,5 % (por debajo del equilibrio neto) o un 57,5 % (sistema de oro) — la muestra NO distingue entre ambos. Las 30 del M-7 fueron para aprender el oficio y declarar métricas; su valor fue epistémico, no estadístico. <strong>(2) Backtestear la historia que "ya conozco".</strong> "Llevo meses mirando ese gráfico, no necesito replay" — sí lo necesitas: tu memoria retrospectiva ES look-ahead. El replay en fechas vírgenes no es burocracia: es la única forma de que la medición sea honesta. <strong>(3) El rastreo de parámetros disfrazado de ajuste fino.</strong> "Solo probé si el SL a 1,5×ATR salía mejor que a 1,4×" — eso es data-mining: cada variante que pruebes y descartes es una apuesta encubierta contra la muestra; con 10 variantes probadas, la "mejor" debe su corona al azar (7.6: la inflación ≈ √(k/N)). La única variante que se mide es la que declaraste antes. <strong>(4) Confundir el intervalo con un detalle técnico.</strong> "Mi WR medido es 40 %, punto" — no: tu WR medido es 40 % ± 9,6 y tu decisión debe sobrevivir al peor caso razonable (30,4 %). El trader que lee el número puntual y no el intervalo es el que "no entiende cómo perdió" cuando la varianza cobra. <strong>(5) Creer que el backtest aprueba para dinero real.</strong> La muestra histórica autoriza la decisión de backtest (verde/ámbar/rojo); el paso a real micro exige el forward (9.4) — y en este programa, además, esperar a la Fase 4 tras M12: el embudo completo se recorre en orden, sin atajos.</p>
+<h2>Conexión cuantitativa</h2>
+<p><strong>Hacia 7.5 y 7.6:</strong> la estadística de rachas te dijo QUÉ esperar (P(n)=(1−WR)ⁿ, rachas de 6-7 a 30 ops); el IC de esta lección te dice con QUÉ error lo esperarás — y juntos fijan la muestra: 100 operaciones es el punto donde "racha esperada ~9" y "±9,6 pp" hacen que la decisión de 3 vías sea posible. <strong>Hacia 8.2:</strong> el Max DD que la regla del 1 % estimó (−6 % esperable, −15 % emergencia) dejará de ser una estimación compuesta: tus 100 operaciones medirán el drawdown REAL de tu sistema al 1 % — la métrica que la misión M-9 compara contra la línea de emergencia. <strong>Hacia 9.3:</strong> esta lección definió la integridad de la muestra; la siguiente define cómo leerla — sin las 13 métricas y sus umbrales, 100 filas honestas son solo un CSV grande. <strong>Hacia M10:</strong> la ceguera del backtest tiene un límite estructural: al no haber dinero en juego, mide el sistema pero <strong>no puede medir tu ejecución bajo presión</strong> — por eso existe el forward (9.4) y por eso la Evaluación N3 exige ambas cosas. El backtest responde "¿funciona el sistema?"; la pregunta "¿puedo yo ejecutarlo?" todavía está abierta.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li>Un backtest es una <strong>medición con protocolo del pasado</strong>, no una predicción: se decide con el intervalo, no con el número puntual.</li>
+<li>El error del WR escala con 1/√N: N=30 → ±17,5 pp; <strong>N=100 → ±9,6 pp</strong> (mínimo del programa); duplicar la precisión exige cuadruplicar la muestra.</li>
+<li>La decisión del backtest es de <strong>tres vías</strong> (verde al 1 % / ámbar a 0,25–0,5 % / rojo: no operar) — nunca binaria, porque el intervalo a N=100 todavía puede cruzar el equilibrio.</li>
+<li>La ceguera es un requisito: replay vela a vela, fechas vírgenes, regla de la vela cerrada, captura en el momento de la señal.</li>
+<li>Los 3 sesgos (supervivencia, data-mining, look-ahead) inflan la E medida y se combaten con los candados: <strong>todo entra, todo se declara antes, nada se decide con el futuro visible.</strong></li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>Calcula el IC 95 % del WR para N=50 y N=200 con WR medido 40 % (fórmula + números). ¿Cuánto gana exactamente en precisión quien pasa de 100 a 200 operaciones?</li>
+<li>Clasifica estas 4 prácticas como sesgo (supervivencia / data-mining / look-ahead / ninguna): (a) "borré las 3 operaciones del viernes porque estaba fatigado"; (b) "decidí la entrada cuando la vela aún no cerraba pero ya se veía fuerte"; (c) "probé 6 variantes del TP y reporté la que mejor salió"; (d) "registré el coste real de cada operación con el spread de la plataforma".</li>
+<li>Tu backtest de 100 ops mide WR 37 %, R:B 2,1, coste 0,08R (equilibrio neto 34,8 %). Con el IC ±9,6: clasifica la decisión de 3 vías y justifica por qué NO es ni verde ni rojo.</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. N=50: <ktx class="ktx" data-tex="\sigma = \sqrt{0{,}4 \times 0{,}6/50} = \sqrt{0{,}0048} = 0{,}0693">\sigma = \sqrt{0{,}4 \times 0{,}6/50} = \sqrt{0{,}0048} = 0{,}0693</ktx> → IC **±13,6 pp** ([26,4 %, 53,6 %]). N=200: <ktx class="ktx" data-tex="\sigma = \sqrt{0{,}24/200} = \sqrt{0{,}0012} = 0{,}0346">\sigma = \sqrt{0{,}24/200} = \sqrt{0{,}0012} = 0{,}0346</ktx> → IC **±6,8 pp** ([33,2 %, 46,8 %]). De 100 a 200: de ±9,6 a ±6,8 — la ganancia es un factor <ktx class="ktx" data-tex="1/\sqrt{2} ≈ 0{,}707">1/\sqrt{2} ≈ 0{,}707</ktx>: **solo un 29 % de reducción del error por duplicar el esfuerzo**. Por eso la economía del backtest manda: primero 100 honestas (decisión posible), luego el forward (que añade información de otro TIPO), y solo si el sistema se escala, 200-400 (precisión).
+2. (a) **Supervivencia** — las fatigadas también cuentan (mejor: se etiquetan, y si la fatiga es patrón, el horario de sesión se corrige en la ventana); (b) **Look-ahead** — "ya se veía fuerte" es información que no existía al cierre anterior; la vela se evalúa cerrada; (c) **Data-mining** — 6 variantes probadas y una reportada: la "mejor" debe su corona al azar (√(6/100) de inflación ≈ 24 %); (d) **Ninguno** — registrar el coste real es exactamente lo correcto (alimentará el coste medio de 9.3).
+3. WR 37 % ± 9,6 → intervalo [27,4 %, 46,6 %]. El equilibrio neto (34,8 %) queda DENTRO del intervalo: el sistema puede ser ligeramente negativo o razonablemente bueno — la muestra no distingue. Veredicto: **ámbar** — operar provisional a 0,25–0,5 % (el daño máximo se acota mientras el dato madura), pasar a forward igual (mide ejecución), y seguir sumando muestra hacia 200. No es verde: 27,4 % < 34,8 % significa que el peor caso razonable es un sistema perdedor. No es rojo: el mejor caso (46,6 %) es un sistema sólido con E +0,48R. La decisión correcta frente a la incertidumbre es **acotar el daño y comprar más evidencia**, no adivinar.
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="hub-mod-09.html"><span class="lbl">← Anterior</span><span class="ttl">Módulo 9 · Backtesting, Journal y Validación — la convicción estadísti</span></a>
+    <a class="next" href="leccion-9-2.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 9.2 · Protocolo de backtesting manual — la rutina que hace los</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

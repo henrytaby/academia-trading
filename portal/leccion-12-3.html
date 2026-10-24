@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 12.3 · KPIs del negocio — el dashboard mensual de un solo vist · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a class="active" href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>💼 N4 · Negocio<span class="sep">/</span>M12 · Plan de Trading y Plan de Negocio<span class="sep">/</span>Lección 12.3 · KPIs del negocio — el dashboard mensual de un</div>
+  <article class="doc-body">
+<h1>Lección 12.3 · KPIs del negocio — el dashboard mensual de un solo vistazo</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>40–55 min de estudio</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-12.html">M12 · Plan de Trading y Plan de Negocio</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td><a href="leccion-12-2.html">Lección 12.2 · La rutina semanal</a></td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="leccion-12-4.html">Lección 12.4 · Gestión patrimonial</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>Un negocio se gestiona con NÚMEROS y un hobby se comenta con sensaciones — esta lección define los números. Los KPIs (<em>key performance indicators</em>) del negocio de trading no son nuevos (tu reporte M-9 ya los midió para el sistema): lo nuevo es la AGREGACIÓN — el dashboard mensual de una página que combina los KPIs de desempeño (E, PF, Max DD) con los de negocio real (horas invertidas, costes totales, retorno neto del mes) y los de conducta (disparos, contención, días ejecutados). La función del dashboard es la del tablero de cualquier operación: detectar la deriva ANTES de que sea una crisis, alimentar la ventana de modificación (9.6) con datos y dar al Plan de Negocio (12.4) su materia prima. La regla del programa: <strong>un dashboard de una sola página, llenado con datos del journal — nunca estimado — y leído con umbrales declarados, no con ánimo.</strong> Si terminas con una sola idea: <strong>tu negocio tiene un tablero o tiene un estado de ánimo — y el tablero se llena el mismo día del mes, siempre, aunque (especialmente si) el mes fue malo.</strong></p>
+<h2>Concepto</h2>
+<p><strong>Los 12 KPIs del dashboard mensual</strong> <em>(todos salen de tu journal y de tu calendario — la plantilla del laboratorio trae las fórmulas)</em>:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>KPI</th>
+<th>Fórmula / fuente</th>
+<th>Umbral del programa (perfil H1/H4)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>E neta mensual</strong></td>
+<td>Suma de R netos del mes / nº operaciones</td>
+<td>Consistente con el IC del sistema (para el caso maestro: [−0,06R, +0,38R] por op a N=100)</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>WR del mes</strong></td>
+<td>Ganadoras / total (con IC si N &lt; 50: el intervalo MANDA)</td>
+<td>Sin umbral aislado: se lee contra el 40 % ± IC</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>R:B medio</strong></td>
+<td>Media de las ganadoras en R</td>
+<td>≥ 1,8 (deriva de gestión si baja)</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>PF neto</strong></td>
+<td>Σ ganancias / Σ pérdidas (neto de costes)</td>
+<td>≥ 1,25 (verde) · 1,1-1,25 (ámbar) · &lt; 1,1 (rojo)</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Max DD del mes</strong></td>
+<td>Peak-to-trough de la curva de capital al 1 %</td>
+<td>≤ −6 % esperable · −15 % línea de emergencia (M8)</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Coste total del mes</strong></td>
+<td>Σ (spread + comisión + swap + slippage)</td>
+<td>≤ 0,1R/operación de media — deriva si sube</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>Disparos ejecutados/debidos</strong></td>
+<td>Ejecutados / debidos (9.2)</td>
+<td>= 100 % (la métrica de M8)</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>Tasa de contención</strong></td>
+<td>Abortos cortados / (cortados + ejecutados fuera de plan)</td>
+<td>Tendencia creciente (10.3)</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>Etiquetas de error</strong></td>
+<td>Conteo E1-E7 del mes</td>
+<td>Tendencia decreciente/estable; E0 domina el volumen</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>Días ejecutados/planificados</strong></td>
+<td>Rutina completa (12.2) / días del calendario</td>
+<td>≥ 90 %</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>Horas invertidas</strong></td>
+<td>Registro del acta semanal (12.2)</td>
+<td>Presupuesto: ~60-70 h/mes (dato, no norma)</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>Retorno del mes (horas vs dinero)</strong></td>
+<td>R neto del mes / horas invertidas</td>
+<td>Sin umbral fijo: es tu métrica de productividad personal — se compara consigo misma</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Las dos lecturas que el dashboard fuerza.</strong> <em>(1) Los umbrales se declaran ANTES</em> — la tabla de arriba es tu plantilla: cada KPI con su umbral escrito en el plan (sección 7-8) y el veredicto del mes (verde/ámbar/rojo por fila) se marca contra ellos, no contra la sensación. Es la decisión de 3 vías (9.3) aplicada a todo el negocio. <em>(2) El dashboard se lee en CONJUNTO</em> — el mes con E positiva y disparos 85 % no es un mes verde: es un mes verde de suerte con proceso rojo, y el acta lo trata como tal (10.4). El patrón de lectura del programa: primero las filas de proceso (7-10), después las de desempeño (1-6) — el proceso manda, el resultado firma.</p>
+<p><strong>El KPI que nadie mide y todo el mundo necesita: horas vs retorno.</strong> Con tu presupuesto de ~60-70 h/mes, el KPI 12 divide el R neto del mes entre las horas: si el mes dio +4R con 65 h → 0,06R/h; si dio +4R con 110 h → 0,036R/h — la deriva de horas es la señal temprana del overtrading invisible (más miradas, más revisiones, más "trabajo" sin más negocio). Su función no es pedirte eficiencia extrema: es hacer VISIBLE el coste de oportunidad del tiempo — la variable que el amateur nunca contabiliza y que el profesional presupuesta en el Plan de Negocio (12.4: ¿cuántas horas le dedicarás en la fase siguiente y qué retorno por hora hace sostenible la carrera?).</p>
+<p><strong>El flujo del dashboard, de la fila a la decisión:</strong></p>
+<pre class="mermaid">flowchart TD
+    A[&quot;Datos del journal v1&lt;br/&gt;etiquetas · sumas de R · costes · horas&quot;] --&gt; B[&quot;12 filas del dashboard&lt;br/&gt;valor del mes vs umbral declarado&quot;]
+    B --&gt; C{&quot;¿Filas de proceso&lt;br/&gt;limpias?&quot;}
+    C -- &quot;Sí&quot; --&gt; D[&quot;Proceso verde&lt;br/&gt;leer el desempeño&lt;br/&gt;en acumulado, no en el mes&quot;]
+    C -- &quot;No&quot; --&gt; E[&quot;Proceso rojo&lt;br/&gt;el resultado del mes&lt;br/&gt;NO se celebra ni se ejecuta&quot;]
+    D --&gt; F[&quot;Veredicto por fila&lt;br/&gt;+ UNA línea de conclusión&quot;]
+    E --&gt; F
+    F --&gt; G{&quot;¿Alguna fila&lt;br/&gt;roja sostenida?&quot;}
+    G -- &quot;Sí&quot; --&gt; H[&quot;La UNA mejora o la&lt;br/&gt;modificación de la ventana&lt;br/&gt;con changelog&quot;]
+    G -- &quot;No&quot; --&gt; I[&quot;Abstención firmada&lt;br/&gt;se sigue midiendo&quot;]
+</pre>
+<p><strong>El dashboard NO es el reporte M-9.</strong> El reporte de métricas (9.3) evalúa el SISTEMA con muestra grande (N=100+); el dashboard evalúa el MES del negocio (N=8-12 operaciones típicas) — y la lección estadística de M9 aplica: con N tan pequeño, el WR del mes es ruido (IC ±20-30 pp); por eso el dashboard pondera el proceso (disparos, contención, errores, días) que SÍ es medible a pequeña N, y deja el desempeño en perspectiva acumulada (la línea de la curva de capital a 12 meses importa más que el punto del mes). El amateur juzga el mes; el profesional acumula los meses.</p>
+<h2>Analogía</h2>
+<p>El panel de instrumentos del avión. Un piloto vuela con panel: altitud, velocidad, rumbo, combustible, y sobre todo las TENDENCIAS (el altímetro de presión marca tasa de ascenso, no solo altura). El piloto no mira el panel cuando "se siente perdido": lo mira cada X minutos por procedimiento — y lee el conjunto: altitud bien + combustible mal = decisión de desvío, no de celebración. Tu dashboard es el panel: 12 instrumentos con umbrales, revisados por procedimiento (el bloque mensual del ciclo 12.2), leídos en conjunto (proceso antes que resultado) y con las tendencias visibles (la columna de 3-6 meses junto a la del mes). El trader sin dashboard es el piloto que vuela "por lo que se ve por la ventanilla": llega, hasta que no.</p>
+<h2>Cómo se hace: montar tu dashboard v1.0 (en el laboratorio del módulo)</h2>
+<ol>
+<li><strong>Estructura la plantilla</strong> (<code>journal/dashboard.md</code>): 12 filas de KPI con sus columnas — umbral declarado · valor del mes · veredicto · tendencia (3-6 meses). Cópiala del laboratorio y fija tus umbrales del perfil real.</li>
+<li><strong>Automatiza la fuente:</strong> todo sale del journal v1 (conteo de etiquetas, sumas de R, costes) + del registro de horas del acta — si algún KPI requiere buscar en la memoria, tu journal le falta una columna; se corrige en la ventana, no se estima.</li>
+<li><strong>Llénelo en el bloque mensual</strong> (60-90 min del ciclo 12.2): primero proceso, después desempeño, el veredicto por fila y UNA línea de conclusión — el dashboard de 20 filas sin conclusión es decoración.</li>
+<li><strong>Muestra la tendencia:</strong> guarda los dashboards mensuales y pinta la columna de acumulado (curva de capital + R neto por mes): la serie de 12 meses es la que lee la Certificación y la que decide escalados.</li>
+<li><strong>Alimenta las decisiones:</strong> el veredicto del dashboard ENTRA al acta mensual: cada fila roja es candidata a ser "el dato más débil" del reporte (M-9) y a producir la UNA mejora o la modificación — el tablero no informa: decide.</li>
+</ol>
+<h2>Error común</h2>
+<p><strong>(1) "Como el mes fue bueno, no lleno el tablero."</strong> El mes bueno sin tablero es el mes donde la sobreconfianza (10.5) y el risk creep (10.3) se instalan gratis — el tablero existe precisamente para los meses donde las sensaciones mienten más. <strong>(2) Juzgar el WR de un mes con N=9.</strong> El IC de una muestra así es ±30 pp: tu 55 % del mes y tu 30 % del mes siguiente son la misma estimación estadística — el dashboard pondera proceso a N pequeña y desempeño en acumulado; juzgar el mes por WR es leer el ruido. <strong>(3) Añadir 30 KPIs "por si acaso".</strong> El tablero de una página tiene el poder de ser leído — los 12 del programa cubren proceso, desempeño y economía; cada KPI extra diluye la atención (y casi siempre son vanity metrics). <strong>(4) Medir el retorno en $ sin las horas.</strong> El KPI 12 existe porque el negocio tiene DOS recursos: capital y tiempo — un mes de +6R con 140 h es un negocio cansado; el mismo +6R con 60 h es el negocio sostenible que el plan presupuesta. <strong>(5) Usar el dashboard para juzgarte y no para decidir.</strong> El veredicto rojo de una fila no es una condena: es un candidato a la UNA mejora de la ventana — el tablero que produce culpa produce escondite (y journals embellecidos); el tablero que produce decisiones produce negocio.</p>
+<h2>Conexión cuantitativa</h2>
+<p><strong>Hacia 9.3:</strong> los KPIs 1-6 son las métricas del reporte a escala mensual — el dashboard hereda sus umbrales y su decisión de 3 vías. <strong>Hacia 8.2-8.3:</strong> el Max DD mensual se lee contra las líneas de M8 (−6 % esperable, −15 % emergencia) — el tablero es el monitor de la cascada entre cascadas. <strong>Hacia 11.7:</strong> el coste total y el retorno neto alimentan el expediente fiscal y el cálculo del impuesto estimado — el tablero es también la puerta de entrada de la fiscalidad al negocio. <strong>Hacia 12.4:</strong> el dashboard es la materia prima del Plan de Negocio: presupuesto de horas, capital de crecimiento y política de retiros se deciden con estos números.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li>El dashboard mensual son <strong>12 KPIs de una página</strong>: 6 de desempeño (E, WR con IC, R:B, PF, Max DD, costes) y 6 de proceso/economía (disparos, contención, etiquetas, días, horas, retorno por hora) — llenados con datos del journal, nunca estimados.</li>
+<li>Los <strong>umbrales se declaran antes</strong> y el veredicto por fila se marca contra ellos — la decisión de 3 vías de 9.3 aplicada a todo el negocio.</li>
+<li>El dashboard se lee <strong>proceso primero, desempeño después, y en conjunto</strong>: un mes verde con disparos 85 % es un mes rojo de proceso con suerte.</li>
+<li>A N pequeña el WR del mes es <strong>ruido estadístico</strong> — el proceso sí es medible al mes y el desempeño se juzga en la serie de 12 meses.</li>
+<li>El KPI <strong>horas vs retorno</strong> hace visible el segundo recurso del negocio: +4R con 65 h ≠ +4R con 110 h — la deriva de horas es overtrading invisible.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>Enumera los 12 KPIs agrupados en desempeño/proceso-economía, con el umbral de al menos 4 de ellos. ¿Por qué los 4 de proceso (disparos, contención, etiquetas, días) funcionan a N pequeña mientras el WR no?</li>
+<li>Tu mes: +5R neto, WR 56 % (9 operaciones), PF neto 1,31, disparos 92 %, coste medio 0,09R/ops, 108 h invertidas, Max DD −3,4 %. Llena el veredicto de cada fila y formula la UNA conclusión del dashboard (con la lección que la respalda).</li>
+<li>Un trader presume "+8R este mes, mi mejor mes". Con N=11 y la tabla de arriba: qué dos preguntas del dashboard le haces y por qué su número, solo, no decide nada.</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. Desempeño: (1) E neta mensual, (2) WR con IC, (3) R:B medio (≥ 1,8), (4) PF neto (≥ 1,25 verde), (5) Max DD (≤ −6 % esperable), (6) coste total (≤ 0,1R/ops). Proceso-economía: (7) disparos (= 100 %), (8) contención (creciente), (9) etiquetas (decreciente/estable), (10) días ejecutados (≥ 90 %), (11) horas (presupuesto), (12) retorno/hora (serie propia). Los 4 de proceso funcionan a N pequeña porque son CONTADORES de conducta (frecuencias de decisiones, no estimaciones de parámetro): contar 1 disparo perdido no tiene error muestral de proporción relevante — el WR sí, porque estima un parámetro del sistema (±30 pp a N=9: no distingue nada).
+2. Veredictos: E neta +5R (verde); WR 56 % con N=9 → IC ±32 pp → sin lectura aislada (ámbar informativo: se lee el acumulado); R:B — revisar (si ≥ 1,8: verde); PF 1,31 (verde); disparos 92 % (ROJO — la fila más importante: 8 de cada 10 debidos, 1 perdido); coste 0,09R (verde, al borde); horas 108 h vs presupuesto ~65 h (ROJO — 66 % por encima: deriva de miradas); Max DD −3,4 % (verde). UNA conclusión: *"Mes positivo de resultado con proceso en deriva: 92 % de disparos y 108 h señalan sobre-auditoría y energía fuera de la ventana — la mejora de ejecución de la ventana es un límite de horario por sesión y ninguna modificación al sistema"* (respaldado por 12.2 y 10.5: el exceso de horas es la firma del overtrading invisible, y el mes verde es donde se instala).
+3. Las dos preguntas: (1) "¿Cuántas operaciones y con qué IC?" — a N=11 el WR es ruido (±28 pp): su +8R puede ser el mejor mes de un sistema medio o la cola buena de su varianza normal (el acumulado decide, no el punto); (2) "¿Disparos, contención y horas del mes?" — si las filas de proceso están limpias, el +8R es negocio; si no, es el mes más peligroso de su carrera (el error premiado de 10.4 con perfil de éxito). Su número, solo, no decide nada porque el resultado es la firma del mercado: el proceso es el que firma el trader.
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="leccion-12-2.html"><span class="lbl">← Anterior</span><span class="ttl">Lección 12.2 · La rutina semanal del trader — el ciclo que convierte e</span></a>
+    <a class="next" href="leccion-12-4.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 12.4 · Gestión patrimonial — separación de cuentas, retiros y </span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Módulo 11 · La Industria: Brokers, Estafas y Capital Externo — la puer · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a class="active" href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>💼 N4 · Negocio<span class="sep">/</span>M11 · La Industria<span class="sep">/</span>Módulo 11 · La Industria: Brokers, Estafas y Capital Externo</div>
+  <article class="doc-body">
+<h1>Módulo 11 · La Industria: Brokers, Estafas y Capital Externo — la puerta de la profesión</h1>
+<blockquote class="gfm-warn"><p><strong>⚠️ WARNING:</strong> <strong>Contenido educativo.</strong> La mayoría de los traders minoristas pierde dinero (estudios de reguladores estiman entre 70 % y 90 %). Nada aquí constituye asesoría financiera, legal ni fiscal.</p>
+</blockquote>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>💼 Nivel</td>
+<td>4 · Profesionalización — primer módulo del N4</td>
+</tr>
+<tr>
+<td>📦 Módulo</td>
+<td>11 de 12 (FIT-12)</td>
+</tr>
+<tr>
+<td>🔬 Trazabilidad</td>
+<td>003 · M4.1–4.2, M6.1–6.6 · 004 · M8.1–8.5 · <strong>Aporte propio:</strong> due diligence universal sin marcas, reglas finas de prop firms (vacío 6), fiscalidad por principios (vacío 7), tier list como snapshot</td>
+</tr>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>7–9 h de teoría + 8–12 h de laboratorio/misión (2–3 semanas reales)</td>
+</tr>
+<tr>
+<td>📋 Estado</td>
+<td>🟢 Publicado (Sprint 11)</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>🎯 Objetivo del Módulo</h2>
+<p>Elegir infraestructura con criterio forense y entender el negocio de quien te ofrece capital (o te vende humo). Con el N3 cerrado, tu negocio tiene sistema, presupuesto, evidencia y conducta auditable — le falta decidir <strong>con quién opera y de dónde saldrá el capital de escala</strong>. Este módulo audita la industria con la misma matriz forense que el programa aplica a todo: el broker (11.1: A-Book vs B-Book, regulación estricta vs offshore, los 5 pilares de selección sin marcas), el radar de estafas que domina el ecosistema minorista (11.2: binarias con esperanza negativa construida, bots de martingala, MLM, gurús, indicadores repintantes — con el protocolo de verificación regulatoria universal), y el fenómeno del fondeo minorista (11.3: el embudo de fees donde ~92 % fracasa según la propia FTMO; 11.4: las reglas finas que son el examen real; 11.5: la matriz de riesgo dinámico 0,25-0,50 % y la decisión "todavía no"; 11.6: el árbol de las 4 puertas — evidencia, esperanza, consistencia de 6-12 meses, simulación — que separa a quien se capitaliza de quien es el producto). Cierra con el pilar que ninguno de los cursos audita (vacío 7): la <strong>fiscalidad por principios</strong> (11.7: capital vs actividad, el registro como defensa, declarar siempre, el profesional local). Al terminar tienes la matriz de due diligence probada en 6 proveedores reales, el informe de elección defendido y el plan de capitalización a 12 meses — los dos documentos que el M12 integrará al plan de negocio final.</p>
+<h2>📚 Lecciones</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Lección</th>
+<th>Esencia</th>
+<th>Tiempo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>11.1</td>
+<td><a href="leccion-11-1.html">Brokers de verdad</a></td>
+<td>A-Book vs B-Book (el flujo de tu orden en mermaid); qué protege y qué no la regulación; los 5 pilares con evidencia verificable por celda</td>
+<td>45–60 min</td>
+</tr>
+<tr>
+<td>11.2</td>
+<td><a href="leccion-11-2.html">Radar de estafas</a></td>
+<td>Las 5 del ecosistema minorista con su aritmética (binarias: −10 % por op al 50 %; martingala quiebra en la racha 8) + el protocolo de verificación regulatoria en 4 pasos</td>
+<td>45–60 min</td>
+</tr>
+<tr>
+<td>11.3</td>
+<td><a href="leccion-11-3.html">Prop firms: el negocio real</a></td>
+<td>El embudo de ingresos por fees en mermaid; ~92 % fracasa (FTMO) y ~0,07 % de éxito neto (datos filtrados MFF, no auditados); colapsos: MFF, TFT, True Forex Funds</td>
+<td>50–65 min</td>
+</tr>
+<tr>
+<td>11.4</td>
+<td><a href="leccion-11-4.html">Reglas finas de las prop firms</a></td>
+<td>Las 6 reglas que desaprueban (diario con flotantes, trailing vs estático, consistency, noticias, lotaje, copiado) + la lectura forense del contrato en 20 min</td>
+<td>45–60 min</td>
+</tr>
+<tr>
+<td>11.5</td>
+<td><a href="leccion-11-5.html">Matriz de riesgo para evaluaciones</a></td>
+<td>El sizing contra el límite contractual: racha esperada ≤ 50-60 % del drawdown; la escala dinámica 0,50→0,40→0,25→0 %; "todavía no" como decisión ganadora</td>
+<td>50–65 min</td>
+</tr>
+<tr>
+<td>11.6</td>
+<td><a href="leccion-11-6.html">Cuándo intentar una evaluación</a></td>
+<td>El árbol de las 4 puertas (evidencia → esperanza → consistencia de 6-12 meses → simulación); capitalizarse ≠ ser el producto; el plan de capitalización a 12 meses</td>
+<td>40–55 min</td>
+</tr>
+<tr>
+<td>11.7</td>
+<td><a href="leccion-11-7.html">Fiscalidad por principios</a></td>
+<td>Capital vs actividad económica; el registro como defensa (tu journal v1 ES el expediente); declarar siempre; las 6 preguntas al profesional local — sin recetas de un solo país</td>
+<td>35–50 min</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote class="gfm-tip"><p><strong>💡 TIP:</strong> <strong>Cómo estudiar este módulo:</strong> dile a tu agente <em>"Siguiente lección"</em> y sigue el protocolo de sesión de estudio (§ 5.3 de <code>agents.md</code>). Este módulo se estudia <strong>con tu journal v1 y tu reporte M-9/M-10 a mano</strong>: las puertas del 11.6 y la simulación del 11.5 se responden con TUS números — sin ellos, el módulo es lectura; con ellos, es auditoría.</p>
+<p><strong>El caso maestro entra a la industria:</strong> la operación de tu <a href="receta-primera-operacion.html">Receta</a> <em>(ilustrativo)</em> — EUR/USD H4, E +0,16R neto, WR 40 % — ahora audita a sus proveedores: el broker que cobra 0,02R extra se come 4,8R/año (11.1); el desafío con drawdown 10 % recibe tu racha esperada de 7-9 al riesgo que la matriz apruebe (11.5); y la ganancia del caso maestro, neta de impuestos, es el número que el plan de capitalización a 12 meses compondrá (11.7).</p>
+<p><strong>Puente con M10 y M12:</strong> del M10 heredas la conducta que el examen del 11.6 evalúa (6-12 meses de consistencia documentada) y los frenos que la matriz de 11.5 recalibra al límite ajeno. Hacia M12: la matriz de due diligence, el informe de elección y el plan de capitalización son tres de los bloques del <strong>Plan de Trading y Plan de Negocio</strong> final — este módulo fabrica sus insumos.</p>
+</blockquote>
+<h2>🧪 Laboratorio · Due diligence de 3 brokers y 3 prop firms</h2>
+<p><strong>Materiales:</strong> las 7 lecciones + la matriz de criterios (crea <code>journal/matriz-due-diligence.md</code> con la plantilla de abajo) + acceso a los registros públicos de los reguladores + los estados/demo de prueba.</p>
+<p><strong>La matriz universal (misma rúbrica para los 6 proveedores, sin publicidad):</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Criterio</th>
+<th>Puntuación</th>
+<th>Fuente exigible</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Regulación / estructura legal</td>
+<td>0-5 (binario: registro público no verifica = 0)</td>
+<td>Registro oficial + warn lists</td>
+</tr>
+<tr>
+<td>Modelo / transparencia</td>
+<td>0-5 (A/B-Book declarado · reglas con ejemplos numéricos)</td>
+<td>Contrato/FAQ con números</td>
+</tr>
+<tr>
+<td>Costos / reglas económicas</td>
+<td>0-5 (spread+comisión medida · fee, split, refembolso)</td>
+<td>Medición propia + contrato</td>
+</tr>
+<tr>
+<td>Retiros / pagos</td>
+<td>0-5 (velocidad documentada · historial de payouts verificable)</td>
+<td>Agregadores independientes + reglas</td>
+</tr>
+<tr>
+<td>Soporte / disputas</td>
+<td>0-5 (respuesta real probada · canal de disputa)</td>
+<td>Prueba práctica</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td><strong>/25</strong></td>
+<td>Cada celda con fuente citada</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>El protocolo en 4 líneas:</strong> (1) pre-selección de 5-8 candidatos por fuentes múltiples (11.1 paso 2); (2) verificación regulatoria binaria de TODOS (protocolo de 11.2 — los que no pasan, fuera de la matriz); (3) puntuación de los 5 criterios con fuente por celda para los 3 finalistas de cada categoría; (4) prueba práctica: 2 semanas de demo medida en el broker finalista y la lectura forense del contrato en la prop firm finalista (11.4, los 20 minutos).</p>
+<p><strong>Entregable:</strong> <code>journal/matriz-due-diligence.md</code> con las 2 matrices completas (6 proveedores evaluados, 3 por categoría) + las capturas de las verificaciones regulatorias + el log de ejecución de la prueba práctica.</p>
+<h2>🎯 Misión</h2>
+<blockquote class="gfm-important"><p><strong>❗ IMPORTANT:</strong> Misión M-11 · Informe de elección + plan de capitalización a 12 meses
+<strong>Objetivo:</strong> convertir la matriz del laboratorio en dos documentos de decisión: el <strong>informe de elección</strong> (con justificación puntual por criterio) y el <strong>plan de capitalización</strong> (propio vs fondeo) a 12 meses.
+<strong>El informe de elección</strong> <em>(plantilla — <code>journal/informe-m11.md</code>)</em>: elección de broker con la justificación por criterio (por qué ganó cada pilar, con los números de tu medición) + elección de prop firm SOLO si las 4 puertas del 11.6 están abiertas (si no: la decisión documentada de esperar y su ruta) + los riesgos aceptados por cada elección (qué celda quedó débil y por qué es tolerable).
+<strong>El plan de capitalización a 12 meses:</strong> línea base (tu capital propio, rendimiento medido, aportes esperados) · escenario fondeo (si aplica: fee, probabilidad medida con TUS datos, payout esperado, riesgo de contraparte cotizado — esperanza matemática completa, no el escenario bonito) · la regla de mezcla (el fondeo es rama opcional, nunca plan A ni rescate) · calendario de puertas (qué se abre cuándo y con qué evidencia) · y la línea fiscal: la consulta con el profesional local agendada antes de la Fase 4 (11.7).
+<strong>Entregable:</strong> <code>journal/informe-m11.md</code> con ambos documentos. <strong>Criterio de graduación:</strong> informe completo <strong>defendido en sesión socrática</strong> con el agente (el agente pregunta por criterio, número y fuente — la defensa usa tu matriz, no tu memoria) + <strong>quiz de autoevaluación ≥ 8/10</strong>. <strong>Tiempo estimado:</strong> 3-4 h tras cerrar el laboratorio.</p>
+</blockquote>
+<h2>✅ Evaluación / Criterio de Graduación</h2>
+<p>Criterio del SYLLABUS para este módulo:</p>
+<ul>
+<li><strong>Laboratorio completo:</strong> matriz de due diligence con 6 proveedores (3+3), verificación regulatoria documentada y prueba práctica.</li>
+<li><strong>Informe de elección con justificación puntual por criterio</strong> + <strong>plan de capitalización a 12 meses</strong> con la regla de mezcla y el calendario de puertas.</li>
+<li><strong>Defensa socrática del informe</strong> con el agente (casos: el criterio que descartó al favorito del marketing, la puerta cerrada y su ruta, el tratamiento fiscal de un payout).</li>
+<li><strong>Quiz de autoevaluación ≥ 8/10 (80 %)</strong>.</li>
+</ul>
+<p>Al aprobar todo: se abre <strong>M12 · Plan de Trading y Plan de Negocio</strong> — el cierre del programa: tus 11 módulos de insumos se convierten en el documento operativo de tu negocio.</p>
+<h2>📝 Quiz de Autoevaluación — umbral ≥ 8/10 (80 %)</h2>
+<ol>
+<li>A-Book vs B-Book: dibuja el flujo de una orden en cada modelo, explica qué gana el broker en cada uno y las dos salvaguardas que gestionan el conflicto del B-Book.</li>
+<li>Calcula: tu coste medio por operación baja de 0,10R a 0,075R cambiando de broker (20 operaciones/mes). ¿Cuánto R ahorras al año? Si tu E neta es +0,16R, ¿qué porcentaje de tu esperanza anual representa el ahorro?</li>
+<li>Opciones binarias: demuestra con la fórmula E que un payout de 0,80 exige 55,6 % de acierto solo para empatar, y explica por qué la prohibición regulatoria a minoristas (UE/Reino Unido) es coherente con la aritmética.</li>
+<li>Martingala: con inicio 0,5 %, calcula la exposición acumulada de la racha de 8 y de la racha de 9. ¿Qué racha esperada tiene un sistema con WR 40 % en 100 operaciones y qué significa eso para "bots que ganan todos los meses"?</li>
+<li>Prop firms: dibuja el embudo de ingresos y explica por qué el fee de desafío es el INGRESO principal y el payout el COSTE del modelo. ¿Qué dos cifras públicas (una de FTMO, una de datos filtrados MFF) cuantifican el embudo?</li>
+<li>Reglas finas: un desafío con drawdown total 10 % trailing llega a +7 % de ganancia. ¿Dónde está el suelo? ¿Sobrevive tu racha esperada de 7 pérdidas a 0,5 %? ¿Y a 0,25 %? Formula el veredicto de la matriz.</li>
+<li>Matriz de riesgo dinámico: enumera los 4 escalones con su consumo de límite y su riesgo. ¿Por qué el escalón baja el riesgo cuando el amateur lo sube — y qué lección de M10 es su antídoto estructural?</li>
+<li>Las 4 puertas: nómbralas con su evidencia y su fuente de datos. Tu estado: N=100 forward, E +0,05R (IC [−4 %, +14 %] del equilibrio), 5 meses de journal, simulación OK. ¿Veredicto del árbol y plan?</li>
+<li>Fiscalidad: distingue "renta de capital" de "actividad económica" con los 4 factores que suelen empujar a la segunda. ¿Qué 3 piezas componen tu expediente fiscal y qué rutina mensual lo mantiene vivo?</li>
+<li>Integración: un influencer te ofrece "el mejor desafío del mercado, 90 % de split, sin reglas de consistencia, pagos instantáneos" con enlace de afiliado. Analiza la oferta con los 5 instrumentos del módulo (pilares, radar, embudo, reglas finas, puertas) y formula la respuesta completa del programa.</li>
+</ol>
+<details>
+<summary>Ver clave de respuestas</summary>
+
+1. A-Book: tu orden → LP/agregador → mercado; el broker cobra comisión/spread sin riesgo direccional (tu pérdida no es su ganancia). B-Book: tu orden se internaliza — el broker es tu contraparte (tu pérdida ES su ganancia: conflicto estructural). Salvaguardas: regulación estricta (supervisión de ejecución, segregación, canal de disputa) + tu auditoría de ejecución real (coste medio, slippage, retiros en TU cuenta).
+2. Ahorro: 0,025R × 20 × 12 = **6R/año**. Tu esperanza anual: 0,16R × 240 = 38,4R → el ahorro representa el **15,6 %** de tu esperanza anual — por eso el pilar de costos se mide con TU ejecución y no con marketing: el "pequeño" diferencial de spread es una sexta parte de tu negocio.
+3. E = p×g − (1−p): empate en p* = 1/(1+g) = 1/1,8 = **55,6 %**. La prohibición es coherente con la aritmética: con payout fijo < 100 % y vencimientos ultracortos, la varianza impide una medición honesta de ese 55,6 % (el ruido domina la señal a escalas de minutos), el broker es contraparte fija (conflicto máximo) y la evidencia regulatoria de daños minoristas fue determinante — el producto tiene esperanza negativa estructural, no es "riesgo": es extracción con gráfico.
+4. Racha de 8: 0,5 % × (2⁸−1) = 0,5 × 255 = **127,5 %** (quiebra); la de 9: 0,5 × 511 = 255,5 % (ya sin cuenta). Con WR 40 %, la racha esperada en 100 operaciones es ln(100)/ln(1/0,6) ≈ **9** — el bot martingala muere justo en la racha que SU propia distribución garantiza: los "12 meses verdes" son la curva truncada que no muestra el mes de la ruina.
+5. Embudo: marketing → fee del desafío (INGRESO principal, no reembolsado en ~92 %) → filtro de objetivos/drawdown → minoría fondeada → payouts (COSTE del modelo + material de marketing). Las dos cifras: **~92 % de desafíos fracasan** (declaración pública de FTMO) y **~0,07 % de éxito neto** (análisis de datos filtrados de MFF, no auditado pero consistente con la estructura).
+6. Suelo del trailing a +7 %: 10 % − 7 % = **−3 %** respecto al inicial. Racha de 7 a 0,5 %: 1 − 0,995⁷ = **3,5 %** → pasa por debajo del suelo: descalificación estructural. A 0,25 %: 1 − 0,9975⁷ = **1,7 %** → cabe con margen. Veredicto: el desafío con trailing se opera a 0,25 % (o se busca estático) — el trailing cambia el sizing, no la constancia.
+7. Escalones: 0-20 % consumido → 0,50 % · 20-40 % → 0,40 % · 40-60 % → 0,25 % (máx 2 A-setups/semana) · >60 % → 0 % nuevas aperturas (modo recuperación). Baja porque el margen es el inventario: con el límite consumido, la misma racha esperada es letal — es la cascada de M8 recalibrada al contrato, y su antídoto estructural es el de 10.5 contra el tilt: la decisión la toma el DATO (consumo), no la sensación ni la urgencia.
+8. Puertas: (1) evidencia — N ≥ 100 backtests + 20-30 forward con reporte (M9); (2) esperanza — E neta dentro de IC, verde o ámbar alto (tabla de 3 vías); (3) consistencia — 6-12 meses de journal conductual (M10); (4) simulación — reglas del contrato vs tus números (11.5). Tu estado: puertas 1 y 4 abiertas, puerta 2 CERRADA (el IC cruza el equilibrio: E +0,05R no autoriza), puerta 3 cerrada (5 de 6-12 meses). Veredicto: **todavía no** — ruta: más N de forward para estrechar el IC y más meses de consistencia; re-auditar en el acta mensual. El marketing te diría "ahora": exactamente la ventana que el árbol bloquea.
+9. Capital: rendimientos de patrimonio (pasivos, tasas especiales/exenciones). Actividad: negocio (contabilidad, gastos, cotizaciones). Empujan a actividad: frecuencia/volumen, apalancamiento sistemático, derivados como principal, dependencia económica + animus. Expediente: journal v1 exportado + estados mensuales del broker + depósitos/extracciones y conversiones — rutina: descargar, archivar, CRUZAR journal vs estado (discrepancia = corrección de 30 días, no investigación de 10 meses), backup doble.
+10. Análisis completo: (a) **pilares** — el enlace de afiliado invalida la independencia (el afiliado a veces gana con tus pérdidas): pista, no evidencia; (b) **radar** — "sin reglas de consistencia + pagos instantáneos" es el marketing de la firmeza nula: la falta de reglas también es riesgo (contraparte sin estructura); (c) **embudo** — condiciones óptimas de captación = la firma necesita volumen de fees: ¿de dónde vive si paga instantáneo y sin filtros?; (d) **reglas finas** — "sin consistencia" suele significar otras reglas más duras en letra pequeña (trailing, noticias): lectura forense antes de cualquier fee; (e) **puertas** — tu decisión no la toma la oferta: la toman tus 4 puertas (evidencia, esperanza, consistencia, simulación). Respuesta: archivar la oferta en la lista de candidatos, verificar regulador/estructura legal, y decidir con tu árbol — no con el enlace. La mejor oferta del mercado no abre puertas cerradas.
+
+</details>
+
+<h2>📖 Glosario del Módulo</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Término</th>
+<th>Inglés</th>
+<th>Definición</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A-Book</td>
+<td><em>A-book</em></td>
+<td>Modelo donde el broker transmite tu orden al mercado y cobra comisión/spread: sin riesgo direccional propio, conflicto estructural bajo</td>
+</tr>
+<tr>
+<td>B-Book</td>
+<td><em>B-book</em></td>
+<td>Modelo donde el broker internaliza la orden y ES tu contraparte: legal y funcional, pero exige regulación fuerte y auditoría de ejecución propia</td>
+</tr>
+<tr>
+<td>Regulación estricta</td>
+<td><em>tier-1 regulation</em></td>
+<td>Supervisión con teeth: segregación de fondos, fondo de compensación, reportes, canal de disputa — lo que la licencia "de registro" no da</td>
+</tr>
+<tr>
+<td>Segregación de fondos</td>
+<td><em>client fund segregation</em></td>
+<td>Tu capital en cuentas bancarias separadas del capital de la firma: el requisito regulatorio que protege la custodia</td>
+</tr>
+<tr>
+<td>Jurisdicción offshore</td>
+<td><em>offshore jurisdiction</em></td>
+<td>Marco con licencia de registro sin supervisión real del cliente: operar ahí = asumir el riesgo de custodia completo por cuenta propia</td>
+</tr>
+<tr>
+<td>Afiliado</td>
+<td><em>affiliate (CPA/revenue share)</em></td>
+<td>Intermediario que cobra por referirte — a veces un % de TUS pérdidas: su ranking es pista, nunca evidencia</td>
+</tr>
+<tr>
+<td>Opciones binarias</td>
+<td><em>binary options</em></td>
+<td>Pago fijo &lt; 100 % por acertar dirección a plazo fijo: esperanza negativa estructural (payout 0,80 exige 55,6 % de acierto solo para empatar)</td>
+</tr>
+<tr>
+<td>Martingala</td>
+<td><em>martingale</em></td>
+<td>Duplicar tamaño tras cada pérdida: la racha n acumula r(2ⁿ−1) — el quiebra llega antes que la racha esperada de tu WR</td>
+</tr>
+<tr>
+<td>Indicador repintante</td>
+<td><em>repainting indicator</em></td>
+<td>El que reescribe sus señales históricas con datos nuevos: look-ahead como producto — se detecta con el test del replay/screenshot</td>
+</tr>
+<tr>
+<td>Esquema MLM</td>
+<td><em>MLM scheme</em></td>
+<td>Modelo cuyo plan de ingresos real paga por reclutar, no por enseñar: la prueba de salida lo delata</td>
+</tr>
+<tr>
+<td>Gurú de trading</td>
+<td><em>trading guru</em></td>
+<td>El que monetiza audiencia (lujo alquilado, testimonios filtrados) y no ofrece cuenta auditada de terceros: prueba social fabricada</td>
+</tr>
+<tr>
+<td>Warn list</td>
+<td><em>warning list</em></td>
+<td>La lista de alerta del regulador: las firmas denunciadas aparecen ahí antes de colapsar — paso 3 de la verificación</td>
+</tr>
+<tr>
+<td>Due diligence</td>
+<td><em>due diligence</em></td>
+<td>La investigación forense de un proveedor con matriz de criterios y fuente por celda — la misma rúbrica para todos, sin marcas</td>
+</tr>
+<tr>
+<td>Prop firm</td>
+<td><em>proprietary trading firm (retail)</em></td>
+<td>Firma que vende desafíos y "fondea" aprobadros: su ingreso principal son los fees de los que fracasan</td>
+</tr>
+<tr>
+<td>Desafío</td>
+<td><em>challenge</em></td>
+<td>El examen de evaluación (objetivo + drawdown + reglas finas): el producto que la firma vende</td>
+</tr>
+<tr>
+<td>Fee del desafío</td>
+<td><em>challenge fee</em></td>
+<td>El precio del intento (típicamente no reembolsado salvo condiciones): el ingreso principal del modelo</td>
+</tr>
+<tr>
+<td>Cuenta fondeada</td>
+<td><em>funded account</em></td>
+<td>La cuenta del aprobado — a menudo demo con premio: el payout depende de la solvencia y voluntad de la contraparte</td>
+</tr>
+<tr>
+<td>Profit split</td>
+<td><em>profit split</em></td>
+<td>El reparto de ganancias (típicamente 70-90 % al trader): competitivo por marketing, secundario en el modelo de ingresos</td>
+</tr>
+<tr>
+<td>Drawdown trailing</td>
+<td><em>trailing drawdown</em></td>
+<td>El límite total cuyo suelo sube con tu equity pico: al pico +7 %, tu suelo puede estar en −3 % — cambia el sizing del desafío</td>
+</tr>
+<tr>
+<td>Consistency rule</td>
+<td><em>consistency rule</em></td>
+<td>Ningún día puede representar más del X % del beneficio: castiga la concentración (y el día de noticias) en el payout</td>
+</tr>
+<tr>
+<td>Riesgo dinámico</td>
+<td><em>dynamic risk sizing</em></td>
+<td>La escala 0,50→0,40→0,25→0 % según el drawdown consumido: la cascada de M8 recalibrada al límite del contrato</td>
+</tr>
+<tr>
+<td>"Todavía no"</td>
+<td><em>not yet</em></td>
+<td>La decisión ganadora cuando la simulación no pasa: se compra evidencia, no esperanza — posponer es gestión</td>
+</tr>
+<tr>
+<td>Racha esperada vs límite</td>
+<td><em>expected streak vs limit</em></td>
+<td>La regla de margen del programa: la peor racha esperada consume ≤ 50-60 % del drawdown total — si no, el fee no se compra</td>
+</tr>
+<tr>
+<td>Plan de capitalización</td>
+<td><em>capitalization plan</em></td>
+<td>El documento a 12 meses: línea base propia + fondeo como rama opcional con contraparte cotizada — nunca plan A ni rescate</td>
+</tr>
+<tr>
+<td>Renta de capital</td>
+<td><em>capital income</em></td>
+<td>La clasificación fiscal de los rendimientos de patrimonio: la que tiende tu perfil de baja frecuencia — se confirma con profesional local</td>
+</tr>
+<tr>
+<td>Actividad económica</td>
+<td><em>business income</em></td>
+<td>La clasificación de negocio: frecuencia, apalancamiento, derivados y dependencia económica empujan hacia ella</td>
+</tr>
+<tr>
+<td>Expediente fiscal</td>
+<td><em>tax record file</em></td>
+<td>Journal + estados mensuales + movimientos de dinero, archivados y cruzados cada mes: la defensa que se construye fila por fila</td>
+</tr>
+</tbody>
+</table></div>
+<h2>🔗 Referencias</h2>
+<ul>
+<li><a href="SYLLABUS.html">SYLLABUS.md § 8 — N4, Módulo 11</a></li>
+<li><a href="analisis_cursos.html">analisis_cursos.md</a> — trazabilidad 003 · M4.1-4.2, M6.1-6.6 y 004 · M8.1-8.5; aportes propios: due diligence universal sin marcas, reglas finas de prop firms (vacío 6), fiscalidad por principios (vacío 7), tier list como snapshot</li>
+<li><a href="hub-mod-10.html">Módulo 10 · Psicotrading Científico</a> — anterior: la conducta documentada que la puerta 3 del 11.6 audita</li>
+<li><a href="hub-mod-08.html">Módulo 8 · Gestión del Riesgo</a> — la cascada que la matriz de riesgo dinámico recalibra al límite del contrato</li>
+<li><a href="receta-primera-operacion.html">La Receta de tu Primera Operación</a> — el caso maestro: su coste medio audita el pilar de costos y su E alimenta el plan de capitalización</li>
+<li><a href="plantilla_journal_v1.html">Plantilla journal v1</a> — los 5 números de la simulación y el expediente fiscal que ya llevas desde M9</li>
+<li><a href="hub-mod-12.html">Módulo 12 · Plan de Trading y Plan de Negocio</a> — el siguiente: la matriz, el informe y el plan de capitalización se integran al documento final del negocio</li>
+</ul>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="leccion-10-7.html"><span class="lbl">← Anterior</span><span class="ttl">Lección 10.7 · Rutina y hábitos — la arquitectura diaria del rendimien</span></a>
+    <a class="next" href="leccion-11-1.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 11.1 · Brokers de verdad — la infraestructura no se elige con </span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

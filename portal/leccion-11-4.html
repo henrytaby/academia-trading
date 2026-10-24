@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 11.4 · Reglas finas de las prop firms — el examen real está en · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a class="active" href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>💼 N4 · Negocio<span class="sep">/</span>M11 · La Industria<span class="sep">/</span>Lección 11.4 · Reglas finas de las prop firms — el examen re</div>
+  <article class="doc-body">
+<h1>Lección 11.4 · Reglas finas de las prop firms — el examen real está en la letra pequeña</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>45–60 min de estudio</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-11.html">M11 · La Industria</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td><a href="leccion-11-3.html">Lección 11.3 · Prop firms: el negocio real</a></td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="leccion-11-5.html">Lección 11.5 · Matriz de riesgo para evaluaciones</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>El marketing de las prop firms vende el objetivo ("+8 % en dos fases") y esconde el mecanismo: <strong>las reglas finas</strong> — el conjunto de restricciones donde se pierde la minoría que ya superó la varianza. El patrón documentado del sector es consistente: el aspirante estudia el objetivo y descubre el drawdown; calcula el drawdown y descubre que es <em>trailing</em>; calcula el trailing y descubre la <em>consistency rule</em>; calcula la consistencia y descubre la restricción de noticias que invalidó su mejor día. Cada regla es legítima por separado (protegen a la firma del trader de un tiro de suerte y del riesgo mal gestionado) y juntas forman el <strong>examen real</strong> — la 11.3 dijo que la firma vende intentos; esta lección muestra el mecanismo fino por el que los intentos se cobran. El objetivo del programa no es "jugar con las reglas": es <strong>leerlas todas antes de pagar, simular tu propio sistema contra ellas y decidir con aritmética</strong> — la misma matriz de due diligence del 11.1, aplicada al contrato de fondeo. Si terminas con una sola idea: <strong>las reglas finas no son letra pequeña: son la especificación técnica del examen — y donde son ambiguas, la interpretación siempre favorece a quien las escribió.</strong></p>
+<h2>Concepto</h2>
+<p><strong>Las 6 reglas finas que desaprueban cuentas</strong> <em>(rangos típicos del sector — cada firma define las suyas y LA VERSIÓN CONTRACTUAL manda)</em>:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Regla</th>
+<th>Definición típica</th>
+<th>Trampa estándar</th>
+<th>Cómo se desaprueba sin darse cuenta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Drawdown diario</strong> (típicamente 4-5 %)</td>
+<td>Pérdida máxima en un día — y <strong>incluye flotantes</strong>: el peor momento del día, no el cierre</td>
+<td>Contarlo desde el balance del día vs desde el equity pico; algunas firmas lo miden a partir de la medianoche del servidor (TU 17h puede no ser SU 0h)</td>
+<td>Dos operaciones de 1 % + un flotante de −2,5 % en la tarde = 4,5 % → cuenta cerrada aunque cierres en verde</td>
+</tr>
+<tr>
+<td><strong>Drawdown total</strong> (típicamente 8-10 %)</td>
+<td>Límite de pérdida acumulada de la cuenta</td>
+<td><strong>Estático</strong> (desde el balance inicial) vs <strong>trailing</strong> (sigue el pico de equity): el trailing a tu pico +9 % pone tu suelo en −1 % — casi nada de aire</td>
+<td>La racha esperada de 9 (M8) al 1 % = −8,65 %: al límite estático la roza, al trailing la mató tres operaciones antes</td>
+</tr>
+<tr>
+<td><strong>Consistency rule</strong> (20-50 %)</td>
+<td>Ningún día puede representar más del X % del beneficio total del desafío</td>
+<td>Se aplica AL MOMENTO de retirar/pagar, no al aprobar: aprobar con un día "grande" y descubrir en el payout que no califica</td>
+<td>Un día de noticias genera el 70 % de tu ganancia → el payout se retiene hasta "distribuir" — o se anula el desafío</td>
+</tr>
+<tr>
+<td><strong>Restricción de noticias</strong> (±2-5 min)</td>
+<td>Prohibido abrir/cerrar en ventana de datos de alto impacto</td>
+<td>Definición de "alto impacto" cambia por firma y calendario; algunas bloquean CERRAR posiciones también</td>
+<td>Tu TP salta en el anuncio → ganancia anulada o cuenta violada: la regla no negocia con tu plan</td>
+</tr>
+<tr>
+<td><strong>Límites de lotaje</strong></td>
+<td>Lote máximo por operación (y a veces por cuenta) proporcional al "capital"</td>
+<td>El lote máximo real de tu sistema (0,25 lotes a 10 k) puede chocar con topes arbitrarios</td>
+<td>Escalar a 1 lote "porque el capital lo permite" = violación técnica instantánea</td>
+</tr>
+<tr>
+<td><strong>Políticas de copiado/grupo</strong></td>
+<td>Restricciones de copiar entre cuentas (propias o de terceros) y de estrategias "idénticas" entre participantes</td>
+<td>Las detecciones automáticas de similitud marcan falsos positivos (misma zona en H4 es común a miles)</td>
+<td>Copiar tu propio sistema en 2 firmas con ventanas distintas → descalificación por "grupo" o por latencia</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>El detalle técnico que más cuentas cobra: el drawdown flotante.</strong> La definición contractual de "pérdida diaria" casi siempre incluye el <strong>equity</strong>, no el balance: una posición flotante en −4,8 % cuenta aunque la cierres en −0,5 %. Para tu sistema con SL de 1 % y gestión de parciales, esto es estructural: el peor flotante intradía de TU historial (mídelo en el journal: es el máximo adverse excursion de la jornada) tiene que caber en el límite diario — y si tu plan abre 2 posiciones correlacionadas (M8: topes de cartera), el flotante combinado puede tocar el límite sin que ninguna operación individual esté "mal". La simulación previa (11.5) existe exactamente para esto: <strong>tu sistema ya tiene los datos para saber si cabe.</strong></p>
+<p><strong>El trailing drawdown, diseccionado.</strong> El drawdown estático (suelo fijo en balance inicial −10 %) es manejable con riesgo dinámico. El <em>trailing</em> (el suelo sube con tu equity) cambia la matemática del desafío: al llegar a +8 % de ganancia acumulada, tu suelo está en −2 % respecto al inicial — y tu racha esperada de 9 al 0,5 % (−4,5 %) <strong>pasa por debajo del suelo</strong>. La secuencia típica del aspirante: excelente primera semana (+6 %), racha normal de 7-8, cuenta cerrada por trailing — con el marketing de la firma mostrando el objetivo que alcanzó. La regla del programa: <strong>trailing drawdown = el tamaño de riesgo se calcula contra el PEOR caso del suelo móvil, no contra el inicial</strong> — la simulación del 11.5 lo modela.</p>
+<p><strong>Las reglas finas también son señal de due diligence.</strong> La claridad contractual es una métrica de la firma: reglas escritas con ejemplos numéricos y calculadora oficial = firma que quiere que sepas lo que firmas; reglas ambiguas ("a discreción de la firma", "uso abusivo", "consistencia razonable") = la interpretación favorable a la casa, documentada en sus propios términos. El colapso de 11.3 y las disputas públicas del sector giran casi siempre en la zona ambigua. Tu matriz del laboratorio puntuará la <strong>precisión</strong> de las reglas con la misma seriedad que el profit split.</p>
+<h2>Analogía</h2>
+<p>Las reglas del maratón escritas por el organizador. Un maratón serio publica reglas claras: tiempo límite, puntos de corte con reloj, qué cuenta como abandono — y las publica ANTES de que compres la inscripción, con ejemplos ("si estás en el km 30 después de las 13:00, el bus te recoge"). Un organizador tramposo publica "tiempo razonable, a criterio del comité" y decide en el km 40. El corredor profesional no solo entrena la distancia: entrena LOS CORTES (conoce su ritmo y los horarios de cada punto) y elige eventos con reglas precisas. El aspirante ingenuo solo mira la medalla prometida y descubre los cortes en el km 30. Tu sistema con su racha esperada es tu ritmo: las reglas finas son los puntos de corte — y la simulación del 11.5 es tu entrenamiento contra el reloj real.</p>
+<h2>Cómo se hace: la lectura forense de un contrato de desafío (20 minutos)</h2>
+<ol>
+<li><strong>Extrae las 6 reglas con sus números exactos</strong> (no los "típicos": los de ESTA firma) y escríbelas en tu matriz: drawdown diario (¿equity o balance? ¿desde qué hora?), drawdown total (¿estático o trailing? ¿suelo desde qué base?), consistency (¿%? ¿cuándo se aplica?), noticias (¿ventana? ¿qué calendario? ¿aplica a cierres?), lotaje, copiado.</li>
+<li><strong>Busca los 3 casos borde en las FAQ oficiales:</strong> (a) flotante que toca el límite diario y se recupera — ¿cuenta?; (b) ganancia de un día de noticias que supera el % de consistencia — ¿se retiene el payout o se anula?; (c) la definición exacta del suelo del trailing en tu mejor momento (pico +8 %: ¿dónde está el suelo?). Si las FAQ no responden con números, la ambigüedad es tu respuesta.</li>
+<li><strong>Simula tu sistema contra las 6 reglas</strong> (el laboratorio del 11.5 tiene la plantilla): tu racha esperada, tu peor flotante intradía medido, tu concentración de beneficios por día — los tres contra los límites del contrato.</li>
+<li><strong>Puntúa la precisión contractual</strong> en la matriz: reglas con ejemplos numéricos y calculadora oficial (2), reglas claras sin ejemplos (1), reglas a discreción (0 — y es señal de contraparte, 11.3).</li>
+<li><strong>Decide con la aritmética del 11.5:</strong> el fee se compra solo si la simulación pasa con margen (el programa exige que la peor racha esperada consuma ≤ 50-60 % del drawdown total — si consume el 90 %, la aprobación depende de la suerte, no del sistema).</li>
+</ol>
+<h2>Error común</h2>
+<p><strong>(1) "Las reglas finas son para los que operan mal."</strong> Falso por la varianza: la racha de 9 es la estructura NORMAL de un sistema con WR 40 % — el aspirante que la ignora no es un mal trader: es un comprador que no leyó la especificación del examen. <strong>(2) Confundir equity y balance.</strong> El 80 % de las sorpresas de drawdown diario nacen aquí <em>(proporción heurística)</em>: flotantes que cuentan, horas de corte de servidor, equity del pico. La lectura forense es obligatoria, no opcional. <strong>(3) "Aprobar primero, las reglas de payout después."</strong> La consistency rule y las restricciones de payout aplican EXACTAMENTE cuando ya hiciste el trabajo: aprobar sin leer la etapa de pago es correr el maratón sin leer dónde está el bus. <strong>(4) Optimizar el desafío en vez de operar el sistema.</strong> "Me salto la regla de noticias con órdenes pendientes", "distribuyo las ganancias en días artificiales" — manipular las reglas es violarlas con pasos intermedios (y las firmas lo persiguen contractualmente): o tu sistema pasa las reglas, o las reglas no son para tu sistema. <strong>(5) No documentar TU cumplimiento.</strong> Igual que el journal v1 te protege de tu memoria, el log de tus operaciones en el desafío (hora, flotante, distancia a cada límite) es tu evidencia ante una disputa: la firma tiene sus registros; tú tienes que tener los tuyos.</p>
+<h2>Conexión cuantitativa</h2>
+<p><strong>Hacia M8:</strong> las reglas finas son topes de riesgo ajenos: el drawdown diario de 5 % es una cascada de un nivel impuesta por contrato — y tu cascada personal (−2/−4/−6 %) debe dispararse ANTES que la del contrato: la firma nunca debe ver tu peor día primero. <strong>Hacia 9.2-9.3:</strong> los datos de tu forward testing (peor flotante intradía, concentración diaria de ganancias) son exactamente los que la simulación de reglas necesita: tu journal ya midió lo que el contrato exige. <strong>Hacia 11.5:</strong> la matriz de riesgo dinámico convierte estas reglas en el plan de sizing del desafío — la próxima lección es la traducción numérica de esta. <strong>Hacia la misión M-11:</strong> tu informe debe incluir la lectura forense de al menos 3 contratos reales — la precisión contractual puntuada como celda de la matriz.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li>Las reglas finas son <strong>la especificación técnica del examen real</strong>: drawdown diario (con flotantes), total (estático vs trailing), consistency, noticias, lotaje y copiado — la minoría que supera la varianza se pierde aquí.</li>
+<li>El <strong>drawdown flotante</strong> es la trampa nº 1: el peor momento del día cuenta, no el cierre — tu peor excursión intradía medida en el journal tiene que caber en el límite.</li>
+<li>El <strong>trailing drawdown</strong> cambia la matemática: al pico +8 % tu suelo puede estar en −2 % y la racha esperada de tu sistema pasa por debajo — el sizing se calcula contra el peor suelo móvil.</li>
+<li>La <strong>precisión contractual es una métrica de la firma</strong>: reglas con ejemplos numéricos = transparencia; "a discreción" = interpretación favorable a la casa — puntúala en la matriz como la propia rentabilidad.</li>
+<li>El protocolo: leer las 6 reglas con números exactos → 3 casos borde en las FAQ → simular tu sistema → puntuar precisión → comprar solo si la peor racha consume ≤ 50-60 % del drawdown total.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>Un desafío: drawdown diario 5 % (equity, medianoche servidor), total 10 % trailing, consistency 40 %, noticias ±3 min. Tu sistema: WR 40 %, racha esperada 9, peor flotante intradía medido 1,8 % (a riesgo 0,5 %). Simula: ¿cabe la racha esperada en el trailing al llegar a +6 % de ganancia acumulada? ¿Y tu peor flotante + 2 operaciones en el límite diario?</li>
+<li>Un aspirante aprueba con +12 % en 40 operaciones, donde un solo día de noticias aportó +7 %. Con consistency 40 %: ¿qué pasa en el payout, cuáles eran sus opciones correctas y qué regla del programa lo habría prevenido?</li>
+<li>Formula la regla del programa del margen de seguridad (peor racha ≤ 50-60 % del drawdown total) y calcula el riesgo máximo por operación que la cumple para un desafío de 10 % estático con tu racha esperada de 9. Compara con el riesgo al 1 %.</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. Trailing al pico +6 %: el suelo móvil está en −4 % respecto al inicial (10 % − 6 %); tu racha esperada de 9 a 0,5 % = −4,5 % **pasa por debajo del suelo** → descalificación estructural ANTES de terminar el desafío: el sistema no cabe a 0,5 % con trailing; a 0,25 % (−2,25 %) cabe con margen. Límite diario: peor flotante 1,8 % + 2 operaciones de 0,5 % perdidas = 2,8 % — cabe en 5 %, PERO con dos posiciones correlacionadas el flotante combinado podría llegar a ~3,8 %: todavía cabe, pero sin margen para una tercera — el plan debe limitar correlación intradía (tope motor de M8). Veredicto: el desafío solo se compra a 0,25 %, o se busca firma con drawdown estático.
+2. El día de noticias (58 % del total: 7/12) supera el 40 %: en el payout, la firma retiene hasta que la distribución "califique" o anula según el contrato — el aspirante descubre que aprobó sin calificar. Opciones correctas: repartir la ganancia operando más días SIN noticias (lo que el tiempo del desafío puede no permitir), o elegir firma sin consistency (con sus propias contras), o — la del programa — **no construir el desafío sobre un día de noticias**: la restricción de noticias y la consistencia son reglas del examen que se simulan antes de pagar. La regla del programa que lo previene: la lectura forense del contrato (11.4, paso 1-2) incluye el caso borde "¿ganancia de noticias > % de consistencia?" — las FAQ responden con números o el fee no se compra.
+3. Regla: la peor racha esperada de tu sistema debe consumir como máximo 50-60 % del drawdown total — el resto es margen de supervivencia para la varianza real (que no sabe que es "esperada"). Cálculo: racha de 9 al riesgo r con drawdown 10 %: <ktx class="ktx" data-tex="1-(1-r)^9 \le 0{,}06 \Rightarrow (1-r)^9 \ge 0{,}94 \Rightarrow r \le 1 - 0{,}94^{1/9} = 1 - 0{,}9931 = 0{,}69">1-(1-r)^9 \le 0{,}06 \Rightarrow (1-r)^9 \ge 0{,}94 \Rightarrow r \le 1 - 0{,}94^{1/9} = 1 - 0{,}9931 = 0{,}69</ktx> % — a 60 % de margen: <ktx class="ktx" data-tex="r \le 0{,}69">r \le 0{,}69</ktx> %... corrigiendo a la meta estricta del 50 %: <ktx class="ktx" data-tex="(1-r)^9 \ge 0{,}95 \Rightarrow r \le 0{,}57">(1-r)^9 \ge 0{,}95 \Rightarrow r \le 0{,}57</ktx> %. El programa recomienda 0,25-0,5 % (11.5) — dentro del margen con aire adicional. Al 1 %: 0,99⁹ = 0,9135 → la racha consume 86,5 % del límite: fuera de la regla, la aprobación depende de que la varianza "no venga" — exactamente la apuesta que el 92 % pierde.
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="leccion-11-3.html"><span class="lbl">← Anterior</span><span class="ttl">Lección 11.3 · Prop firms: el negocio real — quien pone las reglas gan</span></a>
+    <a class="next" href="leccion-11-5.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 11.5 · Matriz de riesgo para evaluaciones — el sizing que sobr</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

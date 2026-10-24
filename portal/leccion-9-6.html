@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 9.6 · Revisión semanal y mensual — el protocolo que decide cuá · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a class="active" href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>🛡️ N3 · Riesgo<span class="sep">/</span>M9 · Backtesting, Journal y Validación<span class="sep">/</span>Lección 9.6 · Revisión semanal y mensual — el protocolo que </div>
+  <article class="doc-body">
+<h1>Lección 9.6 · Revisión semanal y mensual — el protocolo que decide cuándo tocar el sistema (y cuándo NO)</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>45–60 min de estudio</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-09.html">M9 · Backtesting, Journal y Validación</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td><a href="leccion-9-5.html">Lección 9.5 · El Journal profesional</a></td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="hub-mod-09.html"#-laboratorio--backtesting-ciego-de-100-operaciones>🧪 Laboratorio del módulo</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>Un sistema sin auditoría programada se degrada por deriva en una de dos direcciones — y ambas son fatales. <strong>Hiperactividad:</strong> el trader que "mejora" su sistema cada tres días está haciendo data-mining en vivo (9.1) — cada cambio resetea su muestra a cero, y una década entera puede pasar sin acumular jamás 100 operaciones de NINGÚN sistema. <strong>Parálisis:</strong> el trader que no revisa cronifica sus errores — las E2 de esta semana son las E2 de hace dos meses, y el negocio acumula la misma fuga de ejecución durante años sin nombrarla. La revisión programada es el termostato entre ambos extremos: un momento fijo, con un protocolo fijo, donde el sistema PUEDE cambiar — y fuera del cual está congelado. Este protocolo es el segundo aporte propio del módulo al SYLLABUS (vacío nº 3): las actas semanales y mensuales que convierten tu journal en decisiones documentadas. Al terminar tienes la pieza que faltaba para que el negocio se mantenga solo: el calendario de mantenimiento que decide cuándo tocar el sistema — y, más importante todavía, cuándo NO.</p>
+<h2>Concepto</h2>
+<p><strong>La revisión semanal — el protocolo de 6 pasos (30–45 min, día fijo, fuera de mercado).</strong> Se agenda como cita inamovible (viernes tarde o domingo; nunca "cuando el mercado esté lento": la revisión es estructura, no oportunidad). Los pasos:</p>
+<ol>
+<li><strong>Leer la semana completa del journal</strong> — las operaciones Y los no-disparos: la semana se lee entera antes de opinar sobre ella. El conteo básico: N de operaciones, resultado en R, etiquetas E0–E7.</li>
+<li><strong>Contar las etiquetas</strong> — el mapa de la semana: E0 × 7, E2 × 3, E7 × 1. Sin conteo no hay patrón; sin patrón, la "sensación de la semana" (que la memoria ya está distorsionando) dictará conclusiones falsas.</li>
+<li><strong>Responder las 5 preguntas de auditoría</strong> (la tabla inferior) — con datos de las filas, no con recuerdos: cada pregunta cita su columna del journal v1.</li>
+<li><strong>Medir los disparos</strong> — ejecutados / debidos: la métrica de M8 de la semana. Un 8/9 no es un número: es una pregunta ("¿qué bloqueó el disparo que faltó?") con respuesta obligatoria en la conclusión.</li>
+<li><strong>Escribir UNA conclusión</strong> — la regla de UNA mejora: qué UNA cosa de ejecución se entrena la próxima semana (del tipo checklist, horario, filtro de fatiga). UNA, no cinco: la semana humana no absorbe más, y el entrenamiento disperso no entrena nada.</li>
+<li><strong>Documentar la decisión o la abstención</strong> — el acta cierra con: conclusión escrita, cambio de entrenamiento (si lo hay) y la línea explícita <em>"sistema v1.1: sin cambios"</em>. La abstención también se documenta: una revisión que no produce nada escrito no ocurrió.</li>
+</ol>
+<p><strong>Las 5 preguntas de auditoría semanal:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Pregunta</th>
+<th>Qué dato la responde</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>¿Operé solo setups válidos (8/8)?</td>
+<td>Conteo de filas con setup_valido = no o etiquetas E1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>¿Mi sizing respetó el presupuesto en todas?</td>
+<td>Columna lote vs calculadora; etiquetas E4 (debe ser cero)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>¿Todos mis SL se respetaron — puestos antes y sin manipulación?</td>
+<td>Columna SL antes de entrada; etiquetas E3</td>
+</tr>
+<tr>
+<td>4</td>
+<td>¿Mi estado emocional contaminó decisiones?</td>
+<td>Patrones del pre/post: pre &gt; 8 con pérdidas (revancha), post &lt; 4 con reentrada (tilt); etiquetas E6</td>
+</tr>
+<tr>
+<td>5</td>
+<td>¿Qué UNA cosa corrijo la próxima semana?</td>
+<td>La etiqueta más frecuente NO-E0 + su corrección de ejecución más concreta</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>La revisión mensual — las métricas contra el reporte (1–2 h, última semana del mes).</strong> La pregunta del mes es una sola: <strong>¿el mes que viví se parece al sistema que medí?</strong> Concretamente: el WR del mes contra el IC del backtest ([30,4 %, 49,6 %] en el caso maestro), el PF neto contra el medido, la racha del mes contra la distribución (una racha de 9-10 en un mes de 20 ops es estadística normal, no crisis), el Max DD acumulado contra la línea −15 % de M8, el coste real contra el 0,08R, y los disparos del mes contra 100 %. De esa comparación sale la <strong>ventana de modificación</strong>: el único momento del calendario donde el sistema puede cambiar.</p>
+<p><strong>La ventana de modificación — las 4 condiciones acumulativas.</strong> El sistema v1.x solo cambia cuando TODAS se cumplen:</p>
+<ol>
+<li><strong>Es ventana mensual</strong> (fin de mes, en frío, con el acta mensual delante) — nunca intradía, nunca tras una racha, nunca "ahora que lo veo claro".</li>
+<li><strong>Hay evidencia con N suficiente</strong> — un caso borde visto 2 veces no es evidencia; el umbral del programa: el patrón debe aparecer en ≥ 10 % de las operaciones del mes (o ser estructuralmente grave: una sola E3/E6 es grave por definición, porque ataca el presupuesto).</li>
+<li><strong>UNA sola modificación por vez</strong> — la atribuibilidad: si cambias el TP y el filtro a la vez y la E mejora, no sabrás a qué se debió. La modificación única es lo que hace legible el siguiente ciclo.</li>
+<li><strong>Re-test antes de operar</strong> — el sistema modificado (v1.2) corre 50–100 backtests ciegos NUEVOS antes de tocar demo o real: cada modificación resetea la muestra, y operar un sistema sin muestra es empezar de cero sin haberlo declarado.</li>
+</ol>
+<p><strong>La lista negra — cuándo NO se modifica (cada ítem con su razón cuantitativa):</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Señal (la excusa)</th>
+<th>Por qué NO (la razón)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"Vine de una racha de 5, algo hay que cambiar"</td>
+<td>La racha de 5 con WR 40 % tiene P = 0,6⁵ ≈ 7,8 % por ventana — en 20 ops por mes es estadística NORMAL (7.5); cambiar tras ella es operar la distribución de cola</td>
+</tr>
+<tr>
+<td>"El WR de mis últimas 20 ops bajó a 30 %"</td>
+<td>Con N=20 el IC es ±22 pp: un 30 % medido es indistinguible de un 40 % real; la muestra no autoriza nada</td>
+</tr>
+<tr>
+<td>"Acabo de ganar 3 seguidas, el sistema puede aflojarse"</td>
+<td>El exceso también es varianza; relajar tras ganancias es la puerta del oversizing progresivo (8.4)</td>
+</tr>
+<tr>
+<td>"Vi un video que dice que el R:B 1:3 es mejor"</td>
+<td>Una hipótesis nueva entra por la puerta del laboratorio (M7): declaración + backtest propio + ventana — no por YouTube</td>
+</tr>
+<tr>
+<td>"Este mercado ya no funciona como antes"</td>
+<td>Puede ser verdad (el régimen cambia) — y por eso se documenta como sospecha y se decide CON datos del acta mensual, no con la sensación del martes</td>
+</tr>
+</tbody>
+</table></div>
+<p>La lista negra comparte mecanismo con el protocolo de apagado de 8.6: <strong>las decisiones estructurales se toman en frío, por escrito, contra números</strong> — el cerebro estresado o eufórico falsifica evaluaciones cualitativas, y el calendario existe para que la decisión importante no coincida jamás con el momento emocional.</p>
+<p><strong>El changelog del sistema.</strong> Cada modificación que supera las 4 condiciones queda registrada como una entrada firmada: fecha, versión (v1.1 → v1.2), evidencia que la motivó (filas del journal, actas), la modificación única (qué componente cambia, de qué a qué) y el plan de re-test (N, fechas). El changelog es al sistema lo que el historial clínico al paciente: sin él, cada "mMMM, mejor lo cambio" parece razonable en soledad; con él, la cadena de decisiones se puede auditar — y el patrón más revelador del changelog amateur es su frecuencia (cada 2 semanas = data-mining en vivo; cada 6-12 meses CON evidencia = mantenimiento profesional).</p>
+<h2>Analogía</h2>
+<p>El mantenimiento aeronáutico por horas de vuelo. Los aviones no se revisan "cuando suenan raro" ni se les cambian piezas por inspiración: se revisan <strong>por calendario programado</strong> — cada X horas de vuelo, una inspección definida; cada Y horas, una mayor. Y cada intervención queda en el log técnico: qué se cambió, con qué evidencia, quién la aprobó, y el vuelo de prueba que valida el cambio antes del servicio comercial. La razón es la misma del changelog: en un sistema complejo, la "mejora" no auditada es indistinguible del sabotaje — el mecánico que "ajusta de oído" es el que crea los incidentes que investigará la caja negra. Tu sistema v1.x es una aeronave: las actas semanales son las inspecciones de línea, la ventana mensual es el hangar programado, y el changelog es tu log técnico. La lista negra es la regla que toda la aviación aprendió con sangre: el piloto que "siente" que el motor suena raro aterriza — pero el mecánico no desmonta el motor en el aire: se espera al hangar, con el manual y los datos.</p>
+<pre class="mermaid">flowchart TD
+    A[&quot;Senal de mal resultado&lt;br/&gt;racha - semana roja - metrica fuera&quot;] --&gt; B{&quot;Es estadisticamente&lt;br/&gt;esperable - 7.5 y 9.3&quot;}
+    B -- &quot;sí - dentro de la cola normal&quot; --&gt; C[&quot;Abstencion documentada&lt;br/&gt;v1.1 sigue - cero cambios&quot;]
+    B -- &quot;no - fuera de lo esperable&quot; --&gt; D{&quot;Hay evidencia con N&lt;br/&gt;patron recurrente y grave&quot;}
+    D -- &quot;no / insuficiente&quot; --&gt; C
+    D -- &quot;sí&quot; --&gt; E{&quot;Es ventana mensual&lt;br/&gt;y en frio&quot;}
+    E -- &quot;no&quot; --&gt; F[&quot;Anotar la sospecha con fecha&lt;br/&gt;decidir en la ventana&quot;]
+    E -- &quot;sí&quot; --&gt; G[&quot;UNA modificación única&lt;br/&gt;changelog firmado v1.x&quot;]
+    G --&gt; H[&quot;Re-test 50-100 backtests ciegos&lt;br/&gt;antes de operar la nueva versión&quot;]
+    H --&gt; I[&quot;v1.x+1 entra en demo&lt;br/&gt;con la muestra reiniciada a cero&quot;]
+</pre>
+<h2>Cómo se hace: agendar y ejecutar tu primera revisión</h2>
+<ol>
+<li><strong>Agenda las dos citas permanentes.</strong> Semanal: día y hora fijos (45 min), fuera de mercado, con el journal delante. Mensual: última semana del mes (90 min), con el acta mensual y el reporte del backtest en paralelo. Ambas van al calendario como citas de negocio — porque lo son: son la única hora semanal en que el negocio decide conscientemente.</li>
+<li><strong>Usa las plantillas del programa.</strong> El <a href="plantilla_journal_v1.html"><code>journal/plantilla_journal_v1.md</code></a> incluye las plantillas de acta semanal (6 campos) y de acta mensual (métricas del mes vs intervalos + decisión de versión). Cópialas, úsalas, archívalas: la serie de actas es el historial clínico de tu negocio.</li>
+<li><strong>Ejecuta la semana 1 del backtest como primer material.</strong> Tu primera acta semanal se practica CON el backtest (la misión M-9 incluye la revisión simulada con el agente): el material es el mismo (filas, etiquetas, no-disparos) y el error cero dinero — practica el protocolo en el laboratorio para que llegue entrenado a la fase forward.</li>
+<li><strong>Aplica la regla de UNA mejora en el entrenamiento, NO en las reglas.</strong> La conclusión semanal solo produce cambios de EJECUCIÓN (checklist, horario, filtro de fatiga); los cambios de REGLAS viven en la ventana mensual con las 4 condiciones. La distinción: entrenar "esperar la vela cerrada" no cambia el sistema — lo ejecuta.</li>
+<li><strong>Si toca modificación: recorre el árbol completo.</strong> La candidata entra con sus filas, pasa la prueba de N, se espera a la ventana, se formula como UN cambio de UN componente, se firma en el changelog y se re-testea. Si cualquier eslabón falla, la sospecha queda documentada con fecha — y el sistema sigue. Ambos desenlaces son éxitos del protocolo: la modificación bien hecha y la abstención bien documentada protegen la muestra igual.</li>
+</ol>
+<h2>Error común</h2>
+<p><strong>(1) Revisar "cuando el mercado está lento".</strong> La revisión que se agenda por oportunidad no es un protocolo: es una visita ocasional — y el mes que el mercado no se aquietó, no hubo revisión (exactamente el mes en que hacía falta). Cita fija, calendario, sin excusas: la auditoría interna que depende del humor es la que no ocurre. <strong>(2) Cambiar dos cosas a la vez.</strong> "Ya que estoy, ajusto el TP y el filtro" — con dos cambios y una mejora, no sabes cuál la produjo (y si empeora, tampoco): la atribuibilidad es lo que hace legible el ciclo siguiente; la ventana mensual acepta UNA modificación y te obliga a priorizar — la priorización forzada es parte del diseño. <strong>(3) Confundir ajuste de ejecución con cambio de sistema.</strong> Las E2 cronificadas no piden un sistema nuevo: piden entrenar el disparo (checklist, vela cerrada). Reescribir reglas para resolver lo que es un problema de ejecución es el error más común del mes 3-6 — y produce sistemas que "cambian cada semana" sin que ninguno llegue nunca a tener muestra. <strong>(4) La revisión sin acta.</strong> "Lo revisé mentalmente y va todo bien" — no hay evidencia de que ocurriera; la memoria del revisor es la misma que falsifica el journal (9.5). Sin acta escrita, la revisión no ocurrió — y la serie de actas es lo que M12 convertirá en plan. <strong>(5) El "progresito" semanal.</strong> "Mejoro una regla cada semana, ¿no es eso ser diligente?" — no: cada cambio resetea la muestra a cero; el que mejora cada semana jamás acumula 100 operaciones del mismo sistema, y por tanto jamás sabe si NINGUNO funcionó. La diligencia mal dirigida es data-mining con calendario: la mejor versión de tu sistema en diciembre será la que acumuló meses de muestra, no la que acumuló cambios.</p>
+<h2>Conexión cuantitativa</h2>
+<p><strong>Hacia 9.3:</strong> los umbrales de la tabla de 3 vías son los que la acta mensual compara contra el mes real — el IC del WR, el PF neto, la racha esperada: la revisión no inventa criterios, aplica los declarados. <strong>Hacia 7.5:</strong> la distribución de rachas es lo que separa "estadísticamente esperable" de "fuera de lo esperable" en el primer nudo del árbol — sin esa estadística, toda racha parecería motivo de cambio y el sistema se desarmaría en la primera cola normal. <strong>Hacia 8.2:</strong> el Max DD del mes contra la línea −15 % es la comparación de cada acta: la emergencia de M8 y la auditoría de M9 comparten el mismo número — el negocio tiene un solo tablero. <strong>Hacia M10:</strong> las actas leen tus patrones emocionales (pre &gt; 8, post &lt; 4, E6) y M10 los tratará — la revisión es donde la psicología entra como DATO, no como discurso. <strong>Hacia M12:</strong> la serie de actas y el changelog son la materia prima del plan de trading (el documento rector que M12 escribirá): el plan declara tus reglas de modificación — que habrás practicado durante meses en estas actas. Y hacia la Evaluación N3: la revisión semanal simulada con el agente (misión M-9) es el ensayo general de la entrevista socrática de graduación.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li>La revisión semanal: <strong>6 pasos, día fijo, fuera de mercado</strong> — leer, contar, 5 preguntas, disparos, UNA conclusión, decisión documentada o abstención.</li>
+<li>La regla de UNA mejora ataca solo la <strong>ejecución</strong> (checklist, horario, fatiga); las reglas del sistema solo cambian en la <strong>ventana mensual</strong>.</li>
+<li>La ventana exige 4 condiciones acumulativas: <strong>fin de mes en frío + evidencia con N + UNA modificación única + re-test de 50–100 backtests</strong> antes de operar.</li>
+<li>La lista negra (rachas, N=20, "lo vi en un video") tiene razón cuantitativa en cada ítem: la cola normal de la distribución no es un diagnóstico.</li>
+<li>Cada modificación resetea la muestra a cero — por eso el changelog profesional se firma cada 6-12 meses con evidencia, y el amateur "mejora" cada dos semanas hasta no tener ninguna muestra.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>Tu acta semanal cierra con E0 × 6, E2 × 3 (entradas antes de vela cerrada), E7 × 1 (OCO olvidado, detectado a tiempo). Formula la conclusión única, el entrenamiento de la semana y la línea de abstención sobre el sistema. ¿Por qué el E7 no produce conclusión separada?</li>
+<li>El mes cierra: 20 operaciones, WR 38 %, PF neto 1,28, racha máxima 10 (−9,6 %), disparos 19/20, coste real 0,09R. Aplica la comparación mensual contra el backtest (WR esperado 40 % ± 9,6; PF neto 1,25; racha esperada ~9 en 100; c 0,08R) y escribe la decisión de la ventana.</li>
+<li>Tu compañero de estudio cambia su SL a 1,5× tras perder 3 seguidas un martes. Nombra las violaciones del protocolo (3) y qué habría hecho con la misma inquietud el protocolo del programa.</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. Conclusión única: "4 de 10 entradas dispararon antes de la vela cerrada (E2): esta semana se entrena el bloqueo del envío — el checklist impreso con el paso 'vela cerrada sí/no' antes de cada orden, y ninguna ventana de orden abierta mientras la vela de decisión está en formación". El E7 no produce conclusión separada porque la regla de UNA mejora prioriza por frecuencia e impacto: 4 E2 sistemáticas > 1 E7 puntual ya detectada y corregida (se anota en el acta con su corrección inmediata — dobles chequeos de OCO — pero el entrenamiento de la semana es uno). Línea de abstención: "Sistema v1.1: sin cambios". La E0 dominante (6/10) confirma que el sistema se está ejecutando; el problema es de disparo, no de diseño.
+2. Comparación: WR 38 % dentro del IC [30,4; 49,6] ✓ · PF neto 1,28 ≥ 1,25 ✓ · racha 10 en 20 ops: dentro de lo plausible (la racha esperada ~9 corresponde a 100 ops; en 20, la cola normal llega a 7-8 y una de 10 con P 0,6¹⁰ ≈ 0,6 % por ventana × ~11 ventanas ≈ 6-7 % es infrecuente pero no anómala — se documenta) · disparos 19/20 = 95 % → fuga del 5 %, la pregunta obligatoria de la conclusión ✓ · coste real 0,09R vs 0,08R estimado: dentro del margen, se actualiza la c para el próximo reporte ✓. Decisión de la ventana: **abstención documentada** — el mes se parece al sistema medido; v1.1 sigue; la conclusión mensual entrena el disparo faltante y el changelog registra "sin cambios, con sospecha de racha documentada". Ninguna métrica da para modificación: la evidencia con N es insuficiente y el primer nudo del árbol (¿esperable?) dice sí.
+3. Violaciones: (1) decidió FUERA de ventana (un martes, en caliente, tras una racha — exactamente el momento que el calendario existe para proteger); (2) decidió SIN evidencia con N (3 pérdidas: P(racha 3) = 0,6³ ≈ 22 % por ventana — estadística normal, no diagnóstico); (3) decidió SIN protocolo de modificación (no hay changelog, no hay re-test: el sistema "nuevo" sin muestra es empezar de cero sin declararlo). El protocolo con la misma inquietud: la sospecha se anota con fecha en el diario, se verifica que 3 pérdidas sean cola normal (sí), y el tema entra al acta mensual — si tras el mes la evidencia con N existe (patrón recurrente ≥ 10 % o gravedad estructural), se formula UNA modificación en la ventana, se firma y se re-testea. La inquietud era legítima; el momento y el procedimiento, no.
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="leccion-9-5.html"><span class="lbl">← Anterior</span><span class="ttl">Lección 9.5 · El Journal profesional — tu caja negra con taxonomía de </span></a>
+    <a class="next" href="hub-mod-10.html"><span class="lbl">Siguiente →</span><span class="ttl">Módulo 10 · Psicotrading Científico — operar con la propia máquina</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

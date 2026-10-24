@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 2.5 · Personalidad de cada mercado · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a class="active" href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>🧱 N1 · Base<span class="sep">/</span>M2 · El Motor del Precio<span class="sep">/</span>Lección 2.5 · Personalidad de cada mercado</div>
+  <article class="doc-body">
+<h1>Lección 2.5 · Personalidad de cada mercado</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>40–50 min de estudio</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-02.html">M2 · El Motor del Precio</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td><a href="leccion-2-4.html">Lección 2.4 · Forex y sus sesiones</a></td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="leccion-2-6.html">Lección 2.6 · Calendario macro e intermercados</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>Un sistema no se opera "en el mercado" en abstracto: se opera en UN mercado concreto, con su horario, su volatilidad, sus costos y sus drivers. El EUR/USD de la madrugada y el NAS100 a la apertura de Nueva York son dos deportes distintos con la misma pelota. El principiante que cambia de instrumento cada día no está "diversificando": está estrenando un mercado nuevo sin conocer sus reglas locales, y pagando la matrícula de cada uno. Esta lección te da el perfil operativo de los tres mercados que el programa usa como coordenada principal (forex, oro, índices, según tu mapa del Módulo 1), con la lógica para auditar cualquier otro que te tiente más adelante. Y cierra con la regla de concentración del programa: <strong>un mercado dominado vale más que seis medianamente conocidos</strong> — en formación, la profundidad bate a la amplitud.</p>
+<h2>Concepto</h2>
+<p>Cada mercado tiene una <strong>microestructura</strong> — el conjunto de reglas y comportamientos que lo distinguen — organizada en cinco dimensiones. Las dos primeras ya las tienes (Lecciones 2.1–2.4); aquí añadimos las tres restantes:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Dimensión</th>
+<th>Qué pregunta</th>
+<th>Dónde se vio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Costo</td>
+<td>¿Cuánto spread/comisión pago por operar?</td>
+<td>2.1</td>
+</tr>
+<tr>
+<td>Energía</td>
+<td>¿Cuánto se mueve y en qué horas? (volatilidad, ADR)</td>
+<td>2.2, 2.4</td>
+</tr>
+<tr>
+<td>Liquidez</td>
+<td>¿Puede ejecutarse tamaño sin impacto?</td>
+<td>2.3</td>
+</tr>
+<tr>
+<td><strong>Estructura de horario</strong></td>
+<td>¿Abre/cierra? ¿Hay gaps? ¿24/7 o sesiones?</td>
+<td>esta lección</td>
+</tr>
+<tr>
+<td><strong>Drivers</strong></td>
+<td>¿Qué mueve el precio aquí? ¿Quién decide?</td>
+<td>esta lección</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Perfil de los tres mercados de la coordenada del programa</strong> <em>(rangos ilustrativos — se verifican en vivo en el laboratorio)</em>:</p>
+<p><strong>FX majors (EUR/USD como representante).</strong> Horario: 24/5, sin gaps salvo fin de semana. Volatilidad: moderada; ADR (recorrido medio diario) típicamente 50–90 pips. Costo: el más bajo de todos. Drivers: diferencial de tasas entre las dos economías del par, flujos comerciales, riesgo sistémico. Personalidad: el buey de labranza — lento, fuerte, predecible en su cansancio; las tendencias grandes tardan semanas.</p>
+<p><strong>Oro (XAU/USD).</strong> Horario: 24/5 como forex, pero su energía se concentra en el horario de EE. UU. (datos, FOMC). Volatilidad: alta — ADR típicamente de decenas de dólares (un 1 %–1,5 % del precio por día <em>(ilustrativo)</em>). Costo: spread notablemente mayor que EUR/USD y tamaño de lote distinto (1 lote = 100 oz). Drivers: tasas reales de EE. UU. (relación inversa típica), DXY (inversa), aversión al riesgo (directa en pánicos). Personalidad: el gallo de pelea — reacciona a todo, amplifica lo que toca; premia mucho y castiga mucho más.</p>
+<p><strong>Índices (US30/US100/US500 como CFD).</strong> Horario: sesión de <em>cash</em> centrada en NY + sesiones extendidas; <strong>gaps</strong> de apertura frecuentes y de tamaño variable. Volatilidad: alta en apertura (primeros 30–60 min) y cierre; ADR de cientos de puntos según el período y el VIX <em>(ilustrativo)</em>. Costo: spread en puntos + valor del tick que <strong>varía por bróker</strong> (obligación: leer la especificación del contrato antes de calcular nada). Drivers: tasas, ganancias corporativas (<em>earnings</em>), apetito de riesgo, flujo pasivo indexado. Personalidad: caballo de carreras con salida en caja — arrastra fuerte desde el portalazo y odia el estancamiento.</p>
+<p><strong>Cripto (por contraste, mercado de referencia):</strong> 24/7 sin sesiones — sin "turno de oro" horario pero con fines de semana de liquidez fina y spreads engordados, donde los movimientos repentinos (<em>flash moves</em>) son más violentos. Drivers: ciclo propio, flujos de ETF, financiamiento de futuros perpetuos. El programa lo deja fuera de la coordenada de formación por costo relativo y régimen de volatilidad; el criterio de auditoría que aprendiste aquí sirve si algún día lo incorporas.</p>
+<h2>Analogía</h2>
+<p>Piensa en climas, no en animales. EUR/USD es clima templado: puedes planificar la semana con sombrilla pequeña; rara vez hay tormenta, pero casi nunca hay cosecha rápida. El oro es clima de montaña: amanece helado y a mediodía asa — el que se viste como en el valle (SL de forex sobre precios de oro) termina tiritando. Los índices son clima tropical de tarde: mañanas de portalazo eléctrico y tardes donde todo se calma de golpe; el que sale a las 11:00 buscando la tormenta de las 09:30 llega tarde. La cripto es el monzón: llueve cuando quiere, incluidos domingos. El punto pedagógico: <strong>tu sistema es tu vestimenta</strong>. El mismo outfit (SL fijo, tamaño fijo, expectativas fijas) no funciona en los cuatro climas — y por eso el programa te pide dominar UNO antes de coleccionar los otros.</p>
+<h2>Cómo se hace: comparar mercados con la misma vara, números cerrados</h2>
+<p>La comparación honesta se hace con <strong>el mismo riesgo y el mismo tipo de idea</strong> en cada mercado. Riesgo fijo: 1 % de 2 000 $ = 20 $ por operación (como siempre):</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>EUR/USD</th>
+<th>XAU/USD</th>
+<th>US30 (CFD)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ADR típico <em>(ilustrativo)</em></td>
+<td>~70 pips</td>
+<td>~30 $</td>
+<td>~350 puntos</td>
+</tr>
+<tr>
+<td>SL estructural típico</td>
+<td>25 pips</td>
+<td>4,00 $</td>
+<td>80 puntos</td>
+</tr>
+<tr>
+<td>Valor por unidad de movimiento</td>
+<td>10 $/pip por lote</td>
+<td>100 $/1 $ por lote (100 oz)</td>
+<td>según bróker — p. ej. 1 $/punto por contrato <em>(ilustrativo)</em></td>
+</tr>
+<tr>
+<td>Lote para arriesgar 20 $</td>
+<td><ktx class="ktx" data-tex="20/(25 \times 10) = 0{,}08">20/(25 \times 10) = 0{,}08</ktx></td>
+<td><ktx class="ktx" data-tex="20/4 = 5">20/4 = 5</ktx> oz = 0,05 lotes</td>
+<td><ktx class="ktx" data-tex="20/80 = 0{,}25">20/80 = 0{,}25</ktx> contratos <em>(según especificación)</em></td>
+</tr>
+<tr>
+<td>Spread típico <em>(ilustrativo)</em></td>
+<td>~1–2 pips</td>
+<td>~0,20–0,40 $</td>
+<td>~2–5 puntos</td>
+</tr>
+<tr>
+<td>Costo como % del SL</td>
+<td>~6–8 %</td>
+<td>~5–10 %</td>
+<td>~3–6 %</td>
+</tr>
+<tr>
+<td>Ventana de energía</td>
+<td>Solapamiento Londres–NY</td>
+<td>Horario de NY + datos</td>
+<td>Apertura y cierre de NY</td>
+</tr>
+</tbody>
+</table></div>
+<p>Tres lecturas del cuadro:</p>
+<ol>
+<li><strong>El riesgo es el mismo; el transporte cambia.</strong> 20 $ de riesgo se implementan con tamaños completamente distintos — por eso el Paso 5 de la receta es una fórmula, no una cifra memorizada. Si mañana cambias de mercado, el riesgo no cambia: cambia el cálculo.</li>
+<li><strong>El costo relativo se compara contra el SL, no contra el precio del activo.</strong> Un spread de 0,30 $ en oro no es "barato" ni "caro" en abstracto: es ~7 % de un SL de 4 $ — comparable al 6-8 % de EUR/USD. La pregunta siempre es: <em>¿qué porcentaje de mi recorrido típico se lleva el peaje?</em></li>
+<li><strong>La ventana de energía dicta tu horario.</strong> Tres mercados, tres ventanas distintas — y tu agenda (laboratorio de M1) solo puede estar en una a la vez con calidad. Otra razón para la concentración: <strong>tu reloj ya elige tu mercado</strong> aunque no lo sepas.</li>
+</ol>
+<h2>Error común</h2>
+<p>El primero: <strong>transplantar parámetros entre mercados</strong> — SL de 25 pips "funcionará" en oro (allí 25 pips = 0,0025 $: el ruido del spread te saca), TP de índice "adaptado" a EUR/USD (objetivo imposible para el ADR del par). Cada mercado se recalcula desde cero: ADR observado, SL por estructura, lote por fórmula. El segundo: <strong>coleccionar instrumentos en formación</strong> — operar lunes EUR/USD, martes oro, miércoles NAS100 "para ver qué gusta". Cada cambio reinicia tu curva de aprendizaje de ese instrumento (sesiones, personalidad, niveles relevantes) y fragmenta tus N operaciones: 30 trades repartidos en 3 mercados no son estadística de NINGUNO (N ≥ 100 por sistema, Lección 1.4). El programa fija la regla: un mercado principal durante toda la formación; los otros existen para observar y para la ficha de variación de tu receta, no para alternar por aburrimiento.</p>
+<h2>Conexión cuantitativa</h2>
+<p>El mercado elegido modifica los tres términos de tu ecuación. <strong><ktx class="ktx" data-tex="W">W</ktx> y <ktx class="ktx" data-tex="L">L</ktx>:</strong> el ADR determina cuánto recorrido estructural cabe en tu timeframe — un SL estructural de 25 pips en EUR/USD y otro de 80 puntos en US30 son proporcionalmente similares; un TP diseñado fuera del ADR típico es un deseo, no un objetivo. <strong><ktx class="ktx" data-tex="P_w">P_w</ktx>:</strong> la personalidad del mercado interactúa con tu sistema — un sistema de ruptura gana <ktx class="ktx" data-tex="P_w">P_w</ktx> donde hay expansión real (aperturas de NY) y la pierde en rangos finos de madrugada. <strong>Costos:</strong> ya visto — el spread relativo al SL es un impuesto por mercado. La suma cuantitativa: el "mejor mercado" no existe en abstracto; existe el mercado cuya <strong>energía, costo y horario</strong> encajan con tu sistema y tu vida — y eso se audita con el cuadro de esta lección, no con la impresión de un fin de semana. En la Lección 2.6 añadirás la última capa: los eventos macro que sacuden a los tres a la vez.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li>Todo mercado se audita en 5 dimensiones: costo, energía, liquidez, estructura de horario y drivers.</li>
+<li>FX majors: buey de labranza — 24/5, bajo costo, volatilidad moderada, driver = diferencial de tasas.</li>
+<li>Oro: gallo de pelea — energía en horario de EE. UU., volatilidad alta, drivers = tasas reales (inversa), DXY (inversa), pánico (directa).</li>
+<li>Índices: caballo con salida en caja — gaps, apertura violenta, valor del tick variable por bróker, drivers = tasas + earnings + apetito de riesgo.</li>
+<li>El mismo riesgo (1 %) se implementa con tamaños totalmente distintos por mercado: la fórmula manda, no la cifra.</li>
+<li>Un mercado principal en formación: los N ≥ 100 se necesitan POR sistema Y mercado; repartir trades fragmenta tu estadística.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>Tu colega usa su SL "estándar" de 25 pips en oro porque "le funcionó en EUR/USD". Calcula cuánto arriesga en realidad si 25 pips de oro = 0,0025 $ de movimiento y el spread es de 0,30 $.</li>
+<li>Con riesgo 20 $, SL de 80 puntos en US30 y especificación de 1 $/punto por contrato: ¿qué tamaño operas? ¿Y qué debes verificar ANTES de confiar en ese 1 $/punto?</li>
+<li>¿Por qué el programa prohíbe alternar de mercado cada día durante la formación, si "diversificar es bueno"?</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. Los "25 pips" de oro son 25 × 0,01 $ = 0,25 $ por onza de recorrido... en el mejor caso: el spread solo (0,30 $) ya supera ese SL — el stop quedaría DENTRO del costo de entrada/salida normal. En la práctica: el stop se ejecuta con el primer respiro del spread (slippage incluido), y como el lote se calculó con un SL ficticio de 25 "pips de forex", el tamaño real queda multiplicado por 40 respecto al correcto (4 $ vs 0,10 $ de unidad). Resultado: riesgo real ≈ 40× el previsto o pérdida inmediata por spread. Moraleja: cada mercado recalcula SL por estructura ADR + lote por fórmula.
+2. Tamaño = 20 $ / 80 puntos = 0,25 contratos. Antes de confiar: verificar en la **especificación del contrato** de tu bróker el valor real del tick/punto, el tamaño del contrato, el margen exigido y los horarios — el valor "1 $/punto" era ilustrativo y en CFD de índices varía entre brókeres; calcular con el valor equivocado multiplica tu riesgo por el factor de error.
+3. Porque "diversificar" con 30 trades en 3 mercados no es estadística de ninguno (N ≥ 100 por sistema-mercado, Lección 1.4), y porque cada mercado exige su curva de aprendizaje local (sesiones, ADR, niveles). En formación, la profundidad en UN mercado produce la validación que la amplitud fragmentada nunca alcanza. La diversificación real de cartera llega en M8 — con correlaciones medidas, no con aburrimiento.
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="leccion-2-4.html"><span class="lbl">← Anterior</span><span class="ttl">Lección 2.4 · Forex y sus sesiones</span></a>
+    <a class="next" href="leccion-2-6.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 2.6 · Calendario macro e intermercados</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

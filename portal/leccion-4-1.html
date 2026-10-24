@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 4.1 · TradingView profesional · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a class="active" href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>🧱 N1 · Base<span class="sep">/</span>M4 · Plataforma y Primera Ejecución<span class="sep">/</span>Lección 4.1 · TradingView profesional</div>
+  <article class="doc-body">
+<h1>Lección 4.1 · TradingView profesional</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>35–45 min de estudio + 30 min de configuración</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-04.html">M4 · Plataforma y Primera Ejecución</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td>— (primera lección del módulo)</td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="leccion-4-2.html">Lección 4.2 · Tipos de órdenes</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>La plataforma es tu oficina: es donde ocurre todo lo que los 11 módulos anteriores han preparado. Y como toda oficina, el tiempo que pierdes buscando las herramientas es tiempo de trabajo perdido — pero en trading el problema es peor, porque la búsqueda casi siempre ocurre cuando el mercado se está moviendo. Un trader que no sabe montar un layout, fijar una alerta o retroceder el histórico pierde capacidades que el programa da por sentadas: el laboratorio de M3 usó Bar Replay y la <a href="receta-primera-operacion.html">Receta de tu Primera Operación</a> asume que sabes leer un panel de cotización. Este módulo arranca con la herramienta porque la ejecución disciplinada empieza con una plataforma que se comporta de la misma manera cada día: mismo layout, misma watchlist, mismas alertas. La variedad es enemiga de la rutina, y la rutina de ejecución es lo que este módulo construye.</p>
+<h2>Concepto</h2>
+<p>Usaremos TradingView como herramienta de análisis (cuenta gratuita basta para el N1; sin marcas: cualquier plataforma equivalente sirve si tiene las mismas funciones). Las piezas que el programa usa a diario:</p>
+<ol>
+<li><strong>El gráfico y sus marcos temporales.</strong> Cada gráfico muestra un instrumento en un marco (D1, H4, H1, M15…). Cambiar de marco NO cambia el mercado: cambia la resolución de la cámara (fractalidad de la <a href="leccion-3-1.html">Lección 3.1</a>).</li>
+<li><strong>Escalas.</strong> Lineal (por defecto) y logarítmica: en la logarítmica, la misma distancia vertical representa el mismo % de movimiento. Para el forex y los marcos intradía del programa, la lineal es suficiente; la logarítmica importa al mirar años de índices.</li>
+<li><strong>Layout multitemporal.</strong> Un mismo instrumento, varios paneles sincronizados (ej. D1 + H4 + H1 + M15). Es la configuración estándar del programa: análisis top-down en una sola pantalla.</li>
+<li><strong>Watchlist.</strong> Tu lista vigilada: los 5 instrumentos del programa (EUR/USD, XAU/USD, US30, y 2 de tu elección). Una watchlist corta y fija es una decisión de negocio (concentración de la <a href="leccion-2-5.html">Lección 2.5</a>), no una limitación.</li>
+<li><strong>Alertas.</strong> Avisos cuando el precio toca un nivel (o un indicador se activa). Eliminan la vigilancia manual: tú defines la zona, la plataforma vigila. Tipos básicos: cruce de precio, cruce de línea/dibujo, y alertas recurrentes.</li>
+<li><strong>Bar Replay.</strong> La máquina del tiempo: reproduce el histórico vela a vela ocultando el futuro. Es el simulador de estudio del programa (laboratorios M3 y M9).</li>
+</ol>
+<p><strong>Atajos esenciales</strong> (los que se usan cada sesión):</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Atajo</th>
+<th>Acción</th>
+<th>Uso típico</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/</code> o coma</td>
+<td>búsqueda de instrumento</td>
+<td>cambiar de activo rápido</td>
+</tr>
+<tr>
+<td>Alt + T / Alt + H</td>
+<td>línea de tendencia / línea horizontal</td>
+<td>marcar zonas (M3.3)</td>
+</tr>
+<tr>
+<td>Rectángulo (<code>R</code>)</td>
+<td>dibujar zona</td>
+<td>el marcado estándar del programa</td>
+</tr>
+<tr>
+<td><code>Alt + R</code></td>
+<td>reproducir grabación de layout (replay)</td>
+<td>practicar sin futuro</td>
+</tr>
+<tr>
+<td>Ctrl + Z / Ctrl + Y</td>
+<td>deshacer / rehacer dibujos</td>
+<td>corregir marcado</td>
+</tr>
+<tr>
+<td>Rueda + Shift</td>
+<td>zoom horizontal rápido</td>
+<td>moverse entre marcos de tiempo visuales</td>
+</tr>
+<tr>
+<td>Doble clic en escala</td>
+<td>ajustar escala automática</td>
+<td>cuando el gráfico "se sale"</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>(los atajos exactos pueden variar por versión/idioma — los marcamos como orientativos)</em></p>
+<h2>Analogía</h2>
+<p>Una cabina de pilotos no tiene un solo interruptor fuera de sitio: cada palanca está siempre en el mismo lugar, y el piloto la opera sin mirar. Ese entrenamiento no es capricho — en plena turbulencia no hay tiempo de buscar. Tu plataforma es la cabina: cuando el precio llegue a tu zona (y llegará cuando estés lejos o ocupado), necesitas que tus manos sepan qué hacer sin pensar. El trader que cada día reorganiza sus gráficos, cambia de colores y prueba paneles nuevos está reorganizando la cabina en pleno vuelo. La rutina no es aburrimiento: es lo que libera tu atención para el mercado.</p>
+<h2>Cómo se hace: montar el layout de trabajo del programa (una vez)</h2>
+<p>Configuración estándar, con pasos cerrados. Tiempo: 30 min la primera vez, 0 después.</p>
+<ol>
+<li><strong>Abre 4 paneles del mismo instrumento</strong> (ej. EUR/USD): D1 arriba, H4 y H1 al centro, M15 abajo. En TradingView: divide el área en 4 y fija el símbolo sincronizado entre paneles.</li>
+<li><strong>Limpia el gráfico:</strong> quita indicadores de fábrica. Por ahora solo precio (M6 añadirá indicadores con criterio).</li>
+<li><strong>Guarda como plantilla del layout:</strong> nombre <code>FIT12-trabajo</code>. Cada sesión se abre en 2 segundos con la misma disposición.</li>
+<li><strong>Crea la watchlist <code>FIT12</code>:</strong> EUR/USD, XAU/USD, US30, + 2 instrumentos de tu elección (máximo 5 en total, criterio de la Lección 2.5).</li>
+<li><strong>Marca tus zonas de la semana</strong> (protocolo M3.3) sobre H4/D1 y déjalas dibujadas en el layout: el gráfico debe mostrar tu análisis, no estar vacío.</li>
+<li><strong>Pon 2–3 alertas por instrumento</strong> en los bordes de tus zonas activas (ej. EUR/USD: alerta de cruce en 1,0824). Con alertas puestas, cerrar la plataforma es una decisión válida: la plataforma te avisará.</li>
+<li><strong>Prueba Bar Replay:</strong> abre EUR/USD H1, rebobina 20 días y avanza vela a vela describiendo (en voz alta) régimen, ciclo y zonas — el mismo ejercicio del laboratorio de M3.</li>
+</ol>
+<p><strong>Chequeo de configuración completa:</strong> el layout abre con 4 paneles, la watchlist tiene ≤ 5 instrumentos, hay zonas marcadas y ≥ 2 alertas activas por instrumento principal, y sabes lanzar un Replay sin buscar el botón.</p>
+<h2>Error común</h2>
+<p>El primer error es <strong>coleccionar en vez de operar</strong>: 12 layouts, 30 indicadores, 4 plataformas instaladas y ninguna rutina. Cada reconfiguración parece progreso pero no deja estadística detrás — es el mismo mecanismo de "buscar el curso perfecto" de la <a href="leccion-1-5.html">Lección 1.5</a>. El segundo error es <strong>no usar alertas y vigilar el gráfico a mano</strong>: además de devorar horas, te expone a decidir en tiempo real bajo emoción — la alerta existe para que el precio te busque a ti, y no al revés. El tercero es <strong>practicar Replay "viendo el futuro"</strong>: rebobinar, mirar 3 velas adelante "para contextualizar" y luego "predecir" es trampa estadística pura — el ejercicio solo vale si el futuro está genuinamente oculto cuando escribes tu predicción. Si te descubres mirando, esa repetición no cuenta.</p>
+<h2>Conexión cuantitativa</h2>
+<p>El costo de la desorganización es medible. Rutina manual de preparar gráficos: 10 min/día; con layout guardado: 1 min. Diferencia: 9 min × 4 sesiones/semana × 48 semanas ≈ <strong>29 horas al año</strong> — una semana laboral completa gastada en clics que una plantilla hace gratis. Y el costo de vigilar sin alertas: 2 h de pantalla diaria "por si acaso" frente a la alternativa de trabajar con el precio como notificación: en un año son <strong>≈ 480 horas</strong> — el equivalente a 12 semanas de estudio del programa completo. La plataforma bien configurada no mejora tu E directamente, pero devuelve el tiempo con el que se construye todo lo demás: análisis, journal, laboratorio. En la <a href="leccion-4-3.html">Lección 4.3</a> verás el otro costo de la plataforma — el que sí se paga en dinero.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li>La plataforma es tu oficina: la rutina fija (layout, watchlist, alertas) es lo que libera atención para el mercado.</li>
+<li>Layout multitemporal estándar del programa: D1 + H4 + H1 + M15 del mismo instrumento, sincronizados.</li>
+<li>Watchlist de máximo 5 instrumentos: concentración por decisión de negocio (Lección 2.5), no limitación.</li>
+<li>Las alertas invierten el flujo: defines la zona, la plataforma vigila; tú decides con calma cuando suena.</li>
+<li>Bar Replay es el simulador oficial: solo cuenta la repetición con el futuro genuinamente oculto.</li>
+<li>Una configuración mantenida durante meses produce datos comparables; la reorganización constante produce cero datos.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>¿Por qué el programa fija una watchlist de 5 instrumentos en vez de dejar libre al estudiante? Conecta con la lección de personalidad de mercados.</li>
+<li>Tu compañero dice: "no pongo alertas porque quiero ver las operaciones en vivo". ¿Qué dos costos le estás explicando?</li>
+<li>¿Qué convierte una repetición de Bar Replay en repetición válida — y qué la invalida?</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. Por concentración (Lección 2.5): cada instrumento tiene personalidad distinta (volatilidad, horario, spread, tamaño de rango) y operar 5 bien vence a vigilar 30 a medias. Además fija los datos: con la misma watchlist durante meses, tu journal produce estadística comparable — cada cambio de universo invalida el histórico.
+2. (a) Costo de tiempo: horas de pantalla que el layout + alertas devuelven (≈ 480 h/año en el ejemplo de la lección). (b) Costo de decisión: mirar el precio en vivo invita a intervenir fuera de plan (improvisar entradas, adelantar confirmaciones); la alerta separa la observación (plataforma) de la decisión (tú, con checklist).
+3. Es válida si el futuro está genuinamente oculto cuando escribes tu lectura (régimen, zonas, dirección ANTES de avanzar el replay). La invalida: mirar velas futuras "para contextualizar", ajustar el marcado después de ver dónde giró, o rehacer la predicción tras ver el desenlace — curvar la regla tras medir, igual que la regla de oro de la misión M-3.
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="hub-mod-04.html"><span class="lbl">← Anterior</span><span class="ttl">Módulo 4 · Plataforma y Primera Ejecución</span></a>
+    <a class="next" href="leccion-4-2.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 4.2 · Tipos de órdenes</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

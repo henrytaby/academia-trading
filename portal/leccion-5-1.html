@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 5.1 · Tendencia y estructura — el esqueleto del precio · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a class="active" href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>📐 N2 · Técnica<span class="sep">/</span>M5 · Estructura de Mercado y Liquidez<span class="sep">/</span>Lección 5.1 · Tendencia y estructura — el esqueleto del prec</div>
+  <article class="doc-body">
+<h1>Lección 5.1 · Tendencia y estructura — el esqueleto del precio</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>40–55 min de estudio</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-05.html">M5 · Estructura de Mercado y Liquidez</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td>— (inicio del Nivel 2; viene de la <a href="examen-n1.html">Evaluación 🏆 N1</a>)</td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="leccion-5-2.html">Lección 5.2 · BOS y CHoCH</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>En el M3 aprendiste a ver <em>qué</em> hay en el gráfico (velas, ciclos, zonas); el N2 te enseña a leer <em>quién</em> mueve el mapa y <em>hacia dónde</em>. La <strong>estructura de mercado</strong> (<em>market structure</em>) es el esqueleto de esa lectura: la secuencia de máximos y mínimos que dice si el dinero grande está acumulando, distribuyendo o esperando. Operar sin leerla es subir a un río sin saber si fluye hacia ti o en contra: puedes nadar perfecto (mecánica del M4) y aun así avanzar al revés. Y hay una razón de negocio directa: tu esperanza <ktx class="ktx" data-tex="E = (P_w \times W) - (P_l \times L)">E = (P_w \times W) - (P_l \times L)</ktx> no es la misma operando a favor de la secuencia estructural que en contra — la <a href="leccion-3-6.html">Lección 3.6</a> ya te mostró que el régimen es un multiplicador invisible; este módulo te da el instrumento para medirlo y etiquetarlo. Todo el N2 (indicadores, sistema, confluencias) se apoya en esta lección: es el vocabulario base.</p>
+<h2>Concepto</h2>
+<p><strong>Definición — swing:</strong> un <strong>swing high</strong> es un máximo local que supera a los highs de las velas vecinas; un <strong>swing low</strong>, su espejo. La unidad práctica del programa: la vela con el extremo más alto/bajo que sobrevive a <em>n</em> velas a cada lado (usamos <em>n</em> = 2 en M15/H1 y <em>n</em> = 3 en H4/D1 <em>(heurística)</em> — el valor exacto importa menos que la constancia: elige uno y no lo cambies entre análisis).</p>
+<p><strong>La secuencia define la tendencia:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Secuencia de swings</th>
+<th>Estructura</th>
+<th>Nombre</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cada high supera el high previo <strong>y</strong> cada low respeta el low previo</td>
+<td>HH + HL</td>
+<td>Tendencia alcista</td>
+</tr>
+<tr>
+<td>Cada low perfora el low previo <strong>y</strong> cada high cede antes del anterior</td>
+<td>LH + LL</td>
+<td>Tendencia bajista</td>
+</tr>
+<tr>
+<td>Los swings se solapan sin definir secuencia</td>
+<td>ni HH/HL ni LH/LL</td>
+<td>Rango (equilibrio)</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>(HH = higher high, HL = higher low, LH = lower high, LL = lower low.)</em></p>
+<p><strong>La unidad de Dow: impulso + pullback.</strong> La <strong>pauta de Dow</strong> (<em>Dow Theory</em>) describe una tendencia como la alternancia de una pierna de expansión (impulso) y un retroceso que respeta la estructura (pullback — término ya definido en M3). Una tendencia no avanza en línea recta: avanza en peldaños. La tendencia alcista está viva <strong>mientras cada impulso siga rompiendo el high previo y cada pullback siga respetando el low previo</strong>. El día que un peldaño falla, la estructura entra en alerta — eso es exactamente la Lección 5.2.</p>
+<p><strong>Swing relevante vs ruido.</strong> No todo zigzag es estructura. El criterio del programa, en orden: (1) <strong>marco primero</strong> — un swing se marca en el marco de decisión (H4/D1 para sesgo, esta lección); los swings del marco menor que no aparecen en el mayor son <em>ruido de mercado</em> (<em>noise</em>) por definición operativa; (2) <strong>consecuencia</strong> — un swing es relevante si su quiebre cambiaría la secuencia (es decir, si romperlo obligaría a reetiquetar la tendencia); si su ruptura no cambia nada del mapa, es decoración; (3) <strong>origen de reacción</strong> — los swings que lanzaron impulsos de verdad (con desplazamiento, <a href="leccion-5-4.html">Lección 5.4</a>) pesan más que los que solo produjeron meandros.</p>
+<h2>Analogía</h2>
+<p>La escalera de mano. Subes con seguridad mientras cada peldaño que pisas quede por debajo del siguiente (HL) y la mano alcance siempre un punto más alto (HH). La escalera no deja de ser escalera por un temblor de la mano (ruido): deja de serlo el día en que tu mano ya no supera el punto anterior (falla el HH) o tu pie no encuentra peldaño por encima del que ocupa (perfora el HL). Nadie te grita "la escalera se rompió" en el primer temblor — pero el buen escalador <em>sabe</em> qué temblor es normal y qué peldaño ausente es la alarma. Leer estructura es exactamente eso: saber qué swing es peldaño y qué swing es temblor.</p>
+<h2>Cómo se hace: el caso maestro del módulo, marcado en 5 pasos</h2>
+<p>Este módulo entero analiza <strong>un solo caso didáctico</strong> (números cerrados, <em>(ilustrativo)</em> — no son precios actuales: verifica los tuyos en tu plataforma). En EUR/USD H4:</p>
+<ol>
+<li><strong>Extremos mayores:</strong> el mercado giró al alza desde el swing low estructural <strong>1,0745</strong> y dibujó un <strong>HL en 1,0798</strong>.</li>
+<li><strong>Primer impulso:</strong> desde 1,0798 el precio subió hasta <strong>1,0860</strong> (high) y retrocedió hasta 1,0812 sin tocar 1,0798 → secuencia: swing low 1,0745 → swing high 1,0860 → HL provisional.</li>
+<li><strong>Segundo impulso:</strong> el precio rompió 1,0860 y dibujó un nuevo high en <strong>1,0884</strong>, para luego corregir hacia la zona <strong>1,0820–1,0824</strong> — sin perder 1,0798.</li>
+<li><strong>Etiquetado de la secuencia:</strong> low 1,0745 → high 1,0860 → low ~1,0798 (respeta) → high 1,0884 (supera 1,0860) → <strong>estructura alcista confirmada: HH + HL en marcha</strong>.</li>
+<li><strong>Declaración de sesgo:</strong> "en H4, EUR/USD está en tendencia alcista mientras el precio respete 1,0798" — una frase, un nivel, cero ambigüedad. Esa frase es la <strong>capa 1</strong> del protocolo top-down (<a href="leccion-5-6.html">Lección 5.6</a>).</li>
+</ol>
+<p>Fíjate en lo que NO hicimos: no marcamos los 14 zigzags del marco M15, no discutimos si 1,0812 "cuenta" como swing (no cambia la secuencia: ruido), y no necesitamos ningún indicador. La estructura se lee con los ojos y se escribe con una frase.</p>
+<h2>Error común</h2>
+<p><strong>(1) Coleccionar swings.</strong> Marcar todo zigzag convierte el gráfico en un erial de líneas donde ninguna importa: si todo es estructura, nada lo es. Aplica el filtro de consecuencia: solo el swing cuya ruptura reetiquetaría la tendencia. <strong>(2) Cambiar de marco a mitad del análisis.</strong> Ver la estructura en H4 y "negarla" con un zoom a M5 es leer dos libros a la vez: cada marco tiene su secuencia, y la jerarquía se respeta (<a href="leccion-5-6.html">Lección 5.6</a>) — el M5 es para el gatillo, no para el sesgo. <strong>(3) Llamar "tendencia" a dos barras verdes.</strong> La tendencia es una <em>secuencia</em>, no un color: dos impulsos verdes seguidos sin un HL respetado no son estructura, son una pierna solitaria. <strong>(4) Anclar la tendencia al sentimiento.</strong> "Se siente alcista" no es estructura; la secuencia se escribe en el gráfico o no existe.</p>
+<h2>Conexión cuantitativa</h2>
+<p>La estructura es el primer filtro de calidad de tus operaciones futuras, y los filtros se pagan en WR. Razonamiento del programa <em>(heurística de trabajo, se auditará con tu journal en M9)</em>: un pullback comprado en estructura HH/HL compra en la pata estadísticamente más fiable del ciclo; la misma figura leída contra una secuencia LH/LL está comprando fuerza contracorriente — mismo riesgo nominal (1R), peor materia prima. El <strong>sistema v1.0 del M7</strong> exigirá que declares tu filtro de tendencia por escrito, y la misión de este módulo te obliga a etiquetar cada análisis con su secuencia: cuando llegues a M9, podrás comparar tu WR "con tendencia" vs "contra tendencia" con tus propios datos — la primera auditoría de régimen de tu negocio. Estructura no definida = análisis no auditable: si no escribió la secuencia, no sabrás jamás por qué falló el trade.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li>Estructura de mercado = secuencia de swings: HH+HL alcista, LH+LL bajista, solape sin secuencia = rango.</li>
+<li>Unidad de Dow: impulso + pullback; la tendencia vive mientras el impulso rompa el high previo y el pullback respete el low previo.</li>
+<li>Swing relevante se define por: marco de decisión + consecuencia (su ruptura reetiqueta la tendencia) + origen de reacción.</li>
+<li>El resto es ruido: no se marca, no se opera, no se discute.</li>
+<li>El sesgo del marco superior se escribe en UNA frase con UN nivel de invalidación ("alcista mientras respete 1,0798").</li>
+<li>La estructura es filtro de calidad: misma E nominal, distinta materia prima según el lado de la corriente.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>Un swing low en M15 no aparece en H4. ¿Qué es y por qué no se marca en tu análisis de sesgo?</li>
+<li>¿Cuál es el test de "consecuencia" para decidir si un swing se marca? Enuncia el caso en que un high alto NO se marca.</li>
+<li>Escribe la frase de sesgo del caso maestro. ¿Qué precio la invalida y qué etiqueta recibiría ese quiebre en la próxima lección?</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. Es **ruido de mercado**: pertenece a la secuencia del marco menor, no a la del marco de decisión. Se marca en el marco que le corresponde (M15) si tu rol ahí lo exige (gatillo), pero jamás en el análisis de sesgo — mezclar marcos destruye la jerarquía del top-down (5.6).
+2. Test de consecuencia: "¿su ruptura me obligaría a reetiquetar la tendencia?". Un high puede ser objetivamente alto y aun así no marcarse: si su ruptura no cambia la secuencia (sigue habiendo HH+HL con o sin él), es decoración. Ejemplo del caso: un máximo intermedio de 1,0872 dentro de la pierna hacia 1,0884 no se marca — su quiebre no reetiqueta nada.
+3. "EUR/USD en H4 es tendencia alcista **mientras el precio respete 1,0798**". El precio que la invalida: un **cierre** H4 bajo 1,0798 (no una mecha). Ese quiebre, por ir EN CONTRA de la secuencia alcista, se etiqueta **CHoCH** (cambio de carácter) — el tema exacto de la [Lección 5.2](leccion-5-2.md).
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="hub-mod-05.html"><span class="lbl">← Anterior</span><span class="ttl">Módulo 5 · Estructura de Mercado y Liquidez Institucional</span></a>
+    <a class="next" href="leccion-5-2.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 5.2 · BOS y CHoCH — los dos quiebres que lo etiquetan todo</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

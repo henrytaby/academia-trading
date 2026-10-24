@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 4.4 · Largos y cortos · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a class="active" href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>🧱 N1 · Base<span class="sep">/</span>M4 · Plataforma y Primera Ejecución<span class="sep">/</span>Lección 4.4 · Largos y cortos</div>
+  <article class="doc-body">
+<h1>Lección 4.4 · Largos y cortos</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>40–50 min de estudio</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-04.html">M4 · Plataforma y Primera Ejecución</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td><a href="leccion-4-3.html">Lección 4.3 · El costo real de operar</a></td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="leccion-4-5.html">Lección 4.5 · Cuenta demo</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>El retail opera casi siempre en largo porque "vender algo que no tienes" suena a truco. Pero si tu análisis dice "caída confirmada en 3 pasos" (<a href="leccion-3-4.html">Lección 3.4</a>) y solo sabes comprar, pierdes la mitad de las oportunidades de tu propio sistema. Y hay una segunda razón, más profunda: la mecánica del corto explica fenómenos que te van a golpear incluso sin operar cortos — los <em>short squeeze</em> que revientan gráficos, los <em>borrow fees</em> que erosionan posiciones, y la asimetría estructural de los mercados: <strong>suben en escalera y caen en ascensor</strong>. Entender el corto es entender por qué las caídas son más violentas que las subidas, y por qué tu SL deja de ser recomendación y se convierte en estructura portante el día que vendes.</p>
+<h2>Concepto</h2>
+<p><strong>Long (largo):</strong> comprar barato → vender caro. Dos pasos en orden natural: compras 100 unidades a 50, vendes a 60: +1 000 (menos costos). Tu pérdida máxima teórica es el precio llegando a cero: acotada.</p>
+<p><strong>Short (corto):</strong> ganar con la caída invirtiendo el orden. En acciones/CFDs de acciones la mecánica literal es: (1) <strong>pedir prestadas</strong> las acciones al bróker (las presta otro cliente o el inventario del propio bróker); (2) <strong>venderlas</strong> al precio actual; (3) esperar la caída; (4) <strong>recomprarlas</strong> más baratas; (5) <strong>devolverlas</strong> al prestamista. La ganancia = precio de venta − precio de recompra − costos. En forex y CFDs de índices/oro no hay préstamo visible: el botón "vender" abre la posición directamente — pero el mecanismo económico es el mismo, y en forex además siempre estás vendiendo una divisa <strong>comprando otra</strong>: tu short de EUR/USD es un long de USD (<a href="leccion-2-6.html">Lección 2.6</a>: el DXY te afecta).</p>
+<p><strong>Costos propios del corto:</strong></p>
+<ul>
+<li><strong>Borrow fee</strong> (acciones/CFDs acciones): interés anual por el préstamo, típico 0,5–3 % <em>(ilustrativo)</em>; en acciones <em>hard-to-borrow</em> puede ser brutal. Se prorratea por día de posición.</li>
+<li><strong>Swap en corto forex:</strong> puede ser <strong>positivo</strong> si vendes la divisa de tasa alta contra la de tasa baja — el único "alquiler" que a veces te paga a ti.</li>
+</ul>
+<p><strong>Short squeeze:</strong> cuando el precio sube en lugar de caer, los cortos pierden y muchos cierran (compran para recomprar). Su recompra <strong>es la compra que sube más el precio</strong>, que liquida más cortos, que recompra más… una cascada sin techo. Caso público: GameStop, enero 2021 — con más de la flotante vendida en corto, el precio multiplicó en días y fondos que vendían corto cerraron pérdidas multimillonarias al recomprar.</p>
+<p><strong>La asimetría estructural:</strong> las subidas se construyen con acumulación paciente (fragmentos, <a href="leccion-3-2.html">Lección 3.2</a>) — escalera. Las caídas se aceleran con miedo, que es urgencia pura (takers en masa, <a href="leccion-2-1.html">Lección 2.1</a>) — ascensor. Implicación práctica: las piernas bajistas suelen ser más rápidas y profundas que las alcistas; el corto tiene ventaja de velocidad y desventaja de costos + riesgo de squeeze.</p>
+<p><strong>Visual — la mecánica del short, paso a paso</strong> (100 acciones a 50 $):</p>
+<pre class="mermaid">sequenceDiagram
+    participant T as Tú (corto)
+    participant B as Bróker
+    participant M as Mercado
+    T-&gt;&gt;B: 1. Pido prestadas 100 acciones
+    B--&gt;&gt;T: 2. Te las presto (quedan como garantía)
+    T-&gt;&gt;M: 3. Vendo las 100 a 50 $ → +5 000 $
+    Note over M: ... el precio cae a 40 $ ...
+    T-&gt;&gt;M: 4. Recompro 100 a 40 $ → −4 000 $
+    T-&gt;&gt;B: 5. Devuelvo las 100 acciones
+    B--&gt;&gt;T: Préstamo cerrado · Ganancia: +1 000 $ − borrow fee
+</pre>
+<h2>Analogía</h2>
+<p>Tu primo y las entradas del concierto. Él no tiene entradas, pero le prometes 10 al precio de hoy (70 $) para el fin de semana — te las consigue de un amigo del trabajo (le "pides prestadas" con su permiso). Ya vendiste lo que no tenías: cobraste 700 $. El viernes las consigues a 50 $, las entregas, y ganaste 200 $ sin haber tenido nunca entradas propias. Ahora el mal escenario: el grupo anuncia que será su último concierto, el precio se dispara a 150 $, y TU promesa sigue en pie. Cada comprador ansioso que empuja el precio arriba es alguien cerrando su propia promesa corta — y tú debes recomprar a 150 y perder 800. No hay techo para cuánto puede subir: la promesa corta pierde mientras el precio suba. Eso es un squeeze: primos por todo el estadio comprando desesperados.</p>
+<h2>Cómo se hace: el mismo trade en los dos sentidos, con números cerrados</h2>
+<p>Misma idea técnica (retesteo confirmado en zona, protocolo M3.4), ejecutada en los dos sentidos sobre EUR/USD, lote 0,06, riesgo 18 $ <em>(cifras ilustrativas)</em>:</p>
+<ul>
+<li><strong>Long:</strong> buy limit 1,0824 → SL 1,0794 (30 pips) → TP 1,0884 (60 pips). Cobro si sube: +60 pips = +36 $ bruto (60 × 0,6 $/pip).</li>
+<li><strong>Short:</strong> sell limit 1,0860 (borde inferior de la resistencia) → SL 1,0890 (30 pips sobre la entrada, tras el máximo del swing) → TP 1,0800 (60 pips bajo). Cobro si baja: +60 pips = +36 $ bruto.</li>
+<li><strong>Costos diferenciales:</strong> si cada lado se sostiene 2 noches: long paga swap −0,84 $ (2 × −0,42); short <strong>cobra</strong> +0,36 $ (2 × +0,18) <em>(ilustrativo, según diferencial de tasas)</em>. El corto parte con 1,20 $ de ventaja de costos en este par — hasta que llega un squeeze.</li>
+<li><strong>El riesgo que NO es simétrico:</strong> tu long pierde como máximo 30 pips planeados y, sin SL, como mucho hasta el precio 0 (≈ −6 500 $: el nominal completo de 0,06 lotes). Tu short sin SL no tiene techo de pérdida: el precio puede subir 200 pips o 2 000. <strong>Por eso en cortos el SL no es negociable ni un pip</strong> — y en acciones cortadas con gaps, el plan usa tamaño reducido: mismo R monetario, no mismo tamaño nominal (el gap de apertura puede saltarse cualquier stop — <a href="leccion-2-4.html">Lección 2.4</a>: los gaps del fin de semana).</li>
+</ul>
+<p><strong>El borrow fee con números:</strong> cortas 100 acciones a 50 $ (posición de 5 000 $), borrow 2 % anual <em>(ilustrativo)</em> → 100 $/año ≈ 0,28 $/día. 10 días de posición: 2,78 $ — pequeño, pero se suma y en <em>hard-to-borrow</em> (10–50 % anual) convierte un trade de 3 semanas en un empate.</p>
+<h2>Error común</h2>
+<p><strong>(1) Cortar sin SL "porque el techo es lo que ponga"</strong> — es exactamente al revés: el corto es el único escenario donde tu pérdida es ilimitada por diseño; la ley del stop (<a href="leccion-4-6.html">Lección 4.6</a>) se escribe primero para los cortos. <strong>(2) Pelear contra un squeeze</strong> — "ya tiene que caer, está sobreextendido": la presión de los cortos atrapados no lee tu análisis; cada pip de subida es órdenes de recompra obligada. El protocolo: SL puesto desde el inicio y respetado; reentrar más tarde, si el régimen lo vuelve a permitir, es otra decisión sin bagaje. <strong>(3) Olvidar que en forex el corto es un long cruzado</strong> — vendes EUR/USD y el USD se debilita por un dato macro: pierdes aunque "el EUR no hizo nada". La cadena DXY de la Lección 2.6 es tu contexto obligado antes de cualquier corto de major. <strong>(4) Ignorar que el 95 % del material del retail está pensado para largos</strong> <em>(heurística)</em> — tus ejemplos mentales de "comprar bajo" te empujan a anticipar fondos en caídas rápidas: el ascensor no se agarra con las manos.</p>
+<h2>Conexión cuantitativa</h2>
+<p>Operar ambos lados duplica el universo de setups que tu sistema puede estadísticamente medir — mismo E, más muestras, menos dependencia del régimen alcista de tu instrumento favorito. Pero los dos lados no cuestan lo mismo: <ktx class="ktx" data-tex="E_{neto}^{short} = E_{bruto} - c - f_{borrow}">E_{neto}^{short} = E_{bruto} - c - f_{borrow}</ktx> (en acciones) o <ktx class="ktx" data-tex="+ f_{swap}">+ f_{swap}</ktx> (si el diferencial juega a tu favor en forex). Concretado: un short de acciones con E bruto +0,15R, borrow equivalente a 0,02R por las noches sostenidas y slippage de gap ocasional (+0,01R esperado) queda en +0,12R neto — aún válido; el mismo short en un <em>hard-to-borrow</em> con 0,25R de borrow mensual queda en −0,10R: <strong>el costo del préstamo puede por sí solo invalidar un setup técnicamente perfecto</strong>. La regla del programa: antes de un short de acciones, el borrow fee anual se convierte a R y entra en el cálculo; antes de un short de forex, el swap del par entra; y en ambos, el SL es estructural porque la cola derecha no tiene suelo.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li>Short = vender prestado → recomprar barato → devolver. La ganancia vive en la diferencia de recompra.</li>
+<li>En forex/CFDs el préstamo es invisible (botón "vender"), pero el costo existe: borrow fee en acciones; swap (a veces positivo) en forex.</li>
+<li>Todo short de forex es a la vez un long de la otra divisa: la cadena DXY es contexto obligado.</li>
+<li>Short squeeze: las recompras obligadas de los cortos perdedores son la gasolina de la subida — cascada sin techo.</li>
+<li>Asimetría estructural: suben en escalera (acumulación paciente), caen en ascensor (miedo = urgencia).</li>
+<li>En largos tu peor caso sin SL es el precio 0; en cortos no hay techo — el SL en cortos es ley de las leyes.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>Enumera los 5 pasos de la mecánica del short en acciones y di de dónde sale exactamente la ganancia.</li>
+<li>¿Por qué el riesgo de un short sin SL es ilimitado y el de un long sin SL no lo es (aun siendo desastroso)?</li>
+<li>Describa el mecanismo del squeeze en 3 pasos y di qué conducta del programa lo neutraliza.</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. (1) Pedir prestadas las acciones al bróker. (2) Venderlas al precio de mercado (cobras el nominal). (3) Esperar la caída. (4) Recomprarlas más baratas. (5) Devolverlas al prestamista. La ganancia = venta − recompra − costos (borrow fee prorrateado + spread/comisión). El bróker cierra el préstamo al devolver: tú nunca fuiste propietario.
+2. El long comprado a 50 $ pierde como máximo hasta el precio 0: −50 $/acción de techo de desastre (durísimo, pero acotado). El corto vendido a 50 $ debe recomprar para devolver las acciones, y el precio de recompra no tiene techo: a 150 $ pierdes 100 $/acción, a 500 $ pierdes 450 $/acción. La pérdida del corto está abierta por arriba — por eso el SL del corto se coloca, se verifica y no se toca jamás.
+3. (1) El precio sube → cortos en pérdida. (2) Parte de los cortos cierra = recompra obligada, que es demanda compradora adicional → sube más. (3) La subida liquida más cortos, que recompran más: bucle de realimentación sin techo hasta que no quedan cortos que liquidar. Lo neutraliza: SL puesto antes de entrar y respetado (sales en tu −1R sin participar en la cascada) + no reentrar en corto "porque ya está caro" durante el squeeze.
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="leccion-4-3.html"><span class="lbl">← Anterior</span><span class="ttl">Lección 4.3 · El costo real de operar</span></a>
+    <a class="next" href="leccion-4-5.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 4.5 · Cuenta demo</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

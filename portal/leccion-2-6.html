@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 2.6 · Calendario macro e intermercados · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a class="active" href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>🧱 N1 · Base<span class="sep">/</span>M2 · El Motor del Precio<span class="sep">/</span>Lección 2.6 · Calendario macro e intermercados</div>
+  <article class="doc-body">
+<h1>Lección 2.6 · Calendario macro e intermercados</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>45–60 min de estudio</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-02.html">M2 · El Motor del Precio</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td><a href="leccion-2-5.html">Lección 2.5 · Personalidad de cada mercado</a></td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td>— (cierra el módulo; vuelve al <a href="hub-mod-02.html">README</a> para laboratorio, misión y quiz)</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>Hay días en que tu análisis, tu zona y tu setup importan menos que un número que se publica en Filadelfia a las 08:30. Los datos macro (empleo, inflación, decisiones de tasas) cambian en minutos las expectativas que sostienen TODOS los precios a la vez — y un trader que no mira el calendario es un conductor que cruza cruces sin mirar el semáforo: puede salir ileso diez veces y perderlo todo en la undécima. Esta lección te da las tres piezas: <strong>qué</strong> eventos mueven el mercado y cuándo salen (en tu hora), <strong>cómo</strong> se encadenan entre activos (la cadena causal que une tasas, DXY, oro, acciones y cripto), y <strong>qué hacer</strong> tú durante esos eventos — que, durante toda la formación, es la misma respuesta: no estar dentro.</p>
+<h2>Concepto</h2>
+<p><strong>La cadena causal — el gráfico eléctrico del mundo.</strong> El motor último de casi todo es la <strong>tasa de interés</strong> (el precio del dinero) y su expectativa:</p>
+<pre class="mermaid">flowchart TD
+    D[&quot;📊 Dato macro sale&lt;br/&gt;NFP · IPC · actividad · discurso&quot;] --&gt; E[&quot;🧠 Cambian las expectativas&lt;br/&gt;¿tasas más altas o más bajas, por más tiempo?&quot;]
+    E --&gt; T[&quot;📈 Rendimientos de los bonos&lt;br/&gt;la gravedad del dinero&quot;]
+    T --&gt; DXY[&quot;💵 DXY — el dólar se aprecia o se deprecia&quot;]
+    DXY --&gt; ORO[&quot;🥇 Oro&lt;br/&gt;típicamente INVERSO a DXY y a tasas reales&quot;]
+    DXY --&gt; EUR[&quot;💶 EUR/USD&lt;br/&gt;inverso al DXY por construcción&quot;]
+    T --&gt; ACC[&quot;🏢 Acciones&lt;br/&gt;descuento + financiamiento: presión inversa típica&quot;]
+    ACC --&gt; CRY[&quot;🪙 Cripto&lt;br/&gt;activo de riesgo: típicamente directa al apetito&quot;]
+    E --&gt; F[&quot;🗣️ FOMC — el evento que HABLA&lt;br/&gt;decisión 14:00 ET + rueda de prensa 14:30 ET&quot;]
+</pre>
+<p>Un dato de inflación más alta de lo esperado → el mercado espera tasas más altas por más tiempo → los rendimientos suben → el dólar se aprecia → el oro (que no paga interés y se cotiza en dólares) típicamente cae → las acciones (más caras de financiar, descuento a tasas mayores) típica presión a la baja → la cripto (activo de riesgo y liquidez) típicamente cae. La palabra operativa es <strong>típicamente</strong>: estas son correlaciones de régimen normal, no leyes físicas.</p>
+<p><strong>Los tres eventos que mueven la semana</strong> (hora del Este de EE. UU.; durante el horario de verano del norte, la hora de Bolivia coincide con la del Este; en invierno boreal, +1 h — verifica cada semana):</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Evento</th>
+<th>Qué es</th>
+<th>Cuándo</th>
+<th>Hora de salida</th>
+<th>Comportamiento típico</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>NFP</strong> (<em>Non-Farm Payrolls</em>)</td>
+<td>Empleo no agrícola de EE. UU.: el termómetro de la economía más importante</td>
+<td>Primer viernes del mes</td>
+<td>08:30 ET</td>
+<td>Movimientos de decenas de pips en segundos <em>(ilustrativo)</em>; spread se multiplica; zigzag violento antes de definir dirección</td>
+</tr>
+<tr>
+<td><strong>IPC/CPI</strong> (<em>Consumer Price Index</em>)</td>
+<td>Inflación al consumidor: el dato que la Fed dijo que mira</td>
+<td>Mensual, ~mediados de mes</td>
+<td>08:30 ET</td>
+<td>Igual de violento que NFP; su sorpresa recalibra la ruta completa de tasas</td>
+</tr>
+<tr>
+<td><strong>FOMC</strong> (decisión de la Fed)</td>
+<td>Tasa de interés + comunicado + rueda de prensa de Powell</td>
+<td>8 veces al año (calendario oficial)</td>
+<td>Decisión 14:00 ET · rueda de prensa 14:30 ET</td>
+<td>Doble evento: el número y luego el matiz verbal; whipsaw clásico — el primer movimiento suele corregirse mientras se digiere el comunicado</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Intermercados — el mapa de correlaciones típicas</strong> <em>(régimen normal, no leyes)</em>:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Par de activos</th>
+<th>Correlación típica</th>
+<th>Lógica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DXY ↔ oro</td>
+<td>Inversa</td>
+<td>El oro se cotiza en dólares: dólar fuerte = oro más caro para el resto del mundo</td>
+</tr>
+<tr>
+<td>Rendimientos bonos ↔ oro</td>
+<td>Inversa</td>
+<td>El oro no paga interés: tasas reales altas suben el costo de oportunidad de tenerlo</td>
+</tr>
+<tr>
+<td>DXY ↔ EUR/USD</td>
+<td>Inversa (por construcción)</td>
+<td>El EUR pesa ~58 % en el índice</td>
+</tr>
+<tr>
+<td>Tasas esperadas ↔ acciones</td>
+<td>Inversa (típica)</td>
+<td>Mayor tasa de descuento + costo de financiamiento = valoraciones bajo presión</td>
+</tr>
+<tr>
+<td>Apetito de riesgo ↔ cripto</td>
+<td>Directa (típica)</td>
+<td>La cripto opera como activo de riesgo/liquidez en regímenes normales</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Los dos avisos de honestidad que hacen profesional a esta lección:</strong> (1) las correlaciones <strong>cambian de signo por régimen</strong> — en pánicos de liquidez "todo se vende a la vez" (oro y acciones caen juntos porque todos necesitan dólares/caja); (2) en ciertos regímenes, "mala noticia económica = buenas noticias para acciones" (si implica tasas antes/bajas). Por eso el programa usa el calendario para <strong>protección</strong> (no estar dentro) y para <strong>contexto</strong> (entender el día), jamás para adivinar el número.</p>
+<h2>Analogía</h2>
+<p>El mercado es una flota de barcos amarrados al mismo muelle — el muelle es la tasa de interés. Las amarras son las expectativas. Cada dato macro es un mar de fondo que levanta o baja el muelle entero: no importa cuán firme esté tu barco (tu análisis técnico de XAU/USD) — si el muelle sube, todos los barcos suben con él; si se hunde, todos bajan. El trader que ignora el calendario elige su barco mirando solo el casco, sin preguntarse qué hará el agua esta tarde. Y el FOMC es el almirante hablando por megafono a la flota entera: no solo importa QUÉ dice, importa CÓMO lo dice — por eso los piratas prudentes sacan las velas (cierran o reducen posición) mientras habla, en vez de apostar a adivinar la frase.</p>
+<h2>Cómo se hace: el protocolo de semana con eventos, paso a paso</h2>
+<p><strong>Lunes, 10 minutos — armar el mapa de la semana:</strong></p>
+<ol>
+<li>Abre un calendario económico (cualquiera con filtros de impacto y conversión a tu huso).</li>
+<li>Filtra <strong>alto impacto</strong> para USD (y la moneda de tu par principal). Anota en tu journal: día, evento, <strong>hora Bolivia</strong>, consenso esperado.</li>
+<li>Marca en tu reloj de sesiones (laboratorio de este módulo) las ventanas rojas: <strong>15 minutos antes y después</strong> de cada evento de alto impacto — mínimo. Para FOMC: desde 30 min antes de la decisión hasta 30 min después de la rueda de prensa.</li>
+</ol>
+<p><strong>Protocolo de cada evento (la regla del programa):</strong></p>
+<pre><code class="language-text">REGLA MACRO DE FORMACIÓN — no negociable
+1. Sin posiciones abiertas dentro de la ventana roja del evento.
+2. Si hay posición: cerrarla o (solo si el plan de M8 lo permite y falta poco)
+   asegurar el SL y REDUCIR tamaño — nunca dejar tamaño completo con SL apretado.
+3. No se &quot;opera el dato&quot;: no adivinas el número ni compras el primer spike.
+4. El spread en la ventana roja está multiplicado (de ~1,5 pips a 10–20
+   *(ilustrativo)*): entrar ahí es pagar ×10 el peaje con la visibilidad ×0.
+5. Después del evento: dejar pasar el zigzag de digestión y leer el gráfico
+   CON el dato ya dentro — el setup de post-evento llega con confirmación (M3.4).
+</code></pre>
+<p><strong>Ejemplo cerrado del costo de ignorar la regla</strong> <em>(ilustrativo, mecánica real)</em>: posición long de 0,08 lotes en EUR/USD con SL de 25 pips = 20 $ de riesgo. NFP a las 08:30 Bolivia. El dato sorprende: el precio salta 60 pips en 40 segundos <strong>sin tocar tu SL exacto</strong> — el salto pasa por encima (gap intra-vela) y tu SL ejecuta con <em>slippage</em> a 38 pips: −30,4 $ en vez de −20 $ (1,5R por una posición de 1R). Dos minutos después el precio vuelve a tu entrada original: la pérdida no era necesaria — era la matrícula de no mirar el calendario. El mismo trade, cerrado el martes a las 08:15, habría tenido las mismas probabilidades sin el semáforo en rojo.</p>
+<h2>Error común</h2>
+<p>El primero: <strong>operar el dato por adrenalina</strong> — "el NFP va a ser malo, vendo antes de que salga". Ese trade tiene esperanza negativa estructural: el consenso ya está en el precio, la sorpresa es 50/50, el spread de la ventana te cobra ×10 y el zigzag posterior puede barrer ambas direcciones. Es la lotería con peaje. El segundo: <strong>el "ya pasó" prematuro</strong> — cerrar la ventana 30 segundos después del número: el FOMC tiene DOS eventos (decisión y rueda de prensa) y el post-NFP tiene reversión de digestión; la ventana cerrada tarde es la barata. El tercero, más sutil: <strong>usar el intermercados como señal de trading</strong> — "el DXY sube, entonces vendo oro AHORA". Las correlaciones típicas son contexto probabilístico, no gatillos: se usan para entender el día y para cuestionar tu setup ("¿mi long de oro tiene sentido si los rendimientos están subiendo con fuerza?"), nunca como sistema en sí mismo. La regla que ata todo: en formación, el calendario solo autoriza dos acciones — <strong>alejarte del mercado</strong> y <strong>explicarte lo que ya pasó</strong>.</p>
+<h2>Conexión cuantitativa</h2>
+<p>Los eventos macro atacan los tres términos de <ktx class="ktx" data-tex="E">E</ktx> a la vez. <strong><ktx class="ktx" data-tex="L">L</ktx>:</strong> el slippage intra-vela puede convertir 1R en 1,3R–1,5R — tu pérdida media deja de ser la presupuestada. <strong>Costos:</strong> el spread de ventana multiplica el peaje (Lección 2.1) justo cuando tu visibilidad es mínima. <strong><ktx class="ktx" data-tex="P_w">P_w</ktx>:</strong> el zigzag de digestión convierte la dirección "correcta" en moneda al aire en el minuto 2 — tu acierto deja de depender del análisis. Sumadas: operar ventanas rojas es operar con <ktx class="ktx" data-tex="E">E</ktx> confiscado. En cambio, la semana con calendario revisado protege la distribución completa de resultados por cero costo: es la única mejora de <ktx class="ktx" data-tex="E">E</ktx> del programa que se consigue <strong>sin operar</strong>. Cuando en M8 construyas los frenos en cascada, la ventana macro será un freno automático más; cuando en M9 audites tu journal, verás cuántas de tus peores operaciones nacieron en una ventana roja que no miraste.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li>La cadena causal: dato → expectativas de tasas → rendimientos → DXY → oro/acciones/cripto. "Típicamente", no siempre: las correlaciones cambian por régimen.</li>
+<li>Los tres eventos que mueven la semana: NFP (primer viernes, 08:30 ET), IPC (~mediados de mes, 08:30 ET), FOMC (8 al año, 14:00 ET + rueda 14:30 ET). En verano del norte, hora del Este = hora de Bolivia.</li>
+<li>La regla macro de formación: sin posiciones en la ventana roja (15 min antes/después; FOMC: 30/30 con rueda incluida).</li>
+<li>Nunca se opera el dato: consenso ya en precio, sorpresa 50/50, spread ×10, zigzag de digestión.</li>
+<li>El intermercados es contexto, no señal: explica y cuestiona setups; no dispara entradas.</li>
+<li>La revisión del calendario es la única mejora de <ktx class="ktx" data-tex="E">E</ktx> del programa que se logra sin operar — 10 minutos de lunes protegen la semana.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>El IPC de EE. UU. sale muy por encima del consenso. Recorre la cadena causal completa y nombra el efecto típico en: rendimientos, DXY, oro, EUR/USD y acciones. ¿Qué palabra califica todo ese pronóstico y por qué?</li>
+<li>Tienes un long de oro con +15 pips "de seguridad" (SL a −20) y a las 08:25 Bolivia sale el NFP. ¿Qué ordena la regla macro del programa y qué riesgo corre tu SL exacto durante el evento?</li>
+<li>Tu amigo operó el FOMC "y le fue bien: adivinó la dirección". ¿Qué le responderías con la lógica de esperanza (no con la moralina)?</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. IPC > consenso → expectativa de tasas más altas/más tiempo altas → rendimientos de bonos suben → DXY se aprecia → oro típicamente cae (no paga interés, más caro en dólares), EUR/USD típicamente cae (dólar fuerte), acciones con presión a la baja (descuento y financiamiento). Todo el pronóstico se califica con **típicamente**: en regímenes anómalos (pánico de liquidez, Fedhawk invertida) los signos pueden cambiar — por eso es contexto de protección, no sistema de señales.
+2. La regla ordena: cerrar la posición antes de la ventana (15 min antes = 08:15) o, si el plan lo permite, asegurar SL y reducir tamaño — con posición de +15 pips lo limpio es salir y dejar el evento pasar. Riesgo del SL exacto durante NFP: el precio puede saltar en gap intra-vela SIN ejecutar en tu nivel exacto (slippage de 5–15 pips) → pérdida de 1,5R o más; y el spread de ventana hace que el "SL de 20" se dispare peor en la ejecución. La protección del SL no es absoluta en saltos: solo el no-estar-dentro lo es.
+3. Que su resultado es una observación de varianza, no una estrategia: con sorpresa 50/50, spread ×10 y zigzag post-dato, la <ktx class="ktx" data-tex="E">E</ktx> de operar el dato es negativa ANTES de su suerte; una muestra de 1 (o de 20) no estima nada (N ≥ 100, Lección 1.4). Con suficientes amigos operando FOMC, siempre habrá alguno que lo adivine 3 veces seguidas (igual que el bot de la Lección 1.4): es fotografía del ganador, no evidencia de esperanza. Y el día que su suerte se agote, operará el dato con el mismo convencimiento y el doble de tamaño — el final clásico de la estrategia sin E.
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="leccion-2-5.html"><span class="lbl">← Anterior</span><span class="ttl">Lección 2.5 · Personalidad de cada mercado</span></a>
+    <a class="next" href="hub-mod-03.html"><span class="lbl">Siguiente →</span><span class="ttl">Módulo 3 · Anatomía del Gráfico</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

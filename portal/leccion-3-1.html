@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 3.1 · Velas japonesas · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a class="active" href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>🧱 N1 · Base<span class="sep">/</span>M3 · Anatomía del Gráfico<span class="sep">/</span>Lección 3.1 · Velas japonesas</div>
+  <article class="doc-body">
+<h1>Lección 3.1 · Velas japonesas</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>40–50 min de estudio</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-03.html">M3 · Anatomía del Gráfico</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td>— (primera lección del módulo)</td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="leccion-3-2.html">Lección 3.2 · Los 4 ciclos del mercado</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>El gráfico de velas es el alfabeto del trader: toda la técnica posterior — ciclos, zonas, patrones, estructura (M5) — se escribe con estas letras. Leerlas mal produce los dos errores fundacionales del principiante: ver "señales" en velas sueltas sin contexto, y no entender que una vela NO es un instante sino un <strong>resumen de una subasta completa</strong>. Una vela diaria es la fotografía comprimida de 24 horas de órdenes; saber qué comprime — cuerpo, mechas, posición del cierre — es lo que convierte un dibujo bonito en información operativa. Y hay una promesa que esta lección cumple mejor que cualquier otra: después de ella, tu gráfico desnudo (sin indicadores) empezará a hablarte.</p>
+<h2>Concepto</h2>
+<p><strong>Anatomía.</strong> Cada vela resume cuatro precios de su período: <strong>OHLC</strong> — <em>Open</em> (apertura), <em>High</em> (máximo), <em>Low</em> (mínimo), <em>Close</em> (cierre). De ahí salen sus dos componentes:</p>
+<ul>
+<li><strong>Cuerpo:</strong> de la apertura al cierre. Mide <strong>quién ganó la subasta</strong> del período: cuerpo alcista (verde/hueco) = el cierre quedó arriba de la apertura; cuerpo bajista (rojo/lleno) = al revés. El tamaño del cuerpo mide la <strong>determinación</strong>: cuerpo grande = un bando dominó todo el período; cuerpo pequeño = equilibrio.</li>
+<li><strong>Mechas</strong> (o sombras): del cuerpo al máximo y al mínimo. Miden <strong>el viaje rechazado</strong>: dónde la urgencia de un bando fue a buscar precio y fue devuelta. Mecha inferior larga = los vendedores empujaron abajo y los compradores los devoraron (la compra agresiva devolvió el precio); mecha superior larga = el espejo. La mecha es la cicatriz del rechazo.</li>
+</ul>
+<p><strong>El cierre es el precio más importante de los cuatro.</strong> Es el veredicto final del período: el último acuerdo con toda la información disponible. Por eso casi todos los niveles y confirmaciones del programa se evalúan en <strong>cierres</strong>, no en toques intra-vela (un toque del nivel que luego cierra dentro puede ser una barrida, Lección 2.3; un cierre fuera del nivel es un acuerdo del mercado entero).</p>
+<p><strong>Fractalidad real.</strong> El mercado es fractal y las velas lo demuestran con matemática literal: <strong>cada vela contiene a su vez un gráfico completo</strong>. Abre la vela diaria de ayer en H1 y tendrás 24 velas con su propia historia de subasta; la vela H1 se abre en M15 y hay otras 4 dentro; y así hasta los segundos. Esto tiene una consecuencia operativa dura que ya conoces de la <a href="leccion-1-4.html">Lección 1.4</a>: el patrón "encajona" pero el ruido y los costos <strong>no se encajonan proporcionalmente</strong> — la misma formación visual paga peajes relativos mayores cuanto más bajo el marco. Las velas te dejan ver lo mismo en todas las escalas; la estadística te dice en cuáles conviene operar.</p>
+<p><strong>Historia mínima</strong> (contexto, no adorno): las velas nacieron en el Japón del siglo XVIII para arroz en el mercado de Dojima (Osaka) — considerado el primer mercado de futuros organizado del mundo. Munehisa Homma, comerciante de arroz de Sakata, sistematizó la lectura de patrones de precio y sentimiento; su manual es el ancestro directo de lo que haces tú hoy con EUR/USD. La tradición llegó a Occidente con Steve Nison (1991). La lección de fondo: el análisis de precio lleva 300 años funcionando sobre el mismo motor — la subasta que estudiaste en M2.</p>
+<p><strong>Visual — el método de lectura en 4 preguntas (siempre en este orden):</strong></p>
+<pre class="mermaid">flowchart TD
+    V[&quot;🕯️ La vela delante de ti&quot;] --&gt; Q1{&quot;1 · ¿Qué tamaño tiene el cuerpo?&lt;br/&gt;→ quién ganó la subasta y con cuánta determinación&quot;}
+    Q1 --&gt; Q2{&quot;2 · ¿Dónde están las mechas y cuánto miden?&lt;br/&gt;→ dónde fue rechazada la urgencia&quot;}
+    Q2 --&gt; Q3{&quot;3 · ¿Dónde quedó el cierre dentro del rango?&lt;br/&gt;→ cerca del extremo = veredicto claro&lt;br/&gt;en el medio = indecisión&quot;}
+    Q3 --&gt; Q4{&quot;4 · ¿Qué hay AROUND la vela?&lt;br/&gt;zona · ciclo · sesión · evento macro&quot;}
+    Q4 --&gt; R[&quot;✅ Lectura completa:&lt;br/&gt;la vela EN contexto — nunca la vela sola&quot;]
+    R -.-&gt; A[&quot;⚠️ El contexto va último en el orden de lectura&lt;br/&gt;y PRIMERO en la decisión&quot;]
+</pre>
+<h2>Analogía</h2>
+<p>Cada vela es el <strong>acta de un partido</strong> comprimida en una línea. El cuerpo es el marcador final (quién ganó y por cuánto); las mechas son los momentos en que el perdedor estuvo ganando y el público se levantó de la silla antes de que el resultado volviera a su cauce. Una vela con cuerpo enorme y mechas mínimas: partido aplastante, dominio de principio a fin. Una vela doji (apertura ≈ cierre, cuerpo casi nulo): empate con prórroga — la subasta quedó en tablas y el veredicto se posterga al siguiente período. Y como en el fútbol, <strong>el acta sin contexto no dice nada</strong>: un 2-1 puede ser un triunfo cómodo, una remontada heroica o un partido aburrido decidido en el descuento. La misma vela alcista es "confirmación" en un nivel de demanda con expansión y "nada" a mitad de rango sin energía. Primero el contexto (ciclos, zonas — esta lección y las siguientes), después la vela: nunca al revés.</p>
+<h2>Cómo se hace: leer una vela en 4 preguntas, con el día real descompuesto</h2>
+<p>El método del programa para leer CUALQUIER vela, en orden fijo:</p>
+<ol>
+<li><strong>¿Qué color/tamaño tiene el cuerpo?</strong> → quién ganó el período y con cuánta determinación.</li>
+<li><strong>¿Dónde están las mechas y cuánto miden respecto al cuerpo?</strong> → dónde fue rechazada la urgencia. Mechas en la parte inferior = reacción compradora abajo (protección de demanda); arriba = reacción vendedora.</li>
+<li><strong>¿Dónde quedó el cierre dentro del rango?</strong> → cerca del extremo = veredicto claro; en el medio = indecisión (el cierre es el 60 % de la lectura).</li>
+<li><strong>¿Qué hay AROUND la vela?</strong> (nivel, tendencia, sesión, evento) → el contexto que decide si la vela significa algo.</li>
+</ol>
+<p><strong>Descomposición con números cerrados.</strong> Vela diaria de XAU/USD: Open 4 000,0 · High 4 024,0 · Low 3 994,0 · Close 4 020,0. Cuerpo: 4 020 − 4 000 = <strong>+20 $</strong> (alcista, determinación media-alta). Mecha superior: 4 024 − 4 020 = 4 $ (rechazo leve arriba). Mecha inferior: 4 000 − 3 994 = <strong>6 $</strong> (rechazo abajo). Cierre a 26/30 del rango (cerca del máximo): veredicto comprador claro. Lectura completa: el día abrió, los vendedores probaron 3 994 y fueron absorbidos (mecha inferior 6 $), el precio expandió al alza y <strong>cerró pegado al máximo</strong>: los compradores aún tenían urgencia al cierre — la subasta no se descargó dentro del día. Para el sesgo del día siguiente, esa vela pesa más que tres señales de indicador; y si además cerró sobre una zona de demanda H4 marcada (Lección 3.3), las preguntas del análisis diario de tu <a href="receta-primera-operacion.html">receta</a> ya tienen respuesta: régimen + zona + dirección.</p>
+<p><strong>El ejercicio fractal (hazlo, no lo leas):</strong> abre la misma vela diaria en M15. Mira cómo el "cuerpo" se desarma en horas de compra, un tramo de mecha inferior se vuelve la caída de las 09:30 (¿un dato? — revisa tu calendario de M2), y el cierre pegado al máximo es la sesión de Nueva York acumulando. La vela D1 es la sinopsis; las velas internas son la película.</p>
+<h2>Error común</h2>
+<p>El error rey: <strong>la vela aislada como señal</strong> — "martillo = compro". Un martillo (mecha inferior larga, cuerpo pequeño arriba) en una zona de demanda H4 después de una expansión bajista que se agota: tiene sentido probabilístico (rechazo documentado donde había compradores esperando). El mismo martillo en medio de un rango, sin zonas cerca, en sesión muerta: es ruido con forma bonita. La regla del programa: <strong>nunca se opera una vela; se opera una vela EN un contexto</strong>. El segundo error: olvidar que la vela cierra cuando cierra — operar "el momento" intra-vela (ver el precio tocar un nivel y anticipar el cierre) es apostar al resultado de una subasta en curso; las confirmaciones del programa trabajan en cierres (Lección 3.4). El tercero, herencia de M1: saltar a M1/velas de 5 minutos a "ver mejor la entrada" — el micro-marco muestra más velas y más ruido; tu marco de análisis (H4/D1 en esta formación) es una decisión tomada, no un capricho de zoom.</p>
+<h2>Conexión cuantitativa</h2>
+<p>Las velas alimentan directamente tu ecuación vía <ktx class="ktx" data-tex="P_w">P_w</ktx>: leer bien cuerpo/mechas/cierre en contexto es lo que separa entradas con confirmación de entradas por antojo — y cada entrada confirmada frente a anticipada es, estadísticamente, menos barridas sufridas (Lección 2.3) y menos falsos arranques pagados. Además, la vela te da la <strong>estructura de invalidación</strong>: tu SL va tras el extremo de la vela de reacción (bajo la mecha inferior de un martillo en demanda, con margen), no tras un número redondo — SL que muere donde tu idea muere, calculado con la fórmula del Paso 5 de la receta. Y el tamaño del rango de la vela (High − Low) es la semilla de la noción de volatilidad por período que usarás como ADR (Lección 3.6 y M8): la vela que lees es también el dato que dimensiona.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li>Toda vela resume OHLC: el <strong>cuerpo</strong> mide quién ganó la subasta del período; las <strong>mechas</strong>, dónde fue rechazada la urgencia.</li>
+<li>El <strong>cierre</strong> es el veredicto del período: las confirmaciones del programa se evalúan en cierres, no en toques.</li>
+<li>Fractalidad literal: cada vela contiene un gráfico completo de marco menor — pero el ruido y los costos relativos crecen al bajar (Lección 1.4): el marco de análisis H4/D1 ya está decidido.</li>
+<li>Lectura en 4 preguntas: cuerpo → mechas → posición del cierre → contexto alrededor. El contexto va último en el orden de lectura y primero en la decisión.</li>
+<li>Nunca se opera una vela suelta: la misma formación es señal en una zona y ruido en el vacío.</li>
+<li>Historia: Dojima y Homma (siglo XVIII) — el análisis de precio opera sobre el mismo motor desde hace 300 años.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>Vela: Open 1,0850 · High 1,0855 · Low 1,0820 · Close 1,0823 en EUR/USD. Descompón cuerpo, mechas, veredicto del cierre y qué te dice sobre el día.</li>
+<li>¿Por qué el programa evalúa rupturas y confirmaciones en el CIERRE de la vela y no en el toque del nivel? Conéctalo con la Lección 2.3.</li>
+<li>Tu compañero opera "martillos" en velas de 5 minutos sin mirar nada más. Nombra los tres problemas de su método con lo que sabes hasta aquí.</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. Cuerpo: 1,0823 − 1,0850 = **−27 pips** (bajista, determinación alta). Mecha superior: 1,0855 − 1,0850 = 5 pips (rechazo leve arriba). Mecha inferior: 1,0823 − 1,0820 = 3 pips (casi nula). Cierre a 3/35 del rango = pegado al mínimo: veredicto vendedor claro, la urgencia bajista NO se descargó en el día (cerró en el extremo). Sesgo operativo: presión vendedora vigente al cierre — buscar largos "porque ya cayó mucho" sería pelear contra el veredicto; el precio aspira a la siguiente zona de demanda por debajo.
+2. Porque el toque intra-vela puede ser una **barrida de liquidez** (Lección 2.3): la rotura momentánea detona stops y vuelve. El cierre, en cambio, es el acuerdo final de la subasta completa: un cierre fuera del nivel implica que la urgencia superó al nivel Y sobrevivió al período. Evaluar en cierres filtra exactamente los falsos rompimientos que el retail paga; el detalle de ruptura → cierre fuera → confirmación es la Lección 3.4.
+3. (a) Sin contexto: una vela no es señal; el mismo martillo es probable en demanda y ruido en el vacío — su <ktx class="ktx" data-tex="P_w">P_w</ktx> no existe sin el "dónde". (b) Marco de 5 minutos: maximiza el impuesto del ruido y del spread relativo (Lección 1.4/2.1) — su ganancia típica por operación es la más pequeña frente a un costo fijo constante. (c) Sin invalidación estructural ni estadística: vela a vela sin journal ni N ≥ 100, su "funciona" es la memoria de los aciertos — la varianza hablando, no el sistema.
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="hub-mod-03.html"><span class="lbl">← Anterior</span><span class="ttl">Módulo 3 · Anatomía del Gráfico</span></a>
+    <a class="next" href="leccion-3-2.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 3.2 · Los 4 ciclos del mercado</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

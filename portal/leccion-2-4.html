@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 2.4 · Forex y sus sesiones · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a class="active" href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>🧱 N1 · Base<span class="sep">/</span>M2 · El Motor del Precio<span class="sep">/</span>Lección 2.4 · Forex y sus sesiones</div>
+  <article class="doc-body">
+<h1>Lección 2.4 · Forex y sus sesiones</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>45–60 min de estudio (incluye construir tu reloj de sesiones en el laboratorio)</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-02.html">M2 · El Motor del Precio</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td><a href="leccion-2-3.html">Lección 2.3 · Liquidez</a></td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="leccion-2-5.html">Lección 2.5 · Personalidad de cada mercado</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>El forex abre domingo por la tarde y cierra viernes por la tarde — pero no es un mercado uniforme de 120 horas: es cuatro turnos de fábrica que se pasan la posta alrededor del planeta, con un pico de actividad cuando Londres y Nueva York coinciden. Para tu operativa esto no es cultura general: <strong>la hora del día determina el spread que pagas, la volatilidad que puedes capturar y el ruido que te confunde</strong>. El mismo setup ejecutado en el solapamiento Londres-NY y a las 11 de la noche son dos negocios distintos con el mismo nombre. Y hay una ventaja geográfica que casi nadie te cuenta: tu huso horario (Bolivia, UTC-4) coincide con el de Nueva York durante la mayor parte del año — el turno más importante del mercado pasa en tus horas normales de vigilia, no de madrugada.</p>
+<h2>Concepto</h2>
+<p><strong>Los pares.</strong> En forex siempre compras una moneda vendiendo otra: EUR/USD a 1,0850 significa 1 euro cuesta 1,0850 dólares. La primera moneda es la <strong>base</strong>, la segunda la <strong>cotización</strong> (<em>quote</em>). Familias:</p>
+<ul>
+<li><strong>Majors:</strong> el dólar con las grandes economías (EUR/USD, USD/JPY, GBP/USD, USD/CHF, USD/CAD, AUD/USD, NZD/USD) — máxima liquidez, spreads mínimos.</li>
+<li><strong>Minors/crosses:</strong> sin dólar (EUR/GBP, EUR/JPY, GBP/JPY) — líquidos, spreads algo mayores.</li>
+<li><strong>Exóticos:</strong> mayor + moneda emergente (USD/MXN, USD/TRY) — spreads anchos, movimientos violentos, costos que devoran sistemas <em>(el programa los evita durante la formación)</em>.</li>
+</ul>
+<p><strong>El pip</strong> (<em>pip, percentage in point</em>): la unidad mínima convencional de movimiento. En EUR/USD y la mayoría de pares es la cuarta decimal (0,0001); en los pares con yen, la segunda (0,01). Ojo con la <strong>pipette</strong> (la quinta decimal que muestran los brókeres: 0,00001 = décima de pip) — no confundas 15 pips con 15 pipettes al fijar tu SL: un error de ×10 en el riesgo.</p>
+<p><strong>El lote.</strong> 1 lote estándar = 100 000 unidades de la base → en EUR/USD, 1 pip = 10 $. Mini (0,1) = 1 $/pip. Micro (0,01) = 0,10 $/pip. La receta de tu primera operación ya usó esto en su Paso 5: el lote no se elige, <strong>se calcula</strong>.</p>
+<p><strong>Las sesiones</strong> (horarios aproximados en UTC; se mueven ±1 h con el horario de verano del norte):</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Sesión</th>
+<th>UTC (aprox.)</th>
+<th>Bolivia UTC-4 (aprox.)</th>
+<th>Carácter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🇦🇺 Sídney</td>
+<td>21:00–06:00</td>
+<td>17:00–02:00</td>
+<td>Apertura de la semana; volumen fino, spreads anchos</td>
+</tr>
+<tr>
+<td>🇯🇵 Tokio</td>
+<td>00:00–09:00</td>
+<td>20:00–05:00</td>
+<td>Rangos más definidos; JPY y AUD protagonistas</td>
+</tr>
+<tr>
+<td>🇬🇧 Londres</td>
+<td>07:00–16:00</td>
+<td>03:00–12:00</td>
+<td>La apertura (≈ 09:00 Bolivia) dispara el volumen del día; expansiones y barridas de la sesión asiática</td>
+</tr>
+<tr>
+<td>🇺🇸 Nueva York</td>
+<td>12:00–21:00</td>
+<td>08:00–17:00</td>
+<td>Datos de EE. UU. (08:30 Bolivia); continua el impulso o invierte el de Londres</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>El solapamiento Londres–NY (≈ 12:00–16:00 UTC = 08:00–12:00 Bolivia)</strong> es el turno estrella: el mayor volumen y los menores spreads del día. Los datos del BIS (encuesta trienal 2022 <em>(snapshot)</em>) lo explican: Reino Unido concentra ≈ 38 % del volumen global de divisas y EE. UU. ≈ 19 % — cuando ambos turnos coinciden, el libro está más lleno. Después del cierre de Londres (≈ 16:00 UTC), el volumen se desinfla: los movimientos de última hora son trampas frecuentes para principiantes.</p>
+<p><strong>Visual — tu día forex, en tu reloj (Bolivia, UTC-4):</strong></p>
+<pre class="mermaid">timeline
+    title El día forex en hora Bolivia (aproximado — se mueve ±1 h con el DST del norte)
+    17h–02h : Sídney — apertura de la semana, volumen fino, spreads anchos
+    20h–05h : Tokio — rangos más definidos, JPY y AUD protagonistas
+    03h–12h : Londres — la apertura (≈ 09h) dispara el volumen del día
+    08h–17h : Nueva York — datos 08h30, extiende o invierte a Londres
+    08h–12h : Solapamiento Londres–NY — el turno estrella · máxima energía, mínimo spread
+    12h–17h : Tarde — Londres recoge puestos · volumen menguante, trampas frecuentes
+</pre>
+<p><strong>El ciclo típico del día</strong> (patrón, no ley): la sesión asiática construye un rango → la apertura de Londres lo rompe o barre sus extremos (liquidez, Lección 2.3) → la dirección de Londres se extiende o se invierte en Nueva York con los datos → el cierre de Londres sella el recorrido y la tarde se aplaca. Conocer este guion no te da señales: te da <strong>expectativas correctas</strong> sobre qué tipo de comportamiento puede ocurrir a cada hora.</p>
+<h2>Analogía</h2>
+<p>El mercado global de divisas es una feria permanente de cuatro turnos. El turno de madrugada (Sídney-Tokio) es un mercado de barrio: pocos puestos, precios que solo se mueven si llevas el carro lleno, y el vendedor te cobra más margen porque no hay competencia al lado (spreads anchos, rangos finos). A las 09:00 hora Bolivia abren los almacenes grandes de Londres: entran camiones, el pasillo se llena, los precios empiezan a moverse de verdad y el margen del vendedor se encoge a fuerza de competencia (volumen máximo, spreads mínimos). A las 08:00–12:00 Bolivia coinciden los almacenes de Londres y los de Nueva York: la feria entera en pie — ese es tu horario de oro. A las 13:00 hora Bolivia, Londres empieza a recoger puestos: la feria sigue abierta pero vaciándose, y los últimos remates a veces se pagan caros. Operar fuera de tu horario de oro no es imposible — es <strong>pagar alquiler más alto por un local con menos clientes</strong>.</p>
+<h2>Cómo se hace: tu reloj de sesiones y el valor del pip, con números cerrados</h2>
+<p><strong>1. Ancla tu reloj.</strong> Bolivia es UTC-4 todo el año (sin horario de verano). Nueva York es UTC-4 en su horario de verano y UTC-5 en invierno boreal; Londres oscila entre UTC+0 y UTC+1. Consecuencia práctica: durante la mayor parte del año tu reloj y el de NY coinciden; en invierno del norte todo el bloque de EE. UU. se desfasa una hora. Regla del programa: <strong>las horas se confirman en el calendario económico cada semana</strong>, no se memorizan de una vez para siempre.</p>
+<p><strong>2. El valor del pip en dinero.</strong> EUR/USD comprado con 1 lote estándar: 1 pip = 10 $. Ejemplo cerrado: entras long en 1,0850 y el TP está en 1,0890 — 40 pips de recorrido:
+- 0,01 lote (micro): 40 × 0,10 $ = <strong>4 $</strong>
+- 0,10 lote: 40 × 1 $ = <strong>40 $</strong>
+- 1 lote: 40 × 10 $ = <strong>400 $</strong></p>
+<p>Con riesgo fijo del 1 % sobre 2 000 $ (20 $) y un SL de 25 pips: <ktx class="ktx" data-tex="20 / (25 \times 10) = 0{,}08">20 / (25 \times 10) = 0{,}08</ktx> lotes — el mismo cálculo del Paso 5 de la receta. En pares con yen la cuarta decimal no existe: USD/JPY en 150,00 → 1 pip = 0,01 → con 1 lote (100 000 unidades), 1 pip ≈ 100 000 × 0,01 / 150 ≈ <strong>6,67 $</strong> <em>(el valor del pip en pares no-USD-quoted depende del tipo de cambio; tu plataforma lo calcula — tú solo debes saber que NO es siempre 10 $)</em>.</p>
+<p><strong>3. Elegir ventana de operativa.</strong> Con la agenda del laboratorio (auditoría personal de M1) sobre la mesa: si tus bloques de energía alta son 08:00–12:00 Bolivia, tu ventana natural ES el solapamiento Londres-NY — capital y horario coinciden. Si solo tienes noches, tu ventana real es Tokio (rangos) o el final de NY — y eso condiciona el estilo: los sistemas de ruptura de rango asiático tienen su hábitat en la apertura de Londres; los de rango puro, en Asia. Tu reloj personal no es una limitación estética: es una <strong>variable del diseño de tu sistema</strong> (M7).</p>
+<h2>Error común</h2>
+<p>El primero: <strong>operar horas muertas por disponibilidad</strong> — el spread de EUR/USD en la madrugada puede duplicarse o triplicarse <em>(ilustrativo)</em> y el rango se encoge: pagas más peaje por recorridos más cortos, la combinación exacta que hunde <ktx class="ktx" data-tex="E">E</ktx> (Lección 2.1). El segundo: <strong>confundir pipette con pip</strong> al fijar SL/TP — un SL "de 15" que en realidad son 15 pipettes (1,5 pips) muere con el primer respiro del mercado; uno "de 15" que en realidad son 150 pips multiplica ×10 tu riesgo real. Verifica siempre con el calculador de tamaño de tu plataforma ANTES de enviar la orden. El tercero: creer que "forex cierra a medianoche" y quedar atrapado en los fines de semana (el mercado cierra viernes ≈ 18:00 Bolivia y reabre domingo ≈ 18:00 Bolivia, con <strong>gap</strong> de apertura: el precio de lunes puede saltar respecto al de viernes — riesgo <em>overnight</em> que la receta y el M8 gestionan con reglas de no-permanencia).</p>
+<h2>Conexión cuantitativa</h2>
+<p>La hora del día entra en la ecuación como costo y como varianza. <strong>Como costo:</strong> mismo sistema, objetivo 30 pips — en el solapamiento paga ~1,5 pips de spread (5 % del objetivo); en la madrugada paga ~4 pips (13 %) <em>(ilustrativo)</em>: la diferencia de horario cuesta 8 puntos porcentuales de <ktx class="ktx" data-tex="E">E</ktx> bruto sin tocar un solo parámetro técnico. <strong>Como varianza:</strong> fuera de las sesiones líquidas, los movimientos finos y sin energía alimentan el <em>whipsaw</em> (el vaivén que mata sistemas de ruptura). Esta es la segunda palanca de negocio que controlas sin tocar el sistema: <strong>mercado líquido + sesión líquida + ejecución disciplinada</strong> — y es gratis, solo exige respetar el reloj. En el laboratorio de este módulo construyes tu reloj personal y lo dejas pegado junto a la pantalla; en la misión lo validas con observación en vivo.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li>En forex compras una moneda vendiendo otra: base/quote; majors, minors y exóticos se diferencian por liquidez y costo.</li>
+<li>Pip = 0,0001 (pares con yen: 0,01); lote estándar = 10 $/pip en EUR/USD, micro = 0,10 $/pip — el lote <strong>se calcula</strong>, nunca se elige a ojo.</li>
+<li>Cuatro sesiones alrededor del sol; el solapamiento Londres–NY (08:00–12:00 Bolivia aprox.) concentra el mayor volumen y los menores spreads.</li>
+<li>Londres ≈ 38 % y NY ≈ 19 % del volumen global <em>(BIS 2022, snapshot)</em> — por eso su coincidencia es el turno estrella.</li>
+<li>Ciclo típico: Asia construye rango → Londres lo rompe o lo barre → NY extiende o invierte → cierre de Londres desinfla la tarde.</li>
+<li>Tu huso (UTC-4) coincide con NY la mayor parte del año: tu horario de oro está en tu vigilia normal. Las horas se verifican cada semana por DST.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>Compras USD/JPY con 1 lote en 150,00 y cierras en 150,35. ¿Cuántos pips ganaste y aproximadamente cuántos dólares (con el valor de pip aproximado de la lección)?</li>
+<li>Tu agenda solo da bloques de estudio de 21:00 a 23:00 Bolivia. ¿Qué sesión estás viendo, qué carácter tiene, y qué implicación tiene para el tipo de sistema que podría funcionar ahí?</li>
+<li>El viernes a las 17:30 Bolivia tienes una posición long en EUR/USD con +25 pips. ¿Qué riesgo corres si la mantienes durante el fin de semana y cuál es la práctica del programa?</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. 150,35 − 150,00 = 0,35 → en USD/JPY 1 pip = 0,01 → **35 pips**. Valor del pip: 100 000 × 0,01 / 150 ≈ 6,67 $ → ganancia ≈ 35 × 6,67 ≈ **233 $** (aproximación; el valor exacto varía con el tipo de cambio y lo calcula la plataforma).
+2. 21:00–23:00 Bolivia ≈ fin de Nueva York / inicio de Sídney–Tokio: volumen decreciente, spreads que se ensanchan, rangos finos. Implicación: los sistemas de ruptura y expansión están fuera de su hábitat (necesitan el motor de Londres-NY); un sistema de rango/reversión es más coherente con esa ventana — o mejor: usar esos bloques para estudio/análisis y journal, y ejecutar en los 2-4 h del solapamiento si tu vida lo permite. La ventana horaria es una variable de diseño del sistema (M7), no un detalle.
+3. Riesgo *overnight* de fin de semana: el mercado cierra viernes ≈ 18:00 Bolivia y no puedes salir hasta el domingo por la noche; noticias del fin de semana (geopolítica, decisiones de bancos centrales, quiebras) se descuentan en el **gap** de apertura — tu SL no te protege dentro del gap: puedes abrir lunes 40 pips por debajo de tu stop y perder 2R por una posición "de 1R". Práctica del programa: no mantener posiciones durante el fin de semana durante toda la formación (y después, solo si el plan lo contempla explícitamente con tamaño reducido).
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="leccion-2-3.html"><span class="lbl">← Anterior</span><span class="ttl">Lección 2.3 · Liquidez</span></a>
+    <a class="next" href="leccion-2-5.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 2.5 · Personalidad de cada mercado</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

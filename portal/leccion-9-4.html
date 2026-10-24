@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 9.4 · Forward testing en demo — la transición honesta del labo · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a class="active" href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>🛡️ N3 · Riesgo<span class="sep">/</span>M9 · Backtesting, Journal y Validación<span class="sep">/</span>Lección 9.4 · Forward testing en demo — la transición honest</div>
+  <article class="doc-body">
+<h1>Lección 9.4 · Forward testing en demo — la transición honesta del laboratorio al mundo</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>40–55 min de estudio</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-09.html">M9 · Backtesting, Journal y Validación</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td><a href="leccion-9-3.html">Lección 9.3 · Métricas del reporte</a></td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="leccion-9-5.html">Lección 9.5 · El Journal profesional</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>El backtest mide el <strong>sistema</strong>; no puede medir tu <strong>ejecución</strong> ni los costes del vivo. Hay huecos estructurales que ningún replay rellena: el spread que tu señal encuentra en vivo a las 09:31 no es el estimado; el SL que en backtest se ejecuta "al precio exacto" en vivo sufre slippage; y el disparo que en replay no cuesta nada dudar, en vivo se negocia con el pulso. El forward testing es el puente: <strong>el mismo sistema, las mismas reglas, los mismos umbrales — pero datos vivos, en tiempo real, sin dinero todavía</strong>. Es la fase que el aficionado salta (del backtest bonito al real "porque ya está aprobado") y que el profesional recorre con la misma disciplina que el laboratorio: N declarado, journal completo, métricas comparadas contra los intervalos del backtest. Esta lección define el embudo completo de la evidencia — backtest → demo forward → real micro → escala —, los 4 huecos que el forward mide y los criterios de paso de fase. Y una honestidad de programa: el peldaño de dinero real se recorre <strong>después de M12</strong> (Fase 4), porque antes faltan el broker (M11) y el plan (M12) — el embudo no se salta ninguna estación.</p>
+<h2>Concepto</h2>
+<p><strong>El embudo de la evidencia.</strong> Cada fase filtra y añade lo que la anterior no puede dar:</p>
+<pre class="mermaid">flowchart TD
+    A[&quot;FASE 1 · Backtest ciego&lt;br/&gt;N = 100 · histórico · sin dinero&lt;br/&gt;mide el SISTEMA&quot;] --&gt; B{&quot;Reporte de 9.3&lt;br/&gt;verde o ámbar&quot;}
+    B -- &quot;rojo&quot; --&gt; C[&quot;NO operar&lt;br/&gt;laboratorio de M7 con los datos&quot;]
+    B -- &quot;verde / ámbar&quot; --&gt; D[&quot;FASE 2 · Demo forward&lt;br/&gt;N = 20-30 mínimo · datos vivos · sin dinero&lt;br/&gt;mide la EJECUCION y los costes vivos&quot;]
+    D --&gt; E{&quot;Métricas dentro de los&lt;br/&gt;intervalos del backtest&quot;}
+    E -- &quot;fuera&quot; --&gt; F[&quot;Investigar sin modificar&lt;br/&gt;ejecucion - costes - regimenes&lt;br/&gt;decidir en la ventana&quot;]
+    E -- &quot;dentro&quot; --&gt; G[&quot;FASE 3 · Real micro&lt;br/&gt;riesgo 0,25-0,5 % · tras M12&lt;br/&gt;mide al HUMANO con dinero real&quot;]
+    G --&gt; H[&quot;Escala progresiva&lt;br/&gt;hacia el 1 % del plan&lt;br/&gt;con las 3 fases en verde&quot;]
+</pre>
+<p><em>(en este programa la Fase 3 abre tras M12 — Fase 4 de la <a href="receta-primera-operacion.html">Receta</a>: antes faltan el broker serio (M11) y el plan escrito (M12); el embudo no da saltos).</em></p>
+<p><strong>Los 4 huecos que el backtest no puede ver</strong> — y que el forward existe para medir:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Hueco</th>
+<th>Qué es</th>
+<th>Cómo lo mide el forward</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Spread vivo en la señal</strong></td>
+<td>El spread NO es constante: se ensancha en aperturas, noticias y baja liquidez; tu estimación de 0,08R era un promedio de replay</td>
+<td>Cada fila registra el spread REAL del momento de la señal → al cerrar N=20-30, el coste medio real se compara contra el 0,08R estimado</td>
+</tr>
+<tr>
+<td><strong>Slippage del SL</strong></td>
+<td>En backtest el SL se ejecuta al precio exacto; en vivo, gaps y noticias ejecutan PEOR que tu precio</td>
+<td>Cada SL ejecutado registra la diferencia (precio SL vs precio de ejecución) → la fila del journal crea tu estadística personal de slippage</td>
+</tr>
+<tr>
+<td><strong>Tu ejecución</strong></td>
+<td>Dudar, llegar tarde, no disparar la señal válida, sobregestionar — en replay no hay pulso y no hay costo de dudar</td>
+<td>La métrica de disparos debidos vs ejecutados (M8) se mide en vivo por primera vez + la deriva entre R planificado y R real (9.5)</td>
+</tr>
+<tr>
+<td><strong>La infraestructura</strong></td>
+<td>Plataforma que se cuelga, conexión que cae, orden que no se llena — raros, reales, y solo aparecen en vivo</td>
+<td>Los incidentes se cuentan en el acta semanal: frecuencia y duración; si el broker/entorno falla en demo, imagínalo en real (M11 elegirá con esto)</td>
+</tr>
+</tbody>
+</table></div>
+<p>La lectura conjunta: el backtest responde "¿tiene esperanza el sistema?"; el forward responde "¿sobrevive esa esperanza al mundo real y a ti?". Son preguntas distintas con instrumentos distintos — y el embudo las hace en orden porque cada una filtra a la siguiente.</p>
+<p><strong>Criterio de paso de fase: "dentro de los intervalos".</strong> El forward no tiene que salir MEJOR que el backtest — tiene que salir <strong>dentro de lo que el backtest declaró</strong>: el WR forward cae dentro del IC del backtest (ej. [30,4 %, 49,6 %]), el PF neto cerca del medido (1,25 ± su propio error, amplio con N=20-30), los costes reales contra el 0,08R, y los disparos en 100 %. Dos asimetrías que el programa fija: <strong>(a) si el forward sale MEJOR</strong> (WR 55 % con N=20): no se celebra ni se escala — con N=20 el IC es ±22 pp y el exceso suele ser varianza o filtro involuntario (¿tomaste solo las señales "bonitas"?); se sigue midiendo. <strong>(b) si sale PEOR de forma persistente</strong> (WR forward bajo el peor caso del backtest con N ya maduro): se investiga SIN modificar — primero ejecución (etiquetas E1-E4 del journal), luego costes (slippage/spread), luego régimen (¿cambió el mercado?): el hallazgo se documenta y se decide en la ventana mensual (9.6). El N forward se declara antes también (20-30 mínimo): el forward hereda TODOS los candados del backtest.</p>
+<p><strong>Por qué demo y no real directo.</strong> El demo forward mide ejecución mecánica con tiempo real pero sin el ruido psicológico del dinero — y ese es exactamente su límite: M10 estudiará lo que el demo no puede medir. La secuencia honesta es acumular evidencia por capas: el backtest limpió la hipótesis, el demo limpia la ejecución y los costes, el real micro (Fase 4) limpia la psicología con riesgo acotado (0,25–0,5 %), y solo con las tres fases en verde se escala hacia el 1 % del plan. Cada capa añade una variable nueva y solo una: así, cuando algo falla, sabes QUÉ se rompió.</p>
+<h2>Analogía</h2>
+<p>La licencia de piloto. Nadie pasa del simulador al Boeing con 300 pasajeros: simulador (tu backtest — el avión es real, el viento no), luego <strong>vuelo en zona con instructor</strong> (tu demo forward — el avión real, el viento real, el riesgo contenido), luego el primer solo en circuito pequeño (real micro), y solo con horas acumuladas, la licencia que habilita la escala. El salto simulador→avión no cambia el avión: cambia el viento, el ruido y tu pulso — exactamente los 4 huecos. Y la industria no considera el instructor una pérdida de tiempo: considera la gente que se lo salta un peligro público. Tu demo forward es tu vuelo en zona: las mismas maniobras del manual (tu sistema), registradas con la misma actitud de instrucción (el journal), con un instructor que no te regatea preguntas incómodas — tu acta semanal.</p>
+<h2>Cómo se hace: ejecutar la fase forward con protocolo</h2>
+<ol>
+<li><strong>Declara el experimento forward (misma forma que el PRE del backtest).</strong> N declarado (20-30 mínimo; el programa recomienda 30 para que el IC baje a ±18 pp), hipótesis (las métricas caen dentro de los intervalos del backtest), métricas y umbrales (los MISMOS de la tabla de 9.3 — no se inventan unos nuevos más "amables"), y las reglas del sistema congeladas (v1.1, el changelog sigue sin modificaciones).</li>
+<li><strong>Ejecuta en tu ventana del sistema.</strong> Las señales llegan en vivo cuando el mercado lo decida — no se fuerzan ("hoy no hay setup" es una sesión válida y se anota como tal). Cada señal válida: checklist de 8 condiciones con velas cerradas, captura en el momento, orden con el lote de la calculadora (el DEMO se opera con el tamaño REAL que usarías — un demo con 1 lote mide otra cosa), y journal v1 completo en caliente.</li>
+<li><strong>Registra los 4 huecos fila por fila.</strong> Spread real al momento (columna del journal), slippage del SL cuando se ejecuta, disparos debidos vs ejecutados en el acta, incidentes de infraestructura con duración. Estas 4 columnas son las que el backtest no tiene — son el valor añadido de la fase.</li>
+<li><strong>Compara semanalmente contra los intervalos.</strong> En cada acta semanal (9.6): el WR parcial forward contra el IC del backtest, los costes contra 0,08R, los disparos contra 100 %. No para reaccionar — para que la comparación final de la fase no sea una sorpresa.</li>
+<li><strong>Cierra la fase con el mini-reporte.</strong> A N declarado cumplido: el mismo reporte de una página de 9.3 con la fila extra de los 4 huecos, y la decisión: dentro de intervalos → fase siguiente cuando el programa la abra (Fase 4, tras M12); fuera → investigación documentada + ventana mensual; y en ambos casos el acta de cierre con fecha.</li>
+</ol>
+<h2>Error común</h2>
+<p><strong>(1) Saltar al real "porque el backtest ya aprobó".</strong> El backtest aprobó el SISTEMA; tu ejecución y los costes vivos no tienen ni una sola medición. El salto es exactamente el error que el embudo existe para impedir — y el costo del atajo se paga con la primera racha en real, sin estadística de ejecución que explique si el problema fue el sistema o tú. <strong>(2) Operar el demo con tamaño fantasma.</strong> "En demo pongo 1 lote porque no pasa nada" — entonces tu demo mide un negocio que no vas a operar: el sizing afecta la gestión (8.3-8.5), la frecuencia de señales que aceptas y tu atención. El demo se opera con el lote que la calculadora daría con tu capital real: si es 0,06, el demo lleva 0,06. <strong>(3) Modificar reglas durante el forward.</strong> El mismo candado del backtest: el N se declaró, las reglas se congelaron; "ajustar el TP en vivo porque el mercado está rápido" destruye la comparabilidad de la fase entera. Las dudas van al diario del backtester — que ahora se llama diario del forward. <strong>(4) Contar solo las operaciones "bonitas".</strong> La señal a las 03:00 fuera de tu ventana no cuenta (tu sistema lo dice), pero la que perdiste por llegar tarde SÍ: se etiqueta (E2) y entra. Un forward sin errores es un forward sin honestidad — tu ejecución real incluye lo incómodo, o el reporte mide un humano que no existes. <strong>(5) Leer un forward mejor que el backtest como "el sistema es mejor de lo que creía".</strong> Con N=20 el IC es ±22 pp: un 55 % forward es estadísticamente indistinguible de un 40 % backtest. La asimetría honesta: el exceso suele descontarse (varianza + filtro involuntario) y el déficit persistente sí se investiga — la cautela siempre del lado de la prudencia.</p>
+<h2>Conexión cuantitativa</h2>
+<p><strong>Hacia 9.3:</strong> los umbrales del forward son los del backtest — la tabla de 3 vías se reutiliza tal cual con los intervalos como referencia; el WR* neto (34,8 %) sigue siendo la línea que ningún intervalo debe cruzar hacia abajo. <strong>Hacia 8.5-8.6:</strong> el forward es la primera vez que los topes de cartera y la cascada de frenos operan en vivo — las señales simultáneas llegan de verdad, y el árbol de decisión de la cartera (8.5) se ejecuta con reloj corriente; cada freno disparado en demo es un ensayo gratis del protocolo de apagado. <strong>Hacia 9.5:</strong> las 4 columnas nuevas del forward (spread real, slippage, deriva, incidentes) se suman al journal v1 — la infraestructura de registro se construye en la siguiente lección y este módulo la usa de principio a fin. <strong>Hacia M10-M12:</strong> el demo forward es el laboratorio donde M10 probará la temperatura pre-sesión y el diario emocional (el demo mide la mecánica; la psicología se entrena aquí para que en real micro ya sea rutina); M11 añadirá la elección de broker con tus datos reales de slippage como criterio; y M12 escribirá el plan que declara en qué fase del embudo está tu negocio — el mapa de esta lección es una sección obligatoria de ese plan.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li>El embudo de la evidencia: <strong>backtest (sistema) → demo forward (ejecución y costes vivos) → real micro (el humano, 0,25–0,5 %, tras M12) → escala</strong> — sin saltos de estación.</li>
+<li>Los 4 huecos que solo el forward mide: <strong>spread vivo, slippage del SL, tu ejecución (disparos y deriva), infraestructura</strong> — cada uno con su columna en el journal.</li>
+<li>El criterio de paso es "dentro de los intervalos" del backtest — no "mejor": un forward que sale muy bien se desconfía igual que uno que sale mal.</li>
+<li>El forward hereda TODOS los candados: N declarado antes, reglas congeladas, todo entra al dataset, nada se modifica en vuelo.</li>
+<li>El demo se opera con el tamaño real de la calculadora — un demo con tamaño fantasma mide un negocio que no vas a operar.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>Enumera los 4 huecos del backtest y explica en una línea cómo mide cada uno el demo forward. ¿Cuál de los 4 NO podría cerrarse ni con 1.000 operaciones de backtest — y por qué?</li>
+<li>Tu forward de 20 operaciones cierra con WR 55 % (backtest: 40 % ± 9,6). Calcula el IC del forward, interpreta el resultado con la asimetría del programa, y decide: ¿qué NO se hace y qué sí?</li>
+<li>¿Por qué el programa espera a M12 para el real micro aunque el forward esté en verde? Nombra las 2 piezas que faltan y qué fase del embudo declara cada una.</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. (1) Spread vivo: cada fila registra el spread real del momento de la señal → coste medio real vs 0,08R. (2) Slippage del SL: diferencia entre precio SL y precio de ejecución, op por op. (3) Ejecución: disparos debidos vs ejecutados + deriva R planificado vs real — el pulso no existe en replay. (4) Infraestructura: incidentes contados con duración en el acta. El que no se cierra con ningún backtest es (3): la ejecución bajo presión es del humano, y en replay no hay ni dinero ni reloj ni consecuencias — no es una limitación de datos, es una limitación de naturaleza.
+2. IC con N=20: <ktx class="ktx" data-tex="1{,}96\sqrt{0{,}55 \times 0{,}45/20} = 1{,}96 \times 0{,}111 = ±21{,}8">1{,}96\sqrt{0{,}55 \times 0{,}45/20} = 1{,}96 \times 0{,}111 = ±21{,}8</ktx> pp → [33,2 %, 76,8 %]. El 55 % forward es estadísticamente indistinguible del 40 % del backtest (los intervalos se solapan ampliamente). NO se hace: celebrar, escalar tamaño, "soltar" el sistema ("ya confío"), ni modificar el TP para "aprovechar que estoy en racha". SÍ se hace: seguir midiendo hasta el N declarado (o más), revisar si hubo filtro involuntario (¿tomé solo las señales bonitas? — el acta de no-disparos lo delata), y mantener el sizing provisional. La asimetría del programa: el exceso se desconfía, el déficit persistente se investiga — la prudencia siempre del lado conservador.
+3. Porque al embudo aún le faltan dos piezas de infraestructura que este módulo no da: (a) **M11 · La Industria** — elegir broker serio (regulación, costes, ejecución): tu estadística real de slippage y spread depende de con quién operas, y ese criterio necesita el módulo entero; (b) **M12 · Plan de Trading y de Negocio** — el documento donde el real micro se declara como fase con presupuesto, límites y criterios de salida (sin plan, el real micro es solo un backtest con los nervios de tu dinero). La Fase 4 de la Receta declara ambos: el primer dólar real llega con broker elegido, plan firmado y riesgo micro — nunca antes.
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="leccion-9-3.html"><span class="lbl">← Anterior</span><span class="ttl">Lección 9.3 · Métricas del reporte — de 100 filas a una página que dec</span></a>
+    <a class="next" href="leccion-9-5.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 9.5 · El Journal profesional — tu caja negra con taxonomía de </span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

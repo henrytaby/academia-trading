@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 10.3 · Las 5 avaricias — la otra cara del mismo secuestro · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a class="active" href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>🛡️ N3 · Riesgo<span class="sep">/</span>M10 · Psicotrading Científico<span class="sep">/</span>Lección 10.3 · Las 5 avaricias — la otra cara del mismo secu</div>
+  <article class="doc-body">
+<h1>Lección 10.3 · Las 5 avaricias — la otra cara del mismo secuestro</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>50–65 min de estudio</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-10.html">M10 · Psicotrading Científico</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td><a href="leccion-10-2.html">Lección 10.2 · Los 5 miedos</a></td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="leccion-10-4.html">Lección 10.4 · Pérdida ≠ Error</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>Los 5 miedos (10.2) empujan desde dentro: son huida. Las 5 avaricias <strong>jalan desde fuera</strong>: son persecución — y en el registro del journal aparecen con etiquetas distintas (E1, E2, E4) pero la misma firma hormonal que estudiaste en 10.1: dopamina anticipando recompensa, PFC cediendo el volante. La razón de dedicarles una lección propia es que el trader razonable cree que sus errores son de miedo ("me faltó valentía") cuando la estadística de la industria dice lo contrario: la mayoría del daño a cuentas con sistema viene de <strong>exceso</strong>, no de defecto — más operaciones que las debidas, más tamaño que el presupuesto, entradas más tarde que la zona. La prueba de que son el mismo fenómeno que los miedos: los cinco miedos sin protocolo PRODUCEN las cinco avaricias (el miedo a quedarse fuera produce FOMO; el miedo a perder produce revancha que produce sobreapalancamiento; el miedo a equivocarse produce overtrading de "recuperación"). Esta lección las nombra una a una, muestra el coste exacto de cada una sobre el caso maestro (E +0,16R neto) y entrega lo único que las frena: <strong>señales tempranas observables + pre-compromiso por escrito</strong> — porque a diferencia del miedo, que aparece antes de la decisión, la avaricia aparece DURANTE: se siente bien mientras se comete.</p>
+<h2>Concepto</h2>
+<p><strong>Las 5 avaricias del programa</strong> — cada una con su definición operativa, sus señales tempranas (los detectores de 10.1 aplicados a este contenido) y su coste medible sobre el caso maestro:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Avaricia</th>
+<th>Definición operativa</th>
+<th>Señales tempranas (antes del clic)</th>
+<th>Coste sobre el caso maestro</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>FOMO</strong> (<em>fear of missing out</em>)</td>
+<td>Impulso de entrar por ver el precio moverse sin ti, sin setup</td>
+<td>Cursor al botón "solo por si acaso"; "ya se escapa"; pensar en la ganancia ANTES que en el riesgo; revisar otro instrumento en plena gestión</td>
+<td>La entrada sin zona tiene E ≈ −coste = <strong>−0,08R cada vez</strong> (sin ventaja, solo pagas spread); 5 FOMO por semana = −0,4R regalaron</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Perseguir el precio</strong> (<em>chasing</em>)</td>
+<td>Entrar más allá de la zona definida, a mercado, "porque la idea sigue siendo buena"</td>
+<td>La zona quedó 10-15 pips atrás y "igual vale"; aceptar entrada peora con el mismo SL/TP mental</td>
+<td>Entrada 15 pips tarde con el mismo SL/TP: R:B cae de 2,1 a ~1,1 y la E de <strong>+0,16R a −0,16R</strong> (abajo, la cuenta completa)</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Sobreapalancamiento</strong> (<em>overleveraging</em>)</td>
+<td>Usar tamaño que el presupuesto no contempla: el lote "de la operación especial"</td>
+<td>Recalcular el lote dos veces (la segunda más grande); "esta zona es distinta"; la calculadora da 0,06 y tú piensas en 0,2</td>
+<td>Riesgo 5 % en vez de 1 %: una racha de 5 pérdidas = <strong>−22,6 %</strong> de cuenta (0,95⁵) vs −4,9 % (0,99⁵); recuperar −22,6 % exige +29,2 %</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Exceso de riesgo</strong> (<em>risk creep</em>)</td>
+<td>El mismo 1 % pero "ensanchado": SL más lejos "para darle aire", riesgo real 1,5-2 % por operación</td>
+<td>Medir el SL desde donde te gustaría que estuviera el precio; mover el SL tras entrar; justificar con "volatilidad" lo que es comodidad</td>
+<td>SL 32 → 48 pips con el mismo lote: el riesgo por op pasa de 19,20 $ a <strong>28,80 $ (+50 %)</strong> — el top del 1 % roto con silencio aritmético</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Overtrading</strong> (<em>overtrading</em>)</td>
+<td>Operar más de lo que tu sistema dispara: ruido disfrazado de actividad</td>
+<td>Contador de decisiones &gt; 10-12; mirar TF menores "para encontrar algo"; abrir el libro de órdenes por aburrimiento</td>
+<td>20 operaciones debidas → 40 ejecutadas: las 20 de ruido cuestan 20 × 0,08R = <strong>−1,6R/mes</strong> y la mitad de tu esperanza (abajo)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>El coste de perseguir, contado completo</strong> — la avaricia #2 con la aritmética de la Receta. Tu zona definida: entrada 1,0820, SL 1,0788 (32 pips), TP 1,0886 (66 pips) → R:B = 66/32 ≈ 2,06, y con tu WR 40 %: <ktx class="ktx" data-tex="E = 0{,}4 \times 2{,}06 - 0{,}6 \times 1 = +0{,}22R">E = 0{,}4 \times 2{,}06 - 0{,}6 \times 1 = +0{,}22R</ktx> bruto (≈ +0,16R neto con costes — el caso maestro). Ahora el FOMO te hace entrar 15 pips más tarde, en 1,0835, "porque la idea sigue siendo buena":</p>
+<p><ktxd class="ktxd" data-tex="\text{SL} = 1{,}0835 - 1{,}0788 = 47 \text{ pips} \qquad \text{TP} = 1{,}0886 - 1{,}0835 = 51 \text{ pips} \qquad R{:}B = \frac{51}{47} \approx 1{,}09">\text{SL} = 1{,}0835 - 1{,}0788 = 47 \text{ pips} \qquad \text{TP} = 1{,}0886 - 1{,}0835 = 51 \text{ pips} \qquad R{:}B = \frac{51}{47} \approx 1{,}09</ktxd></p>
+<p><ktxd class="ktxd" data-tex="E = 0{,}4 \times 1{,}09 - 0{,}6 \times 1 = -0{,}16R \qquad WR^* = \frac{1+c}{\bar{R}+1} = \frac{1{,}08}{2{,}085} \approx 51{,}8\%">E = 0{,}4 \times 1{,}09 - 0{,}6 \times 1 = -0{,}16R \qquad WR^* = \frac{1+c}{\bar{R}+1} = \frac{1{,}08}{2{,}085} \approx 51{,}8\%</ktxd></p>
+<p>Mismo mercado, misma idea, misma dirección — pero la entrada tardía <strong>convirtió la esperanza en negativa</strong> con el mismo WR 40 %: ahora necesitarías un 51,7 % de acierto solo para empatar neto. Y el detalle perverso: la entrada tardía se siente MÁS segura (ya hay confirmación visible) — la avaricia siempre cobra en una moneda que el perseguidor no ve: la geometría de la operación.</p>
+<p><strong>El coste del overtrading, contado completo</strong> — la avaricia #5 con su impuesto de costes. Tu sistema dispara ~20 operaciones válidas al mes; tu E neta es +0,16R por operación → esperanza mensual planeada: <ktx class="ktx" data-tex="20 \times 0{,}16 = +3{,}2R">20 \times 0{,}16 = +3{,}2R</ktx>. Con FOMO/overtrading ejecutas 40: las 20 extra NO tienen la ventaja del sistema (sin setup no hay edge que cobrar) — su valor esperado es <ktx class="ktx" data-tex="0 - 0{,}08R = -0{,}08R">0 - 0{,}08R = -0{,}08R</ktx> cada una:</p>
+<p><ktxd class="ktxd" data-tex="E_{\text{mes}} = 20 \times 0{,}16R + 20 \times (-0{,}08R) = 3{,}2R - 1{,}6R = +1{,}6R">E_{\text{mes}} = 20 \times 0{,}16R + 20 \times (-0{,}08R) = 3{,}2R - 1{,}6R = +1{,}6R</ktxd></p>
+<p><strong>La mitad de tu negocio se dona al spread</strong> — sin contar el peaje oculto: las 20 operaciones de ruido consumen decisiones de tu ventana de ejecución (10.7), generan etiquetas E1 que ensucian la muestra de M9, y fabrican el cansancio del que nace la revancha. El overtrading es la única avaricia que cobra doble: en costes visibles y en fatiga invisible.</p>
+<p><strong>La asimetría que las define.</strong> Los miedos duelen mientras se cometen; las avaricias <strong>premian mientras se cometen</strong> — esa es la razón de que el antídoto no pueda ser "darte cuenta": cuando te das cuenta, ya estás dentro de la operación. La única defensa que funciona es el <strong>pre-compromiso</strong> (<em>precommitment</em>): la decisión tomada ANTES del estímulo, con forma de regla verificable ajenamente — exactamente la lógica del candado de métricas declaradas de 9.1, aplicada a la conducta. La tabla de señales tempranas de arriba existe para convertir cada avaricia en un evento observable por tu propio journal: "recalculé el lote dos veces" es un hecho, no un juicio.</p>
+<h2>Analogía</h2>
+<p>La máquina tragamonedas y el refuerzo intermitente. Los laboratorios de conducta descubrieron hace décadas que la programación de refuerzo más adictiva no es la constante ("pagar siempre") sino la <strong>intermitente variable</strong> ("pagar a veces, sin patrón predecible") — la paloma y la rata picotean hasta el agotamiento cuando el premio es aleatorio, y la conducta RESISTE más a la extinción que si pagara siempre. Las slots de casino son esa programación con luces: la anticipación (dopamina) hace el trabajo, no el premio. El FOMO es tu tragamonedas personal: el mercado mueve 80 pips, tu cerebro proyecta "podía ser mío", la anticipación dispara, y entras a mercado — el premio intermitente (a veces el perseguido "sale") refuerza exactamente la conducta que destruye tu esperanza. El casino no le exige al jugador "ser más fuerte": le construye el entorno (sin relojes, sin ventanas, fichas en vez de dinero). Tú tienes que hacerte el favor tú mismo: journal abierto, contador de decisiones visible, y la regla escrita ANTES de la sesión — porque cuando la slot suene, la única voz disponible será la tuya de 3 horas atrás.</p>
+<h2>Cómo se hace: el pre-compromiso por escrito (1 página antes de la sesión)</h2>
+<ol>
+<li><strong>Escribe tu "contrato de tamaño" con número único.</strong> "Riesgo por operación: 1 % de X. Cualquier cálculo que dé más, es una avaricia #3/#4 — no se ejecuta." La regla cubre el sobreapalancamiento (lote mayor) y el risk creep (SL ensanchado) a la vez: ambas terminan en el mismo número auditable — el riesgo en &dollar; del campo del journal.</li>
+<li><strong>Declara el techo de operaciones del día/semana.</strong> Tu sistema dispara ~2-3 señales por semana en 1H/H4 (si el tuyo dispara más, declara SU número): "más de N operaciones con señales = overtrading declarado". Al tocar el techo: plataforma cerrada, no "solo mirar". El contador de decisiones del journal es tu taxímetro.</li>
+<li><strong>Define la regla de zona con tolerancia cero.</strong> "Si el precio ya dejó la zona definida por mi componente 3, la operación no existe — perseguirla es avaricia #2." Añade la verificación de 2 segundos: antes de disparar, mira el precio de entrada planificado vs actual: si difiere más que tu tolerancia declarada, no hay operación. (Tu tolerancia del caso maestro: el componente 6 decía la zona de reacción 1,0820 ± un rango mínimo — decláralo en pips.)</li>
+<li><strong>Instala el retardo de 90 segundos para cualquier modificación.</strong> Toda entrada que no esté en el plan (zona, hora, instrumento) espera 90 segundos cronometrados con el protocolo de 10.1 (nombrar el estado, respirar). Si a los 90 s la "oportunidad" sigue justificándose por escrito (¿qué componente la autoriza?), repásala en la revisión — no en caliente. En el 95 % de los casos <em>(estimación operativa, no medida)</em>, a los 90 s la señal ya no existe o ya no te importa: el FOMO tiene vida media corta.</li>
+<li><strong>Audita las avaricias en el acta semanal con la taxonomía.</strong> Las 5 avaricias tienen etiqueta directa: FOMO/chasing → <strong>E1/E2</strong>; sobreapalancamiento/risk creep → <strong>E4</strong>; overtrading → <strong>E1</strong> (operar sin setup) o <strong>E6</strong> (ignorar frenos de sesión). Cuenta cuántas de tus 10 filas de la misión M-10 llevan cada una: esa es tu foto de cartera de avaricias — y la comparación con la semana siguiente es tu curva de progreso conductual.</li>
+</ol>
+<h2>Error común</h2>
+<p><strong>(1) "Avaricia no tengo — yo solo quiero recuperar lo que perdí."</strong> Eso no es avaricia, es <strong>revancha</strong> (el tilt, 10.5) — pero mira su mecánica: recuperar implica meter MÁS riesgo (sobreapalancamiento) MÁS rápido (chasing) MÁS veces (overtrading). La revancha es el kit completo de las 5 avaricias con el marketing del miedo #2. Mismo tratamiento: protocolo post-pérdida (10.1) antes de cualquier nueva entrada. <strong>(2) Confundir "entradas más agresivas" con productividad.</strong> El calendario del trader amateur mide actividad; el del profesional mide ejecución de señales. Operar 40 veces con E negativa no es "ser activo": es pagar peaje por aburrirse — la inacción estratégica (10.7) ES trabajo: protege la esperanza que ya fabricaste. <strong>(3) Ajustar el pre-compromiso a mitad de sesión.</strong> "Hoy el mercado está muy movido, voy a subir el techo a 6 operaciones" — la modificación del contrato EN la sesión es exactamente el data-mining de 9.1 pero con tu conducta: la muestra (tu disciplina) queda falsificada. Los techos se revisan en la ventana mensual (9.6), con evidencia, nunca en caliente. <strong>(4) Creer que el problema es el instrumento.</strong> "El oro me hace overtrading" — no: TU protocolo hace overtrading en cualquier instrumento que se mueva; cambiar de instrumento es mudar la slot de sala. El antídoto es conductual (techos, contador), no de menú. <strong>(5) No registrar los casi-FOMO.</strong> El impulso detectado y contenido también se registra (el journal v1 tiene el registro de no-disparos): es tu estadística de "cascadas cortadas" — y es el dato más motivador del módulo: ver 12 secuestros abortados en 2 semanas es la prueba de que el protocolo funciona.</p>
+<h2>Conexión cuantitativa</h2>
+<p><strong>Hacia M8:</strong> las 5 avaricias son las formas conductuales de romper cada tope que instalaste: sobreapalancamiento rompe el 1 %, risk creep rompe el top de cartera, overtrading rompe el disparo 100 %/100 %. Por eso M8 y M10 se estudian juntos: el freno es aritmético, el que intenta soltarlo es conductual. <strong>Hacia 9.3:</strong> la avaricia aparece en tus métricas con firma reconocible: R:B medio cayendo (chasing), coste medio subiendo (entradas a mercado), rachas de E1 en el gráfico de etiquetas (overtrading). <strong>Hacia 10.4:</strong> la avaricia produce su forma más peligrosa de error: la <strong>ganancia fuera de plan</strong> (el FOMO que "salió bien") — la siguiente lección formaliza por qué ese premio es el que más daño hace a largo plazo. <strong>Hacia 10.5:</strong> cuando las avaricias fallan (perdiste el perseguido), el residuo emocional (frustración) alimenta la revancha — el ciclo del tilt. <strong>El número que auditará la Evaluación N3:</strong> en tus 10 sesiones, ¿cuántas entradas E1/E2 y cuántos casi-FOMO registrados? El cociente [cortados / (cortados + ejecutados)] es tu tasa de contención — el programa espera que suba semana a semana.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li>Las 5 avaricias (FOMO, chasing, sobreapalancamiento, risk creep, overtrading) <strong>jalan desde fuera y premian mientras se cometen</strong> — por eso el antídoto no es darse cuenta, es pre-compromiso escrito.</li>
+<li>La geometría manda: perseguir 15 pips la entrada del caso maestro cae el R:B de 2,1 a 1,1 y la E de <strong>+0,16R a −0,16R</strong> — la entrada tardía se siente más segura y matemáticamente mata la ventaja.</li>
+<li>El overtrading cobra doble: impuesto de costes (−1,6R/mes en el caso maestro: la mitad de la esperanza) y consumo de la ventana decisional que fabrica fatiga y revancha.</li>
+<li>El riesgo "ensanchado" es el robo silencioso: SL 32 → 48 pips con el mismo lote = +50 % de riesgo por operación — auditable en un solo campo del journal (riesgo en &dollar;).</li>
+<li>Cada avaricia tiene <strong>etiqueta E y señal temprana observable</strong>: el acta semanal convierte la psicología en estadística de contención ([cortados/(cortados+ejecutados)]).</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>Calcula el R:B y la E bruta de la entrada perseguida a 1,0840 (20 pips tarde) con el mismo SL 1,0788 y TP 1,0886. ¿A partir de cuántos pips de retraso la E bruta se vuelve negativa con WR 40 %?</li>
+<li>Tu techo declarado son 3 operaciones/semana y llevas 4 el miércoles (todas "razonables"). Formula la respuesta del protocolo en 3 pasos y explica qué métrica del journal valida tu decisión el viernes.</li>
+<li>Clasifica estas 5 conductas con avaricia #1-#5 y etiqueta E: (a) SL de 40 pips "para que respire" cuando tu regla manda 32; (b) lote 0,15 "solo en esta zona de H4 tan clara"; (c) cuarta operación del día en TF de 5 min porque "se veía limpia"; (d) compra a mercado 20 pips tras la zona "porque la idea era buena"; (e) abrir XAU/USD "solo para mirar" durante la gestión de una posición.</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. Entrada 1,0840 (d = 20 pips): SL = 52 pips, TP = 46 pips → R:B = 46/52 ≈ 0,88; E = 0,4 × 0,88 − 0,6 × 1 = **−0,25R bruto**. El cruce a cero: <ktx class="ktx" data-tex="0{,}4 \times \frac{66-d}{32+d} = 0{,}6 \Rightarrow \frac{66-d}{32+d} = 1{,}5 \Rightarrow d = 7{,}2">0{,}4 \times \frac{66-d}{32+d} = 0{,}6 \Rightarrow \frac{66-d}{32+d} = 1{,}5 \Rightarrow d = 7{,}2</ktx> — **la E bruta ya es negativa a ~8 pips de retraso** (R:B < 1,5). La degradación no es lineal: a 15 pips la E ya perdió casi toda su ventaja y sigue hundiéndose (a 20: −0,25R; a 25: R:B = 41/57 ≈ 0,72 → −0,31R) — la lección: el chasing no cobra proporcional, cobra en curva.
+2. (1) Cerrar la plataforma al tocar el techo — la regla se declaró ANTES y las 4 "razonables" no cambian el contrato (lo razonable es lo que el plan dispara, no lo que justifica tu memoria); (2) registrar en el journal la violación del techo (etiqueta E6: freno ignorado — el techo ES un freno de M8/M10) y el estado emocional que la empujó; (3) dejar la revisión para el acta del viernes. Métrica que valida: el conteo de disparos **debidos** — si el sistema solo generó 2 señales y ejecutaste 4, la brecha (2 extra) es overtrading medible; si el sistema generó 4 y ejecutaste 4, el techo estaba mal calibrado y se ajusta en la ventana mensual (9.6) — con evidencia, no en miércoles.
+3. (a) **Risk creep (#4)** → E4 en su forma conductual (sizing efectivo fuera de presupuesto). (b) **Sobreapalancamiento (#3)** → E4 directo (2,5× el riesgo declarado). (c) **Overtrading (#5)** → E1 (operar sin setup: tu sistema no dispara en 5 min por aburrimiento) + E6 si ya había techo. (d) **Chasing (#2)** → E2 (entrada fuera de regla). (e) **FOMO (#1) en incubación** — sin etiqueta E todavía (no hay operación), pero va al registro de no-disparos/casi-eventos: la señal temprana exacta que el pre-compromiso debe cortar.
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="leccion-10-2.html"><span class="lbl">← Anterior</span><span class="ttl">Lección 10.2 · Los 5 miedos y la mentalidad probabilística — el guion </span></a>
+    <a class="next" href="leccion-10-4.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 10.4 · Pérdida ≠ Error — la distinción que define la carrera</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

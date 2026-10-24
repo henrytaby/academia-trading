@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 3.2 · Los 4 ciclos del mercado · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a class="active" href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>🧱 N1 · Base<span class="sep">/</span>M3 · Anatomía del Gráfico<span class="sep">/</span>Lección 3.2 · Los 4 ciclos del mercado</div>
+  <article class="doc-body">
+<h1>Lección 3.2 · Los 4 ciclos del mercado</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>40–50 min de estudio</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-03.html">M3 · Anatomía del Gráfico</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td><a href="leccion-3-1.html">Lección 3.1 · Velas japonesas</a></td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="leccion-3-3.html">Lección 3.3 · Soportes y resistencias</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>"¿Por dónde empiezo a mirar un gráfico?" es la pregunta operativa más frecuente del principiante, y la respuesta profesional no es un indicador: es <strong>ubicar el mercado en su ciclo</strong>. Todo mercado financiero — desde el arroz de Dojima hasta el NAS100 — recorre los mismos cuatro estados: acumula, expande, distribuye, colapsa. Saber en cuál estás cambia absolutamente todo: qué setups existen hoy, qué lado tiene la urgencia (M2.2), cuánto dura la prórroga para entrar y — sobre todo — <strong>cuándo la respuesta correcta es no operar</strong>. Esta lección te da el mapa de vuelo del gráfico; sin él, cada vela es un aviso de excursión; con él, sabes si estás despegando, crucero, turbulencia o aterrizaje.</p>
+<h2>Concepto</h2>
+<p><strong>Los cuatro ciclos</strong> (la secuencia se repite en todos los marcos y en todos los mercados):</p>
+<ol>
+<li><strong>Acumulación</strong> (<em>accumulation</em>): rango lateral tras una caída. Los grandes compran en fragmentos (Lección 2.3) sin mover el precio: absorben la venta que llega, manteniendo el precio "aburrido" a propósito. El retail ve un mercado muerto; el institucional ve un almacén llenándose. Síntomas: rango angosto tras tendencia bajista, volumen que no cesa, rechazos repetidos en la misma zona baja.</li>
+<li><strong>Markup</strong> (<em>markup/expansión</em>): la acumulación se termina — alguien quemó toda la oferta disponible a ese precio (M2.2) — y el precio expande con velas de cuerpo pleno y retrocesos mínimos. Es la fase que el retail reconoce tarde ("ya subió mucho") y el profesional opera desde el inicio con confirmaciones.</li>
+<li><strong>Distribución</strong> (<em>distribution</em>): el espejo de la acumulación, arriba. Los grandes venden su inventario en fragmentos absorbiendo la compra del retail que llega tarde al festival. El precio oscila en rango alto con movimientos nerviosos; el sentimiento público está en su máximo ("nunca baja"). El institucional ya no es comprador: es el vendedor del techo.</li>
+<li><strong>Markdown</strong> (<em>markdown/colapso</em>): el inventario se vendió y el precio baja con urgencia — más rápido que subió, porque la urgencia del miedo supera a la de la codicia (asimetría conocida: "suben en escalera, caen en ascensor"). La fase termina donde el precio ya es "tan barato que alguien vuelve a comprar en tamaño" — y el ciclo reinicia en acumulación.</li>
+</ol>
+<p><strong>Dow y el impulso + pullback.</strong> Charles Dow (la base de todo el análisis técnico moderno) describió la tendencia no como una línea recta sino como una secuencia de <strong>impulsos y correcciones</strong>: el precio avanza en empujones con retrocesos que respetan la estructura. En tendencia alcista sana: máximos y mínimos ASCENDENTES sucesivos (HH/HL — <em>higher high / higher low</em>). La tendencia muere cuando esa secuencia se rompe (el precio falla en hacer HH y hace un LL — <em>lower low</em>): la primera ruptura de estructura es la señal del cambio de ciclo, mucho antes de que el "gráfico bonito" lo admita. Esta es la gramática que el M5 (estructura de mercado) formalizará con nombres como BOS/CHoCH.</p>
+<p><strong>Weinstein: el mismo mapa con etapas.</strong> Stan Weinstein llamó a las cuatro fases <strong>Stage 1</strong> (acumulación), <strong>Stage 2</strong> (markup), <strong>Stage 3</strong> (distribución), <strong>Stage 4</strong> (markdown), y añadió la regla operativa que el programa hereda: <em>opera Stage 2, quédate fuera de Stage 1, y sal antes de Stage 4</em>. La concordancia entre Dow, Weinstein y la microestructura de M2 no es casualidad: es el mismo fenómeno (urgencia, inventario, liquidez) visto desde tres alturas.</p>
+<p><strong>Visual — la rueda del mercado (gira sin parar, en todos los marcos):</strong></p>
+<pre class="mermaid">flowchart LR
+    A[&quot;📦 ACUMULACIÓN · Stage 1&lt;br/&gt;los grandes compran en fragmentos&lt;br/&gt;rango tras caída — el retail dice: aburrido&quot;] --&gt; B[&quot;🚀 MARKUP · Stage 2&lt;br/&gt;la oferta local se agota&lt;br/&gt;HH/HL con cuerpo pleno&lt;br/&gt;→ LA FASE QUE SE OPERA&quot;]
+    B --&gt; C[&quot;🏦 DISTRIBUCIÓN · Stage 3&lt;br/&gt;los grandes venden al eufórico&lt;br/&gt;rango arriba — el retail dice: nunca baja&quot;]
+    C --&gt; D[&quot;📉 MARKDOWN · Stage 4&lt;br/&gt;urgencia de miedo&lt;br/&gt;sube en escalera, cae en ascensor&quot;]
+    D --&gt; A
+    B -.-&gt; E1[&quot;❌ Error retail: entrar tarde aquí&lt;br/&gt;= comprar la distribución&quot;]
+    D -.-&gt; E2[&quot;❌ Error retail: pescar cuchillos aquí&lt;br/&gt;= comprar porque ya bajó mucho&quot;]
+</pre>
+<h2>Analogía</h2>
+<p>La vida de un espectáculo. <strong>Acumulación:</strong> los organizadores llenan la sala a precio de preventa — silenciosamente, sin que nadie hable del evento. <strong>Markup:</strong> se agota, las entradas revenden a precio creciente, la fila empuja. <strong>Distribución:</strong> los primeros organizadores/vendedores salen vendiendo su inventario al público eufórico que llegó tarde — cada comprador nuevo paga a un vendedor viejo que sale. <strong>Markdown:</strong> se acaba el show, la gente sale de golpe por la misma puerta, y el precio de reventa colapsa hasta que alguien vuelve a ver "oportunidad" y empieza a acumular para el próximo evento. El retail pierde comprando en distribución — cuando el evento es portada de prensa — y vendiendo en markdown — cuando la sala se vacía. El profesional hace lo aburrido: compra cuando la sala está vacía y nadie habla del tema, y vende cuando hay fila de eufóricos a quien dársela.</p>
+<h2>Cómo se hace: clasificar el ciclo en 3 preguntas, con un caso cerrado</h2>
+<p>Antes de cualquier análisis, tres preguntas en orden:</p>
+<ol>
+<li><strong>¿Hay tendencia definida en H4/D1, o rango?</strong> (secuencia HH/HL vs LL/LH — <em>lower high</em> — o solapamiento).</li>
+<li><strong>¿Desde dónde viene el precio?</strong> (¿tras una caída larga? → acumulación posible; ¿tras una subida larga con sentimiento eufórico? → distribución posible).</li>
+<li><strong>¿Qué está haciendo la ESTRUCTURA ahora mismo?</strong> (¿respeta mínimos ascendentes? ¿acaba de romperlos? ¿lleva N sesiones sin progresar en un rango?).</li>
+</ol>
+<p><strong>Caso cerrado (EUR/USD, ilustrativo con mecánica real).</strong> Tras caer de 1,10 a 1,05 en seis semanas (markdown), el precio pasa tres semanas entre 1,0480 y 1,0540 (rango del 1,2 % — acumulación). El sentimiento en redes: "el euro está muerto". En la semana 4, una vela D1 cierra en 1,0565 <strong>fuera</strong> del rango (Lección 3.4 le pondrá criterio de confirmación) y las siguientes dos semanas construyen HH/HL hasta 1,0680: markup iniciado. Tu operativa por ciclo: en acumulación → observar y marcar zonas (la misión de este módulo); en markup temprano → buscar largos en retrocesos a demanda (el setup por excelencia del programa); en distribución → recoger beneficios y no renovar largos aunque "parezca que sigue"; en markdown → no pescar cuchillos (no comprar "porque ya bajó mucho"). La mayoría de las pérdidas del principiante no vienen de leer mal una vela: vienen de <strong>comprar distribuciones</strong> (entrada tarde del markup, cuando el institucional ya vende) y de <strong>no distinguir acumulación de continuo debilitamiento</strong>.</p>
+<p><strong>Y el anti-error más rentable:</strong> si las tres preguntas no tienen respuesta clara, el ciclo es <strong>indeterminado</strong> — y ese es un resultado válido y frecuente. La receta de tu primera operación lo dice en su Paso 3: "no hay setup y hoy no se opera" es una respuesta con nombre. En cuatro ciclos, solo dos (markup temprano, markdown en reversión) ofrecen setups con ventaja para tu estilo de formación; los otros dos son de observación. No operar ES operar el ciclo.</p>
+<h2>Error común</h2>
+<p>El primero: <strong>querer capturar el giro exacto</strong> — entrar en la rotura del rango de acumulación "porque en algún momento explotará", sin confirmación, pagando los falsos arranques (el retail paga la mayoría de las primeras roturas: el estadístico de roturas fallidas de la Lección 3.4 lo cuantificará). El antídoto del programa: confirmación en cierres + expectativa de retesteo. El segundo: <strong>confundir duración con fase</strong> — "lleva subiendo 3 semanas, está maduro para caer" (las tendencias duran más de lo que la intuición tolera; el ciclo se lee por estructura y comportamiento, no por cronómetro). El tercero: <strong>aplicar el ciclo al marco equivocado</strong> — ver "distribución" en un rango de H1 dentro de un markup D1 impecable: sin definir primero tu marco de análisis (H4/D1 en esta formación), el ciclo se vuelve un espejismo fractal (Lección 3.1). Primero el marco, después el ciclo, después la vela.</p>
+<h2>Conexión cuantitativa</h2>
+<p>El ciclo es la máquina que genera los regímenes que tu <ktx class="ktx" data-tex="E">E</ktx> necesita. Un sistema de continuación (comprar retrocesos en markup) tiene su <ktx class="ktx" data-tex="P_w">P_w</ktx> alimentada SOLO en Stage 2: operado en acumulación, produce una serie de falsos arranques de 1R cada uno; operado en distribución, compra exactamente donde el institucional vende — el peor vecindario posible. Esto explica estadísticamente por qué el mismo setup "funciona unas semanas y luego deja de funcionar": no se rompió el sistema, cambió el ciclo — y es la razón por la que el M9 auditará tu journal POR REGÍMEN, separando tus operaciones según el estado del mercado en que nacieron. En formación, la consecuencia práctica es inmediata: tu bitácora de 20 niveles (misión de este módulo) exige clasificar el ciclo de cada nivel ANTES de anotarlo — estás entrenando el músculo que protegerá tu esperanza entera.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li>Todo mercado recorre 4 ciclos: <strong>acumulación → markup → distribución → markdown</strong> — en todos los marcos y mercados.</li>
+<li>Acumulación = los grandes compran en fragmentos sin mover el precio; distribución = los grandes venden al público que llega tarde.</li>
+<li>Dow: la tendencia es impulso + pullback con HH/HL (alcista) o LL/LH (bajista); muere cuando la secuencia se rompe.</li>
+<li>Weinstein = el mismo mapa con regla heredada: opera Stage 2, evita Stage 1, sal antes de Stage 4.</li>
+<li>Clasifica el ciclo con 3 preguntas: ¿tendencia o rango? ¿desde dónde viene? ¿qué hace la estructura ahora? — y acepta "indeterminado" como respuesta válida.</li>
+<li>"No operar" es la respuesta correcta en la mitad del ciclo: la mayoría de pérdidas del principiante son compras de distribución y cuchillos de markdown.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>Un amigo te dice: "EUR/USD lleva 3 semanas subiendo, ya está muy estirado — seguro cae". ¿Qué error de esta lección está cometiendo y qué debería mirar en su lugar?</li>
+<li>El precio rompe AL ALZA el rango de una posible acumulación por primera vez. ¿Por qué el programa no entra inmediatamente en esa rotura? ¿Qué esperaría su protocolo?</li>
+<li>En tu marco H4, el mercado lleva 10 sesiones entre 1,0840 y 1,0880 tras una caída de 3 semanas. Nombra el ciclo candidato, los dos síntomas que lo confirmarían y la actitud operativa correcta.</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. Confunde **duración con fase**: el ciclo no se lee por cronómetro ("lleva mucho, toca caer") sino por estructura y comportamiento — las tendencias duran más que la intuición. Debería mirar: ¿la secuencia HH/HL sigue intacta en H4/D1? ¿hay señales de distribución (rango nervioso arriba, roturas de mínimos que se recuperan, sentimiento eufórico)? Mientras los impulsos sigan con pullbacks ordenados y sin ruptura de estructura, el supuesto "estiramiento" no es argumento para cortos — es argumento para no renovar largos tardíos, como mucho.
+2. Porque la primera rotura de un rango falla con frecuencia (el retail la paga: es donde el precio busca liquidez y donde la urgencia puede agotarse justo en el nivel obvio — Lecciones 2.3 y 3.4). El protocolo del programa: esperar el **cierre fuera del nivel** (acuerdo del período entero) + la **confirmación/retesteo** posterior; solo entonces el setup de continuación tiene su estadística a favor. Entrar en la primera mecha roturadora es apostar al resultado de una subasta en curso.
+3. Ciclo candidato: **acumulación** (rango angosto tras markdown). Síntomas confirmatorios: (a) rechazos repetidos con mechas en la zona baja del rango y sin progresión bajista, (b) volumen sostenido sin ceder + sentimiento público negativo ("ya está muerto"). Actitud operativa correcta: **observar y marcar** — esta es fase de la misión, no de entrada; los largos por confirmación llegan si se produce rotura con cierre fuera + retesteo sano (Stage 2 incipiente). Comprar "porque es barato" dentro del rango sería anticipar sin confirmación.
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="leccion-3-1.html"><span class="lbl">← Anterior</span><span class="ttl">Lección 3.1 · Velas japonesas</span></a>
+    <a class="next" href="leccion-3-3.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 3.3 · Soportes y resistencias</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

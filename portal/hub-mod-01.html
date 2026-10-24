@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Módulo 1 · El Trading como Negocio y Ciencia · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a class="active" href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>🧱 N1 · Base<span class="sep">/</span>M1 · El Trading como Negocio y Ciencia<span class="sep">/</span>Módulo 1 · El Trading como Negocio y Ciencia</div>
+  <article class="doc-body">
+<h1>Módulo 1 · El Trading como Negocio y Ciencia</h1>
+<blockquote class="gfm-warn"><p><strong>⚠️ WARNING:</strong> <strong>Contenido educativo.</strong> La mayoría de los traders minoristas pierde dinero (estudios de reguladores estiman entre 70 % y 90 %). El trading conlleva riesgo de pérdida total del capital. Nada en este repositorio constituye asesoría financiera.</p>
+</blockquote>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🧱 Nivel</td>
+<td>1 · Fundamentos</td>
+</tr>
+<tr>
+<td>📦 Módulo</td>
+<td>1 de 12 (FIT-12)</td>
+</tr>
+<tr>
+<td>🔬 Trazabilidad</td>
+<td>003 · M1.1–1.4, M7.5 · 004 · M1.1, M10 · <strong>Aporte propio:</strong> mapa de 3 dimensiones (estilos × mercados × vehículos), contrato anti-ludopatía, presupuesto de expectativas</td>
+</tr>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>3,5–4,5 h de teoría + 2–3 h de laboratorio/misión/quiz</td>
+</tr>
+<tr>
+<td>📋 Estado</td>
+<td>🟢 Publicado (Sprint 1)</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>🎯 Objetivo del Módulo</h2>
+<p>Instalar la mentalidad correcta <strong>antes de tocar un gráfico</strong>. Al terminar este módulo sabrás qué es el trading como negocio (y qué no es), habrás desmontado las cinco mentiras estructurales de la industria, dominarás el mapa completo estilos × mercados × vehículos para elegir tu coordenada, podrás calcular la esperanza matemática de cualquier sistema con números cerrados, y habrás fijado por escrito tus expectativas, tu presupuesto y tus límites en la Carta de Expectativas. Este módulo existe primero porque todo lo que sigue presupone un operador que piensa como comerciante y no como apostador — la técnica sin este cimiento es una sierra en manos de quien no sabe lo que corta.</p>
+<h2>📚 Lecciones</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Lección</th>
+<th>Esencia</th>
+<th>Tiempo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.1</td>
+<td><a href="leccion-1-1.html">Qué es realmente el trading</a></td>
+<td>Especulación como negocio: capital de inventario, costos por venta, esperanza como único KPI de salud</td>
+<td>30–40 min</td>
+</tr>
+<tr>
+<td>1.2</td>
+<td><a href="leccion-1-2.html">Las 5 mentiras de la industria</a></td>
+<td>Desmontaje de las promesas estructurales + protocolo de auditoría de 4 filtros</td>
+<td>30–40 min</td>
+</tr>
+<tr>
+<td>1.3</td>
+<td><a href="leccion-1-3.html">El mapa completo: 3 dimensiones</a></td>
+<td>5 estilos × 6 mercados × 5 vehículos; método de 4 pasos para elegir TU coordenada</td>
+<td>45–60 min</td>
+</tr>
+<tr>
+<td>1.4</td>
+<td><a href="leccion-1-4.html">La esperanza matemática</a></td>
+<td><ktx class="ktx" data-tex="E = (P_w \times W) - (P_l \times L)">E = (P_w \times W) - (P_l \times L)</ktx>: por qué el Win Rate engaña, costos, ruido y fractalidad</td>
+<td>45–60 min</td>
+</tr>
+<tr>
+<td>1.5</td>
+<td><a href="leccion-1-5.html">La curva de aprendizaje real</a></td>
+<td>Analogía médica, 4 fases de competencia, por qué 12 meses es el mínimo estadístico</td>
+<td>30–40 min</td>
+</tr>
+<tr>
+<td>1.6</td>
+<td><a href="leccion-1-6.html">Expectativas y presupuesto</a></td>
+<td>Costo real de formarse, rangos honestos, dinero quemable, doble carril, presupuesto de expectativas</td>
+<td>30–40 min</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote class="gfm-tip"><p><strong>💡 TIP:</strong> <strong>Cómo estudiar este módulo:</strong> dile a tu agente <em>"Siguiente lección"</em> y sigue el protocolo de sesión de estudio (§ 5.3 de <code>agents.md</code>): repaso activo → lección → quiz rápido → misión. Cada lección termina con autoevaluación: intenta responder ANTES de abrir las respuestas.</p>
+</blockquote>
+<h2>🧪 Laboratorio · Auditoría Personal</h2>
+<p><strong>Materiales:</strong> una semana real de tu vida como muestra, hoja de cálculo o papel, calculadora, y una hora de honestidad sin testigos. No se necesita plataforma ni dinero.</p>
+<p><strong>Procedimiento paso a paso:</strong></p>
+<ol>
+<li><strong>Audita tu tiempo (7 días).</strong> Registra los bloques de tiempo concentrado REALMENTE disponibles de una semana normal: hora de inicio, hora de fin y nivel de concentración (alto/medio/bajo). No cuentes tiempo "que te gustaría tener": cuenta el que hay. Incluye tu huso horario y anota qué hora es en Nueva York y Londres en cada bloque (lo necesitarás desde el Módulo 2).</li>
+<li><strong>Audita tu capital con el test del sueño.</strong> Escribe tu capital total y aplícale el test de la Lección 1.6: ¿su pérdida TOTAL te dejaría durmiendo tranquilo? El número que sobrevive al test es tu <strong>capital quemable</strong>; el resto queda fuera del trading por definición. Define además tu <strong>matrícula máxima</strong> (5–10 % del quemable <em>(heurística)</em>) y tu <strong>runway</strong>: cuántos meses de vida paga tu Carril A sin tocar capital de trading.</li>
+<li><strong>Aplica el test de tolerancia.</strong> Responde por escrito, sin adornos: ¿puedes ver una posición en −1R sin cerrarla antes de tiempo? ¿Puedes pasar un fin de semana con posición abierta sin mirar el gráfico cada hora? ¿Cuántas horas seguidas de pantalla te agotan? Tus respuestas eliminan estilos con la misma fuerza que tu agenda.</li>
+<li><strong>Cruza el mapa y elige tu coordenada tentativa.</strong> Con horas + capital + tolerancia, recorre el método de 4 pasos de la Lección 1.3 y fija UNA coordenada: estilo × mercado × vehículo (en demo). Escribe la justificación en tres frases: por qué encaja con tu vida y qué estilos descartaste por qué motivo.</li>
+<li><strong>Escribe tus tres cifras límite.</strong> Riesgo por operación para cuando llegues a real micro (0,25–0,5 % del capital), matrícula máxima de formación, y horas semanales comprometidas. Estas tres cifras pasarán a tu Carta de Expectativas.</li>
+</ol>
+<p><strong>Entregable:</strong> la tabla de auditoría completa (horas, capital, tolerancia) + coordenada tentativa justificada + tres cifras límite, guardada en <code>journal/</code> como <code>auditoria-personal-m1.md</code>. Este documento es insumo directo del Plan de Trading del Módulo 12.</p>
+<h2>🎯 Misión</h2>
+<blockquote class="gfm-important"><p><strong>❗ IMPORTANT:</strong> Misión M-1 · Carta de Expectativas y Contrato Anti-Ludopatía
+<strong>Objetivo:</strong> fijar por escrito, antes de tocar cualquier gráfico, qué esperas, qué te comprometes a NO hacer y con qué dinero operas — el "cálculo de caja" del negocio que estás abriendo.
+<strong>Entregable:</strong> <code>journal/carta-expectativas-m1.md</code> con las cuatro secciones de abajo + el contrato firmado (nombre y fecha).
+<strong>Criterio de aceptación:</strong> (1) expectativas con rangos y plazos, no deseos; (2) cinco prohibiciones concretas y verificables, no vagas; (3) cifras cerradas de capital quemable, matrícula máxima y riesgo por operación; (4) contrato completo con firma y fecha.
+<strong>Etiqueta en journal:</strong> <code>mision-1-carta</code> · <strong>Tiempo estimado:</strong> 60–90 min.</p>
+</blockquote>
+<p><strong>Sección 1 — Qué espero (honesto).</strong> Tus expectativas para los próximos 12 meses en rangos verificables: horas que invertirás, qué esperarás de ti mismo en ejecución (no en dinero), qué hitos del programa (módulos, evaluaciones, backtest de 100 operaciones) planeas cruzar y en qué orden. Referencia honesta de techo: 15–30 % anual es territorio de elite profesional <em>(heurística)</em> — tu objetivo del año 1 es sobrevivir con proceso documentado.</p>
+<p><strong>Sección 2 — Qué me comprometo a NO hacer.</strong> Cinco prohibiciones concretas, redactadas por ti, verificables por un tercero. Ejemplos del formato correcto: <em>"No abriré posición alguna sin Stop Loss colocado en la misma orden"</em> · <em>"No arriesgaré más de 0,5 % de la cuenta en una sola operación durante la formación"</em> · <em>"No operaré en los 30 minutos alrededor de publicaciones macro de alto impacto"</em> · <em>"No intentaré ninguna cuenta de fondeo antes de 12 meses de consistencia documentada en journal"</em>. Formato incorrecto: <em>"seré disciplinado"</em> (no verificable).</p>
+<p><strong>Sección 3 — Con qué dinero.</strong> Las tres cifras de tu auditoría: capital quemable (con el test del sueño aplicado y su resultado), matrícula máxima de formación, riesgo por operación. Una línea que lo amarra todo: <em>"Este dinero puede quemarse por completo y mi vida seguirá igual."</em></p>
+<p><strong>Sección 4 — Contrato anti-ludopatía.</strong> Copia íntegra, con tu firma y fecha:</p>
+<pre><code class="language-text">CONTRATO ANTI-LUDOPATÍA — Academia de Trading FIT-12
+
+1. Opero solo con dinero quemable: jamás dinero de supervivencia,
+   de terceros, ni prestado.
+2. Jamás operaré para recuperar una pérdida. Una posición nueva
+   se justifica por su setup, nunca por el saldo del día.
+3. Toda posición llevará Stop Loss definido ANTES de entrar,
+   en la misma orden.
+4. No cambiaré el tamaño de riesgo por estado de ánimo: fijo en
+   formación, modificado solo por escrito y con el sistema callado.
+5. Registraré TODAS las operaciones en el journal, incluidas las
+   vergonzosas. Lo que no se registra no existe.
+6. No ocultaré pérdidas — a nadie ni a mí mismo.
+7. Si pierdo la matrícula máxima de formación: PARO, vuelvo a demo
+   y no recargo el capital. El límite existe para respetarse.
+8. No operaré sin dormir, enfermo, alcoholizado o bajo un estrés
+   que no pueda nombrar en voz alta.
+9. El trading no es mi plan A de ingresos hasta que 12 meses de
+   datos en journal digan lo contrario.
+10. Solo puedo romper este contrato por escrito, explicando por qué,
+    aceptando que probablemente estoy en tilt.
+
+Firma: ____________________  Fecha: ____________
+</code></pre>
+<h2>✅ Evaluación / Criterio de Graduación</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Requisito</th>
+<th>Umbral</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Carta de Expectativas completa (4 secciones + contrato firmado)</td>
+<td>100 % de las secciones con criterios de aceptación cumplidos</td>
+</tr>
+<tr>
+<td>Auditoría personal entregada en <code>journal/</code></td>
+<td>Tabla completa + coordenada justificada + 3 cifras límite</td>
+</tr>
+<tr>
+<td>Quiz de graduación (abajo)</td>
+<td>≥ 8 de 10 aciertos</td>
+</tr>
+</tbody>
+</table></div>
+<p>El quiz se rinde con el agente (él te hace las preguntas una a una y corrige con la rúbrica), o en autoestudio con las respuestas ocultas. Falló una pregunta de riesgo — la 10 — se repasa la Lección 1.6 completa antes de reintentar, aunque el total sea ≥ 8.</p>
+<h3>Quiz de graduación · 10 preguntas</h3>
+<ol>
+<li>Un sistema gana 45 % de las veces; su ganancia media es de 200 y su pérdida media de 100. ¿Cuál es su esperanza por operación?
+   A) +35 · B) −35 · C) +45 · D) +90</li>
+<li>¿Cuál de estos sistemas es rentable? A) WR 90 %, gana 20, pierde 190 · B) WR 40 %, gana 150, pierde 90 · C) WR 60 %, gana 40, pierde 100 · D) Todos los anteriores pierden dinero</li>
+<li>Con un Risk:Reward de 1:2, ¿qué Win Rate mínimo necesita un sistema para no perder dinero? A) 50 % · B) 40 % · C) 33,3 % · D) 25 %</li>
+<li>Dos sistemas idénticos excepto que uno opera un spread de 1 pip sobre movimientos típicos de 8 pips y el otro sobre movimientos de 40 pips. ¿Qué diferencia estructural espera entre ellos?</li>
+<li>La esperanza de un sistema debe calcularse… A) antes de costos · B) después de costos · C) solo en demo · D) solo con operaciones ganadoras</li>
+<li>Clasifica en las 3 dimensiones: "mantengo compras de XAU/USD abiertas 6 días, operadas vía CFD". Estilo / Mercado / Vehículo.</li>
+<li>Un estudiante con empleo de oficina de 40 h/semana (9:00–18:00), 8–10 h libres en noches y fines de semana, huso horario alejado de Nueva York. ¿Qué coordenada es la más coherente? A) Scalping de índices en la apertura de NY · B) Day trading de cripto en horario laboral · C) Swing en H4/D1 sobre Forex o índices · D) Position trading de bonos con revisión intradía</li>
+<li>"CFD, futuros, opciones, spot, ETF" son las opciones de qué dimensión del mapa? ¿Y qué decide su elección correcta?</li>
+<li>La "regla anti-nomadeo" del programa dice… A) cambiar de mercado cada mes para diversificar · B) mínimo 3 meses en una coordenada antes de juzgarla, y cambios solo con datos del journal · C) operar varios estilos a la vez · D) cambiar de estilo tras 5 pérdidas seguidas</li>
+<li>Dinero quemable es… A) el saldo total de tu cuenta bancaria · B) dinero prestado con intención de devolverlo con ganancias · C) aquel cuya pérdida TOTAL no cambia tu vida ni la de quien depende de ti · D) el capital que "probablemente" no necesites este mes</li>
+</ol>
+<details>
+<summary>🔑 Clave de respuestas (no abrir antes de responder)</summary>
+
+1. **A** — <ktx class="ktx" data-tex="E = 0{,}45 \times 200 - 0{,}55 \times 100 = 90 - 55 = +35">E = 0{,}45 \times 200 - 0{,}55 \times 100 = 90 - 55 = +35</ktx>.
+2. **B** — <ktx class="ktx" data-tex="E_B = 0{,}40 \times 150 - 0{,}60 \times 90 = 60 - 54 = +6">E_B = 0{,}40 \times 150 - 0{,}60 \times 90 = 60 - 54 = +6</ktx> por operación, con solo 4 de cada 10 aciertos. El A tiene <ktx class="ktx" data-tex="E = 18 - 19 = -1">E = 18 - 19 = -1</ktx> (acierta el 90 % y pierde); el C tiene <ktx class="ktx" data-tex="E = 0{,}60 \times 40 - 0{,}40 \times 100 = 24 - 40 = -16">E = 0{,}60 \times 40 - 0{,}40 \times 100 = 24 - 40 = -16</ktx>. La lección entera de la Lección 1.4 está en esta pregunta.
+3. **C** — <ktx class="ktx" data-tex="WR_{equilibrio} = \frac{1}{1+2} = 33{,}3\%">WR_{equilibrio} = \frac{1}{1+2} = 33{,}3\%</ktx>.
+4. El primero paga un impuesto de costo relativo de <ktx class="ktx" data-tex="1/8 = 12{,}5\%">1/8 = 12{,}5\%</ktx> por operación contra <ktx class="ktx" data-tex="1/40 = 2{,}5\%">1/40 = 2{,}5\%</ktx> del segundo: cinco veces más. Operar marcos de tiempo bajos exige que el sistema genere mucha más esperanza bruta para dejar la misma esperanza neta — es el problema estructural del scalping (ruido + costos relativos + frecuencia de decisiones).
+5. **B** — después de costos: spread y comisión se pagan en cada operación, ganadora o perdedora; la esperanza bruta es una ilusión contable.
+6. Swing trading · Mercado de commodities (oro, XAU/USD) · Vehículo CFD.
+7. **C** — sus ventanas reales (noches y fines de semana) y su horario laboral eliminan el intradía de sesión americana; la estructura de H4/D1 con revisión diaria corta encaja exactamente en sus bloques.
+8. La dimensión **vehículo**; la elección correcta la decide conjuntamente el tamaño del capital (tamaño mínimo de contrato), la estructura de costos y el perfil de riesgo del estilo — nunca se elige el vehículo sin el tamaño de posición (Módulo 8).
+9. **B** — una coordenada, mínimo tres meses, cambios solo justificados con datos del journal: cada cambio reinicia la curva de aprendizaje.
+10. **C** — la definición del test del sueño. B es su antítesis (dinero prestado para trading = capital de supervivencia disfrazado). D es la trampa clásica del "casi quemable".
+
+</details>
+
+<h2>📖 Glosario del Módulo</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Término</th>
+<th>Inglés</th>
+<th>Definición</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Especulación</td>
+<td><em>speculation</em></td>
+<td>Compra/venta de activos para capturar diferencias de precio en plazos cortos, asumiendo riesgo deliberado</td>
+</tr>
+<tr>
+<td>Inversión</td>
+<td><em>investing</em></td>
+<td>Adquisición de activos por años para capturar su crecimiento subyacente</td>
+</tr>
+<tr>
+<td>Horizonte temporal</td>
+<td><em>time horizon</em></td>
+<td>Duración prevista de una posición o estrategia</td>
+</tr>
+<tr>
+<td>Liquidez</td>
+<td><em>liquidity</em></td>
+<td>Facilidad de comprar/vender tamaño sin mover el precio</td>
+</tr>
+<tr>
+<td>Proveedor de liquidez</td>
+<td><em>liquidity provider</em></td>
+<td>Agente cuyas órdenes pasivas permiten ejecutar las órdenes ajenas</td>
+</tr>
+<tr>
+<td>Spread</td>
+<td><em>spread</em></td>
+<td>Diferencia entre precio de compra y de venta; costo fijo por operación</td>
+</tr>
+<tr>
+<td>Esperanza matemática</td>
+<td><em>expected value</em></td>
+<td>Resultado medio esperado por operación: <ktx class="ktx" data-tex="E = (P_w \times W) - (P_l \times L)">E = (P_w \times W) - (P_l \times L)</ktx></td>
+</tr>
+<tr>
+<td>Win Rate</td>
+<td><em>win rate</em></td>
+<td>Porcentaje de operaciones ganadoras sobre el total</td>
+</tr>
+<tr>
+<td>Ratio riesgo-beneficio</td>
+<td><em>Risk:Reward (R:B)</em></td>
+<td>Relación entre la pérdida media y la ganancia media de un sistema</td>
+</tr>
+<tr>
+<td>R (unidad de riesgo)</td>
+<td><em>risk unit</em></td>
+<td>Cantidad arriesgada en una operación; las ganancias se miden en múltiplos de R</td>
+</tr>
+<tr>
+<td>Varianza</td>
+<td><em>variance</em></td>
+<td>Dispersión de resultados alrededor de la esperanza; explica rachas sin cambiar E</td>
+</tr>
+<tr>
+<td>Martingala</td>
+<td><em>martingale</em></td>
+<td>Gestión que dobla el tamaño tras pérdidas: WR alto aparente y ruina casi segura</td>
+</tr>
+<tr>
+<td>Fractalidad (autosimilar)</td>
+<td><em>self-similarity</em></td>
+<td>Las mismas formaciones aparecen en todo marco temporal, pero no idénticas ni al mismo costo</td>
+</tr>
+<tr>
+<td>Ruido</td>
+<td><em>noise</em></td>
+<td>Fluctuación de precio sin información; domina los marcos de tiempo bajos</td>
+</tr>
+<tr>
+<td>Position trading</td>
+<td><em>position trading</em></td>
+<td>Estilo con posiciones de semanas a meses</td>
+</tr>
+<tr>
+<td>Swing trading</td>
+<td><em>swing trading</em></td>
+<td>Estilo con posiciones de días a dos semanas</td>
+</tr>
+<tr>
+<td>Day trading</td>
+<td><em>day trading</em></td>
+<td>Estilo que abre y cierra dentro del mismo día, sin riesgo overnight</td>
+</tr>
+<tr>
+<td>Scalping</td>
+<td><em>scalping</em></td>
+<td>Estilo de segundos a minutos, máxima frecuencia y costo de transacción crítico</td>
+</tr>
+<tr>
+<td>Algo trading</td>
+<td><em>algorithmic trading</em></td>
+<td>Ejecución de reglas por software; el oficio es auditar la máquina</td>
+</tr>
+<tr>
+<td>Nomadeo</td>
+<td><em>strategy hopping</em></td>
+<td>Cambiar de coordenada (estilo/mercado) sin datos: reinicia la curva de aprendizaje</td>
+</tr>
+<tr>
+<td>Riesgo overnight</td>
+<td><em>overnight risk</em></td>
+<td>Exposición a gaps y eventos con la posición abierta fuera de sesión</td>
+</tr>
+<tr>
+<td>Spot</td>
+<td><em>spot</em></td>
+<td>Compra/venta al contado, sin apalancamiento estructural</td>
+</tr>
+<tr>
+<td>CFD</td>
+<td><em>contract for difference</em></td>
+<td>Derivado que replica la diferencia de precio; apalancado, sin vencimiento</td>
+</tr>
+<tr>
+<td>Futuros</td>
+<td><em>futures</em></td>
+<td>Contrato estandarizado con vencimiento y tamaño fijo, operado en bolsa</td>
+</tr>
+<tr>
+<td>Opciones</td>
+<td><em>options</em></td>
+<td>Derecho (no obligación) de comprar/vender a precio pactado; asimetría estructural</td>
+</tr>
+<tr>
+<td>ETF</td>
+<td><em>exchange-traded fund</em></td>
+<td>Fondo cotizado réplica de un activo o índice; vehículo de inversión pasiva</td>
+</tr>
+<tr>
+<td>Prop firm</td>
+<td><em>funded trading firm</em></td>
+<td>Empresa que alquila capital tras una evaluación de pago; vive mayormente de cuotas</td>
+</tr>
+<tr>
+<td>Screen time</td>
+<td><em>screen time</em></td>
+<td>Horas deliberadas de observación registrada que fabrican el reconocimiento de patrones</td>
+</tr>
+<tr>
+<td>Régimen de mercado</td>
+<td><em>market regime</em></td>
+<td>Estado del mercado (tendencia, rango, volatilidad alta/baja) que cambia el comportamiento de todo sistema</td>
+</tr>
+<tr>
+<td>Racha</td>
+<td><em>streak</em></td>
+<td>Secuencia de resultados iguales consecutivos; esperable por varianza</td>
+</tr>
+<tr>
+<td>Backtesting</td>
+<td><em>backtesting</em></td>
+<td>Validación de un sistema sobre histórico a ciegas; mínimo estadístico N ≥ 100</td>
+</tr>
+<tr>
+<td>Drawdown</td>
+<td><em>drawdown</em></td>
+<td>Caída desde el pico de la curva de capital hasta su punto más bajo</td>
+</tr>
+<tr>
+<td>Capital quemable</td>
+<td><em>risk capital</em></td>
+<td>Dinero cuya pérdida total no cambia tu vida ni la de quien depende de ti</td>
+</tr>
+<tr>
+<td>Matrícula de mercado</td>
+<td>—</td>
+<td>Pérdidas presupuestadas de la fase de formación en real micro</td>
+</tr>
+<tr>
+<td>Runway</td>
+<td><em>runway</em></td>
+<td>Meses de vida que tu Carril A paga sin tocar el capital de trading</td>
+</tr>
+<tr>
+<td>Ruina del jugador</td>
+<td><em>gambler's ruin</em></td>
+<td>Probabilidad de caer a cero por tamaño excesivo, aun con esperanza positiva</td>
+</tr>
+<tr>
+<td>Cuenta demo</td>
+<td><em>demo account</em></td>
+<td>Cuenta de práctica con dinero ficticio y precios reales</td>
+</tr>
+<tr>
+<td>Tilt</td>
+<td><em>tilt</em></td>
+<td>Estado emocional que degrada la ejecución; origen de la mayoría de las catástrofes</td>
+</tr>
+</tbody>
+</table></div>
+<h2>🔗 Referencias</h2>
+<ul>
+<li><a href="SYLLABUS.html">SYLLABUS.md § 5 · Módulo 1</a></li>
+<li><a href="analisis_cursos.html">analisis_cursos.md — insumos 003/004 y vacíos cubiertos</a></li>
+<li><a href="agents.html">agents.md — protocolo de sesión de estudio § 5.3</a></li>
+<li>Siguiente módulo: M2 · El Motor del Precio — se construye en el Sprint 2 una vez aprobado este módulo (sin enlace hasta existir)</li>
+</ul>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="plantilla_journal_v1.html"><span class="lbl">← Anterior</span><span class="ttl">Journal v1 — el registro profesional del negocio (M9)</span></a>
+    <a class="next" href="leccion-1-1.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 1.1 · Qué es realmente el trading</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

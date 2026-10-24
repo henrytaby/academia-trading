@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 5.5 · Order blocks y zonas institucionales — con criterio y si · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a class="active" href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>📐 N2 · Técnica<span class="sep">/</span>M5 · Estructura de Mercado y Liquidez<span class="sep">/</span>Lección 5.5 · Order blocks y zonas institucionales — con cri</div>
+  <article class="doc-body">
+<h1>Lección 5.5 · Order blocks y zonas institucionales — con criterio y sin misticismo</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>45–60 min de estudio</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-05.html">M5 · Estructura de Mercado y Liquidez</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td><a href="leccion-5-4.html">Lección 5.4 · Imbalances y FVG</a></td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="leccion-5-6.html">Lección 5.6 · Top-Down Analysis</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>Ningún término del trading moderno vende más cursos que el <em>order block</em> — y ningún término acumula más mitología: "la huella exacta del banco", "donde el Smart Money dejó su orden", "el nivel que los institucionales defienden". La auditoría de <a href="analisis_cursos.html">003</a> fue tajante con este marketing y el vacío D1 exigió un módulo que enseñara el concepto <strong>como fenómeno verificable, no como fe</strong>. Esta lección existe para que salgas con tres capacidades: (1) saber qué es un OB con definición técnica precisa; (2) saber qué evidencia hay detrás — incluida la que <strong>falta</strong>; (3) usar la versión honesta del concepto, que resulta ser útil de verdad: los orígenes de los impulsos fuertes son zonas de reacción legítimas <strong>cuando se filtran con estructura y confluencia</strong>. Después de esta lección, un curso de 5.000 $ que te "revela los order blocks secretos" no podrá venderte lo que ya entiendes.</p>
+<h2>Concepto</h2>
+<p><strong>Definición técnica — order block (OB):</strong> la <strong>última vela contraria</strong> antes de un desplazamiento que rompe estructura. En un movimiento alcista: la última vela bajista antes del impulso que produce el BOS. En uno bajista: la última vela alcista antes del desplome. La lógica del nombre: si el desplazamiento fue institucional, la orden grande no pudo llenarse entera en esa vela (el <a href="leccion-2-1.html">spread del book</a> se lo impide) — la hipótesis SMC dice que el resto quedó pendiente y se re-ejecuta cuando el precio regresa.</p>
+<p><strong>El dialecto clásico, el mismo fenómeno (mapa de 5.2 aplicado):</strong> el PA de toda la vida describía esto como <strong>origen del impulso / zona de demanda desplazada</strong> — el punto de partida de la pierna que "cambió el control" de la subasta. No hace falta creer en bancos vigilando su orden pendiente para usar la zona: basta observar que <strong>los orígenes de los impulsos fuertes coinciden con zonas de oferta/demanda</strong> (<a href="leccion-2-2.html">2.2</a>) que reaccionan en el retesteo. Dos vocabularios, un fenómeno — y ninguno requiere fe.</p>
+<p><strong>Qué evidencia existe — honestidad radical del programa:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Afirmación</th>
+<th>Evidencia</th>
+<th>Veredicto del programa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"El precio reacciona en los orígenes de impulsos fuertes"</td>
+<td>Verificable en tu propio gráfico, una y otra vez</td>
+<td>✅ Se usa (con confluencia y SL)</td>
+</tr>
+<tr>
+<td>"Los orígenes de impulsos coinciden con zonas S/D del gradiente"</td>
+<td>Verificable por superposición</td>
+<td>✅ Es justamente la confluencia buscada</td>
+</tr>
+<tr>
+<td>"Ahí quedan órdenes institucionales pendientes que se re-ejecutan"</td>
+<td><strong>No verificable</strong> para el minorista: el book institucional no es público</td>
+<td>⚠️ Hipótesis plausible, no demostrada — se enseña como tal</td>
+</tr>
+<tr>
+<td>"El OB es un nivel exacto que el Smart Money defiende"</td>
+<td>Marketing de cursos; sin estudio público que lo sostenga</td>
+<td>❌ Re rechazado — deconstrucción 003</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>El protocolo del programa — un OB solo se opera si pasa los 4 filtros:</strong></p>
+<ol>
+<li><strong>Desplazamiento posterior:</strong> tras la vela origen, hubo impulso violento con <strong>BOS confirmado por cierre</strong> (5.2) — el OB sin BOS posterior es solo una vela.</li>
+<li><strong>Frescura:</strong> el retesteo es la <strong>primera</strong> vuelta al origen; la zona re-testeada tres veces es un nivel gastado (cada visita consumió órdenes pendientes).</li>
+<li><strong>Confluencia de zona:</strong> el OB solapa con el gradiente S/R de <a href="leccion-3-3.html">3.3</a> o con un FVG de <a href="leccion-5-4.html">5.4</a> — el solapamiento es la calidad.</li>
+<li><strong>Confirmación de entrada:</strong> la reacción en la zona se confirma con el protocolo <a href="leccion-3-4.html">3.4</a> (rechazo + cierre a favor) — jamás orden límite "a ciegas" en el borde del OB.</li>
+</ol>
+<h2>Analogía</h2>
+<p>La parada del autobús. El autobús de dos pisos (el dinero grande) no para en cualquier esquina: arrancó desde una parada concreta, y en esa parada quedó gente esperando (órdenes pendientes de subir). Cuando el bus avanza y se ve grande en la lejanía, la ciudad entera mira la parada de origen: si el bus regresa por esa calle, ahí recogerá a los que quedaron — y el tráfico (el precio) re-arranca de nuevo desde ese punto con fuerza. Pero nota las honestidades de la analogía: a veces el bus NO vuelve (zona sin retesteo — nada pasa); a veces vuelve, recoge a dos personas y sigue de largo sin demorarse (reacción débil — no hay trade); y a veces la "parada" era solo una acera cualquiera (vela contraria sin desplazamiento detrás — ni siquiera era parada). La parada no tiene poder propio: la tiene el itinerario del bus. Tú operas la reacción del re-arranque, no la fe en la parada.</p>
+<h2>Cómo se hace: el OB del caso maestro, de la teoría a la receta</h2>
+<ol>
+<li><strong>Identificar la vela origen:</strong> en el impulso de 1,0824 → 1,0884+ (el que produjo el BOS sobre 1,0860), la última vela bajista antes del arranque ocupa <strong>1,0820–1,0828</strong> <em>(ilustrativo)</em>. Ese es el OB alcista.</li>
+<li><strong>Filtro 1 — desplazamiento + BOS:</strong> lo que siguió fue desplazamiento con FVG (5.4) y cierre sobre 1,0860 ✓.</li>
+<li><strong>Filtro 3 — confluencia:</strong> el OB solapa con la zona maestra <strong>1,0820–1,0824</strong> del gradiente 3.3 — de hecho, <strong>es la misma zona de la receta</strong>: tu <a href="receta-primera-operacion.html">Receta de Primera Operación</a> ya compraba ese retesteo con buy limit 1,0824 + SL 1,0794 + TP 1,0886 — la receta funcionaba <strong>sin necesitar el nombre "order block"</strong>. El nombre no añade pips: añade vocabulario para clasificar tus zonas.</li>
+<li><strong>Filtro 4 — confirmación:</strong> el pullback barrió el pool (5.3: mecha a 1,0792, cierre 1,0810) y la vela siguiente cerró alcista → entrada 1,0820 con protocolo 3.4 → SL bajo la extrema de la barrida (1,0788) → geometría de la lección 5.3 intacta.</li>
+<li><strong>Registro:</strong> en tu journal etiquetas la zona con TODOS sus nombres: "zona 3.3 + OB + FVG solapado + pool barrido" — cuando llegues a M9, esa fila cuenta en el arquetipo <em>pullback a zona con confluencia múltiple</em>, y su WR será comparable con tus otros arquetipos.</li>
+</ol>
+<h2>Error común</h2>
+<p><strong>(1) Coleccionar OBs.</strong> Con la definición laxa ("última vela contraria antes de cualquier subida") hay un OB cada tres velas: el filtro 1 (BOS por cierre) elimina el 80 % <em>(heurística)</em> — sin desplazamiento no hay OB, hay velas. <strong>(2) La religión del nivel exacto.</strong> "El OB se compra en su apertura exacta" — la zona se vigila y se opera con confirmación; el nivel exacto sin confirmación es orden límite en el cuchillo, prohibida por el protocolo 3.4. <strong>(3) Pagar el branding.</strong> Cursos que renombran el origen del impulso con siglas nuevas y lo venden como información privilegiada: el mapa de nomenclatura de 5.2 te inmuniza — pregúntale a cualquier vendedor qué fenómeno describe su sigla y aparecerá el PA clásico debajo. <strong>(4) OB viejo en mapa nuevo.</strong> Un OB de hace ve sesiones, ya retesteado y mitigado, no "sigue siendo válido": cada visita consumió la zona. Frescura o nada. <strong>(5) Sustituir el análisis por el nombre.</strong> El OB es una etiqueta sobre una zona que DEBE pasar por sesgo (5.1), estructura (5.2), liquidez (5.3) y confirmación (3.4): quien dice "compro porque es un OB" ha sustituido el proceso por la palabra — el error exacto que la auditoría 003 documentó en la industria.</p>
+<h2>Conexión cuantitativa</h2>
+<p>El OB bien filtrado es la máquina de confluencias del programa: zona (3.3) + origen de desplazamiento + pool ya barrido (5.3) + FVG solapado (5.4) en el mismo rectángulo de precios. ¿Por qué importa aritméticamente? Porque la confluencia es <strong>homogeneización de muestra</strong>: tus operaciones futuras dejarán de ser "compras variadas" y serán "compras del arquetipo X con condiciones Y" — y solo entonces tu WR por arquetipo (la tabla que construirás en M9) mide algo real. Sobre el caso: la operación de la receta arriesga 18–19 $ para buscar ~62 pips (entrada 1,0824 → TP 1,0886): R:B ≈ 2,1 <em>(ilustrativo — el journal registra el tuyo)</em> → breakeven WR = 1/(1+2,1) ≈ 32 %: la confluencia no garantiza aciertos, <strong>baja la barrera que tu WR debe superar</strong> para que <ktx class="ktx" data-tex="E = (P_w \times W) - (P_l \times L)">E = (P_w \times W) - (P_l \times L)</ktx> sea positivo. Esa es, en una frase, la economía de todo el N2: construir zonas donde la geometría haga el trabajo pesado.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li>OB = última vela contraria antes del desplazamiento con BOS — el PA clásico lo llama origen del impulso: mismo fenómeno.</li>
+<li>La hipótesis "quedan órdenes institucionales pendientes" es plausible pero <strong>no verificable</strong> por el minorista: se usa la reacción observable, no la fe.</li>
+<li>Los 4 filtros: desplazamiento+BOS, frescura (primer retesteo), confluencia de zona, confirmación de entrada (3.4).</li>
+<li>La zona de la receta ES un OB con confluencia — el nombre no cambia la estadística; la confluencia sí.</li>
+<li>Sin BOS posterior no hay OB: hay una vela. Sin frescura no hay zona: hay una cicatriz.</li>
+<li>Desconfianza por defecto del branding: toda sigla nueva es un fenómeno viejo con marketing nuevo.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>Enumera los 4 filtros del programa y explica cuál es el que más OBs elimina y por qué.</li>
+<li>Un OB se re-testeó tres veces sin reaccionar. ¿Qué estatus tiene y qué dice la frescura?</li>
+<li>¿Qué puede verificar tú sobre un OB y qué no? ¿Cómo opera el programa la parte verificable?</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. (1) Desplazamiento con BOS por cierre detrás; (2) frescura — primer retesteo; (3) confluencia con gradiente 3.3 o FVG 5.4; (4) confirmación 3.4 antes de entrar. El que más elimina es el **filtro 1**: exigir BOS por cierre convierte "una vela contraria antes de una subida" en "el origen de un desplazamiento que cambió la estructura" — la mayoría de las velas contrarias no tienen nada de eso detrás, y sin él el gráfico entero parece lleno de OBs.
+2. Tres retestes = tres visitas que consumieron las órdenes pendientes que daban sentido a la zona: es una **cicatriz, no una zona**. La regla de frescura la retira del radar — si el precio vuelve, se re-evalúa como zona nueva (¿nueva reacción?, ¿nuevo desplazamiento?), pero el OB original no "acumula poder": se lo gastó.
+3. Verificable: que el desplazamiento existió, que rompió estructura por cierre, que la zona coincide con el gradiente y que el precio reaccionó en el retesteo — todo eso está en tu gráfico. No verificable: las órdenes institucionales pendientes detrás (el book no es público). El programa opera **la reacción observada con confirmación y SL** (3.4 + 4.6) y registra la hipótesis como hipótesis — exactamente como manda la honestidad epistémica de `agents.md` § 3.6.
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="leccion-5-4.html"><span class="lbl">← Anterior</span><span class="ttl">Lección 5.4 · Imbalances y FVG — el hueco que el precio suele volver a</span></a>
+    <a class="next" href="leccion-5-6.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 5.6 · Top-Down Analysis — el protocolo de 3 capas</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

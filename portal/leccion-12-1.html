@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 12.1 · El Plan de Trading documental — tu negocio en un docume · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a class="active" href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>💼 N4 · Negocio<span class="sep">/</span>M12 · Plan de Trading y Plan de Negocio<span class="sep">/</span>Lección 12.1 · El Plan de Trading documental — tu negocio en</div>
+  <article class="doc-body">
+<h1>Lección 12.1 · El Plan de Trading documental — tu negocio en un documento que otro podría ejecutar</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>40–55 min de estudio</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-12.html">M12 · Plan de Trading y Plan de Negocio</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td><a href="leccion-11-7.html">Lección 11.7 · Fiscalidad por principios</a></td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="leccion-12-2.html">Lección 12.2 · La rutina semanal</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>Once módulos te dieron piezas: estructura, técnica, sistema, presupuesto, evidencia, conducta, infraestructura. Ahora el programa las consolida en el documento operativo que define la diferencia entre "sé de trading" y "tengo un negocio de trading": el <strong>Plan de Trading</strong>. Su función no es motivacional ni decorativa — es funcional: (1) te obliga a explicitar TODO lo que hasta hoy vivía disperso en lecciones, journal y memoria (y lo que no está escrito, no es sistemático); (2) es el contrato contigo mismo que el test del clon (M7) exigía — un tercero con tu documento debería poder ejecutar tu negocio; (3) es el objeto que la Evaluación N3 y la Certificación FIT-12 auditan, y el que revisarás en cada ventana de modificación (9.6) para que el negocio evolucione con evidencia y no con capricho. La regla del SYLLABUS es clara: 10 secciones obligatorias — y esta lección las recorre una a una con la fuente exacta de cada contenido (qué módulo te dio cada pieza). Si terminas con una sola idea: <strong>el Plan de Trading es el documento donde tu negocio deja de vivir en tu cabeza — y lo que vive en tu cabeza no es un negocio, es una opinión.</strong></p>
+<h2>Concepto</h2>
+<p><strong>Las 10 secciones obligatorias, con su fuente y su función:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Sección</th>
+<th>Qué contiene</th>
+<th>Fuente en el programa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Identidad</strong></td>
+<td>Quién opera: objetivos realistas (proceso, no "vivir de esto" a los 3 meses), capital inicial, tolerancia al drawdown, restricciones personales (horario, tiempo disponible, mandatos de tu propio CRO)</td>
+<td>M1 (Carta de Expectativas), M8 (tolerancia)</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Coordenada</strong></td>
+<td>Mercados e instrumentos exactos (watchlist del M6), timeframes de análisis y ejecución, sesiones y ventana de ejecución (10.7), zona horaria</td>
+<td>M2-M3 (mercados/sesiones), 10.7 (ventana)</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Mercado y contexto</strong></td>
+<td>Qué escenarios operas y cuáles no (régimen de 3.6), calendario macro que respetas, condiciones de "no operar hoy"</td>
+<td>M2-M3 (subasta, régimen), 2.6 (macro)</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Sistema</strong></td>
+<td>El sistema v1.1 completo: los 10 componentes (M7) con sus 8 de definición operativa + el arquetipo del setup + sus métricas medidas (WR, R:B, E, PF, rachas — el reporte M-9)</td>
+<td>M7 + M9</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Riesgo</strong></td>
+<td>La regla del 1 %, topes de cartera (2 % motor / 3 % global), la cascada de frenos con su protocolo de apagado, el sizing con calculadora (+ oráculo), la matriz de temperatura (verde/ámbar/rojo)</td>
+<td>M8 + 10.6/10.7</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Rutina</strong></td>
+<td>El día de trading completo: pre-sesión (temperatura + premeditatio + caso contrario), ventana de ejecución con su corte, post-mercado (journal en caliente + juicio de proceso + cierre ritual)</td>
+<td>10.6-10.7</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>Journal y registro</strong></td>
+<td>El journal v1 (24 columnas, taxonomía E0-E7, etiquetas en caliente), el expediente fiscal, los estados archivados y su cruce mensual</td>
+<td>M9 + 11.7</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>Revisión</strong></td>
+<td>El calendario de auditoría: acta semanal (6 pasos), ventana mensual de modificación (4 condiciones acumulativas, lista negra, changelog), la regla de UNA mejora</td>
+<td>9.6</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>Psicología</strong></td>
+<td>Tu protocolo personal: tus 2-3 miedos y avaricias dominantes (los que tu reporte M-10 midió), sus señales tempranas específicas, tus antídotos estructurales, el protocolo post-pérdida de 90 s</td>
+<td>M10</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>Reglas de excepción</strong></td>
+<td>La lista de lo que NUNCA se hace sin excepciones (SL intacto, riesgo del presupuesto, techo de operaciones, no operar en rojo) — escritas como "no" absolutos, con la razón de cada uno</td>
+<td>M8 (frenos), 10.3 (pre-compromiso)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>El estándar de calidad: el test del clon, ahora aplicado al documento.</strong> El M7 lo aplicaba al sistema; aquí se aplica al negocio completo: <strong>un operador razonable con tu documento en la mano debería poder ejecutar tu negocio una semana sin preguntarte nada</strong> — cuándo se sienta, qué verifica antes, cuánto arriesga, cuándo para, qué registra y qué hace después. Cada frase ambigua del plan ("cuando se vea bien", "con moderación", "si todo va bien") es un hueco donde el clon improvisa — y donde tu futuro yo fatigado (10.1) improvisará igual. La plantilla del laboratorio trae cada sección con sus campos obligatorios y su checklist de cierre: el Plan v1.0 se aprueba cuando las 10 secciones pasan el test.</p>
+<p><strong>Plan de Trading ≠ Plan de Negocio.</strong> El primero (esta lección y el laboratorio) es el documento OPERATIVO: cómo se ejecuta el negocio día a día. El segundo (lección 12.4 y la integración final del módulo) es el documento ESTRATÉGICO: la gestión patrimonial, los KPIs de negocio, la hoja de ruta de fases y la fiscalidad — cómo el negocio encaja en tu vida financiera. El programa exige ambos; confundirlos produce traders con "plan de trading" que no saben cuándo retirar, y patrimonios sin reglas que financian un trading sin plan.</p>
+<h2>Analogía</h2>
+<p>El manual de operaciones de un restaurante. Un restaurante que funciona sin su dueño no tiene "un chef con talento": tiene un manual de operaciones — horarios, proveedores, recetas con gramajes, protocolos de higiene, política de cierres — que cualquier chef competente puede ejecutar. Ese manual es lo que hace que el negocio VALGA algo y sea vendible, financiable, escalable. El trader sin plan es el restaurante que solo funciona cuando el chef dueño está de buen humor: una fuente de ansiedad, no un activo. Tu Plan de Trading es tu manual de operaciones: el documento que hace tu negocio ejecutable por un clon, auditable por tu agente y defendible ante tu propio CRO cuando la varianza toque la puerta.</p>
+<h2>Cómo se hace: del material disperso al documento v1.0 (el laboratorio, en 4 horas)</h2>
+<ol>
+<li><strong>Recopila (30 min):</strong> reúne tus entregables — Sistema v1.1 (M7), reporte M-9, reporte M-10, matriz de due diligence e informe M-11, tu journal con su línea base. El plan no se inventa: se CONSOLIDA.</li>
+<li><strong>Redacta las 10 secciones (2 h)</strong> con la plantilla del laboratorio — cada campo con número o criterio explícito, cada sección citando de dónde sale el dato (la trazabilidad es la misma del programa: sin fuente, el campo no está completo).</li>
+<li><strong>Aplica el test del clon por sección (30 min):</strong> para cada sección responde "¿un tercero ejecutaría esto sin preguntarme?" — donde la respuesta sea no, la sección no está terminada; añade el número o el criterio que falta.</li>
+<li><strong>Firma y congela la v1.0 (10 min):</strong> fecha, versión 1.0, tu firma. El plan entra al mismo régimen que el sistema: solo cambia en la ventana mensual (9.6) con evidencia y changelog — el documento que cambia cada semana no es un plan, es un diario de impulsos.</li>
+</ol>
+<h2>Error común</h2>
+<p><strong>(1) "Mi plan está en mi cabeza y funcionó hasta ahora."</strong> Lo que está en tu cabeza no sobrevive al secuestro (10.1), no pasa el test del clon y no se audita en la ventana mensual — el plan documental es la diferencia entre disciplina y autobiografía optimista. <strong>(2) Redactar la v1.0 como si fuera la v1.0 de otro.</strong> Copiar la plantilla sin tus números (tu WR, tu racha, TUS miedos medidos) produce un plan genérico que el clon no puede ejecutar y que tú no respetarás — el plan es la consolidación de TUS entregables, no de las ideas del programa. <strong>(3) Hacerlo perfecto antes de usarlo.</strong> La v1.0 es la foto honesta de HOY: se usa, se audita y se evoluciona en ventanas — el plan perfecto que nunca se firma es la perfección de 10.4 al servicio de la procrastinación. <strong>(4) Olvidar la sección 10.</strong> Las reglas de excepción son las más cortas y las más importantes: la lista de "no" absolutos con su razón — sin ella, cada día difícil renegocia el plan; con ella, el plan renegocia contigo. <strong>(5) Separar el plan del journal.</strong> El plan dice QUÉ y CON QUÉ se mide; el journal es donde se mide; la revisión es donde se compara — los tres son un solo circuito: el plan sin journal es fe, el journal sin plan es registro sin veredicto.</p>
+<h2>Conexión cuantitativa</h2>
+<p><strong>Hacia M7:</strong> la sección 4 del plan ES tu sistema v1.1 con sus métricas medidas — el plan convierte tu sistema en política de negocio. <strong>Hacia M9:</strong> las secciones 7-8 son el circuito journal-revisión que produce la evidencia de la próxima versión — el plan v1.1 nacerá del changelog, no de un capricho. <strong>Hacia 12.3:</strong> las secciones del plan alimentan los KPIs del negocio — el dashboard mensual se llena leyendo tu journal, no estimando. <strong>Hacia la Certificación FIT-12:</strong> el plan aprobado es el primer requisito de la certificación — y el documento que tu defensa socrática final defenderá.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li>El Plan de Trading es el documento operativo de 10 secciones que consolida 11 módulos: <strong>lo que no está escrito no es sistemático</strong> — y lo que vive en tu cabeza no es un negocio.</li>
+<li>El estándar de calidad es el <strong>test del clon aplicado al negocio completo</strong>: un tercero con tu documento ejecuta tu semana sin preguntarte nada.</li>
+<li>Las 10 secciones tienen <strong>fuente obligatoria</strong> (identidad M1, sistema M7+M9, riesgo M8, rutina M10, registro M9+11.7…) — el plan se consolida, no se inventa.</li>
+<li>Plan de Trading (operativo) ≠ Plan de Negocio (estratégico): <strong>cómo se ejecuta</strong> vs cómo encaja en tu vida financiera — el programa exige ambos y no se confunden.</li>
+<li>La v1.0 se firma y se congela: <strong>solo evoluciona en la ventana mensual con evidencia y changelog</strong> — el plan que cambia cada semana es un diario de impulsos.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>Reproduce las 10 secciones de memoria y asigna a cada una SU fuente del programa. ¿Qué dos secciones NO tienen fuente en un módulo técnico y por qué son igual de obligatorias?</li>
+<li>Tu plan dice en la sección 4: "entro en pullbacks a zona con vela de reacción". ¿Por qué esta sección NO pasa el test del clon, y qué dos elementos exactos la completarían?</li>
+<li>Un trader tiene plan de trading impecable pero retira el 90 % de su mes ganador "para darse un gusto" y su capital de trading cae bajo el mínimo del sistema. ¿Qué documento le faltó y qué sección de ese documento habría prevenido el retiro?</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. Las 10: identidad (M1/M8), coordenada (M2-M3/10.7), mercado y contexto (M2-M3), sistema (M7+M9), riesgo (M8/10.6-10.7), rutina (10.6-10.7), journal y registro (M9/11.7), revisión (9.6), psicología (M10), reglas de excepción (M8/10.3). Las dos que no vienen de un módulo técnico son **identidad** y **psicología** (y parcialmente reglas de excepción): vienen de tu historia personal y de tus datos conductuales — igual de obligatorias porque son las que el examen real (la varianza + el secuestro) pone a prueba primero: un sistema perfecto con identidad indefinida y psicología sin protocolo es el 85 % del programa ignorado *(proporción heurística del 85/15 de M1)*.
+2. No pasa porque "zona", "pullback" y "vela de reacción" no están definidos operativamente: el clon no sabe qué zona (¿cuál componente 3 la define?), qué pullback (¿profundidad mínima?), ni qué vela (¿cierre sobre qué?). Completaría con: la definición operativa de los componentes 1-8 (cada condición sí/no verificable con vela cerrada, del M7/M9) y los parámetros medidos del setup (WR, R:B, E del reporte M-9) — el arquetipo con números.
+3. Le faltó el **Plan de Negocio** (12.4): la separación de cuentas (supervivencia vs trading), la política de retiros (qué se retira, cuándo, desde qué cuenta y con qué condiciones) y el capital mínimo operativo (bajo el cual el sistema no se ejecuta porque el riesgo fijo en $ deja de corresponder al 1 %). La sección de política de retiros habría dicho por escrito: el mes ganador financia crecimiento y resguardos con reglas — no "gustos" improvisados que rompen la aritmética del sizing.
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="hub-mod-12.html"><span class="lbl">← Anterior</span><span class="ttl">Módulo 12 · Plan de Trading y Plan de Negocio — la graduación del FIT-</span></a>
+    <a class="next" href="leccion-12-2.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 12.2 · La rutina semanal del trader — el ciclo que convierte e</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 4.5 · Cuenta demo · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a class="active" href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>🧱 N1 · Base<span class="sep">/</span>M4 · Plataforma y Primera Ejecución<span class="sep">/</span>Lección 4.5 · Cuenta demo</div>
+  <article class="doc-body">
+<h1>Lección 4.5 · Cuenta demo</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>40–50 min de estudio + sesión de configuración</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-04.html">M4 · Plataforma y Primera Ejecución</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td><a href="leccion-4-4.html">Lección 4.4 · Largos y cortos</a></td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="leccion-4-6.html">Lección 4.6 · El Stop Loss como ley</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>La demo es tu gimnasio: cuesta 0 $, no expone capital y permite cometer los cientos de errores mecánicos que todo operador necesita cometer — con el único requisito de que los registres. Pero la demo mal configurada enseña vicios caros: quien practica con 100 000 $ virtuales y lotes de 1.00 entrena un tamaño que jamás usará, y quien opera 30 veces al día sin journal entrena reflejos contrarios a su futuro plan. El programa no usa la demo "para ver si funciona el trading" — la usa como <strong>laboratorio de mecánica</strong> con protocolo ordenado: mismo capital que tu plan real, mismo riesgo por operación, mismas órdenes que ejecutarías en vivo, y un criterio de salida claro. La honestidad sobre lo que la demo puede y no puede darte es parte de la lección: te da procedimiento, no nervios — y fingir lo contrario es autoengaño.</p>
+<h2>Concepto</h2>
+<p><strong>Qué es:</strong> una cuenta con dinero virtual conectada a cotizaciones reales (o casi). Montas órdenes, el panel computa P/L, swap y margen igual que una real — pero la factura es ficticia.</p>
+<p><strong>Qué simula bien (por eso la usamos):</strong></p>
+<ul>
+<li>La <strong>mecánica completa</strong>: tipos de órdenes, OCO, ejecución, pips, lotes, margen, swap.</li>
+<li>La <strong>lectura del panel</strong> y el flujo de trabajo diario (journal, capturas, checklist).</li>
+<li>El <strong>comportamiento del precio</strong> — si el bróker es serio, la demo usa el mismo feed que la real.</li>
+</ul>
+<p><strong>Qué NO simula (por eso no nos engañamos):</strong></p>
+<ul>
+<li><strong>Slippage real</strong> en noticias y gaps: muchas demos ejecutan al precio exacto siempre (<a href="leccion-4-3.html">Lección 4.3</a>).</li>
+<li><strong>Tu psicología con dinero real:</strong> la pérdida de 18 $ reales duele distinto que la virtual — y fingir que no es así es negar la variable 85/15 del programa (<a href="leccion-1-4.html">Lección 1.4</a>).</li>
+<li><strong>La fricción de retiros, requotes y stops-out reales</strong> bajo volatilidad extrema.</li>
+</ul>
+<p><strong>La configuración realista del programa (no negociable):</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Parámetro</th>
+<th>Valor</th>
+<th>Por qué</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Capital virtual</td>
+<td><strong>El de tu plan real</strong> (p. ej. 2 000 $) — no 100 000 $</td>
+<td>entrenar el tamaño que usarás</td>
+</tr>
+<tr>
+<td>Riesgo por operación</td>
+<td><strong>1 % = 20 $</strong> (igual que el plan)</td>
+<td>la mecánica del riesgo se automática aquí</td>
+</tr>
+<tr>
+<td>Apalancamiento</td>
+<td>El que usarás de verdad (p. ej. 1:30)</td>
+<td>el margen debe doler proporcionalmente</td>
+</tr>
+<tr>
+<td>Tipo de cuenta</td>
+<td>El mismo que abrirías (standard o raw)</td>
+<td>los costos de la <a href="leccion-4-3.html">Lección 4.3</a> deben verse</td>
+</tr>
+<tr>
+<td>Lote típico resultante</td>
+<td>0,05–0,06 en EUR/USD (fórmula de la receta)</td>
+<td>micro real, no fantasía</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Lectura del panel de posiciones</strong> (los campos que debes saber leer antes de operar):</p>
+<ul>
+<li><strong>P/L flotante:</strong> la ganancia/pérdida <em>si cerraras ahora</em> — todavía es tuya solo en papel.</li>
+<li><strong>P/L realizado:</strong> el resultado definitivo cuando cierras — el único que entra en tu journal.</li>
+<li><strong>Margen usado:</strong> la garantía retenida por tu posición. Con 0,06 lotes EUR/USD a 1,0852 y apalancamiento 1:30: (0,06 × 100 000 × 1,0852) ÷ 30 ≈ <strong>217 $</strong>.</li>
+<li><strong>Margen libre:</strong> capital − margen usado − pérdidas flotantes. Si tiende a 0, tu tamaño es demasiado grande — el programa te quiere lejos de esa línea.</li>
+<li><strong>Swap acumulado:</strong> el almacén de la <a href="leccion-4-3.html">Lección 4.3</a> cobrando en tiempo real.</li>
+</ul>
+<p><strong>Visual — el circuito de progresión del programa</strong> (la demo es la primera etapa, no el destino):</p>
+<pre class="mermaid">flowchart LR
+    D[&quot;🏦 Demo N1&lt;br/&gt;mecánica impecable&lt;br/&gt;misión M-4: 10/10 con SL&quot;] --&gt; F[&quot;🧪 Demo forward N2-N3&lt;br/&gt;sistema v1.0 + 30 repeticiones&lt;br/&gt;E medido en TU journal&quot;]
+    F --&gt; R[&quot;💵 Real micro F4&lt;br/&gt;0,25-0,5% por operación&lt;br/&gt;primer dólar real (veto CRO respetado)&quot;]
+    D -.-&gt;|&quot;⚠️ NO es un paso opcional&lt;br/&gt;ni una etapa decorativa&quot;| F
+</pre>
+<h2>Analogía</h2>
+<p>Simulador de vuelo. Ninguna aerolínea sienta a un novato al mando de un 747 con pasajeros: primero cientos de horas de simulador, donde estrellarse es gratis y cada procedimiento se repite hasta el músculo. Pero nadie finge que el simulador vuela: no hay turbulencia emocional, no hay pasajeros detrás, no hay consecuencia. La industria del trading hace lo contrario que la aeronáutica: le dice al novato "súbete, el dinero te enseña" — y por eso estudios de reguladores estiman que entre el 70 % y el 90 % pierde. El programa aeronáutico es el del programa: demo primero, protocolo completo, y honestidad sobre lo que el simulador no puede enseñarte — el sudor del pasajero real lo conocerás en F4, con riesgo micro, no antes.</p>
+<h2>Cómo se hace: tu sesión de configuración (una vez, 30 minutos)</h2>
+<ol>
+<li><strong>Abre la demo</strong> con el bróker que hayas preseleccionado en el paso 0 de la <a href="receta-primera-operacion.html">Receta</a> (due diligence sin marcas, regulación verificada).</li>
+<li><strong>Fija capital 2 000 $ y apalancamiento 1:30</strong> <em>(o tu plan real; más apalancamiento no es "mejor": es más margen para cometer errores más grandes)</em>.</li>
+<li><strong>Carga el layout <code>FIT12-trabajo</code></strong> de la <a href="leccion-4-1.html">Lección 4.1</a> y la watchlist de 5 instrumentos.</li>
+<li><strong>Verifica el tamaño:</strong> abre la calculadora de lote (o la fórmula: lote = riesgo $ ÷ (SL pips × valor pip)): 20 $ ÷ (30 × 10) = 0,066 → <strong>0,06</strong> en EUR/USD.</li>
+<li><strong>Ejecuta tu primera OCO completa</strong> siguiendo la receta: buy limit 1,0824 + SL 1,0794 + TP 1,0884 <em>(precios ilustrativos del caso maestro)</em>.</li>
+<li><strong>Lee el panel:</strong> margen usado ≈ 217 $, margen libre ≈ 1 783 $, P/L flotante en 0.</li>
+<li><strong>Deja la posición trabajar</strong> con SL/TP montados y cierra la plataforma — la OCO vigila por ti.</li>
+<li><strong>Al día siguiente:</strong> revisa el resultado, regístralo en <code>journal/plantilla_journal_v0.csv</code> y completa el checklist de 6 puntos de la misión M-4.</li>
+<li><strong>Repite en XAU/USD:</strong> ficha de variación de la receta: riesgo 20 $, SL 4 $ de recorrido → 5 oz = 0,05 lotes (0,05 × 100 oz × 4 $ = 20 $ ✓).</li>
+<li><strong>Confirma el circuito completo:</strong> orden montada → ejecutada → gestionada (o no gestionada: la OCO gestiona) → cerrada → registrada. Ese bucle ES la mecánica que N1 certifica.</li>
+</ol>
+<h2>Error común</h2>
+<p><strong>(1) La demo casino:</strong> 100 000 $ virtuales, lotes de 1.00, 30 operaciones al día, cero journal. Entrena exactamente lo contrario del plan: tamaño fantasma, frecuencia patológica y memoria sin datos. La primera semana real de esa persona será una descongelación dolorosa — mejor no crear los vicios. <strong>(2) El perfeccionismo demo infinito:</strong> "aún no estoy listo" en el mes 8 de demo sin criterio de salida. El programa fija umbrales: misión M-4 (10/10 mecánica impecable) cierra N1, y N2 avanza en demo-forward con sistema — la demo no es un refugio del miedo, es un laboratorio con entregables. <strong>(3) Tomar el P/L flotante como resultado:</strong> el trade "que ganaba 40 pips y cerró en −30" no perdió 70 pips porque "el mercado se lo robó": sin TP parcial ni gestión planificada (eso llega en M8), el flotante es papel. Lo único real es el precio de cierre. <strong>(4) Cambiar el capital virtual a mitad</strong> "para probar con más margen": rompe la comparabilidad de tu estadística — la demo es un experimento con variable única: tu mecánica.</p>
+<h2>Conexión cuantitativa</h2>
+<p>La demo es donde tu mecánica se vuelve <strong>medible sin costo</strong>: el objetivo de la misión M-4 es 10/10 con SL puesto antes de entrar (100 %, sin excepciones) — un KPI binario que la demo mide perfectamente porque no requiere dinero. El resto de métricas de la demo son provisionales por diseño: WR, E y rachas medidos en demo <strong>no cuentan</strong> como estadística del sistema (N pequeña, sin slippage real, sin psicología) — el programa los invalida explícitamente para que nadie construya confianza sobre arena. La progresión honesta: demo = mecánica (N1) → demo-forward = sistema con muestra (N2-N3, N ≥ 30 repeticiones documentadas) → real micro = psicología con riesgo acotado (F4: 0,25–0,5 %). Cada etapa responde una pregunta distinta; mezclarlas es contestar mal las tres.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li>La demo simula mecánica y flujo de trabajo; NO simula slippage real, fricción ni tu psicología con dinero real.</li>
+<li>Configuración realista no negociable: capital del plan real, riesgo 1 %, apalancamiento real, tipo de cuenta real, lotes micro (0,05–0,06).</li>
+<li>Panel: P/L flotante es papel; realizado es journal. Margen usado ≈ 217 $ en tu posición tipo 1:30; si el margen libre se encoge, el tamaño sobra.</li>
+<li>El circuito del programa: demo (mecánica) → demo-forward (sistema) → real micro (psicología) — cada etapa responde una pregunta distinta.</li>
+<li>La demo no da estadística de sistema: WR y E demo se invalidan por N pequeño y costos irreales.</li>
+<li>Criterio de salida de la demo: misión M-4 completa — la demo sin entregable es refugio, no laboratorio.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>¿Qué dos cosas simula bien la demo y qué tres no simula? ¿Por qué esa diferencia define el KPI de la misión M-4?</li>
+<li>Calcula el margen usado de 0,10 lotes EUR/USD a 1,0900 con apalancamiento 1:30. ¿Y con 1:100?</li>
+<li>Tu amigo lleva 8 meses en demo "preparándose" sin misiones ni entregables. ¿Qué le objeta el programa?</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. Simula bien: mecánica completa (órdenes, OCO, margen, swap) y el flujo de trabajo (journal, checklist). No simula: slippage real en noticias/gaps, tu psicología con dinero real, y fricciones de cuenta real (requotes, stops-out). Por eso el KPI de M-4 es binario de mecánica (10/10 con SL puesto antes de entrar): es lo único que la demo puede medir con validez — WR/E demo quedan invalidados como estadística.
+2. Nominal = 0,10 × 100 000 × 1,0900 = 10 900 $. A 1:30: 10 900 ÷ 30 ≈ **363 $** de margen usado. A 1:100: **109 $**. El margen menor de 1:100 no te hace más rico: solo permite posiciones más grandes — el riesgo real lo define el SL y el lote, no el apalancamiento (la cuenta 1:100 solo facilita el error de tamaño).
+3. La demo sin entregables es refugio, no laboratorio: 8 meses sin misiones no producen mecánica certificada ni datos comparables. El programa fija umbrales de salida (M-4: 10/10; luego N2 con 30 repeticiones documentadas). La objeción correcta: ¿qué pregunta concreta responde hoy tu demo? Si no hay pregunta, hay miedo con excusa técnica — y la progresión del programa existe precisamente para no quedarse atrapado ahí.
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="leccion-4-4.html"><span class="lbl">← Anterior</span><span class="ttl">Lección 4.4 · Largos y cortos</span></a>
+    <a class="next" href="leccion-4-6.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 4.6 · El Stop Loss como ley</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

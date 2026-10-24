@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 7.1 · Filosofía, Estrategia y Sistema — el test del clon · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a class="active" href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>📐 N2 · Técnica<span class="sep">/</span>M7 · Construcción del Sistema<span class="sep">/</span>Lección 7.1 · Filosofía, Estrategia y Sistema — el test del </div>
+  <article class="doc-body">
+<h1>Lección 7.1 · Filosofía, Estrategia y Sistema — el test del clon</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>40–55 min de estudio</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-07.html">M7 · Construcción del Sistema</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td><a href="hub-mod-06.html">M6 · Indicadores y Confluencias</a></td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="leccion-7-2.html">Lección 7.2 · Los 10 componentes</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>Has acumulado doce lecciones de herramientas: estructura, liquidez, zonas, medidores, ciclos. Pero herramientas apiladas no son un negocio — son un taller lleno de máquinas sin plano. La diferencia entre un trader y un operador de opiniones no está en cuánto sabe: está en si su conocimiento está <strong>formalizado en reglas que otro podría ejecutar</strong>. Esta lección instala la jerarquía de vocabulario que el resto del módulo usa con precisión quirúrgica: filosofía, estrategia y sistema no son sinónimos — son tres capas de abstracción distintas, y confundirlas es la razón número uno por la que los traders "saben mucho" y siguen perdiendo. Al terminar, podrás leer cualquier plan —el tuyo o el de un gurú— y decir en 30 segundos en qué capa vive, qué capa le falta y si pasa la única prueba que importa: la de que dos desconocidos, leyendo el mismo documento ante el mismo gráfico, ejecuten la misma operación.</p>
+<h2>Concepto</h2>
+<p><strong>Definición — filosofía de mercado:</strong> tu tesis falsable sobre <em>por qué</em> el mercado deja dinero en la mesa para quien esté donde tú estás. No es una opinión sobre el precio del euro; es una hipótesis sobre el <strong>mecanismo</strong> de la ventaja. Ejemplos de filosofías honestas: <em>"los stops del retail se agrupan tras los niveles obvios, y las instituciones necesitan barrerlos para llenar posición — por eso el precio visita los extremos antes de moverse"</em> (la filosofía de liquidez del M5). <em>"El precio se aleja y regresa a su media porque la información llega en oleadas, no de golpe"</em> (reversión a la media). <em>"Las tendencias persisten porque la información se difunde lentamente entre participantes"</em> (seguimiento). Una filosofía es falsable: puedes imaginar la evidencia que la refutaría. Si no puedes, no es filosofía — es fe.</p>
+<p><strong>Definición — estrategia:</strong> la narrativa coherente que convierte esa filosofía en una <em>forma de capturarla</em>: qué fenómeno buscas, en qué régimen, en qué marcos temporales y con qué arquetipo de operación. La estrategia no dice "compra a las 1,0820" — dice <em>"operaré pullbacks hacia zonas de barrida de liquidez en tendencia H4, porque ahí es donde la filosofía dice que las instituciones completan su llenado"</em>. La estrategia es el mapa del territorio donde operarás; todavía no es ejecutable.</p>
+<p><strong>Definición — sistema de trading:</strong> la formalización ejecutable y completa de la estrategia: un documento donde cada decisión operativa está cerrada — mercado, marcos, régimen, setup, gatillo, stop, salidas, gestión, riesgo, horario — con reglas <strong>explícitas</strong>, es decir, verificables por un tercero sin interpretación. El sistema es el único de los tres niveles que puede backtestearse, auditarse y mejorarse, porque solo él tiene respuestas cerradas.</p>
+<p><strong>La jerarquía completa:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Capa</th>
+<th>Pregunta que responde</th>
+<th>Naturaleza</th>
+<th>Si falta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🧭 Filosofía</td>
+<td>¿Por qué existe la ventaja?</td>
+<td>Hipótesis falsable sobre el mecanismo</td>
+<td>Setup prestado sin razón para funcionar — no sabes cuándo la ventaja deja de existir</td>
+</tr>
+<tr>
+<td>🗺️ Estrategia</td>
+<td>¿Cómo se captura esa ventaja?</td>
+<td>Narrativa coherente — fenómeno, régimen, arquetipo</td>
+<td>Reglas sueltas que no cuentan historia — imposible saber cuándo aplicar qué</td>
+</tr>
+<tr>
+<td>⚙️ Sistema</td>
+<td>¿Cuándo, exactamente, y cuánto?</td>
+<td>Documento ejecutable con reglas cerradas</td>
+<td>Improvisación disfrazada de intuición — nada es medible ni auditable</td>
+</tr>
+<tr>
+<td>🎯 Ejecución</td>
+<td>¿Qué hago en este gráfico, ahora?</td>
+<td>La regla aplicada al caso concreto</td>
+<td>(La ejecución sin sistema ya la viviste en M4-M5 — ansiedad, dudas, doble opinión)</td>
+</tr>
+</tbody>
+</table></div>
+<pre class="mermaid">flowchart TD
+    F[&quot;🧭 FILOSOFÍA — por qué existe la ventaja&lt;br/&gt;Tesis falsable sobre el mecanismo&quot;] --&gt; E[&quot;🗺️ ESTRATEGIA — cómo se captura&lt;br/&gt;Fenómeno + régimen + arquetipo&quot;]
+    E --&gt; S[&quot;⚙️ SISTEMA — cuándo y cuánto, exactamente&lt;br/&gt;10 componentes escritos y clonables&quot;]
+    S --&gt; X[&quot;🎯 EJECUCIÓN — la operación concreta&lt;br/&gt;El sistema aplicado a un gráfico, hoy&quot;]
+    F -.-&gt;|&quot;sin filosofía — setup prestado,&lt;br/&gt;sin razón para existir&quot;| E
+    E -.-&gt;|&quot;sin estrategia — reglas sueltas&lt;br/&gt;que no cuentan una historia&quot;| S
+    S -.-&gt;|&quot;sin sistema — improvisación&lt;br/&gt;disfrazada de intuición&quot;| X
+    style F fill:#e8f4f8
+    style S fill:#fff4e0
+    style X fill:#e0f0e0
+</pre>
+<p><strong>El test del clon.</strong> La prueba de que tu documento es un sistema y no una colección de vibraciones: entrega tu plan a dos personas que no te conozcan, ponlas ante el mismo gráfico del mismo día, y observa. Si ambas marcan la misma zona, la misma entrada, el mismo stop y el mismo objetivo — es un sistema. Si una opera y la otra no, o entran a precios distintos "porque la vela se veía diferente", no es un sistema: es tu subjetividad escrita con apariencia de regla. El test del clon es la versión operativa de la definición de regla explícita: <strong>una regla es explícita cuando dos lectores razonables no pueden discrepar sobre si se cumplió.</strong></p>
+<p><strong>Por qué "veo una vela en soporte" no es un sistema.</strong> Descompon la frase: no dice mercado (¿cuál?), ni marco (¿semanal o de 5 minutos?), ni qué cuenta como soporte (¿el low de ayer o la zona de 40 pips del M3?), ni qué vela es "señal" (¿cualquier martillo? ¿con qué cierre?), ni riesgo (¿cuánto?), ni salida (¿dónde?), ni qué pasa si falla (¿doble posición? ¿abandono?). Cada hueco es un punto donde tu estado de ánimo del día rellenará el vacío — y por eso la frase produce resultados no replicables: no hay nada que replicar.</p>
+<h2>Analogía</h2>
+<p>El restaurante. La <strong>filosofía</strong> es el concepto: "cocina de mercado, producto local, fuego lento" — la tesis de por qué la gente pagará por comer aquí. La <strong>estrategia</strong> es la carta: platos coherentes con ese concepto, temporada, precios. Y el <strong>sistema</strong> es la ficha de cocina: 180 gramos, 3 minutos, 62 grados — tan explícita que un cocinero nuevo en la partida produce el mismo plato. Un chef con concepto brillante y sin fichas sirve platos diferentes cada noche y no sabe cuál funcionó; uno con fichas puede medir, ajustar y crecer. Tu trading sin sistema es el restaurante sin fichas: cada día improvisas "algo rico", y al final del mes no puedes auditar por qué la caja no cierra. El sistema es la ficha de cocina de tu negocio: aburrida, precisa, y la única razón por la que el negocio escala.</p>
+<h2>Cómo se hace: las tres capas sobre el caso maestro</h2>
+<p>Tu <a href="receta-primera-operacion.html">Receta</a> <em>(ilustrativo)</em> ya ejecutó las tres capas sin nombrarlas — era el sistema v0 del programa. Vamos a leerla con esta óptica:</p>
+<ol>
+<li><strong>Filosofía de la receta:</strong> los stops del retail se acumulan bajo los mínimos obvios; las instituciones los barren para llenarse; después del barrido viene el desplazamiento. Por eso la operación compró la barrida a 1,0792 dentro de la zona 1,0820–1,0824 — no "porque se veía soporte", sino porque el mecanismo de llenado institucional dejaba huella medible ahí.</li>
+<li><strong>Estrategia de la receta:</strong> operar pullbacks en tendencia H4 (secuencia HH/HL activa) hacia zonas de interés con barrida de liquidez, entrando en el marco de ejecución cuando la estructura confirma. Fenómeno: barrida + continuación de régimen. Arquetipo: el que catalogaremos en <a href="leccion-7-3.html">7.3</a>.</li>
+<li><strong>Sistema de la receta:</strong> las doce reglas del documento — riesgo 1 % (19,20 $), entrada 1,0820 limit, SL 1,0788 (32 pips), TP 1,0886 (66 pips, R:B ≈ 2,1), horario de sesión, registro con captura. Cerradas, verificables, clonables: si hoy le dieras la receta a otro estudiante con el mismo gráfico, ejecutaría la misma operación.</li>
+</ol>
+<p>El trabajo de este módulo es generalizar eso: la receta era <em>una</em> operación escrita a mano; el Sistema v1.0 es la máquina que produce operaciones de ese tipo <strong>sin que tú estés ahí decidiendo cada una</strong>. El laboratorio del <a href="hub-mod-07.html">hub</a> te da la plantilla de 10 componentes para hacerlo.</p>
+<h2>Error común</h2>
+<p><strong>(1) Estrategia sin filosofía.</strong> Copiar el setup de un video ("EMA 20 + RSI 50 funciona") sin saber por qué funcionaría: cuando deje de hacerlo —y lo hará— no sabrás si la herramienta murió o si el régimen cambió, porque nunca supiste el mecanismo. <strong>(2) Filosofía sin sistema.</strong> El eterno lector que explica la liquidez mejor que nadie y lleva dos años sin un documento escrito: su filosofía es decorativa porque no produce operaciones auditablemente idénticas. <strong>(3) El "sistema" mental.</strong> "Lo llevo todo en la cabeza" — la versión mental no puede clonarse, no puede backtestearse, y cambia sutilmente cada semana sin que lo notes; escribirlo es el único modo de que deje de mutar. <strong>(4) Confundir sistema con robot.</strong> Un sistema no exige automatización: exige explicitud. Puedes ejecutarlo a mano — lo que no puedes es improvisar dentro de él. <strong>(5) Tres sistemas a la vez.</strong> Filosofía de liquidez, estrategia de ruptura y sistema de reversión: las capas deben contar la misma historia; si no la cuentan, tienes tres proyectos a medio terminar, y cada uno contamina la estadística de los otros.</p>
+<h2>Conexión cuantitativa</h2>
+<p>El test del clon no es solo estética: es la condición previa de toda la estadística que viene. Tu esperanza <ktx class="ktx" data-tex="E = (P_w \times W) - (P_l \times L)">E = (P_w \times W) - (P_l \times L)</ktx> se <strong>estima</strong> con muestras (la misión de 30 repeticiones, los 100 backtests de M9). Pero si las reglas no son explícitas, la muestra no mide tu sistema: mide tu sistema <em>más tu improvisación del día</em>, y esa mezcla no es estacionaria — el <ktx class="ktx" data-tex="P_w">P_w</ktx> de tu documento no existe, porque el "documento" cambia con tu estado de ánimo. Formalmente: cada componente no escrito es un parámetro libre que tu humor ajusta en tiempo real, y una estimación sobre parámetros que mutan no converge a nada. La escritura explícita congela los parámetros y convierte tus operaciones en una muestra limpia de UN proceso — la única clase de proceso a la que la estadística puede decirle algo. Por eso el programa exige el Sistema v1.0 por escrito ANTES del backtesting de M9: primero el objeto medible, después la medición.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li>Filosofía = por qué existe la ventaja (tesis falsable); estrategia = cómo se captura; sistema = cuándo exactamente y cuánto (reglas cerradas).</li>
+<li>El test del clon es la prueba de explicitud: dos desconocidos ante el mismo gráfico deben ejecutar la misma operación.</li>
+<li>Regla explícita = verificable por un tercero sin interpretación; si dos lectores razonables pueden discrepar, no es regla.</li>
+<li>"Veo una vela en soporte" falla las tres capas: sin mercado, sin marco, sin definición, sin riesgo, sin salida.</li>
+<li>La receta de tu primera operación ya era un sistema en miniatura: el M7 la generaliza en una máquina de operaciones.</li>
+<li>Sin explicitud no hay estadística posible: la muestra mediría tu humor, no tu sistema — por eso el v1.0 se escribe antes del backtesting.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>Clasifica en su capa y di qué le falta: (a) "operaré rupturas del rango asiático con volumen"; (b) "las instituciones dejan FVG porque completan órdenes por tramos"; (c) "compro EUR/USD cuando RSI &lt; 30 y hay una vela verde, con el riesgo que se sienta bien".</li>
+<li>Pasa el test del clon a la regla "entrar en el pullback a la zona": ¿por qué falla y cómo la reescribirías para que pase?</li>
+<li>Sobre la receta: identifica las tres capas (filosofía, estrategia, sistema) citando el número concreto de la operación que pertenece a cada una.</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. (a) **Estrategia** (fenómeno + arquetipo) — le falta la filosofía (¿por qué habría de funcionar la ruptura de ese rango?) y el sistema (qué cuenta como ruptura, dónde el stop, cuánto riesgo). (b) **Filosofía** — tesis mecanística y falsable sobre el llenado institucional; le falta la estrategia que la convierta en operaciones y el sistema que las cierre. (c) Mezcla incoherente: la parte condicional intenta ser **sistema** pero falla el test del clon ("vela verde" no está definido — ¿cierre verde de cuánto?), y "riesgo lo que se sienta bien" es la negación misma del componente de riesgo: improvisación con vocabulario técnico.
+2. Falla porque "pullback", "la zona" y "entrar" admiten miles de interpretaciones: qué marco, qué profundidad cuenta como retroceso, qué es la zona (¿el FVG? ¿el OB? ¿ambos?), entrada a mercado o limit, a qué precio. Reescritura que pasa: *"En H4 con régimen alcista (HH/HL activo y precio sobre EMA 200 creciente), cuando el precio retroceda a la zona definida por el OB H1 con FVG de 3 velas y ejecute barrida del mínimo del pool más cercano, entrar limit en el 50 % del FVG con SL 0,25 × ATR(14) H4 bajo el extremo de la barrida"*. Cada cláusula es verificable por un tercero.
+3. **Filosofía:** la barrida del pool bajo 1,0798 antes de la entrada — el mecanismo de llenado institucional (M5.3) que da razón de ser a comprar la barrida. **Estrategia:** comprar pullback en tendencia HH/HL hacia zona de interés con barrida — el arquetipo del que la operación es una instancia. **Sistema:** los números cerrados — entrada limit 1,0820, SL 1,0788 (32 pips), TP 1,0886 (R:B ≈ 2,1), riesgo 1 % (19,20 $), horario, registro: reglas que otro habría ejecutado idénticas.
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="hub-mod-07.html"><span class="lbl">← Anterior</span><span class="ttl">Módulo 7 · Construcción del Sistema de Trading</span></a>
+    <a class="next" href="leccion-7-2.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 7.2 · Los 10 componentes del sistema</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

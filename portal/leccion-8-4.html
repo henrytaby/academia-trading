@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 8.4 · Apalancamiento real — el margen no es el riesgo · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a class="active" href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>🛡️ N3 · Riesgo<span class="sep">/</span>M8 · Gestión del Riesgo<span class="sep">/</span>Lección 8.4 · Apalancamiento real — el margen no es el riesg</div>
+  <article class="doc-body">
+<h1>Lección 8.4 · Apalancamiento real — el margen no es el riesgo</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>45–60 min de estudio</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-08.html">M8 · Gestión del Riesgo</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td><a href="leccion-8-3.html">Lección 8.3 · La regla del 1 % y position sizing</a></td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="leccion-8-5.html">Lección 8.5 · Riesgo de cartera y correlación</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>"¿Qué apalancamiento te da tu broker?" es la pregunta favorita de la publicidad; "¿cuál es tu apalancamiento real?" es la que hace un profesional. Esta lección desmonta el malentendido más rentable de la industria minorista: la creencia de que el apalancamiento ofertado (1:30, 1:100, 1:500) tiene algo que ver con el riesgo de tus operaciones. Tiene que ver con el <strong>margen inmovilizado</strong> — una línea contable — y con un peligro técnico real pero distinto (la liquidación forzada por margen). El riesgo verdadero ya lo fijaste en 8.3: es el presupuesto dividido por la distancia al stop, y no cambia una décima según lo generoso que sea tu broker con el margen. Al terminar, sabrás calcular margen, lotaje y valor del pip de cualquier instrumento mayor, y tendrás la regla del programa sobre cuándo el apalancamiento SÍ importa — porque importa, solo que por otras razones que las que la publicidad dice.</p>
+<h2>Concepto</h2>
+<p><strong>El vocabulario exacto, con el caso maestro en mano.</strong> Tu operación de la Receta: 0,06 lotes de EUR/USD con SL de 32 pips sobre una cuenta de 1.920 $.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Concepto</th>
+<th>Definición</th>
+<th>En el caso maestro</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nominal</strong></td>
+<td>Lo que realmente compras/vendes</td>
+<td><ktx class="ktx" data-tex="0{,}06 \times 100.000 = 6.000">0{,}06 \times 100.000 = 6.000</ktx> € ≈ 6.480 $ <em>(EUR/USD ≈ 1,08, ilustrativo)</em></td>
+</tr>
+<tr>
+<td><strong>Margen</strong></td>
+<td>La garantía que el broker congela para mantener la posición abierta</td>
+<td>A 1:30: <ktx class="ktx" data-tex="6.480/30 ≈ 216">6.480/30 ≈ 216</ktx> $; a 1:500: ≈ 13 $</td>
+</tr>
+<tr>
+<td><strong>Apalancamiento del broker</strong></td>
+<td>Máximo nominal por unidad de margen (publicidad)</td>
+<td>1:30 / 1:100 / 1:500 — da igual, ver abajo</td>
+</tr>
+<tr>
+<td><strong>Apalancamiento real</strong></td>
+<td>Nominal ÷ capital de la cuenta</td>
+<td><ktx class="ktx" data-tex="6.480 / 1.920 ≈ 3{,}4\times">6.480 / 1.920 ≈ 3{,}4\times</ktx></td>
+</tr>
+<tr>
+<td><strong>Riesgo de la operación</strong></td>
+<td>Lo que pierdes si toca el SL</td>
+<td><ktx class="ktx" data-tex="0{,}06 \times 32 \times 10 = 19{,}20">0{,}06 \times 32 \times 10 = 19{,}20</ktx> $ — <strong>en TODAS las columnas</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>La tabla entera tiene una sola moraleja: recorre la fila "Riesgo" — es la única constante. Cambia el broker, cambia el apalancamiento, cambia el margen congelado: <strong>el riesgo de tu operación lo define el stop y el lote, no el margen</strong>. El margen es un depósito de garantía (como la fianza de un alquiler): congelar más o menos dinero no cambia lo que pierdes si la operación falla.</p>
+<p><strong>El valor del pip, instrumento por instrumento</strong> <em>(cuenta denominada en USD, valores ilustrativos con precios típicos)</em>:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Instrumento</th>
+<th>Contrato de 1 lote</th>
+<th>Pip</th>
+<th>Valor del pip por lote</th>
+<th>Nota</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EUR/USD, GBP/USD, AUD/USD</td>
+<td>100.000 unidades</td>
+<td>0,0001</td>
+<td><strong>10 $</strong> (fijo)</td>
+<td>La divisa de cotización es USD</td>
+</tr>
+<tr>
+<td>USD/CHF</td>
+<td>100.000 USD</td>
+<td>0,0001</td>
+<td>10 CHF ÷ precio ≈ <strong>11,4 $</strong> (a 0,8800)</td>
+<td>Varía con el precio</td>
+</tr>
+<tr>
+<td>USD/JPY</td>
+<td>100.000 USD</td>
+<td>0,01</td>
+<td>1.000 JPY ÷ precio ≈ <strong>6,67 $</strong> (a 150,00)</td>
+<td>Varía con el precio</td>
+</tr>
+<tr>
+<td>XAU/USD (oro)</td>
+<td>100 onzas</td>
+<td>0,01 $ de precio</td>
+<td>1,00 $ de movimiento = <strong>100 $ por lote</strong></td>
+<td>Convención de la ficha oro de la Receta</td>
+</tr>
+</tbody>
+</table></div>
+<p>La fórmula general para pares con la divisa de cotización distinta de USD: el pip vale (tamaño del pip × 100.000) en la divisa de cotización, y se convierte a dólares dividiendo por el precio actual. Por eso tu calculadora (8.3, celda B7) pide el valor del pip como dato — y por eso la misión del módulo incluye escenarios de USD/JPY y oro: el error clásico es meter 10 $/pip en todo.</p>
+<p><strong>Los micro-lotes: la granularidad que hace viable el 1 %.</strong> Un micro-lote = 0,01 estándar = 1.000 unidades = 0,10 $/pip en EUR/USD. Con la cuenta del caso maestro y SL 32 pips, cada micro-lote arriesga 3,20 $ — así el cálculo afina exacto: 6 micros = 19,20 $ = 1,0 %. Imagina el mismo cálculo sin micro-lotes (solo mini 0,1 / estándar 1,0): tus opciones serían 0,05 lotes (16 $ = 0,83 %) o 0,1 (32 $ = <strong>1,67 %</strong> — presupuesto roto). Con cuentas pequeñas, la granularidad fina no es un lujo: es la diferencia entre respetar el 1 % y romperlo sistemáticamente por redondeo.</p>
+<p><strong>Cuándo el apalancamiento SÍ importa — los tres peligros reales.</strong> (1) <strong>Liquidación forzada por margen:</strong> si el margen usado consume gran parte del disponible, un movimiento adverso ANTES de que el SL ejecute (gap de fin de semana, noticia, spread que se abre) puede disparar el stop-out del broker a un precio peor que tu SL — el riesgo deja de ser el presupuesto. Regla del programa: <strong>margen usado &lt; 20-30 % del disponible siempre</strong>; con el caso maestro (216 $ de 1.920 $ a 1:30 ≈ 11 %) sobra margen de seguridad. (2) <strong>La invitación psicológica:</strong> un broker que te ofrece 1:500 te está diciendo "puedes mover 100× tu capital" — el oversizing por sugestión es más fácil cuando la plataforma hace el lote grande fácil. Tu defensa es el procedimiento de 8.3, que ignora la oferta. (3) <strong>Costes overnight proporcionales al nominal:</strong> el swap se cobra sobre el nominal (6.000 $), no sobre tu riesgo (19,20 $) — en operaciones largas (swing con D1) el coste de mantener un apalancamiento real alto come la E (7.4 ya contó los costes: aquí solo apunta que el swap escala con el nominal).</p>
+<p><strong>La regla del programa en una línea:</strong> el apalancamiento real es una <strong>consecuencia</strong> del sizing, nunca un objetivo. Con riesgo 1 % y SL estructural (~1,5 ATR de M6), el real típico del caso maestro queda en 2-4×. Si tus operaciones habituales superan ~10× real, tu SL es sospechosamente corto o tu riesgo está por encima del presupuesto — vuelve al componente 6 del sistema, no al catálogo de brokers.</p>
+<h2>Analogía</h2>
+<p>La fianza del alquiler. Alquilas un local de 6.000 $ al mes; el casero te pide una fianza de 2 meses (12.000 $) o de medio mes (3.000 $) según la ley del país o su confianza en ti. Pregunta: ¿cuánto RIESGAS firmando el contrato? Ni 12.000 ni 3.000 — la fianza no es el riesgo: es dinero <strong>congelado</strong> que te devuelven si cumples. Tu riesgo real es el negocio que montas dentro del local: si quiebra, pierdes lo invertido en él, no la fianza. El apalancamiento del broker es la política de fianzas; el margen, la fianza concreta; tu riesgo es el SL × el lote. El trader que elige broker "por el apalancamiento" es el inquilino que elige local "por la fianza barata" — confunde la línea contable con el negocio. Y el stop-out por margen tiene su equivalente exacto: si gastas casi toda tu caja en fianzas, la próxima firma te deja sin liquidez y el contrato se cae en el peor momento — por eso la regla del margen usado &lt; 20-30 %.</p>
+<h2>Cómo se hace: el chuletero de tres cálculos</h2>
+<ol>
+<li><strong>Margen:</strong> <ktx class="ktx" data-tex="\text{margen} = \frac{\text{nominal}}{\text{apalancamiento}}">\text{margen} = \frac{\text{nominal}}{\text{apalancamiento}}</ktx>, con <ktx class="ktx" data-tex="\text{nominal} = \text{lote} \times 100.000">\text{nominal} = \text{lote} \times 100.000</ktx> (o × 100 onzas en oro) convertido a la divisa de la cuenta. Caso maestro a 1:100: <ktx class="ktx" data-tex="6.480/100 ≈ 65">6.480/100 ≈ 65</ktx> $ — el 3,4 % de la cuenta congelado: tranquilidad total.</li>
+<li><strong>Apalancamiento real:</strong> <ktx class="ktx" data-tex="\text{real} = \text{nominal}/\text{capital}">\text{real} = \text{nominal}/\text{capital}</ktx>. Caso maestro: <ktx class="ktx" data-tex="3{,}4\times">3{,}4\times</ktx>. Tu checklist semanal puede apuntar el promedio: si la media de tus operaciones v1.0 vive entre 2× y 4×, el sistema está ejecutándose como fue diseñado.</li>
+<li><strong>Valor del pip cuando la cotización no es USD:</strong> <ktx class="ktx" data-tex="\text{valor pip} = \frac{\text{tamaño pip} \times 100.000}{\text{precio}}">\text{valor pip} = \frac{\text{tamaño pip} \times 100.000}{\text{precio}}</ktx> (en pares USD/XXX). USD/JPY a 150,00: <ktx class="ktx" data-tex="\frac{0{,}01 \times 100.000}{150} = 6{,}67">\frac{0{,}01 \times 100.000}{150} = 6{,}67</ktx> $. Con SL de 30 pips y presupuesto 19,20 $: <ktx class="ktx" data-tex="\text{lote} = 19{,}20/(30 \times 6{,}67) = 19{,}20/200{,}1 = 0{,}096">\text{lote} = 19{,}20/(30 \times 6{,}67) = 19{,}20/200{,}1 = 0{,}096</ktx> → redondeo a la baja → <strong>0,09 lotes</strong> (riesgo real <ktx class="ktx" data-tex="0{,}09 \times 200{,}1 = 18{,}01">0{,}09 \times 200{,}1 = 18{,}01</ktx> $ = 0{,}94$ % — dentro del presupuesto ✓). <em>(El escenario 6 de la misión lo pide con otros números.)</em></li>
+</ol>
+<h2>Error común</h2>
+<p><strong>(1) "Tengo 1:500, puedo ganar más."</strong> El apalancamiento multiplica la velocidad del dinero en AMBAS direcciones; lo que defines tú es el tamaño — y con el sizing de 8.3, dos brokers con 1:30 y 1:500 ejecutan tu sistema con resultados idénticos (solo cambia el margen congelado). <strong>(2) "El margen es lo que puedo perder."</strong> No: el margen es la fianza. Lo que pierdes es SL × valor pip × lote. Confundirlos lleva a creer que "con 1:500 riesgo todo el margen" — falso — o peor, que "con margen pequeño no hay riesgo" — doblemente falso. <strong>(3) Usar el apalancamiento disponible como capacidad.</strong> "Me ofrece 1:500 sobre 1.920 $ → puedo abrir 960.000 $ de nominal": exacto, y con SL 32 pips eso son 3.072 $ de riesgo = <strong>160 % de la cuenta</strong> en una operación. La plataforma te lo permite; la aritmética te lo prohíbe. <strong>(4) Ignorar el stop-out.</strong> Con margen usado al 80 % del disponible, una noticia mueve el precio 40 pips y el broker liquida ANTES de tu SL a un precio peor: el riesgo ya no es 19,20 $ sino lo que el mercado decida. La regla del 20-30 % no es burocracia. <strong>(5) Meter 10 $/pip en todo.</strong> En USD/JPY (≈ 6,67 $ a 150) te deja fuera un tercio del tamaño; en USD/CHF (≈ 11,36 $ a 0,8800) te pasa del presupuesto (0,06 lotes × 11,36 × 32 = 21,81 $ = 1,14 %): dos errores opuestos del mismo descuido. La celda B7 de la calculadora es un dato por instrumento, no una constante universal.</p>
+<h2>Conexión cuantitativa</h2>
+<p>El apalancamiento real es la variable que conecta el sizing (8.3) con la estructura de costes (7.4). Su efecto sobre la E llega por tres canales, todos medibles: (1) el swap sobre nominal — en swing con R:B 1:2 y 3 días de mantenimiento, un swap típico puede añadir 0,01-0,03R de coste por operación: no decide nada en un sistema sano, pero escala LINEALMENTE con el apalancamiento real; (2) el spread en proporción — con nominal alto y cuenta pequeña, el spread pagado (2-3 pips del M4) es idéntico en pips pero su peso en R no cambia... el que cambia es tu capacidad de sostener varias posiciones simultáneas (8.5) sin tocar el stop-out; (3) la granularidad del sizing — con micro-lotes, la desviación entre presupuesto y riesgo real queda en ±0,05 % (el caso 0,06 exacto); sin ella, el redondeo añade sistemáticamente 0,5-0,7 % por operación, que en 100 operaciones es un impuesto silencioso de ~50 % de E... en cuentas donde la granularidad no existe, la solución no es redondear arriba: es reducir el % (0,5 %) hasta que el grano permita respeto exacto. Hacia delante: 8.5 toma el sizing por operación y lo convierte en presupuesto por cartera; la 8.6 asume el 1 % como base de su cascada de frenos. Y hacia M9: el apalancamiento real promedio será una de las métricas de tu reporte de 100 backtests — el dato que confirma que el sistema v1.0 se ejecuta con la misma palanca con la que fue diseñado.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li>Margen = fianza congelada; riesgo = SL × valor pip × lote. Son líneas distintas: el apalancamiento del broker solo afecta a la primera.</li>
+<li>Apalancamiento real = nominal/capital (caso maestro: 3,4×) — es consecuencia del sizing, nunca objetivo.</li>
+<li>Valor del pip: 10 $ fijo en EUR/USD/GBP/AUD (cuenta USD); USD/JPY ≈ 6,67 $ a 150; oro: 100 $ por cada 1,00 $ de movimiento por lote.</li>
+<li>Los micro-lotes (0,01) dan la granularidad que permite respetar el 1 % en cuentas pequeñas.</li>
+<li>El apalancamiento alto SÍ importa por tres peligros: stop-out por margen (regla: margen usado &lt; 20-30 %), invitación al oversizing y swap sobre nominal.</li>
+<li>~10× real habitual = alarma: SL demasiado corto o riesgo fuera de presupuesto — revisar el componente 6, no el broker.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>Cuenta 2.500 $, operación GBP/USD 0,04 lotes con SL 40 pips. Calcula nominal (GBP/USD ≈ 1,26), margen a 1:30, apalancamiento real y riesgo. ¿Qué pasaría con el riesgo a 1:500?</li>
+<li>USD/JPY cotiza a 155,00. ¿Valor del pip por lote? Con presupuesto 20 $ y SL 30 pips, ¿qué lote operas (con redondeo a la baja)?</li>
+<li>Oro: cuenta 4.000 $, riesgo 1 %, SL 4,00 $ de precio. Calcula el lote con la convención de la tabla (1,00 $ = 100 $/lote).</li>
+<li>Tu media de apalancamiento real del último mes es 12×. Diagnóstico completo: ¿qué dos causas lo explican, qué riesgo oculto añade la primera y qué lección del módulo te toca revisar?</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. Nominal: <ktx class="ktx" data-tex="0{,}04 \times 100.000 = 4.000">0{,}04 \times 100.000 = 4.000</ktx> GBP ≈ 5.040 $. Margen a 1:30: ≈ 168 $. Real: <ktx class="ktx" data-tex="5.040/2.500 ≈ 2{,}0\times">5.040/2.500 ≈ 2{,}0\times</ktx>. Riesgo: <ktx class="ktx" data-tex="0{,}04 \times 40 \times 10 = 16">0{,}04 \times 40 \times 10 = 16</ktx> $ = 0,64 %. A 1:500 el margen baja a ≈ 10 $ y el riesgo queda EXACTAMENTE igual: 16 $ — la demostración de que el apalancamiento del broker no toca el riesgo.
+2. <ktx class="ktx" data-tex="\frac{0{,}01 \times 100.000}{155} = 6{,}45">\frac{0{,}01 \times 100.000}{155} = 6{,}45</ktx> $/pip. Lote: <ktx class="ktx" data-tex="20/(30 \times 6{,}45) = 20/193{,}5 = 0{,}103">20/(30 \times 6{,}45) = 20/193{,}5 = 0{,}103</ktx> → redondeo a la baja → **0,10 lotes** (riesgo real 19,35 $ ≈ 0,97 % — dentro del presupuesto ✓).
+3. Presupuesto: 40 $. Riesgo por lote: <ktx class="ktx" data-tex="4{,}00 \times 100 = 400">4{,}00 \times 100 = 400</ktx> $. Lote: <ktx class="ktx" data-tex="40/400 = 0{,}10">40/400 = 0{,}10</ktx> lotes — 10 onzas, que se mueven 4 $ en tu contra = 40 $ exactos ✓.
+4. (a) SL estructural demasiado corto (stops de 10-15 pips obligan a lotes grandes para el mismo presupuesto) → revisar el componente 6 con la auditoría ATR de M6 (SL ≈ 1,5 ATR): stops cortos = más whipsaw (M3) + más lotes = doble daño. (b) Riesgo por encima del presupuesto (el % se subió "a mano") → volver a 8.3. El riesgo oculto de (a): además del whipsaw, el stop-out — con lotes grandes el margen usado sube y un gap puede liquidar antes del SL. Ambas causas se curan con el procedimiento de 8.3, no con un broker "más flexible".
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="leccion-8-3.html"><span class="lbl">← Anterior</span><span class="ttl">Lección 8.3 · La regla del 1 % y position sizing — el presupuesto que </span></a>
+    <a class="next" href="leccion-8-5.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 8.5 · Riesgo de cartera y correlación — dos operaciones pueden</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

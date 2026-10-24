@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 3.3 · Soportes y resistencias · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a class="active" href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>🧱 N1 · Base<span class="sep">/</span>M3 · Anatomía del Gráfico<span class="sep">/</span>Lección 3.3 · Soportes y resistencias</div>
+  <article class="doc-body">
+<h1>Lección 3.3 · Soportes y resistencias</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>45–60 min de estudio</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-03.html">M3 · Anatomía del Gráfico</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td><a href="leccion-3-2.html">Lección 3.2 · Los 4 ciclos del mercado</a></td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="leccion-3-4.html">Lección 3.4 · Confirmación en 3 pasos</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>Si tuvieses que resumir la técnica de este programa en un elemento, sería la <strong>zona</strong>: el lugar del gráfico donde el interés sin servir (M2.2) y la memoria del mercado (esta lección) hacen que el precio tenga <strong>mayores probabilidades de reaccionar</strong>. Toda tu operativa futura — entradas, stops, objetivos, el análisis del Paso 3 de tu receta — se construye sobre zonas bien marcadas. Y aquí está la diferencia entre el que gana su matrícula y el que la pierde: el principiante dibuja líneas exactas que el precio "respeta o no"; el profesional mapea <strong>áreas</strong> donde la subasta tiene historia, y piensa en probabilidades de reacción, no en predicciones. Esta lección te enseña a marcarlas, a graduar su fuerza y a distinguir los tres tipos que existen — con la disciplina de pocas zonas y bien elegidas.</p>
+<h2>Concepto</h2>
+<p><strong>Soporte</strong> (<em>support</em>): zona donde ha habido interés comprador suficiente para detener/invertir caídas — demanda residual esperando (M2.2). <strong>Resistencia</strong> (<em>resistance</em>): el espejo con vendedores. Y la regla de lectura número uno:</p>
+<blockquote>
+<p><strong>Zonas, no líneas.</strong> El precio no reacciona en un precio exacto: reacciona en un <strong>área</strong> donde hay órdenes, porque los grandes fragmentan sus entradas (Lección 2.3) y ningún participante sabe cuál es "el" precio del nivel. Dibuja rectángulos con cuerpo, no rayos de un píxel. Un nivel es donde el precio <em>pasó</em>; una zona es donde el precio <em>reaccionó</em>.</p>
+</blockquote>
+<p><strong>Los tres tipos:</strong></p>
+<ol>
+<li><strong>Estáticos</strong> (horizontales): máximos/mínimos previos, zonas de consolidación, huecos de oferta/demanda. Son los reyes del programa: legibles a ojo, auditables, sin parámetros ocultos. Se marcan desde la <strong>estructura del swing</strong>: máximos y mínimos que giraron el precio, bordes de rangos (Lección 3.2), el origen de una expansión (donde nació el desequilibrio).</li>
+<li><strong>Diagonales</strong> (trendlines/canales): conectan máximos o mínimos sucesivos en tendencia. Útiles para visualizar el ritmo, pero más subjetivos: una línea diagonal depende de QUÉ dos puntos conectes — el mismo gráfico admite tres líneas "válidas". Regla del programa: la diagonal se dibuja con <strong>tres toques como mínimo</strong> y se interpreta como guía de ritmo, no como nivel de entrada por sí sola.</li>
+<li><strong>Dinámicos</strong> (medias móviles, M6): zonas que se recalculan cada vela. Se mencionan aquí por completitud y se estudian en el Módulo 6, con el radar de evidencia correspondiente.</li>
+</ol>
+<p><strong>La memoria de mercado.</strong> ¿Por qué funciona un mínimo de hace tres meses? No por magia técnica: por <strong>memoria</strong> — los participantes que vieron ese nivel lo recuerdan (los que compraron ahí y ganaron quieren recomprar; los que lo vieron fallar a otros lo respetan; los stops sin servir siguen ahí). Un nivel es la huella de decisiones tomadas; cuando el precio vuelve, esas decisiones se reactivan. Esto explica el comportamiento clásico: nivel respetado → más participantes lo ven → siguiente visita reacciona más fuerte... <strong>hasta que se agota</strong>: cada reacción consume parte del interés pendiente, y cuando la zona falla (cierre decidido más allá), la memoria se invierte — el soporte roto tiende a actuar como resistencia (principio de <strong>polaridad</strong>, que la Lección 3.4 formaliza).</p>
+<p><strong>Fortaleza de una zona — el gradiente del programa:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Factor</th>
+<th>Más fuerte</th>
+<th>Más débil</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reacciones previas</td>
+<td>2–3 reacciones limpias con tiempo entre ellas</td>
+<td>5+ toques recientes (la zona se está consumiendo)</td>
+</tr>
+<tr>
+<td>Tiempo transcurrido</td>
+<td>"fresca": el interés que no se llenó sigue pendiente</td>
+<td>"vieja y visitada": muchas visitas = muchas órdenes ya servidas</td>
+</tr>
+<tr>
+<td>Origen</td>
+<td>Nació de una expansión/desequilibrio claro (M2.2)</td>
+<td>Nació de ruido lateral sin energía</td>
+</tr>
+<tr>
+<td>Marco temporal</td>
+<td>D1/H4</td>
+<td>M15 y abajo (más órdenes visibles = más barridas)</td>
+</tr>
+<tr>
+<td>Confluencia</td>
+<td>Coincide con otro nivel/marco/estructura</td>
+<td>Aislada</td>
+</tr>
+</tbody>
+</table></div>
+<p>El contraintuitivo que separa al profesional: <strong>muchos toques no fortalecen — consumen</strong>. Cada visita llena órdenes; la zona con siete toques es un almacén vacío esperando su barrida final. Las mejores zonas del programa: 1–3 reacciones, frescas, con origen expansivo, en D1/H4.</p>
+<h2>Analogía</h2>
+<p>El nivel es el <strong>bar de la esquina donde todo el barrio hizo historia</strong>. La primera vez que hubo pelea (el precio reaccionó), la gente lo recuerda; a la segunda y tercera, los vecinos ya lo citan: "como aquella vez en el bar". Entre más historia reciente y más gente que la vivió, más probabilidad de que el siguiente incidente se parezca. Pero el bar tiene capacidad finita: cada pelea (visita del precio) llena el local y gasta la anécdota — al séptimo episodio, ya no reacciona nadie y la historia se rompe a la primera avalancha. Dibujar el nivel como línea de un píxel es como creer que la pelea ocurre EXACTAMENTE en la barra: ocurre en el bar entero — el salón, la terraza, la puerta (la zona, con su cuerpo). Y la polaridad es el vecino que fue el epicentro de las peleas y ahora, reformado, es el portero que las impide: soporte roto que se vuelve resistencia.</p>
+<h2>Cómo se hace: marcar zonas con el protocolo de 4 reglas, con ejemplo cerrado</h2>
+<p><strong>Protocolo de marcado (el del laboratorio de este módulo):</strong></p>
+<ol>
+<li><strong>Zoom out primero:</strong> H4/D1. Las zonas que solo existen en M15 no entran (son hábitat de barridas, Lección 2.3).</li>
+<li><strong>Marca solo donde el precio GIRO</strong> — extremos de swings y bordes de rango — y donde <strong>nació una expansión</strong> (la última vela pequeña antes de la escapada: ahí quedó pedido sin servir).</li>
+<li><strong>Dibuja rectángulos con cuerpo:</strong> del extremo del mecha/cierre al cuerpo de las velas de reacción. Si tu rectángulo es más fino que el spread del instrumento, no es una zona.</li>
+<li><strong>Pocas:</strong> 2–4 zonas en el marco de análisis. Un gráfico lleno de rectángulos es un gráfico sin información (todo vale = nada vale).</li>
+</ol>
+<p><strong>Ejemplo cerrado (XAU/USD, ilustrativo).</strong> El oro expandió de 3 980 a 4 024 en dos días (markup, M3.2), retrocedió a 4 002–4 006 y rebotó de nuevo a 4 018. La zona de demanda se dibuja de <strong>4 000 a 4 006</strong> (cuerpo de las velas de reacción, incluyendo el extremo 3 998 con margen): no una línea en 4 002. Fortaleza: 1 reacción, fresca, origen expansivo, H4 → zona A de la lista. El TP del siguiente long en zona usa el <strong>borde cercano de la resistencia</strong> (4 020–4 024) como objetivo, no "un número bonito": R:B = (4 020 − 4 006)/(4 006 − 3 998) ≈ 14/8 ≈ 1,75 — y si el R:B no llega a 1:2 con SL estructural, el setup se rechaza (regla del programa, Lección 1.4: <ktx class="ktx" data-tex="WR_{equilibrio} = \frac{1}{1+R}">WR_{equilibrio} = \frac{1}{1+R}</ktx> te dice cuánto margen te queda; con 1,75 necesitas acertar más del 36 % — posible, pero el protocolo exige 1:2 mínimo para no depender de un WR fino).</p>
+<p><strong>El retesteo como auditoría en vivo:</strong> cuando el precio vuelve a tu zona, no la re-dibujes para que "encaje". Si reaccionó donde dijiste → la zona suma evidencia. Si atravesó tu rectángulo y giró 15 puntos más abajo → tu zona estaba mal anclada: bórrala y estudia por qué (¿marcaste el extremo en vez del cuerpo? ¿marcaste en M15 lo que era ruido de D1?). La bitácora de la misión de este módulo existe exactamente para esto: <strong>20 niveles anotados con su resultado posterior (respetado/roto)</strong> — tu primera base de datos personal sobre la calidad de tu propio marcado.</p>
+<h2>Error común</h2>
+<p>El primero: <strong>el perfeccionismo retrospectivo</strong> — mirar el histórico y ajustar la zona para que TODAS las reacciones pasadas hayan encajado al píxel. Eso es curvar la regla después de medir: en vivo nunca lo acertarías igual, y tu estadística se infla con zonas fantasma. Se marca con la información disponible ANTES de la reacción, punto. El segundo: <strong>el césped de rectángulos</strong> — 12 zonas en un gráfico H4. Si cada nivel es importante, nada lo es: el protocolo pide 2–4, elegidas por el gradiente de fortaleza. El tercero: <strong>mezclar marcos</strong> — un soporte de M15 dentro de tu análisis D1 no es confluencia, es ruido escalado (y suele estar exactamente donde viven los stops que la barrida del M2.3 viene a recoger). Marco de análisis fijo: H4/D1; solo las zonas del mismo marco (o superior) participan. El cuarto, ya anunciado: creer que "más toques = más fuerte" — es más consumida, no más fuerte.</p>
+<h2>Conexión cuantitativa</h2>
+<p>La zona es el factor que más mueve tu <ktx class="ktx" data-tex="P_w">P_w</ktx> dentro de tu control técnico: la misma vela de confirmación tiene estadística distinta dentro de una zona fresca con origen expansivo que en el vacío. Pero la zona también define tus otros dos términos: el <strong>SL estructural</strong> va más allá del cuerpo de la zona (donde la idea muere de verdad: giró el precio y cerró decidido más allá del extremo), y el <strong>TP</strong> va en la siguiente zona opuesta — ambos salen del mapa, no de la emoción. Con <ktx class="ktx" data-tex="L">L</ktx> y <ktx class="ktx" data-tex="W">W</ktx> anclados a zonas reales, tu R:B deja de ser un deseo y se vuelve un cálculo verificable ANTES de entrar (Paso 4 de la receta). Y hay un regalo estadístico: al registrar 20 niveles con resultado (misión), empiezas a acumular TU frecuencia de "zona respetada" — el primer dato propio del programa, base del diseño de sistema del M7 y de la validación del M9.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li><strong>Zonas, no líneas</strong>: el precio reacciona en áreas con historia; dibuja rectángulos con cuerpo, nunca rayos de un píxel.</li>
+<li>Tres tipos: estáticos (los reyes del programa), diagonales (guía de ritmo, mínimo 3 toques) y dinámicos (M6).</li>
+<li>La <strong>memoria de mercado</strong> reactiva decisiones pasadas; la <strong>polaridad</strong> invierte el nivel roto (soporte↔resistencia).</li>
+<li>Fortaleza = frescura + pocas reacciones + origen expansivo + marco D1/H4 + confluencia. <strong>Muchos toques consumen la zona, no la fortalecen.</strong></li>
+<li>Protocolo: zoom out → marcar giros y orígenes de expansión → rectángulos con cuerpo → solo 2–4 zonas por gráfico.</li>
+<li>R:B verificado antes de entrar (mínimo 1:2 del programa); si el mapa no lo da, el setup se rechaza.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>¿Por qué una zona con 7 toques recientes es MÁS débil que una con 2, siendo que "resistió 7 veces"? Explica con la lógica de órdenes pendientes (M2.2).</li>
+<li>Tienes una zona de demanda 4 000–4 006 (oro), entras long en 4 005 con SL bajo la zona en 3 996 y la resistencia más próxima está en 4 018–4 022. Calcula el R:B con TP en el borde cercano (4 018). ¿Aprueba el protocolo de 1:2?</li>
+<li>Tu compañero marca 11 zonas en un H4 de EUR/USD y "todas respetan en el histórico". Nombra los dos errores y el antídoto del protocolo.</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. Porque cada reacción **consume** parte del interés pendiente: los que querían comprar en esa zona ya compraron (sus órdenes se sirvieron) en las visitas anteriores. A la séptima visita, el almacén de órdenes sin servir está casi vacío: el nivel tiene historia y fama, pero poca munición real. Las zonas fuertes son las frescas — pocos toques con órdenes aún pendientes — no las célebres.
+2. Riesgo: 4 005 − 3 996 = 9 $ por onza. Recompensa: 4 018 − 4 005 = 13 $. R:B = 13/9 ≈ **1,44**. No aprueba: el protocolo exige mínimo 1:2. Opciones legítimas: esperar mejor precio en la zona (entrar cerca de 4 002–4 003 baja el riesgo), esperar un SL estructural más corto si la estructura lo permite, o **rechazar el setup** — nunca "estirar" el TP más allá de la resistencia real para fabricar el ratio (eso es maquillar el mapa para aprobar tu propio examen).
+3. Error 1 — **césped de rectángulos**: con 11 zonas, todo es importante y nada lo es; el protocolo pide 2–4 elegidas por fortaleza. Error 2 — **perfeccionismo retrospectivo**: ajustar cada rectángulo al histórico para que "respeten" curva la regla después de medir; en vivo no habrían encajado así. Antídoto: protocolo de 4 reglas (zoom out, giros/orígenes, rectángulos con cuerpo, pocas) y la bitácora de 20 niveles con resultado EN VIVO (respetado/roto) como auditoría honesta de tu marcado.
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="leccion-3-2.html"><span class="lbl">← Anterior</span><span class="ttl">Lección 3.2 · Los 4 ciclos del mercado</span></a>
+    <a class="next" href="leccion-3-4.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 3.4 · Confirmación en 3 pasos</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

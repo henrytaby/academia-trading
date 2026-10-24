@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 6.7 · Etapas de Weinstein — el filtro macro de 4 etapas · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a class="active" href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>📐 N2 · Técnica<span class="sep">/</span>M6 · Indicadores y Confluencias<span class="sep">/</span>Lección 6.7 · Etapas de Weinstein — el filtro macro de 4 eta</div>
+  <article class="doc-body">
+<h1>Lección 6.7 · Etapas de Weinstein — el filtro macro de 4 etapas</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>40–55 min de estudio</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-06.html">M6 · Indicadores y Confluencias</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td><a href="leccion-6-6.html">Lección 6.6 · Fibonacci, Elliott y armónicos</a></td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="leccion-6-8.html">Lección 6.8 · Radar de fiabilidad y dashboard</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>Toda la técnica que has aprendido — zonas, gatillos, indicadores — opera mejor o peor según una pregunta que el principiante nunca hace: <strong>¿en qué etapa de su ciclo está este instrumento?</strong> La misma figura de pullback comprado en Etapa 2 (tendencia viva) y en Etapa 4 (declive) tiene resultados estadísticos opuestos, aunque la vela sea idéntica. Stanley Weinstein sistematizó el ciclo de los activos en 4 etapas reconocibles con medias móviles y volumen — el "mapa de pájaro" que el M3 ya te dio como ciclo de 4 fases y que ahora formalizas como filtro macro: la primera consulta del análisis, ANTES de buscar zonas. Su regla más famosa es también la más violada de la industria: <strong>prohibido comprar en Etapa 4 por "está barato"</strong>. Esta lección te da el checklist de etapa que tu sesión abrirá de aquí en adelante.</p>
+<h2>Concepto</h2>
+<p><strong>Las 4 etapas del ciclo</strong> (marco de decisión: D1; para intradía, H4 como espejo):</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Etapa</th>
+<th>Nombre</th>
+<th>Qué se ve en el gráfico</th>
+<th>Qué se prohíbe</th>
+<th>Qué se opera</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Acumulación</strong></td>
+<td>Rango tras una caída (la EMA 200 se aplana); volumen sin dirección</td>
+<td>Anticipar el giro (no hay estructura que lo confirme)</td>
+<td>Nada, o el arquetipo de rango con presupuesto propio (M7)</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Avance / markup</strong></td>
+<td>Tendencia alcista: HH/HL, medias escalonadas al alza, precio sobre la EMA 200</td>
+<td>Vender "sobrecompra" (6.4)</td>
+<td>Pullbacks, rupturas + retesteo — el pan de cada día del programa</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Distribución / techo</strong></td>
+<td>La tendencia se aplana tras el impulso final; medias convergen; volumen alto sin avance de precio</td>
+<td>Abrir nuevos largos "por inercia"</td>
+<td>Recoger objetivos; achicar exposición; vigilar CHoCH (5.2)</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Declive / markdown</strong></td>
+<td>LH/LL, precio bajo la EMA 200 decreciente</td>
+<td><strong>Comprar "porque está barato"</strong></td>
+<td>Nada para el sistema v1 de este programa (cortos solo con arquetipo propio en M7)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Cómo se verifica la etapa</strong> — el checklist del programa (en orden, con los instrumentos que ya tienes):</p>
+<ol>
+<li><strong>Posición y pendiente de la EMA 200</strong> (6.2): el filtro macro de una línea — precio por encima y creciente apunta a Etapa 2; por debajo y decreciente apunta a Etapa 4; aplana y el precio cruza una y otra vez → 1 o 3.</li>
+<li><strong>La estructura del M5:</strong> secuencia HH/HL (2) vs LH/LL (4) vs solape (1/3) — el mapa y el medidor deben decir lo mismo; si discrepan, gana el marco mayor y anotas la discrepancia.</li>
+<li><strong>El volumen/interés (6.5):</strong> expansión en la dirección de la etapa (confirmación) o clímax agotado (aviso de transición).</li>
+<li><strong>La frase de etapa por escrito:</strong> "EUR/USD D1 en Etapa 2 desde [fecha], invalidación: cierre D1 bajo [nivel]" — igual que el sesgo de 5.1, porque ES el sesgo con vestido de ciclo.</li>
+</ol>
+<p><strong>Integración con el M3:</strong> el ciclo de 4 fases del <a href="leccion-3-2.html">Lección 3.2</a> (acumulación → expansión → distribución → contracción) y las etapas de Weinstein son el mismo animal en dos dialectos: fases = fenomenología de la subasta (quién acumula); etapas = fenomenología del gráfico (cómo se ve). El programa usa las etapas como checklist operativo porque son verificables con medias y estructura; usa las fases para explicar el PORQUÉ (la subasta de M2).</p>
+<pre class="mermaid">flowchart LR
+    A[&quot;Etapa 1&lt;br/&gt;Acumulación&lt;br/&gt;(rango tras caída)&quot;] --&gt;|&quot;ruptura por cierre&lt;br/&gt;+ volumen&quot;| B[&quot;Etapa 2&lt;br/&gt;Avance&lt;br/&gt;(HH/HL sobre EMA 200)&quot;]
+    B --&gt;|&quot;impulso final,&lt;br/&gt;medias convergen&quot;| C[&quot;Etapa 3&lt;br/&gt;Distribución&lt;br/&gt;(techo, CHoCH vigila)&quot;]
+    C --&gt;|&quot;cierre bajo el rango&lt;br/&gt;+ EMA 200 decreciente&quot;| D[&quot;Etapa 4&lt;br/&gt;Declive&lt;br/&gt;(LH/LL, prohibido comprar)&quot;]
+    D --&gt;|&quot;caída se agota,&lt;br/&gt;EMA 200 se aplana&quot;| A
+    B --&gt;|&quot;quiebre de secuencia&lt;br/&gt;sin Etapa 3 completa&quot;| D
+</pre>
+<p><strong>La transición silenciosa:</strong> la Etapa 3 no siempre es un techo dramático — a veces la Etapa 2 muere sin fiesta (el quiebre de secuencia llega directo del avance al declive; por eso el diagrama tiene el atajo B → D). El filtro de etapa se consulta cada sesión precisamente porque las etapas no avisan con etiquetas: la estructura es el único semáforo.</p>
+<h2>Analogía</h2>
+<p>Las estaciones para un agricultor. La misma semilla (tu técnica) da cosecha en primavera (Etapa 2) y se pudre sembrada en otoño (Etapa 3 tardía). El agricultor no discute con el invierno ni "apuesta al verano temprano": consulta el calendario, y su calendario es el gráfico — EMA 200 como termómetro, estructura como almanaque. Comprar en Etapa 4 "porque está barato" es sembrar trigo en la helada porque la semilla salió rebajada: el precio de entrada no cambia la estación.</p>
+<h2>Cómo se hace: la etapa del caso maestro</h2>
+<p>El mismo EUR/USD H4 de la <a href="receta-primera-operacion.html">Receta</a> <em>(ilustrativo)</em>, el día del pullback:</p>
+<ol>
+<li><strong>Checklist 1 — EMA 200:</strong> ≈ 1,0712, creciente, precio 1,0820 un 1 % por encima: firma de Etapa 2 (o 2 tardía).</li>
+<li><strong>Checklist 2 — estructura M5:</strong> secuencia HH/HL viva (low 1,0745 → HL 1,0798 → BOS 1,0860 → HH 1,0884): el mapa confirma el medidor.</li>
+<li><strong>Checklist 3 — volumen:</strong> el BOS con 1,8× (6.5): expansión en la dirección de la etapa, sin clímax agotado visible.</li>
+<li><strong>Checklist 4 — frase de etapa:</strong> <em>"EUR/USD H4 en Etapa 2, invalidación de etapa: cierre H4 bajo 1,0745"</em> — nota que el nivel de invalidación de etapa (el swing low mayor) es más exigente que el del sesgo (1,0798): la etapa muere cuando muere la secuencia completa, no con el primer CHoCH.</li>
+<li><strong>Vigilancia honesta (Etapa 3 no confirmada):</strong> tras el HH 1,0884, un CHoCH H4 sería el PRIMER aviso de transición — pero sin cierre bajo estructura mayor no se reetiqueta la etapa. El programa opera Etapa 2 mientras la evidencia la sostenga y vigila en cada sesión; ni entusiasmo (ya estamos en la 3) ni denegación (la 2 es eterna).</li>
+</ol>
+<h2>Error común</h2>
+<p><strong>(1) Comprar Etapa 4 "porque está barato".</strong> El error más caro del catálogo: el precio rebajado es la RECOMPENSA de vender, no la invitación a comprar — la estadística del régimen (3.6) muestra que contracorriente se paga con peor materia prima al mismo riesgo. "Barato" en markdown suele ponerse más barato. <strong>(2) Confundir Etapa 1 con Etapa 2.</strong> El primer quiebre del rango de acumulación sin volumen ni confirmación es el terreno de las falsas rupturas (5.2): la etapa 2 se declara por cierre + estructura, no por esperanza. <strong>(3) Declarar la Etapa 3 por ansiedad.</strong> Un pullback profundo no es un techo: la transición la escribe la estructura (CHoCH del marco mayor + quiebre de secuencia), no el susto de la mecha roja. <strong>(4) Saltarse el checklist por entusiasmo del setup.</strong> "El gatillo era tan bonito que no miré la etapa" — el checklist de 60 segundos existe para los días entusiastas; los días aburridos no hacen falta recordatorios.</p>
+<h2>Conexión cuantitativa</h2>
+<p>La etapa es una etiqueta auditable: añade <code>etapa-2</code> / <code>etapa-4</code> / etc. a cada registro del journal y en M9 obtendrás TU tabla de WR y R:B realizado por etapa — la validación personal del filtro de Weinstein. Hipótesis de trabajo <em>(heurística, se auditará)</em>: la diferencia entre operar Etapa 2 vs Etapa 4 será la más grande de todas tus segmentaciones — mayor que por sesión (M2), mayor que por horario (M4). Números de trabajo para calibrar expectativa: con R:B 1:2, pasar de WR 45 % (Etapa 2, a favor de régimen) a WR 35 % (contracorriente) ya vimos en 6.2 que destruye la esperanza (<ktx class="ktx" data-tex="0{,}35R \to 0{,}05R">0{,}35R \to 0{,}05R</ktx>); en la práctica documentada por estudios de rendimiento minorista, la mayor parte de la destrucción ocurre operando contra régimen marcado — el ciclo es el multiplicador de fondo que el régimen de 3.6 ya te anticipó. El filtro no cuesta dinero (una consulta por sesión): es la auditoría más barata del negocio.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li>Cuatro etapas: acumulación, avance, distribución, declive — el ciclo completo es el mapa de pájaro de cada instrumento.</li>
+<li>El checklist de etapa: EMA 200 (posición + pendiente) → estructura M5 → volumen → frase por escrito con invalidación.</li>
+<li>Etapa 2 se opera a favor; Etapa 4 se prohíbe comprar; 1 y 3 se vigilan (rango solo con arquetipo propio, M7).</li>
+<li>La transición silenciosa existe: de la 2 puede saltarse a la 4 sin techo dramático — el semáforo es la estructura.</li>
+<li>Weinstein y las fases del M3 son el mismo ciclo en dos dialectos: etapas para operar, fases para entender.</li>
+<li>La etapa es la primera consulta de la sesión: 60 segundos que el journal auditará por separado.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>Enumera las 4 etapas con su firma gráfica y su prohibición. ¿Qué dialecto del M3 corresponde a cada una?</li>
+<li>En el caso maestro, ¿cuál fue la frase de etapa y por qué su nivel de invalidación (1,0745) es más exigente que el del sesgo (1,0798)?</li>
+<li>Un accionista promedia a la baja en un valor en Etapa 4: "ha caído 40 %, no puede caer más". Refuta con dos argumentos del programa.</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. **Etapa 1 acumulación** (rango tras caída, EMA 200 plana; prohibido anticipar el giro) ≈ fase de acumulación del M3. **Etapa 2 avance** (HH/HL sobre EMA 200 creciente; prohibido vender sobrecompra) ≈ fase de expansión. **Etapa 3 distribución** (techo, medias convergen, volumen sin avance; prohibido abrir largos nuevos) ≈ fase de distribución. **Etapa 4 declive** (LH/LL bajo EMA 200 decreciente; prohibido comprar) ≈ fase de contracción. Mismo ciclo: fases explican la subasta, etapas se verifican en el gráfico.
+2. Frase: *"EUR/USD H4 en Etapa 2, invalidación: cierre H4 bajo 1,0745"*. El nivel es más exigente porque cada etiqueta protege una cosa distinta: el sesgo (1,0798) protege el trade de pullback — un CHoCH lo pausa; la etapa protege el RÉGIMEN completo — muere solo cuando la secuencia HH/HL entera queda destruida (cierre bajo el swing low mayor). Una es el permiso de la operación; la otra, el permiso del negocio entero sobre ese instrumento.
+3. (a) El régimen manda sobre el precio de entrada: en markdown, la estadística de contracorriente paga peor materia prima con el mismo riesgo — la esperanza se degrada aunque "la vela sea igual" (3.6, 6.2). (b) "No puede caer más" no es un dato: es un deseo — la Etapa 4 no tiene suelo definido por estructura hasta que la Etapa 1 lo construya con cierres, volumen y secuencia; mientras tanto, cada rebaja es la recompensa de los vendedores, no la invitación del comprador (y su SL, si lo tiene, vive en un mapa sin niveles estructurales que lo respalden).
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="leccion-6-6.html"><span class="lbl">← Anterior</span><span class="ttl">Lección 6.6 · Fibonacci, Elliott y armónicos — contexto con límites</span></a>
+    <a class="next" href="leccion-6-8.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 6.8 · Radar de fiabilidad y dashboard — máximo 3 herramientas</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

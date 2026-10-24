@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Módulo 12 · Plan de Trading y Plan de Negocio — la graduación del FIT- · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a class="active" href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>💼 N4 · Negocio<span class="sep">/</span>M12 · Plan de Trading y Plan de Negocio<span class="sep">/</span>Módulo 12 · Plan de Trading y Plan de Negocio — la graduació</div>
+  <article class="doc-body">
+<h1>Módulo 12 · Plan de Trading y Plan de Negocio — la graduación del FIT-12</h1>
+<blockquote class="gfm-warn"><p><strong>⚠️ WARNING:</strong> <strong>Contenido educativo.</strong> La mayoría de los traders minoristas pierde dinero (estudios de reguladores estiman entre 70 % y 90 %). Nada aquí constituye asesoría financiera, legal ni fiscal.</p>
+</blockquote>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>💼 Nivel</td>
+<td>4 · Profesionalización — segundo y último módulo del N4</td>
+</tr>
+<tr>
+<td>📦 Módulo</td>
+<td>12 de 12 (FIT-12) — cierre del programa</td>
+</tr>
+<tr>
+<td>🔬 Trazabilidad</td>
+<td>004 · M6.5, M10.1–10.5 · 003 · M7.3–7.4 · <strong>Aporte propio:</strong> plantilla de Plan de Trading de 10 secciones, KPIs de negocio, política de capital y retiros (vacíos 2 y 8)</td>
+</tr>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>6–8 h de teoría + 10–14 h de laboratorio/misión (2–3 semanas reales)</td>
+</tr>
+<tr>
+<td>📋 Estado</td>
+<td>🟢 Publicado (Sprint 12)</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>🎯 Objetivo del Módulo</h2>
+<p>Consolidar todo en dos documentos operativos y salir con el negocio montado, no con "conocimiento". Once módulos construyeron las piezas; este las ensambla en la estructura permanente de tu carrera: el <strong>Plan de Trading documental</strong> (12.1: las 10 secciones obligatorias con el test del clon aplicado al negocio completo), la <strong>rutina semanal</strong> que lo hace hábito (12.2: el ciclo diario → semanal → mensual → trimestral con ~60-70 h/mes presupuestadas), los <strong>KPIs del negocio</strong> que lo hacen medible (12.3: el dashboard de 12 indicadores con umbrales declarados y el retorno por hora), la <strong>gestión patrimonial</strong> que lo separa de tu vida (12.4: los 3 cubos, la política de retiros y los protocolos de los meses extremos), la <strong>hoja de ruta a 12 meses</strong> que lo ordena en el tiempo (12.5: 5 fases con candados — el riesgo se gana, nunca se toma), la <strong>biblioteca esencial</strong> que lo sostiene (12.6: el canon de 5 con su orden por fase) y el <strong>gobierno de mejora continua</strong> que lo mantiene honesto (12.7: la Constitución de 5 artículos contra el nomadeo y el estancamiento). El cierre es la <strong>Certificación interna FIT-12</strong>: plan aprobado + examen integral ≥ 85 % + 12 semanas de operativa documentada — el programa termina cuando tu negocio puede gobernarse sin él.</p>
+<h2>📚 Lecciones</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Lección</th>
+<th>Esencia</th>
+<th>Tiempo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>12.1</td>
+<td><a href="leccion-12-1.html">El Plan de Trading documental</a></td>
+<td>Las 10 secciones obligatorias con su fuente exacta (identidad → reglas de excepción); el test del clon aplicado al negocio; plan operativo ≠ plan de negocio</td>
+<td>40–55 min</td>
+</tr>
+<tr>
+<td>12.2</td>
+<td><a href="leccion-12-2.html">La rutina semanal del trader</a></td>
+<td>El ciclo de 4 capas (diario 3-4 h → semanal 30-45 min → mensual → trimestral); los días de observación son ejecución plena; ~60-70 h/mes presupuestadas</td>
+<td>35–50 min</td>
+</tr>
+<tr>
+<td>12.3</td>
+<td><a href="leccion-12-3.html">KPIs del negocio</a></td>
+<td>El dashboard de 12 indicadores (6 de desempeño + 6 de proceso/economía); umbrales declarados antes; el WR mensual a N pequeña es ruido; horas vs retorno</td>
+<td>40–55 min</td>
+</tr>
+<tr>
+<td>12.4</td>
+<td><a href="leccion-12-4.html">Gestión patrimonial</a></td>
+<td>Los 3 cubos (supervivencia/trading/crecimiento); la política de retiros por escrito; el mes ganador es un recibo y el perdedor un protocolo — nunca rescate ni fiesta</td>
+<td>40–55 min</td>
+</tr>
+<tr>
+<td>12.5</td>
+<td><a href="leccion-12-5.html">Hoja de ruta a 12 meses</a></td>
+<td>Las 5 fases con candados acumulativos en mermaid; la escalera de riesgo 0 % → 1 %; se puede bajar de fase por regla; el tiempo es libre, el criterio no</td>
+<td>40–55 min</td>
+</tr>
+<tr>
+<td>12.6</td>
+<td><a href="leccion-12-6.html">Biblioteca esencial</a></td>
+<td>El canon de 5 (Douglas → Elder → Tharp → Steenbarger → Pardo) con su fase de lectura; una idea por libro a la ventana; la disciplina anti-nomadeo bibliográfico</td>
+<td>30–45 min</td>
+</tr>
+<tr>
+<td>12.7</td>
+<td><a href="leccion-12-7.html">Graduación y mejora continua</a></td>
+<td>La Constitución de 5 artículos; el nomadeo (719 combinaciones) y su antídoto estructural; el estancamiento redefinido; la Certificación FIT-12</td>
+<td>35–50 min</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote class="gfm-tip"><p><strong>💡 TIP:</strong> <strong>Cómo estudiar este módulo:</strong> dile a tu agente <em>"Siguiente lección"</em> y sigue el protocolo de sesión de estudio (§ 5.3 de <code>agents.md</code>). Este módulo se estudia <strong>con TODO tu material de programa a mano</strong>: el Sistema v1.1 (M7), los reportes M-9 y M-10 (M9-M10), la matriz e informe M-11 — el Plan de Trading no se redacta desde cero: se consolida de tus entregables.</p>
+<p><strong>El caso maestro se gradúa:</strong> la operación de tu <a href="receta-primera-operacion.html">Receta</a> <em>(ilustrativo)</em> — EUR/USD H4, E +0,16R neto, WR 40 % — termina el programa donde empezó: como la sección 4 de tu Plan de Trading (el sistema con sus métricas medidas), la fila que compondrá el dashboard de 12.3 y el criterio que tu hoja de ruta de 12.5 convertirá en fase. La Receta te pidió una primera operación PROCESADA: tu Plan v1.0 pide un negocio PROCESADO — la misma honestidad, a escala de carrera.</p>
+<p><strong>Puente final:</strong> del M11 heredas la infraestructura elegida con criterio forense (matriz, informe, plan de capitalización) — este módulo la integra al Plan de Negocio junto con la fiscalidad (11.7) y las puertas (11.6). Y del M10 heredas la conducta que la Certificación audita: 12 semanas de operativa documentada son la prueba de que el ciclo de 12.2 no es una lección — es tu semana real.</p>
+</blockquote>
+<h2>🧪 Laboratorio · Plan de Trading v1.0</h2>
+<p><strong>Materiales:</strong> las 7 lecciones + tu Sistema v1.1 (M7) + reportes M-9/M-10 + informe M-11 + la plantilla de 10 secciones (crea <code>plan/plan-de-trading-v1.md</code>).</p>
+<p><strong>Las 10 secciones con sus campos obligatorios</strong> <em>(cada campo con número o criterio explícito y su fuente citada — la plantilla completa en la lección 12.1)</em>:</p>
+<ol>
+<li><strong>Identidad</strong> — objetivos de proceso, capital inicial, tolerancia al drawdown, restricciones personales <em>(fuente: M1, M8)</em></li>
+<li><strong>Coordenada</strong> — watchlist exacta, TF de análisis y ejecución, sesiones y ventana de ejecución <em>(M2-M3, 10.7)</em></li>
+<li><strong>Mercado y contexto</strong> — regímenes que operas, calendario macro, condiciones de "no operar hoy" <em>(M2-M3)</em></li>
+<li><strong>Sistema</strong> — los 10 componentes del v1.1 + definición operativa de setup + métricas medidas (WR, R:B, E, PF, rachas) <em>(M7+M9)</em></li>
+<li><strong>Riesgo</strong> — 1 %, topes 2 %/3 %, cascada con protocolo de apagado, calculadora + oráculo, matriz de temperatura <em>(M8, 10.6-10.7)</em></li>
+<li><strong>Rutina</strong> — pre-sesión, ventana con corte, post-mercado, actas y ventanas <em>(10.6-10.7, 9.6, 12.2)</em></li>
+<li><strong>Journal y registro</strong> — journal v1, expediente fiscal, cruce mensual <em>(M9, 11.7)</em></li>
+<li><strong>Revisión</strong> — acta semanal, ventana mensual, regla de UNA, changelog <em>(9.6)</em></li>
+<li><strong>Psicología</strong> — tus miedos/avaricias dominantes con señales y antídotos, protocolo de 90 s <em>(M10)</em></li>
+<li><strong>Reglas de excepción</strong> — los "no" absolutos con su razón <em>(M8, 10.3)</em></li>
+</ol>
+<p><strong>El protocolo en 4 líneas:</strong> (1) recopila tus entregables (30 min); (2) redacta las 10 secciones con fuente por campo (2 h); (3) aplica el test del clon por sección — donde un tercero preguntaría, falta número o criterio (30 min); (4) firma y congela la v1.0 con fecha (10 min).</p>
+<p><strong>Entregable:</strong> <code>plan/plan-de-trading-v1.md</code> firmado + el <strong>Plan de Negocio</strong> (<code>plan/plan-de-negocio-v1.md</code>) con su sección de capital y retiros (12.4), KPIs y dashboard (12.3), hoja de ruta (12.5) y biblioteca (12.6).</p>
+<h2>🎯 Misión</h2>
+<blockquote class="gfm-important"><p><strong>❗ IMPORTANT:</strong> Misión final M-12 · Examen integral + defensa del plan — Certificación FIT-12
+<strong>Objetivo:</strong> cerrar el programa con la evidencia completa: el examen integral de 50 preguntas transversales + la defensa de tu plan en socrática extendida.
+<strong>El examen integral</strong> (<a href="examen-final.html"><code>examen-final.md</code></a>): 50 preguntas transversales del programa (M1-M12), <strong>umbral ≥ 85 % (43/50)</strong> — sin apuntes, en una sola sesión de 120-150 min, con la clave oculta y la regla de repetición del examen N1 (versión B a los 7 días si no alcanza).
+<strong>La defensa socrática extendida</strong> (60-90 min con el agente): tu Plan de Trading v1.0 como objeto — el agente pregunta por sección (¿por qué este riesgo? ¿dónde está tu evidencia? ¿qué pasa si la varianza hace X?), presenta 3 casos de estrés (la racha, el mes ganador, la ventana de modificación) y audita la coherencia entre tu plan y tu journal.
+<strong>La Certificación interna FIT-12 se otorga con los 3 requisitos:</strong> (1) plan aprobado en defensa · (2) examen ≥ 85 % · (3) <strong>12 semanas de operativa documentada</strong> (journal completo con ciclo diario/semanal/mensual y su expediente). <strong>Entregable:</strong> <code>plan/certificacion-fit12.md</code> con la acta de la defensa, el resultado del examen y la cuenta de semanas documentadas.
+<strong>Tiempo estimado:</strong> 3-4 h entre examen y defensa + las 12 semanas ya acumuladas de operativa.</p>
+</blockquote>
+<h2>✅ Evaluación / Criterio de Graduación</h2>
+<p>Criterio del SYLLABUS — 🏆 <strong>Certificación interna FIT-12:</strong></p>
+<ul>
+<li><strong>Plan de Trading v1.0 aprobado</strong> (10 secciones, test del clon, defensa socrática extendida).</li>
+<li><strong>Examen integral ≥ 85 %</strong> (43/50).</li>
+<li><strong>Journal demostrando 12 semanas de operativa documentada</strong> (temperatura, ventana, actas, dashboard — la evidencia de que el ciclo es tuyo).</li>
+</ul>
+<p>Al aprobar: <strong>FIT-12 completo 🏆</strong> — el programa termina, el compromiso de proceso no (12.7): tu ciclo, tu ventana, tu changelog y tu hoja de ruta siguen solos. El siguiente candado es de tu hoja de ruta, no del temario.</p>
+<h2>📝 Quiz de Graduación — umbral ≥ 8/10 (80 %)</h2>
+<ol>
+<li>Las 10 secciones del Plan de Trading: nómbralas con su fuente y explica qué dos secciones auditaría un CRO antes que ninguna otra y por qué.</li>
+<li>El test del clon aplicado al negocio completo: formula el estándar exacto y di qué dos campos de tu plan actual aún fallarían (con la corrección específica de cada uno).</li>
+<li>Ciclo operativo: dibuja las 4 capas con duraciones y entregables. ¿Qué KPI del dashboard se llena en cada capa y qué decisión se toma en la mensual?</li>
+<li>Dashboard: tu mes dio WR 58 % con N=9. ¿Por qué NO se celebra ni se ejecuta nada por ese número, y qué filas del tablero mandan a N pequeña?</li>
+<li>Gestión patrimonial: formula las reglas de tu política de retiros (cuándo, cuánto, desde dónde, suelo mínimo) y el protocolo de 4 movimientos del mes perdedor.</li>
+<li>El compounding patrimonial: ¿por qué "retirar el 100 % del mes bueno" y "aportar en el mes malo" son el mismo error? Nómbralo y da la regla que los corrige.</li>
+<li>Hoja de ruta: enumera las 5 fases con su riesgo por operación y su candado. ¿Por qué el candado 2→3 es el único con tiempo calendario y qué tres ataques defiende?</li>
+<li>Biblioteca: ordena el canon de 5 con su fase y su aportación. ¿Qué regla gobierna la entrada de ideas de libros al sistema y por qué es la misma del changelog?</li>
+<li>Constitución: recita los 5 artículos y explica cuál es la infraestructura de los demás. ¿Qué diferencia hay entre estancamiento y abstenciones firmadas?</li>
+<li>Integración final: tu Certificación exige plan aprobado + examen ≥ 85 % + 12 semanas documentadas. Un candidato tiene plan impecable, examen 92 % y 5 semanas de journal. ¿Qué dicta el programa, qué está faltando exactamente y por qué ese requisito no se acelera con talento?</li>
+</ol>
+<details>
+<summary>Ver clave de respuestas</summary>
+
+1. Secciones: identidad (M1/M8) · coordenada (M2-M3/10.7) · mercado y contexto (M2-M3) · sistema (M7+M9) · riesgo (M8/10.6) · rutina (10.6-10.7/12.2) · journal y registro (M9/11.7) · revisión (9.6) · psicología (M10) · reglas de excepción (M8/10.3). El CRO audita primero **riesgo** (5) y **reglas de excepción** (10): son las que impiden el daño irreversible — el resto del plan optimiza negocio; estas dos evitan su extinción (la asimetría del drawdown de M8 es la razón de la prioridad).
+2. Estándar: "un operador razonable con el documento ejecuta tu semana sin preguntarte nada". (Respuesta modelo — con TUS campos: p. ej., la sección 2 sin la hora de corte exacta de la ventana, y la sección 9 con "FOMO: evitar" sin señal temprana específica. Correcciones: escribir el corte en horas del reloj y la señal corporal/cognitiva concreta con su antídoto — números y criterios, no intenciones.)
+3. Capas: diario (pre 15 min → ejecución ≤ 3 h → post 10-15 min) → semanal (acta + KPIs, 30-45 min) → mensual (reporte + ventana, 60-90 min) → trimestral (plan + fiscal, 2 h). KPIs: diario llena disparos/etiquetas/horas; semanal la tendencia y la UNA mejora; mensual el veredicto de las 12 filas; decisión mensual: UNA modificación con changelog o abstención firmada (9.6).
+4. Porque a N=9 el WR tiene IC ±32 pp: 58 % y 30 % son la misma estimación estadística — es ruido, no señal. Mandan las filas de proceso (disparos 100 %, contención, etiquetas, días ejecutados) — contables a N pequeña — y el desempeño se lee en el acumulado de 12 meses.
+5. Retiros: cuándo — ventana trimestral por regla; cuánto — % fijo del neto fiscal (típicamente 20-30 % conservador o 50 %+ agresivo, declarado); desde dónde — trading → crecimiento, canal trazable; suelo mínimo — nunca bajo el capital mínimo operativo del sistema. Mes perdedor: (1) cascada según nivel; (2) diagnóstico varianza/deriva con dashboard; (3) cero inyección emocional (aporte por calendario, nunca rescate); (4) si toca el mínimo operativo: encogimiento ordenado con calculadora.
+6. Es interrumpir el compounding por impulso — la decisión patrimonial tomada por el ánimo del mes en lugar de la política escrita: extraer de más reinicia el crecimiento; inyectar en el rojo es martingala patrimonial con dinero que entró con miedo. La regla que los corrige: la política de retiros y aportaciones firmada — el dinero entre cubos se mueve por calendario y porcentaje, nunca por emoción.
+7. Fases: 0-1 formación/backtest (0 %; candado: certificación y decisión de 3 vías) → 2 demo forward (0 %; candado: forward dentro de intervalos + 6-12 meses de consistencia) → 3 real micro (0,25-0,5 %; candado: PF sostenido, sin cascada, retiros por política) → 4 escala (1 %; candado: las 4 puertas del fondeo + capital por plan). El 2→3 incluye calendario porque su objeto de examen es la conducta sostenida — y la conducta solo se demuestra en el tiempo con sus rachas adversas; defiende contra la prisa ("ya me siento listo"), la comparación ("mi colega ya está") y la excepción disfrazada ("solo un mes de prueba").
+8. Canon: Douglas (mente — fase 0-1) → Elder (oficio — 1-2) → Tharp (métricas — 2-3) → Steenbarger (conducta — 3-4) → Pardo (validación — 4). La regla: UNA idea por libro, entra por la ventana de modificación con evidencia y re-test — la misma del changelog del sistema: el libro propone, tu journal dispone; ninguna idea entra "el lunes siguiente".
+9. Artículos: todo se mide (M9/12.3) · nada cambia sin evidencia (9.6) · UNA mejora por ciclo (9.6/12.6) · la fase se gana (12.5) · la honestidad no se gradúa (10.4/9.5). La infraestructura es el quinto: sin registro honesto no hay medición, sin medición no hay evidencia, sin evidencia la mejora es capricho y los candados se firman con datos falsos. Estancamiento = ausencia del ciclo; abstenciones firmadas = el ciclo decidiendo "no tocar" con evidencia: son la mejora continua en su forma más madura.
+10. El programa dicta: **sin certificación todavía** — falta el requisito 3 (12 semanas de operativa documentada) y no es acelerable porque no mide conocimiento (eso ya lo midió el examen con 92 %) sino que audita que el CICLO es tuyo: temperatura, ventana, actas y dashboard durante 12 semanas reales, con sus rachas y sus meses aburridos incluidos. El talento acelera el aprendizaje; la evidencia conductual madura a su velocidad — exactamente la lección del candado 2→3: el tiempo es libre, el criterio no.
+
+</details>
+
+<h2>📖 Glosario del Módulo</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Término</th>
+<th>Inglés</th>
+<th>Definición</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Plan de Trading</td>
+<td><em>trading plan</em></td>
+<td>El documento operativo de 10 secciones que consolida el negocio: solo cambia en ventana con evidencia — lo que vive en tu cabeza no es un negocio</td>
+</tr>
+<tr>
+<td>Plan de Negocio</td>
+<td><em>business plan</em></td>
+<td>El documento estratégico: capital, retiros, KPIs, hoja de ruta y fiscalidad — cómo el trading encaja en tu vida financiera</td>
+</tr>
+<tr>
+<td>Test del clon (negocio)</td>
+<td><em>clone test</em></td>
+<td>Un tercero con tu plan ejecuta tu semana sin preguntarte nada: el estándar de calidad de las 10 secciones</td>
+</tr>
+<tr>
+<td>Reglas de excepción</td>
+<td><em>absolute rules</em></td>
+<td>Los "no" absolutos con su razón (SL intacto, riesgo del presupuesto, no operar en rojo): lo que ningún día difícil renegocia</td>
+</tr>
+<tr>
+<td>Ciclo operativo</td>
+<td><em>operating cycle</em></td>
+<td>Las 4 capas: diario (pre/ejecución/post) → semanal (acta) → mensual (dashboard/ventana) → trimestral (plan/fiscal)</td>
+</tr>
+<tr>
+<td>Día de observación</td>
+<td><em>observation day</em></td>
+<td>El día sin señales ejecutado con rutina completa y contado como ejecución plena: la inacción estratégica es negocio</td>
+</tr>
+<tr>
+<td>KPI del negocio</td>
+<td><em>business KPI</em></td>
+<td>Los 12 indicadores del dashboard (desempeño + proceso/economía) con umbrales declarados antes — llenados con journal, nunca estimados</td>
+</tr>
+<tr>
+<td>Dashboard mensual</td>
+<td><em>monthly dashboard</em></td>
+<td>La página única de 12 filas con veredicto por fila y tendencia: se lee proceso primero, desempeño después</td>
+</tr>
+<tr>
+<td>Horas vs retorno</td>
+<td><em>hours-to-return ratio</em></td>
+<td>R neto del mes / horas registradas: hace visible el overtrading invisible y presupuesta el tiempo del negocio</td>
+</tr>
+<tr>
+<td>Gestión patrimonial</td>
+<td><em>personal wealth management</em></td>
+<td>Los 3 cubos (supervivencia/trading/crecimiento), la política de retiros y los protocolos de los meses extremos</td>
+</tr>
+<tr>
+<td>Separación de cuentas</td>
+<td><em>account segregation</em></td>
+<td>El muro entre el negocio y la vida: cada cubo con sus reglas — el trading nunca financia la vida por necesidad ni la vida rescata al trading</td>
+</tr>
+<tr>
+<td>Política de retiros</td>
+<td><em>withdrawal policy</em></td>
+<td>Cuándo (ventana), cuánto (% del neto), desde dónde (canal trazable) y el suelo mínimo operativo — escrita antes del primer mes bueno</td>
+</tr>
+<tr>
+<td>Protocolo del mes ganador</td>
+<td><em>winning-month protocol</em></td>
+<td>Auditoría de proceso + retiro por regla + capital en su línea: el mes verde es un recibo, no un permiso</td>
+</tr>
+<tr>
+<td>Protocolo del mes perdedor</td>
+<td><em>losing-month protocol</em></td>
+<td>Cascada + diagnóstico varianza/deriva + cero inyección emocional + encogimiento ordenado si toca el mínimo: rescate, jamás</td>
+</tr>
+<tr>
+<td>Hoja de ruta</td>
+<td><em>roadmap of phases</em></td>
+<td>Las 5 fases con candados acumulativos: formación → backtest → demo → real micro → escala — el tiempo es libre, el criterio no</td>
+</tr>
+<tr>
+<td>Candado de fase</td>
+<td><em>phase gate</em></td>
+<td>El criterio medible que autoriza subir de fase — y la regla de baja que autoriza bajarla sin dramatismo</td>
+</tr>
+<tr>
+<td>Escalera de riesgo</td>
+<td><em>risk ladder</em></td>
+<td>0 % → 0 % → 0,25-0,5 % → 1 % por fase: el derecho al riesgo se gana con evidencia, nunca se toma</td>
+</tr>
+<tr>
+<td>Biblioteca esencial</td>
+<td><em>core library</em></td>
+<td>El canon de 5 (Douglas, Elder, Tharp, Steenbarger, Pardo) con su fase de lectura — se leen con el journal al lado y una idea por libro</td>
+</tr>
+<tr>
+<td>Nomadeo</td>
+<td><em>system hopping</em></td>
+<td>Saltar de sistema en sistema sin dar a ninguno su muestra: el data-mining de carrera — se desarma con ventana, UNA, re-test y changelog</td>
+</tr>
+<tr>
+<td>Compromiso de proceso</td>
+<td><em>process commitment</em></td>
+<td>La Constitución de 5 artículos: todo se mide · nada cambia sin evidencia · UNA por ciclo · la fase se gana · la honestidad no se gradúa</td>
+</tr>
+<tr>
+<td>Changelog de la carrera</td>
+<td><em>career changelog</em></td>
+<td>El historial de decisiones y abstenciones firmadas: la evidencia de que el gobierno funciona — la mejora continua documentada</td>
+</tr>
+<tr>
+<td>Certificación FIT-12</td>
+<td><em>FIT-12 certification</em></td>
+<td>Plan aprobado + examen integral ≥ 85 % + 12 semanas de operativa documentada: interna y honesta — autoriza ante ti</td>
+</tr>
+<tr>
+<td>Examen integral</td>
+<td><em>final comprehensive exam</em></td>
+<td>Las 50 preguntas transversales del programa (≥ 85 %): el FIT-12 entero de un vistazo</td>
+</tr>
+<tr>
+<td>Defensa socrática extendida</td>
+<td><em>extended defense</em></td>
+<td>La sesión de 60-90 min sobre tu Plan v1.0: secciones, casos de estrés y coherencia plan-journal</td>
+</tr>
+</tbody>
+</table></div>
+<h2>🔗 Referencias</h2>
+<ul>
+<li><a href="SYLLABUS.html">SYLLABUS.md § 8 — N4, Módulo 12</a></li>
+<li><a href="analisis_cursos.html">analisis_cursos.md</a> — trazabilidad 004 · M6.5, M10.1-10.5 y 003 · M7.3-7.4; aportes propios: Plan de Trading de 10 secciones, KPIs de negocio, política de capital y retiros (vacíos 2 y 8)</li>
+<li><a href="hub-mod-11.html">Módulo 11 · La Industria</a> — anterior: la infraestructura elegida con criterio forense que este módulo integra al Plan de Negocio</li>
+<li><a href="hub-mod-07.html">Módulo 7 · Construcción del Sistema</a> — el sistema v1.1 que la sección 4 del plan consolida</li>
+<li><a href="examen-final.html">Examen final</a> — las 50 preguntas de la Certificación FIT-12</li>
+<li><a href="receta-primera-operacion.html">La Receta de tu Primera Operación</a> — donde empezó todo: la primera operación procesada, ahora a escala de carrera</li>
+<li><a href="plantilla_journal_v1.html">Plantilla journal v1</a> — las 12 semanas documentadas que certifican el programa</li>
+</ul>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="leccion-11-7.html"><span class="lbl">← Anterior</span><span class="ttl">Lección 11.7 · Fiscalidad por principios — el negocio que declara es e</span></a>
+    <a class="next" href="leccion-12-1.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 12.1 · El Plan de Trading documental — tu negocio en un docume</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

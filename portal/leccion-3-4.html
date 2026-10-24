@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 3.4 · Confirmación en 3 pasos · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a class="active" href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>🧱 N1 · Base<span class="sep">/</span>M3 · Anatomía del Gráfico<span class="sep">/</span>Lección 3.4 · Confirmación en 3 pasos</div>
+  <article class="doc-body">
+<h1>Lección 3.4 · Confirmación en 3 pasos</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>45–60 min de estudio</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-03.html">M3 · Anatomía del Gráfico</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td><a href="leccion-3-3.html">Lección 3.3 · Soportes y resistencias</a></td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="leccion-3-5.html">Lección 3.5 · Patrones elementales</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>El nivel está marcado. El precio lo alcanza. Y ahora — ¿entras o esperas? Esta es la bifurcación donde el principiante paga su matrícula más cara: entrar en el primer toque sin criterio significa comprar exactamente donde la liquidez se barrida (M2.3) y donde la mayoría de las roturas fallan. La <strong>confirmación en 3 pasos</strong> es el protocolo del programa para convertir "el precio llegó a mi zona" en "el mercado me está mostrando que el interés de mi zona sigue vivo": ruptura del nivel → cierre fuera → confirmación con reacción. Cuesta entrar un poco más tarde y algo peor de precio; a cambio filtra la mayoría de los falsos rompimientos — y en la ecuación del programa, un <ktx class="ktx" data-tex="P_w">P_w</ktx> unos puntos mayor vale infinitamente más que 2 pips de entrada. Esta lección también formaliza el falso rompimiento como fenómeno, no como mala suerte.</p>
+<h2>Concepto</h2>
+<p><strong>El protocolo de 3 pasos</strong> (para una rotura de resistencia; el espejo vale para soporte):</p>
+<ol>
+<li><strong>Ruptura:</strong> el precio atraviesa el nivel. Paso necesario, insuficiente: aquí todavía puede ser una barrida (Lección 2.3) — el toque intra-vela no decide nada.</li>
+<li><strong>Cierre fuera del nivel:</strong> la vela (o mejor, el H4/D1 según tu marco) <strong>cierra</strong> más allá del nivel con cuerpo decidido. El cierre es el acuerdo final de la subasta completa (M3.1): un cierre fuera implica que la urgencia superó al nivel y <strong>sobrevivió al período</strong>. Este es el filtro que elimina la mayoría de las mechas roturadoras.</li>
+<li><strong>Confirmación — el retesteo:</strong> tras el cierre fuera, el precio suele volver al nivel roto (polaridad) y <strong>reacciona desde él</strong>: en el caso alcista, la RESISTENCIA rota se convierte en SOPORTE — el precio vuelve abajo, toca la zona y NO la pierde (mínimo del retroceso por encima del nivel, con reacción compradora visible). Esa reacción es la luz verde: el mercado probó el nuevo suelo y lo sostuvo.</li>
+</ol>
+<p><strong>El principio de polaridad</strong> (<em>polarity</em>): un nivel roto con confirmación <strong>cambia de bando</strong>. La resistencia que cedió y se sostuvo en el retesteo opera como soporte (ahí están los compradores que "se perdieron" el tren esperando el retesteo + los vendedores que quedaron atrapados y cubren en la zona, generando compra). El soporte que cedió con cierre decidido opera como resistencia para los rebotes (los compradores tardíos atrapados venden para salir en el empate). Esta simetría es la razón por la que los mejores retesteos son entradas con estadística superior: <strong>el nivel ya demostró funcionar en ambas direcciones</strong>.</p>
+<p><strong>Los nombres del retorno:</strong> al retroceso tras la rotura se le llama <strong>pullback</strong> (en tendencia) o <strong>throwback</strong> (al origen de la rotura). No es un defecto del mercado: es la digestión — los stops de los primeros rompedores se ejecutan, los impacientes salen, y el institucional llena lo que faltaba en la zona (M2.3). Un mercado que no retrocede tras romper (expansión pura) existe, pero no lo perseguimos: sin retesteo, tu entrada queda sin el paso 3 y la receta lo prohíbe.</p>
+<p><strong>El falso rompimiento</strong> (<em>false breakout / fake</em>): el precio atraviesa el nivel, <strong>no logra el cierre decidido fuera</strong> (o cierra fuera y en la siguiente vela vuelve dentro con fuerza), y gira al otro lado. No es un error del mercado — es su mecanismo de recolección: detrás de todo nivel obvio hay stops y entradas del retail (M2.3), y atravesar el nivel unas velas es la forma más eficiente de detonarlos. Tres datos operativos: (a) son la mayoría de las primeras roturas de un rango; (b) el antídoto EXACTO es el protocolo de 3 pasos — el falso no sobrevive al paso 2 ni al paso 3; (c) cuando el falso se confirma como tal (vuelta decidida al interior del rango), ES un setup del lado contrario con estadística excelente — el barrido que se revierte es precisamente la huella del comprador grande (Lección 2.3). Con el tiempo aprenderás a operar el falso; en formación, la regla es solo dejar que te filtre a ti.</p>
+<p><strong>Visual — el árbol de decisión completo del protocolo:</strong></p>
+<pre class="mermaid">flowchart TD
+    Z[&quot;🎯 Zona de calidad marcada M3.3&lt;br/&gt;fresca · origen expansivo · H4/D1&quot;] --&gt; R[&quot;PASO 1 · Ruptura&lt;br/&gt;el precio atraviesa el nivel&lt;br/&gt;aún no decide nada&quot;]
+    R --&gt; C{&quot;PASO 2 · ¿La vela del marco cierra&lt;br/&gt;FUERA del nivel, con cuerpo decidido?&quot;}
+    C -- &quot;No&quot; --&gt; FB[&quot;🚫 Falso rompimiento o barrida&lt;br/&gt;SIN entrada — el nivel sigue siendo el nivel&lt;br/&gt;y el falso confirmado avisa del lado contrario&quot;]
+    C -- &quot;Sí&quot; --&gt; RT[&quot;PASO 3 · Esperar el retesteo&lt;br/&gt;pullback / throwback hacia la zona rota&quot;]
+    RT --&gt; S{&quot;¿El retesteo se SOSTIENE?&lt;br/&gt;no pierde la zona + reacción del lado nuevo&quot;}
+    S -- &quot;No&quot; --&gt; OUT[&quot;🚫 Setup no ejecutado&lt;br/&gt;se anota en el journal y se espera el siguiente nivel&quot;]
+    S -- &quot;Sí&quot; --&gt; IN[&quot;✅ ENTRADA&lt;br/&gt;SL tras la estructura del retesteo&lt;br/&gt;TP en la zona siguiente · R:B mínimo 1:2&quot;]
+    IN --&gt; W[&quot;🧾 Journal: ¿entré con protocolo 3 de 3?&lt;br/&gt;campo clave de la auditoría M9&quot;]
+</pre>
+<h2>Analogía</h2>
+<p>El protocolo de 3 pasos es el <strong>control de aeropuerto en tres filtros</strong>. Paso 1 — el pasaporte existe (el precio tocó/cruzó el nivel): cualquiera puede mostrar un pasaporte; no vuela por eso. Paso 2 — el sello de entrada (el CIERRE fuera del nivel): el documento fue verificado por la autoridad competente — la subasta completa de un período votó y decidió. Paso 3 — la puerta de embarque (el retesteo que se sostiene): hasta los pasajeros con sello pueden no subir; la puerta confirma que el vuelo REALMENTE despega con ellos dentro. El falso rompimiento es el pasajero con pasaporte falso bien hecho: pasa el primer filtro con apariencia impecable y cae en el segundo o en el tercero. El retail entra en el paso 1 ("¡ya rompió!"); el programa exige los tres filtros — y por eso su lista de pasajeros es más corta, pero vuela.</p>
+<h2>Cómo se hace: el protocolo con números y un caso completo</h2>
+<p><strong>Caso cerrado (EUR/USD, ilustrativo con mecánica real).</strong> Resistencia marcada en zona 1,0850–1,0856 (dos reacciones previas, origen expansivo, H4). El precio sube desde 1,0790:</p>
+<ul>
+<li><strong>Martes, vela H4 #1:</strong> toca 1,0852 y cierra en 1,0845 → toque sin cierre fuera: <strong>no hay nada que decidir todavía</strong>. (El principiante compra el toque; el programa no.)</li>
+<li><strong>Martes, vela H4 #2:</strong> atraviesa y cierra en <strong>1,0861</strong> — 5 pips más allá del borde de zona, con cuerpo pleno: <strong>paso 2 cumplido</strong>. Ahora, y solo ahora, existe un estado de "rotura por confirmar".</li>
+<li><strong>Miércoles–jueves:</strong> el precio retrocede (throwback) hasta 1,0854, toca la zona rota desde arriba y cierra la vela de reacción en 1,0866 con mecha inferior sobre la zona: <strong>paso 3 cumplido</strong> — la resistencia rota se sostuvo como soporte.</li>
+<li><strong>Entrada:</strong> en el retesteo, ~1,0858 (cuando la reacción es visible). <strong>SL estructural:</strong> bajo el mínimo del retroceso y de la zona, 1,0844 (14 pips). <strong>TP:</strong> siguiente resistencia, 1,0902 (44 pips). R:B = 44/14 ≈ <strong>3,1</strong> — sobra al mínimo del programa (1:2). <strong>Lote:</strong> con riesgo 1 % de 2 000 $ = 20 $: <ktx class="ktx" data-tex="20/(14 \times 10) = 0{,}14">20/(14 \times 10) = 0{,}14</ktx> lotes (Paso 5 de la receta).</li>
+</ul>
+<p>Compara el "antes": quien compró el toque de 1,0852 el martes entró 6 pips mejor... con un SL por debajo del nivel obvio (1,0843 — dentro del depósito de stops), expuesto al throwback que tocó 1,0854 (¡lo habría sacado con el primer respiro!) y sin saber si la rotura era real. El protocolo te cuesta 6 pips de precio y te compra: cierre confirmado + retesteo sostenido + SL en estructura + R:B verificado. Ese intercambio es positivo por definición estadística.</p>
+<p><strong>Y el caso del falso, visto con el mismo protocolo:</strong> vela que atraviesa 1,0852 y <strong>cierra en 1,0848</strong> (dentro de la zona) → paso 2 no cumplido → no hay rotura, no hay entrada, no hay decisión: el nivel sigue siendo resistencia y el falso acaba de filtrarte a ti. La disciplina del paso 2 es lo único que separa tu cuenta de esa trampa — sin saber NADA de análisis adicional.</p>
+<h2>Error común</h2>
+<p>El primero: <strong>anticipar el paso 2</strong> — comprar la rotura intra-vela "para no perder el tren". Es la apuesta más popular del retail y su matrícula: sin cierre, la rotura es una hipótesis en curso de subasta; el tren que se pierde por esperar el cierre suele volver al andén (retesteo) — y el que no vuelve, no era tu setup (el mercado "sin retroceso" se persigue cero veces en formación). El segundo: <strong>cerrar el paso 3 por impaciencia</strong> — la confirmación no tiene plazo fijo, pero tampoco es eterna: si tras el cierre fuera el precio NO retestea y se aleja más de ~1R del nivel, la ventana del setup cerró (el retesteo lejano ya no es retesteo, es otro nivel). El tercero: <strong>el espejo vicioso</strong> — usar el protocolo para justificar entradas en cualquier lado ("si cierro fuera ya está"): el protocolo opera SOLO sobre zonas con calidad del gradiente de la Lección 3.3 (frescas, pocos toques, origen expansivo, H4/D1). Confirmación sobre zona basura es confirmación de ruido.</p>
+<h2>Conexión cuantitativa</h2>
+<p>El protocolo ataca tu <ktx class="ktx" data-tex="P_w">P_w</ktx> por la puerta más barata del programa. Cada filtro elimina una familia de fallos con costo conocido: el paso 2 elimina las barridas intra-vela (M2.3), el paso 3 elimina las roturas sin seguimiento. El trade-off es matemático y favorable: pierdes pips de entrada (un costo pequeño y fijo) y ganas probabilidad (multiplicativa sobre cada operación futura). Además ordena tus términos: SL en la estructura del retesteo (no en el nivel obvio), TP en la zona siguiente (no en "un número"), y el R:B se calcula con datos — como en el caso: 3,1 con lote 0,14 y riesgo 20 $. En M5, este protocolo será la base de lectura de la estructura (BOS: ruptura de estructura confirmada); en M9, cada operación de tu journal llevará el campo "¿entré con protocolo de 3 pasos?" — porque será una de las variables con mayor correlación con tus rachas de error. El falso rompimiento, por su parte, pasará de pesadilla a instrumento: pero primero, deja que te filtre.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li>Protocolo: <strong>ruptura → cierre fuera del nivel → confirmación por retesteo que se sostiene</strong>. Tres filtros, ninguna excepción.</li>
+<li>El toque intra-vela no decide nada: puede ser una barrida (M2.3). El <strong>cierre</strong> es el acuerdo de la subasta completa.</li>
+<li><strong>Polaridad:</strong> el nivel roto y confirmado cambia de bando (resistencia→soporte y viceversa) — por eso el retesteo es la entrada con mejor estadística.</li>
+<li>El retorno tiene nombre (pullback/throwback) y función (digestión + llenado institucional); la expansión sin retesteo no se persigue.</li>
+<li>El <strong>falso rompimiento</strong> es mecanismo de recolección, no mala suerte: no sobrevive a los pasos 2–3, y más adelante será setup del lado contrario.</li>
+<li>El protocolo opera solo sobre zonas de calidad (Lección 3.3): confirmación sobre zona basura = ruido confirmado.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>La vela H4 atraviesa tu resistencia (zona 1,0850–1,0856), toca 1,0858 y cierra en 1,0852. ¿Qué paso del protocolo se cumplió y cuál falta? ¿Qué HACES exactamente?</li>
+<li>¿Por qué el retesteo da entradas con mejor estadística que la rotura directa? Explica con polaridad y con quién está comprando/vendiendo en cada caso.</li>
+<li>El precio cierra fuera de tu nivel, pero en las siguientes 6 velas H4 se aleja 60 pips sin volver. ¿Qué paso no llegó y qué decide el protocolo? ¿Qué NUNCA haces en formación?</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. Paso 1 cumplido (ruptura intra-vela hasta 1,0858). Paso 2 NO: el cierre en 1,0852 quedó DENTRO de la zona (1,0850–1,0856) — la vela no cerró decididamente más allá del nivel. Acción correcta: **nada** — no hay rotura, no hay entrada; el nivel sigue siendo resistencia y observas la siguiente vela. Este patrón exacto es el candidato a falso rompimiento (barrida + cierre dentro): tu protocolo acaba de filtrarte.
+2. En la rotura directa compras contra los vendedores que aún defienden el nivel, sin saber si el cierre sobrevivirá (tu probabilidad incluye a todos los falsos). En el retesteo post-confirmación: (a) el cierre fuera ya ocurrió — el filtro 2 está descontado; (b) por polaridad, en la zona rota hay compradores nuevos (los que esperaban el retesteo) y cubrimiento de vendedores atrapados: el bando a tu favor está documentado por el propio mercado; (c) tu SL va tras la estructura del retesteo (menos expuesto a barridas que el nivel obvio original). Pagas pips de precio y cobras probabilidad: intercambio positivo por definición.
+3. No llegó el paso 3 (confirmación) — y con 60 pips de alejamiento (~4R desde el nivel en el ejemplo de la lección), la ventana del retesteo cerró: lo que vuelve ahora ya no es retesteo, es otra zona. Decisión del protocolo: **setup no ejecutado** — se anota en el journal como "oportunidad válida no capturada" y se espera el siguiente nivel; se acepta como costo estructural del filtro. Nunca se persigue la expansión pura ("entrar ahora porque ya subió"): sin paso 3 no hay entrada del programa — perseguir es pagar el peor precio sin ninguno de los filtros que justifican el riesgo.
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="leccion-3-3.html"><span class="lbl">← Anterior</span><span class="ttl">Lección 3.3 · Soportes y resistencias</span></a>
+    <a class="next" href="leccion-3-5.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 3.5 · Patrones elementales</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

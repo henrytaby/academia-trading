@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 10.2 · Los 5 miedos y la mentalidad probabilística — el guion  · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a class="active" href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>🛡️ N3 · Riesgo<span class="sep">/</span>M10 · Psicotrading Científico<span class="sep">/</span>Lección 10.2 · Los 5 miedos y la mentalidad probabilística —</div>
+  <article class="doc-body">
+<h1>Lección 10.2 · Los 5 miedos y la mentalidad probabilística — el guion que la amígdala ya tenía escrito</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>50–65 min de estudio</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-10.html">M10 · Psicotrading Científico</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td><a href="leccion-10-1.html">Lección 10.1 · Neurobiología del riesgo</a></td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="leccion-10-3.html">Lección 10.3 · Las 5 avaricias</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>La lección anterior te dio el hardware (amígdala, cortisol, PFC); esta te da el <strong>contenido</strong> — los cinco miedos concretos que ensamblan cada secuestro. Mark Douglas (<em>Trading in the Zone</em>, 1990-2001), tras miles de entrevistas con traders, concluyó que casi toda conducta destructiva en trading es un <strong>mecanismo de evasión de uno de cinco miedos</strong> — y que ningún sistema, indicador o plan los elimina, porque viven en el operador, no en el mercado. Su tesis central define este módulo: el mercado genera un flujo de incertidumbre genuina (nadie sabe el siguiente tick), y el cerebro no tolera la incertidumbre — la interpreta como amenaza y se defiende con las cuatro distorsiones que ya conoces de M9-M10 (mover el SL, cerrar temprano, perseguir, revancha). La salida de Douglas no es motivacional sino estructural: <strong>además de acotar el riesgo (tu sistema v1.1 ya lo hace), hay que adoptar una mentalidad probabilística</strong> — cinco verdades aceptadas hasta el automatismo que desactivan la amenaza en su origen, porque un trader que ya ACEPTÓ que cualquier cosa puede pasar no percibe la pérdida como error sino como coste de una serie. Para tu programa esto no es filosofía decorativa: es la diferencia entre ejecutar 100 operaciones del M9 con el sistema intacto o abandonar en la operación 40. Si terminas con una sola idea incrustada: <strong>un miedo no se vence analizando más — se desactiva aceptando antes lo que temes, y acotando el coste de que ocurra.</strong></p>
+<h2>Concepto</h2>
+<p><strong>Los 5 miedos de Douglas, con su manifestación exacta en ejecución</strong> — cada uno con la conducta típica que produce en TU mesa y el antídoto del programa:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Miedo</th>
+<th>Qué "protege" (su lógica interna)</th>
+<th>Cómo sabotea la ejecución</th>
+<th>Antídoto del programa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Equivocarse</strong> (<em>fear of being wrong</em>)</td>
+<td>La identidad: "si me equivoco, no sirvo"</td>
+<td>No disparar señales válidas (parálisis); dudar del setup justo después de dispararlo; necesitar "más confirmación" eterna</td>
+<td>Separar proceso de resultado (10.6): la etiqueta E0 registra la pérdida en plan como <strong>coste, no error</strong>; el WR 40 % ya contempla equivocarse 6 de cada 10 veces</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Perder dinero</strong> (<em>fear of losing</em>)</td>
+<td>El inventario (legítimo — si se acota)</td>
+<td>Cerrar el perdedor antes del SL "para no confirmarlo" (→ E3); tamaño demasiado pequeño que vuelve irracional la aritmética; mirar el P/L cada 20 segundos</td>
+<td>La regla del 1 % (M8): si el riesgo máximo está pre-pagado y acotado, la pérdida es un dato contable — el miedo solo es racional cuando NO hay presupuesto</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Quedarse fuera</strong> (<em>fear of missing out</em>)</td>
+<td>La oportunidad: "sin operación no hay ganancia"</td>
+<td>Entrar tarde y sin zona (chasing → 10.3); disparar señales borrosas "por si acaso"; operar instrumentos fuera del plan solo porque se mueven</td>
+<td>La inacción estratégica (10.7): sin setup, la posición correcta es NO estar en el mercado; la estadística de no-disparos entra al acta semanal (M9)</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Devolver ganancias</strong> (<em>fear of letting profits turn into losses</em>)</td>
+<td>El placer ya ganado (dopamina defendiendo su premio)</td>
+<td>Cerrar el ganador a +0,5R cuando el plan decía 2R; mover el TP hacia abajo; "salir y ya" — destruye el R:B promedio, la pata que sostiene la esperanza</td>
+<td>Gestión de plan: TP/parciales definidos ANTES (componentes 4-6 del v1.1); el journal mide la <strong>deriva R planificado vs R real</strong> (9.5) — el número que expone este miedo</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Lo desconocido</strong> (<em>fear of the unknown</em>)</td>
+<td>El control: lo no modelado puede doler</td>
+<td>Congelarse tras noticias; cerrar todo antes de datos macro sin que el plan lo diga; sobre-preparación infinita (más cursos, cero ejecución)</td>
+<td>Los 5 axiomas de abajo: la incertidumbre no se elimina, se <strong>contiene</strong> — el SL y el tamaño la convierten en gasto conocido</td>
+</tr>
+</tbody>
+</table></div>
+<p>Los cinco comparten un mecanismo: <strong>convierten la decisión presente en una defensa del pasado o del futuro imaginado</strong> — nunca en la ejecución del plan presente. Y tienen una jerarquía: el miedo #1 (equivocarse) es la raíz — por eso el programa lo ataca primero con la taxonomía E0-E7: cuando "equivocarse" queda formalmente separado de "perder en plan", los otros cuatro pierden combustible.</p>
+<p><strong>Los 5 axiomas de la incertidumbre</strong> (las "5 verdades fundamentales" de Douglas, adaptadas al vocabulario del programa). Aceptados y automatizados, son el firmware que impide que un tick dispare un secuestro:</p>
+<ol>
+<li><strong>Cualquier cosa puede pasar.</strong> En cualquier vela, en cualquier momento, sin previo aviso — tu análisis (BOS, FVG, confluencias del M6) describe probabilidades, no certezas.</li>
+<li><strong>No necesitas saber qué va a pasar para ganar dinero.</strong> La esperanza es una propiedad de la SERIE (<ktx class="ktx" data-tex="E = +0{,}16R">E = +0{,}16R</ktx> neto por operación), no de la operación individual — la ganancia no depende de adivinar, depende de ejecutar la ventaja suficientes veces.</li>
+<li><strong>Dentro de una ventaja, la distribución de ganancias y pérdidas es aleatoria.</strong> Con WR 40 %, el orden en que lleguen las 6 pérdidas y 4 ganancias de cada 10 es azar — una racha de 8 no "rompe" el sistema ni lo valida una serie perfecta.</li>
+<li><strong>Una ventaja es solo una probabilidad mayor de un resultado, no una predicción.</strong> Tu setup dispara donde la historia midió más frecuencia favorable — cada vela individual sigue siendo incierta.</li>
+<li><strong>Cada momento del mercado es único.</strong> No existe el "siempre pasa igual aquí" — la similitud es suficiente para la ventaja estadística, insuficiente para la certeza; esto neutraliza tanto el "nunca falla" como el "ya falló dos veces, mejor no disparo".</li>
+</ol>
+<p><strong>La matemática que sostiene el axioma 3.</strong> Cada operación es un experimento independiente con el mismo mecanismo — formalmente, una variable de Bernoulli:</p>
+<p><ktxd class="ktxd" data-tex="X_i \sim \text{Bernoulli}(0{,}4) \qquad P(\text{ganar}) = 0{,}4 \qquad P(\text{perder}) = 0{,}6">X_i \sim \text{Bernoulli}(0{,}4) \qquad P(\text{ganar}) = 0{,}4 \qquad P(\text{perder}) = 0{,}6</ktxd></p>
+<p>La secuencia de 10 operaciones tiene una distribución concreta de resultados — y lo crucial es que <strong>el orden dentro de la serie no altera su probabilidad total</strong>: la secuencia GGGGPPPPPP tiene la misma probabilidad que PGGPPGPPGP (ambas <ktx class="ktx" data-tex="0{,}4^4 \times 0{,}6^6">0{,}4^4 \times 0{,}6^6</ktx>). La mente intuitiva rechaza esto: "6 pérdidas seguidas significa que algo cambió". La estadística dice: con WR 40 %, la probabilidad de 3 pérdidas seguidas en algún punto de 10 operaciones es alta (~65 %); de 5 seguidas, razonable (~25 %) — ya lo calculaste en 7.5 (racha esperada ~9 en 100). El trader que interioriza el axioma 3 deja de leer las rachas como información sobre la ventaja y empieza a leerlas como <strong>ruido estructural esperado</strong> — el cambio de lectura es la mentalidad probabilística en acción.</p>
+<p><strong>El "eje de las 20 operaciones".</strong> Douglas propone la unidad mental operativa: deja de evaluar operaciones individuales y evalúa <strong>series</strong> — cualquier rango de 20 operaciones es una muestra suficiente para ver la ventaja trabajar. Traducción al programa: tu reporte de M9 usa N=100 y tu revisión semanal usa la semana completa — pero el movimiento psicológico es el mismo: la operación individual deja de ser el juicio ("¿soy bueno?" → "¿ejecuté el plan?"). Esta re-unidad de conteo es probablemente el cambio cognitivo más rentable del módulo: cuesta cero dólares y elimina ~80 % del peso emocional de cada clic <em>(proporción heurística, no medida)</em>.</p>
+<h2>Analogía</h2>
+<p>El casino y la ventaja del 2,7 %. La ruleta europea da a la casa una esperanza de +2,7 % por giro — el casino no sabe ni le importa dónde caerá la bola siguiente; su sistema es la ventaja, y su "plan de trading" consiste en estar en la mesa el máximo de giros con el tamaño correcto. Ahora imagina un casino donde el croupier, tras 5 salidas al rojo, duda: "quizá hoy la ruleta está cargada al negro, mejor apostamos al negro" — cambiaría de sistema exactamente cuando la matemática no lo exige, y la ventaja se evaporaría. El casino profesional lo impide con estructura: nadie decide en caliente, los límites están en la mesa, y cada giro se registra. El trader con mentalidad probabilística es el casino, no el jugador: tiene la ventaja (su sistema con E +0,16R), ejecuta cada "giro" (operación) con el mismo protocolo, y sabe que la racha adversa es el costo estadístico de estar en la mesa — mientras el jugador amateur (el que persigue, la revancha, el FOMO) apuesta contra su propia ventaja intentando adivinar cada bola. La ironía del mercado: tú puedes elegir ser el casino con tu propio sistema — la mayoría prefiere ser el jugador, porque el casino "se aburre".</p>
+<h2>Cómo se hace: instalar la mentalidad probabilística en 4 movimientos</h2>
+<ol>
+<li><strong>Escribe tus 5 miedos con TU manifestación específica.</strong> No los genéricos de la tabla — los tuyos, con la conducta exacta que producen: "cuando X ocurre, hago Y". El journal v1 de tus 10 sesiones de M-10 te dará el material real. Un miedo sin conducta asociada es decoración; con conducta, es un punto de protocolo.</li>
+<li><strong>Convierte cada miedo en una regla ya escrita.</strong> El antídoto no es "recordar no tener miedo": es tener la regla que el miedo intentaría violar YA aceptada por escrito. Miedo #4 → tu componente de gestión define TP y parciales; miedo #2 → tu regla del 1 %; miedo #3 → tu definición operativa de setup válido (la duda es un no). Cuando el miedo hable, la respuesta es leer la regla — no debatir con él.</li>
+<li><strong>Practica la re-etiquetación E0 en cada pérdida.</strong> Durante las 10 sesiones de la misión: cada pérdida en plan se registra con su etiqueta E0 y una frase fija: <em>"coste de la serie, esperado por el sistema"</em>. Parece ritual — es reacondicionamiento: estás emparejando el estímulo (pérdida) con una respuesta cognitiva nueva (coste) en lugar de la antigua (error → amenaza → defensa). En ~20 emparejamientos, la respuesta nueva llega sola.</li>
+<li><strong>Lee el mercado en distribución, no en puntos.</strong> Al cerrar cada semana, responde tres preguntas en el acta (9.6): ¿cuántas disparé de las debidas? ¿mantuve el R planificado? ¿el orden de las rachas alteró alguna regla? — si las tres salen limpias, la semana fue un éxito <strong>independientemente del P/L</strong>. Esa cláusula final es la mentalidad probabilística convertida en métrica de cierre.</li>
+</ol>
+<h2>Error común</h2>
+<p><strong>(1) "Ya no tengo miedo" — el miedo disfrazado de confianza.</strong> El miedo no desaparece; se disfraza: de perfeccionismo (esperar la señal perfecta = miedo #1), de flexibilidad ("ajustar el TP según contexto" = miedo #4), de prudencia (mirar el gráfico de 15 min "para confirmar" lo ya decidido = miedo #1 otra vez). La prueba no es lo que sientes: es si ejecutaste 100 % de los disparos debidos con el R planificado — el dato del journal decide. <strong>(2) Usar los axiomas como excusa de pasividad.</strong> "Cualquier cosa puede pasar" también se invierte en "como nada es seguro, no opero" — parálisis con disfraz filosófico. La mentalidad probabilística es ACCIÓN: disparar todas las señales válidas de la serie precisamente porque no sabes cuál ganará. La parálisis viola el axioma 2: sí necesitas ejecutar la serie para cobrar la esperanza. <strong>(3) Confundir aceptación con resignación.</strong> Aceptar que cualquier cosa puede pasar NO significa rendirse a ella: significa haberla acotado antes (SL, tamaño, topes) para que la aceptación no cueste nada. Sin presupuesto de riesgo, "aceptar la incertidumbre" es solo romanticismo caro — primero el 1 %, después la filosofía. <strong>(4) Cambiar de sistema tras 3 pérdidas "porque la ventaja se agotó".</strong> El axioma 3 lo prohíbe explícitamente: el orden es azar; la ventaja se evalúa con N (M9: ±9,6 pp a 100), nunca con rachas cortas. Tres pérdidas miden cero: son la parte del guion que ya sabías que venía. <strong>(5) Leer los 5 miedos una vez y no volver.</strong> No son contenido de lectura: son contenido de <strong>entrenamiento</strong> — cada sesión de la misión M-10 activa alguno; el objetivo no es no sentirlos, es detectarlos en su nivel temprano (10.1) y ejecutar la regla. Como el piloto y la maniobra anti-G: se ensaya ANTES de la G, todos los días.</p>
+<h2>Conexión cuantitativa</h2>
+<p><strong>Hacia 7.5:</strong> la estadística de rachas te dio la forma exacta del "mal trago" (P(n) = (1−WR)ⁿ, racha ~9 esperada en 100): los axiomas de esta lección son la interpretación psicológica de esa fórmula — la racha no es información, es estructura. <strong>Hacia 9.3:</strong> la métrica que expone el miedo #4 es la <strong>deriva R planificado vs R real</strong>: si tu R promedio en ganadoras cae de 2,1 a 1,4, no es mala suerte — es el miedo a devolver ganancias cobrando peaje medible. <strong>Hacia 9.5:</strong> la etiqueta E0 ("pérdida en plan") es la materialización de la tesis de Douglas en tu journal: 6 de cada 10 filas serán E0 si tu sistema es el del caso maestro — y ninguna es un error. <strong>Hacia 10.3:</strong> donde hay miedo a quedarse fuera (#3) sin protocolo, el mercado instala su contrapeso: las 5 avaricias — la siguiente lección muestra cómo el FOMO convierte el miedo #3 en overtrading medible. <strong>Hacia la Evaluación N3:</strong> la entrevista socrática incluirá un caso de pérdida en plan: la pregunta real no es qué responderías, sino si tu journal de 10 sesiones muestra la re-etiquetación E0 funcionando bajo presión real.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li>Casi toda conducta destructiva es evasión de uno de <strong>5 miedos</strong> (equivocarse, perder, quedarse fuera, devolver ganancias, lo desconocido) — viven en el operador, no en el mercado, y ningún sistema los elimina: se gestionan con reglas previas.</li>
+<li>Los <strong>5 axiomas de la incertidumbre</strong> (cualquier cosa puede pasar · no necesitas adivinar para ganar · la distribución dentro de la ventaja es aleatoria · una ventaja es probabilidad, no predicción · cada momento es único) son el firmware que desactiva la amenaza en origen.</li>
+<li>La operación es una Bernoulli: dentro de la serie, <strong>el orden es azar</strong> — las rachas son estructura esperada (racha ~9 con WR 40 %), no información sobre la ventaja.</li>
+<li>El cambio de unidad mental — del trade individual a la <strong>serie</strong> (20+ operaciones) — es el movimiento cognitivo más rentable del módulo: la pregunta correcta nunca es "¿gané?", es "¿ejecuté el plan?".</li>
+<li>El antídoto de cada miedo es una <strong>regla ya escrita</strong> (gestión, 1 %, setup válido) más la re-etiquetación E0 repetida: no se vence miedos con ánimo, se los desactiva con estructura.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>Un trader lleva 2 semanas sin disparar: "las señales no me convencen del todo, espero la perfecta". Identifica cuál de los 5 miedos opera, qué axioma viola y qué dos métricas del journal delatarían el patrón en el acta semanal.</li>
+<li>Con WR 40 %: calcula la probabilidad de una racha de 3 pérdidas en las primeras 3 operaciones de la serie, y la probabilidad de que aparezca ALGUNA racha de 3 en 10 operaciones (aproximación). ¿Por qué la segunda es la cifra que debe memorizar tu intuición?</li>
+<li>Tu plan define TP a 2R. El precio llega a +1,6R, retrocede y cierras a +0,9R "para no perder la ganancia". Clasifica con la taxonomía E0-E7, identifica el miedo (#1-#5) y calcula el coste acumulado si repites esto en 20 operaciones con 8 ganadoras.</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. Miedo #1 (equivocarse) en su manifestación de perfeccionismo: la señal "perfecta" es el refugio donde nunca se demuestra que te equivocaste. Viola el axioma 2 (la esperanza solo se cobra ejecutando la serie completa — cada disparo evitado es una Bernoulli que el sistema necesitaba) y el componente de definición operativa (la duda es un no — si el setup cumple los componentes 1-8, no hay "convencerse"). Métricas que lo delatan: **disparos ejecutados / debidos** (caería muy por debajo de 100 %) y el **registro de no-disparos** del acta con la razón "duda" repetida — un patrón, no un accidente.
+2. Racha inicial de 3: <ktx class="ktx" data-tex="0{,}6^3 = 0{,}216">0{,}6^3 = 0{,}216</ktx> → ~22 %. Que aparezca ALGUNA racha de 3 en 10 operaciones: enumeración exacta de las 1.024 secuencias → **70,1 %** (las 8 ventanas de 3 consecutivas se solapan: la aproximación 8 × 0,216 = 1,73 > 1 demuestra por qué las ventanas NO se suman). Tu intuición debe retener la segunda: la mente recuerda la primera (una racha puntual "rara") y olvida que en cualquier serie real, una racha de 3 es lo NORMAL — cuando llega, no significa nada sobre la ventaja.
+3. Etiqueta: **E5** (gestión improvisada — cerrar fuera de la regla de gestión definida), con el miedo #4 (devolver ganancias) como causa. Coste: el plan pagaba 2,0R por ganadora; ejecutaste 0,9R — la deriva es −1,1R por ganadora, que con WR 40 % pesa 0,4 × 1,1 = −0,44R por operación. Repetido en las 8 ganadoras de 20: −8,8R de esperanza evaporada. La E por operación cae de **+0,20R** (plan: <ktx class="ktx" data-tex="0{,}4 \times 2{,}0 - 0{,}6 \times 1 = +0{,}20R">0{,}4 \times 2{,}0 - 0{,}6 \times 1 = +0{,}20R</ktx>) a **−0,24R** (<ktx class="ktx" data-tex="0{,}4 \times 0{,}9 - 0{,}6 \times 1">0{,}4 \times 0{,}9 - 0{,}6 \times 1</ktx>) — un sistema rentable convertido en perdedor SIN cambiar una sola regla de entrada: solo por ejecutar mal la salida. Es el patrón exacto que el journal detecta con la deriva R planificado vs real.
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="leccion-10-1.html"><span class="lbl">← Anterior</span><span class="ttl">Lección 10.1 · Neurobiología del riesgo — por qué tu cerebro no está d</span></a>
+    <a class="next" href="leccion-10-3.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 10.3 · Las 5 avaricias — la otra cara del mismo secuestro</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 1.5 · La curva de aprendizaje real · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a class="active" href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>🧱 N1 · Base<span class="sep">/</span>M1 · El Trading como Negocio y Ciencia<span class="sep">/</span>Lección 1.5 · La curva de aprendizaje real</div>
+  <article class="doc-body">
+<h1>Lección 1.5 · La curva de aprendizaje real</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>30–40 min de estudio</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-01.html">M1 · El Trading como Negocio y Ciencia</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td><a href="leccion-1-4.html">Lección 1.4 · La esperanza matemática</a></td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="leccion-1-6.html">Lección 1.6 · Expectativas y presupuesto</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>La diferencia entre el trader que sobrevive y el que abandona rara vez es técnica: es de <strong>calendario esperado</strong>. Quien cree que en tres meses será rentable interpreta cada mes perdedor como fracaso definitivo y reacciona haciendo lo que destruye cuentas — cambiar de sistema, sobreoperar, subir el tamaño. Quien sabe que la curva real se mide en años interpreta el mismo mes perdedor como datos de entrenamiento y sigue ejecutando el proceso. Esta lección te entrega la forma real de la curva: las cuatro fases de competencia, la analogía médica que pone el plazo en perspectiva, y el porqué estadístico de que 12 meses sea la prueba mínima de consistencia en este programa. Fijar expectativas de plazo es, literalmente, una decisión de gestión de riesgo.</p>
+<h2>Concepto</h2>
+<p><strong>La analogía médica.</strong> A nadie se le ocurre dejar que un recién graduado opere un corazón: entre universidad (5–7 años) y residencia quirúrgica (4–6 más), un cirujano acumula 12–17 años de formación supervisada antes de la autonomía total. El trading no tiene colegio, ni residencia, ni licencia: el único examinador disponible es el mercado mismo — y cobra la matrícula en pérdidas <em>(heurística de los cursos de referencia; el punto no es la cifra exacta sino la magnitud del oficio)</em>. Cada hora de estudio y cada operación de práctica que te ahorras "porque ya lo entiendes" la cobra después el mercado, con intereses.</p>
+<p><strong>Las cuatro fases de la competencia.</strong> La escalera clásica del aprendizaje aplica al trading con precisión incómoda:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Fase</th>
+<th>Nombre</th>
+<th>Qué pasa</th>
+<th>Riesgo dominante</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Inconsciencia incompetente</td>
+<td>No sabe que no sabe. Opera grande, confiado, guiado por suertes iniciales.</td>
+<td>Máximo: es la fase que quema cuentas en semanas</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Consciencia incompetente</td>
+<td>Sabe qué no sabe. Estudia con humildad, pierde menos o nada en demo, sufre más.</td>
+<td>Desánimo: el "valle de la decepción" donde abandona la mayoría</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Consciencia competente</td>
+<td>Opera con reglas explícitas; cada decisión es lenta, deliberada y fatigosa.</td>
+<td>Autocomplacencia: confundir una racha con maestría</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Inconsciencia competente</td>
+<td>La ejecución correcta está interiorizada; el sistema se ejecuta casi sin esfuerzo consciente.</td>
+<td>Dejar de auditar: la competencia automática se pudre sin journal</td>
+</tr>
+</tbody>
+</table></div>
+<p>El "valle de la decepción" entre las fases 1 y 3 merece nombre propio porque es donde este programa pierde o salva estudiantes: tras los primeros meses de estudio honesto, el progreso se vuelve invisible justo cuando el conocimiento real está creciendo más rápido. La única forma de cruzarlo es medir el proceso (porcentaje de operaciones conforme al plan) en lugar del resultado (dinero de la semana).</p>
+<p><strong>Por qué 12 meses es la prueba mínima de consistencia.</strong> Tres razones independientes que se suman. Primera, los <strong>regímenes de mercado</strong> (<em>market regimes</em>): el mismo sistema se comporta distinto en tendencia, en rango y en alta o baja volatilidad; un trimestre solo te muestra un clima, y un sistema "ganador de tendencia" puede ser una máquina de perder cuando el clima cambia — necesitas atravesar al menos un cambio de régimen completo para conocer tu sistema. Segunda, la <strong>significancia estadística</strong>: como viste en la Lección 1.4, estimar la esperanza con confianza exige N ≥ 100 operaciones reales del sistema, y un swing trader disciplinado necesita meses para acumularlas. Tercera, la <strong>varianza de rachas</strong> (<em>streak variance</em>): un sistema perfectamente sano con 40 % de aciertos produce rachas de 8–10 pérdidas seguidas de forma natural, y solo un historial largo te enseña a distinguir racha normal de sistema roto. Menos de 12 meses de datos no separa suerte de oficio — no es pesimismo, es aritmética.</p>
+<h2>Analogía</h2>
+<p>Aprender trading es como aprender un idioma <strong>y</strong> un deporte a la vez. El idioma: vocabulario (soportes, BOS, liquidez) y gramática (la estructura del precio) se estudian leyendo — y en pocos meses puedes leer frases enteras. El deporte: la ejecución bajo presión (entrar cuando el gráfico se mueve contra tu análisis, aceptar la pérdida, esperar sin tocar nada) solo se entrena con repeticiones reales registradas — igual que nadie desarrolla el remate de voleibol leyendo biomecánica. Por eso este programa no tiene "capítulos" sino módulos con laboratorios y misiones: cada uno te obliga a las repeticiones. El error del autodidacta clásico es quedarse forever en el idioma (consumiendo contenido, cambiando de profesor cada mes) sin pagar las repeticiones del deporte.</p>
+<h2>Cómo se hace: la línea de tiempo honesta con criterios de avance</h2>
+<p>El programa estructura la formación en cuatro fases con <strong>criterios de avance verificables</strong> — el calendario es orientativo, el criterio manda: no se sube de fase por fecha, sino por desempeño demostrado <em>(heurística: los rangos reflejan la práctica de la formación seria, no una ley)</em>.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Fase</th>
+<th>Qué haces</th>
+<th>Duración orientativa</th>
+<th>Criterio para avanzar</th>
+<th>Dinero en riesgo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>F1 · Formación</strong></td>
+<td>Módulos 1–4 de FIT-12: conceptos + demo + plataforma</td>
+<td>1–2 meses</td>
+<td>Examen Nivel 1 ≥ 80 % + journal al día</td>
+<td>Cero: solo demo</td>
+</tr>
+<tr>
+<td><strong>F2 · Validación estadística</strong></td>
+<td>Módulos 5–9: construyes el Sistema v1.0 y lo backtesteas a ciegas</td>
+<td>2–4 meses</td>
+<td>N ≥ 100 backtests registrados con <ktx class="ktx" data-tex="E &gt; 0">E &gt; 0</ktx> después de costos</td>
+<td>Cero: backtest sobre histórico</td>
+</tr>
+<tr>
+<td><strong>F3 · Demo forward</strong></td>
+<td>Módulo 10: operas el sistema en demo en tiempo real con journal completo</td>
+<td>2–3 meses</td>
+<td>≥ 90 % de operaciones conformes al plan + 10 sesiones documentadas</td>
+<td>Cero: demo forward</td>
+</tr>
+<tr>
+<td><strong>F4 · Real micro</strong></td>
+<td>Módulos 11–12: dinero real en tamaño micro (0,25–0,5 % de riesgo por operación)</td>
+<td>3+ meses</td>
+<td>3 meses sin violar un solo freno de riesgo</td>
+<td>Micro: real, tamaño mínimo</td>
+</tr>
+</tbody>
+</table></div>
+<p>El diseño tiene una lógica exacta: <strong>el dinero real entra solo cuando ya tienes evidencia estadística de que <ktx class="ktx" data-tex="E &gt; 0">E &gt; 0</ktx> y evidencia conductual de que ejecutas el plan</strong>. Cada fase compra la evidencia de la siguiente; saltarte una fase no acelera el camino — solo compra la matrícula del mercado a precio completo. La fase F4 empieza en micro porque el dinero real cambia la respuesta emocional del cuerpo aunque el tamaño sea pequeño: es el "simulacro con temperatura", el paso intermedio honesto entre el demo y el tamaño pleno.</p>
+<h2>Error común</h2>
+<p>El más caro es <strong>confundir racha con competencia</strong>: tres semanas ganadoras en demo (o peor, en real) no son habilidad, son varianza — y el cerebro las procesa como certificado definitivo, disparando el salto de fase y el aumento de tamaño exactamente antes de que la varianza regrese a la media. El segundo es medir el progreso en P&amp;L: en formación, el indicador correcto es la <strong>ejecución conforme al plan</strong> — de cada 100 operaciones, ¿cuántas respetaron entrada, stop, objetivo y tamaño definidos? Ese porcentaje sí crece monotónicamente con el estudio; el dinero de la semana, no. El tercero es el calendario rígido a la inversa: creer que "si a los 12 meses no soy rentable, fracasé" — el criterio de avance es de desempeño, y la duración real varía por estilo, mercado y horas dedicadas.</p>
+<h2>Conexión cuantitativa</h2>
+<p>La curva de aprendizaje es una curva de <strong>esperanza evolucionando</strong>: en F1–F2 tu <ktx class="ktx" data-tex="E">E</ktx> por operación es negativa o desconocida — por eso el programa te mantiene en demo y backtest, donde una esperanza negativa cuesta tiempo en lugar de dinero. La fase F2 existe para fabricar la evidencia de que <ktx class="ktx" data-tex="E &gt; 0">E &gt; 0</ktx> con N ≥ 100 antes de exponer capital; la F3 mide si tu <ktx class="ktx" data-tex="P_w">P_w</ktx> real en vivo coincide con el del backtest (la deriva entre ambos se llama brecha de ejecución, y es pura psicología — Módulo 10). Saltar fases no cambia la esperanza del sistema: cambia quién la paga. Operar real en F1 es cobrar una esperanza negativa con dinero de verdad — la matrícula del mercado a su tarifa máxima, exactamente la que esta curva existe para evitarte.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li>La formación de un oficio de riesgo se mide en años supervisados; el trading sin licencia cobra esa supervisión en forma de pérdidas — matrícula del mercado.</li>
+<li>Cuatro fases: inconsciencia incompetente → consciencia incompetente (valle de la decepción) → consciencia competente → inconsciencia competente.</li>
+<li>12 meses es la prueba mínima por tres razones que se suman: regímenes de mercado completos, N ≥ 100 operaciones, y varianza de rachas.</li>
+<li>El avance entre fases es por criterio de desempeño, no por calendario; el dinero real entra en micro solo tras E &gt; 0 demostrada y ejecución ≥ 90 % conforme al plan.</li>
+<li>En formación, el progreso se mide en porcentaje de ejecución conforme al plan — nunca en el P&amp;L de la semana.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>Ubica a estas tres personas en una fase de la escalera: (a) lleva 2 meses estudiando, opera en demo perdiendo poco y piensa abandonar porque "no progresa"; (b) acierta 8 de 10 operaciones desde hace un mes y ya pidió presupuesto para una cuenta de 10 000; (c) ejecuta su plan sin dudar pero dejó de registrar operaciones "porque ya lo siente".</li>
+<li>¿Por qué un trimestre ganador no basta para declarar consistencia? Da las dos razones estadísticas.</li>
+<li>Tu sistema backtesteado tiene WR 40 %. Aparece una racha de 9 pérdidas seguidas en demo forward. ¿Qué revisas antes de tocar el sistema?</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. (a) Fase 2 — consciencia incompetente, cruzando el valle de la decepción: el criterio correcto es medir su ejecución conforme al plan, que probablemente está subiendo aunque el demo no lo refleje en dinero. (b) Fase 1 con riesgo máximo activo: está por saltar a real con evidencia de varianza, no de competencia — la racha de 8 aciertos con WR 40 % real es estadísticamente sospechosa de suerte o de reglas incumplidas (¿cerró antes, movió stops?). (c) Fase 4 en riesgo de pudrimiento: la competencia inconsciente sin auditoría se degrada — el journal es lo que mantiene viva la fase 4.
+2. (a) Un trimestre cabe dentro de un solo régimen de mercado: no sabes si el sistema sobrevive al siguiente clima. (b) N insuficiente: un trimestre de swing disciplinado puede tener 20–40 operaciones, muy por debajo del N ≥ 100 necesario para estimar la esperanza con confianza.
+3. Primero la probabilidad: con WR 40 %, una racha de 9 tiene probabilidad <ktx class="ktx" data-tex="0{,}6^9 \approx 1\%">0{,}6^9 \approx 1\%</ktx> en un punto dado, pero dentro de 100+ operaciones es un evento esperable (cálculo propio). Segundo, la ejecución: revisa si las 9 pérdidas fueron "en plan" (setup válido, stop respetado, tamaño correcto). Si ambas revisiones están limpias, la racha es varianza y el sistema sigue intacto: no se toca nada.
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="leccion-1-4.html"><span class="lbl">← Anterior</span><span class="ttl">Lección 1.4 · La esperanza matemática</span></a>
+    <a class="next" href="leccion-1-6.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 1.6 · Expectativas y presupuesto</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 7.2 · Los 10 componentes del sistema · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a class="active" href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>📐 N2 · Técnica<span class="sep">/</span>M7 · Construcción del Sistema<span class="sep">/</span>Lección 7.2 · Los 10 componentes del sistema</div>
+  <article class="doc-body">
+<h1>Lección 7.2 · Los 10 componentes del sistema</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>45–60 min de estudio</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-07.html">M7 · Construcción del Sistema</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td><a href="leccion-7-1.html">Lección 7.1 · Filosofía, Estrategia y Sistema</a></td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="leccion-7-3.html">Lección 7.3 · Arquetipos de setup</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>Un sistema no es "un conjunto de reglas" en abstracto: es una lista cerrada de <strong>preguntas que ya tienen respuesta</strong>. Cada componente de esta lección es una pregunta que tu negocio debe responder ANTES de abrir el gráfico, y cada hueco que dejas abierto es una puerta para la improvisación — que siempre entra disfrazada de "lectura del momento". Cuando revises los journals de traders que fracasan, casi siempre encontrarás el mismo patrón: 3 componentes definidos (entrada, mercado, tamaño a ojo) y 7 huecos. Cuando revises los de los que sobreviven, encontrarás lo contrario: las 10 preguntas respondidas por escrito, aunque algunas respuestas sean deliberadamente simples. Esta lección te da el esqueleto completo para que tu Sistema v1.0 del laboratorio no tenga ni un solo hueco.</p>
+<h2>Concepto</h2>
+<p>Los 10 componentes, agrupados por el momento en que actúan, con la pregunta que cierra cada uno y el ancla de la teoría que ya estudiaste:</p>
+<pre class="mermaid">flowchart TD
+    subgraph ANTES[&quot;🧭 ANTES DE ABRIR EL GRÁFICO — el contexto&quot;]
+        A1[&quot;1 · Mercado y vehículo&quot;]
+        A2[&quot;2 · Marcos temporales&quot;]
+        A3[&quot;3 · Régimen&quot;]
+    end
+    subgraph DURANTE[&quot;⚡ LA OPERACIÓN — el mecanismo&quot;]
+        D1[&quot;4 · Setup — arquetipo&quot;]
+        D2[&quot;5 · Gatillo de entrada&quot;]
+        D3[&quot;6 · Stop inicial&quot;]
+        D4[&quot;7 · Salidas y gestión post-entrada&quot;]
+    end
+    subgraph ALREDEDOR[&quot;🛡️ EL ENTORNO — los límites&quot;]
+        R1[&quot;8 · Riesgo y tamaño&quot;]
+        R2[&quot;9 · Filtros y horario&quot;]
+        R3[&quot;10 · Registro y revisión&quot;]
+    end
+    A1 --&gt; D1
+    A2 --&gt; D1
+    A3 --&gt; D1
+    D1 --&gt; D2 --&gt; D3 --&gt; D4
+    R1 -.-&gt;|&quot;autoriza o veta&quot;| D2
+    R2 -.-&gt;|&quot;cierra la ventana&quot;| D2
+    D4 --&gt; R3
+    style A3 fill:#e8f4f8
+    style D2 fill:#fff4e0
+    style R3 fill:#e0f0e0
+</pre>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Componente</th>
+<th>Pregunta que cierra</th>
+<th>Ancla teórica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Mercado y vehículo</strong></td>
+<td>¿Dónde opero y con qué instrumento — y por qué ese y no otro?</td>
+<td>M1.3 (coordenada), M2.6 (personalidad)</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Marcos temporales</strong></td>
+<td>¿Dónde decido, dónde marco zonas, dónde ejecuto?</td>
+<td>M5.6 (top-down de 3 capas)</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Régimen</strong></td>
+<td>¿En qué estado del mercado está permitido operar y en cuál no?</td>
+<td>M3.6 (regímenes), M6.7 (Weinstein)</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Setup (arquetipo)</strong></td>
+<td>¿Qué fenómeno concreto busco repetido?</td>
+<td>7.3 (los 4 arquetipos)</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Gatillo de entrada</strong></td>
+<td>¿Qué evento exacto autoriza pulsar el botón — tipo de orden y precio?</td>
+<td>M5.6 (gatillo), M4.2 (órdenes)</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Stop inicial</strong></td>
+<td>¿Dónde la idea está muerta — con qué margen para el ruido?</td>
+<td>M4.6 (SL como ley), M6.3 (ATR)</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>Salidas</strong></td>
+<td>¿Dónde me voy con ganancia — TP único, parciales, trailing?</td>
+<td>M5.3 (liquidez opuesta)</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>Gestión post-entrada</strong></td>
+<td>¿Qué hago (o me abstengo de hacer) con la posición abierta?</td>
+<td>Regla de simplicidad (7.6)</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>Riesgo y tamaño</strong></td>
+<td>¿Cuánto pierdo si el SL salta — y cómo lo calculo cada vez?</td>
+<td>M1.4 (esperanza), M8 (formalización)</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>Filtros, horario y registro</strong></td>
+<td>¿Cuándo NO opero (horario, noticias) y cómo documento cada operación?</td>
+<td>M2.5-2.6 (sesiones, macro), M9 (journal)</td>
+</tr>
+</tbody>
+</table></div>
+<p>Tres observaciones de diseño que distinguen un sistema profesional de una lista de deseos:</p>
+<ol>
+<li><strong>El régimen (3) filtra al setup (4), no al revés.</strong> Primero preguntas "¿estamos en un estado donde mi arquetipo tiene sentido?" y solo después buscas el setup. El principiante hace lo contrario: encuentra el patrón y luego busca excusas para el régimen.</li>
+<li><strong>El gatillo (5) es un evento, no una sensación.</strong> "Cuando se ve fuerte" no es un gatillo; "cierre M15 por encima del 50 % de la vela de barrida" sí. La diferencia es la misma del test del clon: un evento se verifica, una sensación no.</li>
+<li><strong>La gestión post-entrada (8) incluye la decisión de no hacer nada.</strong> El sistema v1.0 del programa deliberadamente no mueve stops ni toma parciales: cada movimiento adicional es una decisión más donde tu psicología puede colarse. La abstención escrita también es una regla.</li>
+</ol>
+<h2>Analogía</h2>
+<p>La lista de verificación previa al vuelo (checklist) de la aviación. Existe porque en 1935 el prototipo del B-17 se estrelló por un olvido trivial — los frenos del timón puestos — y la respuesta de la industria no fue "pilotos más atentos": fue una lista escrita donde cada ítem existe porque alguien lo olvidó una vez, con un coste. Tu sistema es tu checklist: el componente "horario" existe porque algún trader arruinó su semana operando a las 3 de la madrugada; el "riesgo y tamaño" existe porque alguien puso el 20 % "porque esta sí era clara"; la "gestión post-entrada" con abstención existe porque alguien movió su stop tres veces hasta convertir una pérdida de 1R en una de 5R. No es burocracia: es la memoria empaquetada de errores que tú todavía no has cometido — y que la lista te evita cometer.</p>
+<h2>Cómo se hace: los 10 componentes rellenados con el caso maestro</h2>
+<p>Así se ve el esqueleto con las respuestas del programa (la plantilla vacía está en el <a href="hub-mod-07.html">laboratorio del hub</a> para que la copies):</p>
+<ol>
+<li><strong>Mercado y vehículo:</strong> EUR/USD spot en demo; por qué: la personalidad del M2.6 (líquido, spreads bajos, sesiones claras) y es donde ya tienes mecánica entrenada.</li>
+<li><strong>Marcos temporales:</strong> H4 para sesgo y zonas (capa 1 del top-down), M15 para gatillo (capa 3). Nada por debajo de M15 — el ruido del M1 no paga.</li>
+<li><strong>Régimen:</strong> solo largos si H4 muestra secuencia HH/HL activa con precio sobre EMA 200 creciente <em>(el caso: low 1,0745 → HL 1,0798 → BOS sobre 1,0860)</em>; solo cortos con el espejo; sin dirección → sin operación.</li>
+<li><strong>Setup:</strong> pullback en tendencia con barrida de liquidez hacia zona de interés (OB/FVG) — el arquetipo del que la receta es una instancia (zona 1,0820–1,0824, barrida a 1,0792).</li>
+<li><strong>Gatillo:</strong> cierre M15 que recupera el nivel barrido; entrada limit en el 50 % del FVG activo (1,0820 en el caso).</li>
+<li><strong>Stop inicial:</strong> bajo el extremo de la barrida con margen de 0,25 × ATR(14) H4; auditoría de sanidad: el SL total debe medir entre 1,0 y 2,0 ATR <em>(32 pips ≈ 1,52 ATR — pasa)</em>.</li>
+<li><strong>Salida:</strong> TP único en la liquidez opuesta (el último HH: 1,0886 en el caso, 66 pips, R:B ≈ 2,1) o 2R fijos, lo que llegue antes. Sin parciales en v1.0.</li>
+<li><strong>Gestión post-entrada:</strong> ninguna — la posición vive sola hasta SL o TP. La abstención está escrita para que no puedas "ayudar".</li>
+<li><strong>Riesgo y tamaño:</strong> 1 % fijo del capital inicial por operación (19,20 $ sobre 2 000 $ en el caso; el lote sale del SL: 32 pips → 0,06 lotes). La formalización completa llega en M8.</li>
+<li><strong>Filtros, horario y registro:</strong> solo solapamiento Londres–NY en hora Bolivia; fuera de la ventana roja de noticias (15/15 y FOMC 30/30, M2.6); dashboard M6 con máximo 3 piezas y reglas escritas; toda operación al journal con captura antes de avanzar el replay.</li>
+</ol>
+<p>Observa que ninguna regla menciona un indicador como veredicto: el dashboard audita (ATR para el stop, régimen con EMA/estructura), la estructura decide. Es exactamente la constitución del M6.1 aplicada.</p>
+<h2>Error común</h2>
+<p><strong>(1) Los componentes incompletos.</strong> Definir 4 y dejar 6 huecos: sin horario operarás a las 3 de la madrugada "porque había señal"; sin gestión escrita moverás el stop; sin régimen comprarás pullbacks en Etapa 4. <strong>(2) Los componentes decorativos.</strong> Escribir "gestión: trailing stop dinámico según estructura" cuando llevas 30 operaciones en tu vida: componentes que no sabes ejecutar hoy son humo — mejor una regla simple que una sofisticada que no cumples. <strong>(3) El componente-que-es-tres.</strong> Meter régimen + setup + gatillo en una sola frase ("compro cuando está alcista y hace pullback y confirma"): son tres preguntas distintas y cada una necesita su propia respuesta auditable. <strong>(4) Tamaño "a ojo" dentro de un sistema escrito.</strong> Si los otros 9 componentes son exactos y el 9 es "según me sienta", el sistema entero queda contaminado: el tamaño es el multiplicador de todo lo demás. <strong>(5) Sobredefinir.</strong> 27 reglas con subcondiciones: cada regla extra es un punto de contradicción potencial entre reglas y una regla extra que romperás. La plantilla cierra con 10 componentes — cada uno con 1-3 frases. Si necesitas más, probablemente estés ajustando al pasado (lección 7.6).</p>
+<h2>Conexión cuantitativa</h2>
+<p>Cada componente no escrito es un grado de libertad que tu ejecución aleatoriza, y la aleatorización tiene coste medible: si tu stop "depende del gráfico" y tu gestión "depende del ánimo", entonces <ktx class="ktx" data-tex="W">W</ktx> y <ktx class="ktx" data-tex="P_w">P_w</ktx> de tu esperanza <ktx class="ktx" data-tex="E = (P_w \times W) - (P_l \times L)">E = (P_w \times W) - (P_l \times L)</ktx> no son parámetros del sistema sino de la mezcla sistema+humor — y la varianza de la mezcla es mayor que la del sistema. Concreto: con riesgo fijo de 1R y 30 operaciones, un sistema cerrado produce una distribución de resultados con dispersión atribuible al mercado; el mismo sistema con 3 componentes abiertos produce dispersión de mercado <strong>más</strong> dispersión de ejecución, y tú no puedes separarlas. Cuando en M9 midas el sistema, la conclusión honesta será "no sé si el sistema es malo o mi ejecución lo fue". La escritura completa es lo que vuelve interpretable el número final: por eso el criterio de graduación del módulo exige <strong>completitud de componentes</strong> antes que cualquier resultado.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li>Un sistema es una lista cerrada de 10 preguntas respondidas; cada hueco es una puerta de la improvisación.</li>
+<li>El orden importa: el régimen filtra al setup — primero "¿puedo operar?" y solo después "¿veo mi patrón?".</li>
+<li>Gatillo = evento verificable, nunca una sensación; la misma lógica del test del clon aplicada al botón.</li>
+<li>La gestión post-entrada incluye la abstención escrita: menos decisiones en vivo = menos puertas para la psicología.</li>
+<li>El caso maestro rellena los 10 con números cerrados — la receta era el sistema v0 del programa.</li>
+<li>Componentes decorativos (que no puedes ejecutar hoy) son humo: simple y cumplible antes que sofisticado y roto.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>Tu plan dice: <em>"Compro pullbacks en EUR/USD"</em>. Enumera los componentes que faltan y el error concreto que cada hueco produciría en las próximas 2 semanas.</li>
+<li>¿Por qué el v1.0 del programa no usa parciales ni trailing? Argumenta con la regla de decisiones y con el criterio de audibilidad de M9.</li>
+<li>Reordena esta operación del caso maestro en los componentes correctos: <em>"entrada limit 1,0820"</em> · <em>"HH/HL activo en H4"</em> · <em>"TP 1,0886"</em> · <em>"solo Londres–NY"</em> · <em>"lote 0,06 por SL de 32 pips"</em>.</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. Faltan: (2) marcos — ¿pullback visto en qué marco? sin esto mezclarás señales D1 con ejecución M1; (3) régimen — comprarás pullbacks en tendencia bajista o Etapa 4; (4) setup exacto — ¿qué cuenta como pullback, hacia qué zona?; (5) gatillo — entrarás "cuando se sienta listo"; (6) stop — o no pones, o lo pides "un poco más lejos" cada vez; (7) salidas — cerrarás por miedo a mitad del recorrido; (8) gestión — moverás el stop; (9) riesgo — tamaño a ojo: 5 % un día, 0,5 % otro; (10) horario y registro — operaciones nocturnas sin journal. En dos semanas: resultados no replicables y un journal inauditable.
+2. Regla de decisiones: cada gestión en vivo es una nueva decisión y cada decisión expone a la psicología (M10) — la abstención escrita elimina la clase entera de errores de gestión. Audibilidad: con gestión activa, el resultado final mezcla la calidad del sistema con la calidad de tus maniobras (¿cuándo moviste?, ¿por qué ahí?) — el número final deja de medir al sistema. Con "nada" escrito, el resultado es 100 % atribuible al sistema y comparable operación a operación.
+3. Entrada limit 1,0820 → componente 5 (gatillo, con tipo de orden y precio). HH/HL activo H4 → componente 3 (régimen). TP 1,0886 → componente 7 (salidas). Solo Londres–NY → componente 10 (horario). Lote 0,06 por SL de 32 pips → componente 9 (riesgo y tamaño — el lote deriva del stop, no de la intuición).
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="leccion-7-1.html"><span class="lbl">← Anterior</span><span class="ttl">Lección 7.1 · Filosofía, Estrategia y Sistema — el test del clon</span></a>
+    <a class="next" href="leccion-7-3.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 7.3 · Arquetipos de setup — los 4 caminos hacia la ventaja</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

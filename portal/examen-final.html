@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>🏆 Examen Integral Final — Certificación FIT-12 (M1–M12) · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a class="active" href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>Recursos<span class="sep">/</span>🏆 Examen Integral Final — Certificación FIT-12 (M1–M12)</div>
+  <article class="doc-body">
+<h1>🏆 Examen Integral Final — Certificación FIT-12 (M1–M12)</h1>
+<blockquote class="gfm-warn"><p><strong>⚠️ WARNING:</strong> <strong>Contenido educativo.</strong> Este examen evalúa comprensión del programa FIT-12. No constituye asesoría financiera.</p>
+</blockquote>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🏆 Nivel</td>
+<td>Certificación interna FIT-12 — examen integral transversal</td>
+</tr>
+<tr>
+<td>📦 Cubre</td>
+<td>M1–M12: los 4 niveles completos del programa</td>
+</tr>
+<tr>
+<td>📋 Formato</td>
+<td>50 preguntas transversales (6 bloques) + defensa socrática extendida del Plan</td>
+</tr>
+<tr>
+<td>🎯 Aprobado</td>
+<td><strong>≥ 43/50 (85 %)</strong></td>
+</tr>
+<tr>
+<td>📏 Modalidad</td>
+<td>Sin apuntes, sin lecciones, sin glosario. En una sola sesión de 120–150 min</td>
+</tr>
+<tr>
+<td>🔁 Repetición</td>
+<td>No alcanza el 43: versión B a los 7 días (orada por el agente) — la misma regla del examen N1</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Instrucciones</h2>
+<ol>
+<li><strong>La sesión:</strong> 120–150 min sin interrupciones. El examen mide el programa completo de un vistazo: la coherencia entre módulos pesa tanto como cada módulo.</li>
+<li><strong>Los cálculos con número:</strong> fórmula + sustitución. El número sin planteo no acredita.</li>
+<li><strong>Autocorrección honesta:</strong> corrige con la clave, registra en <code>journal/evaluaciones.md</code> y lleva los bloques fallidos a la revisión — el examen también es evidencia.</li>
+<li><strong>Después del examen:</strong> la defensa socrática extendida del Plan (misión M-12) — el examen abre la puerta, la defensa la cruza.</li>
+</ol>
+<hr />
+<h2>Bloque A · M1–M2 — El negocio y el motor del precio (8 preguntas)</h2>
+<p><strong>A1.</strong> Define la esperanza matemática con su fórmula y explica por qué es "la brújula" del programa (qué autoriza y qué prohíbe).</p>
+<p><strong>A2.</strong> La regla 85/15: qué pondera, por qué es heurística y qué consecuencia estructural tuvo en el diseño del FIT-12.</p>
+<p><strong>A3.</strong> Diferencia speculator / gambler / investor con el criterio del programa, y ubica dónde quedó TU carta de expectativas (qué prometiste y qué veto firmaste).</p>
+<p><strong>A4.</strong> La subasta de mercado: explica en 3 pasos cómo se forma el precio y qué papel juegan los limit orders y market orders.</p>
+<p><strong>A5.</strong> Oferta y demanda aplicadas: ¿por qué un nivel "aguantó" tres veces y cedió en la cuarta? Usa la acumulación de órdenes y la liquidez en tu explicación.</p>
+<p><strong>A6.</strong> Liquidez: define el concepto, su medida aproximada en retail, y por qué los niveles obvios concentran órdenes (el puente con los pools de M5).</p>
+<p><strong>A7.</strong> Sesiones de mercado: ¿por qué tu ventana de ejecución vive en el solapamiento de sesiones y qué cambia en la volatilidad fuera de él (con la tabla de tu M2)?</p>
+<p><strong>A8.</strong> Calendario macro: qué tipo de eventos respetas como obstáculos y cómo se integra a tu protocolo pre-sesión (la sección 3 de tu plan).</p>
+<h2>Bloque B · M3–M4 — El gráfico y la plataforma (8 preguntas)</h2>
+<p><strong>B1.</strong> Anatomía de la vela: qué informa cada parte, y por qué el close es el dato rey del programa (con la regla de la vela cerrada de M9 como consecuencia).</p>
+<p><strong>B2.</strong> Los 4 ciclos de mercado: nómbralos con su transición típica y di en cuál NO se opera tu sistema (con la razón).</p>
+<p><strong>B3.</strong> Soporte/resistencia con gradiente: por qué no todos los niveles valen lo mismo y qué tres factores suben la fiabilidad de una zona.</p>
+<p><strong>B4.</strong> Confirmación en 3 pasos: la secuencia completa (nivel → reacción → disparo) aplicada a un pullback de tu sistema.</p>
+<p><strong>B5.</strong> Patrones con honestidad de evidencia: qué son el whipsaw y la confirmación tardía, y por qué el programa los etiqueta como costes estadísticos.</p>
+<p><strong>B6.</strong> Tipos de órdenes: define market, limit, stop y OCO, y cuál usa tu sistema para entrada y protección (con la razón estructural).</p>
+<p><strong>B7.</strong> Los 4 costos de operar: nómbralos y calcula el coste total de 20 operaciones al mes con spread 1,2 pips + comisión 7 $ por lote round-turn, 0,25 lotes por operación (EUR/USD).</p>
+<p><strong>B8.</strong> El SL como ley: formula el checklist 6/6 de colocación y explica qué etiqueta del journal recibe su violación.</p>
+<h2>Bloque C · M5–M7 — Nivel 2 técnico (10 preguntas)</h2>
+<p><strong>C1.</strong> Estructura: define HH/HL y la frase de sesgo que produce, y el test de consecuencia que valida la tendencia.</p>
+<p><strong>C2.</strong> BOS vs CHoCH: definición exacta, el papel del cierre confirmatorio y la implicación operativa de cada uno.</p>
+<p><strong>C3.</strong> Mapa unificado PA↔SMC: dos equivalencias concretas y por qué el programa unificó nomenclatura (el vacío D1).</p>
+<p><strong>C4.</strong> Pools de liquidez: la anatomía de la barrida en 3 pasos y por qué el precio "busca" los equal highs/lows.</p>
+<p><strong>C5.</strong> FVG: define el hueco de 3 velas, sus dos usos y qué significa la mitigación completa.</p>
+<p><strong>C6.</strong> Top-down: las 3 capas (sesgo/zonas/gatillo) con sus timeframes y qué decisión se toma en cada una.</p>
+<p><strong>C7.</strong> Indicadores con honestidad: la regla del máximo 3 y el radar de fiabilidad — por qué el ATR es "medición" y el estocástico "opinión" (o el par que elijas del radar).</p>
+<p><strong>C8.</strong> Fibonacci con límites: qué mide realmente el retroceso 61,8 % en el programa (probabilidad vs proyección) y su papel de zona, no de señal.</p>
+<p><strong>C9.</strong> Sistema: los 10 componentes de tu v1.1 y el test del clon aplicado a tu setup — qué componente es el más débil y tu plan con él.</p>
+<p><strong>C10.</strong> Matriz WR × R:B: con WR 40 % y R:B 2,1 calcula E bruta y WR de equilibrio bruto; añade coste 0,08R y da el equilibrio neto. ¿En qué zona cae tu sistema?</p>
+<h2>Bloque D · M8–M9 — Nivel 3: gestión y evidencia (10 preguntas)</h2>
+<p><strong>D1.</strong> Asimetría del drawdown: calcula la recuperación de −20 % y explica por qué el objetivo del negocio es sobrevivir, no maximizar.</p>
+<p><strong>D2.</strong> Position sizing completo: cuenta 8 500 $, SL 35 pips EUR/USD, riesgo 1 % — el tamaño de posición con los pasos declarados.</p>
+<p><strong>D3.</strong> Riesgo de cartera: con topes 2 % motor / 3 % global, ¿cómo despliegas 3 señales correlacionadas +0,8? Formula la distribución y su razón.</p>
+<p><strong>D4.</strong> La cascada: los 3 niveles con su acción y por qué el apagado es protocolo firmado (conecta con el tilt de M10).</p>
+<p><strong>D5.</strong> Epistemología del backtest: calcula el IC 95 % de un WR 42 % a N=100 y di qué decisión de 3 vías autoriza (con el equilibrio neto 34,8 % como referencia).</p>
+<p><strong>D6.</strong> Los 3 sesgos del backtest con SU antídoto y UNA aparición concreta que hayas visto (o esperado) en tu propio laboratorio.</p>
+<p><strong>D7.</strong> Métricas: con 8 ganadoras +2,1R y 12 perdedoras −1R, coste 0,08R — calcula WR, R:B, E bruta, E neta y PF neto, y clasifica la decisión.</p>
+<p><strong>D8.</strong> Forward testing: los 4 huecos que mide y qué significa "dentro de los intervalos" (con la regla de N del forward).</p>
+<p><strong>D9.</strong> Journal v1: la taxonomía E0-E7 completa y la distinción pérdida ≠ error — ¿por qué una ganancia fuera de plan es el error más peligroso (el refuerzo de 10.4)?</p>
+<p><strong>D10.</strong> Revisión: las 4 condiciones acumulativas de la ventana de modificación y la regla de UNA — qué entra al changelog y qué a la lista negra.</p>
+<h2>Bloque E · M10–M11 — Psicología e industria (10 preguntas)</h2>
+<p><strong>E1.</strong> Secuestro emocional: la cascada de 4 pasos y el orden del programa (impedir → detectar → bloquear) con su herramienta por capa.</p>
+<p><strong>E2.</strong> Los 5 miedos de Douglas con UNA manifestación conductual cada uno, y la etiqueta del journal que cada uno produce cuando actúa.</p>
+<p><strong>E3.</strong> Las 5 avaricias con su coste: calcula el daño del chasing de 20 pips en tu caso maestro (R:B y E) y el de 20 operaciones de ruido al mes.</p>
+<p><strong>E4.</strong> Pérdida ≠ Error: la matriz 2×2 y la aritmética de la contaminación — ¿qué E queda si añades 15 instintos (−0,02R) a 20 operaciones de sistema (+0,16R)?</p>
+<p><strong>E5.</strong> Sesgos de ejecución: el antídoto estructural de cada uno (confirmación, confianza, anclaje, revancha) — y por qué el conocimiento solo no protege.</p>
+<p><strong>E6.</strong> Estoicismo: la dicotomía del control como descripción de tu sistema (2 ejemplos por columna) y la lectura de σ individual (±1,52R) sobre la serenidad ante la racha.</p>
+<p><strong>E7.</strong> Temperatura pre-sesión: las 3 dimensiones con escala, los umbrales y la sesión más peligrosa del mes (¿por qué?).</p>
+<p><strong>E8.</strong> Broker: A-Book vs B-Book con sus conflictos, y los 2 primeros pilares de selección con SU verificación (registro público y warn lists).</p>
+<p><strong>E9.</strong> Prop firms: el embudo de ingresos (dónde nace el ingreso y qué es el fondeado para el modelo) + las 2 cifras del sector y su fuente etiquetada.</p>
+<p><strong>E10.</strong> Reglas finas y puertas: la trampa del drawdown trailing (+7 % de ganancia, ¿dónde está el suelo?) y las 4 puertas del 11.6 con su evidencia.</p>
+<h2>Bloque F · M12 — Integración final (4 preguntas)</h2>
+<p><strong>F1.</strong> Tu Plan de Trading: reproduce las 10 secciones con su fuente y defiende la más importante de TU plan (con la razón de TU caso).</p>
+<p><strong>F2.</strong> El dashboard de 12 KPIs: ¿qué 3 filas son tus más débiles según TU journal y qué UNA mejora de la ventana las ataca (una sola)?</p>
+<p><strong>F3.</strong> La hoja de ruta: tu fase actual, su candado, y el plan de producción de esa evidencia este trimestre — con la regla de la baja de fase firmada.</p>
+<p><strong>F4.</strong> El compromiso: recita los 5 artículos de tu Constitución y responde la pregunta del changelog para el próximo sistema milagroso que aparezca en tu feed.</p>
+<hr />
+<details>
+<summary>Ver clave de respuestas — Bloque A (M1–M2)</summary>
+
+1. <ktx class="ktx" data-tex="E = P_w W - P_l L">E = P_w W - P_l L</ktx>: la esperanza por operación — brújula porque autoriza a operar SOLO lo medido positivo (y su intervalo) y prohíbe apostar inventario en lo no medido: todo el programa orbita esa ecuación (sistemas, sizing, fases).
+2. Pondera psicología + riesgo (~85 %) sobre técnica (~15 %) — heurística porque no es una medición exacta sino una advertencia estructural; consecuencia: el N3 (riesgo+evidencia) y el M10 (psicología) ANTES de la profesionalización, y componentes de conducta en cada módulo.
+3. Speculator: asume riesgo deliberado medible con sistema; gambler: riesgo por entretenimiento/impulso sin ventaja; investor: captura crecimiento subyacente a largo plazo. La Carta de Expectativas (M1) fijó tus objetivos realistas de proceso y firmó el veto CRO: nunca "vivir del trading" como marco de entrada — la primera operación PROCESADA, no el "primer dólar".
+4. (1) Compradores y vendedores emiten órdenes; (2) los limit orders construyen el libro (liquidez pasiva), los market orders la consumen (liquidez agresiva); (3) el precio es el último cruce que equilibra la agresión con la pasividad — se mueve hacia donde el desequilibrio de agresión empuja.
+5. Cada test del nivel consume las órdenes defensivas acumuladas detrás; los stops crecen tras cada test (equal highs/lows); la 4ª visita llega con suficiente agresión (o una barrida previa de stops) para absorber la defensa restante — el nivel no "aguanta": una subasta se resuelve cuando una de las partes se queda sin munición.
+6. Liquidez = facilidad de ejecutar tamaño sin mover precio (profundidad del libro — aproximada en retail por volumen y spread). Los niveles obvios concentran órdenes porque ahí descansa el consenso (stops de compradores bajo soportes, etc.) — y quien necesita tamaño (grandes players) debe ejecutar donde hay masa: por eso el precio "visita" los pools (M5).
+7. El solapamiento Londres-NY concentra volumen y spreads normales; fuera del pico el spread se ensancha, la profundidad baja y el ruido domina — tu ventana de ejecución (10.7) vive en el pico porque combina calidad de señal y coste; fuera, la proporción ruido/costo empeora tu E efectiva.
+8. Eventos de alto impacto (inflación, empleo, decisiones de bancos centrales) como obstáculos: o se operan con regla explícita del plan o se respetan como ventana de no-entrada — el calendario entra al pre-sesión (sección 3: condiciones de "no operar hoy") y a la restricción de noticias si fondeas (11.4).
+
+</details>
+
+<details>
+<summary>Ver clave de respuestas — Bloque B (M3–M4)</summary>
+
+1. La vela informa apertura/cierre/máximo/mínimo del periodo; el close es el consenso final del periodo (donde quedó la subasta al cerrar) — por eso el programa decide SOLO con velas cerradas: el high/low/close en formación no existe todavía (regla de la vela cerrada de 9.1: antídoto del look-ahead).
+2. Acumulación → tendencia alcista → distribución → tendencia bajista (el ciclo de Wyckoff simplificado del programa); en las transiciones laterales con whipsaw dominante tu sistema NO opera (o reduce): el régimen que tu sección 3 del plan declara.
+3. El gradiente de fiabilidad: no todos los niveles valen igual — sube con (1) número de toques con reacción real, (2) marco temporal superior al de ejecución, (3) confluencia (zona + estructura + liquidez). Un nivel de H4 con historia y confluencia manda sobre uno de M15 dibujado a ojo.
+4. Nivel identificado en TF superior → reacción verificable (vela de rechazo con cierre, M3) → disparo del sistema (definición operativa del M7). La confirmación tardía cuesta R:B; la anticipada cuesta fiabilidad — tu sistema eligió su punto en la definición operativa.
+5. Whipsaw: la falsa ruptura que saca al stop y revierte (el coste de operar transiciones); confirmación tardía: esperar más reduce señales y R:B. El programa los etiqueta E0: son costes estadísticos del régimen, no errores — la fiabilidad honesta de los patrones los presupone.
+6. Market: ejecución inmediata al precio (entrada a mercado: pagas spread); limit: precio o mejor (entradas en zona); stop: se activa al tocar (protección SL, entradas en ruptura); OCO: una cancela la otra (SL+TP vinculados — la gestión automática del plan). Tu sistema: entrada limit en zona + stop-loss SIEMPRE (la ley de M4).
+7. Spread: 1,2 pips × 0,25 lote × 10 $/pip = 3 $ por operación; comisión: 7 $ × 0,25 = 1,75 $; total 4,75 $ × 20 ops = **95 $/mes**. En R del caso maestro (19,20 $): ~4,9R/mes de costes — el "ladrón silencioso" que el dashboard de 12.3 audita.
+8. El checklist 6/6 de colocación: SL por estructura/geometría de la zona (no por distancia fija), fuera del ruido, respeta el riesgo máximo en $, se coloca ANTES de la entrada, no se mueve en contra, y su distancia define el tamaño (sizing desde el SL). Su violación es **E3** (SL manipulado) — la etiqueta que la revisión cuenta.
+
+</details>
+
+<details>
+<summary>Ver clave de respuestas — Bloque C (M5–M7)</summary>
+
+1. HH/HL: máximos y mínimos crecientes = tendencia alcista; frase de sesgo: "los compradores tienen el control en cada retroceso"; test de consecuencia: el impulso supera el máximo previo y el pullback respeta el mínimo anterior — sin consecuencia, es lateral disfrazado.
+2. BOS: quiebre de estructura EN la dirección de la tendencia (continuación confirmada); CHoCH: primer quiebre CONTRA la tendencia (alerta de reversión, no confirmación). Ambos exigen cierre confirmatorio (la vela cierra más allá del nivel — el intraday no cuenta). Implicación: BOS busca continuación con el sesgo; CHoCH cancela aperturas en el sentido anterior y exige reevaluación.
+3. Equivalencias: "ruptura de nivel confirmada" (PA clásico) = BOS (SMC); "falsa ruptura / barrida de stops" (PA) = liquidity grab / stop hunt (SMC). El programa unificó porque los cursos usaban vocabularios incompatibles (D1): un solo mapa, un solo journal.
+4. Anatomía: (1) nivel obvio con stops acumulados (equal highs/lows); (2) el precio lo atraviesa activando esos stops (órdenes de cierre = combustible de liquidez); (3) reversión rápida con el volumen capturado. El precio "busca" los pools porque detrás hay masa de órdenes que permite ejecutar tamaño — y la barrida realimenta el nivel con más stop hunters a la próxima.
+5. FVG: hueco entre la mecha 1 y la mecha 3 (la vela 2 es enorme) — zona de desequilibrio; usos: imán (el precio vuelve a llenarla) y zona de entrada (reacción en su borde con confirmación); mitigación: la primera visita que llena total o parcialmente el hueco — "la primera visita es la que vale" (las siguientes ya no tienen desequilibrio).
+6. Capas: sesgo en 4H/D (¿compro o vendo?, ¿qué regímenes?) → zonas en 1H/15M (¿dónde es el precio interesante? pools, FVG, OB) → gatillo en 5M (¿cuándo dispara mi definición operativa?). Decisión: la capa superior filtra dirección, la media ubica, la inferior autoriza el disparo — nunca operas contra la capa superior.
+7. El ATR es medición (volatilidad realizada, dato objetivo) y por eso califica para sizing/filtros; los osciladores tipo estocástico son opinion (umbrales elegidos, sinventaja demostrada per se) y entran solo como confluencia con fiabilidad auditable. La regla del máximo 3: más indicadores no suman fiabilidad — suman gráfico y contradicciones; cada medidor extra debe justificar su evidencia en el radar.
+8. El 61,8 % no "funciona" porque sea mágico: es una zona estadística de retroceso observada — el programa la usa como zona de interés (donde AUMENTA la vigilancia), nunca como señal de entrada por sí sola; la señal la da la definición operativa (reacción + disparo) — la proyección no es probabilidad.
+9. (Respuesta personal): los 10 componentes (mercado, dirección, zona, gatillo, riesgo, gestión, horario, registro, excepciones, revisión) — el débil típico: el componente de gestión (parciales/TP con deriva R medida) — plan: la UNA mejora de la ventana con métrica (deriva R plan vs real del M9).
+10. E bruta = 0,4×2,1 − 0,6×1 = **+0,24R**; equilibrio bruto WR* = 1/3,1 = **32,3 %**; con coste: equilibrio neto = 1,08/3,1 = **34,8 %** → el sistema cae en zona **verde** (WR 40 % > 34,8 % con margen, E neta +0,16R, PF neto 1,25) — y la decisión de 3 vías (D5) lo confirma con su intervalo.
+
+</details>
+
+<details>
+<summary>Ver clave de respuestas — Bloque D (M8–M9)</summary>
+
+1. Recuperar −20 % exige +25 % (1/0,80): la asimetría crece no lineal (−50 % exige +100 %) — el objetivo del negocio es sobrevivir las rachas con inventario suficiente para que la esperanza trabaje: maximizar el riesgo maximiza la probabilidad de la cola que no tiene recuperación.
+2. Riesgo: 1 % × 8 500 = 85 $. Valor de pip por lote: 10 $ → lotes = 85/(35 × 10) = **0,24 lotes**. Pasos: riesgo en $ → distancia SL → valor de pip → tamaño — verificado con la calculadora y el oráculo (`position_sizing.py`).
+3. Con correlación +0,8 las 3 señales son casi una posición: el tope motor (2 %) aplica al bloque — distribución ejemplo: 1 % la de mejor calidad + 0,5 % + 0,5 %, total 2 % (o solo la mejor con 1 %). Nunca 3 × 1 %: el tope global (3 %) existe para que ni el peor escenario de racha quiebre antes de que la esperanza trabaje.
+4. Niveles: −2 % día (parada: cerrar plataforma, journal) · −4 % semana (revisión obligatoria + riesgo reducido) · −6 % mes (apagado total hasta revisión completa y reactivación firmada). Es protocolo porque en ese estado la PFC ya no decide (10.1): la regla decide por ti — el tilt es su caso de uso.
+5. IC = 1,96×√(0,42×0,58/100) = 1,96×0,0494 = ±**9,7 pp** → [32,3 %, 51,7 %]: el intervalo incluye el equilibrio neto 34,8 % — decisión **ámbar**: operar provisional (0,25-0,5 %), seguir midiendo; no verde (el peor caso es perdedor) ni rojo (el mejor caso es sólido).
+6. Supervivencia (borrar filas incómodas → antídoto: todo entra y se etiqueta); data-mining (probar variantes y reportar la mejor → hipótesis/N declarados antes); look-ahead (decidir con el futuro → vela cerrada). La aparición concreta es TU experiencia del laboratorio (el examinador la escuchará en la socrática).
+7. WR = 8/20 = 40 %; R:B = 2,1; E bruta = 0,4×2,1 − 0,6 = +0,24R; E neta = 0,4×2,02 − 0,6×1,08 = 0,808 − 0,648 = **+0,16R**; PF neto = 8,08/6,48 = **1,25** → verde (PF ≥ 1,25, E neta positiva, WR > equilibrio 34,8 %).
+8. Los 4 huecos: spread vivo, slippage del SL, tu ejecución (disparos/deriva R), infraestructura. "Dentro de los intervalos": las métricas forward caen dentro del IC del backtest (no tienen que ser mejores) — con N mínimo 20-30 antes de leer nada.
+9. E0 en plan · E1 sin setup · E2 entrada fuera de regla · E3 SL manipulado · E4 sizing fuera · E5 gestión improvisada · E6 freno ignorado · E7 ejecución técnica. La ganancia fuera de plan es la más peligrosa porque el refuerzo dopaminérgico premia el circuito erróneo (10.4): el error castigado corrige, el error premiado se instala.
+10. Condiciones: fin de mes + evidencia con N suficiente + UNA modificación por vez + re-test planificado (50-100). Changelog: la modificación única con fecha y evidencia. Lista negra: los cambios prohibidos (riesgo estructural, sizing, "inspiraciones" post-racha) — lo que no se toca nunca sin N completo.
+
+</details>
+
+<details>
+<summary>Ver clave de respuestas — Bloque E (M10–M11)</summary>
+
+1. Cascada: estímulo → amígdala (ms, pre-consciente) → hormonas (cortisol: túnel) → PFC degradada. Orden: impedir (temperatura pre-sesión), detectar (4 detectores + etiquetación verbal), bloquear (checklist + cascada) — de la intervención más barata a la más cara.
+2. Equivocarse → parálisis/no-disparos (E0 desarma: coste, no error) · perder dinero → cerrar antes del SL (E3) · quedarse fuera → FOMO/chasing (E1/E2) · devolver ganancias → cerrar el ganador temprano (deriva R) · lo desconocido → congelarse ante noticias/sobre-preparación.
+3. Chasing de 20 pips (entrada 1,0840): SL 52, TP 46 → R:B 0,88 → E = 0,4×0,88 − 0,6 = **−0,25R bruto** por operación perseguida. Overtrading: 20 ops de ruido × (−0,08R) = **−1,6R/mes** — la mitad de la esperanza del caso maestro donada al spread.
+4. E mixta = (20×0,16 + 15×(−0,02))/35 = (3,2 − 0,3)/35 = **+0,083R** — la mitad de la esperanza original diluida sin que ninguna fila "salga mal"; el reemplazo (abandonar el sistema tras premios casuales) es el escenario letal.
+5. Confirmación → checklist sí/no + caso contrario escrito; confianza → calculadora (tamaño fijo) + WR histórico a la vista; anclaje → SL inmodificable + gestión por estructura; revancha → timer de 90 s + cascada de M8. El conocimiento solo no protege por el sesgo de punto ciego: la estructura en el momento de la decisión es la que protege.
+6. Controles: checklist, sizing, SL colocado, registro, revisión, frenos; no controles: precio siguiente, rachas, resultados individuales, slippage del momento. Con σ individual 1,52R vs señal 0,24R (ruido = 6× la señal), la racha de 9 es estructura esperada — ni la adversa ni la favorable hablan de ti: solo el proceso repetido.
+7. Dimensiones 0-3: sueño, estrés, apego → total 0-9: verde ≥7 (plan completo 1 %), ámbar 4-6 (mitad de riesgo, 2 disparos), rojo ≤3 (no se opera). La más peligrosa: la que "se siente genial" con sueño rojo — entusiasmo con PFC degradada es el cóctel del overtrading; la temperatura la captura por el número, no por la sensación.
+8. A-Book transmite al mercado (conflicto bajo); B-Book internaliza (tu pérdida es su ganancia: conflicto alto, legal y regulable). Pilares 1-2: regulación — número de licencia y entidad exacta en el registro público (binario) + warn lists; ejecución — modelo declarado y tu auditoría real (slippage/coste medio en demo).
+9. El ingreso nace en los FEES de los desafíos (el ~92 % que fracasa, según declaración pública de FTMO); el fondeado es el producto de marketing (y el payout, el coste del modelo) — cifras: ~92 % fracasan (FTMO) y ~0,07 % de éxito neto (análisis de datos filtrados de MFF, no auditado).
+10. Trailing: al pico +7 % el suelo queda en −3 % respecto al inicial — tu racha esperada de 7 a 0,5 % (−3,5 %) pasa por debajo: descalificación estructural (a 0,25 %: −1,7 %, cabe). Las 4 puertas: evidencia (N≥100+forward) · esperanza (E dentro de IC) · consistencia (6-12 meses documentados) · simulación (reglas vs tus números, margen ≤ 50-60 %).
+
+</details>
+
+<details>
+<summary>Ver clave orientativa — Bloque F (M12 — respuestas personales, la socrática las audita)</summary>
+
+1. Las 10: identidad (M1/M8) · coordenada (M2-M3/10.7) · mercado y contexto (M2-M3) · sistema (M7+M9) · riesgo (M8/10.6) · rutina (10.6-10.7/12.2) · journal y registro (M9/11.7) · revisión (9.6) · psicología (M10) · reglas de excepción (M8/10.3). La defensa exige TU elección con TU razón (la del CRO típica: riesgo y reglas de excepción — las que impiden lo irreversible).
+2. (Personal, con TU journal): identifica 3 filas débiles del dashboard (p. ej., disparos 94 %, horas +30 % sobre presupuesto, contención plana) y formula LA UNA mejora que las ataca — una sola, de ejecución, medible.
+3. (Personal): tu fase con la evidencia citada, el candado que falta con su métrica, el plan del trimestre para producirlo — y la regla de baja firmada (qué condición te devuelve a la fase anterior).
+4. Los 5: todo se mide · nada cambia sin evidencia · UNA mejora por ciclo · la fase se gana · la honestidad no se gradúa. La pregunta del changelog: **"¿qué evidencia produce este cambio?"** — si la respuesta no es tu journal, tu ventana y tu re-test, el sistema milagroso no entra: se archiva en la lista de curiosidades del diario del backtester.
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="examen-n3.html"><span class="lbl">← Anterior</span><span class="ttl">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de Graduación del Neg</span></a>
+    <a class="next" href="glosario.html"><span class="lbl">Siguiente →</span><span class="ttl">📖 Glosario Vivo — FIT-12</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

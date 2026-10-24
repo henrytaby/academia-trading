@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 8.6 · Frenos de emergencia — la cascada que hace imposible la  · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a class="active" href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>🛡️ N3 · Riesgo<span class="sep">/</span>M8 · Gestión del Riesgo<span class="sep">/</span>Lección 8.6 · Frenos de emergencia — la cascada que hace imp</div>
+  <article class="doc-body">
+<h1>Lección 8.6 · Frenos de emergencia — la cascada que hace imposible la ruina de un día</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>45–60 min de estudio</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-08.html">M8 · Gestión del Riesgo</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td><a href="leccion-8-5.html">Lección 8.5 · Riesgo de cartera y correlación</a></td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="hub-mod-08.html"#-laboratorio--construir-la-calculadora-de-position-sizing>🧪 Laboratorio · Calculadora de position sizing</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>Tienes presupuesto por operación (8.3), topes por cartera (8.5) y la tabla de asimetría que dice cuánto cuesta cada herida (8.2). Falta la última capa — la que protege contra el único enemigo que las fórmulas anteriores no cubren: <strong>TÚ, en el peor día de tu carrera</strong>. El día que la racha llega, el dato sale en contra, el Spread se abre y tu cerebro (M10 lo demostrará con neurobiología) empieza a proponer decisiones que tu Sistema v1.0 jamás escribiría. Los frenos de emergencia son la infraestructura que hace esa propuesta irrelevante: reglas automáticas, escritas en frío, que recortan tu capacidad de daño por día, por semana y por mes — antes de que la emergencia exista. El SYLLABUS marca este protocolo como aporte propio del programa (vacío del currículo fuente), y su principio es industrial: <strong>la fuerza de voluntad no es un sistema de seguridad; un disyuntor sí.</strong></p>
+<h2>Concepto</h2>
+<p><strong>La cascada completa</strong> <em>(cada nivel asume el 1 % de 8.3 como base — los porcentajes son del saldo de referencia del periodo)</em>:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Nivel</th>
+<th>Disparador</th>
+<th>Acción obligatoria</th>
+<th>Lógica matemática / psicológica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Riesgo por operación = 1 %</td>
+<td>Sizing de la calculadora (8.3)</td>
+<td>La peor racha esperable (6-7) produce herida, no amputación</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Saldo del día ≤ −2 %</td>
+<td>Cerrar TODAS las posiciones; fin del día</td>
+<td>Dos pérdidas al 1 % ya consumieron el día: la estadística del día está rota y el tilt intradía es el más caro que existe</td>
+</tr>
+<tr>
+<td>2</td>
+<td>2 pérdidas consecutivas</td>
+<td>Pausa obligatoria: 30-60 min fuera de la plataforma (o resto de la sesión)</td>
+<td>Con WR 40 %, 2 pérdidas seguidas ocurren el 36 % de las veces (7.5): NO es el sistema roto — es que HOY tú no estás alineado; la distancia es el antídoto del tilt</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Saldo semanal ≤ −4 %</td>
+<td>Resto de la semana sin operar; revisión del journal</td>
+<td>Cuatro pérdidas: la semana ya barrió el escenario normal; lo que siga ya no es señal, es revancha con horario</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Saldo mensual ≤ −6 %</td>
+<td><strong>APAGADO TOTAL + protocolo de apagado completo (abajo)</strong></td>
+<td>El mes consumió el peor escenario estructural completo: operar más es jugar el inventario del negocio contra una racha que la 8.2 ya etiquetó de no retorno</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>La matemática del techo.</strong> Los tres topes (−2 % día, −4 % semana, −6 % mes) convierten la cola abierta de la distribución en un <strong>techo conocido</strong>: el peor mes posible de tu negocio v1.0 es ≈ −6 % (el freno 4 dispara antes de que los días malos se acumulen más). Compara con la ausencia de frenos: la MISMA racha esperable (7.5) al 5 % de riesgo produce −26,5 % (8.2: no retorno práctico); al 10 %, −47 %. La cascada no reduce la frecuencia de las pérdidas — reduce la CAPACIDAD de daño cuando la cabeza ya no está en la silla. Y hay una sutileza cuantitativa que conviene ver: el freno 1 trocea las rachas — una racha de 6 con el freno diario NUNCA ocurre completa en un día (máximo 2 pérdidas y fuera): el daño se dispersa en ≥ 3 días, cada uno con su pausa obligatoria — es exactamente la fricción temporal que el tilt necesita para no arrancar.</p>
+<p><strong>El protocolo de apagado</strong> <em>(el paso a paso del freno 4 — se ejecuta en orden, sin excepciones, y vive firmado en tu journal)</em>:</p>
+<ol>
+<li><strong>Cierra TODAS las posiciones abiertas al precio de mercado.</strong> Sin "esta ya está casi en el SL", sin "se recupera sola": el freno no negocia con posiciones. El objetivo del apagado es quitarte TODAS las fuentes de resultado en vivo — una posición abierta es una dosis que se administra sola cada minuto.</li>
+<li><strong>Cierra la plataforma — la cierras, no la minimizas.</strong> La diferencia es la diferencia entre salir del casino y mirarlo desde la ventana. La sesión siguiente se abre CON PROTOCOLO, no por impulso.</li>
+<li><strong>Escribe en el journal:</strong> fecha y hora, nivel de freno disparado, saldo exacto, drawdown desde el máximo, y tu temperatura emocional del 1 al 10 (el termómetro que M10 formalizará). Tres frases bastan; el dato importa más que la literatura.</li>
+<li><strong>Regla de reactivación: no antes de 48 horas</strong> + revisión completa del journal del mes + defensa con el agente auditor: ¿qué se rompió — sistema, ejecución o cabeza? Las tres respuestas tienen protocolos distintos, y ninguna es "volver rápido".</li>
+<li><strong>Firma y fecha.</strong> El documento se escribe HOY, en el laboratorio del módulo, en frío — y se firma. Un freno no escrito no existe; un freno escrito a mitad del día rojo es una negociación, no una regla.</li>
+</ol>
+<p><strong>Por qué cada disparo es "algo ocurrido", no "cómo me siento".</strong> Los cinco niveles miden SALDOS y CONTEOS — números que la plataforma calcula y tu journal audita. Ninguno dice "si te sientes mal", "si el mercado se ve raro" o "si crees que algo anda mal": esas evaluaciones son exactamente las que el cerebro estresado falsifica. La regla del programa: <strong>un freno se dispara por un número o no se dispara</strong> — y por eso el laboratorio lo instala en la calculadora (la pestaña de frenos compara saldos y devuelve el nivel activo, sin opinión).</p>
+<p><strong>La cascada completa en un mapa</strong> <em>(el diagrama que acompaña a tu checklist pre-sesión)</em>:</p>
+<pre class="mermaid">flowchart TD
+    A[&quot;Sesion con riesgo 1 % por operacion&quot;] --&gt; B{&quot;Saldo del dia&lt;br/&gt;en o bajo -2 %?&quot;}
+    B --&gt;|Si| C[&quot;FRENO 1 - cerrar todo - fin del dia&quot;]
+    B --&gt;|No| D{&quot;Dos perdidas consecutivas?&quot;}
+    D --&gt;|Si| E[&quot;FRENO 2 - pausa 30-60 min fuera de la plataforma&quot;]
+    D --&gt;|No| F{&quot;Saldo semanal en o bajo -4 %?&quot;}
+    F --&gt;|Si| G[&quot;FRENO 3 - resto de la semana fuera + revision&quot;]
+    F --&gt;|No| H{&quot;Saldo mensual en o bajo -6 %?&quot;}
+    H --&gt;|Si| I[&quot;FRENO 4 - APAGADO TOTAL + protocolo completo&quot;]
+    H --&gt;|No| J[&quot;Continuar con el sistema v1.0&quot;]
+    C --&gt; K[&quot;Journal del dia + reactivacion al dia siguiente&quot;]
+    E --&gt; K
+    G --&gt; L[&quot;Revision fria del journal semanal&quot;]
+    I --&gt; M[&quot;No antes de 48 h + defensa con el auditor&quot;]
+</pre>
+<p><strong>La trampa que la cascada mata por construcción: "una más para recuperar".</strong> La revancha es el mecanismo de ruina más documentado del trading minorista (M10 la desmonta a fondo): tras una pérdida, subir tamaño o frecuencia "para salir rápido del pozo". Su matemática es demoledora — con la cuenta en −4 % y riesgo duplicado al 2 %, una racha de 6 (esperable, 7.5) añade −11,4 %: el pozo se excava con la pala del pozo. La cascada la hace IMPOSIBLE por diseño: el día rojo no tiene más operaciones disponibles; la semana roja no tiene más días; el mes rojo no tiene más mes. La decisión de seguir no está en tus manos emocionales — está en una regla escrita cuando estabas frío. Eso es exactamente lo que hace que funcione: <strong>no te pide fuerza de voluntad, te la ahorra.</strong></p>
+<h2>Analogía</h2>
+<p>Los disyuntores de las bolsas reales. Cuando un índice cae un porcentaje brusco en minutos, los mercados del mundo (NYSE, CME, las bolsas asiáticas) activan "circuit breakers": pausas obligatorias de minutos a horas según la profundidad de la caída. ¿La lógica de los reguladores? En el pánico, la velocidad mata: los precios sin pausa se desploman en cascada porque cada vendedor asusta al siguiente; la pausa NO arregla el mercado — le compra tiempo a la cabeza colectiva para respirar. Nadie considera "intervención socialista" a esos frenos: son arquitectura de mercado desde 1988. Tu cascada es el mismo diseño a escala personal: el freno 1 (−2 % día) es tu pausa de 15 minutos; el 3 (−4 % semana) es tu cierre anticipado; el 4 (−6 % mes) es tu cierre total. El regulador que escribiste en frío protege al operador que se descompone en caliente — y como en los mercados, la regla funciona porque no pide opinión: dispara por nivel.</p>
+<h2>Cómo se hace: instalar la cascada hoy (30 minutos)</h2>
+<ol>
+<li><strong>Escribe los 5 niveles en tu journal</strong> con los disparadores EXACTOS de la tabla (saldos y conteos, cero sentimientos). Si tu % base no es 1 % (por ejemplo 0,5 % en tu primer año), escala la cascada proporcionalmente y decláralo — lo que no se puede es dejar niveles "a ojo".</li>
+<li><strong>Instala las alertas de plataforma:</strong> alerta de saldo flotante y de equity en los niveles −2 %/día, y recordatorio semanal del −4 %. La plataforma vigila gratis y sin emociones — la mayoría de brokers/MT5/TradingView lo permiten en dos clics.</li>
+<li><strong>Añade la pestaña de frenos a tu calculadora</strong> (lab del módulo): entradas de saldo de referencia día/semana/mes + equity actual → salida del nivel activo y la acción. La calculadora no opina: compara números.</li>
+<li><strong>Firma el protocolo de apagado</strong> (los 5 pasos de arriba, con tu nombre y fecha) y pégalo donde operas. Es el contrato contigo — el equivalente exacto del contrato anti-ludopatía de M1, ahora con matemática detrás.</li>
+<li><strong>Ensayo en seco:</strong> una vez al mes, simula el disparo del freno 1 en demo (o repítelo mentalmente con la checklist): qué cierras, qué escribes, qué haces después. La emergencia no es el momento de leer el manual por primera vez.</li>
+</ol>
+<h2>Error común</h2>
+<p><strong>(1) El freno "negociable".</strong> "Hoy fue un día raro, el −2 % fue mala suerte, sigo" — el freno que se desactiva en caliente no existe; su único uso posible es el día que más ganas tienes de ignorarlo. Si un disparo te parece injusto, se revisa EN FRÍO (¿fue el disparador correcto? ¿el nivel correcto?), nunca en vivo. <strong>(2) Mover el nivel para no dispararlo.</strong> Bajar el stop "para que no cuente como pérdida" o pasar a otra plataforma "donde no tengo la alerta": el mecanismo de evasión es la prueba de que el freno era necesario. <strong>(3) Confundir el freno 2 con un castigo.</strong> La pausa tras 2 pérdidas no dice "hiciste mal": dice "el 36 % de las veces tu sistema pierde dos seguidas — descansa y vuelve". Castigar la estadística normal es castigar al negocio por funcionar; el freno protege del caso anómalo (el día donde las 2 se convierten en 5 por puro tilt). <strong>(4) La pausa que no es pausa.</strong> "Pausa de 30 minutos" mirando el gráfico en el móvil es seguir operando sin poder ejecutar — la pausa te saca de la plataforma Y de la pantalla; si tu cabeza sigue en la vela de 5 minutos, no hubo pausa, hubo espera. <strong>(5) Declarar la cascada y no instalarla.</strong> Los niveles en un documento que nunca se conectó a alertas ni a la calculadora: la cascada funciona por arquitectura (alertas, pestañas, checklist), no por memoria — la que falla justo cuando hace falta.</p>
+<h2>Conexión cuantitativa</h2>
+<p>La cascada es la síntesis aritmética de todo el módulo: el 1 % de 8.3 define el grano del daño; la estadística de 7.5 define su frecuencia (rachas de 6-7 esperables); la tabla de 8.2 define su precio superlineal; y los topes de 8.5 evitan que varias señales sumen el daño de un día de golpe. Con esas cuatro piezas, el peor mes del negocio v1.0 deja de ser una distribución con cola de ruina y pasa a ser un número: <strong>≈ −6 %, con protocolo de retorno escrito</strong>. Recuperarlo con <ktx class="ktx" data-tex="E = +0{,}2R">E = +0{,}2R</ktx> y 1 % toma ~31 operaciones perfectas (≈ 8 meses a 4 ops/mes <em>(ilustrativo, compuesto — la misma cifra de la tabla 8.2)</em>): un susto administrado en frío, no una tragedia — esa es la definición operativa de un sistema de riesgo que funciona. Hacia M10: los frenos son la arquitectura que compra tiempo a la mente (la pausa del nivel 2 es literalmente el antídoto del secuestro emocional que estudiaremos); hacia M9: el journal auditará cuántos disparos hubo y si cada uno se ejecutó sin negociación — la métrica "disparos ejecutados / disparos debidos = 100 %" es, en los primeros dos años, más importante que cualquier WR. Y hacia M12: la cascada completa entra como sección obligatoria del Plan de Trading — el documento que hace que este módulo sobreviva a tu entusiasmo de enero y a tu cansancio de marzo.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li>La cascada: 1 % por operación → −2 % día (cerrar todo) → 2 pérdidas seguidas (pausa 30-60 min) → −4 % semana (fuera hasta el lunes) → −6 % mes (apagado total + protocolo).</li>
+<li>Todos los disparadores son NÚMEROS (saldos, conteos) — nunca sentimientos; un freno se dispara por un dato o no se dispara.</li>
+<li>El techo matemático: con la cascada, el peor mes posible ≈ −6 % — vs −26,5 % (al 5 % sin frenos) en la zona de no retorno de 8.2.</li>
+<li>El freno diario trocea las rachas: nunca 3 pérdidas seguidas el mismo día — la fricción temporal es el antídoto del tilt.</li>
+<li>Protocolo de apagado en 5 pasos: cerrar TODO → cerrar plataforma → journal + temperatura → no antes de 48 h + defensa → firma en frío.</li>
+<li>"Una más para recuperar" muere por construcción: la decisión de seguir no está en tus manos emocionales — está en la regla escrita.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>Tu día: 2 pérdidas de 1 % y una tercera señal "mejor que nunca". ¿Qué nivel de la cascada ya está activo, qué haces con la tercera señal y qué hace el freno por tu estadística mensual?</li>
+<li>Calcula: racha de 5 pérdidas en la semana, todas al 1 %. ¿Saldo semanal, qué freno dispara y cuánto faltaba para el siguiente nivel?</li>
+<li>Cuenta en −5 % mensual a mitad de mes, con una posición abierta +0,8 %. ¿Qué dice la cascada exactamente — y por qué la posición en ganancia NO cambia la respuesta?</li>
+<li>Un amigo te dice: "yo soy disciplinado, no necesito frenos escritos". Réplica con los tres argumentos del módulo (neurobiología del peor día, matemática del techo, disyuntores de mercado).</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. Tras 2 pérdidas consecutivas el **freno 2** ya está activo (pausa 30-60 min); el **freno 1** dispara con la SEGUNDA pérdida si el día marca −2 % — en este caso exactamente eso: día cerrado, la tercera señal NO se evalúa (no es que "decidas no tomarla": no existe decisión que tomar, la sesión terminó). Para tu mes: el freno evita que el día rojo se convierta en el origen de la revancha — la causa nº 1 de los meses de −15 %+ no es la racha inicial, es lo que se opera DESPUÉS de ella.
+2. Saldo semanal: <ktx class="ktx" data-tex="0{,}99^5 = 0{,}951">0{,}99^5 = 0{,}951</ktx> → **−4,9 %** → supera el −4 %: **freno 3 dispara** (resto de la semana fuera, revisión del journal). Faltaban ~1 % para el freno 4 (mensual −6 %): si el mes ya traía otra pérdida de 1 % en semanas previas, el apagado total dispara también. Nota la asimetría de la cascada: la semana roja NO se "corrige" operando — se audita.
+3. El saldo mensual ≤ −6 % compara tu EQUITY total (saldo + flotante) con la referencia del mes: $-5$ % + <ktx class="ktx" data-tex="0{,}8">0{,}8</ktx> % flotante = <ktx class="ktx" data-tex="-4{,}2">-4{,}2</ktx> % efectivo → **todavía no dispara el freno 4** — pero está a una pérdida de 1 % (o de que el flotante se evapore) del apagado. La respuesta correcta: posición se gestiona SOLO por su plan (SL/TP del sistema, sin tocar nada "para no disparar el freno"), y ninguna operación NUEVA se abre (la cartera está a 1,8 % del apagado — el espacio de riesgo ya no existe). La posición en ganancia no cambia nada porque el freno mide el MES, no la operación: la esperanza de "que suba más" es exactamente la voz que el protocolo existe para silenciar.
+4. (a) **Neurobiología:** el peor día secuestra la decisión (M10: amígdala vs corteza prefrontal) — tu "disciplina" en caliente es un órgano con el riego alterado; el freno escrito en frío no depende de ese órgano. (b) **Matemática:** el techo de −6 % mensual con frenos vs la cola abierta sin ellos — tu disciplina promedio no es un número; el tope sí, y es auditable. (c) **Precedente industrial:** los mercados más grandes del mundo se PAUSAN solos por regla — no porque sus participantes "no sean disciplinados", sino porque la arquitectura de seguridad no confía en el juicio en pánico ni en el mejor de los humanos. Si lo hace el NYSE, lo hace tu cuenta de 1.920 $.
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="leccion-8-5.html"><span class="lbl">← Anterior</span><span class="ttl">Lección 8.5 · Riesgo de cartera y correlación — dos operaciones pueden</span></a>
+    <a class="next" href="hub-mod-09.html"><span class="lbl">Siguiente →</span><span class="ttl">Módulo 9 · Backtesting, Journal y Validación — la convicción estadísti</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

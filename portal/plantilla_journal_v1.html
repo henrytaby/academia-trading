@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Journal v1 — el registro profesional del negocio (M9) · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a class="active" href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>Recursos<span class="sep">/</span>Journal v1 — el registro profesional del negocio (M9)</div>
+  <article class="doc-body">
+<h1>Journal v1 — el registro profesional del negocio (M9)</h1>
+<blockquote>
+<p><strong>El instrumento de auditoría del programa.</strong> El journal v0 (Sprint 2) registraba la mecánica de la operación; el v1 registra el <strong>negocio</strong>: la decisión antes (R planificado), el diagnóstico en caliente (taxonomía E0–E7), la evidencia (captura de señal) y el estado de la máquina (emocional pre/post). Todo el aparato estadístico del M9 — las 100 operaciones, las métricas del reporte, las actas de revisión — se calcula <strong>de estas filas</strong>.
+Definiciones completas: <a href="leccion-9-5.html">Lección 9.5</a> · Protocolo de captura de datos: <a href="leccion-9-2.html">Lección 9.2</a>.</p>
+</blockquote>
+<h2>Archivos</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Archivo</th>
+<th>Uso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="files/plantilla_journal_v1.csv"><code>plantilla_journal_v1.csv</code></a></td>
+<td>El registro: 24 columnas + 4 filas de ejemplo migradas. Cópialo a tu hoja de cálculo o úsalo directo</td>
+</tr>
+<tr>
+<td><a href="files/plantilla_journal_v0.csv"><code>plantilla_journal_v0.csv</code></a></td>
+<td>El antecesor (Sprint 2): se conserva como histórico; migra sus filas al v1 cuando sea posible</td>
+</tr>
+<tr>
+<td><code>reporte-m9.md</code> <em>(lo creas tú)</em></td>
+<td>El reporte de la <a href="hub-mod-09.html"#-misión>Misión M-9</a></td>
+</tr>
+<tr>
+<td><a href="files/metricas_backtest.py"><code>../scripts/core/metricas_backtest.py</code></a></td>
+<td>El oráculo: calcula las 13 métricas desde el CSV y verifica tu hoja</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Las 24 columnas y para qué existe cada una</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Columna</th>
+<th>Definición operativa</th>
+<th>Consumidor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>fecha</code></td>
+<td>Fecha de la operación</td>
+<td>Acta semanal, serie temporal</td>
+</tr>
+<tr>
+<td>2-3</td>
+<td><code>hora_inicio</code>, <code>hora_fin</code></td>
+<td>Horas de gestión de la posición (formato 24h)</td>
+<td>Ventanas de sesión (M2)</td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>fase</code></td>
+<td><code>backtest</code> / <code>forward_demo</code> / <code>real_micro</code> — la estación del embudo (9.4)</td>
+<td>Reporte por fases</td>
+</tr>
+<tr>
+<td>5</td>
+<td><code>mercado</code></td>
+<td>Instrumento (EURUSD, XAUUSD…)</td>
+<td>Conteo por motor (M8)</td>
+</tr>
+<tr>
+<td>6-7</td>
+<td><code>direccion</code>, <code>tipo_orden</code></td>
+<td>long/short · limit/market/stop</td>
+<td>Auditoría de mecánica (M4)</td>
+</tr>
+<tr>
+<td>8</td>
+<td><code>setup_valido</code></td>
+<td><code>Si</code>/<code>No</code> — el checklist de 8 condiciones (9.2) pasó completo</td>
+<td>Métrica de disparos (M8)</td>
+</tr>
+<tr>
+<td>9</td>
+<td><code>disparo_debido</code></td>
+<td><code>Si</code>/<code>No</code>/<code>NA</code> — ¿era señal del sistema y la ejecutaste?</td>
+<td>Disparos ejecutados/debidos</td>
+</tr>
+<tr>
+<td>10</td>
+<td><code>lote</code></td>
+<td>El lote REAL puesto (no el que debías)</td>
+<td>Auditoría E4 vs calculadora (M8)</td>
+</tr>
+<tr>
+<td>11-13</td>
+<td><code>entrada</code>, <code>sl</code>, <code>tp</code></td>
+<td>Precios exactos de la decisión (paso 5 de la rutina 9.2)</td>
+<td>Auditoría de precisión</td>
+</tr>
+<tr>
+<td>14</td>
+<td><code>r_planificada</code></td>
+<td>R:B de la operación al decidir: (TP−entrada)/(entrada−SL)</td>
+<td>Deriva de ejecución (9.5)</td>
+</tr>
+<tr>
+<td>15</td>
+<td><code>r_real</code></td>
+<td>Resultado en R: resultado $ ÷ riesgo real puesto</td>
+<td>WR, E, PF, rachas, curva (9.3)</td>
+</tr>
+<tr>
+<td>16</td>
+<td><code>resultado_usd</code></td>
+<td>Resultado en dólares</td>
+<td>El P&amp;L del negocio</td>
+</tr>
+<tr>
+<td>17</td>
+<td><code>coste_r</code></td>
+<td>Spread + slippage de la operación, en R</td>
+<td>El ladrón silencioso: audita el 0,08R</td>
+</tr>
+<tr>
+<td>18</td>
+<td><code>sl_antes_entrada</code></td>
+<td><code>Si</code>/<code>No</code> — la ley de M4, verificada fila por fila</td>
+<td>Cero tolerancia (M4)</td>
+</tr>
+<tr>
+<td>19</td>
+<td><code>captura</code></td>
+<td>Ruta de la imagen del gráfico EN el momento de la señal</td>
+<td>La evidencia que la memoria no puede reescribir</td>
+</tr>
+<tr>
+<td>20-21</td>
+<td><code>emocional_pre</code>, <code>emocional_post</code></td>
+<td>1–10 (1 = pésimo, 10 = óptimo)</td>
+<td>Semilla del diario de M10; patrones del acta</td>
+</tr>
+<tr>
+<td>22</td>
+<td><code>etiqueta_error</code></td>
+<td><strong>E0–E7</strong> (taxonomía abajo) — UNA etiqueta, en caliente</td>
+<td>El mapa de tu ejecución</td>
+</tr>
+<tr>
+<td>23</td>
+<td><code>regla_violada</code></td>
+<td>1 línea: qué regla concreta, si hubo etiqueta ≠ E0</td>
+<td>Puente al changelog (9.6)</td>
+</tr>
+<tr>
+<td>24</td>
+<td><code>leccion_1linea</code></td>
+<td>UNA línea de lección (opcional; si necesita más, va al acta)</td>
+<td>Materia prima del plan (M12)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Columnas extra del forward</strong> (añádelas cuando pases a la fase 2 de 9.4): <code>spread_real</code> (el spread vivo al momento de la señal) y <code>slippage_sl</code> (precio SL vs precio de ejecución, cuando el SL se ejecuta).</p>
+<h2>La taxonomía de errores E0–E7</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Etiqueta</th>
+<th>Nombre</th>
+<th>Definición operativa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>E0</strong></td>
+<td>En plan (sin error)</td>
+<td>Setup válido + ejecución conforme + gestión conforme. <strong>Incluye TODA pérdida con SL respetado y sizing correcto</strong> — el coste estadístico del negocio</td>
+</tr>
+<tr>
+<td><strong>E1</strong></td>
+<td>Operar sin setup</td>
+<td>Se ejecutó una señal que la definición de setup válido rechaza (FOMO, aburrimiento, revancha)</td>
+</tr>
+<tr>
+<td><strong>E2</strong></td>
+<td>Entrada fuera de regla</td>
+<td>Setup válido, ejecución fuera de la regla: antes de la vela cerrada, fuera de zona, precio improvisado</td>
+</tr>
+<tr>
+<td><strong>E3</strong></td>
+<td>SL manipulado</td>
+<td>SL movido, ampliado o eliminado — o cierre manual antes del SL sin regla de gestión que lo autorice</td>
+</tr>
+<tr>
+<td><strong>E4</strong></td>
+<td>Sizing fuera de presupuesto</td>
+<td>El lote no es la salida de la calculadora de M8 (por exceso O por defecto no documentado)</td>
+</tr>
+<tr>
+<td><strong>E5</strong></td>
+<td>Gestión improvisada</td>
+<td>TP movido, parcial o breakeven sin que una regla del componente 10 lo autorice</td>
+</tr>
+<tr>
+<td><strong>E6</strong></td>
+<td>Freno ignorado</td>
+<td>Operar con la cascada de M8 activa o violar un tope de cartera</td>
+</tr>
+<tr>
+<td><strong>E7</strong></td>
+<td>Error de ejecución técnica</td>
+<td>Orden mal puesta, fat finger, OCO olvidado, dirección invertida</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Las 3 reglas de uso</strong> <em>(lección 9.5 — sin ellas el conteo pierde valor estadístico)</em>:
+1. <strong>UNA etiqueta por operación</strong> — la primera de la cadena causal; el resto va a <code>regla_violada</code>.
+2. <strong>En caliente</strong> — al cerrar la operación, con la taxonomía a la vista; el etiquetado del domingo es reconstrucción y la reconstrucción defiende al ego.
+3. <strong>La taxonomía es cerrada</strong> — si un error no encaja, se describe en <code>regla_violada</code> y la revisión decide si merece etiqueta nueva (con evidencia).</p>
+<h2>La rutina de los 90 segundos (post-operación)</h2>
+<ol>
+<li><strong>R real + resultado $</strong> (10 s) — la fila queda económicamente cerrada.</li>
+<li><strong>Etiqueta E0–E7</strong> (20 s) — con la tabla impresa junto al monitor.</li>
+<li><strong>Emocional post 1–10</strong> (5 s) — honestidad de 5 segundos, no ensayo.</li>
+<li><strong>Captura verificada en la fila</strong> (5 s) — la imagen de la señal ya existe (se tomó al disparar); falta la ruta.</li>
+<li><strong>Lección de UNA línea</strong> (50 s) — si no cabe en una línea, va al acta de la semana.</li>
+</ol>
+<p><strong>Regla dura:</strong> la plataforma no se cierra con filas pendientes. La memoria pendiente es memoria que se falsifica.</p>
+<h2>Registro de lo que NO operaste</h2>
+<ul>
+<li><strong>Señales válidas no ejecutadas</strong> → van al acta semanal como no-disparos (alimentan disparos ejecutados/debidos de M8). No crean fila en el CSV.</li>
+<li><strong>Señales rechazadas por la definición</strong> → 1 línea en el registro de la sesión (fecha, mercado, razón del rechazo). Son la diferencia entre tu sistema y tu instinto, en datos.</li>
+</ul>
+<h2>Plantilla de acta semanal (9.6 — 30–45 min, día fijo)</h2>
+<pre><code class="language-text">ACTA SEMANAL N.º ___ · del ___ al ___
+1. La semana en datos: N ops ___ · resultado ___R · E0 __ E1 __ E2 __ E3 __ E4 __ E5 __ E6 __ E7 __
+2. La etiqueta más frecuente (≠ E0) y su cadena causal: ______________________
+3. Las 5 preguntas (sí/no con el dato): setups 8/8 ___ · sizing conforme ___ · SL respetados ___
+   · emocional sin contaminación ___ · corrección identificada ___
+4. Disparos: debidos ___ · ejecutados ___ · ratio ___ % · bloqueo del faltante: ____________
+5. UNA conclusión (la regla de UNA mejora — solo ejecución, nunca reglas): __________________
+6. Decisión: [entrenamiento ___] · [Sistema v1.1: sin cambios] · firma y fecha
+</code></pre>
+<h2>Plantilla de acta mensual (9.6 — 1–2 h, última semana del mes)</h2>
+<pre><code class="language-text">ACTA MENSUAL · mes de ______
+A. El mes en métricas: N __ · WR __ % (IC del backtest: [30,4; 49,6]) · PF neto ___ (backtest: 1,25)
+   · racha máx __ (esperada ~9/100 ops) · Max DD __ % (línea: −15 %) · coste medio __ R (estimado: 0,08)
+   · disparos __/__ · curva del mes: [adjunta o describe pendiente-valles-recuperación]
+B. La comparación: ¿el mes vivido se parece al sistema medido? — sí/no por métrica, con el número delante
+C. Sospechas documentadas (casos borde, cambios de régimen, dudas del diario): ____________
+D. Ventana de modificación — las 4 condiciones: [ ] ventana en frío · [ ] evidencia con N
+   · [ ] UNA modificación única · [ ] re-test 50-100 backtests planeado
+E. Decisión de versión: v1.1 SIN CAMBIOS  /  v1.2 con la modificación única: ____________
+F. Firma (en frío) y fecha
+</code></pre>
+<h2>El changelog del sistema (se rellena desde las actas)</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Versión</th>
+<th>Fecha</th>
+<th>Evidencia (actas/filas)</th>
+<th>La modificación única</th>
+<th>Re-test</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>v1.0</td>
+<td>(M7)</td>
+<td>—</td>
+<td>Sistema inicial con plantilla de 10 componentes</td>
+<td>30 repeticiones (M-7)</td>
+</tr>
+<tr>
+<td>v1.1</td>
+<td>(M8)</td>
+<td>Componente 9-10</td>
+<td>Calculadora referenciada + topes 2 %/3 % + cascada firmada</td>
+<td>calculadora verificada (3 casos de control)</td>
+</tr>
+<tr>
+<td>v1.2</td>
+<td>___</td>
+<td>___</td>
+<td>___</td>
+<td>___</td>
+</tr>
+</tbody>
+</table></div>
+<h2>La calibración de la honestidad (primera semana)</h2>
+<p>Si tu primera semana cierra con 100 % E0, sospecha de ti mismo: cualquier humano que aprende produce errores E2/E7 al menos. Un 40 % de errores bien etiquetados vale más que un 0 % sospechoso — lo primero es reparable, lo segundo es ciego. El journal no califica: mide.</p>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="mision-m8-escenarios.html"><span class="lbl">← Anterior</span><span class="ttl">Misión M-8 · Hoja de 20 escenarios de sizing</span></a>
+    <a class="next" href="hub-mod-01.html"><span class="lbl">Siguiente →</span><span class="ttl">Módulo 1 · El Trading como Negocio y Ciencia</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

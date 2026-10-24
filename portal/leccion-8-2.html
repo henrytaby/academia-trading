@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 8.2 · Asimetría del drawdown — por qué el gran daño es irrever · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a class="active" href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>🛡️ N3 · Riesgo<span class="sep">/</span>M8 · Gestión del Riesgo<span class="sep">/</span>Lección 8.2 · Asimetría del drawdown — por qué el gran daño </div>
+  <article class="doc-body">
+<h1>Lección 8.2 · Asimetría del drawdown — por qué el gran daño es irreversible</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>40–55 min de estudio</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-08.html">M8 · Gestión del Riesgo</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td><a href="leccion-8-1.html">Lección 8.1 · Preservación de capital</a></td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="leccion-8-3.html">Lección 8.3 · La regla del 1 % y position sizing</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>La 8.1 nombró tu capital como inventario; esta lección demuestra con aritmética exacta la propiedad más peligrosa de ese inventario: <strong>perder y recuperar no son operaciones simétricas</strong>. Un drawdown del 50 % no se arregla con una ganancia del 50 % — se arregla con una del 100 %. Esta asimetría es la razón matemática que sostiene todo lo demás del módulo: la regla del 1 % (8.3), el veto al oversizing (8.4), los topes de cartera (8.5) y los frenos en cascada (8.6) existen porque la curva de daño no es una recta sino una curva exponencial que, pasado cierto punto, deja de tener retorno práctico. Si terminas esta lección con una sola idea incrustada, que sea esta: <strong>el objetivo número uno del negocio no es ganar más — es nunca entrar en la zona donde la matemática te cobra intereses compuestos por cada dólar perdido.</strong></p>
+<h2>Concepto</h2>
+<p><strong>La fórmula de recuperación.</strong> Si tu cuenta cae un porcentaje <ktx class="ktx" data-tex="d">d</ktx> (drawdown), para volver exactamente al saldo inicial necesitas subir un porcentaje <ktx class="ktx" data-tex="R">R</ktx> del capital <em>restante</em>:</p>
+<p><ktxd class="ktxd" data-tex="R = \frac{d}{1 - d}">R = \frac{d}{1 - d}</ktxd></p>
+<p>La deducción es una línea: si empiezas con 1 (el 100 %) y pierdes <ktx class="ktx" data-tex="d">d</ktx>, te queda $1 - d$; para volver a 1 necesitas multiplicar el resto por <ktx class="ktx" data-tex="\frac{1}{1-d}">\frac{1}{1-d}</ktx>, es decir ganar <ktx class="ktx" data-tex="R = \frac{1}{1-d} - 1 = \frac{d}{1-d}">R = \frac{1}{1-d} - 1 = \frac{d}{1-d}</ktx> sobre lo que te quedó. El denominador $(1-d)$ es el traidor: cuanto más profundo el drawdown, más pequeño el capital sobre el que tienes que generar la recuperación — y la ganancia requerida crece <strong>más rápido que el daño</strong>.</p>
+<p><strong>La tabla completa de recuperación</strong> <em>(el número de la derecha es % sobre el capital restante)</em>:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Drawdown <ktx class="ktx" data-tex="d">d</ktx></th>
+<th>Capital restante</th>
+<th>Recuperación necesaria <ktx class="ktx" data-tex="R">R</ktx></th>
+<th>Lectura honesta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>−5 %</td>
+<td>95 %</td>
+<td>+5,3 %</td>
+<td>Cosquilleo: semanas normales</td>
+</tr>
+<tr>
+<td>−10 %</td>
+<td>90 %</td>
+<td>+11,1 %</td>
+<td>Herida: un mes o dos de buen sistema</td>
+</tr>
+<tr>
+<td>−15 %</td>
+<td>85 %</td>
+<td>+17,6 %</td>
+<td>Dolor real — revisión obligatoria (frenos, 8.6)</td>
+</tr>
+<tr>
+<td>−20 %</td>
+<td>80 %</td>
+<td>+25,0 %</td>
+<td>Un cuarto más del capital: trimestre entero</td>
+</tr>
+<tr>
+<td>−25 %</td>
+<td>75 %</td>
+<td>+33,3 %</td>
+<td>Territorio del pánico y las decisiones malas</td>
+</tr>
+<tr>
+<td>−30 %</td>
+<td>70 %</td>
+<td>+42,9 %</td>
+<td>Zona de no retorno práctico para un negocio v1</td>
+</tr>
+<tr>
+<td>−40 %</td>
+<td>60 %</td>
+<td>+66,7 %</td>
+<td>Necesitas dos tercios más: medio año perfecto</td>
+</tr>
+<tr>
+<td>−50 %</td>
+<td>50 %</td>
+<td>+100,0 %</td>
+<td><strong>Duplicar el capital restante</strong>: años enteros</td>
+</tr>
+<tr>
+<td>−60 %</td>
+<td>40 %</td>
+<td>+150,0 %</td>
+<td>Multiplicar por 2,5 el restante</td>
+</tr>
+<tr>
+<td>−70 %</td>
+<td>30 %</td>
+<td>+233,3 %</td>
+<td>Multiplicar por 3,3: estadísticamente inalcanzable</td>
+</tr>
+</tbody>
+</table></div>
+<p>Dos lecturas que la tabla fuerza, y que ningún video de la industria enseña juntas:</p>
+<ol>
+<li><strong>La curva se empina hacia el final.</strong> Del −5 % al −20 % (el cuádruple de daño) la recuperación solo pasa de +5,3 % a +25 % (el quíntuple, todavía lineal-ish). Pero del −30 % al −50 %, la recuperación pasa de +42,9 % a +100 %: en la zona profunda, <strong>cada punto adicional de drawdown cuesta más de dos puntos de ganancia futura</strong>. La penalización es superlineal — esa es la palabra que debes memorizar.</li>
+<li><strong>El −10 % es el último peldaño cómodo.</strong> Con la racha esperable de tu sistema (6-7 pérdidas al 1 %, 7.5) el drawdown normal del negocio vive entre −6 % y −8 %. La tabla muestra que hasta −10 % la recuperación sigue siendo meses, no años. Todo lo que hay entre −15 % y −30 % ya no es "el negocio funcionando": es una emergencia de inventario que exige frenos (8.6) — y más allá de −30 % la matemática misma te expulsa del negocio.</li>
+</ol>
+<p><strong>El tiempo es la segunda dimensión del daño.</strong> La tabla anterior mide la ganancia necesaria; ahora póngela en unidades de tu negocio. Con <ktx class="ktx" data-tex="E = +0{,}2R">E = +0{,}2R</ktx> por operación y riesgo 1 %, cada operación fabrica ~+0,2 % de capital <em>(ilustrativo, caso maestro, sin contar costes)</em>. A 4 operaciones/mes: ~0,8 %/mes de crecimiento esperado. ¿Cuánto tarda recuperar cada herida, ejecutando PERFECTAMENTE <em>(cálculo compuesto, ilustrativo)</em>?</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Drawdown</th>
+<th>Recuperación necesaria</th>
+<th>Operaciones a +0,2R</th>
+<th>Tiempo a 4 ops/mes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>−6 % (racha esperable)</td>
+<td>+6,4 %</td>
+<td>~31</td>
+<td>~8 meses</td>
+</tr>
+<tr>
+<td>−10 %</td>
+<td>+11,1 %</td>
+<td>~53</td>
+<td>~13 meses</td>
+</tr>
+<tr>
+<td>−20 %</td>
+<td>+25,0 %</td>
+<td>~112</td>
+<td>~2,3 años</td>
+</tr>
+<tr>
+<td>−30 %</td>
+<td>+42,9 %</td>
+<td>~181</td>
+<td>~3,8 años</td>
+</tr>
+<tr>
+<td>−50 %</td>
+<td>+100,0 %</td>
+<td>~347</td>
+<td><strong>~7,2 años</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><em>(ilustrativo: compuesto <ktx class="ktx" data-tex="1{,}002^n">1{,}002^n</ktx>, sin mejoras del sistema, sin aportes externos)</em>. Y esta columna es la <strong>optimista</strong>: supone que durante esos años no aparece otra racha, que los costes no erosionan la E (7.4), que no cambias de sistema a mitad, y que la psicología de operar una cuenta herida ejecuta igual que la de una cuenta sana — los tres supuestos que M10 demostrará falsos. El drawdown grande no solo pide matemática imposible: pide <strong>tiempo de ejecución perfecta sostenida</strong>, que es el recurso más escaso que existe.</p>
+<p><strong>Por qué el gran daño es irreversible en la práctica.</strong> Tres mecanismos que se suman al número puro: (1) la matemática superlineal de la tabla; (2) el tiempo — la vida sigue pasando mientras recuperas, y el coste de oportunidad de operar 3 años para volver a cero es el negocio entero que podrías haber construido; (3) la psicología — el trader que perdió el 50 % ya no ejecuta el sistema original: opera la recuperación, que es un sistema distinto (y peor) del que está escrito en su journal. Por eso los profesionales hablan del "punto de no retorno" en torno al −30 %: no es que la cuenta no pueda volver — es que el humano que la maneja ya no es el mismo.</p>
+<h2>Analogía</h2>
+<p>La cuerda floja y la altura. Un malabarista que cae de un metro se levanta, se sacude y vuelve a subir: la caída le costó un momento. El mismo malabarista que cae de diez metros no "se recupera con un poco más de esfuerzo" — la altura convirtió un accidente en un final. La distancia no escala linealmente el daño: la escala <strong>cualitativamente</strong>. En el trading, la "altura" es el tamaño del riesgo por operación, y el suelo es la zona de no retorno (~−30 %). La 8.1 te dio el inventario; esta lección te da la altura máxima desde la que puedes caer sin morir; y la 8.3 convierte esa altura máxima en la regla concreta del 1 %. El aficionado elige altura por emoción; el profesional la calcula a partir del suelo.</p>
+<h2>Cómo se hace: medir y acotar tu drawdown</h2>
+<ol>
+<li><strong>Calcula el drawdown esperado de TU sistema ANTES de operarlo.</strong> Con WR 40 % y riesgo 1 %: racha esperable 6-7 → <ktx class="ktx" data-tex="0{,}99^6 = 0{,}9415">0{,}99^6 = 0{,}9415</ktx> → drawdown ≈ −5,9 % ≈ <strong>−6 %</strong> (la aproximación lineal de M7 — 6 × 1 % = 6 % — sobreestima apenas: está bien, para frenos el exceso es gratis). Recuperación: <ktx class="ktx" data-tex="0{,}06/0{,}94 ≈ +6{,}4">0{,}06/0{,}94 ≈ +6{,}4</ktx> % → ~31 operaciones → ~8 meses <em>(ilustrativo)</em>. Ese es el ciclo vital NORMAL de tu negocio: una herida de −6 % y un par de trimestres de curación. Escríbelo en tu plan: cuando llegue, no será novedad ni diagnóstico de sistema roto.</li>
+<li><strong>Fija tu línea de emergencia.</strong> Regla del programa: <strong>−15 % desde el máximo de la curva de capital = revisión obligatoria con el agente auditor</strong> (freno nivel 3-4, 8.6). La tabla justifica el número: por debajo de −15 % la recuperación (+17,6 %+) empieza a exigir trimestres, y la probabilidad de decisiones contaminadas se dispara.</li>
+<li><strong>Usa la tabla en reversa para el sizing.</strong> La pregunta correcta no es "¿cuánto quiero ganar?" sino "<strong>¿qué drawdown estoy dispuesto a tener que recuperar?</strong>". Si tu tope emocional y práctico es −15 %: con rachas de 6, el riesgo máximo es ~2 % (racha 6 → −11,4 % compuesto, dentro del tope); con rachas de 10 (WR 30 %), baja a ~1 %. La 8.3 formaliza este razonamiento en la fórmula del lote.</li>
+</ol>
+<h2>Error común</h2>
+<p><strong>(1) Restar el drawdown "en mi cabeza" linealmente.</strong> "Perdí 30 %, gano 30 % y listo" — no: 30 % de pérdida exige +42,9 %. El error de intuición es sistemático y está en la base de cada "voy a recuperarlo operando un poco más agresivo". <strong>(2) Los dos errores simétricos de recuperación.</strong> Perder el 50 % y "esperar a que el mercado me devuelva el 50 %": con riesgo 1 % y E +0,2R son ~7 años, no semanas. O peor, el clásico: <strong>doblar el riesgo para acelerar la recuperación</strong> — al 2 % la racha que te dejó en −50 % te lleva a <ktx class="ktx" data-tex="0{,}98^n">0{,}98^n</ktx>... una sola racha adicional de 6 a 2 % añade −11,4 %: la aceleración de la recuperación multiplica también la aceleración del daño, en la zona donde el daño ya es superlineal. <strong>(3) Medir el drawdown desde el saldo inicial en vez de desde el máximo.</strong> Tu cuenta subió a +12 % y ahora está en +2 %: eso ES un drawdown de −8,9 % (<ktx class="ktx" data-tex="0{,}02">0{,}02</ktx> vs <ktx class="ktx" data-tex="0{,}12">0{,}12</ktx>: <ktx class="ktx" data-tex="\frac{0{,}12-0{,}02}{1{,}12} = 8{,}9">\frac{0{,}12-0{,}02}{1{,}12} = 8{,}9</ktx> %), no "sigue en verde, no pasa nada". El máximo de la curva es la referencia; el journal (M9) lo registra. <strong>(4) Celebrar draws pequeños como si no costaran.</strong> −6 % → +6,4 % → 31 operaciones perfectas ≈ 8 meses: hasta la herida NORMAL del negocio cuesta un ciclo vital completo. Esto no es para asustar: es para dimensionar qué compras cuando decides el % de riesgo — y por qué el 1 % es la recomendación del programa y no el 5 %.</p>
+<h2>Conexión cuantitativa</h2>
+<p>La asimetría es el motor cuantitativo de todo el módulo. <strong>Hacia 8.3:</strong> la regla del 1 % no es una superstición — es la respuesta a "¿qué % hace que la PEOR racha esperable del sistema (7.5) produzca una herida de la tabla superior con recuperación de meses y no de años?". Con WR 40 % y rachas de 6-7: al 1 % → −6 % (recuperable); al 3 % → −17 % (emergencia); al 5 % → −27 % (zona de no retorno). La fórmula del lote de la 8.3 es esta tabla escrita al revés. <strong>Hacia 7.5:</strong> la estadística de rachas te da la FRECUENCIA del daño (P(racha) = (1−WR)ⁿ, esperable, no excepcional); esta lección te da el PRECIO de cada unidad de daño (d/(1−d), superlineal). El producto de ambas — frecuencia × precio — es lo que eliges cada vez que fijas el % de riesgo. <strong>Hacia M9:</strong> el drawdown máximo medido en tus 100 backtests será el dato real que reemplace las estimaciones de esta lección — y el criterio objetivo para el sizing de la fase forward. La curva de capital no es decoración del reporte: es el ECG del negocio, y esta tabla es la escala con la que se lee.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li><ktx class="ktx" data-tex="R = \frac{d}{1-d}">R = \frac{d}{1-d}</ktx>: la recuperación necesaria crece <strong>más rápido que el daño</strong> (superlineal).</li>
+<li>La tabla: −10 % → +11,1 %; −25 % → +33,3 %; −50 % → +100 %; −70 % → +233,3 %.</li>
+<li>El tiempo de recuperación (a E +0,2R, 1 %): racha normal de −6 % ≈ 8 meses perfectos; −30 % ≈ 3,8 años; −50 % ≈ 7,2 años <em>(ilustrativo)</em>.</li>
+<li>La referencia del drawdown es el <strong>máximo de la curva de capital</strong>, no el saldo inicial.</li>
+<li>Línea de emergencia del programa: −15 % desde el máximo = revisión obligatoria; el objetivo del sizing es que la peor racha esperable produzca heridas, nunca amputaciones.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>Calcula la recuperación necesaria para −12 %, −35 % y −55 % (fórmula + números). ¿Qué pasa con el incremento entre cada par?</li>
+<li>Tu misión M-7 midió una racha máxima de 8 pérdidas con riesgo 1 %. Calcula el drawdown compuesto exacto, la recuperación necesaria y cuántas operaciones perfectas la curan.</li>
+<li>Un trader con WR 30 % (rachas esperables de 10-12, 7.5) quiere arriesgar 3 % por operación "porque su R:B es 1:3 y le sobra margen". Usando esta lección, calcula el drawdown de su racha esperable y juzga el plan.</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. <ktx class="ktx" data-tex="R(12) = 0{,}12/0{,}88 = +13{,}6">R(12) = 0{,}12/0{,}88 = +13{,}6</ktx> %. <ktx class="ktx" data-tex="R(35) = 0{,}35/0{,}65 = +53{,}8">R(35) = 0{,}35/0{,}65 = +53{,}8</ktx> %. <ktx class="ktx" data-tex="R(55) = 0{,}55/0{,}45 = +122{,}2">R(55) = 0{,}55/0{,}45 = +122{,}2</ktx> %. De 12 a 35 (el daño casi se triplica) la recuperación casi se CUADRUPLICA; de 35 a 55, pasa de +53,8 % a +122,2 % — cada punto extra de drawdown cuesta cada vez más puntos de ganancia: la superlinealidad en acción.
+2. <ktx class="ktx" data-tex="0{,}99^8 = 0{,}9227">0{,}99^8 = 0{,}9227</ktx> → drawdown **−7,7 %** (la lineal daría −8 %: sobreestima, bien). Recuperación: <ktx class="ktx" data-tex="0{,}077/0{,}923 = +8{,}4">0{,}077/0{,}923 = +8{,}4</ktx> %. Operaciones: <ktx class="ktx" data-tex="1{,}002^n = 1{,}084">1{,}002^n = 1{,}084</ktx> → <ktx class="ktx" data-tex="n = \ln 1{,}084/\ln 1{,}002 ≈ 0{,}0807/0{,}002 ≈ 40">n = \ln 1{,}084/\ln 1{,}002 ≈ 0{,}0807/0{,}002 ≈ 40</ktx> → **~40 operaciones perfectas ≈ 10 meses a 4 ops/mes** *(ilustrativo)*. Lectura: una racha peor que la esperable (8 vs 6-7) sigue siendo una herida administrable — exactamente el diseño que el 1 % compra.
+3. Rachas de 10-12 esperables (7.5: <ktx class="ktx" data-tex="\ln 100/\ln(1/0{,}7) ≈ 9{,}7">\ln 100/\ln(1/0{,}7) ≈ 9{,}7</ktx>). Al 3 %: <ktx class="ktx" data-tex="0{,}97^{10} = 0{,}7374">0{,}97^{10} = 0{,}7374</ktx> → **−26,3 %**; con 12: <ktx class="ktx" data-tex="0{,}97^{12} = 0{,}6938">0{,}97^{12} = 0{,}6938</ktx> → **−30,6 %**. Recuperación: +36-44 %. A 4 ops/mes y +0,2R... con WR 30 % y 1:3, <ktx class="ktx" data-tex="E = 0{,}3 \times 3 - 0{,}7 = +0{,}2R">E = 0{,}3 \times 3 - 0{,}7 = +0{,}2R</ktx> igual, pero la frecuencia de las rachas es mucho mayor → 3-4 años por cada ciclo de racha esperable. El margen "sobrante" del R:B no está en la curva de daño: la racha de su WR es la que fija el daño, no el R:B. Veredicto: su sizing está diseñado sobre el parámetro equivocado — el 1 % (o menos) es su tamaño correcto, no el 3 %.
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="leccion-8-1.html"><span class="lbl">← Anterior</span><span class="ttl">Lección 8.1 · Preservación de capital — el dinero como inventario</span></a>
+    <a class="next" href="leccion-8-3.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 8.3 · La regla del 1 % y position sizing — el presupuesto que </span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

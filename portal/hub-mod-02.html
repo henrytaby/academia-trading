@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Módulo 2 · El Motor del Precio · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a class="active" href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>🧱 N1 · Base<span class="sep">/</span>M2 · El Motor del Precio<span class="sep">/</span>Módulo 2 · El Motor del Precio</div>
+  <article class="doc-body">
+<h1>Módulo 2 · El Motor del Precio</h1>
+<blockquote class="gfm-warn"><p><strong>⚠️ WARNING:</strong> <strong>Contenido educativo.</strong> La mayoría de los traders minoristas pierde dinero (estudios de reguladores estiman entre 70 % y 90 %). Nada en este repositorio constituye asesoría financiera.</p>
+</blockquote>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🧱 Nivel</td>
+<td>1 · Fundamentos</td>
+</tr>
+<tr>
+<td>📦 Módulo</td>
+<td>2 de 12 (FIT-12)</td>
+</tr>
+<tr>
+<td>🔬 Trazabilidad</td>
+<td>003 · M1.4–1.5 · 004 · M2.4 · <strong>Aporte propio:</strong> calendario macro aplicado (ventanas rojas en hora local) y correlación intermercados con matices de régimen (vacíos 4 y 5 del informe)</td>
+</tr>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>4 h de teoría + 3–4 h de laboratorio/misión/quiz</td>
+</tr>
+<tr>
+<td>📋 Estado</td>
+<td>🟢 Publicado (Sprint 2)</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>🎯 Objetivo del Módulo</h2>
+<p>Entender <strong>por qué se mueve el precio</strong> — no solo dónde mirar. Al terminar este módulo sabrás cómo nace cada tick en la subasta (bid/ask, taker/maker, spread como costo), qué motor genera tendencias y rangos (oferta/demanda y desequilibrio), por qué los grandes operadores necesitan y "cazan" liquidez, cómo funcionan las sesiones del forex con TU huso horario (UTC-4), qué personalidad tiene cada mercado que vas a operar (EUR/USD, oro, índices) y qué hace el calendario macro con todos ellos a la vez. Este módulo existe porque el Módulo 3 te enseñará a leer el gráfico, pero un gráfico bien leído por quien no entiende la subasta que lo genera es un mapa de un territorio que no conoce: aquí pones el motor antes del mapa.</p>
+<h2>📚 Lecciones</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Lección</th>
+<th>Esencia</th>
+<th>Tiempo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2.1</td>
+<td><a href="leccion-2-1.html">La mecánica de subasta</a></td>
+<td>Bid/ask, taker vs maker, cómo nace cada tick; el spread como peaje y el viaje asimétrico del trade</td>
+<td>35–45 min</td>
+</tr>
+<tr>
+<td>2.2</td>
+<td><a href="leccion-2-2.html">Oferta y demanda</a></td>
+<td>Urgencia (no "número de compradores"), desequilibrio → expansión, equilibrio → rango; oferta/demanda residual como futuras zonas</td>
+<td>40–50 min</td>
+</tr>
+<tr>
+<td>2.3</td>
+<td><a href="leccion-2-3.html">Liquidez</a></td>
+<td>Qué es, quién la provee, por qué los stops del retail son su materia prima y qué es una barrida; defensa: SL por estructura</td>
+<td>40–50 min</td>
+</tr>
+<tr>
+<td>2.4</td>
+<td><a href="leccion-2-4.html">Forex y sus sesiones</a></td>
+<td>Pares, pips, lotes; las 4 sesiones convertidas a hora Bolivia; el ciclo diario y tu ventana de oro</td>
+<td>45–60 min</td>
+</tr>
+<tr>
+<td>2.5</td>
+<td><a href="leccion-2-5.html">Personalidad de cada mercado</a></td>
+<td>Las 5 dimensiones de auditoría; perfiles de EUR/USD, XAU/USD e índices; tamaño recalculado por mercado; concentración vs coleccionismo</td>
+<td>40–50 min</td>
+</tr>
+<tr>
+<td>2.6</td>
+<td><a href="leccion-2-6.html">Calendario macro e intermercados</a></td>
+<td>NFP/IPC/FOMC en tu hora; la cadena causal tasas → DXY → oro/acciones/cripto; la regla macro de formación (ventanas rojas)</td>
+<td>45–60 min</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote class="gfm-tip"><p><strong>💡 TIP:</strong> <strong>Cómo estudiar este módulo:</strong> dile a tu agente <em>"Siguiente lección"</em> y sigue el protocolo de sesión de estudio (§ 5.3 de <code>agents.md</code>): repaso activo → lección → quiz rápido → misión. Intenta responder las autoevaluaciones ANTES de abrir las respuestas.</p>
+<p><strong>Puente con la <a href="receta-primera-operacion.html">Receta de tu Primera Operación</a>:</strong> los pasos 0–2 (cuenta demo, tour de plataforma, observación de sesiones) son seguros hacerlos YA — esta lección te da justo el vocabulario (sesiones, spread, lote) que esos pasos piden. Los pasos 3–11 esperan al Módulo 4.</p>
+</blockquote>
+<h2>🧪 Laboratorio · Tu Reloj de Sesiones y tu Mapa Macro</h2>
+<p><strong>Materiales:</strong> tu auditoría personal de M1 (bloques de tiempo y energía), un calendario económico con filtro de impacto y huso configurable, hoja de papel o plantilla digital.</p>
+<p><strong>Procedimiento paso a paso:</strong></p>
+<ol>
+<li><strong>Construye tu reloj de sesiones.</strong> Dibuja un eje horizontal de 00:00 a 24:00 <strong>en hora Bolivia</strong>. Marca encima las 4 sesiones (Sídney, Tokio, Londres, NY) con sus rangos aproximados, y sombrea el solapamiento Londres–NY (≈ 08:00–12:00). Recuerda: los horarios se mueven ±1 h con el horario de verano del norte — deja una nota que lo recuerde. Encima del reloj, marca tus bloques reales de energía alta de la auditoría M-1. La intersección de ambos es tu <strong>ventana operativa candidata</strong>: escríbela en una frase.</li>
+<li><strong>Cruza con el calendario.</strong> Abre el calendario económico de la semana ENTRANTE, filtra alto impacto (USD y la moneda de tu par principal) y anota los <strong>5 primeros eventos</strong> con: día, nombre, consenso, <strong>hora Bolivia</strong>. Marca cada ventana roja (15 min antes/después; FOMC 30/30).</li>
+<li><strong>Pega el reloj y el mapa donde los veas.</strong> Captura o fotografía ambos y déjalos junto a tu pantalla de estudio. Este es el "semáforo" de la Lección 2.6 en tu pared.</li>
+<li><strong>Prueba de fuego (opcional, 20 min):</strong> el día del mayor evento de la semana, a las H-20 minutos abre el gráfico de tu par y observa el spread en la ventana roja (ensánchalo visualmente con la ventana de orden). Verás en vivo el peaje ×10 de la Lección 2.6. <strong>Sin operar.</strong></li>
+</ol>
+<p><strong>Entregable:</strong> <code>journal/reloj-sesiones-m2.md</code> con: el reloj dibujado (o su descripción), la ventana operativa candidata justificada en 3 frases, y la tabla de 5 eventos macro de la semana con horas Bolivia.</p>
+<h2>🎯 Misión</h2>
+<blockquote class="gfm-important"><p><strong>❗ IMPORTANT:</strong> Misión M-2 · Observación Pura de 3 Sesiones
+<strong>Objetivo:</strong> fabricar el reconocimiento en vivo del ciclo diario (Asia → Londres → NY) y del comportamiento del spread/volumen — sin dinero, sin órdenes, sin la tentación.
+<strong>Entregable:</strong> <code>journal/observacion-m2.md</code> con 3 sesiones completas del solapamiento Londres–NY (≈ 08:00–12:00 Bolivia) observadas en días distintos, cada una con la ficha de abajo.
+<strong>Criterio de aceptación:</strong> 3 fichas completas en 3 días distintos + una comparación final entre las tres sesiones (¿qué se repite? ¿qué fue distinto? ¿cuál fue la hora de mayor energía?).
+<strong>Etiqueta en journal:</strong> <code>mision-2-observacion</code> · <strong>Tiempo estimado:</strong> 3 × 2–4 h en vivo (puede fraccionarse por tramos de 1 h con nota de tramos).
+<strong>Regla de oro:</strong> <strong>cero órdenes.</strong> Esta misión se aprueba por la calidad de la observación, no por ningún resultado — es el entrenamiento de "estar en el mercado sin estar en él".</p>
+</blockquote>
+<p><strong>Ficha por sesión (copiar por cada día):</strong></p>
+<pre><code class="language-text">Sesión #N — fecha — EUR/USD (o tu par principal)
+1. Apertura de Londres (≈ 09:00 Bolivia): ¿qué hizo el precio en la primera hora?
+   (rompió el rango asiático / lo barrió y volvió / siguió dormido)
+2. Spread: ¿cómo era a las 08:55 vs a las 10:30? (ventana de orden, sin enviar nada)
+3. Eventos macro del día: ¿cuál salió y qué hizo el precio en los 15 min siguientes?
+4. Volumen/energía: ¿en qué hora hubo velas más grandes y más rápidas?
+5. Si tuvieras que operar HOY: ¿en qué tramo habrías tenido la mejor relación
+   señal/ruido? (observación, no recomendación)
+6. Estado del régimen (pre-M3, en palabras): ¿día de tendencia clara, de rango, o mixto?
+</code></pre>
+<h2>✅ Evaluación / Criterio de Graduación</h2>
+<ul>
+<li><strong>Misión M-2 completa:</strong> 3 fichas + comparación, con la regla de cero órdenes respetada (si enviaste alguna orden "solo para probar", reinicia la misión: la tentación es parte del material de estudio).</li>
+<li><strong>Quiz de graduación:</strong> 10 preguntas (subasta, liquidez, sesiones, macro) con ≥ 8/10.</li>
+<li><strong>Laboratorio entregado:</strong> reloj de sesiones + 5 eventos con hora Bolivia en <code>journal/</code>.</li>
+<li>Al aprobar todo: el módulo queda marcado ✅ en el README raíz y se abre el <a href="hub-mod-01.html">Módulo 3 · Anatomía del Gráfico</a> (se publica en el Sprint 3).</li>
+</ul>
+<h2>📝 Quiz de Graduación</h2>
+<ol>
+<li>Completa: compras al ______, vendes al ______, y la diferencia entre ambos es el ______.</li>
+<li>¿Quién "paga" el spread y quién lo "cobra"? Nómbralos con sus dos roles (urgencia vs paciencia).</li>
+<li>¿Por qué la frase "el precio sube porque hay más compradores que vendedores" es imposible? ¿Cuál es la explicación correcta?</li>
+<li>Compras EUR/USD con SL de 30 pips y TP de 30 pips, con un spread de 2 pips. ¿Cuántos pips debe recorrer el mercado hacia arriba para darte el TP y hacia abajo para darte el SL? ¿Qué se llama este efecto?</li>
+<li>Define liquidez en una frase y explica por qué el conjunto de stops del retail bajo un mínimo obvio ES liquidez para un institucional.</li>
+<li>Son las 13:00 UTC de un martes. ¿Qué hora es en Bolivia y qué sesión(es) están activas? ¿Cómo se llama ese tramo y por qué importa?</li>
+<li>Operas 0,05 lotes de EUR/USD y el precio recorre 40 pips a tu favor. ¿Cuántos dólares ganaste? (1 lote = 10 $/pip)</li>
+<li>¿Cuándo sale el NFP (día y hora del Este) y qué le pasa al spread dentro de la ventana roja del evento?</li>
+<li>El IPC de EE. UU. sorprende al alza. Recorre la cadena: ¿qué hacen típicamente los rendimientos de los bonos, el DXY y el oro? ¿Con qué palabra se califica todo el pronóstico?</li>
+<li>Enuncia la regla macro de formación (ventanas rojas) completa: cuánto antes/después de un evento de alto impacto, y qué se hace con una posición abierta si el evento es inminente.</li>
+</ol>
+<details>
+<summary>Ver clave de respuestas</summary>
+
+1. Ask · bid · spread. (Compras al ask, vendes al bid: el peaje de entrada/salida.)
+2. Paga el **taker** (urgencia, orden market, consume el libro); lo cobra el **maker** (paciencia, orden limit, provee liquidez). Toda transacción tiene al menos un taker y al menos un maker.
+3. En toda transacción hay exactamente un comprador y un vendedor — nunca puede haber "más" de unos que de otros. Lo correcto: el precio sube cuando los compradores son **más urgentes** (dispuestos a pagar asks más altos, Lección 2.1) y los vendedores suben precios o retiran órdenes.
+4. Arriba: 32 pips (30 + spread); abajo: 28 pips (30 − spread). Se llama el **viaje asimétrico** — el spread acorta el camino a la pérdida y alarga el camino a la ganancia (asimetría total = 2 × spread).
+5. Liquidez = capacidad de ejecutar tamaño inmediato sin mover el precio. Los stops son órdenes reales esperando: cuando el precio los alcanza se convierten en ventas/compras a mercado — un depósito concentrado de contrapartida que un institucional puede usar para llenar una orden grande (la barrida, Lección 2.3).
+6. 13:00 UTC = **09:00 Bolivia** (UTC−4). Están activas Londres (07:00–16:00 UTC) y Nueva York (12:00–21:00 UTC): es el **solapamiento Londres–NY** — el tramo de mayor volumen y menores spreads del día; ahí está la mejor relación señal/costo del forex.
+7. 0,05 lotes × 40 pips × 10 $/pip/lote = **20 $**. (El orden de la multiplicación no importa; importa no confundir pip con pipette.)
+8. **Primer viernes del mes, 08:30 ET** (≈ 08:30 Bolivia en horario de verano del norte; +1 h en invierno). Dentro de la ventana roja el spread se multiplica (de ~1,5 pips a 10–20, ilustrativo) y el slippage puede ejecutar tu SL peor que su nivel exacto.
+9. Típicamente: **rendimientos suben** (se descuentan tasas más altas por más tiempo), **DXY sube** (dólar más atractivo), **oro cae** (no paga interés, más caro en dólares). Todo se califica con **"típicamente"**: las correlaciones cambian de signo por régimen (en pánicos todo se vende junto) — contexto, no ley.
+10. Sin posiciones abiertas desde **15 minutos antes hasta 15 minutos después** de cada evento de alto impacto (FOMC: 30/30 incluyendo la rueda de prensa). Posición inminente: **cerrarla** o — solo si el plan lo contempla — asegurar el SL y reducir tamaño, nunca tamaño completo con SL apretado. Nunca se "opera el dato".
+
+</details>
+
+<h2>📖 Glosario del Módulo</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Término</th>
+<th>Inglés</th>
+<th>Definición</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bid</td>
+<td><em>bid</em></td>
+<td>Precio al que el mercado te compra (tu salida de un long)</td>
+</tr>
+<tr>
+<td>Ask</td>
+<td><em>ask/offer</em></td>
+<td>Precio al que el mercado te vende (tu entrada en un long)</td>
+</tr>
+<tr>
+<td>Spread</td>
+<td><em>spread</em></td>
+<td>Diferencia bid-ask; el costo fijo por operación que cobran los proveedores de liquidez</td>
+</tr>
+<tr>
+<td>Libro de órdenes</td>
+<td><em>order book / DOM</em></td>
+<td>Fila de órdenes de compra y venta por nivel de precio con sus cantidades</td>
+</tr>
+<tr>
+<td>Taker</td>
+<td><em>taker</em></td>
+<td>Participante agresivo con orden market: consume el libro y paga el spread</td>
+</tr>
+<tr>
+<td>Maker</td>
+<td><em>maker</em></td>
+<td>Participante pasivo con orden limit: provee liquidez y cobra el spread</td>
+</tr>
+<tr>
+<td>Liquidez</td>
+<td><em>liquidity</em></td>
+<td>Capacidad de ejecutar tamaño inmediato sin mover el precio (spread + profundidad)</td>
+</tr>
+<tr>
+<td>Impacto de mercado</td>
+<td><em>market impact</em></td>
+<td>Desplazamiento de precio que produce tu propia orden al consumir el libro</td>
+</tr>
+<tr>
+<td>Slippage</td>
+<td><em>slippage</em></td>
+<td>Diferencia entre el precio de tu orden/stop y el de ejecución real; crece en ventanas de baja liquidez</td>
+</tr>
+<tr>
+<td>Pip</td>
+<td><em>pip</em></td>
+<td>Unidad mínima convencional de movimiento: 0,0001 (pares con yen: 0,01)</td>
+</tr>
+<tr>
+<td>Pipette</td>
+<td><em>pipette</em></td>
+<td>Décima de pip (quinta decimal); fuente clásica de errores ×10 en SL/TP</td>
+</tr>
+<tr>
+<td>Lote</td>
+<td><em>lot</em></td>
+<td>Tamaño de posición: estándar 100 000 u. (10 $/pip en EUR/USD), mini 0,1, micro 0,01</td>
+</tr>
+<tr>
+<td>Oferta/demanda residual</td>
+<td><em>unfilled orders</em></td>
+<td>Interés que no se llenó en un movimiento previo y espera al retorno del precio (futuras zonas)</td>
+</tr>
+<tr>
+<td>Desequilibrio</td>
+<td><em>imbalance</em></td>
+<td>Estado en que un lado del mercado es más urgente; produce expansión</td>
+</tr>
+<tr>
+<td>Expansión</td>
+<td><em>expansion</em></td>
+<td>Salida rápida del precio de un nivel/rango hasta la próxima zona con órdenes</td>
+</tr>
+<tr>
+<td>Barrida de stops</td>
+<td><em>liquidity sweep / stop hunt</em></td>
+<td>Rotura breve de un nivel obvio para detonar stops y llenar órdenes grandes antes de revertir</td>
+</tr>
+<tr>
+<td>ADR</td>
+<td><em>average daily range</em></td>
+<td>Recorrido medio diario de un instrumento; calibra SL/TP realistas</td>
+</tr>
+<tr>
+<td>Sesiones</td>
+<td><em>sessions</em></td>
+<td>Turnos del día forex: Sídney, Tokio, Londres, Nueva York (horarios ±1 h por DST)</td>
+</tr>
+<tr>
+<td>Solapamiento</td>
+<td><em>London–NY overlap</em></td>
+<td>Tramo Londres+NY (≈ 12:00–16:00 UTC ≈ 08:00–12:00 Bolivia): máximo volumen, mínimo spread</td>
+</tr>
+<tr>
+<td>Gap</td>
+<td><em>gap</em></td>
+<td>Salto de precio sin negociación entre un cierre y la apertura siguiente (fines de semana, índices)</td>
+</tr>
+<tr>
+<td>NFP</td>
+<td><em>non-farm payrolls</em></td>
+<td>Dato de empleo de EE. UU.; primer viernes del mes, 08:30 ET</td>
+</tr>
+<tr>
+<td>IPC</td>
+<td><em>CPI</em></td>
+<td>Inflación al consumidor de EE. UU.; ~mediados de mes, 08:30 ET</td>
+</tr>
+<tr>
+<td>FOMC</td>
+<td><em>FOMC</em></td>
+<td>Comité de la Fed: decisión de tasas 14:00 ET + rueda de prensa 14:30 ET, 8 veces/año</td>
+</tr>
+<tr>
+<td>DXY</td>
+<td><em>dollar index</em></td>
+<td>Índice del dólar frente a una cesta (EUR ~58 %); termómetro del apetito por USD</td>
+</tr>
+<tr>
+<td>Ventana roja</td>
+<td><em>high-impact window</em></td>
+<td>Perímetro sin posición alrededor de un evento macro: 15/15 min (FOMC 30/30)</td>
+</tr>
+<tr>
+<td>Correlación</td>
+<td><em>correlation</em></td>
+<td>Co-movimiento típico entre activos; válida por régimen, no como ley</td>
+</tr>
+</tbody>
+</table></div>
+<h2>🔗 Referencias</h2>
+<ul>
+<li><a href="SYLLABUS.html">SYLLABUS.md § 5 — N1, Módulo 2</a></li>
+<li><a href="analisis_cursos.html">analisis_cursos.md</a> — vacíos curriculares 4 y 5 (calendario aplicado e intermercados)</li>
+<li><a href="receta-primera-operacion.html">La Receta de tu Primera Operación</a> — pasos 0–2 activos con este módulo</li>
+<li><a href="hub-mod-01.html">Módulo 1 · El Trading como Negocio y Ciencia</a> — anterior</li>
+<li>Módulo 3 · Anatomía del Gráfico — siguiente (se publica en el Sprint 3)</li>
+</ul>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="leccion-1-6.html"><span class="lbl">← Anterior</span><span class="ttl">Lección 1.6 · Expectativas y presupuesto</span></a>
+    <a class="next" href="leccion-2-1.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 2.1 · La mecánica de subasta</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

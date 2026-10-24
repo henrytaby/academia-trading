@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 9.3 · Métricas del reporte — de 100 filas a una página que dec · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a class="active" href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>🛡️ N3 · Riesgo<span class="sep">/</span>M9 · Backtesting, Journal y Validación<span class="sep">/</span>Lección 9.3 · Métricas del reporte — de 100 filas a una pági</div>
+  <article class="doc-body">
+<h1>Lección 9.3 · Métricas del reporte — de 100 filas a una página que decide</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>60–75 min de estudio</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-09.html">M9 · Backtesting, Journal y Validación</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td><a href="leccion-9-2.html">Lección 9.2 · Protocolo de backtesting manual</a></td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="leccion-9-4.html">Lección 9.4 · Forward testing en demo</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>Cien filas honestas de journal son materia prima — no un reporte. Los datos no deciden nada por sí mismos: lo que decide es el conjunto <strong>métricas + umbrales declarados antes</strong>, leído como el tablero de instrumentos de un avión: zonas verdes y rojas pintadas en frío, antes del vuelo, para que ninguna lectura se contamine del deseo del piloto. Esta lección construye ese tablero: las 13 métricas del reporte mínimo con sus fórmulas exactas, sus umbrales de decisión y la aritmética del caso maestro completa. Su lección más incómoda — y la más valiosa — es la de los <strong>costes</strong>: el detalle "menor" de 0,08R por operación que la 7.4 anticipó se come exactamente un tercio de tu esperanza bruta, hunde el Profit Factor de 1,40 a 1,25 y sube el WR de equilibrio de 32,3 % a 34,8 %. El reporte que ignora los costes no es optimista: es falso. Al terminar puedes convertir tu CSV en la página que decide — la misma que la misión M-9 entrega y la Evaluación N3 auditará.</p>
+<h2>Concepto</h2>
+<p><strong>Las fórmulas del reporte.</strong> Con las definiciones de M7 (WR, R:B, E) y dos piezas nuevas (el coste c en R y el PF):</p>
+<p><ktxd class="ktxd" data-tex="WR = \frac{\text{ganadoras}}{N} \qquad \bar{R}_g = \text{media de las ganadoras en R}">WR = \frac{\text{ganadoras}}{N} \qquad \bar{R}_g = \text{media de las ganadoras en R}</ktxd></p>
+<p><ktxd class="ktxd" data-tex="E_{\text{bruto}} = WR \times \bar{R}_g - (1-WR) \times 1 \qquad E_{\text{neta}} = E_{\text{bruto}} - c">E_{\text{bruto}} = WR \times \bar{R}_g - (1-WR) \times 1 \qquad E_{\text{neta}} = E_{\text{bruto}} - c</ktxd></p>
+<p><ktxd class="ktxd" data-tex="PF_{\text{bruto}} = \frac{\sum \text{ganancias}}{\sum \text{pérdidas}} \qquad WR^*_{\text{neto}} = \frac{1+c}{\bar{R}_g + 1}">PF_{\text{bruto}} = \frac{\sum \text{ganancias}}{\sum \text{pérdidas}} \qquad WR^*_{\text{neto}} = \frac{1+c}{\bar{R}_g + 1}</ktxd></p>
+<p>La fórmula del <strong>WR de equilibrio neto</strong> es nueva y es la más importante del lote: con coste c, cada ganadora rinde <ktx class="ktx" data-tex="\bar{R}_g - c">\bar{R}_g - c</ktx> y cada perdedora cuesta $1 + c$; el equilibrio exige <ktx class="ktx" data-tex="WR \times (\bar{R}_g - c) = (1-WR) \times (1+c)">WR \times (\bar{R}_g - c) = (1-WR) \times (1+c)</ktx>, de donde sale <ktx class="ktx" data-tex="WR^* = \frac{1+c}{\bar{R}_g+1}">WR^* = \frac{1+c}{\bar{R}_g+1}</ktx>. Con R̄ 2,1 y c 0,08: <ktx class="ktx" data-tex="1{,}08/3{,}10 = 34{,}8">1{,}08/3{,}10 = 34{,}8</ktx> % — cuatro puntos y medio por encima del 32,3 % bruto. <strong>Los costes engargolan la meta</strong>: el sistema que parecía necesitar 33 % de acierto necesita 35 % — y cada décima de coste adicional (spread en noticias, slippage) sube la barra.</p>
+<p><strong>El reporte mínimo de una página</strong> — las 13 métricas, sus umbrales <em>(declarados en tu lista PRE antes de mirar los datos)</em> y los valores del caso maestro <em>(ilustrativo: el sistema híbrido 2+4 con WR esperado 40 %, R̄ 2,1, c 0,08, N=100, riesgo 1 %)</em>:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Métrica</th>
+<th>Fórmula / fuente</th>
+<th>Caso <em>(ilustrativo)</em></th>
+<th>Umbral verde</th>
+<th>Umbral rojo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>N operado</td>
+<td>conteo de filas</td>
+<td>100</td>
+<td>≥ 100</td>
+<td>&lt; 50 (decisión imposible)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>WR medido</td>
+<td>ganadoras / N</td>
+<td>40 %</td>
+<td>≥ 40 % neto</td>
+<td>&lt; WR* neto (34,8 %)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>IC 95 % del WR</td>
+<td><ktx class="ktx" data-tex="\pm 1{,}96\sqrt{WR(1-WR)/N}">\pm 1{,}96\sqrt{WR(1-WR)/N}</ktx></td>
+<td>±9,6 pp → [30,4; 49,6]</td>
+<td>el peor caso sigue operable a 0,25 %</td>
+<td>el mejor caso está bajo el equilibrio</td>
+</tr>
+<tr>
+<td>4</td>
+<td>R:B medio</td>
+<td><ktx class="ktx" data-tex="\bar{R}_g">\bar{R}_g</ktx></td>
+<td>2,1R</td>
+<td>≥ 1,5 (plan M7)</td>
+<td>&lt; 1,2</td>
+</tr>
+<tr>
+<td>5</td>
+<td>E bruta</td>
+<td><ktx class="ktx" data-tex="WR\bar{R}_g - (1-WR)">WR\bar{R}_g - (1-WR)</ktx></td>
+<td>+0,24R</td>
+<td>&gt; 0</td>
+<td>≤ 0</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Coste medio c</td>
+<td>spread + slippage por op</td>
+<td>0,08R</td>
+<td>≤ 0,10R</td>
+<td>&gt; 0,15R (revisar broker/mercado)</td>
+</tr>
+<tr>
+<td>7</td>
+<td>E neta</td>
+<td>E bruta − c</td>
+<td><strong>+0,16R</strong></td>
+<td>≥ +0,10R</td>
+<td>≤ 0 (el sistema no paga)</td>
+</tr>
+<tr>
+<td>8</td>
+<td>WR de equilibrio neto</td>
+<td><ktx class="ktx" data-tex="(1+c)/(\bar{R}_g+1)">(1+c)/(\bar{R}_g+1)</ktx></td>
+<td>34,8 %</td>
+<td>—</td>
+<td>referencia fija de la fila 2</td>
+</tr>
+<tr>
+<td>9</td>
+<td>PF bruto</td>
+<td>ΣG / ΣP</td>
+<td>1,40</td>
+<td>≥ 1,3</td>
+<td>&lt; 1,1</td>
+</tr>
+<tr>
+<td>10</td>
+<td>PF neto</td>
+<td>(ΣG − costes) / (ΣP + costes)</td>
+<td><strong>1,25</strong></td>
+<td>≥ 1,2</td>
+<td>&lt; 1,1</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Racha máxima medida</td>
+<td>conteo de la muestra</td>
+<td>~9 esperada</td>
+<td>≤ 12</td>
+<td>≥ 15 sin explicación (sospecha de régimen)</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Max DD medido</td>
+<td>de la curva de capital</td>
+<td>−8,6 % (racha 9 al 1 %)</td>
+<td>≤ −10 %</td>
+<td>&gt; −15 % (línea de emergencia M8)</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Disparos ejecutados / debidos</td>
+<td>journal + actas</td>
+<td>100/100</td>
+<td>= 100 %</td>
+<td>&lt; 95 % (fuga de ejecución)</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>(a la tabla se añade el gráfico de la curva de capital — el ECG del negocio, 7.5 — que no se resume en un número: su pendiente, sus valles y su recuperación se miran, no se promedian.)</em></p>
+<p><strong>La aritmética completa del caso maestro.</strong> Con WR 40 % y R̄ 2,1 en 100 operaciones: 40 ganadoras aportan <ktx class="ktx" data-tex="40 \times 2{,}1 = 84R">40 \times 2{,}1 = 84R</ktx> bruto; 60 perdedoras cuestan 60R; E bruta <ktx class="ktx" data-tex="(84-60)/100 = +0{,}24R">(84-60)/100 = +0{,}24R</ktx>; PF bruto <ktx class="ktx" data-tex="84/60 = 1{,}40">84/60 = 1{,}40</ktx>. Ahora el coste c = 0,08R por operación: las ganadoras netas rinden <ktx class="ktx" data-tex="84 - 100 \times 0{,}08 \times \frac{40}{40} = 84 - 3{,}2 = 80{,}8R">84 - 100 \times 0{,}08 \times \frac{40}{40} = 84 - 3{,}2 = 80{,}8R</ktx>... más directo: cada ganadora rinde <ktx class="ktx" data-tex="2{,}02R">2{,}02R</ktx> y cada perdedora cuesta <ktx class="ktx" data-tex="1{,}08R">1{,}08R</ktx> → E neta <ktx class="ktx" data-tex="= 0{,}4 \times 2{,}02 - 0{,}6 \times 1{,}08 = 0{,}808 - 0{,}648 = +0{,}16R">= 0{,}4 \times 2{,}02 - 0{,}6 \times 1{,}08 = 0{,}808 - 0{,}648 = +0{,}16R</ktx>; PF neto <ktx class="ktx" data-tex="= (0{,}4 \times 2{,}02)/(0{,}6 \times 1{,}08) = 0{,}808/0{,}648 = 1{,}25">= (0{,}4 \times 2{,}02)/(0{,}6 \times 1{,}08) = 0{,}808/0{,}648 = 1{,}25</ktx>. En 100 operaciones: $+16R$ netos acumulados → al 1 % con composición, <ktx class="ktx" data-tex="1{,}0016^{100} ≈ 1{,}173">1{,}0016^{100} ≈ 1{,}173</ktx> → <strong>≈ +17 % de capital en el ciclo</strong> <em>(ilustrativo, compuesto, sin aportes)</em>. El coste se comió <ktx class="ktx" data-tex="0{,}08/0{,}24 = 33">0{,}08/0{,}24 = 33</ktx> % de la esperanza bruta — el ladrón silencioso que la 7.4 prometió medir.</p>
+<p><strong>La decisión de 3 vías</strong> — la tabla que convierte el reporte en decisión (los umbrales de las columnas verdes/rojas de arriba, leídos JUNTOS):</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Veredicto</th>
+<th>Condiciones (todas)</th>
+<th>Acción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🟢 <strong>Verde — aprobar</strong></td>
+<td>WR ≥ 40 % neto · PF neto ≥ 1,25 · racha ≤ 12 · Max DD ≤ −10 % · disparos 100 %</td>
+<td>El sistema opera al 1 % (M8) y pasa a forward (9.4); la muestra se congela y el changelog registra v1.1 vigente</td>
+</tr>
+<tr>
+<td>🟡 <strong>Ámbar — provisional</strong></td>
+<td>WR entre WR* (34,8 %) y 40 % · o PF neto 1,1–1,25 · o racha 13–14 · o DD −10…−15 %</td>
+<td>Operar a 0,25–0,5 % SOLO en demo forward, seguir sumando muestra hacia N=200; sin cambios de reglas</td>
+</tr>
+<tr>
+<td>🔴 <strong>Rojo — no operar</strong></td>
+<td>WR &lt; 34,8 % neto · o PF neto &lt; 1,1 · o racha ≥ 15 sin explicación · o DD &gt; −15 %</td>
+<td>El sistema NO opera: volver al laboratorio de M7 con los datos (no con la desesperación); re-test completo tras cualquier modificación</td>
+</tr>
+</tbody>
+</table></div>
+<p>La regla de lectura: <strong>un solo rojo manda</strong> (es una tabla de vetos, no de promedios — un PF neto de 1,05 no se "compensa" con un buen WR: es la señal de que los costes o el arquetipo no dan para el negocio). Y el caso del empate técnico: si dos métricas caen en ámbar y el resto en verde, la decisión es ámbar — la cautela se elige siempre que la evidencia no es clara; el costo de la cautela es tiempo, el costo del exceso de confianza se paga en inventario (8.2).</p>
+<p><strong>La curva de capital y las rachas: qué mirar.</strong> La curva esperada del caso <em>(ilustrativo)</em> sube ≈ +17 % en 100 ops con el valle característico: la racha esperada máxima es <ktx class="ktx" data-tex="\ln(100)/\ln(1/0{,}6) ≈ 9">\ln(100)/\ln(1/0{,}6) ≈ 9</ktx> pérdidas → <ktx class="ktx" data-tex="0{,}99^9 = 0{,}9135">0{,}99^9 = 0{,}9135</ktx> → <strong>−8,6 %</strong> de drawdown. Lo que se mira en la curva: <strong>(a) la pendiente media</strong> (¿consistente con E neta +0,16R?, o escalones: pocas operaciones que hacen todo el trabajo = concentración peligrosa); <strong>(b) los valles</strong> (¿profundidad y duración dentro de lo que la estadística de 7.5 predice?); <strong>(c) la recuperación</strong> (¿la curva sale del valle al ritmo esperado?). Y lo que NO se espera: una línea recta — la recta es la firma del data-mining o del look-ahead; la curva honesta es dentada, con valles de −8 % que la 8.2 te enseñó a leer en meses de recuperación. Si tu muestra mide una racha ≥ 15 (P puntual <ktx class="ktx" data-tex="0{,}6^{15} ≈ 0{,}05">0{,}6^{15} ≈ 0{,}05</ktx> % — aún sumando las ~86 ventanas de arranque, improbable): primero se audita la integridad del dato (9.1), luego se documenta como sospecha de cambio de régimen, y se decide en la ventana mensual (9.6) — nunca en caliente.</p>
+<h2>Analogía</h2>
+<p>El tablero de instrumentos del avión. Un piloto no "siente" su altitud: la lee en el altímetro, con una zona verde pintada y una franja roja que el fabricante fijó en tierra, en frío, con datos de ingeniería — no con la opinión del piloto de turno. La razón es brutal y simple: en el vuelo, el juicio humano se degrada (fatiga, hipoxia, pánico) y las zonas pintadas son la memoria del ingeniero protegiendo al piloto de sí mismo. Tu reporte es ese tablero: los umbrales verdes/rojos se declaran en tu lista PRE (en tierra), y el piloto que lee el tablero después de 100 operaciones — cansado, con apego al resultado y con semanas de trabajo encima — obedece la zona pintada, no su sensación. Cuando un piloto ignora el indicador "porque esta vez es distinto", la industria tiene un nombre para el informe que sigue: lectura de la caja negra. Tu journal es tu caja negra (9.5) — por eso el reporte se escribe CON ella y no de memoria.</p>
+<h2>Cómo se hace: construir el reporte con tu hoja de cálculo</h2>
+<ol>
+<li><strong>Exporta y valida el dataset.</strong> Del journal v1 (CSV): 100 filas, sin campos vacíos, con etiqueta E0–E7 en todas. La validación primero: un WR calculado sobre filas incompletas es un número bonito sin significado. La calculadora Python del programa (<a href="files/metricas_backtest.py"><code>metricas_backtest.py</code></a>) hace esta validación y calcula todo el reporte: tu hoja debe coincidir con ella (el oráculo de M8, ahora para métricas).</li>
+<li><strong>Calcula las métricas en este orden:</strong> N → WR → IC → R̄_g → E bruta → c medio → E neta → WR* neto → PF bruto → PF neto → racha máxima → Max DD (sobre la curva acumulada en R, convertible a % con el 1 %) → disparos. El orden importa: varias métricas se alimentan de las anteriores, y el WR de equilibrio neto se calcula antes de leer el WR medido (para saber contra qué comparas).</li>
+<li><strong>Dibuja la curva de capital.</strong> Serie acumulada de R por orden temporal (columna simple: suma de r_real fila a fila). Mírala con las 3 preguntas del concepto: pendiente, valles, recuperación. Cópiala al reporte (captura o dibujo a mano: vale).</li>
+<li><strong>Rellena la tabla con veredictos.</strong> Cada fila con su valor, su umbral y su color (🟢🟡🔴). Un reporte sin veredictos por fila es un borrador: la decisión se toma contra umbrales, no contra impresiones.</li>
+<li><strong>Aplica la tabla de 3 vías y escribe la decisión.</strong> Con fecha, con la fila roja o ámbar que la motivó, y con el destino: forward (verde), más muestra a tamaño reducido (ámbar), o laboratorio de M7 con los datos (rojo). La decisión va al changelog del sistema (9.6) — decidir sin documentar es no haber decidido.</li>
+</ol>
+<h2>Error común</h2>
+<p><strong>(1) Mirar solo el WR.</strong> El WR sin el R:B no significa nada: 60 % con R:B 0,5 es <ktx class="ktx" data-tex="E = 0{,}6 \times 0{,}5 - 0{,}4 = -0{,}1R">E = 0{,}6 \times 0{,}5 - 0{,}4 = -0{,}1R</ktx> — un sistema PERDEDOR con "60 % de acierto". Las métricas se leen juntas o no se leen. <strong>(2) Ignorar los costes.</strong> El caso maestro lo demuestra: PF 1,40 bruto → 1,25 neto; WR de equilibrio 32,3 % → 34,8 %; un tercio de la esperanza evaporado. Todo umbral del programa es neto — el reporte que calcula bruto es publicidad, no auditoría. <strong>(3) Leer la curva como una línea recta.</strong> "Va hacia arriba, perfecto" — la pendiente media esconde si dos operaciones gigantes hacen todo el trabajo, si los valles exceden lo estadísticamente esperado, si la recuperación tarda el doble de lo que la E predice. La curva se mira; el promedio se calcula; ninguna de las dos cosas sustituye a la otra. <strong>(4) Celebrar un PF &gt; 3 con N=100.</strong> M7 ya lo avisó y el reporte lo repite: PF &gt; 3 en 100 operaciones es sospecha automática — de look-ahead, de data-mining, de muestra con régimen de moda o de costes no registrados. La E real de los sistemas operables es modesta (+0,1R a +0,3R netos); los milagros de backtest son el producto de salida más común del laboratorio amateur. <strong>(5) Decidir con el número puntual y no con el conjunto.</strong> WR 41 % no es verde si el PF neto es 1,05; racha 13 no es roja si el DD quedó en −9 % y el resto está verde. La tabla de 3 vías es un sistema de vetos: se lee completa, se decide completa, y el veredicto más restrictivo manda.</p>
+<h2>Conexión cuantitativa</h2>
+<p><strong>Hacia 8.2:</strong> el Max DD medido de la fila 12 reemplaza la estimación compuesta de la tabla de recuperación — ya no "espero −6 % por racha": mido el mío, y la decisión de sizing (1 % vs 0,25–0,5 %) se toma contra el dato. <strong>Hacia 7.4:</strong> la E neta es exactamente la esperanza aplicada de la matriz WR × R:B, ahora con el coste dentro — la fila de tu sistema en esa matriz era una hipótesis; el reporte la convierte en medición. <strong>Hacia 9.4:</strong> los umbrales de la tabla de 3 vías son los MISMOS que juzgarán el forward — "las métricas forward caen dentro de los intervalos del backtest" significa, concretamente, que el WR forward cae dentro del IC de la fila 3 y el PF neto cerca de la fila 10. <strong>Hacia la misión M-9:</strong> este reporte ES el entregable central — las 3 conclusiones y el changelog v1.2 se escriben sobre sus filas, no sobre la sensación del mes. Y hacia M12: el reporte de una página es el embrión del informe de resultados que tu plan de negocio presentará a quien financie tu operación — el formato se aprende ahora, con 100 filas propias, para no improvisarlo nunca.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li>El reporte mínimo: <strong>13 métricas con umbrales declarados antes</strong> + la curva de capital — se lee completa y el veto más restrictivo manda.</li>
+<li>Los costes son la primera auditoría: c = 0,08R se come el 33 % de la E bruta (PF 1,40 → 1,25) y sube el WR de equilibrio a *<em>WR</em> = (1+c)/(R̄+1) = 34,8 %**.</li>
+<li>La decisión es de 3 vías — 🟢 aprobar al 1 % · 🟡 provisional a 0,25–0,5 % y más muestra · 🔴 no operar — y frente a la duda se elige la cautela.</li>
+<li>La curva esperada del caso: +17 % en 100 ops con un valle de −8,6 % (racha ~9) — la recta perfecta es la firma del sesgo, no del talento.</li>
+<li>Racha ≥ 15 o PF &gt; 3 con N=100: primero se audita la integridad del dato, se documenta la sospecha y se decide en la ventana — nunca en caliente.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>Mini-dataset de 10 operaciones: 4 ganadoras de +2,0R, +1,8R, +2,4R, +2,2R; 6 perdedoras de −1R; coste 0,08R por op. Calcula WR, R̄_g, E bruta, E neta, PF bruto y PF neto (números exactos).</li>
+<li>Demuestra con la fórmula por qué el WR de equilibrio sube de 32,3 % a 34,8 % cuando añades c = 0,08R con R̄ 2,1 — y explica qué le pasa a la zona ámbar de la tabla de 3 vías.</li>
+<li>Tu muestra de 100 mide: WR 42 %, PF neto 1,30, racha máxima 13, Max DD −11 %, disparos 97/100. Aplica la tabla de 3 vías fila por fila y escribe la decisión con su justificación (¿por qué la racha no la vuelve roja y qué hace la fila de disparos?).</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. WR = 4/10 = **40 %**. R̄_g = (2,0+1,8+2,4+2,2)/4 = 8,4/4 = **2,1R**. E bruta = 0,4×2,1 − 0,6×1 = 0,84 − 0,6 = **+0,24R**. E neta = 0,4×(2,1−0,08) − 0,6×(1+0,08) = 0,808 − 0,648 = **+0,16R**. PF bruto = 8,4/6 = **1,40**. PF neto = (8,4−0,32)/(6+0,48) = 8,08/6,48 = **1,25**. (Es el caso maestro en miniatura: con N=10 el IC sería ±30 pp — el mismo resultado con 10 filas no decide nada; la muestra mínima existe por una razón.)
+2. Equilibrio: <ktx class="ktx" data-tex="WR \times (\bar{R}_g - c) = (1-WR) \times (1+c)">WR \times (\bar{R}_g - c) = (1-WR) \times (1+c)</ktx> → <ktx class="ktx" data-tex="WR^* = \frac{1+c}{\bar{R}_g+1}">WR^* = \frac{1+c}{\bar{R}_g+1}</ktx>. Bruto (c=0): 1/3,1 = 32,3 %. Neto (c=0,08): 1,08/3,10 = 34,8 %. La zona ámbar se ENGARGOLA por arriba: su límite inferior era el equilibrio, y el equilibrio real está 2,5 pp más alto — un WR medido de 34 %, que el bruto celebraría ("sobre equilibrio"), está BAJO el neto: es rojo. Consecuencia práctica: todos los umbrales del programa se calculan netos, porque el coste no es opcional — se paga en cada operación exista o no en tu hoja.
+3. Fila a fila: WR 42 % ≥ 40 % → 🟢 · PF neto 1,30 ≥ 1,25 → 🟢 · racha 13 → **🟡** (umbral verde ≤ 12, rojo ≥ 15: zona ámbar — documentar, no reaccionar) · Max DD −11 % → 🟡 (verde ≤ −10 %, rojo > −15 %) · disparos 97/100 = 97 % → **🟡** (verde = 100 % exacto, rojo < 95 %: la fuga del 3 % queda en ámbar y la revisión semanal la nombra). Veredicto global: **ámbar** — el veto más restrictivo manda: el sistema sigue a 0,25–0,5 % en demo forward, se documenta la racha de 13 como observación (dentro de lo plausible a N=100 con WR 40 %: la cola estadística existe), y la conclusión 1 de la misión nombra la fuga de disparos como el dato más débil. No es verde: dos ámbar no se compensan con tres verdes — la cautela es la decisión por defecto cuando la evidencia no es limpia.
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="leccion-9-2.html"><span class="lbl">← Anterior</span><span class="ttl">Lección 9.2 · Protocolo de backtesting manual — la rutina que hace los</span></a>
+    <a class="next" href="leccion-9-4.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 9.4 · Forward testing en demo — la transición honesta del labo</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

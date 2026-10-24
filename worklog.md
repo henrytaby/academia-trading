@@ -414,3 +414,26 @@ Stage Summary:
 - Artefactos nuevos: scripts/audit_final.py (auditoría reproducible de 9 checks) + verify-audit-final.png; visor resincronizado y zip reempacado
 - Estado: 🏆 PROGRAMA COMPLETO y auditado — 12/12 módulos, 99 .md en docs/, 105 docs en visor, 302 términos, 44 diagramas, 4 evaluaciones, 0 enlaces rotos, 0 placeholders, 0 errores de render
 - Siguiente: a petición del estudiante — versiones B de exámenes, iteraciones de contenido, acompañamiento socrático (defensas simuladas), o soporte de uso del repo
+
+---
+Task ID: portal-1
+Agent: Z.ai (arquitectura web + build tooling)
+Task: Migración del visor monolítico (visor.html 1,6 MB) a portal estático multi-página generado por build reproducible
+
+Work Log:
+- Decidido con el estudiante por preguntas: carpeta portal/, build en Python, 1 HTML por documento, visor.html ELIMINADO, features de navegación + modo oscuro, rutas universales relativas (local/zip/GitHub Pages sin cambios)
+- Creado el generador DENTRO del repo: scripts/portal/build_portal.py (rutas relativas a __file__) + scripts/portal/assets_src/{style.css,app.js} — el zip es autocontenido: el estudiante puede regenerar tras editar cualquier .md con `python3 scripts/portal/build_portal.py` (requiere pip install markdown; instalado markdown 3.11.2 en el venv)
+- Pipeline por documento: extracción de matemática fuera de bloques vallados (puerto fiel de extractMath/isMathish del visor, MEJORADO: matching escape-aware `\\.` para que `\$` dentro de `$...$` no corte el delimitador — defecto latente del visor en leccion-8-3.md línea 100 detectado y corregido) -> markdown (tables/fenced_code/sane_lists) -> callouts GitHub [!X] a 5 clases CSS (warn/caution/note/tip/important) -> mermaid a pre.mermaid -> tablas a .table-wrap -> placeholders a span/div.ktx|ktxd con data-tex (KaTeX client-side) -> reescritura de enlaces internos a slugs planos del portal
+- Orden canónico por regla verificado 1:1 contra el orden histórico del visor (105 docs); slugs únicos con dedupe (hubs mod -> hub-mod-NN, journal/core readme con prefijo)
+- 3 bugs encontrados y corregidos durante el build: (1) rewrite_links no sembraba el stack con la ruta base (203 enlaces sin reescribir); (2) `path.replace('./','')` corrompía `../` (regex anclado ^\./); (3) enlaces hacia productos del portal (README -> portal/index.html) no resolvían porque el build borra portal/ antes de escanear — rama nueva: .html bajo OUT se reescriben incondicionalmente y OUT excluido del escaneo de files/
+- Prosa con `\$` literal: seg_math convierte `\$` -> &dollar; fuera de vallados tras extraer matemática (el markdown de Python no des-escapa $)
+- Portal generado: 106 páginas (105 docs + portada index.html con hero/stats/4 tarjetas de nivel/8 accesos rápidos), 570 fórmulas, 44 diagramas, portal/files/ con 4 apoyos (2 calculadoras .py + 2 journal .csv); assets CDN KaTeX 0.16.11 + mermaid@10
+- Verificación navegador (agent-browser): portada (hero, 105 docs, 571->570 fórmulas stat, 4 tarjetas), lección 5.1 (breadcrumb N2/M5, sidebar activa, prev/next), lección 8.3 (19/19 fórmulas KaTeX, 0 katex-error), lección 11.1 (mermaid SVG con viewBox), hub M11 (3 callouts con clase), examen-final (tablas), modo oscuro (toggle + persistencia localStorage + mermaid theme dark), clic desde portada a hub M5, enlace files/position_sizing.py en misión M8, 0 errores de consola; capturas verify-portal-hub.png y verify-portal-dark.png
+- Migración: visor.html ELIMINADO; README actualizado (árbol con portal/ y scripts/portal, v1.1->v1.10 en el árbol, Inicio Rápido con viñeta del portal + frase "Módulos 1 a 9" -> "los 12 módulos"); repack_zip.py con chequeos portal/builder/visor-eliminado; audit_final.py ampliado con 4 checks de portal (cobertura, placeholders, enlaces, assets) manteniendo el modo legacy condicional
+- Auditoría global final: 🏆 SIN HALLAZGOS; zip -> 224 archivos, 1744 KB, testzip OK
+
+Stage Summary:
+- Artefactos: portal/ (106 páginas + assets + files) + scripts/portal/ (builder autocontenido) + README/audit/repack actualizados + academia-trading.zip 224 archivos; visor.html retirado
+- Decisiones: páginas planas con slugs legibles (leccion-5-1.html, examen-final.html, hub-mod-05.html); KaTeX client-side vía data-tex (sin ambigüedad de delimitadores); el builder vive en el repo (fuente única) y es reproducible en cualquier máquina con Python 3 + markdown
+- Estado: portal FIT-12 v1.0 en producción — navegación por niveles, modo oscuro, 570 fórmulas, 44 diagramas, 0 enlaces rotos, audit limpia
+- Siguiente: a petición — buscador client-side, checkboxes de progreso (localStorage), versiones B de exámenes o contenido nuevo (regenerando con el builder)

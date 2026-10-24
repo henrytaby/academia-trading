@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 6.3 · Volatilidad y canales — ATR audita tu stop · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a class="active" href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>📐 N2 · Técnica<span class="sep">/</span>M6 · Indicadores y Confluencias<span class="sep">/</span>Lección 6.3 · Volatilidad y canales — ATR audita tu stop</div>
+  <article class="doc-body">
+<h1>Lección 6.3 · Volatilidad y canales — ATR audita tu stop</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>45–60 min de estudio</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-06.html">M6 · Indicadores y Confluencias</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td><a href="leccion-6-2.html">Lección 6.2 · Medias móviles</a></td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="leccion-6-4.html">Lección 6.4 · Momentum y osciladores</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>La volatilidad es la propiedad más ignorada por el principiante y la más estudiada por el profesional. El principiante fija su stop "donde se ve" y su objetivo "donde sueña"; el profesional primero pregunta <em>cuánto se mueve este instrumento en promedio</em> — porque un SL de 15 pips en un mercado que respira 40 es un donativo, y un TP a 100 pips en un mercado que avanza 20 es una promesa que nadie firmó. El ATR convierte esa pregunta en un número. Y tiene un aporte directo a tu caso: el SL de 32 pips de tu <a href="receta-primera-operacion.html">Receta</a> no se eligió por ATR — se eligió por estructura (tras la barrida) — pero el ATR es la herramienta que <em>audita</em> si ese SL está en una zona estadísticamente sana o si el azar de esa operación te acunó. Esta lección también presenta los canales clásicos (Bollinger, Donchian) y la lección estadística más famosa del trading sistemático: las Tortugas.</p>
+<h2>Concepto</h2>
+<p><strong>Rango verdadero (TR) y ATR.</strong> El rango simple (high − low) miente cuando hay huecos entre velas. El rango verdadero (<em>true range</em>) los incorpora:</p>
+<p><ktxd class="ktxd" data-tex="TR = \max\left(H - L,\; |H - C_{prev}|,\; |L - C_{prev}|\right)">TR = \max\left(H - L,\; |H - C_{prev}|,\; |L - C_{prev}|\right)</ktxd></p>
+<p>El <strong>ATR</strong> (<em>average true range</em>) es la media móvil de los TR de N periodos (clásico: 14): la amplitud típica de las velas del marco. Es el medidor de volatilidad más usado del mundo porque es simple, robusto y sin opinión: no dice dirección, dice <em>tamaño</em>.</p>
+<p><strong>Tres usos del ATR en el programa:</strong></p>
+<ol>
+<li><strong>Auditar el SL:</strong> tu stop debe estar más allá de la respiración normal del mercado. Regla de trabajo: SL sanos entre <strong>1,0 y 2,0 ATR</strong> del nivel estructural. Menos de 1 ATR: la mera respiración te caza por ruido; más de 2 ATR: pagas un riesgo que el motivo no justifica y tu TP se aleja en pips sin contrapartida de probabilidad.</li>
+<li><strong>Dimensionar el movimiento esperado:</strong> "¿es realista mi TP?" — un TP a 4 ATR del precio actual pide un movimiento excepcional; un TP a 1,5 ATR es una jornada ordinaria.</li>
+<li><strong>Comparar instrumentos y marcos:</strong> 30 pips en XAU/USD con ATR de 250 es ruido; 30 pips en EUR/USD con ATR de 21 es un día entero. El ATR traduce todos los mercados al mismo idioma.</li>
+</ol>
+<p><strong>Bandas de Bollinger.</strong> Canal estadístico construido sobre una SMA 20 con dos bandas a ±2 desviaciones estándar:</p>
+<p><ktxd class="ktxd" data-tex="Bandas = SMA_{20} \pm 2\sigma">Bandas = SMA_{20} \pm 2\sigma</ktxd></p>
+<p>Bajo normalidad, ~95 % de los cierres caen dentro (advertencia: los rendimientos financieros tienen colas gordas — la cifra real es algo menor). Dos fenómenos que el programa usa: <strong>squeeze</strong> = ambas bandas se contraen (σ mínima): la volatilidad está comprimida y el mercado se prepara para una expansión — anticipa <em>fase</em>, no dirección (encaja con el ciclo de M3); y <strong>walking the bands</strong> = en tendencia fuerte, el precio viaja pegado a una banda: tocarla es medición de fuerza, no señal de giro.</p>
+<p><strong>Canal de Donchian y las Tortugas.</strong> El canal de Donchian es el máximo/mínimo de los últimos N periodos (clásico: 20): la caja de los extremos. Richard Dennis y William Eckhardt usaron su ruptura como base del experimento de las <strong>Tortugas</strong> (años 80): sistema de ruptura de 20 días, riesgo de ~2 % por posición, dimensionado con el propio ATR (su "N"), salidas en canal inverso de 10. La lección que sobrevive al mito: un sistema de reglas completamente mecánicas, con riesgo controlado y esperanza positiva, puede enseñarse — el comercio no es adivinar, es ejecutar estadística.</p>
+<h2>Analogía</h2>
+<p>La puerta de tu casa y la altura de la gente. Si la puerta mide 1,90 m y tus invitados miden 1,75 de promedio, casi nadie se golpea: el margen sobra. Ahora te mudas a un país donde la media es 1,85: la misma puerta empieza a producir golpes diarios. El SL es la puerta y la ATR es la altura media de los movimientos: no existe "el stop correcto en pips" en abstracto — existe el stop correcto <em>para la respiración de este mercado en este marco</em>. Y el squeeze es el pasillo estrecho antes del salón: la gente se amontona antes de abrirse; el amontonamiento no dice hacia qué puerta saldrán.</p>
+<h2>Cómo se hace: auditoría ATR del SL de la receta</h2>
+<p>El instante previo a la operación de la <a href="receta-primera-operacion.html">Receta</a> <em>(ilustrativo)</em> — EUR/USD H4:</p>
+<ol>
+<li><strong>Mides el ATR(14) H4:</strong> ≈ 21 pips. Anotas el número en tu pre-trade — ocupa 10 segundos.</li>
+<li><strong>Recuperas el SL estructural:</strong> 1,0788, fijado 4 pips por debajo del low de la barrida (1,0792) según la ley 4.6 (SL tras la estructura con respiración).</li>
+<li><strong>Distancia entrada→SL:</strong> 1,0820 − 1,0788 = 32 pips. Auditoría: <ktx class="ktx" data-tex="32 / 21 \approx 1{,}52">32 / 21 \approx 1{,}52</ktx> ATR → dentro del rango sano 1,0–2,0. El stop NO lo dictó el ATR: lo dictó la estructura; el ATR confirma que la estructura no es una puerta de 1,60 m para invitados de 1,85.</li>
+<li><strong>Auditorías contrafácticas (para calibrar tu ojo):</strong> un SL a 1,0805 (15 pips, "porque apretado arriesga menos") = 0,7 ATR → la respiración normal de 21 pips lo ejecuta sin que tu tesis haya fallado; un SL a 1,0760 (60 pips, "más margen") = 2,9 ATR → riesgo inflado 1,9×, lote reducido a la mitad por la misma tesis: overpaying por miedo.</li>
+<li><strong>Donchian 20 H4 sobre el caso:</strong> el canal va de 1,0745 (low del swing) a 1,0884 (el HH). Un cierre H4 por encima de 1,0884 sería el gatillo Tortuga de continuación — nota cómo el lenguaje de "ruptura de extremos de N periodos" y el "BOS por cierre" del M5 describen el mismo fenómeno con dos dialectos.</li>
+<li><strong>Bollinger sobre el caso:</strong> antes del impulso del BOS (1,0860), las bandas se contrajeron (squeeze) — la contracción precedió a la expansión. Y durante el tramo alcista, los cierres caminaron cerca de la banda superior: walking the bands, la firma estadística de una tendencia sana.</li>
+</ol>
+<pre class="mermaid">flowchart TD
+    A[&quot;SL fijado por estructura&lt;br/&gt;(ley 4.6, tras la barrida)&quot;] --&gt; B{&quot;Distancia entrada a SL&lt;br/&gt;en múltiplos de ATR&quot;}
+    B --&gt;|&quot;menos de 1,0 ATR&quot;| C[&quot;Peligro: respiración normal&lt;br/&gt;ejecuta el stop por ruido.&lt;br/&gt;Amplía o busca otra zona&quot;]
+    B --&gt;|&quot;1,0 a 2,0 ATR&quot;| D[&quot;Sano: el stop solo muere&lt;br/&gt;si la tesis muere. Calcula lote&quot;]
+    B --&gt;|&quot;más de 2,0 ATR&quot;| E[&quot;Caro: riesgo inflado sin motivo.&lt;br/&gt;El TP se aleja. Revisa zona&quot;]
+    D --&gt; F[&quot;Lote = riesgo fijado /&lt;br/&gt;SL en pips (receta, paso 9)&quot;]
+</pre>
+<h2>Error común</h2>
+<p><strong>(1) SL = 1 ATR fijo sin estructura.</strong> El ATR audita, no diseña: el SL se fija tras la estructura y el ATR verifica. Un SL "1 ATR sobre el precio" colocado en medio de la nada es auditoría sin motivo. <strong>(2) Tocó la banda inferior → compro.</strong> En rango, la reversión a la media funciona a veces; en tendencia fuerte el precio camina sobre la banda y ese "compro barato" es vender fuerza comprada. Primero el régimen (6.2, 6.7), después la banda. <strong>(3) Usar el ATR del marco equivocado.</strong> El ATR H4 no sirve para auditar un SL de M15: cada marco tiene su respiración. <strong>(4) Creer que el squeeze predice el lado.</strong> Anticipa expansión, no dirección; el lado lo da la estructura alrededor del squeeze.</p>
+<h2>Conexión cuantitativa</h2>
+<p>La auditoría ATR cierra el círculo con la aritmética de la receta: riesgo fijado 1 % de 1 920 $ = 19,2 $; SL 32 pips → lote <ktx class="ktx" data-tex="= 19{,}2 / (32 \times 10) \times 1 = 0{,}06">= 19{,}2 / (32 \times 10) \times 1 = 0{,}06</ktx> lotes (receta, paso 9). Con ATR 21: cada pip de tu SL equivale a <ktx class="ktx" data-tex="32/21 \approx 1{,}52">32/21 \approx 1{,}52</ktx> respiraciones H4 — tu riesgo está expresado en unidades de clima del mercado, no en pips heroicos. Y la regla de las Tortugas da el estándar histórico del dimensionado: riesgo ~2 % por posición con N (su ATR) normalizando el tamaño entre mercados — el antepasado directo de lo que este programa formaliza en M8 (riesgo fijo por operación) y M9 (validación con muestra). Si algún día tu journal muestra que tus stops "por estructura" caen sistemáticamente bajo 1 ATR, esa es una señal estadística de que eliges zonas apretadas: el medidor detectó un sesgo que tus ojos no veían.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li><ktx class="ktx" data-tex="TR = \max(H-L, |H-C_{prev}|, |L-C_{prev}|)">TR = \max(H-L, |H-C_{prev}|, |L-C_{prev}|)</ktx>; ATR = media móvil del TR: la amplitud típica, sin opinión de dirección.</li>
+<li>Auditoría del SL: sano entre 1,0 y 2,0 ATR del nivel; &lt; 1 ATR lo caza el ruido, &gt; 2 ATR pagas demasía.</li>
+<li>ATR también dimensiona TP realista y traduce todos los mercados al mismo idioma.</li>
+<li>Bollinger = SMA 20 ± 2σ: squeeze anticipa fase (no dirección); walking the bands = fuerza, no giro.</li>
+<li>Donchian de 20 + riesgo controlado + dimensionado por ATR: la lección real de las Tortugas.</li>
+<li>El SL lo diseña la estructura, lo audita el ATR y lo dimensiona el lote — tres pasos, un solo responsable: tu checklist.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>Calcula el TR de una vela con H = 1,0830, L = 1,0812, cierre previo = 1,0826.</li>
+<li>Tu SL estructural queda a 0,8 ATR. ¿Qué dice el programa y qué dos opciones correctas tienes?</li>
+<li>Sobre el caso: ¿por qué el squeeze previo al BOS no "decidió" comprar? ¿Quién decidió y quién midió?</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. <ktx class="ktx" data-tex="H - L = 18">H - L = 18</ktx>; <ktx class="ktx" data-tex="|H - C_{prev}| = |1{,}0830 - 1{,}0826| = 4">|H - C_{prev}| = |1{,}0830 - 1{,}0826| = 4</ktx>; <ktx class="ktx" data-tex="|L - C_{prev}| = |1{,}0812 - 1,0826| = 14">|L - C_{prev}| = |1{,}0812 - 1,0826| = 14</ktx>. TR = máx(18, 4, 14) = **18 pips**. El rango simple ya bastaba aquí (no hubo hueco), pero el TR protege contra velas con gap donde el high/low quedan lejos del cierre previo.
+2. Dice: stop dentro de la respiración — la mera variación normal ejecuta el SL antes de que tu tesis falle. Opciones: (a) buscar una zona estructural más profunda/lejana que dé 1,0–2,0 ATR con el lote recalculado; (b) rechazar la operación ("no hay operación" es veredicto válido, 5.6). Lo que no se hace: dejar el SL en 0,8 ATR "porque la zona era tan bonita".
+3. El squeeze solo midió compresión de volatilidad (fase pre-expansión) — no contiene dirección. Quien decidió el lado fue la estructura: secuencia HH/HL con sesgo por escrito (5.1). Quien midió el tamaño del riesgo fue el ATR (1,52 en el SL). Estructura decide, ATR audita — el squeeze fue contexto, no veredicto.
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="leccion-6-2.html"><span class="lbl">← Anterior</span><span class="ttl">Lección 6.2 · Medias móviles — el filtro de régimen</span></a>
+    <a class="next" href="leccion-6-4.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 6.4 · Momentum y osciladores — medir la desaceleración</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>

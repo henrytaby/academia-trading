@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lección 6.6 · Fibonacci, Elliott y armónicos — contexto con límites · Academia FIT-12</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('fit12-theme')||'light')}catch(e){}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button class="icon-btn" id="menu-toggle" aria-label="Índice">☰ Índice</button>
+  <span style="flex:1"></span>
+  <button class="icon-btn" id="theme-toggle">🌙</button>
+</div>
+<div class="layout">
+<nav class="sidebar">
+  <div class="brand"><span class="logo">🎓</span><a href="index.html">Academia de Trading<br>FIT-12</a></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Inicio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Repo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="agents.html">agents.md</a></li><li><a href="core-readme.html">README raíz</a></li><li><a href="worklog.html">Worklog</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Guía<span class="chev">▼</span></button><ul class="nav-items"><li><a href="SYLLABUS.html">🎓 SYLLABUS Maestro — Programa de Formación Integral </a></li><li><a href="analisis_cursos.html">🔬 Análisis Forense de los Cursos Base — Informe ATR-</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">Recursos<span class="chev">▼</span></button><ul class="nav-items"><li><a href="receta-primera-operacion.html">🔬 La Receta de tu Primera Operación — Laboratorio de</a></li><li><a href="mision-m8-escenarios.html">Misión M-8 · Hoja de 20 escenarios de sizing</a></li><li><a href="plantilla_journal_v1.html">Journal v1 — el registro profesional del negocio (M9</a></li><li><a href="examen-n1.html">🏆 Examen Integrador — Nivel 1 · Fundamentos (M1–M4)</a></li><li><a href="examen-n2.html">🏆 Evaluación Nivel 2 · Técnica (M5–M7) — Examen Estr</a></li><li><a href="examen-n3.html">🏆 Evaluación Nivel 3 · Gestión (M8–M10) — Examen de </a></li><li><a href="examen-final.html">🏆 Examen Integral Final — Certificación FIT-12 (M1–M</a></li><li><a href="glosario.html">📖 Glosario Vivo — FIT-12</a></li><li><a href="PLANTILLA_MODULO.html">Plantilla Estándar de Módulo — FIT-12</a></li><li><a href="journal-readme.html">README raíz</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🧱 N1 · Base<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-01.html">Hub · M1</a></li><li><a href="leccion-1-1.html">1.1 Qué es realmente el trading</a></li><li><a href="leccion-1-2.html">1.2 Las 5 mentiras de la industria</a></li><li><a href="leccion-1-3.html">1.3 El mapa completo: 3 dimensiones</a></li><li><a href="leccion-1-4.html">1.4 La esperanza matemática</a></li><li><a href="leccion-1-5.html">1.5 La curva de aprendizaje real</a></li><li><a href="leccion-1-6.html">1.6 Expectativas y presupuesto</a></li><li><a href="hub-mod-02.html">Hub · M2</a></li><li><a href="leccion-2-1.html">2.1 La mecánica de subasta</a></li><li><a href="leccion-2-2.html">2.2 Oferta y demanda</a></li><li><a href="leccion-2-3.html">2.3 Liquidez</a></li><li><a href="leccion-2-4.html">2.4 Forex y sus sesiones</a></li><li><a href="leccion-2-5.html">2.5 Personalidad de cada mercado</a></li><li><a href="leccion-2-6.html">2.6 Calendario macro e intermercados</a></li><li><a href="hub-mod-03.html">Hub · M3</a></li><li><a href="leccion-3-1.html">3.1 Velas japonesas</a></li><li><a href="leccion-3-2.html">3.2 Los 4 ciclos del mercado</a></li><li><a href="leccion-3-3.html">3.3 Soportes y resistencias</a></li><li><a href="leccion-3-4.html">3.4 Confirmación en 3 pasos</a></li><li><a href="leccion-3-5.html">3.5 Patrones elementales</a></li><li><a href="leccion-3-6.html">3.6 Rangos vs tendencias</a></li><li><a href="hub-mod-04.html">Hub · M4</a></li><li><a href="leccion-4-1.html">4.1 TradingView profesional</a></li><li><a href="leccion-4-2.html">4.2 Tipos de órdenes</a></li><li><a href="leccion-4-3.html">4.3 El costo real de operar</a></li><li><a href="leccion-4-4.html">4.4 Largos y cortos</a></li><li><a href="leccion-4-5.html">4.5 Cuenta demo</a></li><li><a href="leccion-4-6.html">4.6 El Stop Loss como ley</a></li></ul></div>
+<div class="nav-group"><button class="nav-level" type="button">📐 N2 · Técnica<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-05.html">Hub · M5</a></li><li><a href="leccion-5-1.html">5.1 el esqueleto del precio</a></li><li><a href="leccion-5-2.html">5.2 los dos quiebres que lo etiquetan todo</a></li><li><a href="leccion-5-3.html">5.3 por qué el precio "va a buscar" los niveles </a></li><li><a href="leccion-5-4.html">5.4 el hueco que el precio suele volver a visita</a></li><li><a href="leccion-5-5.html">5.5 con criterio y sin misticismo</a></li><li><a href="leccion-5-6.html">5.6 el protocolo de 3 capas</a></li><li><a href="hub-mod-06.html">Hub · M6</a></li><li><a href="leccion-6-1.html">6.1 medidores, no oráculos</a></li><li><a href="leccion-6-2.html">6.2 el filtro de régimen</a></li><li><a href="leccion-6-3.html">6.3 ATR audita tu stop</a></li><li><a href="leccion-6-4.html">6.4 medir la desaceleración</a></li><li><a href="leccion-6-5.html">6.5 el registro del interés real</a></li><li><a class="active" href="leccion-6-6.html">6.6 contexto con límites</a></li><li><a href="leccion-6-7.html">6.7 el filtro macro de 4 etapas</a></li><li><a href="leccion-6-8.html">6.8 máximo 3 herramientas</a></li><li><a href="hub-mod-07.html">Hub · M7</a></li><li><a href="leccion-7-1.html">7.1 el test del clon</a></li><li><a href="leccion-7-2.html">7.2 Los 10 componentes del sistema</a></li><li><a href="leccion-7-3.html">7.3 los 4 caminos hacia la ventaja</a></li><li><a href="leccion-7-4.html">7.4 la matriz WR × R:B</a></li><li><a href="leccion-7-5.html">7.5 la estadística que sostiene el negocio</a></li><li><a href="leccion-7-6.html">7.6 cuando el sistema sobrevive al espejo</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">🛡️ N3 · Riesgo<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-08.html">Hub · M8</a></li><li><a href="leccion-8-1.html">8.1 el dinero como inventario</a></li><li><a href="leccion-8-2.html">8.2 por qué el gran daño es irreversible</a></li><li><a href="leccion-8-3.html">8.3 el presupuesto que nunca se rompe</a></li><li><a href="leccion-8-4.html">8.4 el margen no es el riesgo</a></li><li><a href="leccion-8-5.html">8.5 dos operaciones pueden ser una sola apuesta</a></li><li><a href="leccion-8-6.html">8.6 la cascada que hace imposible la ruina de un</a></li><li><a href="hub-mod-09.html">Hub · M9</a></li><li><a href="leccion-9-1.html">9.1 cómo saber algo sobre el futuro sin mentirte</a></li><li><a href="leccion-9-2.html">9.2 la rutina que hace los 100 datos comparables</a></li><li><a href="leccion-9-3.html">9.3 de 100 filas a una página que decide</a></li><li><a href="leccion-9-4.html">9.4 la transición honesta del laboratorio al mun</a></li><li><a href="leccion-9-5.html">9.5 tu caja negra con taxonomía de errores</a></li><li><a href="leccion-9-6.html">9.6 el protocolo que decide cuándo tocar el sist</a></li><li><a href="hub-mod-10.html">Hub · M10</a></li><li><a href="leccion-10-1.html">10.1 por qué tu cerebro no está diseñado para el </a></li><li><a href="leccion-10-2.html">10.2 el guion que la amígdala ya tenía escrito</a></li><li><a href="leccion-10-3.html">10.3 la otra cara del mismo secuestro</a></li><li><a href="leccion-10-4.html">10.4 la distinción que define la carrera</a></li><li><a href="leccion-10-5.html">10.5 los cuatro que operan tu cuenta (y sus antíd</a></li><li><a href="leccion-10-6.html">10.6 procesos bajo tu control, resultados bajo el</a></li><li><a href="leccion-10-7.html">10.7 la arquitectura diaria del rendimiento soste</a></li></ul></div>
+<div class="nav-group closed"><button class="nav-level" type="button">💼 N4 · Negocio<span class="chev">▼</span></button><ul class="nav-items"><li><a href="hub-mod-11.html">Hub · M11</a></li><li><a href="leccion-11-1.html">11.1 la infraestructura no se elige con publicida</a></li><li><a href="leccion-11-2.html">11.2 las 5 que dominan el ecosistema minorista</a></li><li><a href="leccion-11-3.html">11.3 quien pone las reglas gana las reglas</a></li><li><a href="leccion-11-4.html">11.4 el examen real está en la letra pequeña</a></li><li><a href="leccion-11-5.html">11.5 el sizing que sobrevive a su propia varianza</a></li><li><a href="leccion-11-6.html">11.6 el criterio honesto de la puerta de capital</a></li><li><a href="leccion-11-7.html">11.7 el negocio que declara es el negocio que dur</a></li><li><a href="hub-mod-12.html">Hub · M12</a></li><li><a href="leccion-12-1.html">12.1 tu negocio en un documento que otro podría e</a></li><li><a href="leccion-12-2.html">12.2 el ciclo que convierte el plan en hábito</a></li><li><a href="leccion-12-3.html">12.3 el dashboard mensual de un solo vistazo</a></li><li><a href="leccion-12-4.html">12.4 separación de cuentas, retiros y el protocol</a></li><li><a href="leccion-12-5.html">12.5 fases con criterios, no fechas con deseos</a></li><li><a href="leccion-12-6.html">12.6 qué leer, en qué orden, y qué esperar de cad</a></li><li><a href="leccion-12-7.html">12.7 el oficio empieza donde termina el programa</a></li></ul></div>
+</nav>
+<main class="content">
+  <div class="crumb"><a href="index.html">Inicio</a><span class="sep">/</span>📐 N2 · Técnica<span class="sep">/</span>M6 · Indicadores y Confluencias<span class="sep">/</span>Lección 6.6 · Fibonacci, Elliott y armónicos — contexto con </div>
+  <article class="doc-body">
+<h1>Lección 6.6 · Fibonacci, Elliott y armónicos — contexto con límites</h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏱️ Duración estimada</td>
+<td>45–60 min de estudio</td>
+</tr>
+<tr>
+<td>🧱 Módulo</td>
+<td><a href="hub-mod-06.html">M6 · Indicadores y Confluencias</a></td>
+</tr>
+<tr>
+<td>⬅️ Anterior</td>
+<td><a href="leccion-6-5.html">Lección 6.5 · Volumen y perfil</a></td>
+</tr>
+<tr>
+<td>➡️ Siguiente</td>
+<td><a href="leccion-6-7.html">Lección 6.7 · Etapas de Weinstein</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Por qué importa</h2>
+<p>Esta lección agrupa las tres herramientas más místicas del catálogo: los retrocesos de Fibonacci, el conteo de olas de Elliott y los patrones armónicos. Las tres comparten rasgo y destino: son <em>matemática real</em> envuelta en <em>mitología de mercado</em> — y la industria las vende casi siempre por la envoltura. El programa las trata con la misma honestidad del order block (5.5): separa lo aritméticamente verificable (los ratios son números; las particiones se calculan) de lo estadísticamente no demostrado ("el mercado respeta la ratio de la reproducción de conejos"). Al terminar sabrás usar los retrocesos como lo que valen — contexto de descuento — y sabrás POR QUÉ este programa no opera Elliott ni armónicos en el nivel v1: no porque sean "malos", sino porque sus exigencias estadísticas no caben en un negocio de 12 semanas.</p>
+<h2>Concepto</h2>
+<p><strong>Retrocesos de Fibonacci.</strong> La partición clásica de un swing: 23,6 % / 38,2 % / 50 % / 61,8 % / 78,6 %. La aritmética es real: los ratios salen de la sucesión de Fibonacci (cada término es la suma de los dos anteriores; el cociente entre términos consecutivos tiende a <ktx class="ktx" data-tex="\varphi \approx 1{,}618">\varphi \approx 1{,}618</ktx>), y de ella se derivan los retrocesos: <ktx class="ktx" data-tex="0{,}618^2 = 0{,}382">0{,}618^2 = 0{,}382</ktx>, <ktx class="ktx" data-tex="1/1{,}618 = 0{,}618">1/1{,}618 = 0{,}618</ktx>, etc. El nivel de entrada se calcula:</p>
+<p><ktxd class="ktxd" data-tex="Nivel = Low_{swing} + r \times (High_{swing} - Low_{swing})">Nivel = Low_{swing} + r \times (High_{swing} - Low_{swing})</ktxd></p>
+<p>con <ktx class="ktx" data-tex="r">r</ktx> el retroceso elegido (para largos tras impulso al alza). La <strong>golden zone</strong> es el tramo 50–61,8 %: el "descuento de calidad" donde las continuaciones sanas históricamente han girado <em>más a menudo que en otros tramos</em>. Ahora, la lectura honesta del programa: eso es una <strong>tendencia estadística débil y dependiente de contexto</strong> — no un nivel. El precio no para en 61,8 % "porque la abeja construya su panal en hexágonos": para ahí cuando ahí había estructura, y el Fib fue coincidencia decorada.</p>
+<p><strong>El uso pragmático que este programa acepta:</strong>
+1. <strong>Contexto de descuento:</strong> en tendencia alcista con sesgo (5.1), el pullback que llega a la golden zone <em>sobre zona estructural</em> (M5) suma contexto — nunca lo sustituye.
+2. <strong>Referencia de proporción:</strong> "¿este retroceso es normal o excesivo?" — un pullback de 30 % es una pausa; uno de 90 % es otra historia estructural (¿CHoCH?). El Fib mide la profundidad, la estructura la interpreta.
+3. <strong>Nunca como nivel exacto de entrada ni de SL:</strong> la diferencia entre tu zona (con gatillo 3.4) y "el 61,8 % suelto" es la diferencia entre operar un plan y operar una cifra.</p>
+<p><strong>Ondas de Elliott.</strong> El modelo describe el mercado como 5 olas de impulso + 3 de corrección, fractales en todo marco. Sus problemas operativos son estructurales: (1) <strong>subjetividad extrema</strong> — dos analistas competentísimos publican conteos distintos del mismo gráfico el mismo día, y ambos "cuadran"; (2) <strong>reconteo perpetuo</strong> — cuando el precio contradice el conteo, se "recuenta" (hipótesis in falsable en la práctica); (3) <strong>sin producto operable</strong> — no da zona, ni gatillo, ni invalidación concreta sin caer en juicios de artista. El programa lo enseña como <em>lenguaje descriptivo</em> (útil para narrar ciclos, hermana el impulso/corrección con la pauta de Dow del 5.1) y prohíbe operarlo como sistema.</p>
+<p><strong>Patrones armónicos (Gartley, Bat, Butterfly…).</strong> Figuras que anidan ratios de Fibonacci (p. ej., punto D en el 0,886 de XA con B en 0,618 de XA…). Lo que nadie te cuenta al venderlas: cada patrón exige 4 puntos exactos anidados; la muestra histórica limpia de cada figura es pequeña; los costos y el slippage se comen la ventaja declarada; y la disciplina estadística para validarlas (cientos de ocurrencias registradas con la misma regla, en el mismo instrumento, con costos reales) excede con creces el alcance de un negocio de 12 semanas. Veredicto del programa: <strong>fuera del alcance v1</strong> — no "no funcionan", sino "no tienes presupuesto estadístico para saber si funcionan", y operar lo que no puedes auditar es fe, no negocio.</p>
+<h2>Analogía</h2>
+<p>Los cortes de una receta. El pastelero sabe que la mousse se corta mejor si el chocolate entra en el rango 45–55 °C — un tramo de temperatura con historial. Eso es la golden zone: un tramo de descuento con historial, útil <em>dentro de la receta completa</em> (estructura, gatillo, SL). El mistificador te vende el termómetro como el pastel: "compra exactamente a 50,0 °C y el pastel se hace solo". El conteo de Elliott es el crítico gastronómico que explica tu negocio con 5 actos y 3 interludios: narrativa elegante, receta ninguna — y cuando la mesa sale mal, "reinterpreta el menú". Los armónicos son pastelería molecular de alta cocina: requiere laboratorio, muestras y años; en tu cocina de 12 semanas, intentarlos es invitar el desastre con estilo.</p>
+<h2>Cómo se hace: los retrocesos sobre el caso maestro</h2>
+<p>El swing del caso <a href="receta-primera-operacion.html">Receta</a> <em>(ilustrativo)</em>, EUR/USD H4 — low 1,0798 → high 1,0884 (86 pips):</p>
+<ol>
+<li><strong>Calculas la partición</strong> con <ktx class="ktx" data-tex="Nivel = Low + r \times (High - Low)">Nivel = Low + r \times (High - Low)</ktx>: 38,2 % → <ktx class="ktx" data-tex="1{,}0798 + 32{,}9">1{,}0798 + 32{,}9</ktx> pips ≈ 1,0831; 50 % → <ktx class="ktx" data-tex="1{,}0798 + 43">1{,}0798 + 43</ktx> = <strong>1,0841</strong>; 61,8 % → <ktx class="ktx" data-tex="1{,}0798 + 53{,}1">1{,}0798 + 53{,}1</ktx> ≈ <strong>1,0831</strong> (la golden zone completa: 1,0831–1,0841).</li>
+<li><strong>Comparas con la zona estructural de la receta:</strong> 1,0820–1,0824. El precio de entrada (1,0820) quedó en el <ktx class="ktx" data-tex="\frac{1{,}0884 - 1{,}0820}{1{,}0884 - 1{,}0798} = \frac{64}{86} \approx 74\,\%">\frac{1{,}0884 - 1{,}0820}{1{,}0884 - 1{,}0798} = \frac{64}{86} \approx 74\,\%</ktx> del retroceso (el tope de zona, 1,0824, en el 70 %) — <strong>más profundo que la golden zone</strong>.</li>
+<li><strong>La enseñanza del desenlace:</strong> el Fib clásico no habría dado la zona de la receta — habría señalado comprar 7–11 pips más arriba, donde la estructura no confirmaba y donde la barrida posterior a 1,0792 habría dejado un stop expuesto. La zona la marcó el order block + el pool (5.3, 5.5); el Fib la <em>aproximó</em> como contexto de descuento profundo ("el pullback está comprando caro — espera más profundidad"). Contexto: sí. Nivel: no.</li>
+<li><strong>La barrida bajo el 100 %:</strong> el precio perforó 1,0798 (el 100 % del retroceso) 6 pips antes de girar. Lección doble: ningún porcentaje del Fib protege de las barridas de liquidez (5.3 explica la visita al pool; el Fib no); y el SL por estructura (tras la extrema + respiración) ya lo contemplaba.</li>
+<li><strong>Nota Elliott sobre el mismo gráfico:</strong> el impulso 1,0798→1,0884 se narra cómodamente como 3 olas al alza en H1 — y esa narrativa no cambió ninguna decisión: ni zona, ni gatillo, ni SL. En el programa, la narrativa Elliott es como la banda sonora de la película: acompaña, no dirige.</li>
+</ol>
+<h2>Error común</h2>
+<p><strong>(1) Dibujar el Fib desde el swing equivocado.</strong> La partición depende del swing elegido; sin la disciplina del test de consecuencia (5.1) para marcar swings, cada analista dibuja un Fib distinto y el nivel "exacto" deja de existir. <strong>(2) Tratar 61,8 % como ley física.</strong> El mercado no conoce la sucesión; conoce órdenes. La coincidencia estadística en la golden zone es débil, dependiente de contexto, y solo sirve acompañada de estructura. <strong>(3) Recountear Elliott hasta que cuadre.</strong> Cada reconteo es un sesgo de confirmación con formato de análisis: si el conteo necesita revisión tras cada vela, no es un sistema, es un horóscopo con números. <strong>(4) Vender armónicos sin muestra.</strong> Quien te enseña "el Bat funciona el 80 %" casi nunca tiene 300 Bat registrados con costos reales; pedírselos no es descortés — es due diligence (M11).</p>
+<h2>Conexión cuantitativa</h2>
+<p>La lección cuantitativa de fondo: los ratios de Fibonacci son una <em>hipótesis estadística</em>, y las hipótesis se validan con muestras, no con anécdotas. El protocolo de validación correcto (que practicarás en M9 con tus arquetipos): define la regla ANTES (p. ej., "pullback a 50–61,8 % sobre zona estructural H1"), fija el universo de casos, registra acierto/fallo con costos, y compara contra el mismo arquetipo sin el filtro Fib. Si tu muestra no distingue las dos poblaciones, el Fib no aportó nada y fuera del dashboard. El mismo estándar se aplica, en escala mayor, a Elliott y armónicos — y por eso su etiqueta definitiva en el radar (6.8): <em>contextual descriptivo</em> y <em>fuera de alcance v1</em>, respectivamente. La aritmética de los ratios (<ktx class="ktx" data-tex="0{,}618^2 = 0{,}382">0{,}618^2 = 0{,}382</ktx>; <ktx class="ktx" data-tex="1/1{,}618 = 0{,}618">1/1{,}618 = 0{,}618</ktx>) es verdadera y hermosa; que el mercado la respete es, hasta que TÚ lo demuestres con tu journal, una frase de marketing con números bonitos.</p>
+<hr />
+<h2>🎯 Puntos clave</h2>
+<ol>
+<li>Retrocesos = partición aritmética real de un swing (<ktx class="ktx" data-tex="Nivel = Low + r \times (High - Low)">Nivel = Low + r \times (High - Low)</ktx>); la golden zone 50–61,8 % es contexto de descuento con historial débil, no nivel.</li>
+<li>El Fib aproxima; la estructura marca. La zona de la receta quedó en el 70–74 % — el Fib clásico no la habría dado.</li>
+<li>Ningún porcentaje protege de las barridas: la perforación del 100 % (1,0792 vs 1,0798) la explica la liquidez (5.3), no el Fib.</li>
+<li>Elliott: lenguaje descriptivo del ciclo, subjetivo e infalsable en la práctica — se narra, no se opera.</li>
+<li>Armónicos: ratios anidados con exigencia estadística fuera del alcance v1 — fe auditable ninguna.</li>
+<li>Todo porcentaje de este catálogo se somete al estándar del programa: regla antes, muestra después, comparación contra el arquetipo base.</li>
+</ol>
+<h2>🔄 Autoevaluación rápida</h2>
+<ol>
+<li>Calcula los retrocesos 38,2 %, 50 % y 61,8 % del swing 1,0745 → 1,0884 (el swing mayor del caso). ¿Dónde cae la golden zone?</li>
+<li>Tu compañero compra "exactamente en el 61,8 %" con SL 3 pips por debajo. Dos errores del programa y qué alternativa propone.</li>
+<li>¿Por qué el programa clasifica Elliott como "lenguaje descriptivo" y los armónicos como "fuera de alcance v1"? ¿Qué distingue ambas etiquetas de "marketing" (6.8)?</li>
+</ol>
+<details>
+<summary>Ver respuestas</summary>
+
+1. Swing de 139 pips (1,0884 − 1,0745). 38,2 % → <ktx class="ktx" data-tex="1{,}0745 + 53{,}1">1{,}0745 + 53{,}1</ktx> ≈ 1,0798 (¡el propio HL! coincidencia estructural del caso); 50 % → <ktx class="ktx" data-tex="1{,}0745 + 69{,}5">1{,}0745 + 69{,}5</ktx> ≈ 1,0815; 61,8 % → <ktx class="ktx" data-tex="1{,}0745 + 85{,}9">1{,}0745 + 85{,}9</ktx> ≈ 1,0831. Golden zone del swing mayor: ≈ 1,0815–1,0831 — que CONTIENE la zona de la receta 1,0820–1,0824: en el swing mayor el Fib sí la enmarca (contexto), aunque en el swing menor la quedara corta. El Fib suma contexto; la zona sigue siendo de la estructura.
+2. Error 1: nivel exacto como entrada — el 61,8 % suelto no tiene gatillo (3.4) ni confluencia estructural verificada. Error 2: SL de 3 pips — cualquier respiración (6.3: 0,15 ATR) lo ejecuta por ruido, y la barrida del pool (5.3) lo caza con prioridad estadística. Alternativa del programa: esperar la zona estructural con confluencia Fib como contexto, gatillo de confirmación en el marco de ejecución y SL tras la estructura con respiración (1,0–2,0 ATR).
+3. Elliott se narra pero no se opera: sin producto operable (zona/gatillo/invalidación), nunca entra al plan — es decoración cultural, no herramienta. Armónicos podrían ser operables en principio, pero su validación exige muestras y disciplina que el negocio v1 no puede pagar: etiqueta "fuera de alcance" = "podría ser real, no puedes saberlo todavía". Ninguna de las dos es "marketing": el marketing es vender certeza (80 % de acierto) sin muestra auditable — el programa no dice que no funcionen; dice que TÚ no puedes sostener aún que funcionan.
+
+</details>
+  </article>
+  <nav class="pn-nav">
+    <a class="prev" href="leccion-6-5.html"><span class="lbl">← Anterior</span><span class="ttl">Lección 6.5 · Volumen y perfil — el registro del interés real</span></a>
+    <a class="next" href="leccion-6-7.html"><span class="lbl">Siguiente →</span><span class="ttl">Lección 6.7 · Etapas de Weinstein — el filtro macro de 4 etapas</span></a>
+  </nav>
+</main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script defer src="assets/app.js"></script>
+</body>
+</html>
